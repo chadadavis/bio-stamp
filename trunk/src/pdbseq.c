@@ -9,17 +9,18 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current contact addresses:
+ Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -33,7 +34,7 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include <stamp.h>
+#include "stamp.h"
 #define MAX_SEQ_LEN 3000
 
 /* Reads a list of domains from the standard input (or a file),
@@ -112,8 +113,6 @@ main(int argc, char *argv[]) {
 		  ftype=0;
 	      } else if(strcmp(format,"FASTA")==0) {
 		   ftype=1;
-	      } else if(strcmp(format,"BLC")==0) {
-		   ftype=2;
 	      } else {
 		fprintf(stderr,"error: format %s not recognised\n",format);
 	      }
@@ -194,10 +193,8 @@ main(int argc, char *argv[]) {
 	     }
 	     domain[i].ncoords=0;
 	     domain[i].aa=(char*)malloc((MAX_SEQ_LEN+1)*sizeof(char)); 
-             domain[i].numb=(struct brookn*)malloc(MAX_SEQ_LEN*sizeof(struct brookn));
-             domain[i].coords=(int**)malloc(MAX_SEQ_LEN*sizeof(int*)); 
-/*             domain[i].coords=NULL; */
 	     total=0;
+             domain[i].coords=NULL;
 	     for(j=0; j<domain[i].nobj; ++j) {
 	      if(igetca(PDB,domain[i].coords,&domain[i].aa[total],&domain[i].numb[total],
 	                &add,domain[i].start[j],domain[i].end[j],
@@ -241,7 +238,6 @@ main(int argc, char *argv[]) {
 		if((OUT=fopen(outfilename,"r"))!=NULL) {
 		   fprintf(stderr,"Error: file %s already exists - delete first\n",outfilename);
 		} 
-		fclose(OUT);
 		if((OUT=fopen(outfilename,"w"))==NULL) {
 		   fprintf(stderr,"Error opening file %s\n",outfilename);
 		   exit(-1);
@@ -250,11 +246,8 @@ main(int argc, char *argv[]) {
 	  } else {
 		OUT=stdout;
 	  }
-	  if(ftype==0) {
-                fprintf(OUT,">P1;%s ",domain[i].id);
-          } else {       
-                fprintf(OUT,">%s ",domain[i].id);
-          }
+	  if(ftype==0) fprintf(OUT,">P1;%s ",domain[i].id);
+          else         fprintf(OUT,">%s ",domain[i].id);
 	  if(ftype==0) fprintf(OUT,"\n");
 	  fprintf(OUT,"%s : ",domain[i].align);
 	  for(j=0; j<domain[i].nobj; ++j) { 
@@ -268,24 +261,13 @@ main(int argc, char *argv[]) {
 	     }
 	  }
 	  fprintf(OUT,"\n");
-          if(ftype==2) { 
-            fprintf(OUT,"*\n");
-          }
 	  for(j=0; j<strlen(domain[i].aa); ++j) {
 	     fprintf(OUT,"%c",domain[i].aa[j]);
-             if(ftype==2) {
-                fprintf(OUT," %c %4d %c\n",domain[i].numb[j].cid, domain[i].numb[j].n, domain[i].numb[j].in);
-             } else if(((j+1)%80)==0) {
-                   fprintf(OUT,"\n");
-             }
+	     if(((j+1)%80)==0) fprintf(OUT,"\n");
 	  }
-	  if(ftype==0 || ftype==2) {
-                 fprintf(OUT,"*");
-          }
+	  if(ftype==0) fprintf(OUT,"*");
 	  fprintf(OUT,"\n");
-	  if(sepfiles==1) {
-               fclose(OUT);
-          }
+	  if(sepfiles==1) fclose(OUT);
 	}
 	exit(0);
 }

@@ -14,6 +14,10 @@
 \newcommand{\jp}{\mbox{$j^{\prime}$~}}
 \newcommand{\sdp}{\setlength{\baselineskip}{18truept}}
 \newcommand{\ssp}{\setlength{\baselineskip}{13.6truept}}
+
+%latex2html barfs on some of the above commands, so substitute the actual latex% for them.  Add academic license to this document.
+%GJB 13/4/1999
+%
   
 
 \begin{document}
@@ -26,7 +30,7 @@ S T A M P\\
 \end{Huge}
 \begin{Large}
 Structural Alignment of Multiple Proteins \\
-Version 4.2\\
+Version 4.3\\
 User Guide\\
 \end{Large}
 \end{bf}
@@ -44,31 +48,32 @@ comparison, {\em PROTEINS: Struct. Funct. Genet.},{\bf 14},
 
 \vskip 0.25in
 
-The STAMP authors contact addresses (23 March 1999) are:
+The STAMP authors contact addresses (16 August 2002) are:
 
 \vskip 0.1in
 
 \begin{tabular}{ll}
-Robert B. Russell (RBR)		   & Geoffrey J. Barton (GJB)\\
-SmithKline Beecham Pharmaceuticals & EMBL -- European Bioinformatics Institute\\
-Bioinformatics                     & Wellcome Trust Genome Campus\\
-New Frontiers Science Park         & Hinxton, Cambridge, CB10 1SD U.K.\\
-Third Avenue                       & \\
-Harlow, Essex, CM19 5AW            & \\
-Tel: +44 1279 622 884              & Tel: +44 1223 494414\\
-FAX: +44 1279 622 200              & FAX: +44 1223 494468\\
-e-mail: russelr1@mh.uk.sbphrd.com  & e-mail geoff@ebi.ac.uk\\
-                                   & WWW: http://barton.ebi.ac.uk// \\
+Robert B. Russell (RBR)		         & Prof. Geoffrey J. Barton (GJB)\\
+EMBL - European Bioinformatics Institute & School of Life Sciences\\
+Meyerhofstrasse 1                        & University of Dundee\\
+D-69117 Heidelberg                       & Dow Street\\
+Germany                                  & Dundee, DD1 5EH\\
+                                         & \\
+Tel: +49 6221 387 473                    & Tel: +44 1382 345860\\
+FAX: +44 6221 387 517                    & FAX: +44 1382 345764\\
+e-mail: russell@embl-heidelberg.de       & e-mail geoff@compbio.dundee.ac.uk\\
+WWW:http://russell.embl-heidelberg.de    & WWW: http://www.compbio.dundee.ac.uk \\
 \end{tabular}
 \vskip 0.25in
 \noindent
 \begin{center}
 Copyright (1997, 1998, 1999) Robert B. Russell \& Geoffrey J. Barton.\\
-Redistribution without permission is forbidden.
+Redistribution without permission is forbidden.  Please see the LICENSE\\
+at the end of this document.
 
 \vskip 0.1in
 
-Note that this work was originally developed in the Laboratory of Molecular
+This work was originally developed in the Laboratory of Molecular
 Biophysics, University of Oxford.
 \noindent
 
@@ -81,6 +86,8 @@ Biophysics, University of Oxford.
 \parindent 0in
 
 \chapter{Introduction and Overview}
+\section{Preface to Version 4.3}
+
 
 \section{Preface to Version 4.2}
 
@@ -172,7 +179,7 @@ than 10 residues, etc.).  Complicated things are possible with STAMP but
 as a consequence, the method is very detailed.  Please be patient, and 
 read this manual carefully.\\
 \\
-Alternatively, if you only want to to fairly straightforward things, such
+Alternatively, if you only want to do fairly straightforward things, such
 as align a set of structures or search a database of structures for
 similarities, you can skip this entire chapter and go straight to the
 next one, which contains a few worked examples that should demonstrate how
@@ -198,7 +205,7 @@ P_{ij} = exp \frac{d_{ij}^{2}}{-2 \times E_{1}^{2}}
          exp \frac{s_{ij}^{2}}{-2 \times E_{2}^{2}} 
 \]
 
-where $d_{ij}$ is the distance between \Cal atoms for residues $i$
+where $d_{ij}$ is the distance between ${\rm C}_{\alpha}$ atoms for residues $i$
 and $j$, and $s_{ij}$ is a measure of the local main chain conformation.
 A detailed description of this equation, and how it has been
 applied to multiple structures is given in \cite{rb92b}. \\
@@ -213,7 +220,7 @@ values (above).\\
 \\
 The result of the SW algorithm applied to a matrix of modified $P_{ij}$
 values is a list of residue equivalences.  From this list, which
-we may obtain a set of equivalenced \Cal positions.  These are
+we may obtain a set of equivalenced ${\rm C}_{\alpha}$ positions.  These are
 used to obtain a best fit transormation and RMS deviation by a
 least squares method of \cite{kabsch78,mclachlan79}.  This
 transformation can be applied in the relevant way to yield two
@@ -361,7 +368,7 @@ PAIRWISE similarity scores, the TREEWISE option will
 perform all alignments that are possible given a dendrgoram (generated 
 by considering the PAIRIWISE scores). 
 Statistics, transformations and alignments are output at each stage
-of the hierarchy so that a continuim of structure variation can be
+of the hierarchy so that a continuum of structure variation can be
 observed (ie. the output will get more and more structural varied
 as the program progresses).\\
 \\
@@ -599,10 +606,10 @@ Kraulis.  One simple needs to run TRANSFORM (see below) on a STAMP
 alignment file, and then run GSTAMP on the same file, followed by
 separate runs of MOLSCRIPT, to produce separate Postscript files
 for each aligned structure, with structually equivalent regions
-shown as ribbons, the rest as \Cal trace.
+shown as ribbons, the rest as ${\rm C}_{\alpha}$ trace.
 
 
-\section{Some comments on interperetting structural similarities}
+\section{Some comments on interpretting structural similarities}
 
 There is a wealth of literature on the nature of protein structural similarities, 
 and this manual is not the place to review them.  If you want to look into
@@ -753,8 +760,8 @@ sequence similarity that are not detectable during a comparison of
 sequence.  The files for this example are in the directory examples/s\_prot in the 
 directory where you have installed STAMP.\\
 \\
-A list of the domains is given in the file s\_prot.domains. The
-output.  Note that you can create such a file by using the PDBC program.  
+A list of the domains is given in the file s\_prot.domains.  Note
+ that you can create such a file by using the PDBC program.  
 Running PDBSEQ:\\
 
 \begin{scriptsize}\begin{verbatim}
@@ -866,7 +873,7 @@ After these details, various details of the similarity (RMS deviation,
 $S_{c}$ value, etc) are given.  The bottom portion of the file contains 
 the structural alignment in STAMP format.  Positions not aligned with 
 gaps contain information as to the degree of local structural similarity, 
-such as the distance between (averaged) \Cal atoms, and the 
+such as the distance between (averaged) ${\rm C}_{\alpha}$ atoms, and the 
 $P_{ij}^{\prime}$ value.\\
 \\
 Methods for displaying sequence alignments and structures are described below.
@@ -1303,7 +1310,7 @@ aspartic proteinase domains one needs to type:\\
 avestruc -f ac_prot.8 -o ac_prot_ave.pdb
 \end{verbatim} \end{scriptsize}
 
-The file ac\_prot\_ave.pdb will contain a set of averaged \Cal atoms taken 
+The file ac\_prot\_ave.pdb will contain a set of averaged ${\rm C}_{\alpha}$ atoms taken 
 by averaging the coordinates for those positions within the file 
 ac\_prot.8 that are found to be structurally equivalent.  To obtain a poly 
 Alanine set of coordinates (i.e. including main chain and $C_{\beta}$ 
@@ -1314,7 +1321,7 @@ avestruc -f ac_prot.8 -o ac_prot_ave.pdb -polyA
 \end{verbatim} \end{scriptsize}
 
 Note that this will only work if all main chain atoms are found in the file
-(i.e. it won't work if the PDB files contain only \Cal atoms).\\
+(i.e. it won't work if the PDB files contain only ${\rm C}_{\alpha}$ atoms).\\
 \\
 A useful feature in AVESTRUC in stamp version 4.1 is the use of the -ident
 and -cons options.  The program now labels all residues in the averaged model 
@@ -1356,7 +1363,7 @@ the sequence alignment.
 
 There is something inherrently wrong with the way STAMP assigns 
 equivalences within multiple alignments.  It considers an average set of 
-\Cal coordinates and uses an average set of probabilities to derive 
+${\rm C}_{\alpha}$ coordinates and uses an average set of probabilities to derive 
 equivalences when more than two structures are involved, and as a 
 consequence, it appears to go wrong (sometimes only) during this process.  
 Usually this is only when very distantly related proteins are being 
@@ -1566,7 +1573,7 @@ To give the two postscript files are shown in Figure 2.\\
 
 By default, GSTAMP will show equivalent helix, strand and coil residues
 as MOLSCRIPT \al helix, \be strand and coil, with un-equivalent regions 
-being shown as \Cal trace.\\
+being shown as ${\rm C}_{\alpha}$ trace.\\
 \\
 At best, GSTAMP will give only a starting point for further refinement.  
 Invariably, one will need to modify the orientation of the image for the 
@@ -1587,7 +1594,7 @@ possibilities may be used (e.g. all the coordinates in a PDB file,
 one  chain, bits of one chain, two chains, one chain and bits of
 another, etc) is solved by defining a domain by: 1) a file, 2) an
 identifier, and 3) a list of `objects', from the file, to be
-included in the domain.  An object is defined as a run of \Cal
+included in the domain.  An object is defined as a run of ${\rm C}_{\alpha}$
 coordinates, and a domain may contain more than one object.\\
 \\
 Domains are stored in STAMP in files which may contain one or
@@ -1631,18 +1638,18 @@ $<$objects$>$ are coordinate descriptions, and may be one of three types:
 \begin{scriptsize}\begin{verbatim}
 1.  ALL  
 \end{verbatim} \end{scriptsize}
-all \Cal's from the file.\\
+all ${\rm C}_{\alpha}$'s from the file.\\
 
 \begin{scriptsize}\begin{verbatim}
 2. CHAIN X 
 \end{verbatim} \end{scriptsize}
-only \Cal's labeled as chain X.\\
+only ${\rm C}_{\alpha}$'s labeled as chain X.\\
 
 \begin{scriptsize}\begin{verbatim}
 3.  <chain1> <number1> <insert1> to <chain2> <number2> <insert2>
 e.g.  B 20 _ to B 67 P 
 \end{verbatim} \end{scriptsize}
-only \Cal's between (and including) the two full brookhaven\\
+only ${\rm C}_{\alpha}$'s between (and including) the two full brookhaven\\
 residue names (chain, number, insertion code;
 the `\_` character denotes a space)\\
 \\
@@ -1847,7 +1854,7 @@ Briefly, the numeric fields are:\\
 \\
 \#P  averaged Rossmann and Argos Pij value\\
 \\
-\#A  distance between averaged \Cal atoms\\
+\#A  distance between averaged ${\rm C}_{\alpha}$ atoms\\
 \\
 \#G  corrected Pij value ($P_{ij}{\prime}$)\\
 \\
@@ -2737,7 +2744,7 @@ MOLSCRIPT.\\
 \\
 When multiple structure are considered, structurally equivalent regions
 (specified as for AVESTRUC) are shown as MOLSCRIPT helix, strand or coil.
-Non-structurally equivalent regions are shown as \Cal trace.  For an
+Non-structurally equivalent regions are shown as ${\rm C}_{\alpha}$ trace.  For an
 example of how this looks, see Figure 1 \cite{rb94} or Figure 1 in 
 \cite{russell94}.\\
 \\
@@ -2862,8 +2869,8 @@ directory, such as /usr/local/bin.
 \section{Setting up STAMP files}
 
 To use STAMP, all users must define the environment variable
-STAMPDIR, and set it equal to the directory where you have done
-the installation.  Users must also have STAMPDIR in their path. 
+STAMPDIR, and set it equal to the sub-directory /defs in which 
+the installation was made.  Users must also have STAMPDIR in their path. 
 The logical thing is to make modifications to one's .cshrc file to
 this end.\\
 \\
@@ -2969,8 +2976,147 @@ protein database according to SCOP \cite{russell97b,russell98a}, and problems
 associated with alignments for protein comparative modelling 
 \cite{saqi98}.
 
+\chapter{Appendix - STAMP Academic License}
+
+\begin{verbatim}
+
+SOFTWARE LICENCE AGREEMENT FOR ACADEMIC USE OF STAMP
+
+IMPORTANT: This software and its associated documentation are the copyright
+works of the authors, Robert B. Russell and Geoffrey J. Barton hereinafter
+referred to as the LICENSOR. Use of the software and documentation is
+governed by the terms of the Academic License Agreement set out below. You,
+hereinafter referred to as the LICENSEE, will not be able to install the
+software unless you first agree to those terms.
+
+The LICENSOR has developed a body of computer software and associated
+documentation called STAMP hereafter referred to as the WORK.
+
+The LICENSEE desires to use the WORK for education and research purposes.
+
+The LICENSEE and LICENSOR agree as follows:
+
+The LICENSOR grants to the LICENSEE a nonexclusive, nontransferable,
+licence to use the WORK subject to the following conditions.
+
+1. LICENSEE'S RIGHTS
+
+The Licensee shall have the right to use the WORK for educational and
+research purposes on all computers owned or leased by the Licensee and
+located on the LICENSEE'S campus or site.
+
+2. RESTRICTIONS ON USE
+
+No commercial use of any kind is permitted under this licence. For
+commercial use, a commercial licence is required.
+
+3. LICENSING FEE
+
+For a distribution via electronic means, there is no fee. For a physical
+distribution on magnetic media, the fee is fifty (50) pounds (UK).
+
+4. NO SUPPORT
+
+The LICENSEE recognizes that the LICENSOR is not obligated to provide
+support, maintenance, consulting, or revision of the WORK. If the LICENSOR
+chooses to release to the LICENSEE updates of, additions to, or
+modifications of the WORK, this agreement shall apply to them as though
+they were part of the original WORK.
+
+5. NO PRODUCT WARRANTY
+
+The WORK is released on a "as is" basis. There is no warranty whatsoever as
+to functioning, performance or effect on hardware or other software,
+express or implied. The LICENSOR disclaims any implied warranties of
+merchantability or fitness for any particular purpose.
+
+6. OWNERSHIP
+
+The LICENSEE agrees that the WORK including any updates, additions, and
+modifications, is, and shall at all times remain, the property of the
+LICENSOR, and that it has been copyrighted by the LICENSOR. The LICENSEE
+shall have no right, title or interest therein or thereto except as
+expressly set forth in this agreement.
+
+7. CREDITS
+
+All credits and copyright notices in the WORK, both in listings and/or
+documentation, whether names of individuals or organisations, shall be
+retained in place. Publications referring to the WORK, or to other works
+containing the WORK in whole or in part, shall refer to it as STAMP and
+shall specify that the WORK was made by Robert B. Russell and Geoffrey J.
+Barton. Publication of results that use the WORK shall cite: Russell, R. B.
+and Barton, G. J. (1992), Proteins, 14, 309-323.
+
+8. NONDISCLOSURE
+
+Under no conditions shall the LICENSEE disclose the WORK, in whole or in
+part, to third parties, except as expressly provided for in this agreement.
+Nor shall the LICENSEE make the WORK available to third parties via a
+computer network. Permission is hereby granted to the LICENSEE to disclose
+the WORK or modifications thereof to other organisations in possession of a
+valid source licence for the WORK, provided that such disclosure shall be
+for educational or research purposes only. LICENSEE may also disclose the
+WORK to its students and employees for use in their educational and
+research activities, provided that they are bound not to further disclose
+it to third parties. This article shall survive termination of the
+agreement.
+
+9. NO LIABILITY
+
+Neither the LICENSOR nor any individual or any legal entity involved in
+creating, modifying, updating, or supplementing the work, shall be liable
+for damages arising out of the failure or malfunctioning of the WORK. The
+LICENSEE hereby assumes the risk of and releases and forever discharges the
+LICENSOR, its employees and any other individual or legal entity referred
+to in the foregoing sentence with respect to any expense, claim, liability,
+loss or damage, direct or indirect, including any incidental or
+consequential damages, whether made or suffered by LICENSEE in connection
+with the failure or malfunction of the WORK. LICENSEE acknowledges that the
+WORK is in the process of development and is not error-free, that the
+foregoing exclusion of liability is therefore an essential term of this
+Agreement without which exclusion the LICENSOR would not be willing to
+enter into this Agreement and to make the Work available on the Price
+agreed upon herein.
+
+10. GOVERNING LAW
+
+This agreement shall be construed and enforced according to the laws of
+England.
+
+11. TERMINATION AND ENFORCEMENT COSTS
+
+LICENSOR shall have the right to terminate this agreement with immediate
+effect upon notice by registered mail to LICENSEE in the event that
+LICENSEE, its employees, or persons acting on its behalf breach any
+provision of this agreement. Upon termination, the LICENSEE agrees to
+return the orginal WORK immediately, to destroy all copies of the WORK
+(exact or modified) in its possession or under its control, and to send to
+the LICENSOR a signed statement that all such copies have been destroyed.
+If the LICENSOR takes legal action against the LICENSEE to enforce this
+agreement and prevails, the LICENSEE agrees to pay LICENSOR'S legal costs,
+including reasonable attorney's fees.
+
+12. CHANGES TO THIS AGREEMENT
+
+This agreement may only be changed if both parties agree to the proposed
+changes in writing.
+
+\end{verbatim}
+
+
 \nocite{TitlesOn}
 \bibliographystyle{unsrt}
 \bibliography{stamp}
 
 \end{document}
+
+
+
+
+
+
+
+
+
+

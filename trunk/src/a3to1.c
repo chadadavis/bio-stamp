@@ -11,15 +11,16 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
  The WORK is Copyright (1997,1998) Robert B. Russell & Geoffrey J. Barton
 	
@@ -35,8 +36,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define acids3 "ALA ARG ASN ASP CYS GLN GLU GLY HIS ILE LEU LYS MET PHE PRO SER THR TRP TYR VAL ASX GLX UNK CYH MSE"
-#define acids1 "ARNDCQEGHILKMFPSTWYVBZXcK"
+#define acids3 "ALA ARG ASN ASP CYS GLN GLU GLY HIS ILE LEU LYS MET PHE PRO SER THR TRP TYR VAL ASX GLX UNK CYH"
+#define acids1 "ARNDCQEGHILKMFPSTWYVBZXc"
 
 /* Converts three letter amino acid code to one letter
  *  amino acid code 

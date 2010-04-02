@@ -11,15 +11,16 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
  The WORK is Copyright (1997,1998) Robert B. Russell & Geoffrey J. Barton
 	
@@ -34,8 +35,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <stamp.h>
-#include <stamprel.h>
+#include "stamp.h"
+#include "stamprel.h"
 
 /* Clean up a block file by attaching lone isolated
  *  residues to the nearest continuous segment */
@@ -46,7 +47,6 @@ main(int argc, char *argv[]) {
 	int nbloc,minlen,bloclen;
 	int nstamp,nstamppos,nstampseq;
 	int ndomain,gottrans;
-        float minfrac;
 
 	char c;
 	char *env;
@@ -57,8 +57,8 @@ main(int argc, char *argv[]) {
 	struct stampdat *stamp;
 	struct domain_loc *domain;
 
-	if(argc!=4) {
-	  printf("format: stamp_clean (block file) (minimum continuous segment length) (min frac) > (output file)\n");
+	if(argc!=3) {
+	  printf("format: stamp_clean (block file) (minimum continuous segment length) > (output file)\n");
 	  exit(-1);
 	}
 
@@ -69,7 +69,6 @@ main(int argc, char *argv[]) {
 
 
 	sscanf(argv[2],"%d",&minlen);
-	sscanf(argv[3],"%f",&minfrac);
 
 
 	if((BLOC=fopen(argv[1],"r"))==NULL) {
@@ -119,34 +118,22 @@ main(int argc, char *argv[]) {
 	       nbloc,strlen(&bloc[1].seq[1]));
 	printf("%% Cleaning up allowing continuous segments of %d or greater...\n",minlen);
 	if(nstamp==0) clean_block(bloc,nbloc,minlen);
-	else stamp_clean_block(bloc,nbloc,minlen,minfrac,stamp,nstamp);
+	else stamp_clean_block(bloc,nbloc,minlen,stamp,nstamp);
 	printf("%%  Cleaning done.\n");
 	bloclen=strlen(&bloc[1].seq[1]);
 	printf("%% The final alignment length is %d\n",bloclen);
 	printf("%% The alignment:\n");
 	for(i=0; i<nbloc; ++i)  {
-           /* Fix the stupid title problem with spaces */
-           j=strlen(bloc[i+1].title)-1;
-           while(((bloc[i+1].title[j]==' ') || (bloc[i+1].title[j]=='\n')) && (j>=0)) { 
-              bloc[i+1].title[j]='\0'; 
-              j--; 
-           }
 	   printf(">%s %s\n",bloc[i+1].id,bloc[i+1].title);
 	}
 	for(i=0; i<nstamp; ++i) {
-	   printf("#%c %s\n",stamp[i].what,stamp[i].title);
+/* SMJS Removed \n  (its included in the title) */
+	   printf("#%c %s",stamp[i].what,stamp[i].title);
 	}
 	printf("*\n");
 	for(i=0; i<bloclen; ++i) {
-	   for(j=0; j<nbloc; ++j)  {
+	   for(j=0; j<nbloc; ++j) 
 	      printf("%c",bloc[j+1].seq[i+1]);
-/*              if(bloc[j+1].seq[i+1] == '\n') {
-                 fprintf(stderr,"Error: newline character found in output - exiting\n");
-                 exit(-1); 
-              }
-*/
-
-           }
 	   if(nstamp>0 && stamp[0].n[i]>-0.001) {
 	     printf(" ");
 	     for(j=0; j<nstamp; ++j) {

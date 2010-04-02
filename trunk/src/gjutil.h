@@ -56,7 +56,8 @@ char *GJstrblank(char *, int);
 void GJUCinit(unsigned char **,int ,int ,unsigned char );
 char *GJcat(int N,...);
 struct tokens *GJgettokens(const char *delims, char *buff);
-void *GJfreetokens(struct tokens *tok);
+/* SMJS Changed from void * to void */
+void GJfreetokens(struct tokens *tok);
 
 #endif  /* GJ_UTIL_H */
 

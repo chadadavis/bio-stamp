@@ -11,15 +11,16 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
  The WORK is Copyright (1997,1998) Robert B. Russell & Geoffrey J. Barton
 	
@@ -31,9 +32,9 @@
   Structure Comparison: Assignment of Global and Residue Confidence Levels",
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
-#include <alignfit.h>
-#include <gjutil.h>
-#include <gjnoc.h>
+#include "alignfit.h"
+#include "gjutil.h"
+#include "gjnoc.h"
 
 /* Reads an AMPS format block file containing structurally derived sequences and a
  *  file containing a description as to where the coordinates may be found */
@@ -82,12 +83,13 @@ main(int argc, char *argv[]) {
 	struct parameters *parms;
 
 	strcpy(noc_parms,"noc sim single");
-	parms=(struct parameters*)malloc(sizeof(struct parameters));
+/* SMJS Changed malloc to calloc to zero struct */
+	parms=(struct parameters*)calloc(1,sizeof(struct parameters));
 	
 	if(argc<3) exit_error(); 
 
 	/* define/get parameters etc. */
-	parms[0].MAX_SEQ_LEN=20000;
+	parms[0].MAX_SEQ_LEN=1000;
 	parms[0].PAIRWISE=1;
 	parms[0].TREEWISE=1;
 	parms[0].OLDFORMAT=0;
@@ -191,11 +193,6 @@ main(int argc, char *argv[]) {
 		     strcpy(&bloc[i+1].id[0],&tmpstring[0]);
 		     printf("%s\n",bloc[i+1].id);
 		}
-                for(j=0; j<strlen(bloc[i+1].id); ++j) {
-                    if(bloc[i+1].id[j]=='\n') { 
-                       bloc[i+1].id[j]='\0'; 
-                    }
-                }
 	}
 	    
 	counter=(int*)malloc(nbloc*sizeof(int));
@@ -228,16 +225,11 @@ main(int argc, char *argv[]) {
 	   for(j=0; j<nbloc; ++j) {
 	      /* finds which id in the blocfile corresponds to the id in
 	       *  the domain file */
-	      if(strcmp(domain[i].id,bloc[j+1].id)==0)  {
+	      if(strcmp(domain[i].id,bloc[j+1].id)==0) 
 		 pointers[i]=j;
-              }
 	   }
 	   if(pointers[i]==-1) {
 	      fprintf(stderr,"error: id %s not found in block file\n",domain[i].id);
-              fprintf(stderr,"       possible ids in block file are:\n");
-	      for(j=0; j<nbloc; ++j) {
-                  fprintf(stderr,"       --- |%s|\n",bloc[j+1].id);
-              }
 	      exit(-1);
 	   }
 	   fprintf(TRANS,"%%Domain %3d %s %s\n",i+1,domain[i].filename,domain[i].id);

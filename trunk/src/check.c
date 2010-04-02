@@ -9,17 +9,18 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current contact addresses:
+ Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -33,7 +34,7 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include <stamp.h>
+#include "stamp.h"
 
 #define RES "REMARK   2 RESOLUTION."
 #define REF "REMARK   3"
@@ -52,7 +53,7 @@ main(int argc, char *argv[]) {
 	char keyword[7],atnum[6],atname[5],
 	     resname[4],resnum[7],rest[15],
 	     buff[100],oldresnum[7],code[200],
-	     reftext[100000];
+	     reftext[4000];
 	char *pdbfile,*dsspfile;
 	char *stampdir, *dirfile;
 	int nlines;
@@ -424,11 +425,14 @@ main(int argc, char *argv[]) {
        for(i=0; i<strlen(reftext); ++i) {
          for(j=0; j<n_r_val; ++j) {
    	   if(strncmp(&reftext[i],r_val[j],strlen(r_val[j]))==0) {
-	      sscanf(&reftext[i+strlen(r_val[j])],"%f",&R_factor);
-	      if(mode>=1 && mode<=3) printf("%8.5f",R_factor);
-	      found=1;
-	      REFINED=1;
-	      break;
+/* SMJS Added if */
+	     if (sscanf(&reftext[i+strlen(r_val[j])],"%f",&R_factor))
+             {
+	       if(mode>=1 && mode<=3) printf("%8.5f",R_factor);
+	       found=1;
+	       REFINED=1;
+	       break;
+             }
 	   }
          }
        }

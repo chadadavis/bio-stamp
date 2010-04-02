@@ -9,17 +9,18 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current contact addresses:
+ Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -48,7 +49,7 @@ float *vector(int nl, int nh);
 void free_vector(float *v, int nl, int nh);
 
 
-void matinv(float **a, float **y, float *d, int *indx) {
+void matinv(float **a, float **y, float d, int *indx) {
 
 int i,j,N;
 float *col;
@@ -58,7 +59,7 @@ float *col;
 col=(float*)malloc(10*sizeof(float));
 N=3;
 
-if(ludcmp(a,N,indx,d)==-1) { /* matrix is singular, so just copy a to y (ie. I^-1 = I) */
+if(ludcmp(a,N,indx,&d)==-1) { /* matrix is singular, so just copy a to y (ie. I^-1 = I) */
    for(j=1; j<=N; j++) { 
       for(i=1; i<=N; i++) {
 		y[i][j]=a[i][j];
@@ -156,7 +157,6 @@ int ludcmp(float **a, int n, int *indx, float *d)
 		}
 	}
 	free_vector(vv,1,n);
-        return 0;
 }
 float *vector(int nl, int nh)
 {

@@ -9,17 +9,18 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current contact addresses:
+ Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -32,7 +33,7 @@
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
 #include <stdio.h>
-#include <stamp.h>
+#include "stamp.h"
 
 #define VSMALL 0.000001
 
@@ -62,14 +63,10 @@ int makefile(struct domain_loc *domain, int ndomain, struct cluster cl,
 	if(!PAIRWISE) sprintf(tmp,"%s.%d",parms[0].transprefix,nclust+1);
 	else sprintf(tmp,"%s.pairs.%d",parms[0].transprefix,nclust+1);
 	fprintf(parms[0].LOG,"File is: %s\n",tmp);
-        if(parms[0].pairoutput_to_log==0) {
-    	   if((OUT=fopen(tmp,"w"))==NULL) {
-	      fprintf(stderr,"error: opening file %s\n",tmp);
-	      return -1;
-   	   } 
-        } else {
-          OUT=parms[0].LOG;
-        }
+	if((OUT=fopen(tmp,"w"))==NULL) {
+	   fprintf(stderr,"error: opening file %s\n",tmp);
+	   return -1;
+	} 
 
 	asec=(int*)malloc(cl.a.number*sizeof(int));
 	bsec=(int*)malloc(cl.b.number*sizeof(int));
@@ -197,9 +194,7 @@ int makefile(struct domain_loc *domain, int ndomain, struct cluster cl,
 
 	free(asec); free(bsec); free(tmp);
 
-        if(parms[0].pairoutput_to_log==0) {
-	   fclose(OUT);
-        }
+	fclose(OUT);
 
 	return 0;
 }
