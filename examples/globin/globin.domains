@@ -1,0 +1,78 @@
+%
+% This is the list of globins which are
+%  aligned in Russell and Barton, Proteins, 14, 317, 1992
+% This file was generated using PDBC and then modified to
+%  put in additional comments
+%
+% Human hemoglobin beta chain
+%
+%     OXYGEN TRANSPORT                        07-MAR-84   2HHB      2HHB   3
+%     HEMOGLOBIN (DEOXY)                                            2HHB   4
+%     HUMAN (HOMO SAPIENS)                                          2HHB   5
+%     G.FERMI,M.F.PERUTZ                                            2HHB   6
+/disk3/pdb/pdb2hhb.ent 2hhbb { CHAIN B }
+% resolution:  1.740 angstroms
+% refinement:  R =  0.16000
+%
+%
+% Human hemoglobin alpha chain
+%
+%     OXYGEN TRANSPORT                        07-MAR-84   2HHB      2HHB   3
+%     HEMOGLOBIN (DEOXY)                                            2HHB   4
+%     HUMAN (HOMO SAPIENS)                                          2HHB   5
+%     G.FERMI,M.F.PERUTZ                                            2HHB   6
+/disk3/pdb/pdb2hhb.ent 2hhba { CHAIN A }
+% resolution:  1.740 angstroms
+% refinement:  R =  0.16000
+%
+%
+%
+% Lamprey hemoglobin
+%
+%     OXYGEN TRANSPORT                        16-AUG-85   2LHB      2LHB   3
+%     HEMOGLOBIN V (CYANO,MET)                                      2LHB   4
+%     SEA LAMPREY (PETROMYZON $MARINUS)                             2LHB   5
+%     R.B.HONZATKO,W.A.HENDRICKSON,W.E.LOVE                         2LHB   6
+/disk3/pdb/pdb2lhb.ent 2lhb { ALL }
+% resolution:  2.000 angstroms
+% refinement:  R =  0.14200
+%
+%
+% Sperm whale myoglobin
+%
+%     OXYGEN STORAGE                          14-JAN-88   4MBN      4MBN   3
+%     MYOGLOBIN (MET)                                               4MBN   4
+%     SPERM WHALE (PHYSETER $CATODON)                               4MBN   5
+%     T.TAKANO                                                      4MBN   6
+/disk3/pdb/pdb4mbn.ent 4mbn { ALL }
+% resolution:  2.000 angstroms
+% refinement:  R =  0.17200
+%
+%
+% Erythrocruorin
+%
+%     OXYGEN TRANSPORT                        07-MAR-79   1ECD      1ECD   3
+%     HEMOGLOBIN (ERYTHROCRUORIN, DEOXY)                            1ECD   4
+%     (CHIRONOMOUS THUMMI THUMMI) (FRACTION III)                    1ECD   5
+%     W.STEIGEMANN,E.WEBER                                          1ECD   6
+/disk3/pdb/pdb1ecd.ent 1ecd { ALL }
+% resolution:  1.400 angstroms
+% refinement:  R =  not found
+%
+%
+% Leghemoglobin
+%
+%     OXYGEN TRANSPORT                        23-APR-82   1LH1      1LH1   3
+%     LEGHEMOGLOBIN (ACETATE,MET)                                   1LH1   4
+%     YELLOW LUPIN (LUPINUS LUTEUS L) ROOT NODULES                  1LH1   5
+%     B.K.VAINSHTEIN,E.H.HARUTYUNYAN,I.P.KURANOVA,V.V.BORISOV,      1LH1   6
+%    2 N.I.SOSFENOV,A.G.PAVLOVSKY,A.I.GREBENKO,N.V.KONAREVA         1LH1   7
+/disk3/pdb/pdb1lh1.ent 1lh1 { ALL }
+% resolution:  2.000 angstroms
+% refinement:  R =  not found
+%
+%
+%
+%
+%
+%
