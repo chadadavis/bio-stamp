@@ -1,0 +1,154 @@
+% Output from STAMP scanning routine
+%
+% Domain 2fb4lv was used to scan the domain database:
+%  some.domains
+% 2 fits were performed
+% Fit 1 E1= 20.000, E2=  3.800, CUT=  1.000
+% Fit 2 E1=  3.800, E2=  3.800, CUT=  4.500
+% Approximate fits (alignment from N-termini) were performed
+%   at every 5 residue of the database sequences 
+% Transformations were output for Sc=  2.000
+% 
+% Domain used to scan 
+# Sc= 10.000 RMS=  0.01  Len= 999 nfit= 999 Seqid= 100.00 Secid= 100.00 q_len=  111 d_len=  111 n_sec= 100 n_equiv 999 fit_pos= _  0 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4lv { L 1 _ to L 109 _  }
+# Sc=   3.819 RMS=   7.880 len=  127 nfit=   45 seq_id=  6.31 sec_id= 26.13 q_len=  111 d_len=  105 n_sec=    7 n_equiv=   45 fit_pos= L 110 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4lc_1 { L 115 _ to L 212 _ 
+  -0.65195   -0.71485   -0.25291       149.80202 
+  -0.45249    0.63440   -0.62673        40.60787 
+   0.60846   -0.29415   -0.73706        73.35547  }
+# Sc=   9.799 RMS=  10.383 len=  111 nfit=  111 seq_id= 66.27 sec_id= 64.46 q_len=  111 d_len=  216 n_sec=   11 n_equiv=  110 fit_pos= L   1 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4l_1 { L 2 _ to L 109 _ 
+   1.00000    0.00040    0.00079        -0.05583 
+  -0.00040    1.00000   -0.00023         0.03316 
+  -0.00079    0.00023    1.00000         0.02923  }
+# Sc=   3.886 RMS=   8.384 len=  127 nfit=   47 seq_id=  4.22 sec_id= 17.47 q_len=  111 d_len=  216 n_sec=    7 n_equiv=   45 fit_pos= L 109 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4l_2 { L 115 _ to L 212 _ 
+  -0.63645   -0.69653   -0.33132       149.85677 
+  -0.44350    0.68191   -0.58163        34.41642 
+   0.63106   -0.22324   -0.74292        66.10854  }
+# Sc=   4.531 RMS=   8.759 len=  128 nfit=   50 seq_id=  3.61 sec_id= 19.88 q_len=  111 d_len=  216 n_sec=    7 n_equiv=   42 fit_pos= L 167 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4l_4 { L 115 _ to L 212 _ 
+  -0.69871   -0.71453   -0.03525       144.84018 
+  -0.52825    0.54853   -0.64813        51.83155 
+   0.48244   -0.43424   -0.76072        91.31558  }
+# Sc=   4.332 RMS=   8.957 len=  128 nfit=   53 seq_id=  4.22 sec_id= 20.48 q_len=  111 d_len=  216 n_sec=    7 n_equiv=   45 fit_pos= L 172 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4l_5 { L 115 _ to L 212 _ 
+  -0.65029   -0.67360   -0.35126       149.31273 
+  -0.43229    0.70833   -0.55804        30.74154 
+   0.62470   -0.21104   -0.75180        65.48068  }
+# Sc=   3.976 RMS=   7.522 len=  125 nfit=   49 seq_id=  3.61 sec_id= 16.87 q_len=  111 d_len=  216 n_sec=    6 n_equiv=   39 fit_pos= L 177 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4l_6 { L 116 _ to L 211 _ 
+  -0.59509   -0.80258   -0.04160       148.70383 
+  -0.56489    0.45454   -0.68869        62.60744 
+   0.57164   -0.38633   -0.72387        82.37971  }
+# Sc=   4.089 RMS=   8.234 len=  125 nfit=   51 seq_id=  1.20 sec_id= 15.66 q_len=  111 d_len=  216 n_sec=    7 n_equiv=   37 fit_pos= L 197 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4l_10 { L 116 _ to L 211 _ 
+  -0.60150   -0.79762    0.04482       145.64992 
+  -0.56735    0.38700   -0.72687        68.31324 
+   0.56242   -0.46264   -0.68531        89.50243  }
+# Sc=   3.982 RMS=   8.172 len=  124 nfit=   53 seq_id=  2.41 sec_id= 18.07 q_len=  111 d_len=  216 n_sec=    8 n_equiv=   42 fit_pos= L 202 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4l_11 { L 118 _ to L 211 _ 
+  -0.60041   -0.78548    0.15009       140.84576 
+  -0.61700    0.33561   -0.71181        73.90356 
+   0.50875   -0.51998   -0.68615        97.06454  }
+# Sc=   4.454 RMS=   9.126 len=  127 nfit=   51 seq_id=  3.61 sec_id= 20.48 q_len=  111 d_len=  216 n_sec=    7 n_equiv=   44 fit_pos= L 207 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2fb4.ent.Z 2fb4l_12 { L 115 _ to L 212 _ 
+  -0.71740   -0.68376   -0.13342       145.67900 
+  -0.47784    0.62232   -0.62000        42.27959 
+   0.50696   -0.38104   -0.77318        85.98043  }
+# Sc=   7.802 RMS=   9.561 len=  118 nfit=   94 seq_id= 39.82 sec_id= 69.03 q_len=  111 d_len=  113 n_sec=   10 n_equiv=   90 fit_pos= L   1 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb1mcp.ent.Z 1mcplv_1 { L 4 _ to L 112 _ 
+  -0.57062    0.73928    0.35756        43.37681 
+   0.79075    0.37714    0.48216        -0.33779 
+   0.22160    0.55788   -0.79979       -33.48972  }
+# Sc=   5.637 RMS=   8.513 len=  125 nfit=   71 seq_id= 18.85 sec_id= 47.54 q_len=  111 d_len=  122 n_sec=    9 n_equiv=   68 fit_pos= H   1 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb1mcp.ent.Z 1mcphv_1 { H 4 _ to H 122 _ 
+   0.22480   -0.20580   -0.95242        28.59028 
+   0.73138   -0.61023    0.30449        57.87067 
+  -0.64386   -0.76503    0.01334       118.41479  }
+# Sc=   2.152 RMS=   6.421 len=  153 nfit=   27 seq_id=  1.35 sec_id=  8.78 q_len=  111 d_len=  148 n_sec=    4 n_equiv=   21 fit_pos= _ 241 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb1cms.ent.Z 1cmsC_14 { _ 183 _ to _ 273 _ 
+   0.40686   -0.69795    0.58934        63.03228 
+   0.90513    0.22092   -0.36323        52.21460 
+   0.12332    0.68122    0.72162        11.66636  }
+# Sc=   5.823 RMS=   8.524 len=  113 nfit=   72 seq_id=  9.64 sec_id= 29.52 q_len=  111 d_len=  178 n_sec=   10 n_equiv=   70 fit_pos= _   1 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3cd4.ent.Z 3cd4_1 { _ 3 _ to _ 98 _ 
+   0.08635   -0.97697   -0.19511        87.72699 
+  -0.45512   -0.21290    0.86461        46.56677 
+  -0.88623    0.01414   -0.46302        89.35654  }
+# Sc=   4.181 RMS=   8.428 len=  115 nfit=   57 seq_id=  6.63 sec_id= 22.29 q_len=  111 d_len=  178 n_sec=    9 n_equiv=   54 fit_pos= _ 138 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3cd4.ent.Z 3cd4_10 { _ 99 _ to _ 178 _ 
+  -0.88252    0.20708    0.42222        35.79848 
+   0.02527   -0.87565    0.48228        45.84891 
+   0.46959    0.43629    0.76755       -26.24942  }
+# Sc=   2.019 RMS=   6.819 len=  137 nfit=   12 seq_id=  0.60 sec_id=  1.20 q_len=  111 d_len=  178 n_sec=    2 n_equiv=    6 fit_pos= _ 166 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3cd4.ent.Z 3cd4_11 { _ 100 _ to _ 178 _ 
+  -0.54465    0.33811    0.76748         3.17115 
+  -0.13464   -0.93851    0.31791        59.51006 
+   0.82778    0.06982    0.55669       -12.06421  }
+# Sc=   3.270 RMS=   7.384 len=  116 nfit=   45 seq_id=  4.82 sec_id= 15.66 q_len=  111 d_len=  178 n_sec=    8 n_equiv=   43 fit_pos= _ 171 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3cd4.ent.Z 3cd4_12 { _ 100 _ to _ 178 _ 
+  -0.74360    0.23339    0.62657        17.91518 
+  -0.01567   -0.94293    0.33263        57.74317 
+   0.66844    0.23753    0.70482       -22.80673  }
+# Sc=   4.137 RMS=   8.124 len=  140 nfit=   52 seq_id=  2.41 sec_id=  6.63 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   46 fit_pos= _   1 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3dpa.ent.Z 3dpa_1 { _ 3 _ to _ 116 _ 
+  -0.29215   -0.33250    0.89671        48.52320 
+   0.28107    0.86636    0.41282        22.24123 
+  -0.91414    0.37264   -0.15965        69.89486  }
+# Sc=   2.963 RMS=   7.327 len=  116 nfit=   34 seq_id=  1.20 sec_id=  3.01 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   29 fit_pos= _ 121 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3dpa.ent.Z 3dpa_3 { _ 126 _ to _ 210 _ 
+   0.78503   -0.52356   -0.33108        43.13215 
+   0.59642    0.78322    0.17564       -11.12199 
+   0.16735   -0.33535    0.92711        33.07888  }
+# Sc=   2.873 RMS=   8.447 len=  117 nfit=   28 seq_id=  1.81 sec_id=  1.20 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   12 fit_pos= _ 168 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3dpa.ent.Z 3dpa_6 { _ 126 _ to _ 204 _ 
+   0.59553   -0.58757   -0.54782        60.46453 
+   0.74541    0.65843    0.10413        -9.32484 
+   0.29952   -0.47036    0.83009        33.72955  }
+# Sc=   2.932 RMS=   7.769 len=  118 nfit=   29 seq_id=  2.41 sec_id=  1.81 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   20 fit_pos= _ 173 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3dpa.ent.Z 3dpa_7 { _ 126 _ to _ 210 _ 
+   0.74104   -0.51772   -0.42758        47.53926 
+   0.61650    0.77692    0.12774       -10.10000 
+   0.26606   -0.35826    0.89491        29.22180  }
+# Sc=   2.960 RMS=   8.036 len=  117 nfit=   30 seq_id=  2.41 sec_id=  1.20 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   17 fit_pos= _ 193 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3dpa.ent.Z 3dpa_11 { _ 126 _ to _ 210 _ 
+   0.67120   -0.58106   -0.46028        54.62708 
+   0.69083    0.71547    0.10420        -9.98716 
+   0.26877   -0.38792    0.88164        30.77665  }
+# Sc=   2.937 RMS=   8.003 len=  118 nfit=   31 seq_id=  1.81 sec_id=  1.20 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   17 fit_pos= _ 213 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3dpa.ent.Z 3dpa_15 { _ 131 _ to _ 204 _ 
+   0.66154   -0.64526   -0.38211        56.61013 
+   0.72120    0.68707    0.08838        -9.84977 
+   0.20551   -0.33404    0.91988        30.41141  }
+# Sc=   2.080 RMS=   5.965 len=  169 nfit=   22 seq_id=  0.60 sec_id=  9.04 q_len=  111 d_len=  185 n_sec=    3 n_equiv=   16 fit_pos= E  39 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb3sgb.ent.Z 3sgbe_3 { E 43 _ to E 137 _ 
+   0.06856    0.35853   -0.93100        60.55451 
+  -0.96868    0.24716    0.02384        58.52407 
+   0.23866    0.90020    0.36425        12.57385  }
+# Sc=   4.024 RMS=   9.151 len=  133 nfit=   51 seq_id=  6.31 sec_id= 25.23 q_len=  111 d_len=  108 n_sec=    7 n_equiv=   44 fit_pos= _   1 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb1acx.ent.Z 1acx_1 { _ 2 _ to _ 106 _ 
+  -0.97759    0.20678    0.03949        49.83199 
+   0.16014    0.60874    0.77704        58.26732 
+   0.13664    0.76595   -0.62821        59.65111  }
+# Sc=   4.044 RMS=   8.830 len=  135 nfit=   46 seq_id=  3.88 sec_id= 23.26 q_len=  111 d_len=  129 n_sec=    5 n_equiv=   37 fit_pos= A  11 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2aza.ent.Z 2azaa_3 { A 12 _ to A 129 _ 
+  -0.30885    0.95109    0.00642        34.80112 
+  -0.61258   -0.19375   -0.76630        70.21692 
+  -0.72757   -0.24060    0.64246        39.58991  }
+# Sc=   2.210 RMS=   4.679 len=  145 nfit=   28 seq_id=  1.80 sec_id= 18.92 q_len=  111 d_len=  104 n_sec=    4 n_equiv=   28 fit_pos= _  16 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb1rnt.ent.Z 1rnt_4 { _ 48 _ to _ 92 _ 
+   0.56383   -0.43245    0.70362        49.66336 
+   0.05267    0.86905    0.49192        24.30978 
+  -0.82421   -0.24029    0.51277        53.38915  }
+# Sc=   3.586 RMS=   7.776 len=  158 nfit=   39 seq_id=  1.32 sec_id= 15.23 q_len=  111 d_len=  151 n_sec=    7 n_equiv=   32 fit_pos= O   6 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2sod.ent.Z 2sodo_2 { O 14 _ to O 151 _ 
+   0.78335    0.16530   -0.59920        58.65346 
+  -0.31039    0.93923   -0.14667        48.24817 
+   0.53854    0.30088    0.78705        57.71445  }
+# Sc=   3.331 RMS=   7.604 len=  124 nfit=   41 seq_id=  5.41 sec_id= 19.82 q_len=  111 d_len=   99 n_sec=    6 n_equiv=   33 fit_pos= _   1 _ 
+/ebi/ftp/pub/databases/pdb/all_entries/compressed_files//pdb2pcy.ent.Z 2pcy_1 { _ 12 _ to _ 96 _ 
+  -0.27127   -0.70291   -0.65752        84.74233 
+  -0.12176   -0.65258    0.74787        62.76011 
+  -0.95477    0.28293    0.09144        41.50644  }

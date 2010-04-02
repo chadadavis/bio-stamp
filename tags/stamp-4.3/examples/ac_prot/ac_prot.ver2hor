@@ -1,0 +1,91 @@
+VER2HOR R.B. Russell, 1995
+ Prints STAMP alignments in horizontal format
+  for quick viewing
+ Reading Alignment...
+ Blocfile read: Length: 217
+ Getting STAMP information...
+ 6 STAMP fields read in for 217 positions 
+ Processing the alignment...
+ Output:
+ Very reliable => Pij' >=6 for stretches of >=3
+ Less reliable => Pij' >=4.5 for stretches of >=3
+ Post reliable => All Pij' > stamp_post parameter for stretches >=3
+
+  2aprN_1      agVGTVpmtd ygndIEYYGQvti       gtpgKKFNLDFDTGSSDLWIAStlctncgsg qtkydpnqsstyqad
+    1cmsN      geVASVplt  nyldSQYFGKiyl       gtppQEFTVLFDTGSSDFWVPSiycksnacknhqrfdprksstfqnl
+  4pepN_1        IGDEple  nyldTEYFGTigi       gtpaQDFTVIFDTGSSNLWVPSvycsslacsdhnqfnpddsstfeat
+  4apeN_1       sTGSAtttpidsldDAYITPvqi       gtpaQTLNLDFDTGSSDLWVFSsettasevdgqtiytpsksttakll
+  3appN_1      aaSGVAtntp tandEEYITPvt         iggTTLNLNFDTGSADLWVFStelpasqqs  ghsvynpsatgkel
+  1cmsC_1    ytgsLHWVpv    tvqQYWQFTvdsvtisgvvvaceGGCQAILDTGTSKLVGPSsd               ilniqqai
+  4pepC_1    ytgsLNWVpv    sveGYWQITldsitmdgetiacsGGCQAIVDTGTSLLTGPTsa               ianiqsdi
+  2aprC_1    fkgsLTTVpid   nsrGWWGITvdrat  vgtstvaSSFDGILDTGTTLLILPNni               aasvaray
+  4apeC_1    ytgsITYTavs   tkqGFWEWTstgyav gsgtfksTSIDGIADTGTTLLYLPAtv               vsaywaqv
+  3appC_1    ytgsLTYTgvd   nsqGFWSFNvdsyt   agsqsgDGFSGIADTGTTLLLLDDsv               vsqyysqv
+                                                                                             
+2aprN_1_ds     --TTEEeeee etttTEEEEEeee       ttttEEEEEEEETT----EEEBtt-ss--tt s--b-ggg-tt-eee
+1cmsN_dssp     -b-EEEe-e  eettTEEEEEeee       ttttEEEEEEEETT---EEE-Btt--shhhhts--b-ggg-ss-eee
+4pepN_1_ds       -EEEeee  eettTEEEEEeee       ttttEEEEEEEETT---EEE-Btt--sgggggs--b-ggg-ss-eee
+4apeN_1_ds      --EEEeeeesstt---EEEEeee       ttttEEEEEEEETT---EEE-Btts-tts-ss---b-tts-tt-eee
+3appN_1_ds     -b-EEEeeee -ggg--EEEEee         ettEEEEEEEETT---EEE-Btts-hhhht  ts--b-hhhh-eee
+1cmsC_1_ds   eeeeEEEEe-    ssbTTEEEEeeeeesssseee-tT-EEEEE-TT-SSEEEEHhh               hhhhhhhh
+4pepC_1_ds   b-s--EEEe-    ssbTTBEEEeeeeeetteeee-tT-EEEEE-TT--SEEE-Hhh               hhhhhhhh
+2aprC_1_ds   b-s--EEEe-b   -ttSS-EEEe-eee  etteeee--EEEEE-TT-SSEEEEHhh               hhhhhhhh
+4apeC_1_ds   seeeEEEEeee   -ssSS-EEEeeeeee tts--eeEEEEEEE-TT-SSEEE-Hhh               hhhhhtts
+3appC_1_ds   bss--EEEe-b   -ttSS-EEEeeeee   etteeeEEEEEEE-TT--SEEE-Hhh               hhhhhtts
+
+Very similar ----111100----00011111100---------00011111111111111111100---------------00000000
+Less similar ----111100----00011111100---------00111111111111111111100---------------00000000
+Post similar ----111100----00011111100---------00111111111111111111100---------------00011100
+
+  2aprN_1    grtws isygdgssasgil         akdNVNLGg  lLIK                gqtielakrea asfasgpnD
+    1cmsN    gkpls  ihygtgsmqgil         gydTVTVSn  iVDI                qqtvglstqepgdvftyaefD
+  4pepN_1    sqels  itygtgsmtgil         gydTVQVGg  iSDT                nqifglsetepgsflyyapfD
+  4apeN_1    sgatwsisygdgssssgdv         ytdTVSVGg  lTVT                gqavesakkvsssftedstiD
+  3appN_1    sgytwsisygdgssasgnv         ftdSVTVGg  vTAH                gqavqaaqqisaqfqqdtnnD
+  1cmsC_1    ga        tqnqygefdidcdnlsymptvVFEINgkmyPLTpsayts    qdqgfctsgfqse         nhsqK
+  4pepC_1    ga        sensdgemviscssidslpdiVFTIDgvqyPLSpsayil    qdddsctsgfegmdv     ptssgeL
+  2aprC_1    ga        sdngdgtytiscd tsafkplVFSINgasfQVSpdslvfe   efqgqciagfgy          gnwgF
+  4apeC_1    sga      kssssvggyvfpcs  atlpsfTFGVGsariVIPgdyidfgpistgssscfggiqss         agigI
+  3appC_1    sga      qqdsnaggyvfdcs  tnlpdfSVSISgytaTVPgslinygp sgdgstclggiqsn         sgigF
+                                                                                             
+2aprN_1_ds   eeeee ee-tts-eeeeee         eeeEEEETt  eEEE                eeeeeeeeee- hhhhtss-S
+1cmsN_dssp   eeeee  eeetteeeeeee         eeeEEEETt  eEEE                eeeeeeeee--shhhhh-ssS
+4pepN_1_ds   eeeee  eeetteeeeeee         eeeEEEETt  eEEE                eeeeeeeee--shhhhh-s-S
+4apeN_1_ds   eeeeeeee-tt--eeeeee         eeeEEEETt  eEEE                eeeeeeeeee-hhhht-ss--
+3appN_1_ds   eeeeeeee-tts-eeeeee         eeeEEEETt  eEEE                eeeeeeeeee-hhhhh-tt-S
+1cmsC_1_ds   t-        ee-tts-eee-ttgggg---eEEEETteeeEE-hhhhee    eetteeeeseeee         sss--
+4pepC_1_ds   t-        ---tts--ee-thhhhh---eEEEETteeeEE-hhhhee    eetteeeeseee---     b-ss-b-
+2aprC_1_ds   t-        ee-sss-eee-s- ggg---eEEEETteeeEE-ggggeee   eetteeeeseee          esssS
+4apeC_1_ds   tt-      eeetttteeeeett  s----eEEEETteeeEE-ggggeeeesstt-seeeeseee-         tttsS
+3appC_1_ds   tt-      eeetttteeeeett  -----eEEEETteeeEE-gggseeee -sssseeeeseee-         tt-sS
+
+Very similar 00--------000000000---------000111110--0111----------------000000----------00001
+Less similar 00--------000000000---------001111110--0111----------------000000----------00001
+Post similar 00--------000011111---------011111110--0111----------------011110----------00111
+
+  2aprN_1    GLLglgfdt  ittvrgvktPMDNlisqglisrpIFGVylgkakngggGEYIFggyd
+    1cmsN    GILgmayps   laseysipVFDNmmnrhlvaqdLFSVymd  rngqeSMLTLgaid
+  4pepN_1    GILglayps   isasgatpVFDNlwdqglvsqdLFSVylss nddsgSVVLLggid
+  4apeN_1    GLLglafstlntvsptqqktFFDNaka  sldspVFTAdlg   yhapGTYNFgfid
+  3appN_1    GLLglafssintvqpqsqttFFDTvks  slaqpLFAValk   hqqpGVYDFgfid
+  1cmsC_1    WIL              gdvFIRE         yYSVFd      ranNLVGLak  
+  4pepC_1    WIL              gdvFIRQ         yYTVFd      ranNKVGLap  
+  2aprC_1    AII              gdtFLKN         nYVVFn      qgvPEVQIap  
+  4apeC_1    NIF              gdvALKA         aFVVFng     attPTLGFas  
+  3appC_1    SIF              gdiFLKS         qYVVFd      sdgPQLGFap  
+                                                                      
+2aprN_1_ds   EEEe-s-gg  g-sstt---HHHHhhhtts-sssEEEEee--gggt--EEEEEt---
+1cmsN_dssp   EEEe-s-gg   gs-tt---HHHHhhhtt-bsssEEEEe--  ttss--EEEEs---
+4pepN_1_ds   EEEe-s-gg   g-ggg---HHHHhhhtt-ssssEEEEe--s tt-s-EEEEEt---
+4apeN_1_ds   EEEe-s-ggg---bss----HHHHhgg  gssssEEEEe--   sss-EEEEEs---
+3appN_1_ds   EEEe-s-ggg---bss----HHHHhgg  gbsssEEEEe--   sss-EEEEEss--
+1cmsC_1_ds   EEE              -hhHHTT         eEEEEe      tttTEEEEee  
+4pepC_1_ds   EEE              -hhHHTT         eEEEEe      tttTEEEEee  
+2aprC_1_ds   EEE              -hhHHTT         eEEEEe      tttTEEEEee  
+4apeC_1_ds   EEE              -hhHHTT         sEEEEe-     sss-EEEEee  
+3appC_1_ds   EEE              -hhHHTT         eEEEEe      tttTEEEEee  
+
+Very similar 111--------------0001111---------011110------0001111100--
+Less similar 111--------------0011111---------011110------0001111100--
+Post similar 111--------------0111111---------111110------0011111111--
+

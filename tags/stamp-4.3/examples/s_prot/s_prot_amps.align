@@ -1,0 +1,340 @@
+1----------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------                          M U L T A L I G N                          -------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------                                 by                                  -------------------------------
+ ------------------------------                         Geoffrey J. Barton                          -------------------------------
+ ------------------------------                 Laboratory of Molecular Biophysics                  -------------------------------
+ ------------------------------                      The Rex Richards Building                      -------------------------------
+ ------------------------------                          South Parks Road                           -------------------------------
+ ------------------------------                           OXFORD OX1 3QU                            -------------------------------
+ ------------------------------                               ENGLAND                               -------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------                            Please cite:                             -------------------------------
+ ------------------------------      Barton, G. J. (1990) Methods in Enzymology 183, 403-428.       -------------------------------
+ ------------------------------                      and also as appropriate:                       -------------------------------
+ ----------       Multiple alignment: Barton, G. J. and Sternberg, M. J. E. (1987), J. Mol. Biol., 198, 327-337.        -----------
+ ----------        Flexible Patterns: Barton, G. J. and Sternberg, M. J. E. (1990), J. Mol. Biol., 212, 389-402.        -----------
+ ----------   Structure Dependent Gap-Penalties: Barton, G. J. and Sternberg, M. J. E. (1987), Prot. Eng., 1, 89-94.    -----------
+ ----------------------------------------------------------------------------------------------------------------------------------
+ ------------------------------                              THANK YOU                              -------------------------------
+ ----------------------------------------------------------------------------------------------------------------------------------
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ !!!!!!!!!!                       This copy of MULTALIGN is supplied for use on a single machine                        !!!!!!!!!!!
+ !!!!!!!!!!            and must not be copied or redistributed without prior written consent from the author            !!!!!!!!!!!
+ !!!!!!!!!!!!!!!!!!!!                         Copyright (c) Geoffrey J Barton (1987)                          !!!!!!!!!!!!!!!!!!!!!
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ Multalign Version D2.1 - June 1994
+ Maximum allowed sequence length =  1200
+ Maximum pattern length          =  1200
+ Maximum number of sequences     =   900
+ ----------------
+ matrix file read
+ Mutation Data Matrix (250 PAMs)                                                 
+ -------------------------------
+ Gap penalty :     8.00
+ ----------------------
+ Constant :    8
+ ---------------
+ Conservation profile enabled 
+ ----------------------------
+ MZ type conservation
+ --------------------
+ Vertical format output selected 
+ -------------------------------
+ Sequence file : seqfile
+ -----------------------
+
+ Order file : amps_pairs.ord
+ ---------------------------
+ Tree file defined: amps_pairs.tree
+ ----------------------------------
+  
+ MULTIPLE mode has been defined
+  
+ Checking minimal command set
+ ----------------------------
+ No iteration value defined - assume a value of 1
+ ------------------------------------------------
+ Commands satisfy this mode..
+ ----------------------------
+ ------------------------------
+ Sequences defined in SEQ file:
+ ------------------------------
+ Index   Identifier   Length                            Name                            File order     Score     with
+     1   >3sgbe                 185 Chain E taken from PDB file /disk3/pdb/pdb3sgb.ent                   9      0.00         0
+     2   >2sga                  181 All residues taken from PDB file /disk3/pdb/pdb2sga.ent              8      0.00         0
+     3   >2alp                  198 All residues taken from PDB file /disk3/pdb/pdb2alp.ent             10      0.00         0
+     4   >2pkaab                232 Chain A and Chain B taken from PDB file /disk3/pdb/pdb2pka.e         6      0.00         0
+     5   >1ton                  227 All residues taken from PDB file /disk3/pdb/pdb1ton.ent              4      0.00         0
+     6   >2ptn                  223 All residues taken from PDB file /disk3/pdb/pdb2ptn.ent              3      0.00         0
+     7   >4chaa                 239 Chain A taken from PDB file /disk3/pdb/pdb4cha.ent                   1      0.00         0
+     8   >3est                  240 All residues taken from PDB file /disk3/pdb/pdb3est.ent              2      0.00         0
+     9   >3rp2a                 224 Chain A taken from PDB file /disk3/pdb/pdb3rp2.ent                   5      0.00         0
+    10   >1sgt                  223 All residues taken from PDB file /disk3/pdb/pdb1sgt.ent              7      0.00         0
+1*  ITERATION    1
+       C       0.10 |++         |
+       G       0.20 |+++        |
+       V       0.20 |+++        |
+       P       0.10 |++         |
+       A       0.20 |+++        |
+       I       0.10 |++         |
+       Q       0.00 |+          |
+       P       0.10 |++         |
+       V       0.20 |+++        |
+   A   L       0.00 |+          |
+   N   S       0.10 |++         |
+   IIIIIVIV    0.10 |++         |
+ IIVIVVVVIV    0.80 |+++++++++  |
+ SAGGGGNGGG    0.60 |+++++++    |
+ GGGGGGGGGG    1.00 |+++++++++++ 
+ GGIRYYETVT    0.00 |+          |
+ DEEEKTEEER    0.40 |+++++      |
+ AAYCCCAASA    0.40 |+++++      |
+ IISEEGVQIA    0.20 |+++        |
+ YTIKKAPRPQ    0.00 |+          |
+ STNNNNGNHG    0.20 |+++        |
+ SGNSSTSSSE    0.30 |++++       |
+ TGAHQVWWRF    0.10 |++         |
+ GSSPPPPPPP    0.50 |++++++     |
+    WWYWSYF    0.00 |+          |
+ RRLQQQQQMM    0.40 |+++++      |
+ CCCVVVVIAV    0.60 |+++++++    |
+ SSSAASSSHR    0.20 |+++        |
+ LLVIVLLLLL    0.80 |+++++++++  |
+ GGGYINQQDS    0.10 |++         |
+ FFFHN DYI     0.00 |+          |
+    Y  KRV     0.00 |+          |
+    S STST     0.10 |++         |
+    SEGGGE     0.00 |+          |
+    FYYFSK     0.00 |+          |
+        SG     0.10 |++         |
+        WL     0.00 |+          |
+        AR     0.00 |+          |
+    QLHHHVM    0.00 |+          |
+      FFTIG    0.00 |+          |
+    CCCCCCC    0.10 |++         |
+ NNSGGGGGGG    0.60 |+++++++    |
+ VVVGGGGGGG    0.70 |++++++++   |
+ RSTVVSSTFA    0.10 |++         |
+ SVRLLLLLLL    0.20 |+++        |
+ GNGVIIIIIY    0.30 |++++       |
+ SGANDNNRSA    0.20 |+++        |
+ TVTPPSEQRQ    0.00 |+          |
+ YAKKSQNNQD    0.10 |++         |
+ YHGWWWWWFI    0.20 |+++        |
+ FAFVVVVVVV    0.50 |++++++     |
+ LLVLIVVMLL    0.70 |++++++++   |
+ TTTTTSTTTT    0.70 |++++++++   |
+ AAAAAAAAAA    1.00 |+++++++++++ 
+ GGGAAAAAAA    0.90 |++++++++++ |
+ HHHHHHHHHH    1.00 |+++++++++++ 
+ CCCCCCCCCC    1.00 |+++++++++++ 
+ TTGKYYGVKV    0.20 |+++        |
+ DNTNSKVDGS    0.10 |++         |
+    DNSTRRG    0.00 |+          |
+        E S    0.00 |+          |
+        L G    0.00 |+          |
+    NNGTTEN    0.00 |+          |
+    YYISFIN    0.00 |+          |
+    EQQDRTT    0.00 |+          |
+    VVVVVVS    0.00 |+          |
+    WLRVVII    0.00 |+          |
+    LLLVVLT    0.00 |+          |
+    GGGAGGA    0.20 |+++        |
+    RREGEAT    0.00 |+          |
+    HNDEHHG    0.00 |+          |
+       F  G    0.00 |+          |
+ GIVNNNDNDV    0.20 |+++        |
+ ASNLLIQLVV    0.40 |+++++      |
+ TAAFFNGNRD    0.10 |++         |
+ TSTEKVSQKL    0.10 |++         |
+ WWANDVSNRQ    0.00 |+          |
+ W REEESNES    0.00 |+          |
+ A INPGEGSG    0.00 |+          |
+ N GTFNKTTA    0.00 |+          |
+ S GAAEIEQA    0.00 |+          |
+ A AQQQQQQV    0.00 |+          |
+ R  FRFKYKK    0.00 |+          |
+ T  FRILVIV    0.00 |+          |
+ T  GLSKGKR    0.00 |+          |
+ VSVVVAIVVS    0.40 |+++++      |
+ LIVTRSAQET    0.10 |++         |
+ GGGAQKKKKK    0.30 |++++       |
+ TTTDSSVIQV    0.20 |+++        |
+ TRFFFIFVIL    0.20 |+++        |
+ STAPRVKVIQ    0.10 |++         |
+ GGAHHHNHHA    0.20 |+++        |
+ STRPPPSPEP    0.10 |++         |
+ SSVGDSKYSG    0.00 |+          |
+ FFFFYYYWYY    0.80 |+++++++++  |
+    N          0.10 |++         |
+    LI         0.10 |++         |
+    SP  N      0.00 |+          |
+    AL  T      0.00 |+          |
+    DPNNDN     0.00 |+          |
+    GVSSDS     0.00 |+          |
+    KHNLVVN    0.00 |+          |
+    DDTTAPG    0.00 |+          |
+ PPPYHLIANT    0.00 |+          |
+ NNGSSNNGLG    0.40 |+++++      |
+ NNNHNNNYHK    0.40 |+++++      |
+ DDDDDDDDDD    1.00 |+++++++++++ 
+ YYRLLIIIIW    0.30 |++++       |
+ GGAMMMTAMA    0.60 |+++++++    |
+ IIWLLLLLLL    0.60 |+++++++    |
+ VIVLLILLLI    0.80 |+++++++++  |
+ RRSRHKKRKK    0.30 |++++       |
+ YHLLLLLLLL    0.40 |+++++      |
+ TSTQSKSAEA    0.20 |+++        |
+ NNSSESTQKQ    0.30 |++++       |
+ TPAPPAASKP    0.20 |+++        |
+ TAQAAAAVVI    0.40 |+++++      |
+ IATKDSSTEN    0.10 |++         |
+ PALIILFLL     0.00 |+          |
+ KDLTTNSNTQ    0.10 |++         |
+ DGPDGSQSPP    0.20 |+++        |
+ GRRAGRTYAT    0.20 |+++        |
+ TVVVVVVVVL    0.60 |+++++++    |
+ VYAKKASQNK    0.10 |++         |
+  L VVSALVI    0.00 |+          |
+  YNLIIVGVA    0.00 |+          |
+  NGEDSCVPT    0.00 |+          |
+ GGSLLLLLLT    0.40 |+++++      |
+ GSSPPPPPPT    0.50 |++++++     |
+  YFTTTSRSA    0.00 |+          |
+ QQVQKSAAPY    0.00 |+          |
+ DDTEECSGSN    0.30 |++++       |
+ IIVPPADTDQ    0.10 |++         |
+       DIF     0.00 |+          |
+       FLI     0.00 |+          |
+    EKSAAH     0.00 |+          |
+ TTRLVAANP     0.00 |+          |
+ STGGGGGNG     0.00 |+          |
+ AASSSTTSAG    0.60 |+++++++    |
+ AGTTTQTPMT    0.40 |+++++      |
+ NNECCCCCCF    0.30 |++++       |
+ AAAELLVYWT    0.10 |++         |
+ TFAAAITIAV    0.40 |+++++      |
+ VVVSSSTTAA    0.50 |++++++     |
+ GGGGGGGGGG    1.00 |+++++++++++ 
+ MQAWWWWWWW    0.40 |+++++      |
+ AAAGGGGGGG    0.90 |++++++++++ |
+ VVVSSNLLKA    0.20 |+++        |
+ TQCITTTTTN    0.50 |++++++     |
+ RRRENKRRGR    0.20 |+++        |
+ RSSPPSYTVE    0.00 |+          |
+    GSSA       0.10 |++         |
+    P          0.10 |++         |
+    D          0.30 |++++       |
+    DEGNNRG    0.00 |+          |
+    FMTTGDG    0.00 |+          |
+ GGGEVS QPS    0.00 |+          |
+ SSRFVY LTQ    0.00 |+          |
+ TTTPSPPASQ    0.40 |+++++      |
+ TTTDHDDQYR    0.30 |++++       |
+ GGGEDVRTTY    0.00 |+          |
+ TLYILLLLLL    0.50 |++++++     |
+ HRQQQKQQRL    0.30 |++++       |
+ SSCCCCQQEK    0.20 |+++        |
+ GGGVVLAAVA    0.60 |+++++++    |
+ SSTQNKSYEN    0.20 |+++        |
+ VVILIALLLV    0.60 |+++++++    |
+ TTTTHPPPRP    0.20 |+++        |
+ AGALLILTIF    0.40 |+++++      |
+ LLKLLLLVMV    0.40 |+++++      |
+ NNNQSSSDDS    0.50 |++++++     |
+ AAVNNDNYED    0.10 |++         |
+ TTTTESTAKA    0.20 |+++        |
+ VVAFKSNIAA    0.10 |++         |
+ NNNCCCCCCC    0.70 |++++++++   |
+ YYYAIKKSVR    0.10 |++         |
+ GGADESKSDS    0.20 |+++        |
+ GSE    SY     0.00 |+          |
+ GSG    SRA    0.00 |+          |
+ DGAATAYYYY    0.20 |+++        |
+ VIVHYYWWYG    0.20 |+++        |
+ VVRPKPGGEN    0.00 |+          |
+ YY DDGTSYE    0.00 |+          |
+ GGGKNQKTKL    0.20 |+++        |
+ MMLVVIIVFV    0.60 |+++++++    |
+ IITTTTKKQA    0.20 |+++        |
+ RQQEDSDN N    0.00 |+          |
+ TTGSVNAS E    0.00 |+          |
+ NNNMMMMM E    0.00 |+          |
+ VVALLFIVVI    0.50 |++++++     |
+ CCCCCCCCCC    1.00 |+++++++++++ 
+ AAMAAAAAVA    0.60 |+++++++    |
+ EQGGGGGGGG    0.30 |++++       |
+ PPRYEY GSY    0.00 |+          |
+ GGGLML  PP    0.00 |+          |
+ DDDPEEADTD    0.20 |+++        |
+ SSS      T    0.10 |++         |
+ GGGGGGSGTG    0.60 |+++++++    |
+ GGGGGGGVLG    0.60 |+++++++    |
+ PSSKKKVRRV    0.10 |++         |
+   WDDDSSAD    0.00 |+          |
+ LLITTSSGAT    0.40 |+++++      |
+ YFTCCCCCFC    0.60 |+++++++    |
+ SASMAQMQMQ    0.50 |++++++     |
+ GGAGGGGGGG    0.90 |++++++++++ |
+ TSGDDDDDDD    0.40 |+++++      |
+ RTQSSSSSSS    0.40 |+++++      |
+ AAAGGGGGGG    0.90 |++++++++++ |
+ ILQGGGGGGG    0.40 |+++++      |
+ GGGPPPPPPP    0.60 |+++++++    |
+ LLVLLVLLLM    0.70 |++++++++   |
+ TTMIIVVHLF    0.30 |++++       |
+ SSSCCCCCCR    0.30 |++++       |
+ GGGNDSKLAK    0.10 |++         |
+ GGGGGGKVGD    0.10 |++         |
+    MVKNNVN    0.00 |+          |
+       GG A    0.20 |+++        |
+       AQ D    0.00 |+          |
+       WY E    0.00 |+          |
+       TA W    0.00 |+          |
+    WLLLVAI    0.00 |+          |
+    QQQVHHQ    0.00 |+          |
+          V    0.20 |+++        |
+ SSNGGGGGGG    0.60 |+++++++    |
+   VIIIIVII    0.10 |++         |
+   QTTVVTVV    0.00 |+          |
+   SSSSSSSS    0.20 |+++        |
+   NWGWWFYW    0.00 |+          |
+   GGGGGVGG    0.10 |++         |
+ GGNHASSSHY    0.20 |+++        |
+ NNNTTGSR G    0.00 |+          |
+ CCC    L      0.00 |+          |
+ SRGPPCTG      0.00 |+          |
+ STICCACC C    0.00 |+          |
+ GGPGAQSNPA    0.40 |+++++      |
+ GGASKKTVDR    0.10 |++         |
+ TTSAP  TAP    0.00 |+          |
+   QNKNSRKG    0.00 |+          |
+   RKTKTKPY    0.00 |+          |
+   SPPPPPPP    0.00 |+          |
+ TTSSAGGTAG    0.60 |+++++++    |
+ FFLIIVVVIV    0.60 |+++++++    |
+ FYFYYYYFFY    0.80 |+++++++++  |
+ QQETATATTT    0.30 |++++       |
+ PPRKKKRRRE    0.20 |+++        |
+ VVLLLVVVVV    0.80 |+++++++++  |
+ TTQIICTSSS    0.40 |+++++      |
+ EEPFKNAATT    0.00 |+          |
+ AAIYFYLYYF    0.40 |+++++      |
+ LLLLTVVIVA    0.50 |++++++     |
+ VSSDSSNSPS    0.20 |+++        |
+ AAQWWWWWWA    0.40 |+++++      |
+ YYYIIIVIII    0.50 |++++++     |
+ GGGDKKQNNA    0.20 |+++        |
+ VALDKQQNAS    0.10 |++         |
+ STSTVTTVVA    0.50 |++++++     |
+ VVLIMILIIA    0.60 |+++++++    |
+ YLVTKAAANR    0.10 |++         |
+   TEESAS T    0.00 |+          |
+   GNNNNN L    0.00 |+          |
+    PP         0.10 |++         |
+ *
+
+ MEAN CONSERVATION =    0.23870
+ STANDARD DEVIATION     0.26789
+ Times: TOTAL:      4.040 USER :      3.180 SYSTEM:     0.860

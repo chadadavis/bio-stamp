@@ -1,0 +1,119 @@
+#!/usr/bin/perl
+
+use Env qw(STAMPDIR);
+
+use lib '/russell/speedy/russell/progs/stamp.4.3/perl/';
+use Palign;
+
+# Read command line
+
+for($i=0; $i<=$#ARGV; ++$i) {
+   if($ARGV[$i] eq "-in1") { # conversion specified
+        if(($i+1)>($#ARGV)) { exit_error(); }
+        $from1 = substr($ARGV[$i+1],0,1);
+        if($from1 !~ /[cmbfps]/) { exit_error(); }
+        $i++;
+   } elsif($ARGV[$i] eq "-in2") { # conversion specified
+        if(($i+1)>($#ARGV)) { exit_error(); }
+        $from2 = substr($ARGV[$i+1],0,1);
+        if($from2 !~ /[cmbfps]/) { exit_error(); }
+        $i++;
+   } elsif($ARGV[$i] eq "-out") { # conversion specified
+        if(($i+1)>($#ARGV)) { exit_error(); }
+        $to   = substr($ARGV[$i+1],0,1);
+        if($to !~ /[cmbfp]/) { exit_error(); }
+        $i++;
+   } elsif(($ARGV[$i] eq "-l") || ($ARGV[$i] eq "-linker")) { # linker specified
+        if(($i+1)>($#ARGV)) { exit_error(); }
+        $linker   = $ARGV[$i+1];
+        $i++;
+   } elsif(($ARGV[$i] eq "-help") || ((substr($ARGV[$i],0,1)) eq "-")) { 
+	exit_error();
+   } else {
+        push(@FILES,$ARGV[$i]);
+   }
+}
+
+$file1 = $FILES[0];
+$file2 = $FILES[1];
+
+#print "Files to use are: $file1 $file2\n";
+
+@data = read_align("$file1",$type);
+
+if(defined($from1)) { $type = $from1; }
+if($type eq "m") { 
+	 $align1 = get_msf(@data); 
+} elsif($type eq "c") {
+	 $align1 = get_clustal(@data); 
+} elsif($type eq "b") {
+	 $align1 = get_block(@data); 
+} elsif($type eq "f") {
+	 $align1 = get_afasta(@data); 
+} elsif($type eq "p") {
+	 $align1 = get_apir(@data); 
+}
+$to = $type;
+undef(@data);
+
+@data = read_align($file2,$type);
+
+if(defined($from2)) { $type = $from2; }
+
+if($type eq "m") { 
+	 $align2 = get_msf(@data); 
+} elsif($type eq "c") {
+	 $align2 = get_clustal(@data); 
+} elsif($type eq "b") {
+	 $align2 = get_block(@data); 
+} elsif($type eq "f") {
+	 $align2 = get_afasta(@data); 
+} elsif($type eq "p") {
+	 $align2 = get_apir(@data); 
+}
+
+if(defined($linker)) {
+	$align3 = merge_align($align1,$align2,$linker);
+} else {
+	$align3 = merge_align($align1,$align2);
+}
+
+if(!defined($align3)) {
+    printf STDERR "Sequences are not identical, trying to re-align\n";
+    if(defined($linker)) {
+	$align3 = merge_align_al($align1,$align2,$linker);
+    } else {
+    	$align3 = merge_align_al($align1,$align2);
+    }
+
+    
+}
+
+#print "Length is $align3->{alen}; number of sequences is $align3->{nseq}\n";
+#foreach $id (keys %{$align3->{ids}}) {
+#	print $id," ",$align3->{ids}{$id}{seq},"\n";
+#}
+
+
+if($to eq "m") {
+        write_msf($align3,"-");
+} elsif($to eq "c") {
+        write_clustal($align3,"-");
+} elsif($to eq "b") {
+        write_block($align3,"-");
+} elsif($to eq "f") {
+        write_fasta($align3,"-");
+} elsif($to eq "p") {
+        write_pir($align3,"-");
+}
+
+sub exit_error {
+die" format: amerge [-in1 <type> -in2 <type> -out <type> -linker <id> ] file1 file2
+        where <type> is one of:
+          m = MSF format
+          c = Clustal format
+          b = AMPS BLOCK format
+          f = FASTA format
+          p = PIR format
+        defaults are in=any and  out= same as file1 \n";
+}
