@@ -151,7 +151,7 @@ main(int argc, char *argv[]) {
 	   free(pdbfile);
 	   /* now just try the first four characters */
 	   strncpy(&code[0],argv[2],4); code[4]='\0';
-	   for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
+	   for(j=0; j<strlen(code); ++j) code[j]=code[j];
 	   pdbfile=getfile(code,dirfile,4,stdout);
 	   ftype=0;
 	}
@@ -167,7 +167,7 @@ main(int argc, char *argv[]) {
               free(dsspfile);
               /* now just try the first four characters */
               strncpy(&code[0],argv[2],4); code[4]='\0';
-              for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
+              for(j=0; j<strlen(code); ++j) code[j]=code[j];
               dsspfile=getfile(code,dirfile,4,stdout);
 	   }
 	   if(dsspfile[0]=='\0') {
@@ -185,7 +185,7 @@ main(int argc, char *argv[]) {
     if(mode==1) printf("searching file: %s ",pdbfile);
     if(ftype==0) {
        strncpy(&code[0],argv[2],4);  code[4]='\0';
-       for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
+       for(j=0; j<strlen(code); ++j) code[j]=code[j];
     } else {
        end=strlen(argv[2])-1; start=0;
        for(j=0; j<strlen(argv[2]); ++j) {
@@ -194,7 +194,7 @@ main(int argc, char *argv[]) {
        }
        strncpy(&code[0],&argv[2][start],(end-start+1));
        code[end-start+1]='\0';
-       for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
+       for(j=0; j<strlen(code); ++j) code[j]=code[j];
     }
 	
 
@@ -276,7 +276,7 @@ main(int argc, char *argv[]) {
 		   if(mode==2 || mode==3) {
 		      yes=(nspecchains==0);
 		      for(i=0; i<nspecchains; ++i) 
-			 if(curchain==utol(chs[i])) printf("%% chain %c missing main chain atoms for %d residues\n",curchain,n_main_miss+1);
+			 if(curchain==chs[i]) printf("%% chain %c missing main chain atoms for %d residues\n",curchain,n_main_miss+1);
 	           }
 	      }
 	      total_main_miss+=n_main_miss;
@@ -288,15 +288,15 @@ main(int argc, char *argv[]) {
 	   if(mode==2 || mode==3) {
 	      if(nspecchains>0) {
 		 yes=0;
-		 for(i=0; i<nspecchains; ++i) if(utol(chs[i])==utol(buff[21])) yes=1;
+		 for(i=0; i<nspecchains; ++i) if(chs[i]==buff[21]) yes=1;
 	      } else yes=1;
 	      if(yes) {
 	       if(mode==2) {
 	        if(buff[21]==' ') printf("%s %s { ALL }\n",pdbfile,code);
-	        else printf("%s %s%c { CHAIN %c }\n",pdbfile,code,(char)utol(buff[21]),(char)ltou(buff[21]));
+	        else printf("%s %s%c { CHAIN %c }\n",pdbfile,code,(char)buff[21],(char)buff[21]);
 	       } else {
                 if(buff[21]==' ') printf("%s %s %s { ALL }\n",pdbfile,dsspfile,code);
-                else printf("%s %s %s%c { CHAIN %c }\n",pdbfile,dsspfile,code,(char)utol(buff[21]),(char)ltou(buff[21]));
+                else printf("%s %s %s%c { CHAIN %c }\n",pdbfile,dsspfile,code,(char)buff[21],(char)buff[21]);
 	       }
 	      }
 	    }
