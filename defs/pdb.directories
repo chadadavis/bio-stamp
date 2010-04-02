@@ -16,6 +16,7 @@
 /g/data/pdb pdb .ent
 /g/data/pdb pdb .ent.Z
 /home/russell/pdb/ _ .pdb
+/g/data/pqs/macmol _ .mmol
 /g/data9/data/pdb pdb .ent
 /g/data9/data/pdb _ .pdb
 /g/data9/data/pdb _ .brk

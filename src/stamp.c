@@ -93,6 +93,7 @@ main(int argc, char *argv[]) {
 	   strcpy(keyword,&argv[i][1]);
 	   if(i+1<argc) strcpy(value,argv[i+1]);
 	   else strcpy(value,"none");
+           printf("Keyword %s value %s\n",keyword,value);
 	   for(j=0; j<strlen(keyword); ++j) 
 	      keyword[j]=ltou(keyword[j]); /* change to upper case */
 	   T_FLAG=(value[0]=='Y' || value[0]=='y' || value[0]=='1' || 
@@ -157,6 +158,12 @@ main(int argc, char *argv[]) {
 		sscanf(value,"%f",&parms[0].first_E1); i++;
 	   } else if(strcmp(keyword,"FIRST_E2")==0) {
 		sscanf(value,"%f",&parms[0].first_E2); i++;
+	   } else if(strcmp(keyword,"PAIROUTPUT_TO_LOG")==0) {
+	        parms[0].pairoutput_to_log=T_FLAG; i++;
+	   } else if(strcmp(keyword,"UD_SECTION")==0) {
+		sscanf(argv[i+1],"%d",&parms[0].ud_start); i++;
+		sscanf(argv[i+1],"%d",&parms[0].ud_end); i++;
+		parms[0].ud_section=1;
  	   } else if(strcmp(keyword,"NPASS")==0) {
 		sscanf(value,"%d",&parms[0].NPASS); i++;
 		if(parms[0].NPASS!=1 && parms[0].NPASS!=2) {

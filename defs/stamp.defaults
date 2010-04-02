@@ -81,3 +81,5 @@ scanfile  	stamp.scan		#
 logfile   	silent			#
 secfile  	stamp.sec		#
 roughalign	roughfit.align 		#
+UD_SECTION	FALSE
+PAIROUTPUT_TO_LOG	FALSE
