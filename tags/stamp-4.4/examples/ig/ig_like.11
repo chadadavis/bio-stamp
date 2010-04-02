@@ -1,0 +1,297 @@
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2aza.ent 2azaa_3 { A 12 _ to A 129 _ 
+  -0.27273    0.96202   -0.01199        34.98249 
+  -0.62852   -0.18759   -0.75483        69.98579 
+  -0.72841   -0.19832    0.65581        38.90855  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb3dpa.ent 3dpa_3 { _ 126 _ to _ 210 _ 
+   0.75149   -0.55821   -0.35166        47.01794 
+   0.61928    0.78063    0.08425        -9.41781 
+   0.22749   -0.28108    0.93233        27.05304  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2pcy.ent 2pcy_1 { _ 13 _ to _ 98 _ 
+  -0.48702   -0.78777   -0.37713        84.78377 
+   0.04059   -0.45176    0.89122        58.72785 
+  -0.87245    0.41873    0.25199        31.85478  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb3dpa.ent 3dpa_1 { _ 2 _ to _ 116 _ 
+  -0.39261   -0.15602    0.90638        48.36149 
+   0.28916    0.91458    0.28269        24.36135 
+  -0.87307    0.37308   -0.31397        73.08880  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb1acx.ent 1acx_1 { _ 2 _ to _ 106 _ 
+  -0.91125    0.40734    0.06089        51.17537 
+   0.31323    0.58939    0.74466        59.02935 
+   0.26744    0.69763   -0.66466        60.87218  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2fb4.ent 2fb4l_5 { L 118 _ to L 211 _ 
+  -0.74696   -0.66023    0.07843       135.52968 
+  -0.45831    0.42585   -0.78013        60.89514 
+   0.48167   -0.61867   -0.62067       108.22885  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb3cd4.ent 3cd4_2 { _ 98 _ to _ 178 _ 
+   0.02072   -0.03983    0.99899       -15.10006 
+  -0.03908   -0.99847   -0.03900        84.98701 
+   0.99902   -0.03823   -0.02224        27.40218  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb3cd4.ent 3cd4_1 { _ 4 _ to _ 97 _ 
+  -0.12054   -0.97845   -0.16767        93.12353 
+  -0.51139   -0.08357    0.85528        45.18331 
+  -0.85085    0.18884   -0.49030        85.33949  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb1mcp.ent 1mcphv_1 { H 2 _ to H 122 _ 
+   0.10331   -0.76573   -0.63482        70.70953 
+   0.71640   -0.38547    0.58154        54.12223 
+  -0.69000   -0.51486    0.50875       121.23985  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb1mcp.ent 1mcplv_1 { L 4 _ to L 112 _ 
+  -0.46302    0.82998    0.31103        29.01841 
+   0.85761    0.33089    0.39372        -3.07378 
+   0.22387    0.44903   -0.86501       -26.47659  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2fb4.ent 2fb4lv { L 1 _ to L 109 _ 
+   0.99462    0.08575    0.05813        -7.50732 
+  -0.08996    0.99318    0.07420         2.39122 
+  -0.05137   -0.07902    0.99555         8.78791  }
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2fb4.ent 2fb4l_1 { L 2 _ to L 109 _ 
+   0.99462    0.08574    0.05810        -7.50329 
+  -0.08995    0.99318    0.07421         2.39330 
+  -0.05134   -0.07904    0.99555         8.78961  }
+
+
+Alignment score  Sc = 3.964356
+Alignment length Lp = 207
+RMS deviation after fitting on 31 atoms =  2.154600
+Secondary structures are from DSSP
+
+
+
+>2azaa_3   (cluster A) sequence
+>3dpa_3   (cluster B) sequence
+>2pcy_1   (cluster B) sequence
+>3dpa_1   (cluster B) sequence
+>1acx_1   (cluster B) sequence
+>2fb4l_5   (cluster B) sequence
+>3cd4_2   (cluster B) sequence
+>3cd4_1   (cluster B) sequence
+>1mcphv_1   (cluster B) sequence
+>1mcplv_1   (cluster B) sequence
+>2fb4lv   (cluster B) sequence
+>2fb4l_1   (cluster B) sequence
+>space 
+>2azaa_3_dssp (cluster A) secondary structure from DSSP
+>3dpa_3_dssp  (cluster B) secondary structure from DSSP
+>2pcy_1_dssp  (cluster B) secondary structure from DSSP
+>3dpa_1_dssp  (cluster B) secondary structure from DSSP
+>1acx_1_dssp  (cluster B) secondary structure from DSSP
+>2fb4l_5_dssp  (cluster B) secondary structure from DSSP
+>3cd4_2_dssp  (cluster B) secondary structure from DSSP
+>3cd4_1_dssp  (cluster B) secondary structure from DSSP
+>1mcphv_1_dssp  (cluster B) secondary structure from DSSP
+>1mcplv_1_dssp  (cluster B) secondary structure from DSSP
+>2fb4lv_dssp  (cluster B) secondary structure from DSSP
+>2fb4l_1_dssp  (cluster B) secondary structure from DSSP
+#T -- '1' = equivalenced residues 
+#P -- averaged Pij
+#A -- distance between averaged CA atoms in angtroms
+#G -- Pij' value
+ABBBBBBBBBBB ABBBBBBBBBBBequiv Pij      Distance Pij'
+* iteration 1
+          Q            -  
+AE      V SS T?      - -- 
+MV           S?           
+ W      K VV  ?      E -- 
+QQ           -?           
+YD VP F LMLL B? ?- E EEBB 
+ QASATG VTTT  ?-?EEE EEBB 
+ LFLFLL EQ    ?E?EEE EE   
+DIVDS T SSQQ S?E?E E EE-- 
+L PRVFA  PPP - S?EEE  --- 
+    S N GSPP     E S -SSS 
+K STPPS      S S?--S      
+ELERAPD GSSS E?E?--- -EEE 
+M    STVGLAA E    -SESEEE 
+VNFASS       E?E?SH       
+VKSVGEHLLSSS E?E?SH-EEEEE 1  0.40821   1.22712   9.53300 
+DVIFAELGVVGG E?E?-HEEEEEE 1  0.41823   1.80176   9.76200 
+   DSLLKQSTT    ?-HEE---- 
+K SG         T -?         
+S PSDQQKPAPP T T?SHTTTSTT 
+CSGEGAGGGGGG -?T?STTTTSTT 0  0.12220   2.27478   2.99600 
+KGEKQNQDGEQQ S?-?-T-S--SS 1  0.34223   1.38126   8.02500 
+QGKSSKSTSRRR E?E?E---E-EE 1  0.78623   1.30542  18.17300 
+FYIMVALVLVVV E?E?EEEEEEEE 1  0.81423   1.20794  18.81300 
+TRVTSTTERTTT E?E?EEEEEEEE 1  0.81620   1.26198  18.85800 
+VIFLVLLLLMII E?E?EEEEEEEE 1  0.80119   1.26758  18.51500 
+HEKDSVTTSSSS E?E?EEE-EEEE 1  0.73521   1.45970  17.00700 
+LNNIVCLCCCCC E?E?EEE-EEEE 1  0.73123   1.34562  16.91600 
+KPNSALETAKSS E?-?EEEBEEEE 1  0.74221   1.36825  17.16700 
+HTAN ISATSGG E?S? E--EE-- 
+   D SP  STT    ? E-  S-- 
+V       S SS -       E TT 
+G  NAD    SS S  ?SE    TT 
+KPGK FPSG NN -?S? ESSS TT 
+    AYGQFQII     -BSSSSTT 
+       KTSGG        S--TT 
+        FL           --   
+         L            B   
+         N            -   
+         S            S   
+         G            S   
+   Q P   N      ? S   S   
+MY L GSKSQ   -? ? S-ST-   
+AY PGASSDKSS -? ?---ST-TT 
+K            H            
+S            H            
+A            H            
+MVFYEVPIFNSS H?-?S---SBSS 0  0.07022   2.54906   1.80800 
+GTPLTTSQYFTT -?-?EEE-E--- 1  0.33821   1.99875   7.93300 
+HVHAYVVFMLVV B?B?EEEEEE-- 1  0.46119   1.82413  10.74400 
+NINQYAQHEANN -?-?EEEEEEEE 1  0.50320   1.80859  11.70400 
+WGIAIWCWWWWW -?-?EE-EEEEE 1  0.59319   1.83025  13.76100 
+VLVWAKRKVYYY E?E?EEBEEEEE 1  0.66123   1.51833  15.31600 
+LGFIQASNRQQQ E?E?EE-EEEEE 1  0.55920   1.62152  12.98400 
+TGDEC   QQQQ E?-?E   EEEE 
+K  NA   PKLL E  ?-   ---- 
+    P   PPPP     E   TTTT 
+E EEV        T T?E        
+A DNG P GGGG T T?T T TTTT 
+DS QG  SKQMM T? ?T  TSSSS 
+  SEQD NRPAA   S?ET T---- 
+  I            S          
+  P            -          
+KES          H?T          
+ K KDGRQLPPP  ? ?ETT----- 
+ Q            ?           
+ A            ?           
+EE           H?           
+GE IAS IEKKK H? ?-E -EEEE 
+V            H            
+A            H            
+TG    GKWLLL H?    SEEEEE 
+ E  CPK       ?  -E-      
+DF    NIILLL H?    -EEEEE 
+G            H            
+M            H            
+N            H            
+A     ILAIII H     -EEEEE 
+       GAYYY        EEEBB 
+       NS           E-    
+       QR           E-    
+        N            -    
+        K            T    
+        G            T    
+G      GN    -      TS    
+        KGRR         -TTT 
+L      SY    G      T-    
+       FTADD        E-TTT 
+A      LTSAA G      E-TTT 
+Q            G            
+D            T            
+Y      TETMM T      EBEBB 
+V      KYRRR S      --E-- 
+K            -            
+A      GSEPP T      ----- 
+G G    PASSS T T    STTTT 
+D VIN  S     - -?-  S     
+T            T            
+R DT   KSGGG T -?   TTTTT 
+   GPV LVVVV    ?T- TTSSS 
+  AP           H?         
+  S  K NKPPP   H  - TT--- 
+V KVA  DGDDD - H?T  TTTTT 
+I IIT  RRRRR S H?T  TTTTT 
+   AAA AFFFF    ?-S EEEEE 
+  ST           S?         
+  MP           -?         
+  S            -          
+A E          E T          
+HEEPTG DITSS E?T?-- EEEEE 
+T D SVQSVGGG - - EEE-EEEE 
+KTLV   RSSSS -?-?   -EEEE 
+VVLQFEGR     -?B?EEEG     
+IM RT  SRGKK B? ?E  GEEEE 
+ LNLTT LD     ?-?-E GE    
+    DT WTSSS     -- GTEEE 
+     K DS         - GT    
+     P            -       
+     S            E       
+     K            E       
+     Q            -       
+     S            T       
+     N            T       
+     N            S       
+G  D K       -  ? S       
+G  PAY       T  ?SE       
+GSAGSA QQGGG T?S?SE GTTTT 
+EPKAGA GSTAA -?T?-E TTTTT 
+SRGKASGNIDSS E?T?-ESBEEEE 1  0.64522   1.12755  14.95000 
+DSESASKFLFAA E?-?-ES-EEEE 1  0.65523   1.32753  15.17900 
+SETMSYTPYTSS E?E?EEE-EEEE 1  0.74620   1.32092  17.25800 
+VQFVFLLLLLLL E?E?EEEEEEEE 1  0.68520   1.42596  15.86400 
+ TERSSSIQTAA  ?E?EEEEEEEE 
+TV L  VIMIII E? ?  EEEEEE 
+FKVSFLSKNSGG E?E?EES-ESEE 1  0.55421   0.93379  12.87000 
+D ATTTQNASGG E E?E-SSSSSS 
+V    PLLLVLL G    H------ 
+     E            H       
+  LTVQ         -?-H       
+SSS          G?-          
+K NPRWEKRQQQ G S?-H------ 
+    KKLIAASS     SHGGGTGG 
+    S            E        
+    Y            E        
+    A            E        
+    G            E        
+    Q            E        
+    T            -        
+    P            T        
+    S            T        
+    G            S        
+    T            -        
+    P            E        
+    V            E        
+    G            E        
+    S            E        
+   DV           ?E        
+   I            ?         
+L  S         S  ?         
+TAKKD QEEEEE -?-?E GGGTGG 
+   LCSDDDDDD    ?THGGG-GG 
+   P            ?         
+   Q            ?         
+   D            ?         
+P  R         T  ?         
+G  EA        T  ?T        
+ NGST         ?E?T        
+E   DHSSTLEE -   SS------ 
+AYELA        -?E?-        
+YNYFCRGDAATT E?E?-SEEESSS 1  0.59223   0.70911  13.73900 
+ATSYNSTTIVDD E?E?E-EEEEEE 1  0.77621   1.20707  17.94400 
+YPFFLYWYYYYY E?E?EE-EEEEE 1  0.82919   0.95494  19.15500 
+FYYNGSTIYYYY E?E?EEBEEEEE 1  0.80522   1.05605  18.60700 
+CLCLACCCCCCC -?-?EEEEEEEE 1  0.55421   1.55834  12.87000 
+SS RGQTEAQAA -? ?EEEEEEEE 
+ Y ENVVVRNAA  ? ?-EEEEEEE 
+   I TL NDWW    ? EE E-EE 
+ I P          ? ?         
+        YHDD         ESEE 
+   P      VV    ?      TT 
+        Y SS         E TT 
+        G            S    
+   R    S       ?    S    
+   S            ?         
+   E            ?         
+   K            ?         
+   A            ?         
+ N N          ? ?         
+ D V HQ T     ? ? EE S    
+ Y L EN WSLL  ? ? TT ESTT 
+FG Q GQ YYNN S? ? TT ESTT 
+PGSISSKEFPAA T?G?SEETESEE 0  0.10019   2.30654   2.49300 
+GRPAGTKDDLYY T?G?SEETE-EE 0  0.17422   2.20359   4.18500 
+H HLLVVQVTVV - G?-EEEEEEE 
+WPQ          T?T          
+  G N  KWFFF   T -  EEEEE 
+A A          T T          
+MVGQLEE GGGG T?T?-EE -BBB 
+MLMTGKFEAATT S?-?-EEE---- 1  0.39023   1.64562   9.12200 
+KSVKHTKEGGGG E?E?-E-E---- 1  0.67921   1.48742  15.72700 
+GFGIVVIVTTTT E?E?-E-EE-EE 1  0.61122   1.69140  14.17300 
+ IKKAADQTKKK  ?E?--EEEEEE 
+TC           E?           
+LNVLLPILVLVV E?E?-SEEEEEE 1  0.69321   1.35127  16.04700 
+KGTFTTVLTETT E?E?---EEEEE 1  0.67120   1.12478  15.54400 
+LSVYF VVVIVV E?E?- EEEEEE 
+S  R  L S LL E  ?  E - -- 
+N     A S GG -     - S -- 
+*

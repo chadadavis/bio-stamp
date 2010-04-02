@@ -1,0 +1,216 @@
+#!/usr/bin/perl
+
+# This reads in an alignment and cuts out
+#  regions specified by the user
+
+use lib '/russell/rg1/apps/pm/';
+use Palign;
+
+$format{"c"} = "Clustal";
+$format{"m"} = "MSF";
+$format{"b"} = "AMPS BLOCK";
+$format{"f"} = "FASTA";
+$format{"p"} = "PIR";
+$format{"s"} = "Pfam";
+$format{"h"} = "HMMalign";
+$format{"y"} = "Phylip";
+$format{"z"} = "SWISSPROT";
+
+$from = "x"; 
+$to = "c";
+$nogap = 0;
+$uc    = 0;
+$window   = 5;
+
+for($i=0; $i<=$#ARGV; ++$i) {
+   if($ARGV[$i] eq "-in") { # conversion specified
+ 	if(($i+1)>($#ARGV)) { exit_error(); }
+	$from = substr($ARGV[$i+1],0,1);
+	if($from !~ /[cmbfpsyh]/) { exit_error(); }
+	$i++;
+   } elsif($ARGV[$i] eq "-out") { # conversion specified
+ 	if(($i+1)>($#ARGV)) { exit_error(); }
+	$to   = substr($ARGV[$i+1],0,1);
+	if($to !~ /[cmbfpsy]/) { exit_error(); } 
+	$i++;
+   } elsif($ARGV[$i] eq "-window") { # window size
+ 	if(($i+1)>($#ARGV)) { exit_error(); }
+	$window  = $ARGV[$i+1];
+        $i++;
+   } elsif($ARGV[$i] eq "-nogap") { # no gaps
+	$nogap = 1;
+   } elsif($ARGV[$i] eq "-separate") { # no gaps
+	$separate = 1;
+   } else {
+	exit_error();
+   }
+}
+
+if(($nogap==1) && ($to !~ /[fp]/)) {
+	die "Error: can only do nogap in FASTA or PIR output (-out f or -out p)\n";
+}
+if(($separate==1) && ($to !~ /[f]/)) {
+	die "Error: can only do separate in FASTA output (-out f)\n";
+}
+#printf("Converting from %s to %s (stdin/stdout)\n",$format{$from},$format{$to});
+
+# Read data
+
+@data = read_align("-",$type);
+if($from eq "x") {
+    $from = $type;
+}
+if($from eq "x") {
+   die "Couldn't figure out alignment type: please specify with \"-in <type>\"\n";
+}
+
+if($from eq "m") { 
+	$align = get_msf(@data); 
+} elsif($from eq "c") {
+	 $align = get_clustal(@data); 
+} elsif($from eq "b") {
+	 $align = get_block(@data); 
+} elsif($from eq "f") {
+	 $align = get_afasta(@data); 
+} elsif($from eq "p") {
+	 $align = get_apir(@data); 
+} elsif($from eq "s") {
+	 $align = get_pfam(@data); 
+} elsif($from eq "h") {
+	 $align = get_hmmalign(@data); 
+} elsif($from eq "y") {
+	 $align = get_phylip(@data); 
+} elsif($from eq "z") {
+	 $align = get_swp(@data); 
+}
+
+
+if(!defined($align->{ids}{"cut_string"})) {
+   $cut_string = get_cut_string($align,$window);
+   $align->{ids}{"cut_string"}{seq} = $cut_string;
+   push(@{$align->{list}},"cut_string");
+   print "Cut string is $cut_string\n";
+   $align->{nseq}++;
+} else {
+#   print "Cut string already defined in file\n";
+   $cut_string = $align->{ids}{"cut_string"}{seq};
+} 
+
+sub get_cut_string {
+   my($align)  = $_[0];
+   my($window) = $_[1];  
+   my($i,$j,$id,$neighbors);
+   my($cut_string) ="";
+   for($i=0; $i<$align->{alen}; ++$i) {
+#      print "Pos $i ";
+      $ungapped = "1";
+      for($j=0; $j<$align->{nseq}; ++$j) {
+         $id = $align->{list}[$j];
+         $aa = substr($align->{ids}{$id}{seq},$i,1);
+         if($aa !~ /[A-Za-z]/) { $ungapped = "0"; }
+#         print "$aa";
+      }
+      $cut_string .= $ungapped;
+#      print " $ungapped\n";
+   }
+#   print "HERE\n";
+   for($i=0; $i<$align->{alen}; ++$i) {
+    if(substr($cut_string,$i,1) =~ /0/) {
+     $neighbors = 0; 
+     $j=$i;
+     while((substr($cut_string,$j,1) eq "0") && ($j<$align->{alen})) {
+       $j++; $neighbors++;
+     }
+     $j=$i-1;
+     while((substr($cut_string,$j,1) eq "0") && ($j>0)) {
+       $j--; $neighbors++;
+     }
+     if($neighbors < $window) { 
+       $cut_string = substr($cut_string,0,$i) . "1" . substr($cut_string,$i+1);
+     }
+    }
+    printf("%5d ",$i);
+    for($j=0; $j<$align->{nseq}; ++$j) {
+       $id = $align->{list}[$j];
+       $aa = substr($align->{ids}{$id}{seq},$i,1);
+       print $aa;
+    }
+    printf("%s %4d\n",substr($cut_string,$i,1),$neighbors);
+   }
+   return $cut_string;
+} 
+      
+$align2 = cut_align($align,$cut_string);
+
+sub cut_align {
+   my($align) = $_[0];
+   my($cut_string) = $_[1];
+   my($align2) = $align;
+   my($i,$j,$k,$l,$id,$ndel);
+   for($j=0; $j<$align2->{nseq}; ++$j) {
+     $id = $align2->{list}[$j];
+     for($i=0; $i<$align2->{alen}; ++$i) {
+       if(substr($cut_string,$i,1) eq "0") {
+#         print "Here pos = $i cs = $cut_string\n";
+         $ndel = 0;
+         $k=$i;
+         while((substr($cut_string,$k,1) eq "0") && ($k<$align2->{alen})) {
+             $aa = substr($align2->{ids}{$id}{seq},$k,1);
+             if($aa =~ /[A-Za-z]/) { 
+                $ndel ++; 
+                $align2->{ids}{$id}{seq} = substr($align2->{ids}{$id}{seq},0,$k) . " " . substr($align2->{ids}{$id}{seq},$k+1);
+             }
+             $k++;
+         }
+#         print "ID $id from $i to $k $ndel dels\n";
+         $ndel = "x" . $ndel . "x";
+         for($l=0; $l<length($ndel); ++$l) {
+            $align2->{ids}{$id}{seq} = substr($align2->{ids}{$id}{seq},0,$i+$l+1) . substr($ndel,$l,1) . substr($align2->{ids}{$id}{seq},$i+$l+2);
+         }
+#         while($l<6) {
+#            $align2->{ids}{$id}{seq}.="-";
+#            $l++;
+#         }
+#         $align2->{ids}{$id}{seq} = substr($align2->{ids}{$id}{seq},0,$i+$l+1) . substr($align2->{ids}{$id}{seq},$k-1);
+         $i = $k;
+        }
+     }
+   }
+#   print "Old length $align->{alen} ";
+   $align2->{alen} = length($align2->{ids}{$align2->{list}[0]}{seq});
+#   print "new $align2->{alen}\n";
+   return $align2;
+}
+   
+
+
+
+# Write data 
+if($to eq "m") { 
+	write_msf($align2,"-"); 
+} elsif($to eq "c") {
+	write_clustal($align2,"-");
+} elsif($to eq "b") {
+	write_block($align2,"-");
+} elsif($to eq "f") {
+	write_afasta($align2,"-",$nogap,$separate);
+} elsif($to eq "p") {
+	write_apir($align2,"-",$nogap);
+} elsif($from eq "y") {
+	 write_phylip(@data); 
+}
+
+
+sub exit_error {
+die" format: aconvert [-in <type> -out <type>] < file1 > file2
+        where <type> is one of:
+          m = MSF format
+          c = Clustal format
+          b = AMPS BLOCK format
+          f = FASTA format
+          p = PIR format
+	  s = PFAM (Sanger) format
+        defaults are in: any out: 'b' \n";
+}
+
+

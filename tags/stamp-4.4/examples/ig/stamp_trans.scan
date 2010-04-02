@@ -1,0 +1,149 @@
+% Output from STAMP scanning routine
+%
+% Domain 2fb4lv was used to scan the domain database:
+%  some.domains
+% 2 fits were performed
+% Fit 1 E1= 20.000, E2=  3.800, CUT=  1.000
+% Fit 2 E1=  3.800, E2=  3.800, CUT=  4.500
+% Approximate fits (alignment from N-termini) were performed
+%   at every 5 residue of the database sequences 
+% Transformations were output for Sc=  2.000
+% 
+% Domain used to scan 
+# Sc= 10.000 RMS=  0.01  Len= 999 nfit= 999 Seqid= 100.00 Secid= 100.00 q_len=  111 d_len=  111 n_sec= 100 n_equiv 999 fit_pos= _  0 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4lv { L 1 _ to L 109 _  }
+# Sc=   4.318 RMS=   2.119 len=  127 nfit=   55 seq_id= 10.87 sec_id= 78.26 q_len=  111 d_len=  105 n_sec=    8 n_equiv=   46 fit_pos= L 110 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4lc_1 {  L 110 _ to L 214 _  
+  -0.61975   -0.78317   -0.05056       148.03279 
+  -0.53336    0.46758   -0.70491        60.91171 
+   0.57570   -0.40990   -0.70750        84.10468  }
+# Sc=   4.534 RMS=   1.988 len=  127 nfit=   61 seq_id= 11.11 sec_id= 70.37 q_len=  111 d_len=  105 n_sec=    9 n_equiv=   54 fit_pos= L 209 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4lc_2 {  L 110 _ to L 214 _  
+  -0.70429   -0.70961   -0.02070       143.85963 
+  -0.51423    0.53005   -0.67426        53.71845 
+   0.48943   -0.46423   -0.73821        93.23658  }
+# Sc=   9.799 RMS=   0.001 len=  111 nfit=  111 seq_id= 100.00 sec_id= 97.30 q_len=  111 d_len=  216 n_sec=   11 n_equiv=  111 fit_pos= L   1 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4l_1 {  CHAIN L  
+   1.00000   -0.00000    0.00001         0.00172 
+   0.00000    1.00000    0.00000         0.00180 
+  -0.00001   -0.00000    1.00000         0.00289  }
+# Sc=   4.560 RMS=   1.884 len=  127 nfit=   57 seq_id= 12.24 sec_id= 73.47 q_len=  111 d_len=  216 n_sec=    8 n_equiv=   49 fit_pos= L 109 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4l_2 {  CHAIN L  
+  -0.71661   -0.69739   -0.01115       142.98114 
+  -0.51425    0.53909   -0.66703        52.66841 
+   0.47119   -0.47226   -0.74495        94.87365  }
+# Sc=   4.611 RMS=   1.500 len=  126 nfit=   58 seq_id= 23.53 sec_id= 72.55 q_len=  111 d_len=  216 n_sec=    9 n_equiv=   51 fit_pos= L 170 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4l_5 {  CHAIN L  
+  -0.71416   -0.67139    0.19804       131.12529 
+  -0.56198    0.38127   -0.73404        66.48170 
+   0.41732   -0.63551   -0.64959       111.56761  }
+# Sc=   4.616 RMS=   1.425 len=  126 nfit=   57 seq_id= 23.53 sec_id= 72.55 q_len=  111 d_len=  216 n_sec=    9 n_equiv=   51 fit_pos= L 175 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4l_6 {  CHAIN L  
+  -0.72018   -0.66477    0.19854       130.68820 
+  -0.55989    0.38789   -0.73216        65.70155 
+   0.40971   -0.63845   -0.65155       112.19881  }
+# Sc=   4.617 RMS=   1.425 len=  126 nfit=   57 seq_id= 23.53 sec_id= 72.55 q_len=  111 d_len=  216 n_sec=    9 n_equiv=   51 fit_pos= L 195 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4l_10 {  CHAIN L  
+  -0.72015   -0.66479    0.19857       130.68567 
+  -0.55994    0.38789   -0.73212        65.70210 
+   0.40969   -0.63843   -0.65159       112.21025  }
+# Sc=   4.550 RMS=   1.967 len=  127 nfit=   56 seq_id= 12.24 sec_id= 75.51 q_len=  111 d_len=  216 n_sec=    8 n_equiv=   49 fit_pos= L 200 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4l_11 {  CHAIN L  
+  -0.73258   -0.68062    0.00941       141.32613 
+  -0.51104    0.54082   -0.66809        52.49081 
+   0.44963   -0.49424   -0.74402        97.64614  }
+# Sc=   4.617 RMS=   1.425 len=  126 nfit=   57 seq_id= 23.53 sec_id= 72.55 q_len=  111 d_len=  216 n_sec=    9 n_equiv=   51 fit_pos= L 205 _ 
+/EMBL/data/pdb//2fb4.brk 2fb4l_12 {  CHAIN L  
+  -0.72015   -0.66480    0.19856       130.69334 
+  -0.55995    0.38790   -0.73212        65.71176 
+   0.40969   -0.63842   -0.65159       112.21741  }
+# Sc=   7.848 RMS=   1.165 len=  116 nfit=   96 seq_id= 49.47 sec_id= 86.32 q_len=  111 d_len=  113 n_sec=   11 n_equiv=   95 fit_pos= L   1 _ 
+/EMBL/data/pdb//1mcp.brk 1mcplv_1 {  L 1 _ to L 113 _  
+  -0.54006    0.77797    0.32109        37.75941 
+   0.80043    0.35688    0.48161         0.59695 
+   0.26009    0.51710   -0.81545       -33.22001  }
+# Sc=   6.921 RMS=   1.501 len=  126 nfit=   85 seq_id= 30.86 sec_id= 86.42 q_len=  111 d_len=  122 n_sec=   11 n_equiv=   81 fit_pos= H   1 _ 
+/EMBL/data/pdb//1mcp.brk 1mcphv_1 {  H 1 _ to H 122 _  
+   0.13279   -0.68146   -0.71971        62.58278 
+   0.77879   -0.37742    0.50104        48.04741 
+  -0.61307   -0.62704    0.48060       120.63927  }
+# Sc=   2.380 RMS=   2.032 len=  153 nfit=   28 seq_id=  0.00 sec_id= 78.26 q_len=  111 d_len=  148 n_sec=    5 n_equiv=   23 fit_pos= _ 216 _ 
+/EMBL/data/pdb//1cms.brk 1cmsC_9 {  _ 176 _ to _ 323 _  
+  -0.01112   -0.91412    0.40529        74.86068 
+   0.95720   -0.12696   -0.26010        56.34510 
+   0.28922    0.38505    0.87641        19.95604  }
+# Sc=   2.023 RMS=   2.447 len=  163 nfit=   25 seq_id=  0.00 sec_id= 93.33 q_len=  111 d_len=  148 n_sec=    4 n_equiv=   15 fit_pos= _ 282 _ 
+/EMBL/data/pdb//1cms.brk 1cmsC_12 {  _ 176 _ to _ 323 _  
+  -0.44103   -0.81971    0.36546        76.07657 
+   0.84682   -0.51496   -0.13310        70.94731 
+   0.29730    0.25078    0.92126        22.50761  }
+# Sc=   5.940 RMS=   1.334 len=  114 nfit=   78 seq_id= 20.00 sec_id= 76.00 q_len=  111 d_len=  178 n_sec=   12 n_equiv=   75 fit_pos= _   1 _ 
+/EMBL/data/pdb//3cd4.brk 3cd4_1 {  ALL  
+  -0.02748   -0.97449   -0.22276        92.47552 
+  -0.43475   -0.18901    0.88049        44.44904 
+  -0.90013    0.12104   -0.41846        84.95297  }
+# Sc=   4.615 RMS=   2.123 len=  115 nfit=   62 seq_id= 16.95 sec_id= 71.19 q_len=  111 d_len=  178 n_sec=   12 n_equiv=   59 fit_pos= _  98 _ 
+/EMBL/data/pdb//3cd4.brk 3cd4_2 {  ALL  
+  -0.10094    0.03894    0.99413       -14.22600 
+  -0.08981   -0.99551    0.02987        81.19572 
+   0.99083   -0.08627    0.10398        18.89684  }
+# Sc=   4.622 RMS=   2.100 len=  115 nfit=   61 seq_id= 16.95 sec_id= 71.19 q_len=  111 d_len=  178 n_sec=   12 n_equiv=   59 fit_pos= _ 166 _ 
+/EMBL/data/pdb//3cd4.brk 3cd4_3 {  ALL  
+  -0.09676    0.04253    0.99440       -14.38650 
+  -0.09149   -0.99524    0.03366        80.91967 
+   0.99109   -0.08772    0.10019        19.20762  }
+# Sc=   4.622 RMS=   2.100 len=  115 nfit=   61 seq_id= 16.95 sec_id= 71.19 q_len=  111 d_len=  178 n_sec=   12 n_equiv=   59 fit_pos= _ 171 _ 
+/EMBL/data/pdb//3cd4.brk 3cd4_4 {  ALL  
+  -0.09679    0.04254    0.99440       -14.38217 
+  -0.09150   -0.99524    0.03367        80.92305 
+   0.99109   -0.08773    0.10022        19.20974  }
+# Sc=   4.629 RMS=   2.093 len=  136 nfit=   61 seq_id= 10.34 sec_id= 27.59 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   58 fit_pos= _   1 _ 
+/EMBL/data/pdb//3dpa.brk 3dpa_1 {  ALL  
+  -0.32393   -0.23011    0.91767        47.01752 
+   0.30659    0.89209    0.33192        22.81225 
+  -0.89502    0.38887   -0.21843        70.21124  }
+# Sc=   2.933 RMS=   2.434 len=  118 nfit=   34 seq_id= 25.00 sec_id=  6.25 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   16 fit_pos= _ 121 _ 
+/EMBL/data/pdb//3dpa.brk 3dpa_3 {  ALL  
+   0.67382   -0.55959   -0.48253        53.82224 
+   0.67876    0.72682    0.10495        -9.96505 
+   0.29198   -0.39824    0.86957        30.07436  }
+# Sc=   2.289 RMS=   2.070 len=  126 nfit=   24 seq_id=  7.14 sec_id=  0.00 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   14 fit_pos= _ 165 _ 
+/EMBL/data/pdb//3dpa.brk 3dpa_6 {  ALL  
+   0.47848   -0.28104   -0.83191        56.39593 
+   0.77316    0.58396    0.24741        -9.42793 
+   0.41627   -0.76158    0.49671        50.02942  }
+# Sc=   2.933 RMS=   2.434 len=  118 nfit=   34 seq_id= 25.00 sec_id=  6.25 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   16 fit_pos= _ 170 _ 
+/EMBL/data/pdb//3dpa.brk 3dpa_7 {  ALL  
+   0.67382   -0.55963   -0.48247        53.83949 
+   0.67875    0.72684    0.10487        -9.94838 
+   0.29199   -0.39814    0.86961        30.08953  }
+# Sc=   2.933 RMS=   2.434 len=  118 nfit=   34 seq_id= 25.00 sec_id=  6.25 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   16 fit_pos= _ 175 _ 
+/EMBL/data/pdb//3dpa.brk 3dpa_8 {  ALL  
+   0.67382   -0.55963   -0.48247        53.84395 
+   0.67876    0.72684    0.10488        -9.94435 
+   0.29199   -0.39815    0.86961        30.09342  }
+# Sc=   2.899 RMS=   2.450 len=  117 nfit=   36 seq_id= 21.05 sec_id= 26.32 q_len=  111 d_len=  218 n_sec=    0 n_equiv=   19 fit_pos= _ 195 _ 
+/EMBL/data/pdb//3dpa.brk 3dpa_12 {  ALL  
+   0.66461   -0.59383   -0.45349        55.57474 
+   0.70718    0.69587    0.12518        -9.84865 
+   0.24123   -0.40389    0.88243        32.97273  }
+# Sc=   4.096 RMS=   2.473 len=  133 nfit=   56 seq_id= 14.29 sec_id= 66.67 q_len=  111 d_len=  108 n_sec=    4 n_equiv=   42 fit_pos= _   1 _ 
+/EMBL/data/pdb//1acx.brk 1acx_1 {  ALL  
+  -0.96433    0.26289    0.03081        50.46684 
+   0.19463    0.62540    0.75564        58.75533 
+   0.17938    0.73469   -0.65426        60.44715  }
+# Sc=   4.063 RMS=   2.463 len=  134 nfit=   49 seq_id= 14.29 sec_id= 82.86 q_len=  111 d_len=  129 n_sec=    5 n_equiv=   35 fit_pos= A  11 _ 
+/EMBL/data/pdb//2aza.brk 2azaa_3 {  CHAIN A  
+  -0.26563    0.96407    0.00081        35.11648 
+  -0.64195   -0.17625   -0.74621        69.66316 
+  -0.71926   -0.19874    0.66571        38.99171  }
+# Sc=   3.611 RMS=   2.418 len=  158 nfit=   43 seq_id= 11.43 sec_id= 74.29 q_len=  111 d_len=  151 n_sec=    8 n_equiv=   35 fit_pos= O   6 _ 
+/EMBL/data/pdb//2sod.brk 2sodo_2 {  CHAIN O  
+   0.76710    0.07840   -0.63672        58.74866 
+  -0.23721    0.95683   -0.16796        49.30343 
+   0.59606    0.27987    0.75258        58.69206  }
+# Sc=   3.788 RMS=   2.051 len=  125 nfit=   47 seq_id= 30.77 sec_id= 79.49 q_len=  111 d_len=   99 n_sec=    6 n_equiv=   39 fit_pos= _   1 _ 
+/EMBL/data/pdb//2pcy.brk 2pcy_1 {  ALL  
+  -0.50129   -0.72395   -0.47393        85.55343 
+   0.02119   -0.55783    0.82969        62.54025 
+  -0.86502    0.40587    0.29498        31.24544  }

@@ -1,0 +1,109 @@
+#!/usr/bin/perl
+
+# This reads in an alignment and cuts out
+#  regions specified by the user
+
+use lib '/russell/rg1/apps/pm/';
+use Palign;
+
+$format{"c"} = "Clustal";
+$format{"m"} = "MSF";
+$format{"b"} = "AMPS BLOCK";
+$format{"f"} = "FASTA";
+$format{"p"} = "PIR";
+$format{"s"} = "Pfam";
+$format{"h"} = "HMMalign";
+$format{"y"} = "Phylip";
+$format{"z"} = "SWISSPROT";
+
+$from = "x"; 
+$to = "c";
+$nogap = 0;
+$uc    = 0;
+$window   = 5;
+
+for($i=0; $i<=$#ARGV; ++$i) {
+   if($ARGV[$i] eq "-in") { # conversion specified
+ 	if(($i+1)>($#ARGV)) { exit_error(); }
+	$from = substr($ARGV[$i+1],0,1);
+	if($from !~ /[cmbfpsyh]/) { exit_error(); }
+	$i++;
+   } elsif($ARGV[$i] eq "-out") { # conversion specified
+ 	if(($i+1)>($#ARGV)) { exit_error(); }
+	$to   = substr($ARGV[$i+1],0,1);
+	if($to !~ /[cmbfpsy]/) { exit_error(); } 
+	$i++;
+   } elsif($ARGV[$i] eq "-window") { # window size
+ 	if(($i+1)>($#ARGV)) { exit_error(); }
+	$window  = $ARGV[$i+1];
+        $i++;
+   } elsif($ARGV[$i] eq "-nogap") { # no gaps
+	$nogap = 1;
+   } elsif($ARGV[$i] eq "-separate") { # no gaps
+	$separate = 1;
+   } else {
+	exit_error();
+   }
+}
+
+if(($nogap==1) && ($to !~ /[fp]/)) {
+	die "Error: can only do nogap in FASTA or PIR output (-out f or -out p)\n";
+}
+if(($separate==1) && ($to !~ /[f]/)) {
+	die "Error: can only do separate in FASTA output (-out f)\n";
+}
+#printf("Converting from %s to %s (stdin/stdout)\n",$format{$from},$format{$to});
+
+# Read data
+
+@data = read_align("-",$type);
+if($from eq "x") {
+    $from = $type;
+}
+if($from eq "x") {
+   die "Couldn't figure out alignment type: please specify with \"-in <type>\"\n";
+}
+
+if($from eq "m") { 
+	$align = get_msf(@data); 
+} elsif($from eq "c") {
+	 $align = get_clustal(@data); 
+} elsif($from eq "b") {
+	 $align = get_block(@data); 
+} elsif($from eq "f") {
+	 $align = get_afasta(@data); 
+} elsif($from eq "p") {
+	 $align = get_apir(@data); 
+} elsif($from eq "s") {
+	 $align = get_pfam(@data); 
+} elsif($from eq "h") {
+	 $align = get_hmmalign(@data); 
+} elsif($from eq "y") {
+	 $align = get_phylip(@data); 
+} elsif($from eq "z") {
+	 $align = get_swp(@data); 
+}
+
+for($j=0; $j<$align->{nseq}; ++$j) {
+  $id = $align->{list}[$j];
+  printf("%-30s ",$id);
+  for($i=0; $i<$align->{alen}; ++$i) {
+      $aa = substr($align->{ids}{$id}{seq},$i,1);
+      printf("%s",$aa);
+  }
+  printf("\n");
+}
+ 
+sub exit_error {
+  die" format: caroline.eg [-in <type> -out <type>] < file1 > file2
+        where <type> is one of:
+          m = MSF format
+          c = Clustal format
+          b = AMPS BLOCK format
+          f = FASTA format
+          p = PIR format
+	  s = PFAM (Sanger) format
+        defaults are in: any out: 'b' \n";
+}
+
+

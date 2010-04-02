@@ -1,0 +1,70 @@
+VER2HOR R.B. Russell, 1995
+ Prints STAMP alignments in horizontal format
+  for quick viewing
+ Reading Alignment...
+ Blocfile read: Length: 163
+ Getting STAMP information...
+ 6 STAMP fields read in for 163 positions 
+ Processing the alignment...
+ Output:
+ Very reliable => Pij' >=6 for stretches of >=3
+ Less reliable => Pij' >=4.5 for stretches of >=3
+ Post reliable => All Pij' > stamp_post parameter for stretches >=3
+
+Number               10        20        30        40        50    
+     1lh1            gaLTESQAALVKSSWEEfnanipKHTHRFFILVLEIAPAAKDLFSFLkg
+     2lhb    pivdtgsvapLSAAEKTKIRSAWAPvystyeTSGVDILVKFFTSTPAAQEFFPKFkg
+     1ecd              LSADQISTVQASFDKv    kGDPVGILYAVFKADPSIMAKFTQFag
+     4mbn             vLSEGEWQLVLHVWAKveadvaGHGQDILIRLFKSHPETLEKFDRFkh
+    2hhbb            vhLTPEEKSAVTALWGKvn  vdEVGGEALGRLLVVYPWTQRFFESFgd
+    2hhba             vLSPADKTNVKAAWGKvgahagEYGAEALERMFLSFPTTKTYFPHF  
+
+1lh1_dssp            ----HHHHHHHHHHHHHhhtthhHHHHHHHHHHHHH-GGGGGG-TTTtt
+2lhb_dssp    ---sss------HHHHHHHHHHHHHhhhthhHHHHHHHHHHHHH-GGGGGG-GGGtt
+1ecd_dssp              --HHHHHHHHHHHHTt    tT-HHHHHHHHHHH-HHHHTT-TTTtt
+4mbn_dssp             --HHHHHHHHHHHHHGg--hhhHHHHHHHHHHHHHHHHHGGGG----s
+2hhbb_dssp           ----HHHHHHHHHHHTT--  hhHHHHHHHHHHHHHSGGGGGG-GGG--
+2hhba_dssp            ---HHHHHHHHHHHHHhggghhHHHHHHHHHHHHH-GGGGGG-TTS  
+
+Very similar ----------1111111111111110----0111111111111111111111111--
+Less similar ----------1111111111111110----0111111111111111111111111--
+Post similar ----------1111111111111110----0111111111111111111111111--
+
+Number        60        70        80        90       100       110 
+     1lh1      tsevpqnNPELQAHAGKVFKLVYEAAiqlevtgvvvtdatLKNLGSV hvSKGVA
+     2lhb    lttadelkkSADVRWHAERIINAVDDAVasmd dtekms mkLRNLSGKhakSFQVD
+     1ecd    k dlesikgTAPFETHANRIVGFFSKIIgel    pnie adVNTFVAS hkPRGVT
+     4mbn    lkteaemkaSEDLKKHGVTVLTALGAILkkk    ghhe aeLKPLAQShatKHKIP
+    2hhbb    lstpdavmgNPKVKAHGKKVLGAFSDGLahl    dnlk gtFATLSELhcdKLHVD
+    2hhba        dlshgSAQVKGHGKKVADALTNAVahv    ddmp naLSALSDLhahKLRVD
+
+1lh1_dssp      -ss--ss-HHHHHHHHHHHHHHHHHHhhhhhhss----hhHHHHHHH hhHTT--
+2lhb_dssp    --shhhhht-HHHHHHHHHHHHHHHHHHhttt -hhhhh hhHHHHHHHhhhTS---
+1ecd_dssp    s -hhhhttSHHHHHHHHHHHHHHHHHHhtt    t--h hhHHHHHHH hgGGT--
+4mbn_dssp    sshhhhhhhHHHHHHHHHHHHHHHHHHHhgg    --hh hhHHHHHHHhhh----H
+2hhbb_dssp   -sshhhhhh-HHHHHHHHHHHHHHHHHHttg    gghh hhHHHHHHHhhhTT---
+2hhba_dssp       --stt-HHHHHHHHHHHHHHHHHHhtg    gghh hhTHHHHHHhhhTT---
+
+Very similar ----000001111111111111111111000----0000-001111111-0011111
+Less similar ----001111111111111111111111110----0111-001111111-0111111
+Post similar ----011111111111111111111111110----0111-111111111-0111111
+
+Number          120       130       140       150       160
+     1lh1    DAHFPVVKEAILKTIkevvgakwseelNSAWTIAYDELAIVIKKEmdda
+     2lhb    PEYFKVLAAVIADTVa         agDAGFEKLMSMICILLRSA    
+     1ecd    HDQLNNFRAGFVSYMkaht   dfagaEAAWGATLDTFFGMIFSK    
+     4mbn    IKYLEFISEAIIHVLhsrhpgdfgadaQGAMNKALELFRKDIAAKykel
+    2hhbb    PENFRLLGNVLVCVLahhfgkeftppvQAAYQKVVAGVANALAHK    
+    2hhba    PVNFKLLSHCLLVTLaahlpaeftpavHASLDKFLASVSTVLTSK    
+
+1lh1_dssp    GGGHHHHHHHHHHHHhhhhggg--hhhHHHHHHHHHHHHHHHHHHhhhh
+2lhb_dssp    GGGHHHHHHHHHHHHh         tt-HHHHHHHHHHHHHHHTT    
+1ecd_dssp    HHHHHHHHHHHHHHHhhhs   -ggggHHHHHHHHHHHHHHHHHH    
+4mbn_dssp    HHHHHHHHHHHHHHHhhhhh---hhhhHHHHHHHHHHHHHHHHHHhhhh
+2hhbb_dssp   THHHHHHHHHHHHHHhhhhgggs-hhhHHHHHHHHHHHHHHHHTT    
+2hhba_dssp   THHHHHHHHHHHHHHhhh-ttt--hhhHHHHHHHHHHHHHHHTTT    
+
+Very similar 1111111111111110---------00111111111111111111----
+Less similar 1111111111111110---------00111111111111111111----
+Post similar 1111111111111110---------00111111111111111111----
+
