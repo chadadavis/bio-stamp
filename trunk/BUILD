@@ -59,6 +59,7 @@ echo ""
 /bin/mv stamp_clean ../bin/$1
 /bin/mv transform ../bin/$1
 /bin/mv ver2hor ../bin/$1
+/bin/mv cofm ../bin/$1
 
 echo "Deleting object files"
 /bin/rm  *.o
