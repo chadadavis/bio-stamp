@@ -38,7 +38,7 @@
 
 /* as for clean_block, only this cleans up stamp information as well */
 
-int stamp_clean_block(struct seqdat *bloc, int nbloc, int window,
+int stamp_clean_block(struct seqdat *bloc, int nbloc, int window, float min_frac,
 	struct stampdat *stamp, int nstamp) {
 
 	int i,j,k,l;
@@ -50,6 +50,9 @@ int stamp_clean_block(struct seqdat *bloc, int nbloc, int window,
 	int nstart,nend;
 	int count;
 	int ngap;
+	int nungapped;
+
+        int min_n;
 	int nskip;
 	int *keep,*start,*end;
 	int *max,*min;
@@ -72,20 +75,28 @@ int stamp_clean_block(struct seqdat *bloc, int nbloc, int window,
 	   skip[i]=(strncmp(bloc[i+1].id,"space",5)==0);
 	   nskip+=(skip[i]);
 	}
+        min_n = (int)(min_frac * (nbloc-nskip)+0.5);
+        printf("Min N of sequence to be ungapped is %d\n",min_n);
 
 	/* first thing we need to to is to find the bits to keep intact 
 	 *  first we simply assign keep to '1' if the position is
 	 *  devoid of gaps */
 	for(i=0; i<bloclen; ++i) {
 	  keep[i]=1;
-	  for(j=0; j<nbloc; ++j) 
-	     if(!skip[j]) 
-		keep[i]*=(bloc[j+1].seq[i+1]!=' ');
+          nungapped=0;
+	  for(j=0; j<nbloc; ++j)  {
+	     if(!skip[j]) {
+                if(bloc[j+1].seq[i+1]!=' ') { nungapped++; }
+             }
+          }
+          if(nungapped<min_n) {
+		keep[i]=0;
+          }
 	}
 
 	/* now we must smooth the array keep out */
-/*        printf("before smoothing\n");
-        for(i=0; i<bloclen; ++i) printf("%1d",keep[i]); printf("\n");   */
+        printf("before smoothing\n");
+        for(i=0; i<bloclen; ++i) printf("%1d",keep[i]); printf("\n");   
 
         /* now smooth the array out according to the window */
         for(i=0; i<bloclen; ++i) {
@@ -102,8 +113,8 @@ int stamp_clean_block(struct seqdat *bloc, int nbloc, int window,
            keep[i]=(neighbors>=(window-1)); 
          }
         }
-/*        printf("after smoothing\n");  
-     	for(i=0; i<bloclen; ++i) printf("%1d",keep[i]); printf("\n");   */
+        printf("after smoothing\n");  
+     	for(i=0; i<bloclen; ++i) printf("%1d",keep[i]); printf("\n");   
 
 	/* ignore all STAMP values outside the smoothed region */
 	for(i=0; i<bloclen; ++i) if(!keep[i]) stamp[0].n[i]=-1.0;
