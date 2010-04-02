@@ -1,10 +1,39 @@
 # Rob's Perl alignment reading/modification/etc. routines
 #
 
+# Generally speaking, most routines deal with a reference
+#  That stores alignments:
+#
+# align->{file} - name of file that the data came from
+# align->{ids}  - hash containing data for each entry in the alignment
+#  e.g  align->{ids}{"MYG_HUMAN"}{seq}       - sequence data
+#  e.g  align->{ids}{"MYG_HUMAN"}{prebumpf}  - text data
+#  e.g  align->{ids}{"MYG_HUMAN"}{postbumpf} - text data
+#		(the above is mostly to do with MSF for gmat, pre/post
+#                refer to the bits before and after the accession in the
+#                descriptor lines; for other formats, post should be
+#                redundant, or they are the same)
+#  e.g. align->{ids}{"MYG_HUMAN"}{start}     - start field, if present
+#  e.g. align->{ids}{"MYG_HUMAN"}{end}       - end field, if present
+#  e.g. align->{ids}{"MYG_HUMAN"}{ranges}    - "start"-"end" string
+#
+# align->{list} - array of strings giving ids in the order they were read
+#                 in to the file.
+#
+# align->{nseq} - number of sequences in the alignment
+# align->{alen} - length of the alignment
+#
+# Important change:
+# Now "gaps" are always treated as spaces
+# So get/write_clustal  will change "-" to " "
+#    get/write_msf      will change "." to " "
+
 package Palign;
 require Exporter;
 @ISA = qw(Exporter);
-@EXPORT = qw(read_align get_msf write_msf get_clustal write_clustal get_block write_block get_afasta write_afasta get_apir write_apir get_pfam merge_align do_clustalw_align extract_align write_phylip);
+@EXPORT = qw(read_align get_msf write_msf get_clustal write_clustal get_block write_block get_afasta write_afasta 
+	    get_apir write_apir get_pfam get_hmmalign merge_align do_clustalw_align extract_align write_phylip
+	    read_exchange_matrix  get_print_string prettify);
 
 #use Search::Dict;
 
@@ -23,7 +52,8 @@ sub read_align { # Just read in text and modify format if necessary
                    "b" => 0, 
                    "f" => 0, 
                    "p" => 0,
-                   "s" => 0 );
+                   "s" => 0,
+		   "h" => 0 );
 
    my($file) = $_[0];
    my(@data);
@@ -40,8 +70,10 @@ sub read_align { # Just read in text and modify format if necessary
    for($i=0; $i<=$#data; ++$i) {
 	$_ = $data[$i];
 	if(($_ =~ /^ *Name:/) || ($_ =~ /pileUp/) || ($_ =~ /MSF.*Check.*\.\./)) { $votes{"m"}++; last; }
-	elsif($_ =~ /^CLUSTAL/) { $votes{"c"}++; last; }
-	elsif($_ =~ /^>P1;/) { $votes{"p"}++;  last; }
+	elsif($_ =~ /^CLUSTAL/) { $votes{"c"}+=10; last; }
+	elsif($_ =~ /^>P1;/) { $votes{"p"}+=10;  last; }
+   	elsif($_ =~ /HMMER/) { $votes{"h"}+=10; last; }
+   	elsif(($_ =~ /^#=SQ/) || ($_ =~ /^#=RF/)) { $votes{"h"}++; }
 	elsif($_ =~ /^>/) { $votes{"f"}++; $votes{"b"}++;  }
 	elsif($_ =~ /^ *\* iteration [0-9]*/) { $votes{"b"}++; $block_start++; }
 	elsif($_ =~ /^ *\*/) { $votes{"b"}++; $block_end++; }
@@ -81,7 +113,6 @@ sub get_msf {
    $align = {};
 
    $align->{file} = $file;
-   $align->{seq}  = ();
    $align->{ids}  = ();
    $align->{list} = ();
    $align->{nseq} = 0;
@@ -190,7 +221,9 @@ aconvert.msf MSF:  416  Type: P today Check: 100 ..
 			printf(OUT $ts,$align->{ids}{$id}{newid});
 			for($j=0; $j<60; ++$j) {
 				last if(($i+$j)>=$align->{alen});
-				print OUT substr($align->{ids}{$id}{seq},($i+$j),1);
+				$aa = substr($align->{ids}{$id}{seq},($i+$j),1);
+				if($aa eq " ") { print OUT "."; }
+				else { print OUT $aa; }
 				if((($i+$j+1)%10)==0) { print OUT " "; }
 			}
 			printf(OUT "\n");
@@ -208,7 +241,6 @@ sub get_clustal {
 
    $align = {};
 
-   $align->{seq}  = ();
    $align->{ids}  = ();
    $align->{nseq} = 0;
 
@@ -219,6 +251,7 @@ sub get_clustal {
       chop;
       if((!/^CLUSTAL/) && (/^[^ ]/) && (length($_)>1)) {
 	($label,$seq) = (split(/ +/));
+	$seq =~ s/-/ /g;
 	if(defined($align->{ids}{$label})) {
 		$align->{ids}{$label}{seq} .= $seq;
 	} else {
@@ -264,10 +297,13 @@ sub write_clustal {
 	 	for($k=0; $k<$align->{nseq}; ++$k) {
 	 		$id = $align->{list}[$k];
 			$ts = "%-".$align->{id_prs}."s  ";
+#			print "id is $id\n";
 			printf(OUT $ts,$align->{ids}{$id}{newid});
 			for($j=0; $j<60; ++$j) {
 				last if(($i+$j)>=$align->{alen});
-				print OUT substr($align->{ids}{$id}{seq},($i+$j),1);
+				$aa = substr($align->{ids}{$id}{seq},($i+$j),1);
+				if($aa eq " ") { print OUT "-"; }
+				else { print OUT $aa; }
 			}
 			printf(OUT "\n");
 		}
@@ -284,7 +320,6 @@ sub get_block {
 
    $align = {};
 
-   $align->{seq}  = ();
    $align->{ids}  = ();
    $align->{list} = ();
    $align->{nseq} = 0;
@@ -310,9 +345,9 @@ sub get_block {
   	  $name_count++;
       } elsif(($in_align==1) && (/[^ ]/)) {
 	last if(/\*/);
-	$_ =~ s/ /-/g;
+#	$_ =~ s/ /-/g;
         $seqdat = substr($_,$start_field);
-	$seqdat =~ s/ //g;
+#	$seqdat =~ s/ //g;
 	for($i=0; $i<$name_count; ++$i) {
 		$label = $align->{list}[$i];
 		$align->{ids}{$label}{seq} .= substr($seqdat,$i,1);
@@ -361,7 +396,7 @@ sub write_block {
 		if(defined($align->{ids}{$id}{prebumpf})) { print OUT  $align->{ids}{$id}{prebumpf}," "; }
 		if(defined($align->{ids}{$id}{postbumpf})) { print OUT  $align->{ids}{$id}{postbumpf}," "; }
 		print OUT  "\n";
-		$align->{ids}{$id}{seq} =~ s/[-\.]/ /g;
+#		$align->{ids}{$id}{seq} =~ s/[-\.]/ /g;
 	}
 	print OUT  "* iteration 1\n";
 	for($i=0; $i<$align->{alen}; ++$i) {
@@ -383,7 +418,6 @@ sub get_afasta {
 
    $align = {};
 
-   $align->{seq}  = ();
    $align->{ids}  = ();
    $align->{list} = ();
    $align->{nseq} = 0;
@@ -420,6 +454,9 @@ sub get_afasta {
 sub write_afasta {
 
 	my($align) = $_[0];
+	my($nogap);
+	if(defined($_[2])) { $nogap = $_[2]; }
+	else { $nogap = 0; }
 	my($i,$j,$k,$id);
 
 	my($outfile) = $_[1];
@@ -443,9 +480,13 @@ sub write_afasta {
 		if(defined($align->{ids}{$id}{prebumpf})) { print OUT $align->{ids}{$id}{prebumpf}," "; }
 		if(defined($align->{ids}{$id}{postbumpf})) { print OUT $align->{ids}{$id}{postbumpf}," "; }
 		print OUT "\n";
+		$k=0;
 		for($j=0; $j<length($align->{ids}{$id}{seq}); ++$j) {
-			print OUT substr($align->{ids}{$id}{seq},$j,1);
-			if((($j+1)%60)==0) { print OUT "\n"; }
+			if(($nogap==0) || (substr($align->{ids}{$id}{seq},$j,1) ne " ")) { 
+				print OUT substr($align->{ids}{$id}{seq},$j,1);
+				if((($k+1)%60)==0) { print OUT "\n"; }
+				$k++;
+			}
 		}
 		print OUT "\n";
 	}
@@ -459,7 +500,6 @@ sub get_apir {
 
    $align = {};
 
-   $align->{seq}  = ();
    $align->{ids}  = ();
    $align->{list} = ();
    $align->{nseq} = 0;
@@ -506,6 +546,11 @@ sub get_apir {
 sub write_apir {
 
 	my($align) = $_[0];
+
+	my($nogap);
+	if(defined($_[2])) { $nogap = $_[2]; }
+	else { $nogap = 0; }
+
 	my($i,$j,$k,$id);
 
 	my($outfile) = $_[1];
@@ -528,8 +573,11 @@ sub write_apir {
 		if(defined($align->{ids}{$id}{prebumpf})) { print OUT $align->{ids}{$id}{prebumpf}," "; }
 		print OUT "\n";
 		for($j=0; $j<length($align->{ids}{$id}{seq}); ++$j) {
-			print OUT substr($align->{ids}{$id}{seq},$j,1);
-			if((($j+1)%60)==0) { print OUT "\n"; }
+			if(($nogap==0) || (substr($align->{ids}{$id}{seq},$j,1) ne " ")) { 
+				print OUT substr($align->{ids}{$id}{seq},$j,1);
+				if((($k+1)%60)==0) { print OUT "\n"; }
+				$k++;
+			}
 		}
 		print OUT "*\n";
 	}
@@ -543,7 +591,6 @@ sub get_pfam {
 
    $align = {};
 
-   $align->{seq}  = ();
    $align->{ids}  = ();
    $align->{list} = ();
    $align->{nseq} = 0;
@@ -573,18 +620,58 @@ sub get_pfam {
    $align->{id_prs} = get_print_string($align);
    return $align;
 }
+sub get_hmmalign {
+
+# Currently this just ignores the "#" lines and the other junk at the start
+
+
+   my(@data) = @_;
+   my($align,$i,$j,$k,$n);
+
+   $align = {};
+
+   $align->{ids}  = ();
+   $align->{list} = ();
+   $align->{nseq} = 0;
+
+   $name_count = 0;
+   $nblock = 0;
+   for($n=0; $n<=$#data; ++$n) {
+      $_ = $data[$n];
+      @f = split(/[ \t]+/,$data[$n]);
+      chop;
+      if((!/^#/) && (!/HMM /) && (!/HMMER /) && (!/- - - -/) && (!/Sequence/) && (!/Copyright/) && (/^[^ ]/) && (length($_)>1) && (!/^[A-Z][A-Z]   /) && (!/\/\//)) {
+        ($label,$seq) = (split(/ +/));
+	$seq =~ s/\./\-/g;
+#	print "Calling $_ sequence data.  Length so far is ",$align->{alen},"\n";
+        if(defined($align->{ids}{$label})) {
+                $align->{ids}{$label}{seq} .= $seq;
+        } else {
+                $align->{list}[$name_count]=$label;
+                $align->{ids}{$label}{seq} = $seq;
+                $name_count++;
+        }
+      }
+   }
+   $align->{nseq} = $name_count;
+   $align->{alen} = length($align->{ids}{$align->{list}[0]}{seq});
+
+   $align->{id_prs} = get_print_string($align);
+   return $align;
+}
 
 sub merge_align { # arguments: align1 align2 (linker)
 
 	my($align1) = $_[0];
 	my($align2) = $_[1];
+
 	my($align3) = {};
 	my($linker);
 
 	my($debug) = 0;
 
 
-	if($debug==1) { print "Trying to link ",$align1->{nseq}," and ",$align2->{nseq},"\n"; }
+	if($debug==1) { print "Trying to link ",$align1->{nseq}," len=",$align1->{alen}," and ",$align2->{nseq}," len=",$align2->{alen},"\n"; }
 
 	if(defined($_[2])) { # identifier to link with has been specified
 		$linker = $_[2];
@@ -654,12 +741,12 @@ sub merge_align { # arguments: align1 align2 (linker)
 #	print $align1->{alen}," vs ",length($align1->{ids}{$align1->{list}[0]}{seq})," ";
 #	print $align2->{alen}," vs ",length($align2->{ids}{$align2->{list}[0]}{seq}),"\n";
 	if($debug==1) { print "Doing the merging...\n"; } 
-	while(($counter1<$align1->{alen}) && ($counter2<$align2->{alen})) {
+	while(($counter1<$align1->{alen}) || ($counter2<$align2->{alen})) {
 #		print "Current values: $counter1 / $align1->{alen} $counter2 / $align2->{alen} ";
 #		print substr($align1->{ids}{$linker}{seq},$counter1,1)," ",substr($align2->{ids}{$linker}{seq},$counter2,1),"\n";
 #		print "Here1\n";
-		while(substr($align1->{ids}{$linker}{seq},$counter1,1) eq "-") { # if blank, copy the rest and put blanks in the other alignment
-			last if(($counter1>=$align1->{alen}) || ($counter2>=$align2->{alen}));
+		while(substr($align1->{ids}{$linker}{seq},$counter1,1) eq " ") { # if blank, copy the rest and put blanks in the other alignment
+			last if(($counter1>=$align1->{alen}) && ($counter2>=$align2->{alen}));
 #			printf("1 %4d %4d %4d %4d - \n",$pointer1,$counter1,$pointer2,$counter2);
 			foreach $id1 (keys %{$align1->{ids}}) {
 				$align3->{ids}{$id1}{seq} .= substr($align1->{ids}{$id1}{seq},$counter1,1);
@@ -676,9 +763,9 @@ sub merge_align { # arguments: align1 align2 (linker)
 #			print "\n";
 		}
 #		print "Here2\n";
-		last if(($counter1>=$align1->{alen}) || ($counter2>=$align2->{alen}));
-		while(substr($align2->{ids}{$linker}{seq},$counter2,1) eq "-") { # if blank, copy the rest and put blanks in the other alignment
-			last if(($counter1>=$align1->{alen}) || ($counter2>=$align2->{alen}));
+		last if(($counter1>=$align1->{alen}) && ($counter2>=$align2->{alen}));
+		while(substr($align2->{ids}{$linker}{seq},$counter2,1) eq " ") { # if blank, copy the rest and put blanks in the other alignment
+			last if(($counter1>=$align1->{alen}) && ($counter2>=$align2->{alen}));
 #			printf("2 %4d %4d %4d %4d - \n",$pointer1,$counter1,$pointer2,$counter2);
 			foreach $id1 (keys %{$align1->{ids}}) {
 				$align3->{ids}{$id1}{seq} .= "-";
@@ -694,13 +781,13 @@ sub merge_align { # arguments: align1 align2 (linker)
 			$align3->{alen}++;
 #			print "\n";
 		}
-		last if(($counter1>=$align1->{alen}) || ($counter2>=$align2->{alen}));
+		last if(($counter1>=$align1->{alen}) && ($counter2>=$align2->{alen}));
 		if(uc(substr($align1->{ids}{$linker}{seq},$counter1,1)) ne uc(substr($align2->{ids}{$linker}{seq},$counter2,1))) {
 			die "Error: linking with sequence ",$linker," mismatch found at alignment positions $counter1 and $counter2: ",substr($align1->{ids}{$linker}{seq},$counter1,1)," versus ",substr($align2->{ids}{$linker}{seq},$counter2,1),"\nSeq1 = $align1->{ids}{$linker}{seq}\nSeq2 = $align2->{ids}{$linker}{seq}\n";
 		}
 		while((uc(substr($align1->{ids}{$linker}{seq},$counter1,1)) eq uc(substr($align2->{ids}{$linker}{seq},$counter2,1))) &&
-		      (substr($align1->{ids}{$linker}{seq},$counter1,1) ne "-")) {
-			last if(($counter1>=$align1->{alen}) || ($counter2>=$align2->{alen}));
+		      (substr($align1->{ids}{$linker}{seq},$counter1,1) ne " ")) {
+			last if(($counter1>=$align1->{alen}) && ($counter2>=$align2->{alen}));
 #			printf("3 %4d %4d %4d %4d - \n",$pointer1,$counter1,$pointer2,$counter2);
 			foreach $id1 (keys %{$align1->{ids}}) {
                                 $align3->{ids}{$id1}{seq} .= substr($align1->{ids}{$id1}{seq},$counter1,1);
@@ -720,6 +807,7 @@ sub merge_align { # arguments: align1 align2 (linker)
 	}
 	
 
+        $align3->{id_prs} = get_print_string($align3);
 	return $align3;
 }
 
@@ -767,7 +855,6 @@ sub extract_align {
 
 	$name_count = 0;
 
-	$align2->{seq}  = ();
 	$align2->{ids}  = ();
 	$align2->{list} = ();
 	$align2->{nseq} = 0;
@@ -793,6 +880,7 @@ sub extract_align {
 	}
 	$align2->{alen} = length($align->{ids}{$align->{list}[0]}{seq});
 
+   	$align2->{id_prs} = get_print_string($align2);
 	return $align2;
 }
 
@@ -846,4 +934,152 @@ sub get_print_string {
 		if($this_len > $max_len) { $max_len = $this_len; }
 	}
 	return $max_len;
+}
+
+sub read_exchange_matrix {
+
+##  Matrix made by matblas from blosum62.iij
+##  * column uses minimum score
+##  BLOSUM Clustered Scoring Matrix in 1/2 Bit Units
+##  Blocks Database = /data/blocks_5.0/blocks.dat
+##  Cluster Percentage: >= 62
+##  Entropy =   0.6979, Expected =  -0.5209
+#   A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V  B  Z  X  *
+#A  4 -1 -2 -2  0 -1 -1  0 -2 -1 -1 -1 -1 -2 -1  1  0 -3 -2  0 -2 -1  0 -4 
+#R -1  5  0 -2 -3  1  0 -2  0 -3 -2  2 -1 -3 -2 -1 -1 -3 -2 -3 -1  0 -1 -4 
+
+	my($i,$j,$n);
+	my($f) = $_[0];
+	my($mat) = {};
+	
+	open(M,$f) || die "Error opening file $f\n";
+#	print "Reading file from $f\n";
+	$n = 0;
+	while(<M>) {
+		chop;
+		if(!/^\#/) {
+		   if($n==0) {
+			$_ =~ s/ //g;
+			$mat->{aa}  = $_;
+			$mat->{naa} = length($_);
+		   } else {
+			$x = substr($_,0,1);
+			for($i=0; $i<$mat->{naa}; ++$i) {
+				$y = substr($mat->{aa},$i,1);
+				$mat->{"m"}{$x}{$y} = substr($_,1+3*$i,3);
+#				printf("%3s -> %3s = %4d \n",$x,$y,$mat->{"m"}{$x}{$y});
+			}
+		  }
+		  $n++;
+	        }
+	}
+	return $mat;
+}
+
+sub prettify {
+
+
+	my($hydrophobic)= "ACFILMVWY";
+	my($polar)      = "DEGHKNPQRSTY";
+	my($small)      = "ACGSTP";
+	my($ss_string)  = "HGEBSTICXhgebsticx-";
+	my($helix_def)  = "HG";
+	my($strand_def) = "E";
+	
+	my($align) = $_[0];
+	my($outfile) = $_[1];
+	my($set) = $_[2];
+	my($min_frac) = $_[3];
+
+        open(OUT,">>$outfile") || die "Error opening output file $outfile\n";
+
+	# Crude:
+	# Cysteines, Conserved small (ATGPS), Conserved polar (RKDEQNSTYH), Conserved hydrophobic (ILMVFWY)
+
+	$nseqs=0;
+
+	$start = -1;
+	$end = -1;
+#	print "Sequences to use are $set\n";
+	for($i=0; $i<$align->{nseq}; ++$i) {
+		$id=$align->{list}[$i];
+		if($set =~ /$id/) {
+			$use{$id} = 1;
+#			print "Using $id\n";
+			if(($id!~ /_dssp/) && ($id !~ /Sec_/) && ($id !~ /^space/)) { 
+				if($start==-1) { $start = $i; }
+				$end = $i;
+				$nseqs++;
+			}
+		} else {
+			$use{$id} = 0;
+		}
+	}
+	$min_aa = $min_frac * $nseqs;
+	for($i=0; $i<$align->{alen}; ++$i) {
+		$n_cysteine     = 0;
+		$n_hydrophobic  = 0;
+		$n_polar        = 0;
+		$n_small        = 0;
+		for($j=0; $j<$align->{nseq}; ++$j) {
+			$id = $align->{list}[$j];
+			$aa = substr($align->{ids}{$id}{seq},$i,1);
+			if(($aa =~ /[A-Za-z]/) && ($use{$id}==1) && 
+				($id !~ /_dssp/) && ($id !~ /Sec_/)) {
+				if($aa eq "C") { $n_cysteine++; }
+				if($small =~ /$aa/) { $n_small++; }
+				if($hydrophobic =~ /$aa/) { $n_hydrophobic++; }
+				if($polar =~ /$aa/) { $n_polar++; }
+			}
+		}	
+#		print "Pos ",$i," cys: ",$n_cysteine," small: ",$n_small," hydrophobic: ",$n_hydrophobic," polar ",$n_polar," min: ",$min_aa,"\n";
+		if($n_cysteine>=$min_aa) { 
+			print OUT "COLOUR_REGION   ",$i+1," ",$start+1," ",$i+1," ",$end+1," 6 \n"; 
+#			print OUT "INVERSE_CHARS C ",$i+1," ",$start+1," ",$i+1," ",$end+1,"\n"; 
+		} elsif($n_small>=$min_aa) {
+			print OUT "COLOUR_REGION ",$i+1," ",$start+1," ",$i+1," ",$end+1," 11 \n";
+		} elsif($n_hydrophobic>=$min_aa) { 
+			print OUT "COLOUR_REGION ",$i+1," ",$start+1," ",$i+1," ",$end+1," 10 \n"; 
+		} elsif($n_polar>=$min_aa) { 
+			print OUT "CCOL_CHARS ",$polar," " ,$i+1," ",$start+1," ",$i+1," ",$end+1," 6 \n"; 
+		}
+	}
+	# Do secondary structures
+	for($i=0; $i<$align->{nseq}; ++$i) {
+		$id = $align->{list}[$i];
+#		print "Considering $id\n";
+		if(($use{$id}==1) && (($id =~ /Sec_/) || ($id =~ /_dssp/))) { # This is a secondary structure
+			print "$id is a secondary structure\n";
+			for($j=0; $j<length($ss_string); ++$j) {
+				print OUT "SUB_CHARS 1 ",$i+1," ",$align->{alen}," ",$i+1," ",substr($ss_string,$j,1)," SPACE\n";
+			}
+			print OUT "# Sec strucs for $id\n";
+			for($j=0; $j<$align->{alen}; ++$j) {
+		 		$ss = substr($align->{ids}{$id}{seq},$j,1);
+				$ss =~ s/\?/ /;
+#				print "SS is $ss\n";
+				
+				if($helix_def =~ /$ss/) { # Helix
+					$start = $j+1;
+					while((($helix_def =~ /$ss/) || ($ss eq " ")) && ($j<$align->{alen})) {
+						if($ss ne " ") { $end = $j; }
+						$ss = substr($align->{ids}{$id}{seq},$j,1); $ss =~ s/\?/ /;
+						$j++;
+					}
+					print OUT "HELIX ",$start," ",$i+1," ",$end,"\n";
+					print OUT "COLOUR_TEXT_REGION ",$start," ",$i+1," ",$end," ",$i+1," 8 \n";
+				}
+				if($strand_def =~ /$ss/) { # Strand
+					$start = $j+1;
+					while((($strand_def =~ /$ss/) || ($ss eq " ")) && ($j<$align->{alen})) {
+						if($ss ne " ") { $end = $j; }
+						$ss = substr($align->{ids}{$id}{seq},$j,1); $ss =~ s/\?/ /;
+						$j++;
+					}
+					print OUT "STRAND ",$start," ",$i+1," ",$end,"\n";
+					print OUT "COLOUR_TEXT_REGION ",$start," ",$i+1," ",$end," ",$i+1," 7\n";
+				}
+			  }
+		}
+	}
 }
