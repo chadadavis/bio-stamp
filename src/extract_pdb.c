@@ -64,8 +64,7 @@ int extract_pdb(FILE *IN, struct brookn start, struct brookn end, int type,
 
 	ended=0; begin=0;
 	while(fgets(buff,99,IN)!=NULL) {
-/*	   if(strncmp(buff,"ENDMDL",6)==0) { ended=1; } */
-	   if(strncmp(buff,"ENDMDL",6)==0) { break; }
+	   if(strncmp(buff,"ENDMDL",6)==0) ended=1;
 	   buff[strlen(buff)-2]='\0';
 	   if(strncmp(buff,"ATOM  ",6)==0 || strncmp(buff,"HETATM",6)==0) {
 	      /* get chain, number and insertion code */

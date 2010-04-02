@@ -293,6 +293,10 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
         struct brookn start, struct brookn end, int type, int MAXats,
         int REVERSE, int PRECISION, FILE *OUTPUT);
 
+int igetp_nt(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
+        struct brookn start, struct brookn end, int type, int MAXats,
+        int REVERSE, int PRECISION, FILE *OUTPUT);
+
 int igetcadssp(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
         struct brookn start, struct brookn end, int type, int MAXats, 
         int REVERSE, int PRECISION, FILE *OUTPUT);
