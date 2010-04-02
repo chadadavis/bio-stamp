@@ -7,8 +7,8 @@
 CC = gcc
 #
 # compiler options
-CFLAGS = -g -I.
-#CFLAGS = -O2 -I.
+#CFLAGS = -g -I.
+CFLAGS = -O2 -I.
 #
 #
 # Object files needed for each main program
