@@ -177,6 +177,10 @@ int getpars(FILE *fp, struct parameters *var) {
 		var[0].CO=T_FLAG;
 	else if(strcmp(parm,"SECSCREENMAX")==0)
 		sscanf(dim,"%f",&var[0].SECSCREENMAX);
+	else if(strcmp(parm,"PAIROUTPUT_TO_LOG")==0)
+		var[0].pairoutput_to_log=T_FLAG;
+	else if(strcmp(parm,"UD_SECTION")==0)
+		sscanf(dim,"%d",&var[0].ud_section);
 	else if(strcmp(parm,"SCANTRUNC")==0)
 		var[0].SCANTRUNC=T_FLAG;
 	else if(strcmp(parm,"SCANTRUNCFACTOR")==0)

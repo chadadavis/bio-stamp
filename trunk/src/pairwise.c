@@ -45,6 +45,7 @@ int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 	int start2,end2;
 	int a1,b1,c1,a2,b2,c2;
  	int nsec,nequiv;
+        int lower,upper;
 
 	int **hbcmat;
 
@@ -86,7 +87,13 @@ int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 /* 	           "Pair   1      4mbn    2hhba 7.71 100.00    153   141        133   7  132"  */  
 
 	}
-	for(i=0; i<ndomain; ++i) 
+        lower = 0;
+        upper = ndomain;
+        if(parms[0].ud_section==1) {
+           lower = parms[0].ud_start-1;
+           upper = parms[0].ud_end;
+        }
+	for(i=lower; i<upper; ++i) 
 	    for(j=i+1; j<ndomain; ++j) {
 /*	      fprintf(parms[0].LOG,"before fitting:\n"); disp(domain[j],parms[0].LOG); */
 	      fprintf(parms[0].LOG,"\n\nComparison  %d, %s and %s\n",k+1,domain[i].id,domain[j].id);

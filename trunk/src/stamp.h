@@ -146,6 +146,10 @@ struct parameters {
 	char stampdir[100];		/* $STAMPDIR environment variable */
 	FILE *LOG;			/* The opened version of the above (passed everywhere) */
 	int verbose;
+        int pairoutput_to_log;
+        int ud_section;
+        int ud_start;
+        int ud_end;
 	};
 #if !defined(CLUST_STRUCT)
 struct indclust {

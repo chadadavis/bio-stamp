@@ -62,10 +62,14 @@ int makefile(struct domain_loc *domain, int ndomain, struct cluster cl,
 	if(!PAIRWISE) sprintf(tmp,"%s.%d",parms[0].transprefix,nclust+1);
 	else sprintf(tmp,"%s.pairs.%d",parms[0].transprefix,nclust+1);
 	fprintf(parms[0].LOG,"File is: %s\n",tmp);
-	if((OUT=fopen(tmp,"w"))==NULL) {
-	   fprintf(stderr,"error: opening file %s\n",tmp);
-	   return -1;
-	} 
+        if(parms[0].pairoutput_to_log==0) {
+    	   if((OUT=fopen(tmp,"w"))==NULL) {
+	      fprintf(stderr,"error: opening file %s\n",tmp);
+	      return -1;
+   	   } 
+        } else {
+          OUT=parms[0].LOG;
+        }
 
 	asec=(int*)malloc(cl.a.number*sizeof(int));
 	bsec=(int*)malloc(cl.b.number*sizeof(int));
@@ -193,7 +197,9 @@ int makefile(struct domain_loc *domain, int ndomain, struct cluster cl,
 
 	free(asec); free(bsec); free(tmp);
 
-	fclose(OUT);
+        if(parms[0].pairoutput_to_log==0) {
+	   fclose(OUT);
+        }
 
 	return 0;
 }
