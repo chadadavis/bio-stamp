@@ -238,6 +238,7 @@ main(int argc, char *argv[]) {
 		if((OUT=fopen(outfilename,"r"))!=NULL) {
 		   fprintf(stderr,"Error: file %s already exists - delete first\n",outfilename);
 		} 
+		fclose(OUT);
 		if((OUT=fopen(outfilename,"w"))==NULL) {
 		   fprintf(stderr,"Error opening file %s\n",outfilename);
 		   exit(-1);
