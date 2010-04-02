@@ -9,17 +9,18 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current contact addresses:
+ Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -33,12 +34,12 @@
 *****************************************************************************/
 #include <stdio.h>
 
-#include <stamp.h>
-#include <stamprel.h>
+#include "stamp.h"
+#include "stamprel.h"
 
 /* as for clean_block, only this cleans up stamp information as well */
 
-int stamp_clean_block(struct seqdat *bloc, int nbloc, int window, float min_frac,
+int stamp_clean_block(struct seqdat *bloc, int nbloc, int window,
 	struct stampdat *stamp, int nstamp) {
 
 	int i,j,k,l;
@@ -50,9 +51,6 @@ int stamp_clean_block(struct seqdat *bloc, int nbloc, int window, float min_frac
 	int nstart,nend;
 	int count;
 	int ngap;
-	int nungapped;
-
-        int min_n;
 	int nskip;
 	int *keep,*start,*end;
 	int *max,*min;
@@ -75,28 +73,20 @@ int stamp_clean_block(struct seqdat *bloc, int nbloc, int window, float min_frac
 	   skip[i]=(strncmp(bloc[i+1].id,"space",5)==0);
 	   nskip+=(skip[i]);
 	}
-        min_n = (int)(min_frac * (nbloc-nskip)+0.5);
-        printf("Min N of sequence to be ungapped is %d\n",min_n);
 
 	/* first thing we need to to is to find the bits to keep intact 
 	 *  first we simply assign keep to '1' if the position is
 	 *  devoid of gaps */
 	for(i=0; i<bloclen; ++i) {
 	  keep[i]=1;
-          nungapped=0;
-	  for(j=0; j<nbloc; ++j)  {
-	     if(!skip[j]) {
-                if(bloc[j+1].seq[i+1]!=' ') { nungapped++; }
-             }
-          }
-          if(nungapped<min_n) {
-		keep[i]=0;
-          }
+	  for(j=0; j<nbloc; ++j) 
+	     if(!skip[j]) 
+		keep[i]*=(bloc[j+1].seq[i+1]!=' ');
 	}
 
 	/* now we must smooth the array keep out */
-        printf("before smoothing\n");
-        for(i=0; i<bloclen; ++i) printf("%1d",keep[i]); printf("\n");   
+/*        printf("before smoothing\n");
+        for(i=0; i<bloclen; ++i) printf("%1d",keep[i]); printf("\n");   */
 
         /* now smooth the array out according to the window */
         for(i=0; i<bloclen; ++i) {
@@ -113,8 +103,8 @@ int stamp_clean_block(struct seqdat *bloc, int nbloc, int window, float min_frac
            keep[i]=(neighbors>=(window-1)); 
          }
         }
-        printf("after smoothing\n");  
-     	for(i=0; i<bloclen; ++i) printf("%1d",keep[i]); printf("\n");   
+/*        printf("after smoothing\n");  
+     	for(i=0; i<bloclen; ++i) printf("%1d",keep[i]); printf("\n");   */
 
 	/* ignore all STAMP values outside the smoothed region */
 	for(i=0; i<bloclen; ++i) if(!keep[i]) stamp[0].n[i]=-1.0;

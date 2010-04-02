@@ -9,17 +9,18 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current contact addresses:
+ Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -36,8 +37,8 @@
 #include <math.h>
 #include <time.h>
 
-#include <stamp.h>
-#include <stamprel.h>
+#include "stamp.h"
+#include "stamprel.h"
 
 #define MAX_SEQ_LEN 10000
 #define PRECISION 1000
@@ -62,6 +63,7 @@ main(int argc, char *argv[]) {
 	int npolar, nhydrophobic, naromatic, nsmall, ntiny;
         int npositive, nnegative, ncharged, naliphatic, nbranch;
 	int ignore;
+        int nt;
 
 
 	int *pointer;
@@ -86,6 +88,7 @@ main(int argc, char *argv[]) {
 
 
 	char stampchar;
+        char nt_c;
 
 	char *env;
 	char *buff;
@@ -124,6 +127,7 @@ main(int argc, char *argv[]) {
 	ident=0;
 	cons=0;
 	ignore=0;
+        nt=0;
 
 	for(i=1; i<argc; ++i) {
 	   if(argv[i][0]!='-') exit_error();
@@ -139,6 +143,8 @@ main(int argc, char *argv[]) {
 	     if((i+1)>=argc) exit_error();
 	     sscanf(argv[i+1],"%f",&stampthresh);
 	     i++;
+           } else if(strcmp(&argv[i][1],"nt")==0) {
+             nt=1; 
 	   } else if(strcmp(&argv[i][1],"w")==0) {
 	     if((i+1)>=argc) exit_error();
              sscanf(argv[i+1],"%d",&stampwindow);		
@@ -299,13 +305,22 @@ main(int argc, char *argv[]) {
 	   total=0;
 	   printf("    "); 
 	   for(j=0; j<domain[i].nobj; ++j) {
-	       if(igetca(PDB,&domain[i].coords[total],&domain[i].aa[total],&domain[i].numb[total],
-		  &add,domain[i].start[j],domain[i].end[j],
-		  domain[i].type[j],(MAX_SEQ_LEN-total),domain[i].reverse[j],PRECISION,stdout)==-1) {
+               if(nt==1) {
+                  if(igetp_nt(PDB,&domain[i].coords[total],&domain[i].aa[total],&domain[i].numb[total],
+                       &add,domain[i].start[j],domain[i].end[j],
+                       domain[i].type[j],(MAX_SEQ_LEN-total),domain[i].reverse[j],PRECISION,stdout)==-1) {
+                     fprintf(stderr,"Error in domain %s object %d \n",domain[i].id,j+1);
+                     exit(-1);
+                  }
+               } else {                        
+                  if(igetca(PDB,&domain[i].coords[total],&domain[i].aa[total],&domain[i].numb[total],
+		      &add,domain[i].start[j],domain[i].end[j],
+                      domain[i].type[j],(MAX_SEQ_LEN-total),domain[i].reverse[j],PRECISION,stdout)==-1) {
 		    fprintf(stderr,"Error in domain %s object %d \n",domain[i].id,j+1);
 		    exit(-1);
-	       }
-	       if(polyA) {
+	          }
+               }
+	       if((polyA==1) && (nt==0)) {
 		  closefile(PDB,domain[i].filename);
 	          PDB=openfile(domain[i].filename,"r");
 		  if(igetgen(PDB,&n[i][total],&aa[total],&numb[total],&test,domain[i].start[j],domain[i].end[j],domain[i].type[j],N,(MAX_SEQ_LEN-total),domain[i].reverse[j],PRECISION,stdout)==-1) exit(-1);
@@ -339,7 +354,7 @@ main(int argc, char *argv[]) {
                         exit(-1);
                   }
 	       }
-	       if(sidechain) {  
+	       if((sidechain==1) && (nt==0)) {  
 		  /* read all side chains into this sort of array of structures */
 		  if(igetside(PDB,side[i],&aa[total],&numb[total],&test,domain[i].start[j],domain[i].end[j],
                     domain[i].type[j],(MAX_SEQ_LEN-total),domain[i].reverse[j],PRECISION,stdout)==-1) exit(-1);
@@ -353,20 +368,20 @@ main(int argc, char *argv[]) {
 			 domain[i].start[j].cid,domain[i].start[j].n,domain[i].start[j].in,
 			 domain[i].end[j].cid,domain[i].end[j].n,domain[i].end[j].in); break;
 		} 
-		if(polyA) printf("   %4d main chain/C-betas\n",add);
+		if((polyA==1) && (nt==0)) printf("   %4d main chain/C-betas\n",add);
 		else printf("   %4d C-alphas\n",add); 
 	        total+=add;
 		closefile(PDB,domain[i].filename);
 	        PDB=openfile(domain[i].filename,"r");
 	    }
 	    domain[i].ncoords=total;
-	    if(polyA) printf("  A total of %4d sets of main chain/C-beta atoms\n",domain[i].ncoords);
+	    if((polyA==1) && (nt==0)) printf("  A total of %4d sets of main chain/C-beta atoms\n",domain[i].ncoords);
 	    else printf("  A total of %4d C-alphas\n",domain[i].ncoords);
 	    /* disp(domain[i],stdout); */
 	    printf(" Applying transformation... \n");
 /*	    printmat(domain[i].R,domain[i].V,3,stdout);
 	    printf("      ...to these coordinates.\n");  */
-/*	    if(polyA) {
+/*	    if((polyA==1) && (nt==0)) {
                for(j=0; j<5; ++j) {
                   printf("Res %3d %c N : %8d %8d %8d\n",j+1,domain[i].aa[j],n[i][j][0],n[i][j][1],n[i][j][2]);
                   printf("Res %3d %c CA: %8d %8d %8d\n",j+1,domain[i].aa[j],domain[i].coords[j][0],domain[i].coords[j][1],domain[i].coords[j][2]);
@@ -446,7 +461,7 @@ main(int argc, char *argv[]) {
 		 else { AApt = 23; } 
 	    }
 	    for(j=0; j<3; ++j) average[j]=0.0;
-	    if(polyA) {
+	    if((polyA==1) && (nt==0)) {
 		/* N atoms */
 		for(j=0; j<3; ++j) average[j]=0.0;
 		for(j=0; j<ndomain; ++j) {
@@ -464,8 +479,15 @@ main(int argc, char *argv[]) {
 		for(k=0; k<3; ++k) average[k]+=((float)domain[j].coords[pointer[j]][k]/(float)ndomain)/(float)PRECISION;
 	    }
 	    /* Output the average coordiates */ 
-	    fprintf(OUT,"ATOM  %5d  CA  %3s Z%4d    %8.3f%8.3f%8.3f  0.00 ",
-		ncoords+1,AA3[AApt],nres+1,average[0],average[1],average[2]);
+            if(nt==1) {
+               if(identical==1) { nt_c= bloc[1].seq[i+1]; }
+               else { nt_c = 'N'; }
+               fprintf(OUT,"ATOM  %5d  P    %c  Z%4d    %8.3f%8.3f%8.3f  0.00 ", 
+                  ncoords+1,nt_c,nres+1,average[0],average[1],average[2]);
+            } else {
+                fprintf(OUT,"ATOM  %5d  CA  %3s Z%4d    %8.3f%8.3f%8.3f  0.00 ",
+                  ncoords+1,AA3[AApt],nres+1,average[0],average[1],average[2]);
+            }
 	    if(realrel[i]==1) fprintf(OUT," 1.00   0 ");
             else fprintf(OUT,"99.00   0 ");
 

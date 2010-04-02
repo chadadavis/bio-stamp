@@ -65,8 +65,9 @@ int getstampdat(struct stampdat *stamp, FILE *IN, int *nstamp, int *nseq, int *n
 
 int *getstamprel(struct stampdat *stamp, int nval, int npos, char type, float cutoff, int window);
 
+/* SMJS Removed PRECISION */
 float rossmann(int **atoms1, int **atoms2, int start, int end,
-        float const1, float const2, float *Dij, float *Cij, int PRECISION);
+        float const1, float const2, float *Dij, float *Cij);
 
 
 int count_domain(FILE *IN);
@@ -80,5 +81,5 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
         struct brookn start, struct brookn end, int type, int MAXats,
         int REVERSE, int PRECISION, FILE *OUTPUT);
 
-void closefile(FILE *handle,char *filename);
+int closefile(FILE *handle,char *filename);
 FILE *openfile(char *filename, char *type);

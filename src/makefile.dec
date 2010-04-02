@@ -7,8 +7,8 @@
 CC = cc
 #
 # compiler options
-CFLAGS =  -O2 -I.
-#CFLAGS = -fullwarn -g -I.
+#CFLAGS = -w0 -O2 -I.
+CFLAGS = -w0 -O4 -I.
 #
 #
 # Object files needed for each main program
@@ -71,9 +71,9 @@ all: $(PROGS)
 # Man programs in the package
 #
 stamp: $(STAMPOBJS) 
-	 $(CC) $(CFLAGS) $(STAMPOBJS)  -o stamp -lm  
+	 $(CC) $(CFLAGS) $(STAMPOBJS)  -o stamp -lm -lc 
 alignfit: $(ALIGNFITOBJS) 
-	$(CC) $(CFLAGS) $(ALIGNFITOBJS)  -o alignfit -lm 
+	$(CC) $(CFLAGS) $(ALIGNFITOBJS)  -o alignfit -lm -lc
 transform: $(TRANSFORMOBJS)
 	$(CC) $(CFLAGS) $(TRANSFORMOBJS) -o transform
 pdbc: $(PDBCOBJS)
@@ -83,7 +83,7 @@ pdbseq: $(PDBSEQOBJS)
 dstamp: $(DSTAMPOBJS)
 	$(CC) $(CFLAGS) $(DSTAMPOBJS) -o dstamp
 sorttrans: $(SORTTRANSOBJS)
-	$(CC) $(CFLAGS) $(SORTTRANSOBJS) -o sorttrans -lm 
+	$(CC) $(CFLAGS) $(SORTTRANSOBJS) -o sorttrans -lm -lc
 poststamp: $(POSTSTAMPOBJS)
 	$(CC) $(CFLAGS) $(POSTSTAMPOBJS) -o poststamp -lm
 pickframe: $(PICKFRAMEOBJS)

@@ -5,10 +5,12 @@
 # 
 # C compiler
 CC = gcc
+#CC = icc
 #
 # compiler options
 #CFLAGS = -g -I.
 CFLAGS = -O2 -I.
+#CFLAGS = -O3 -tpp6 -axMK -unroll -I.
 #
 #
 # Object files needed for each main program

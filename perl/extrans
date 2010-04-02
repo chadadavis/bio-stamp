@@ -1,19 +1,25 @@
-#!/usr/local/bin/perl -w
+#!/usr/bin/perl -w
 
 for($i=0; $i<=$#ARGV; ++$i) {
 	printf("%%Looking for string %s\n",$ARGV[$i]);
 	push(@list,$ARGV[$i]);
 }
 
-$output = 1;
+$output = -1;
 while(<stdin>) {
-	if(/^[%#]/) { 
-		$output = 1; 
-	} elsif(/{/) {
-		$output = 0;
-		for($i=0; $i<=$#list; ++$i) {
-			if($_ =~ /$list[$i]/) { $output = 1; }
-		}
-	}
-	if($output ==1) { print $_; }
+  if((!/^[%#]/) && (/\{/)) { #\}
+   for($i=0; $i<=$#list; ++$i) {
+     if(/$list[$i]/) { 
+       print "%% FOUND ID $list[$i]\n";
+       $output = 0; 
+     }
+   }
+  }
+#  print "Here output is $output\n";
+  if(($output>=0) && ($output<4)) { print; } 
+  #\{
+  if(/\}/) { 
+    $output = -1 
+  }
+  if($output>=0) { $output++; }
 }

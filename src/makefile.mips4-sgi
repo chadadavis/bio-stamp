@@ -8,8 +8,7 @@ CC = cc
 #
 # compiler options
 #CFLAGS = -g -I.
-#CFLAGS = -n32 -mips4 -O3 -I.
-CFLAGS = -O3 -I.
+CFLAGS = -n32 -mips4 -O3 -I.
 #
 #
 # Object files needed for each main program

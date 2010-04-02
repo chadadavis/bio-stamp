@@ -9,17 +9,18 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current contact addresses:
+ Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -34,8 +35,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <stamp.h>
-#include <stamprel.h>
+#include "stamp.h"
+#include "stamprel.h"
 
 /* cleans up a bloc file.
  * Given an existing blocfile and a minimum length of continuous non-spaces,
@@ -122,10 +123,8 @@ int clean_block(struct seqdat *bloc, int nbloc, int window) {
 	start[nstart+1]=bloclen;
 	end[nend++]=bloclen;
 /*	printf("nstart: %d, nend: %d\n",nstart,nend);
-	for(i=0; i<nstart; ++i) {
-           printf("i=%d, start[i]=%d, end[i]=%d\n",i,start[i],end[i]);  
-        }
-*/
+	for(i=0; i<nstart; ++i) 
+           printf("i=%d, start[i]=%d, end[i]=%d\n",i,start[i],end[i]);  */
 	/* now find the maximum and minimum length of each gap */
 	for(i=1; i<nstart; ++i) {
 	   max[i]=0; min[i]=(start[i]-end[i-1]-1);
@@ -136,7 +135,7 @@ int clean_block(struct seqdat *bloc, int nbloc, int window) {
 	      if(l<min[i]) min[i]=l;
 	      if(l>max[i]) max[i]=l;
 	   }
-/*	   printf("i=%d, end[i-1]=%d, start[i]=%d, min[i]=%d, max[i]=%d\n",i,end[i-1],start[i],min[i],max[i]);  */
+/*	   printf("i=%d, end[i-1]=%d, start[i]=%d, min[i]=%d, max[i]=%d\n",i,end[i-1],start[i],min[i],max[i]); */
 	}
 
 	/* now go through each gap for each sequence  and compress it to fit into the maximum in
@@ -205,15 +204,13 @@ int clean_block(struct seqdat *bloc, int nbloc, int window) {
 	}
 	for(j=0; j<nbloc; ++j) bloc[j+1].seq[bloclen+1]='\0';
 	/* output the results */
-/*
-	printf("after cleaning \n"); 
+/*	printf("after cleaning \n"); 
 	for(i=0; i<bloclen; ++i) {
 	  printf("%3d: ",i);
 	  for(j=0; j<nbloc; ++j) printf("%c",bloc[j+1].seq[i+1]);
 	  printf("  %1d\n",keep[i]);
 	}
 */
-
 	free(keep); free(start); free(end); free(min); free(max); free(temp); free(skip);
 	return 0;
 }

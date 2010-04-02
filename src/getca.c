@@ -9,17 +9,18 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current contact addresses:
+ Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -31,15 +32,12 @@
   Structure Comparison: Assignment of Global and Residue Confidence Levels",
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
-
 #include <stdio.h>
-#include <stamp.h>
+#include "stamp.h"
 
 /* This is igetca converted back to getca - there were some changes not introduced
  *  into wonky old getca that is only used in alignfit
- * Coordinates are multiplied by 1000 and converted to integers 
- *
- * 25/10/2001 - change to permit DNA/RNA structures */
+ * Coordinates are multiplied by 1000 and converted to integers */
 
 int getca(FILE *IN, float **coords, char *aa, struct brookn *numb, int *ncoord,
 	struct brookn start, struct brookn end, int type, int MAXats,
@@ -74,24 +72,21 @@ int getca(FILE *IN, float **coords, char *aa, struct brookn *numb, int *ncoord,
 /*	printf("SEQONLY is %d\n",seq_only); */
 
 	while((buff=fgets(buff,99,IN))!=NULL) {
-	 if((strncmp(buff,"ENDMDL",6)==0 || strncmp(buff,"END   ",6)==0) && begin==1) {
+	   if((strncmp(buff,"ENDMDL",6)==0 || strncmp(buff,"END   ",6)==0) && begin==1) {
                 break;
-         }
-         if((strncmp(buff,"ATOM  ",6)==0) || (strncmp(buff,"HETATM",6)==0)) {
-          /* look at non-CA to see if we are in/out of range */
-          /* get chain, number and insertion code */
-          cid=ltou(buff[21]);
-          sscanf(&buff[22],"%d",&number);
-          in=buff[26];
-          alt=buff[16]; /* alternate position indicator */
-          if(!begin &&
-            ((start.cid==cid && start.n==number && start.in==in) ||
-             (start.cid==cid && type==2) ||
-             (type==1) )) {
-             begin=1;
-          }
-          if(begin && type==2 && start.cid!=cid) break;
-          if(strncmp(&buff[12]," CA ",4)==0) {
+           }
+	   if(strncmp(buff,"ATOM  ",6)==0 && strncmp(&buff[12]," CA ",4)==0) {
+	      /* get chain, number and insertion code */
+	      cid=buff[21];
+	      sscanf(&buff[22],"%d",&number);
+	      in=buff[26];
+	      alt=buff[16]; /* alternate position indicator */
+	      if(!begin && 
+		 ((start.cid==cid && start.n==number && start.in==in) ||
+		  (start.cid==cid && type==2) ||
+		  (type==1) )) begin=1;
+	      if(begin && type==2 && start.cid!=cid) break;
+/* SMJS Changed to be like Robs version */
 	      if(begin && (alt==' ' || alt=='A' || alt=='1' || alt=='L' || alt=='O') && 
 		  !(cid==last_cid && number==last_number && in==last_in)) { 
 		 /* only reads in the first position if more than one are given */
@@ -116,7 +111,7 @@ int getca(FILE *IN, float **coords, char *aa, struct brookn *numb, int *ncoord,
 		(*ncoord)++;
 
 		if((*ncoord)>MAXats) {
-		    fprintf(stderr,"error: number of coordinates read surpasses memory limit %d\n",MAXats);
+		    fprintf(stderr,"error: number of coordinates read surpasses memory limit\n");
 		    return -1;
 		 }
 		 aa[(*ncoord)]=' ';
@@ -125,10 +120,7 @@ int getca(FILE *IN, float **coords, char *aa, struct brookn *numb, int *ncoord,
 	      if(begin && end.cid==cid && end.n==number && end.in==in && type==3) 
 		 break;
 	      /* this residing after the last "if" makes the set of atoms inclusive */
-	  } 
-          /* in case of missing CA in the last residue */
-          if(begin && cid==end.cid && number>end.n && type==3) break;
-	 } 
+	   } 
 	} 
 	aa[(*ncoord)]='\0';
 	free(add_buff);

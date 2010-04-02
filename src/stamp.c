@@ -9,17 +9,18 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current contact addresses:
+ Of current addresses:
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+ Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
+ EMBL Heidelberg                            School of Life Sciences
+ Meyerhofstrasse 1                          University of Dundee
+ D-69117 Heidelberg                         Dow Street
+ Germany                                    Dundee, DD1 5EH
+                                          
+ Tel: +49 6221 387 473                      Tel: +44 1382 345860
+ FAX: +44 6221 387 517                      FAX: +44 1382 345764
+ E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
+ WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -32,9 +33,8 @@
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
 
-#include <stamp.h>
+#include "stamp.h"
 #include <math.h>
-
 
 #define lastmod "25 March 1999"
 
@@ -61,6 +61,15 @@ main(int argc, char *argv[]) {
 	struct parameters *parms;
 	struct domain_loc *domain;
 
+/* SMJS Added stream setup code */
+/*
+   if (!SetDefaultStreams(0))
+   {
+      printf("Failed to set default streams in main()\n");
+      return 0;
+   }
+*/
+
 	if(argc<2) exit_error();
 
 	/* get environment variable */
@@ -68,7 +77,8 @@ main(int argc, char *argv[]) {
 	  fprintf(stderr,"error: environment variable STAMPDIR must be set\n");
 	  exit(-1);
 	}
-	parms=(struct parameters*)malloc(sizeof(struct parameters));
+/* SMJS Changed malloc to calloc to zero struct */
+	parms=(struct parameters*)calloc(1,sizeof(struct parameters));
 
 	strcpy(parms[0].stampdir,env);
 	
@@ -93,7 +103,6 @@ main(int argc, char *argv[]) {
 	   strcpy(keyword,&argv[i][1]);
 	   if(i+1<argc) strcpy(value,argv[i+1]);
 	   else strcpy(value,"none");
-           printf("Keyword %s value %s\n",keyword,value);
 	   for(j=0; j<strlen(keyword); ++j) 
 	      keyword[j]=ltou(keyword[j]); /* change to upper case */
 	   T_FLAG=(value[0]=='Y' || value[0]=='y' || value[0]=='1' || 
@@ -158,12 +167,6 @@ main(int argc, char *argv[]) {
 		sscanf(value,"%f",&parms[0].first_E1); i++;
 	   } else if(strcmp(keyword,"FIRST_E2")==0) {
 		sscanf(value,"%f",&parms[0].first_E2); i++;
-	   } else if(strcmp(keyword,"PAIROUTPUT_TO_LOG")==0) {
-	        parms[0].pairoutput_to_log=T_FLAG; i++;
-	   } else if(strcmp(keyword,"UD_SECTION")==0) {
-		sscanf(argv[i+1],"%d",&parms[0].ud_start); i++;
-		sscanf(argv[i+1],"%d",&parms[0].ud_end); i++;
-		parms[0].ud_section=1;
  	   } else if(strcmp(keyword,"NPASS")==0) {
 		sscanf(value,"%d",&parms[0].NPASS); i++;
 		if(parms[0].NPASS!=1 && parms[0].NPASS!=2) {
@@ -344,10 +347,6 @@ main(int argc, char *argv[]) {
 	     if(i+1>=argc) exit_error();
 	     sscanf(argv[i+1],"%f",&parms[0].SCANCUT);
 	     i++;
-	   } else if(strcmp(&argv[i][1],"fitcut")==0) {
-	     if(i+1>=argc) exit_error();
-	     sscanf(argv[i+1],"%d",&parms[0].FITCUT);
-	     i++;
 	   } else if(strcmp(&argv[i][1],"opd")==0) {
 	      parms[0].opd=1;
 	   } else  {
@@ -432,7 +431,6 @@ main(int argc, char *argv[]) {
 	   if(parms[0].opd==1) fprintf(parms[0].LOG,"   Domains will be skipped after the first match is found\n");
 	   if(parms[0].SCANMODE==1) {
 	     fprintf(parms[0].LOG,"     Transformations for Sc values greater than %f are to be output\n",parms[0].SCANCUT);
-	     fprintf(parms[0].LOG,"     Transformations for nfit values greater than %d are to be output\n",parms[0].FITCUT);
 	     fprintf(parms[0].LOG,"     to the file %s\n",parms[0].transprefix);
 	   } else {
 	     fprintf(parms[0].LOG,"     Only the scores are to be output to the file %s\n",parms[0].scanfile);
@@ -627,7 +625,9 @@ main(int argc, char *argv[]) {
 	     printf("Fits  = no. of fits performed, Sc = STAMP score, RMS = RMS deviation\n");
 	     printf("Align = alignment length, Nfit = residues fitted, Eq. = equivalent residues\n");
 	     printf("Secs  = no. equiv. secondary structures, %%I = seq. identity, %%S = sec. str. identity\n");
+/* SMJS Added NC stuff for now */
 	     printf("P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694\n");
+	     printf("        (NC = P value not calculated - potential FP overflow)\n");
 	     printf("\n");
 	     printf("     Domain1         Domain2          Fits  Sc      RMS   Len1 Len2 Align Fit   Eq. Secs    %%I    %%S     P(m)\n");
 	   }
@@ -664,7 +664,6 @@ main(int argc, char *argv[]) {
 	   free(domain[i].start);
 	   free(domain[i].end);
 	   free(domain[i].reverse);
-	   free(domain[i].numb);
 	}
 	free(domain);
 
