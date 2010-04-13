@@ -65,10 +65,12 @@ CLEANOBJS = align_clean.o stamp_clean_block.o clean_block.o count_domain.o getdo
 #
 COFMOBJS = utol.o testfile.o a3to1.o ltou.o getfile.o R.o matmult.o printmat.o \
            igetca.o openfile.o closefile.o count_domain.o getdomain.o cofm.o
+IRMSDOBJS = iRMSD.o
 
 PROGS = stamp alignfit transform pdbc pdbseq dstamp sorttrans \
             poststamp pickframe avestruc gstamp \
-	    stamp_clean ver2hor mergetrans mergestamp extrans cofm
+	    stamp_clean ver2hor mergetrans mergestamp extrans cofm \
+            iRMSD
 all: $(PROGS)
 #
 # Man programs in the package
@@ -107,6 +109,8 @@ ver2hor: $(VER2HOROBJS)
 	$(CC) $(CFLAGS) $(VER2HOROBJS) -o ver2hor -lm
 cofm: $(COFMOBJS)
 	$(CC) $(CFLAGS) $(COFMOBJS) -o cofm -lm
+iRMSD: $(IRMSDOBJS)
+	$(CC) $(CFLAGS) $(IRMSDOBJS) -o iRMSD -lm
 #
 # Object files
 #
