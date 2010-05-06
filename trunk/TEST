@@ -7,7 +7,7 @@ passed=0
 
 
 cd t
-for file in `ls *.t`
+for file in `ls *.t | sort -n`
 do
     test=${file%\.t}
     source $file
