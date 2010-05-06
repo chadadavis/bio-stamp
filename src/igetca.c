@@ -116,10 +116,13 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 		 aa[(*ncoord)]=' ';
 	      } 
               last_cid = cid; last_in = in; last_number = number;
+
+	      if(begin && end.cid==cid && end.n==number && end.in==in && type==3) 
+		  break;
+	      /* this residing after the last "if" makes the set of atoms inclusive */
             }
-	    if(begin && end.cid==cid && end.n==number && end.in==in && type==3) 
-	     break;
-	    /* this residing after the last "if" makes the set of atoms inclusive */
+            /* in case of missing CA in the last residue */
+	    if(begin && cid==end.cid && number>end.n && type==3) break;  
 	   } 
 	} 
 	aa[(*ncoord)]='\0';

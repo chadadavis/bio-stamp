@@ -1,0 +1,26 @@
+#!/bin/bash
+
+tmp=/tmp/stamp_
+cwd=`pwd`
+total=0
+passed=0
+
+
+cd t
+for file in `ls *.t`
+do
+    test=${file%\.t}
+    source $file
+    if [ $? = 0 ]
+    then
+	echo "test $test - ok";
+	let passed++
+    else
+	echo "test $test - failed.";
+    fi
+    let total++
+done
+
+echo "passed $passed/$total."
+
+cd $cwd
