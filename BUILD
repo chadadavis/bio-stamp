@@ -64,9 +64,4 @@ echo ""
 echo "Deleting object files"
 /bin/rm  *.o
 
-echo "Trying to put PERL programs in the right place "
-which perl | awk '{ printf("\#\!%s\n",$1); }' >  ../bin/$1/aconvert
-tail +2 ../perl/aconvert >> ../bin/$1/aconvert
-chmod ugo+x ../bin/$1/aconvert
-
 echo "All should be complete."
