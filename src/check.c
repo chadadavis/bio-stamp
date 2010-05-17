@@ -381,7 +381,10 @@ main(int argc, char *argv[]) {
 	if(NMR) resolution=-1;
 	else resolution=-2;	
      }
-    
+
+    /* davis: trying to flush before whatever is causing the next crash */   
+    fflush(stdout);
+ 
     /* get the refinement details */
     closefile(pdb,pdbfile); 
     pdb=openfile(pdbfile,"r");
