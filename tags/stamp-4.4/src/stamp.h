@@ -130,20 +130,20 @@ struct parameters {
 	int SCANSCORE;			/* See doc/stamp.doc */
 	int ALLPAIRS;			/* All pairs of comparisons to be performed */
 	int opd;			/* On per domain (for faster scanning, jumps ahead after the first similarity is found */
-	char listfile[100];		/* List of domains to be used */
-	char roughoutfile[100];
-	char secfile[100];		/* used when SEC==3 to supply secondary structure assignments */
-	char ordfile[100];		/* Tree order file */
-	char treefile[100];		/* Tree file */
-	char plotfile[100];		/* Tree plot file */
-	char transprefix[100];		/* Transformation file prefix */
-	char matfile[100];		/* Matrix file */
-	char scanfile[100];		/* Scan file */
-	char database[100];		/* Data base for scanning */
-	char logfile[100];		/* Stream output file  -- replaces standard output */
-	char dsspfile[100];		/* file containing a list of DSSP directories */
-	char roughalign[100];		/* ROUGHFIT aligment file */
-	char stampdir[100];		/* $STAMPDIR environment variable */
+	char listfile[4096];		/* List of domains to be used */
+	char roughoutfile[4096];
+	char secfile[4096];		/* used when SEC==3 to supply secondary structure assignments */
+	char ordfile[4096];		/* Tree order file */
+	char treefile[4096];		/* Tree file */
+	char plotfile[4096];		/* Tree plot file */
+	char transprefix[4096];		/* Transformation file prefix */
+	char matfile[4096];		/* Matrix file */
+	char scanfile[4096];		/* Scan file */
+	char database[4096];		/* Data base for scanning */
+	char logfile[4096];		/* Stream output file  -- replaces standard output */
+	char dsspfile[4096];		/* file containing a list of DSSP directories */
+	char roughalign[4096];		/* ROUGHFIT aligment file */
+	char stampdir[4096];		/* $STAMPDIR environment variable */
 	FILE *LOG;			/* The opened version of the above (passed everywhere) */
 	int verbose;
         int pairoutput_to_log;

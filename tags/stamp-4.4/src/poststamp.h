@@ -10,7 +10,7 @@ struct brookn { /* structure to represent brookhaven residue numbers */
 };
 
 struct domain_loc{		/* This structure allows rather complex domains to be described */
-   char filename[100];
+   char filename[4096];
    char id[100];
    int nobj;			/* The number of objects considered within the named file */
    int *type;			/* The type that each object is:
