@@ -103,18 +103,20 @@ main(int argc, char *argv[]) {
 		    fprintf(stderr,"Error in domain %s object %d \n",domain[i].id,j+1);
                     exit(-1);
 	       }
-               if(verbose==1) {
-  	          switch(domain[i].type[j]) {
-	 	     case 1: fprintf(stdout," all residues"); break;
-		     case 2: fprintf(stdout," chain %c",domain[i].start[j].cid); break;
-		     case 3: fprintf(stdout," from %c %4d %c to %c %4d %c",
-			 domain[i].start[j].cid,domain[i].start[j].n,domain[i].start[j].in,
-			 domain[i].end[j].cid,domain[i].end[j].n,domain[i].end[j].in); break;
-	   	   }
-		   fprintf(stdout,"%4d CAs ",add);
-                }
-	        total+=add;
-		closefile(PDB,domain[i].filename); PDB=openfile(domain[i].filename,"r");
+           if(verbose==1) {
+        	   if (domain[i].start[j].in == ' ') { domain[i].start[j].in = '_'; }
+        	   if (domain[i].end[j].in == ' ')   { domain[i].end[j].in   = '_'; }
+        	   switch(domain[i].type[j]) {
+        	   case 1: fprintf(stdout," all residues"); break;
+        	   case 2: fprintf(stdout," chain %c",domain[i].start[j].cid); break;
+        	   case 3: fprintf(stdout," from %c %4d %c to %c %4d %c",
+        			   domain[i].start[j].cid,domain[i].start[j].n,domain[i].start[j].in,
+        			   domain[i].end[j].cid,domain[i].end[j].n,domain[i].end[j].in); break;
+	   	     }
+		     fprintf(stdout,"%4d CAs ",add);
+           }
+	       total+=add;
+		   closefile(PDB,domain[i].filename); PDB=openfile(domain[i].filename,"r");
 	    }
 	    domain[i].ncoords=total;
             if(verbose==1) {
