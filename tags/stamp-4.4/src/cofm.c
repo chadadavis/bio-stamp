@@ -10,7 +10,8 @@ int exit_error() {
         fprintf(stderr,"format: cofm -f <dom file> [-v -file]\n");
         exit(-1);
 } 
-main(int argc, char *argv[]) {
+
+int main(int argc, char *argv[]) {
 
 	int i,j;
 	int ndomain;
@@ -212,4 +213,5 @@ main(int argc, char *argv[]) {
 	   free(domain[i].numb);
 	}
 	free(domain);
+    return 0;
 }
