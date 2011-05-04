@@ -9,18 +9,17 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current addresses:
+ Of current contact addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Bioinformatics                      EMBL-European Bioinformatics Institute
+ SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
+ New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
+ Harlow, Essex, CM19 5AW, U.K.       
+ Tel: +44 1279 622 884               Tel: +44 1223 494 414
+ FAX: +44 1279 622 200               FAX: +44 1223 494 468
+ e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
+                                     WWW: http://barton.ebi.ac.uk/
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -34,7 +33,7 @@
 *****************************************************************************/
 #include <stdlib.h>
 #include <stdio.h>
-#include "stamp.h"
+#include <stamp.h>
 
 int getpars(FILE *fp, struct parameters *var) {
 
@@ -52,6 +51,7 @@ int getpars(FILE *fp, struct parameters *var) {
     parm = (char*)malloc(200*sizeof(char));
     dim  = (char*)malloc(200*sizeof(char));
 
+    var[0].FITCUT=30;
     while(fscanf(fp,"%s%s",parm,dim) != (int)EOF) {
 	for(i=0; i<strlen(parm); ++i) parm[i]=ltou(parm[i]); /* change to upper case */
 	T_FLAG=(dim[0]=='Y' || dim[0]=='y' || dim[0]=='1' || dim[0]=='T' || dim[0]=='t' || dim[0]=='o' || dim[0]=='O');
@@ -169,12 +169,18 @@ int getpars(FILE *fp, struct parameters *var) {
 		if(var[0].SCANMODE==1) var[0].PAIRALIGN=1; 
 	} else if(strcmp(parm,"SCANCUT")==0) 
 		sscanf(dim,"%f",&var[0].SCANCUT);
+	else if(strcmp(parm,"FITCUT")==0) 
+		sscanf(dim,"%d",&var[0].FITCUT);
 	else if(strcmp(parm,"SECSCREEN")==0)
 		var[0].SECSCREEN=T_FLAG;
 	else if(strcmp(parm,"CO")==0)
 		var[0].CO=T_FLAG;
 	else if(strcmp(parm,"SECSCREENMAX")==0)
 		sscanf(dim,"%f",&var[0].SECSCREENMAX);
+	else if(strcmp(parm,"PAIROUTPUT_TO_LOG")==0)
+		var[0].pairoutput_to_log=T_FLAG;
+	else if(strcmp(parm,"UD_SECTION")==0)
+		sscanf(dim,"%d",&var[0].ud_section);
 	else if(strcmp(parm,"SCANTRUNC")==0)
 		var[0].SCANTRUNC=T_FLAG;
 	else if(strcmp(parm,"SCANTRUNCFACTOR")==0)
@@ -245,7 +251,11 @@ int getpars(FILE *fp, struct parameters *var) {
        fprintf(stderr,"error: cannot specify SCAN and either PAIRWISE or TREEWISE\n");
        return -1;
     }
-    if(var[0].SCAN) var[0].SCANALIGN=var[0].PAIRALIGN=(var[0].SCANMODE==1);
+    
+    if((var[0].SCAN) && (var[0].SCANMODE==1)) { 
+		var[0].SCANALIGN=1;
+		var[0].PAIRALIGN=1;
+    }
     if(var[0].SW==1 && var[0].STATS && (var[0].SCAN || var[0].PAIRWISE) ) {
       fprintf(stderr,"error: corner cutting cannot be used in conjunction with STATS ==1\n");
       return -1;

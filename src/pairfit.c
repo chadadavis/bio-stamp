@@ -183,7 +183,8 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 
      /* output the alignment if required */
      if((parms[0].PAIRWISE && parms[0].PAIROUTPUT && count>=0) ||
-        (ALIGN && ((*rms)>0.0) && (!parms[0].SCAN || (parms[0].SCANMODE==1 && (*score)>parms[0].SCANCUT)))) {
+        (ALIGN && ((*rms)>0.0) && (!parms[0].SCAN || (parms[0].SCANMODE==1 && (*score)>=parms[0].SCANCUT && (*nfit)>=parms[0].FITCUT)) ) ) {
+        
 	/* calculate puse */
 	temp_len=strlen(domain1[0].align);
 	sec_len1=strlen(domain1[0].sec);
@@ -234,6 +235,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
      }
      /* calculate pairwise sequence and secondary structure identity */
      seqcount=seccount=align_len=c1=c2=0; n_sec_equiv=0; in_sec1=in_sec2=0;
+     (*nequiv) = 0;
      n_pos_equiv=0;
      nsec1=nsec2=0; last_matched1=last_matched2=-1;
      slen=strlen(domain1[0].align);
@@ -373,7 +375,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	for(i=0; i<temp_len-1; ++i) {
 	   if( (domain1[0].align[i]!=' ' && domain1[0].align[i+1]!=' ' && 
 		domain2[0].align[i]!=' ' && domain2[0].align[i+1]!=' ')  && /* not a gap */
-	       (fpuse[i]>=parms[0].SCANCUT && fpuse[i+1]>=parms[0].SCANCUT) && /* equivalent */
+	       (fpuse[i]>=parms[0].second_CUTOFF && fpuse[i+1]>=parms[0].second_CUTOFF) && /* equivalent */
 		c1>=(*start1) && c2>=(*start2) ) { /* further along than we were already */
 		  (*start1)=c1; (*start2)=c2;
 		  break;
@@ -387,7 +389,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	 for(i=(temp_len-1); i>0; --i) {
 	   if( (domain1[0].align[i]!=' ' && domain1[0].align[i-1]!=' ' &&
                 domain2[0].align[i]!=' ' && domain2[0].align[i-1]!=' ')  && /* not a gap */
-               (fpuse[i]>=parms[0].SCANCUT && fpuse[i-1]>=parms[0].SCANCUT) && /* equivalent */
+               (fpuse[i]>=parms[0].isecond_CUTOFF && fpuse[i-1]>=parms[0].second_CUTOFF) && /* equivalent */
                 c1<=(*end1) && c2<=(*end2) ) { /* further along than we were already */
                   (*end1)=c1; (*end2)=c2;
                   break;

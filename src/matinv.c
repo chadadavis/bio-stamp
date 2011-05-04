@@ -49,7 +49,7 @@ float *vector(int nl, int nh);
 void free_vector(float *v, int nl, int nh);
 
 
-void matinv(float **a, float **y, float d, int *indx) {
+void matinv(float **a, float **y, float *d, int *indx) {
 
 int i,j,N;
 float *col;
@@ -59,7 +59,7 @@ float *col;
 col=(float*)malloc(10*sizeof(float));
 N=3;
 
-if(ludcmp(a,N,indx,&d)==-1) { /* matrix is singular, so just copy a to y (ie. I^-1 = I) */
+if(ludcmp(a,N,indx,d)==-1) { /* matrix is singular, so just copy a to y (ie. I^-1 = I) */
    for(j=1; j<=N; j++) { 
       for(i=1; i<=N; i++) {
 		y[i][j]=a[i][j];

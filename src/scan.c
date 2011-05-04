@@ -9,18 +9,17 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current addresses:
+ Of current contact addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Bioinformatics                      EMBL-European Bioinformatics Institute
+ SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
+ New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
+ Harlow, Essex, CM19 5AW, U.K.       
+ Tel: +44 1279 622 884               Tel: +44 1223 494 414
+ FAX: +44 1279 622 200               FAX: +44 1223 494 468
+ e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
+                                     WWW: http://barton.ebi.ac.uk/
 
  The WORK is Copyright (1997,1998, 1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -31,10 +30,9 @@
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
 #include <stdio.h>
-#include <time.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 /* Scan's a database of domain descriptors using the following protocol:
  *  
@@ -74,8 +72,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    int **atoms1,**atoms2;
    int **hbcmat,**best_hbcmat;
 
-/* SMJS Initialised score to be like pairwise */
-   float score=0.0,rms,irms;
+   float score,rms,irms;
    float best_score,best_rms;
    float best_seqid,best_secid;
    float t_sec_diff,ratio;
@@ -141,6 +138,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    fprintf(TRANS,"%% Approximate fits (alignment from N-termini) were performed\n");
    fprintf(TRANS,"%%   at every %d residue of the database sequences \n",parms[0].SCANSLIDE);
    fprintf(TRANS,"%% Transformations were output for Sc= %6.3f\n",parms[0].SCANCUT);
+   fprintf(TRANS,"%%  and Nfit >= %4d\n",parms[0].FITCUT);
    fprintf(TRANS,"%% \n");
    fprintf(TRANS,"%% Domain used to scan \n");
    fprintf(TRANS,"# Sc= 10.000 RMS=  0.01  Len= 999 nfit= 999 Seqid= 100.00 Secid= 100.00 q_len= %4d d_len= %4d n_sec= 100 n_equiv 999 fit_pos= _  0 _ \n",
@@ -161,7 +159,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    dcount=0;
    while(end!=1 && dcount<ndomain) {
       best_score=0.0; best_rms=100.0; best_len=0; best_nfit=0; seqid=0.0; secid=0.0; 
-      best_secid=0.0; best_seqid=0.0; best_nsec=0;
+      best_secid=0.0; best_seqid=0.0; best_nsec=0; best_nequiv=0;
       secskip=0;
       error=0; error2=0;
       end=domdefine(&ddomain,&i,parms[0].stampdir,parms[0].DSSP,IN,parms[0].LOG);
@@ -412,7 +410,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
 	    best_nequiv=nequiv;
 	    for(j=0; j<3; ++j) for(k=0; k<3; ++k) best_hbcmat[j][k]=hbcmat[j][k];
 	 }
-	 if(score>=parms[0].SCANCUT) { 
+	 if((score>=parms[0].SCANCUT) && (nfit>=parms[0].FITCUT) ) {
 	    /* outputing the transformation if required */
 	    fprintf(TRANS,"# Sc= %7.3f RMS= %7.3f len= %4d nfit= %4d ", 
                 score,rms,length,nfit);
@@ -464,7 +462,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
 	 } else {
 		fprintf(parms[0].LOG,"No transformation output.\n");
 	 }
-	 if(score>parms[0].SCANCUT && parms[0].SKIPAHEAD) { /* skip over the similar region to avoid repetition */
+	 if(score>=parms[0].SCANCUT && nfit>=parms[0].FITCUT && parms[0].SKIPAHEAD) { /* skip over the similar region to avoid repetition */
 	    if((dend-parms[0].SCANSLIDE)>qcount) {
 	       qcount=dend-parms[0].SCANSLIDE;
 	       fprintf(parms[0].LOG,"skipping over this region...\n");
@@ -495,15 +493,10 @@ int scan(struct domain_loc domain, struct parameters *parms) {
          fprintf(parms[0].LOG,"\n");
        } else {
         printf("Scan %-15s %-15s %4d ",domain.id,ddomain.id,ntrans);
-/* SMJS Added Pm condition */
-        if (Pm > -0.99)
-        {
-           printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f %7.2e",
-                  best_score,best_rms,domain.ncoords,ddomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid,Pm);
-        } else { 
-           printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f   NC   ",
-                  best_score,best_rms,domain.ncoords,ddomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid);
-        }
+        printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f ",
+               best_score,best_rms,domain.ncoords,ddomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid);
+	if(Pm<1e-4) { printf("%7.2e",Pm); }
+	else { printf("%7.5f",Pm); }
         printf("\n");
 	fflush(stdout);
       } 
@@ -534,8 +527,6 @@ int scan(struct domain_loc domain, struct parameters *parms) {
         ddomain.aa=ddomainall.aa;
         ddomain.numb=ddomainall.numb;
       }
-      k=clock();
-      parms[0].CPUtime+=(float)k/(60000000);
       dcount++;
       fflush(TRANS);
    } 

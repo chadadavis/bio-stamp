@@ -82,7 +82,7 @@ int revmatmult(float **r, float *v, int **coord, int n, int PRECISION) {
 	  }
 	}
 
-	matinv(R,RI,pos,indx);
+	matinv(R,RI,&pos,indx);
 
 
       for(k=0; k<n; ++k) {

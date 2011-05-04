@@ -258,7 +258,7 @@ main(int argc, char *argv[]) {
 	     R[i+1][j+1]=domain[which].R[i][j];
 	    }
 	  }
-	  matinv(R,RI,sign,indx);
+	  matinv(R,RI,&sign,indx);
 	  for(i=0; i<3; ++i) { 
 	   for(j=0; j<3; ++j) {
 	      invmat[i][j]=RI[i+1][j+1];
@@ -290,7 +290,7 @@ main(int argc, char *argv[]) {
                R[i+1][j+1]=domain2[which2].R[i][j];
             }
           }
-          matinv(R,RI,sign,indx);
+          matinv(R,RI,&sign,indx);
           for(i=0; i<3; ++i) {
              for(j=0; j<3; ++j) {
                 invmat[i][j]=RI[i+1][j+1];
