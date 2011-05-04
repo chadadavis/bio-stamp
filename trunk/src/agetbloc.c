@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "alignfit.h"
+#include <alignfit.h>
 
 /*
 11th June 1992.
@@ -31,10 +31,10 @@ int Agetbloc(FILE *bfile, struct seqdat *bloc, int *nbloc) {
     char *idstart, *idend, *bstart, sident = 0;
     int idlen,totseq = 0,k,j;
 	
-    buff = malloc(sizeof(char) * MAXtlen);
+    buff = malloc(sizeof(char) * (MAXtlen+MAXnbloc));
 
 l1: 
-    buff = fgets(buff,MAXtlen,bfile);
+    buff = fgets(buff,MAXnbloc,bfile);
     if(buff == NULL){
 	printf("Premature end of BLOCK FILE\n");
 	return -1;
@@ -75,7 +75,7 @@ l1:
     } else if(sident){
 	if((idstart = strchr(buff,'*')) != NULL){
 	    i = 0;
-	    while((buff = fgets(buff,MAXtlen,bfile)) != NULL){
+	    while((buff = fgets(buff,MAXnbloc,bfile)) != NULL){
 		if(*idstart == '*'){
 /*		    printf("Blocfile read: Length: %d\n",i); */
 		    ++i;

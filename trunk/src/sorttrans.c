@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 #define min_R_diff 1.50
 #define min_V_diff 60.0
@@ -34,7 +34,7 @@ void comparei_rms_hsort(int n,struct info_struc* info);
 
 
 
-int exit_error();
+void exit_error();
 
 main(int argc, char *argv[]) {
 
@@ -333,7 +333,7 @@ int transcompare(float **R1, float *V1, float **R2, float *V2, int dim )
 
 	return (Rdiff<=min_R_diff && Vdiff<min_V_diff);
 }
-int exit_error()
+void exit_error()
 {
 	  fprintf(stderr,"format: sorttrans -f <filename> [-s <sort method> <value> -i -n] \n");
 	  fprintf(stderr,"  sort (-s) keywords: \n");

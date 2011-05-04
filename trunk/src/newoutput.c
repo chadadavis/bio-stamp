@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stamp.h"
+#include <stamp.h>
 
 int newoutput(FILE *TRANS, struct domain_loc *domain, int ndomain, int writetrans) {
 

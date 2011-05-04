@@ -7,6 +7,5 @@ int printmat(float **R, float *V, int n, FILE *OUTPUT) {
    	   for(j=0; j<n; ++j) fprintf(OUTPUT,"%10.5f ",R[i][j]);
 	   fprintf(OUTPUT,"         %10.5f \n",V[i]);
 	}
-/* SMJS Added return */
-        return 0;
+	return 0;
 }

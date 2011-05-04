@@ -1,4 +1,4 @@
-#include "stamp.h"
+#include <stamp.h>
 
 int comp();
 
@@ -10,7 +10,6 @@ array.
 This  is a revised version that creates the sortarr array as we destroy the
 result array.
 -------------------------------------------------------------------------*/
-/* SMJS Modified to remove structures  = */
 struct path *dosort(struct olist *result, int *lena, int *total) {
 
     int i,j;
@@ -24,18 +23,15 @@ struct path *dosort(struct olist *result, int *lena, int *total) {
 	    for(j=0; j < result[i].len; ++j){
 		sortarr = (struct path *) 
 		    realloc(sortarr,sizeof(struct path) *(k+1));
-/* SMJS		sortarr[k++] = result[i].res[j];  */
-                CopyPath(&(sortarr[k++]),&(result[i].res[j]));
+		sortarr[k++] = result[i].res[j];  
 	    }
 	}
-	free(result[i].res); 
+/*	free(result[i].res);  */
     }
 
-    if(k != *total) {
-       printf("k (%d) != total (%d) in dosort\n",k,*total); 
-    }
+/*    free(result); */
 
-    free(result);
+/*    if(k != *total) printf("k != total in dosort"); */
 
     if(*total > 0){
 	qsort((char *) sortarr, k, sizeof(struct path), comp);

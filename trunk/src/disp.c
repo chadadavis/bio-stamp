@@ -1,4 +1,4 @@
-#include "stamp.h"
+#include <stamp.h>
 
 int disp(struct domain_loc domain, FILE *OUTPUT) {
 

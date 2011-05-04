@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* slightly varied version of getca
  * Finds any atom type (supplied by a four character string)

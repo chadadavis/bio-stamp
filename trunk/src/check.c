@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 
 #define RES "REMARK   2 RESOLUTION."
 #define REF "REMARK   3"
@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 	char keyword[7],atnum[6],atname[5],
 	     resname[4],resnum[7],rest[15],
 	     buff[100],oldresnum[7],code[200],
-	     reftext[4000];
+	     reftext[100000];
 	char *pdbfile,*dsspfile;
 	char *stampdir, *dirfile;
 	int nlines;
@@ -394,14 +394,11 @@ int main(int argc, char *argv[]) {
        for(i=0; i<strlen(reftext); ++i) {
          for(j=0; j<n_r_val; ++j) {
    	   if(strncmp(&reftext[i],r_val[j],strlen(r_val[j]))==0) {
-/* SMJS Added if */
-	     if (sscanf(&reftext[i+strlen(r_val[j])],"%f",&R_factor))
-             {
-	       if(mode>=1 && mode<=3) printf("%8.5f",R_factor);
-	       found=1;
-	       REFINED=1;
-	       break;
-             }
+	      sscanf(&reftext[i+strlen(r_val[j])],"%f",&R_factor);
+	      if(mode>=1 && mode<=3) printf("%8.5f",R_factor);
+	      found=1;
+	      REFINED=1;
+	      break;
 	   }
          }
        }

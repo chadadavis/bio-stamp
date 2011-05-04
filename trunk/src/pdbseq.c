@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 #define MAX_SEQ_LEN 3000
 
 /* Reads a list of domains from the standard input (or a file),
@@ -79,6 +79,8 @@ main(int argc, char *argv[]) {
 		  ftype=0;
 	      } else if(strcmp(format,"FASTA")==0) {
 		   ftype=1;
+	      } else if(strcmp(format,"BLC")==0) {
+		   ftype=2;
 	      } else {
 		fprintf(stderr,"error: format %s not recognised\n",format);
 	      }
@@ -159,8 +161,10 @@ main(int argc, char *argv[]) {
 	     }
 	     domain[i].ncoords=0;
 	     domain[i].aa=(char*)malloc((MAX_SEQ_LEN+1)*sizeof(char)); 
+             domain[i].numb=(struct brookn*)malloc(MAX_SEQ_LEN*sizeof(struct brookn));
+             domain[i].coords=(int**)malloc(MAX_SEQ_LEN*sizeof(int*)); 
+/*             domain[i].coords=NULL; */
 	     total=0;
-             domain[i].coords=NULL;
 	     for(j=0; j<domain[i].nobj; ++j) {
 	      if(igetca(PDB,domain[i].coords,&domain[i].aa[total],&domain[i].numb[total],
 	                &add,domain[i].start[j],domain[i].end[j],
@@ -213,8 +217,11 @@ main(int argc, char *argv[]) {
 	  } else {
 		OUT=stdout;
 	  }
-	  if(ftype==0) fprintf(OUT,">P1;%s ",domain[i].id);
-          else         fprintf(OUT,">%s ",domain[i].id);
+	  if(ftype==0) {
+                fprintf(OUT,">P1;%s ",domain[i].id);
+          } else {       
+                fprintf(OUT,">%s ",domain[i].id);
+          }
 	  if(ftype==0) fprintf(OUT,"\n");
 	  fprintf(OUT,"%s : ",domain[i].align);
 	  for(j=0; j<domain[i].nobj; ++j) { 
@@ -228,13 +235,24 @@ main(int argc, char *argv[]) {
 	     }
 	  }
 	  fprintf(OUT,"\n");
+          if(ftype==2) { 
+            fprintf(OUT,"*\n");
+          }
 	  for(j=0; j<strlen(domain[i].aa); ++j) {
 	     fprintf(OUT,"%c",domain[i].aa[j]);
-	     if(((j+1)%80)==0) fprintf(OUT,"\n");
+             if(ftype==2) {
+                fprintf(OUT," %c %4d %c\n",domain[i].numb[j].cid, domain[i].numb[j].n, domain[i].numb[j].in);
+             } else if(((j+1)%80)==0) {
+                   fprintf(OUT,"\n");
+             }
 	  }
-	  if(ftype==0) fprintf(OUT,"*");
+	  if(ftype==0 || ftype==2) {
+                 fprintf(OUT,"*");
+          }
 	  fprintf(OUT,"\n");
-	  if(sepfiles==1) fclose(OUT);
+	  if(sepfiles==1) {
+               fclose(OUT);
+          }
 	}
 	exit(0);
 }

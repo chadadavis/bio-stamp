@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "stamp.h"
-#include "stamprel.h"
+#include <stamp.h>
+#include <stamprel.h>
 
 /* Clean up a block file by attaching lone isolated
  *  residues to the nearest continuous segment */
@@ -13,6 +13,7 @@ main(int argc, char *argv[]) {
 	int nbloc,minlen,bloclen;
 	int nstamp,nstamppos,nstampseq;
 	int ndomain,gottrans;
+        float minfrac;
 
 	char c;
 	char *env;
@@ -23,8 +24,8 @@ main(int argc, char *argv[]) {
 	struct stampdat *stamp;
 	struct domain_loc *domain;
 
-	if(argc!=3) {
-	  printf("format: stamp_clean (block file) (minimum continuous segment length) > (output file)\n");
+	if(argc!=4) {
+	  printf("format: stamp_clean (block file) (minimum continuous segment length) (min frac) > (output file)\n");
 	  exit(-1);
 	}
 
@@ -35,6 +36,7 @@ main(int argc, char *argv[]) {
 
 
 	sscanf(argv[2],"%d",&minlen);
+	sscanf(argv[3],"%f",&minfrac);
 
 
 	if((BLOC=fopen(argv[1],"r"))==NULL) {
@@ -84,22 +86,34 @@ main(int argc, char *argv[]) {
 	       nbloc,strlen(&bloc[1].seq[1]));
 	printf("%% Cleaning up allowing continuous segments of %d or greater...\n",minlen);
 	if(nstamp==0) clean_block(bloc,nbloc,minlen);
-	else stamp_clean_block(bloc,nbloc,minlen,stamp,nstamp);
+	else stamp_clean_block(bloc,nbloc,minlen,minfrac,stamp,nstamp);
 	printf("%%  Cleaning done.\n");
 	bloclen=strlen(&bloc[1].seq[1]);
 	printf("%% The final alignment length is %d\n",bloclen);
 	printf("%% The alignment:\n");
 	for(i=0; i<nbloc; ++i)  {
+           /* Fix the stupid title problem with spaces */
+           j=strlen(bloc[i+1].title)-1;
+           while(((bloc[i+1].title[j]==' ') || (bloc[i+1].title[j]=='\n')) && (j>=0)) { 
+              bloc[i+1].title[j]='\0'; 
+              j--; 
+           }
 	   printf(">%s %s\n",bloc[i+1].id,bloc[i+1].title);
 	}
 	for(i=0; i<nstamp; ++i) {
-/* SMJS Removed \n  (its included in the title) */
-	   printf("#%c %s",stamp[i].what,stamp[i].title);
+	   printf("#%c %s\n",stamp[i].what,stamp[i].title);
 	}
 	printf("*\n");
 	for(i=0; i<bloclen; ++i) {
-	   for(j=0; j<nbloc; ++j) 
+	   for(j=0; j<nbloc; ++j)  {
 	      printf("%c",bloc[j+1].seq[i+1]);
+/*              if(bloc[j+1].seq[i+1] == '\n') {
+                 fprintf(stderr,"Error: newline character found in output - exiting\n");
+                 exit(-1); 
+              }
+*/
+
+           }
 	   if(nstamp>0 && stamp[0].n[i]>-0.001) {
 	     printf(" ");
 	     for(j=0; j<nstamp; ++j) {

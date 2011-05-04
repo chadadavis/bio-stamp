@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* MERGETRANS
  * Given two file of transformations and a domain ID, this program

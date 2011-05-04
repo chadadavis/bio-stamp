@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* slightly varied version of getca.  
  * Coordinates are multiplied by 1000 and converted to integers 

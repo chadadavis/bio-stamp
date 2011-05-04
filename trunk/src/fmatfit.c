@@ -9,7 +9,7 @@
  *	   atoms1 = R*atoms2 + V     */
 
 /* SMJS Added */
-#include "stamp.h"
+#include <stamp.h>
 
 float fmatfit(float **atoms1, float **atoms2, float **R, float *V, int nats, int entry) {
 

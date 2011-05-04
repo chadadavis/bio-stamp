@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "alignfit.h"
+#include <alignfit.h>
 
 /* Reads in paramters from a specified file
  *

@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAXslen 10000
-#define MAXnbloc 1000
-/* SMJS Increased MAXtlen from 200 */
-#define MAXtlen 1000
+#define MAXslen  10000
+#define MAXnbloc 10000
+#define MAXtlen  200
 
 struct brookn { /* structure to represent brookhaven residue numbers */
     int n;      /* numerical part of number */
@@ -78,12 +77,12 @@ struct cluster {
 	};
 #define CLUST_STRUCT
 #endif
-#include "gjutil.h"
+#include <gjutil.h>
 
 struct cluster *readtree(char *tordfile, char *treefile, int *number, int method, FILE *OUT);
 float fmatfit(float **atoms1, float **atoms2, float **R, float *V, int nats, int entry);
 struct cluster *get_clust(double **matrix, char **ids, int ndomain, char *noc_parms);
-int closefile(FILE *handle,char *filename);
+void closefile(FILE *handle,char *filename);
 FILE *openfile(char *filename, char *type);
 char ltou(char c);
 char utol(char c);

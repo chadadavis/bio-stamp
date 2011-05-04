@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "gjutil.h"
-#include "gjnoc.h"
+#include <gjutil.h>
+#include <gjnoc.h>
 
 /* Given an upper diagonal matrix, return a tree in stamp format via Geoff's
  *  OC routine */

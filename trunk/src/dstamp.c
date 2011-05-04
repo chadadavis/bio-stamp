@@ -1,4 +1,4 @@
-#include "dstamp.h"
+#include <dstamp.h>
 
 /* DSTAMP 96 - New version of DSTAMP that makes prettier alignments
  * Does a prettification of an alignment file with or without secondary structures
@@ -19,8 +19,7 @@ main(int argc, char *argv[]) {
 	int space;
 	int n_buried, n_exposed, n_half;
 	int total_hydr, total_polar, total_cys, total_small, total_cons;
-/* SMJS Added initialisation of total_ungapped */
-	int total_ungapped=0;
+	int total_ungapped;
 	int ungapped;
 	int ngaps;
 	int ignore;
@@ -393,8 +392,6 @@ main(int argc, char *argv[]) {
 	  }
 	}
 
- /* SMJS I think i should be zeroed here */
-         i=0;
 	 while(i<=nstamppos) {
            if(reliable[i]) { /* reliable region */
               startrel=i;

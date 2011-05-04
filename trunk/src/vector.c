@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <math.h>
-#include "igetcb.h"
+#include <igetcb.h>
 #define PI 3.141592653589793
 
 int RBR_print_vector(float *V) {
@@ -14,6 +14,7 @@ int RBR_print_vector(float *V) {
 	printf(")");
 	printf(" length: %8.5f\n",
 	   sqrt(V[0]*V[0]+V[1]*V[1]+V[2]*V[2]));
+	return 0;
 }
 int RBR_vector_unify(float *V) {
 

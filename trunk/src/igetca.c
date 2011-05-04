@@ -1,8 +1,11 @@
 #include <stdio.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* slightly varied version of getca.  
  * Coordinates are multiplied by 1000 and converted to integers */
+
+/* April 2007 - change to allow:
+ *  1. slop on the N-/C- terminus */
 
 int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 	struct brookn start, struct brookn end, int type, int MAXats,
@@ -39,22 +42,27 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 	   if((strncmp(buff,"ENDMDL",6)==0 || strncmp(buff,"END   ",6)==0) && begin==1) {
                 break;
            }
-	   if(strncmp(buff,"ATOM  ",6)==0) {
-	     /* get chain, number and insertion code */
-	     cid=buff[21];
-	     sscanf(&buff[22],"%d",&number);
-	     in=buff[26];
-	     alt=buff[16]; /* alternate position indicator */
-	      if(!begin && 
-		 ((start.cid==cid && start.n==number && start.in==in) ||
-		  (start.cid==cid && type==2) ||
-		  (type==1) )) begin=1;
-	      if(begin && type==2 && start.cid!=cid) break;
-/* SMJS Changed to be like Robs version */
-	     if(strncmp(&buff[12]," CA ",4)==0) {
+	   if((strncmp(buff,"ATOM  ",6)==0) || (strncmp(buff,"HETATM",6)==0)) {
+            /* look at non-CA to see if we are in/out of range */
+	    /* get chain, number and insertion code */
+	    cid=ltou(buff[21]);
+	    sscanf(&buff[22],"%d",&number);
+	    in=buff[26];
+	    alt=buff[16]; /* alternate position indicator */
+	    if(!begin && 
+                ((start.cid==cid && start.n==number && start.in==in) ||
+                 (start.cid==cid && type==2) ||
+                 (type==1) )) {
+//                 printf("Began at %c %4d %c vs %c %4d %c (type %d)\n",cid,number,in,start.cid,start.n,start.in,type);
+                 begin=1;
+            }
+	    if(begin && type==2 && start.cid!=cid) break;
+            if(strncmp(&buff[12]," CA ",4)==0) {
+             /* SMJS Changed to be like Robs version */
 	      if(begin && (alt==' ' || alt=='A' || alt=='1' || alt=='L' || alt=='O') && 
 		  !(cid==last_cid && number==last_number && in==last_in)) { 
 		 /* only reads in the first position if more than one are given */
+//              printf("%s",buff); 
 		if(seq_only==0) {
 		 coords[(*ncoord)]=(int*)malloc(3*sizeof(int));
 		 for(i=0; i<3; ++i) {
@@ -73,23 +81,21 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 		  numb[(*ncoord)].n=number;
 		}
 
+                last_cid = cid; last_in = in; last_number = number;
 		(*ncoord)++;
 
 		if((*ncoord)>MAXats) {
-		    fprintf(OUTPUT,"error: number of coordinates read surpasses memory limit\n");
+		    fprintf(OUTPUT,"error: number of coordinates read surpasses memory limit %d\n",MAXats);
 		    return -1;
 		 }
 		 aa[(*ncoord)]=' ';
 	      } 
-              last_cid = cid; last_in = in; last_number = number;
-
-	      if(begin && end.cid==cid && end.n==number && end.in==in && type==3) 
-		  break;
-	      /* this residing after the last "if" makes the set of atoms inclusive */
-            }
+	      if(begin && end.cid==cid && end.n==number && end.in==in && type==3) break;
+              /* this residing after the last "if" makes the set of atoms inclusive */
+	    } 
             /* in case of missing CA in the last residue */
 	    if(begin && cid==end.cid && number>end.n && type==3) break;  
-	   } 
+	  } 
 	} 
 	aa[(*ncoord)]='\0';
 	free(add_buff);

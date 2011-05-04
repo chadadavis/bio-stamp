@@ -9,7 +9,6 @@ int testfile(char *file) {
 		flag = 0;
 	} else  {
 		flag = 1;
-/* SMJS Changed close to fclose */
 		fclose(f);
 	}
 	return flag;

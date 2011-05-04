@@ -41,7 +41,7 @@
 /* float idist(); */
 
 /* SMJS Added */
-#include "stamp.h"
+#include <stamp.h>
 
 float matfit(int **atoms1, int **atoms2, float **R, float *V,
 	int nats, int entry, int PRECISION) {
@@ -117,11 +117,10 @@ float matfit(int **atoms1, int **atoms2, float **R, float *V,
 	for(i=0; i<=2; ++i) {
 	   xasq-=cma[i]*cma[i]*xni;
 	   xbsq-=cmb[i]*cmb[i]*xni;
-	   for(j=0; j<=2; ++j) 
-           {
+	   for(j=0; j<=2; ++j) {
 	       umat[j][i]=(umat[j][i]-cma[i]*cmb[j]*xni)*xni;
 	       r[i][j] = 0.0;
-           }
+	   }
 	} 
 
 /* Fit it */
@@ -148,10 +147,7 @@ float matfit(int **atoms1, int **atoms2, float **R, float *V,
 /*	   printf("\n");  */
 	}
 
-/*
- printf("IN MATFIT RMSE = %f, xasq = %f, xbsq = %f xni = %f, rtsum = %f\n",
-        rmse,xasq,xbsq,xni,rtsum);  
-*/
+/* printf("IN MATFIT RMSE = %f\n",rmse);  */
 
 
 /* Calculate offset if entry=1 */

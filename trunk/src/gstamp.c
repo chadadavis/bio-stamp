@@ -3,8 +3,8 @@
 #include <math.h>
 #include <time.h>
 
-#include "stamp.h"
-#include "stamprel.h"
+#include <stamp.h>
+#include <stamprel.h>
 
 #define MAX_SEQ_LEN 2000
 #define PRECISION 1000

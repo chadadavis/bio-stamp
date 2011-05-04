@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <math.h>
-
 #include <stamp.h>
 
 /* Scan's a database of domain descriptors using the following protocol:

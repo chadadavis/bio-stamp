@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
-#include "stamp.h"
-#include "igetcb.h"
+#include <stamp.h>
+#include <igetcb.h>
 #define PI 3.141592653589793
 
 /* Reads in C beta coordinates as integers (like igetca) 
@@ -125,8 +125,7 @@ int igetcb(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 	 	  else numb[(*ncoord)].in=in;
 		  numb[(*ncoord)].n=number;
 		  (*ncoord)++;
-/* SMJS () added around ||s */
-	       } else if(begin && (alt==' ' || alt=='A' || alt=='1')) {
+	       } else if(begin && alt==' ' || alt=='A' || alt=='1') {
 		 coords[(*ncoord)]=(int*)malloc(3*sizeof(int));
 		 /* only reads in the first position if more than one are given */
 		 for(i=0; i<3; ++i) {

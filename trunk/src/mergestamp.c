@@ -1,4 +1,4 @@
-#include "mergestamp.h"
+#include <mergestamp.h>
 
 /* MERGESTAMP
  * Given two transformation/alignment files and and optional domain ID, 
@@ -164,7 +164,7 @@ main(int argc, char *argv[]) {
              }
           }
           if(which2==-1) {
-             fprintf(stderr," Error: ID %s not found in file\n",infile2);
+             fprintf(stderr," Error: ID %s not found in file %s\n",id,infile2);
              fprintf(stderr," The identifiers in the file are:\n"); 
              for(i=0; i<ndomain2; ++i) fprintf(stderr,"          %s\n",domain2[i].id);
              exit(-1);

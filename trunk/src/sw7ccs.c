@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /**********************************************************************
 sw7: routine to do the Smith Waterman algorithm and retain history of

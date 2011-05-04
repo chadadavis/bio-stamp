@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* EXTRANS
  * Given a file of transformations and a set of domain IDs, this program

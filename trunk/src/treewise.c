@@ -2,9 +2,9 @@
 #include <math.h>
 #include <stdlib.h>
 
-#include "stamp.h"
-#include "gjutil.h"
-#include "gjnoc.h"
+#include <stamp.h>
+#include <gjutil.h>
+#include <gjnoc.h>
 #define NOC_PARMS "noc sim single"
 
 /* Takes an upper diagonal matrix either derived from
@@ -33,8 +33,7 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	float diff;
 	float D,C,P;
 	float *Dij,*Pij,*dist,*Pijp;
-/* SMJS Initialised score to be like pairwise */
-	float rms,score=0.0,oldscore;
+	float rms,score,oldscore;
 	float R2[3][3],V2[3];
 	double **matrix;
 
@@ -71,7 +70,7 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	fscanf(MAT,"%d",&testnum);
 	if(testnum!=ndomain) {
 	  fprintf(stderr,"error: matrix file %s contains %d elements\n",parms[0].matfile,testnum);
-	  fprintf(stderr,"  domain file contains %ld elements\n",ndomain);
+	  fprintf(stderr,"  domain file contains %d elements\n",ndomain);
 	  exit(-1);
 	}
 
@@ -213,4 +212,5 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	   free(domain[i].oldalign);
 	}
 	free(ids);
+	return 0;
 }

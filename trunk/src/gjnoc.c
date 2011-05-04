@@ -4,8 +4,8 @@
 #include <string.h>
 #include <time.h>
 #include <math.h>
-#include "gjutil.h"
-#include "gjnoc.h"
+#include <gjutil.h>
+#include <gjnoc.h>
 
 /*#define VERY_SMALL DBL_MIN*/
 #define VERY_SMALL -DBL_MAX
@@ -621,7 +621,7 @@ struct gjnoc *GJnoc(
 	final_time = clock();
 	fprintf(std_err,"Total CPU time: %f seconds\n",
     		(float) (final_time - initial_time)/CLOCKS_PER_SEC); 
-	exit(0);
+	return 0;
 }
 
 /**********************************************************************
