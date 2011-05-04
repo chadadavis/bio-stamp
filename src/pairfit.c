@@ -74,7 +74,9 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
      psec1 = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
      psec2 = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
      domain1[0].align = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
+     domain1[0].align[0]='\0';
      domain2[0].align = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
+     domain2[0].align[0]='\0';
 
 
      /* The matrix rt/vt must be set to the previous transformation 
@@ -355,7 +357,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	 for(i=(temp_len-1); i>0; --i) {
 	   if( (domain1[0].align[i]!=' ' && domain1[0].align[i-1]!=' ' &&
                 domain2[0].align[i]!=' ' && domain2[0].align[i-1]!=' ')  && /* not a gap */
-               (fpuse[i]>=parms[0].isecond_CUTOFF && fpuse[i-1]>=parms[0].second_CUTOFF) && /* equivalent */
+               (fpuse[i]>=parms[0].second_CUTOFF && fpuse[i-1]>=parms[0].second_CUTOFF) && /* equivalent */
                 c1<=(*end1) && c2<=(*end2) ) { /* further along than we were already */
                   (*end1)=c1; (*end2)=c2;
                   break;
