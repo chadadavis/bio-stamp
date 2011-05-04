@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,29 +11,29 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
   Structure Comparison: Assignment of Global and Residue Confidence Levels",
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
+#include <stdio.h>
 
-#include "dstamp.h"
+#include <dstamp.h>
 
 /* DSTAMP 96 - New version of DSTAMP that makes prettier alignments
  * Does a prettification of an alignment file with or without secondary structures
@@ -54,8 +54,7 @@ main(int argc, char *argv[]) {
 	int space;
 	int n_buried, n_exposed, n_half;
 	int total_hydr, total_polar, total_cys, total_small, total_cons;
-/* SMJS Added initialisation of total_ungapped */
-	int total_ungapped=0;
+	int total_ungapped;
 	int ungapped;
 	int ngaps;
 	int ignore;
@@ -173,7 +172,7 @@ main(int argc, char *argv[]) {
 	   if((reliable=getstamprel(stamp,nstamp,nstamppos,TYPE,CUTOFF,WINDOW))==NULL) exit(-1); 
 	}
 
-	fclose(BLOC);
+	close(BLOC);
 		
 	printf("Block file contains %d sequences and %d stamp fields the alignment length is %d\n",
 	       nbloc,nstamp,strlen(&bloc[1].seq[1]));
@@ -428,8 +427,6 @@ main(int argc, char *argv[]) {
 	  }
 	}
 
- /* SMJS I think i should be zeroed here */
-         i=0;
 	 while(i<=nstamppos) {
            if(reliable[i]) { /* reliable region */
               startrel=i;
@@ -447,7 +444,7 @@ main(int argc, char *argv[]) {
 	exit(0);
 
 }
-void exit_error() {
+int exit_error() {
 	  fprintf(stderr,"format: dstamp -f <block file> -prefix <output prefix> -ignore <no. of res ignored> \n");
 	  exit(-1);
 }

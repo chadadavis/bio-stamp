@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -36,10 +35,10 @@
 #include <math.h>
 #include <stdlib.h>
 
-#include "stamp.h"
-#include "gjutil.h"
-#include "gjnoc.h"
-#define NOC_PARMS "noc sim single"
+#include <stamp.h>
+#include <gjutil.h>
+#include <gjnoc.h>
+#define noc_parms "noc sim single"
 
 /* Takes an upper diagonal matrix either derived from
  *  the pairwise comparisons, or some other method, generates
@@ -52,7 +51,7 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	struct parameters *parms) {
 
 	char *use;
-	char noc_parms[200];
+	char tmp[200];
 	char **ids;
 
 	int i,j,k,l,m,n,nn,st;
@@ -67,8 +66,7 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	float diff;
 	float D,C,P;
 	float *Dij,*Pij,*dist,*Pijp;
-/* SMJS Initialised score to be like pairwise */
-	float rms,score=0.0,oldscore;
+	float rms,score,oldscore;
 	float R2[3][3],V2[3];
 	double **matrix;
 
@@ -105,7 +103,7 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	fscanf(MAT,"%d",&testnum);
 	if(testnum!=ndomain) {
 	  fprintf(stderr,"error: matrix file %s contains %d elements\n",parms[0].matfile,testnum);
-	  fprintf(stderr,"  domain file contains %ld elements\n",ndomain);
+	  fprintf(stderr,"  domain file contains %d elements\n",ndomain);
 	  exit(-1);
 	}
 
@@ -122,7 +120,6 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	printf("Doing cluster analysis...\n");
         ids=(char**)malloc(ndomain*sizeof(char*));
         for(i=0; i<ndomain; ++i) ids[i]=domain[i].id;
-	strcpy(&noc_parms[0],NOC_PARMS);
 	cl=get_clust(matrix,ids,ndomain,noc_parms);
         nclust=ndomain-1;
 
@@ -229,9 +226,16 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	     }
 	    /* outputing the results */
 	   if(makefile(domain,ndomain,cl[i],i,score,rms,length,nfit,Pij,Dij,dist,Pijp,0,parms)==-1) return -1;
-	} 
+/*	   fprintf(parms[0].LOG,"Cluster B: \n");
+	   for(j=0; j<cl[i].b.number; ++j) {
+	     fprintf(parms[0].LOG,"%s\n",domain[cl[i].b.member[j]].id);
+	     disp(domain[cl[i].b.member[j]],parms[0].LOG);
+	   }
+*/	  k=clock();
+	  parms[0].CPUtime+=(float)k/(60000000);
+	} /* end of for(i... */
 
-	/* Various freeing */
+	/* free-ing to keep purify happy */
 	free(Pij); free(Dij); 
 	free(Pijp); free(dist); 
 	free(use); 

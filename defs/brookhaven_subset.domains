@@ -1,0 +1,946 @@
+/home2/geoff/htdocs/dlink//pdb/pdb1bph.ent 1bpha-1-DOMAK { A 1 _ to A 21 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4mt2.ent 4mt2-2-GJB { _ 32 _ to _ 61 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1vnb.ent 1vnb-1-DOMAK { _ 1 _ to _ 65 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ccf.ent 1ccf-1-GJB { _ 45 _ to _ 86 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ttg.ent 1ttg-1-DOMAK { _ 1 _ to _ 94 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2cmd.ent 2cmd-1-GJB { _ 1 _ to _ 146 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1zaa.ent 1zaac-2-GJB { C 32 _ to C 60 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gdh.ent 1gdhb-2-DOMAK { B 101 _ to B 143 _ B 212 _ to B 289 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4sbv.ent 4sbvb-1-DOMAK { B 62 _ to B 260 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mio.ent 1miod-2-AS { D 22 _ to D 146 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2phl.ent 2phlb-7-AS { B 341 _ to B 371 _ C 150 _ to C 188 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1avh.ent 1avhb-4-AS { B 247 _ to B 320 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1frr.ent 1frrb-1-DOMAK { B 1 _ to B 95 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tbp.ent 1tbpb-2-DOMAK { B 70 _ to B 159 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb8cat.ent 8cata-3-AS { A 434 _ to A 500 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1msf.ent 1msfc-2-AS { C 140 _ to C 193 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nor.ent 1nor-1-GJB { _ 1 _ to _ 61 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cdm.ent 1cdma-2-DOMAK { A 84 _ to A 146 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mco.ent 1mcoh-2-DOMAK { H 119 _ to H 221 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2wgc.ent 2wgcb-2-DOMAK { B 43 _ to B 85 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dwc.ent 1dwcl-1-DOMAK { L 1 C to L 14 L }
+/home2/geoff/htdocs/dlink//pdb/pdb1hfh.ent 1hfh-2-DOMAK { _ 63 _ to _ 120 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3b5c.ent 3b5c-1-DOMAK { _ 3 _ to _ 87 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lz4.ent 1lz4-2-DOMAK { _ 42 _ to _ 85 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gfd.ent 1gfd-1-GJB { _ 1 _ to _ 59 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hbi.ent 1hbib-1-DOMAK { B 2 _ to B 146 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dlh.ent 1dlhd-3-GJB { E 88 _ to E 190 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tin.ent 1tin-1-AS { _ 1 _ to _ 68 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2spt.ent 2spt-2-DOMAK { _ 64 _ to _ 145 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1yeb.ent 1yeb-1-GJB { _ -5 _ to _ 103 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ovb.ent 1ovb-1-GJB { _ 94 _ to _ 248 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2act.ent 2act-1-DOMAK { _ 1 _ to _ 18 _ _ 115 _ to _ 213 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2imn.ent 2imn-1-DOMAK { _ 1 _ to _ 108 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4mt2.ent 4mt2-1-GJB { _ 1 _ to _ 31 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pka.ent 2pkab-1-DOMAK { B 95 Y to B 246 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4gcr.ent 4gcr-2-AS { _ 84 _ to _ 174 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ake.ent 1akeb-2-AS { B 122 _ to B 163 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3hat.ent 3hath-1-AS { H 16 _ to H 23 _ H 122 _ to H 233 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lib.ent 1lib-1-DOMAK { _ 1 _ to _ 131 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cgu.ent 1cgu-3-GJB { _ 497 _ to _ 580 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hvc.ent 1hvc-2-AS { _ 1 A to _ 99 A }
+/home2/geoff/htdocs/dlink//pdb/pdb1jhl.ent 1jhlh-1-DOMAK { H 1 _ to H 116 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1caf.ent 1caf-1-AS { _ 4 _ to _ 48 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1prs.ent 1prs-2-AS { _ 91 _ to _ 173 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lz4.ent 1lz4-1-DOMAK { _ 1 _ to _ 41 _ _ 86 _ to _ 130 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fod.ent 1fod2-1-GJB { 2 30 _ to 2 218 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bbn.ent 2bbna-1-GJB { A 1 _ to A 148 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bpf.ent 2bpfa-2-DOMAK { A 91 _ to A 148 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mio.ent 1miod-3-AS { D 147 _ to D 307 _ D 411 _ to D 442 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3mon.ent 3monh-1-GJB { G 2 _ to G 45 _ H 1 _ to H 50 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1oct.ent 1octc-2-GJB { C 102 _ to C 161 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tpn.ent 1tpn-1-GJB { _ 1 _ to _ 50 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cgu.ent 1cgu-2-GJB { _ 401 _ to _ 496 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lya.ent 1lyac-2-AS { D 188 _ to D 346 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cax.ent 1caxe-5-AS { C 44 _ to C 177 _ C 216 _ to C 224 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bpf.ent 2bpfa-1-DOMAK { A 9 _ to A 90 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cgu.ent 1cgu-4-GJB { _ 581 _ to _ 684 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pou.ent 1pou-1-GJB { _ 5 _ to _ 75 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pst.ent 1psth-2-AS { H 38 _ to H 248 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bpf.ent 2bpfa-4-DOMAK { A 265 _ to A 335 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lya.ent 1lyac-1-AS { C 1 _ to C 97 _ D 106 _ to D 187 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lfg.ent 1lfg-1-DOMAK { _ 1 _ to _ 91 _ _ 251 _ to _ 339 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hla.ent 2hlaa-2-DOMAK { A 182 _ to A 270 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmi.ent 1hmia-2-AS { A 91 _ to A 115 _ A 157 _ to A 225 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ggt.ent 1ggtb-4-AS { B 628 _ to B 727 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cdb.ent 1cdb-1-AS { _ 1 _ to _ 105 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fos.ent 1fosh-1-AS { G 140 _ to G 198 _ H 265 _ to H 322 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1msa.ent 1msad-2-AS { A 100 _ to A 109 _ D 1 _ to D 99 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mco.ent 1mcoh-3-DOMAK { H 222 _ to H 323 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ggt.ent 1ggtb-3-AS { B 514 _ to B 627 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bpf.ent 2bpfa-3-DOMAK { A 149 _ to A 264 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmi.ent 1hmia-5-AS { A 427 _ to A 556 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tlf.ent 1tlfd-4-AS { B 61 _ to B 161 _ B 292 _ to B 320 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1msb.ent 1msbb-1-GJB { B 107 _ to B 221 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4pfk.ent 4pfk-1-DOMAK { _ 1 _ to _ 138 _ _ 252 _ to _ 306 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pvi.ent 1pvib-3-AS { B 48 _ to B 157 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2phl.ent 2phlb-5-AS { B 11 _ to B 21 _ B 220 _ to B 340 _ B 372 _ to B 381 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmi.ent 1hmia-4-AS { A 320 _ to A 426 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1thr.ent 1thrh-2-DOMAK { H 23 _ to H 121 _ H 234 _ to H 247 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cax.ent 1caxe-6-AS { D 241 _ to D 380 _ D 417 _ to D 424 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kfd.ent 1kfd-3-AS { _ 650 _ to _ 711 _ _ 852 _ to _ 928 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kfd.ent 1kfd-4-AS { _ 712 _ to _ 851 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tlf.ent 1tlfd-5-AS { B 162 _ to B 291 _ B 321 _ to B 336 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmi.ent 1hmia-1-AS { A 1 _ to A 90 _ A 116 _ to A 156 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ake.ent 1akeb-1-AS { B 1 _ to B 121 _ B 164 _ to B 214 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb8cat.ent 8cata-2-AS { A 69 _ to A 433 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hla.ent 2hlaa-1-DOMAK { A 1 _ to A 181 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mdt.ent 1mdta-1-AS { A 1 _ to A 187 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ggt.ent 1ggtb-1-AS { B 8 _ to B 186 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ltn.ent 2ltnc-1-GJB { C 1 _ to D 47 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mys.ent 1mysc-3-AS { A 803 _ to A 843 _ B 19 _ to B 163 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kfd.ent 1kfd-1-AS { _ 326 _ to _ 542 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hrp.ent 1hrpb-1-AS { A 4 _ to A 89 _ B 2 _ to B 111 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cyg.ent 1cyg-1-AS { _ 1 _ to _ 404 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ice.ent 1iceb-1-AS { A 131 _ to A 297 _ B 317 _ to B 404 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ltd.ent 1ltda-2-AS { A 97 _ to A 487 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ggt.ent 1ggtb-2-AS { B 187 _ to B 513 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ses.ent 1sesa-2-AS { A 105 _ to A 421 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1prc.ent 1prch-1-AS { C 1 _ to C 332 _ M 303 _ to M 323 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1wht.ent 1whtb-1-AS { A -5 _ to A 248 _ B 264 _ to B 423 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mmo.ent 1mmoe-2-AS { C 37 _ to C 389 _ E 15 _ to E 41 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mmo.ent 1mmoe-1-AS { C 6 _ to C 36 _ E 42 _ to E 526 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1myp.ent 1mypd-1-AS { B 1 _ to B 104 _ D 114 _ to D 575 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pst.ent 1psth-1-AS { L 5 _ to L 270 _ M 6 _ to M 301 _ H 12 _ to H 37 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1prc.ent 1prch-2-AS { L 1 _ to L 273 _ M 1 _ to M 302 _ H 1 _ to H 37 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mys.ent 1mysc-1-AS { A 4 _ to A 783 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mat.ent 1mat-1-GJB { _ 2 _ to _ 264 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1chm.ent 1chmb-1-DOMAK { B 2 _ to B 156 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1chm.ent 1chmb-2-DOMAK { B 157 _ to B 402 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ltb.ent 1ltbc-1-DOMAK { C 196 _ to C 236 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb6taa.ent 6taa-1-GJB { _ 1 _ to _ 382 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb6taa.ent 6taa-2-GJB { _ 383 _ to _ 476 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1amg.ent 1amg-1-AS { _ 1 _ to _ 360 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1amg.ent 1amg-2-AS { _ 361 _ to _ 417 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ifn.ent 1ifn-1-DOMAK { _ 1 _ to _ 46 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2cbh.ent 2cbh-1-GJB { _ 1 _ to _ 36 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2tun.ent 2tunb-1-DOMAK { B 7 _ to B 157 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ahb.ent 1ahb-1-GJB { _ 1 _ to _ 179 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pag.ent 1pagb-1-GJB { B 1 _ to B 197 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fmd.ent 1fmd4-1-DOMAK { 4 15 _ to 4 85 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1thl.ent 1thl-1-AS { _ 1 _ to _ 152 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1thl.ent 1thl-2-AS { _ 153 _ to _ 322 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lcd.ent 1lcda-1-GJB { A 1 _ to A 51 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ldb.ent 2ldb-1-GJB { _ 15 _ to _ 163 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ldb.ent 2ldb-2-GJB { _ 164 _ to _ 331 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dfn.ent 1dfnb-1-DOMAK { B 2 _ to B 31 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3lad.ent 3ladb-1-AS { B 1 _ to B 154 _ B 277 _ to B 350 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3lad.ent 3ladb-3-AS { B 351 _ to B 472 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cld.ent 1cld-1-AS { _ 93 _ to _ 125 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1d66.ent 1d66b-1-DOMAK { B 8 _ to B 64 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pyi.ent 1pyib-1-AS { A 30 _ to A 117 _ B 30 _ to B 99 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pga.ent 1pga-1-DOMAK { _ 1 _ to _ 56 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2scp.ent 2scpb-1-DOMAK { B 1 _ to B 174 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hkt.ent 1hkt-1-GJB { _ 43 _ to _ 148 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2utg.ent 2utga-1-DOMAK { A 1 _ to A 70 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ccn.ent 1ccn-1-DOMAK { _ 1 _ to _ 46 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2gda.ent 2gda-1-GJB { _ 1 _ to _ 72 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1iva.ent 1iva-1-AS { _ 1 _ to _ 48 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1omb.ent 1omb-1-GJB { _ 4 _ to _ 38 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4cpv.ent 4cpv-1-DOMAK { _ 1 _ to _ 108 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2tbv.ent 2tbvc-2-DOMAK { C 276 _ to C 387 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pha.ent 1pha-1-AS { _ 10 _ to _ 414 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2at2.ent 2at2b-1-GJB { B 1 _ to B 133 _ B 273 _ to B 295 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2at2.ent 2at2b-2-GJB { B 134 _ to B 272 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1arq.ent 1arqb-1-GJB { A 1 _ to A 53 _ B 1 _ to B 53 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1myl.ent 1mylf-1-AS { E 7 _ to E 47 _ F 7 _ to F 46 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1scm.ent 1scmb-2-DOMAK { B 84 _ to B 149 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2tmv.ent 2tmvp-1-DOMAK { P 1 _ to P 154 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1brd.ent 1brd-1-DOMAK { _ 8 _ to _ 225 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bhb.ent 1bhb-1-GJB { _ 2 _ to _ 70 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1trh.ent 1trh-1-AS { _ 1 _ to _ 534 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ovo.ent 1ovob-1-DOMAK { B 1 _ to B 56 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rpr.ent 1rprb-1-GJB { B 1 _ to B 63 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mdy.ent 1mdyb-1-AS { B 105 _ to B 166 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmd.ent 1hmdb-1-DOMAK { B 1 _ to B 113 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ofv.ent 1ofv-1-DOMAK { _ 1 _ to _ 169 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3aah.ent 3aahd-1-DOMAK { D 1 _ to D 57 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cor.ent 1cor-1-DOMAK { _ 1 _ to _ 82 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nlk.ent 1nlkl-1-DOMAK { L 2 _ to L 144 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cro.ent 1croa-1-GJB { A 1 _ to A 66 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bod.ent 1bod-1-GJB { _ 0 _ to _ 75 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mnt.ent 1mntb-1-GJB { A 1 _ to A 66 _ B 1 _ to B 66 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1isu.ent 1isub-1-DOMAK { B 1 _ to B 62 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1isa.ent 1isab-1-GJB { B 1 _ to B 83 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mda.ent 1mdaj-1-GJB { J 27 _ to J 368 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gau.ent 1gaua-1-GJB { A 1 _ to A 60 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb821p.ent 821p-1-DOMAK { _ 1 _ to _ 166 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1leb.ent 1leb-1-GJB { _ 1 _ to _ 72 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb8api.ent 8apia-1-AS { A 19 _ to A 358 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ysc.ent 1ysc-1-AS { _ 1 _ to _ 421 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mss.ent 1mssb-1-DOMAK { B 2 _ to B 250 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aar.ent 1aarb-1-DOMAK { B 1 _ to B 76 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fkd.ent 1fkd-1-DOMAK { _ 1 _ to _ 107 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4fis.ent 4fisb-1-DOMAK { B 26 _ to B 98 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bov.ent 1bovb-1-DOMAK { B 1 _ to B 69 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2uce.ent 2uce-1-DOMAK { _ 1 _ to _ 148 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hig.ent 1higb-1-GJB { B 1 _ to B 123 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sdy.ent 1sdyb-1-GJB { B 2 _ to B 151 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1atb.ent 1atb-1-DOMAK { _ 1 _ to _ 62 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2tsc.ent 2tscb-1-GJB { B 1 _ to B 264 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1thy.ent 1thy-1-DOMAK { _ 1 _ to _ 69 _ _ 143 _ to _ 316 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1thy.ent 1thy-2-DOMAK { _ 70 _ to _ 142 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pia.ent 2pia-1-DOMAK { _ 1 _ to _ 104 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pia.ent 2pia-2-DOMAK { _ 105 _ to _ 225 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hum.ent 1humb-1-DOMAK { B 1 _ to B 69 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bat.ent 2bat-1-GJB { _ 82 _ to _ 469 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nrc.ent 1nrcb-1-GJB { B 6 _ to B 88 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pya.ent 1pyac-1-DOMAK { C 1 _ to C 81 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ait.ent 2ait-1-GJB { _ 1 _ to _ 74 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lmb.ent 1lmb4-1-DOMAK { 4 1 _ to 4 92 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lac.ent 1lac-1-DOMAK { _ 1 _ to _ 80 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rbs.ent 1rbs-1-DOMAK { _ 1 _ to _ 155 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2rsl.ent 2rsla-1-GJB { A 1 _ to A 122 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3gf1.ent 3gf1-1-GJB { _ 1 _ to _ 70 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lfg.ent 1lfg-3-DOMAK { _ 340 _ to _ 435 _ _ 594 _ to _ 691 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1brs.ent 1brse-1-DOMAK { E 2 _ to E 89 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1phs.ent 1phs-1-AS { _ 11 _ to _ 149 _ _ 189 _ to _ 212 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1phs.ent 1phs-2-AS { _ 220 _ to _ 335 _ _ 375 _ to _ 381 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cdr.ent 1cdr-1-GJB { _ 1 _ to _ 77 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gva.ent 1gvab-1-GJB { B 1 _ to B 87 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ssa.ent 1ssaa-1-DOMAK { A 1 _ to A 113 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3por.ent 3por-1-DOMAK { _ 1 _ to _ 301 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1atp.ent 1atpi-1-DOMAK { I 5 _ to I 24 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1chb.ent 1chbe-1-DOMAK { E 1 _ to E 103 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1azn.ent 1aznb-1-DOMAK { B 1 _ to B 128 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pdg.ent 1pdgc-1-DOMAK { C 16 _ to C 102 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2abd.ent 2abd-1-GJB { _ 1 _ to _ 86 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1blh.ent 1blh-1-AS { _ 31 _ to _ 70 _ _ 217 _ to _ 290 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1blh.ent 1blh-2-AS { _ 71 _ to _ 216 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb256b.ent 256ba-1-DOMAK { A 1 _ to A 106 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lpb.ent 1lpba-1-DOMAK { A 6 _ to A 90 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3wrp.ent 3wrp-1-DOMAK { _ 8 _ to _ 108 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1srj.ent 1srja-1-DOMAK { A 13 _ to A 133 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cte.ent 1cteb-2-AS { B 23 _ to B 149 _ B 248 _ to B 253 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1huc.ent 1hucc-1-AS { C 1 _ to C 47 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gmp.ent 1gmpb-1-DOMAK { B 1 _ to B 96 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb5sic.ent 5sici-1-DOMAK { I 7 _ to I 113 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dla.ent 1dlac-1-GJB { C 1 _ to C 314 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2prf.ent 2prf-1-GJB { _ 1 _ to _ 125 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hrs.ent 1hrs-1-DOMAK { _ 1 _ to _ 174 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2spc.ent 2spcb-1-DOMAK { B 0 _ to B 73 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bn2.ent 1bn22-1-GJB { 2 1 _ to 2 86 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hc2.ent 1hc2-1-AS { _ 5 _ to _ 653 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aya.ent 1ayab-1-GJB { B 3 _ to B 103 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cma.ent 1cmaa-1-AS { A 1 _ to A 104 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cma.ent 1cmab-1-DOMAK { B 1 _ to B 83 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mvp.ent 1mvpb-1-DOMAK { B 10 _ to B 124 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rhg.ent 1rhgc-1-DOMAK { C 9 _ to C 172 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1eft.ent 1eft-1-DOMAK { _ 1 _ to _ 7 _ _ 216 _ to _ 310 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1eft.ent 1eft-2-DOMAK { _ 8 _ to _ 215 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1eft.ent 1eft-3-DOMAK { _ 311 _ to _ 405 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1etu.ent 1etu-1-DOMAK { _ 5 _ to _ 200 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1asc.ent 1asc-1-AS { _ 27 _ to _ 56 _ _ 329 _ to _ 408 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1asc.ent 1asc-2-AS { _ 57 _ to _ 328 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1avh.ent 1avhb-3-AS { B 161 _ to B 246 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bsd.ent 1bsdb-1-DOMAK { B 4 _ to B 110 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hrf.ent 1hrf-1-GJB { _ 175 _ to _ 241 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1chr.ent 1chrb-1-GJB { B 1 _ to B 117 _ B 359 _ to B 370 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1chr.ent 1chrb-2-GJB { B 118 _ to B 358 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pab.ent 2paba-1-DOMAK { A 10 _ to A 123 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rtm.ent 1rtm3-1-AS { 1 73 _ to 1 106 _ 2 73 _ to 2 106 _ 3 73 _ to 3 106 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1com.ent 1comc-1-DOMAK { C 2 _ to C 120 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gd1.ent 1gd1p-1-DOMAK { P 0 _ to P 147 _ P 314 _ to P 333 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gd1.ent 1gd1p-2-DOMAK { P 148 _ to P 313 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mio.ent 1mioa-1-AS { A 5 _ to A 52 _ A 323 _ to A 526 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mio.ent 1mioa-3-AS { A 188 _ to A 322 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mio.ent 1mioc-1-AS { C 5 _ to C 52 _ C 337 _ to C 526 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mio.ent 1mioc-3-AS { C 188 _ to C 336 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1min.ent 1mind-1-AS { D 35 _ to D 68 _ D 363 _ to D 469 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mio.ent 1miod-1-AS { D 5 _ to D 21 _ D 308 _ to D 410 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3chy.ent 3chy-1-DOMAK { _ 2 _ to _ 129 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2mev.ent 2mev4-1-DOMAK { 4 13 _ to 4 70 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tmf.ent 1tmf4-1-DOMAK { 4 12 _ to 4 56 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4cpa.ent 4cpaa-1-AUTO.1 { A 1 _ to A 307 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pca.ent 1pca-1-AS { _ 4 A to _ 700 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lga.ent 1lgab-1-DOMAK { B 11 _ to B 144 _ B 269 _ to B 298 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lga.ent 1lgab-2-DOMAK { B 145 _ to B 268 _ B 299 _ to B 341 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3ink.ent 3inkd-1-DOMAK { D 6 _ to D 133 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ghs.ent 1ghsb-1-GJB { B 1 _ to B 306 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1enc.ent 1enc-1-DOMAK { _ 7 _ to _ 141 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sob.ent 1sob-1-AS { _ 1 _ to _ 102 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1epb.ent 1epbb-1-DOMAK { B 1 _ to B 164 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1csg.ent 1csgb-1-DOMAK { B 5 _ to B 124 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1acm.ent 1acmd-1-DOMAK { D 8 _ to D 98 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1acm.ent 1acmd-2-DOMAK { D 99 _ to D 153 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1grc.ent 1grcb-1-DOMAK { B 1 _ to B 104 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1grc.ent 1grcb-2-DOMAK { B 105 _ to B 209 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3pgk.ent 3pgk-1-AS { _ 1 _ to _ 192 _ _ 403 _ to _ 415 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3pgk.ent 3pgk-2-AS { _ 193 _ to _ 402 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pos.ent 1posa-1-AS { A 1 _ to A 57 _ A 100 _ to A 106 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pos.ent 1posa-2-AS { A 58 _ to A 99 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2tgi.ent 2tgi-1-DOMAK { _ 1 _ to _ 112 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1itm.ent 1itm-1-DOMAK { _ 0 _ to _ 129 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hbg.ent 2hbg-1-GJB { _ 1 _ to _ 147 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lpe.ent 1lpe-1-DOMAK { _ 23 _ to _ 166 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aal.ent 1aalb-1-DOMAK { B 1 _ to B 57 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bdm.ent 1bdmb-2-AUTO.1 { B 154 _ to B 332 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb205l.ent 205l-1-DOMAK { _ 1 _ to _ 12 _ _ 59 _ to _ 162 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb205l.ent 205l-2-DOMAK { _ 13 _ to _ 58 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hlm.ent 1hlm-1-AUTO.2 { _ 1 _ to _ 158 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pfk.ent 2pfkd-2-DOMAK { D 139 _ to D 251 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4pfk.ent 4pfk-2-DOMAK { _ 139 _ to _ 251 _ _ 307 _ to _ 320 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1snw.ent 1snwb-1-DOMAK { B 114 _ to B 178 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1snw.ent 1snwb-2-DOMAK { B 179 _ to B 264 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1czm.ent 1czm-1-GJB { _ 1 _ to _ 260 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmc.ent 1hmcb-1-AS { B 4 _ to B 146 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pho.ent 1pho-1-DOMAK { _ 1 _ to _ 340 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2rve.ent 2rveb-1-AS { B 2 _ to B 241 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hsl.ent 1hslb-1-DOMAK { B 1 _ to B 90 _ B 193 _ to B 238 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hsl.ent 1hslb-2-DOMAK { B 91 _ to B 192 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cdi.ent 1cdi-2-DOMAK { _ 99 _ to _ 178 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1eip.ent 1eipb-1-DOMAK { B 1 _ to B 173 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1col.ent 1colb-1-DOMAK { B 5 _ to B 201 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fcd.ent 1fcdd-1-AS { D 1 _ to D 174 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hgd.ent 1hgdd-1-AS { D 1 _ to D 175 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1htm.ent 1htmf-1-AS { F 40 _ to F 162 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2gbp.ent 2gbp-2-DOMAK { _ 111 _ to _ 256 _ _ 294 _ to _ 309 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cpn.ent 1cpn-1-DOMAK { _ 1 _ to _ 208 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mdt.ent 1mdta-3-AS { A 377 _ to A 535 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2cut.ent 2cut-1-DOMAK { _ 15 _ to _ 212 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1vmo.ent 1vmob-1-DOMAK { B 1 _ to B 78 _ B 134 _ to B 163 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1vmo.ent 1vmob-2-DOMAK { B 79 _ to B 133 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dsb.ent 1dsbb-1-DOMAK { B 1 _ to B 188 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tss.ent 1tssb-1-DOMAK { B 1 _ to B 16 _ B 90 _ to B 194 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tss.ent 1tssb-2-DOMAK { B 17 _ to B 89 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bbp.ent 1bbpb-1-DOMAK { B 2 _ to B 178 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gp1.ent 1gp1b-1-DOMAK { B 10 _ to B 111 _ B 156 _ to B 193 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gp1.ent 1gp1b-2-DOMAK { B 112 _ to B 155 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ppt.ent 1ppt-1-GJB { _ 1 _ to _ 36 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3gap.ent 3gapb-1-DOMAK { B 19 _ to B 134 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3gap.ent 3gapb-2-DOMAK { B 135 _ to B 205 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fba.ent 1fbab-1-DOMAK { B 1 _ to B 363 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ltb.ent 1ltba-1-AS { A 4 _ to A 188 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3hhr.ent 3hhrc-1-DOMAK { C 32 _ to C 130 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3hhr.ent 3hhrc-2-DOMAK { C 131 _ to C 236 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1iaa.ent 1iaa-1-DOMAK { _ 1 _ to _ 8 _ _ 101 _ to _ 179 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2dnj.ent 2dnja-1-DOMAK { A 1 _ to A 88 _ A 226 _ to A 260 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2dnj.ent 2dnja-2-DOMAK { A 89 _ to A 225 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hsd.ent 2hsdb-1-DOMAK { B 2 _ to B 183 _ B 217 _ to B 245 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dir.ent 1dira-1-DOMAK { A 5 _ to A 240 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb6dfr.ent 6dfr-1-GJB { _ 1 _ to _ 159 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cag.ent 1cagb-1-DOMAK { A 1 _ to A 29 _ B 31 _ to B 60 _ C 61 _ to C 89 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tnd.ent 1tndb-1-DOMAK { B 27 _ to B 57 _ B 174 _ to B 342 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tnd.ent 1tndb-2-DOMAK { B 58 _ to B 173 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hur.ent 1hurb-1-AS { B 2 _ to B 181 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3cla.ent 3cla-2-DOMAK { _ 92 _ to _ 140 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1eab.ent 1eab-1-DOMAK { _ 414 _ to _ 637 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2tma.ent 2tmab-1-AS { B 1 _ to B 284 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pya.ent 1pyad-1-DOMAK { D 83 _ to D 310 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2liv.ent 2liv-1-DOMAK { _ 1 _ to _ 118 _ _ 251 _ to _ 325 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2liv.ent 2liv-2-DOMAK { _ 119 _ to _ 250 _ _ 326 _ to _ 344 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1arc.ent 1arc-1-DOMAK { _ 1 _ to _ 263 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bpg.ent 2bpgb-2-DOMAK { B 121 _ to B 265 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hhm.ent 2hhmb-1-DOMAK { B 5 _ to B 146 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hhm.ent 2hhmb-2-DOMAK { B 147 _ to B 276 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nip.ent 1nipb-1-AS { B 1 _ to B 273 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2reb.ent 2reb-1-DOMAK { _ 27 _ to _ 269 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2reb.ent 2reb-2-DOMAK { _ 270 _ to _ 328 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2yhx.ent 2yhx-1-DOMAK { _ 2 _ to _ 18 _ _ 286 _ to _ 362 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2yhx.ent 2yhx-2-DOMAK { _ 19 _ to _ 58 _ _ 188 _ to _ 285 _ _ 363 _ to _ 458 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2yhx.ent 2yhx-3-DOMAK { _ 59 _ to _ 187 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2cmd.ent 2cmd-2-GJB { _ 147 _ to _ 312 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3eca.ent 3ecab-1-AS { B 1 _ to B 212 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3eca.ent 3ecab-2-AS { B 213 _ to B 326 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kan.ent 1kanb-1-AS { B 1 _ to B 133 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kan.ent 1kanb-2-AS { B 134 _ to B 244 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tah.ent 1taha-1-GJB { A 2 _ to A 319 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1afn.ent 1afnb-1-AS { B 11 _ to B 157 _ B 184 _ to B 216 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1afn.ent 1afnb-2-AS { B 158 _ to B 183 _ B 217 _ to B 325 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fbd.ent 1fbdb-1-GJB { B 5 _ to B 199 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fbd.ent 1fbdb-2-GJB { B 200 _ to B 335 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ifi.ent 1ifi-1-DOMAK { _ 1 _ to _ 50 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bib.ent 1bib-1-DOMAK { _ 2 _ to _ 64 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bib.ent 1bib-2-DOMAK { _ 65 _ to _ 270 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bib.ent 1bib-3-DOMAK { _ 271 _ to _ 317 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bap.ent 1bap-2-DOMAK { _ 109 _ to _ 253 _ _ 286 _ to _ 306 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pxt.ent 1pxtb-2-DOMAK { B 175 _ to B 220 _ B 303 _ to B 417 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bbv.ent 2bbvb-1-DOMAK { B 83 _ to B 363 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cpe.ent 1cpe-1-DOMAK { _ 4 _ to _ 144 _ _ 266 _ to _ 294 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cpe.ent 1cpe-2-DOMAK { _ 145 _ to _ 265 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1adg.ent 1adg-1-DOMAK { _ 1 _ to _ 178 _ _ 318 _ to _ 374 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1adg.ent 1adg-2-DOMAK { _ 179 _ to _ 317 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pbp.ent 1pbp-1-DOMAK { _ 1 _ to _ 77 _ _ 254 _ to _ 321 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pbp.ent 1pbp-2-DOMAK { _ 78 _ to _ 253 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tcb.ent 1tcba-2-DOMAK { A 138 _ to A 170 _ A 289 _ to A 317 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1vsg.ent 1vsgb-1-DOMAK { B 1 _ to B 33 _ B 88 _ to B 254 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1vsg.ent 1vsgb-2-DOMAK { B 34 _ to B 87 _ B 255 _ to B 362 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1glv.ent 1glv-1-DOMAK { _ 1 _ to _ 89 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1glv.ent 1glv-2-DOMAK { _ 90 _ to _ 135 _ _ 201 _ to _ 316 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1glv.ent 1glv-3-DOMAK { _ 136 _ to _ 200 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cpc.ent 1cpcl-1-DOMAK { L 33 _ to L 174 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ulb.ent 1ulb-1-AS { _ 1 _ to _ 289 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bgu.ent 1bgu-2-GJB.1 { _ 167 _ to _ 332 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1psd.ent 1psdb-4-AS { B 322 _ to B 410 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2nad.ent 2nadb-2-AS { A 150 _ to A 334 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2cpk.ent 2cpke-2-AS { E 32 _ to E 126 _ E 318 _ to E 350 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3hmg.ent 3hmgc-1-AS { C 1 _ to C 328 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3ts1.ent 3ts1-2-AS { _ 223 _ to _ 319 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mdp.ent 1mdp2-1-DOMAK { 2 1 _ to 2 111 _ 2 260 _ to 2 313 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mdp.ent 1mdp2-2-DOMAK { 2 112 _ to 2 259 _ 2 314 _ to 2 370 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nga.ent 1nga-1-AS { _ 4 _ to _ 40 _ _ 123 _ to _ 175 _ _ 366 _ to _ 381 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nga.ent 1nga-2-AS { _ 41 _ to _ 122 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nga.ent 1nga-3-AS { _ 176 _ to _ 228 _ _ 312 _ to _ 365 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nga.ent 1nga-4-AS { _ 229 _ to _ 311 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1edd.ent 1edd-1-DOMAK { _ 1 _ to _ 310 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1udp.ent 1udpb-1-AS { B 1 _ to B 338 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pol.ent 2polb-3-AS { B 248 _ to B 366 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmi.ent 1hmib-3-AS { B 250 _ to B 319 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmi.ent 1hmia-3-AS { A 226 _ to A 319 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ser.ent 1sera-1-AS { A 1 _ to A 104 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ses.ent 1sesa-1-AS { A 1 _ to A 104 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2btf.ent 2btfa-1-AS { A 2 _ to A 33 _ A 70 _ to A 137 _ A 336 _ to A 375 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2btf.ent 2btfa-2-AS { A 34 _ to A 69 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2btf.ent 2btfa-3-AS { A 138 _ to A 185 _ A 258 _ to A 335 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2btf.ent 2btfa-4-AS { A 186 _ to A 257 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2sil.ent 2sil-1-AS { _ 2 _ to _ 382 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mns.ent 1mns-1-AS { _ 3 _ to _ 120 _ _ 349 _ to _ 359 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mns.ent 1mns-2-AS { _ 121 _ to _ 348 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1add.ent 1add-1-AS { _ 4 _ to _ 352 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1alk.ent 1alkb-1-AS { B 1 _ to B 449 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1scm.ent 1scmc-1-DOMAK { C 4 _ to C 80 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3mdd.ent 3mddb-1-DOMAK { B 11 _ to B 130 _ B 252 _ to B 395 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3mdd.ent 3mddb-2-DOMAK { B 131 _ to B 251 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nel.ent 1nel-1-AS { _ 1 _ to _ 127 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nel.ent 1nel-2-AS { _ 128 _ to _ 436 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fcd.ent 1fcdb-2-AS { B 108 _ to B 256 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hpl.ent 1hplb-2-AS { B 338 _ to B 449 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rpt.ent 1rpt-1-AS { _ 1 _ to _ 342 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb5csc.ent 5cscb-1-AS { B 1 _ to B 276 _ B 392 _ to B 423 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb5csc.ent 5cscb-2-AS { B 277 _ to B 391 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bmv.ent 1bmv2-1-DOMAK { 2 3012 _ to 2 3181 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pbc.ent 1pbc-1-DOMAK { _ 1 _ to _ 391 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2npx.ent 2npx-2-AS { _ 115 _ to _ 243 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2npx.ent 2npx-3-AS { _ 244 _ to _ 324 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2npx.ent 2npx-4-AS { _ 325 _ to _ 446 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tpl.ent 1tplb-1-AS { B 1 _ to B 50 _ B 311 _ to B 456 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tpl.ent 1tplb-2-AS { B 51 _ to B 110 _ B 251 _ to B 310 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tpl.ent 1tplb-3-AS { B 111 _ to B 250 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2let.ent 2let-1-GJB { _ 1 _ to _ 28 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2dkb.ent 2dkb-1-AS { _ 29 _ to _ 60 _ _ 325 _ to _ 433 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gph.ent 1gph2-1-AS { 2 1 _ to 2 234 _ 2 446 _ to 2 465 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gph.ent 1gph2-2-AS { 2 235 _ to 2 445 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cel.ent 1celb-1-AS { B 1 _ to B 434 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bpa.ent 2bpa1-1-AS { 1 1 _ to 1 426 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dog.ent 1dog-1-DOMAK { _ 1 _ to _ 13 _ _ 245 _ to _ 431 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dog.ent 1dog-2-DOMAK { _ 14 _ to _ 244 _ _ 432 _ to _ 471 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1caf.ent 1caf-3-AS { _ 415 _ to _ 434 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3aah.ent 3aahc-1-AS { C 1 _ to C 571 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2tmd.ent 2tmdb-1-AS { B 1 _ to B 384 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2tmd.ent 2tmdb-2-AS { B 385 _ to B 491 _ B 644 _ to B 704 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2tmd.ent 2tmdb-3-AS { B 492 _ to B 643 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1oyc.ent 1oyc-1-AS { _ 1 _ to _ 399 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2rnp.ent 2rnpb-1-AS { B 1 _ to B 883 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pmg.ent 2pmgb-1-DOMAK { B 1 _ to B 188 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pmg.ent 2pmgb-2-DOMAK { B 189 _ to B 303 _ B 389 _ to B 420 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pmg.ent 2pmgb-3-DOMAK { B 304 _ to B 388 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pmg.ent 2pmgb-4-DOMAK { B 421 _ to B 561 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ash.ent 1ash-1-AS { _ 0 _ to _ 146 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1frx.ent 1frx-1-DOMAK { _ 1 _ to _ 106 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2gls.ent 2glsb-1-AS { B 1 _ to B 102 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2gls.ent 2glsb-2-AS { B 103 _ to B 468 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hpd.ent 2hpdb-1-AS { B 1 _ to B 457 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1trk.ent 1trkb-2-AS { B 332 _ to B 543 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1trk.ent 1trkb-3-AS { B 544 _ to B 680 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1olb.ent 1olba-2-AS { A 228 _ to A 517 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1prh.ent 1prhb-1-AS { B 33 _ to B 586 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gog.ent 1gog-1-AS.1 { _ 1 _ to _ 153 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gog.ent 1gog-2-AS.1 { _ 154 _ to _ 541 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gog.ent 1gog-3-AS.1 { _ 542 _ to _ 639 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1glb.ent 1glbg-1-AS { G 4 _ to G 245 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1glb.ent 1glbg-2-AS { G 246 _ to G 499 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2cas.ent 2cas-1-DOMAK { _ 37 _ to _ 584 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kfd.ent 1kfd-2-AS { _ 543 _ to _ 649 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kln.ent 1klna-2-AUTO.1 { A 543 _ to A 649 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3cox.ent 3cox-1-GJB { _ 5 _ to _ 506 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pf1.ent 2pf1-1-DOMAK { _ 36 _ to _ 156 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2spt.ent 2spt-1-DOMAK { _ 1 _ to _ 63 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bya.ent 1bya-1-AS { _ 5 _ to _ 495 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bpm.ent 1bpm-1-AS { _ 1 _ to _ 161 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aoz.ent 1aozb-1-AS { B 1 _ to B 130 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aoz.ent 1aozb-3-AS { B 337 _ to B 552 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2sbl.ent 2sblb-1-AS { B 7 _ to B 128 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2sbl.ent 2sblb-2-AS { B 129 _ to B 839 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nis.ent 1nis-1-AS { _ 2 _ to _ 201 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nis.ent 1nis-2-AS { _ 202 _ to _ 511 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nis.ent 1nis-3-AS { _ 532 _ to _ 754 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1abb.ent 1abbb-1-AS { B 10 _ to B 485 _ B 813 _ to B 837 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1abb.ent 1abbb-2-AS { B 486 _ to B 812 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1acp.ent 1acp-1-AS { _ 1 _ to _ 77 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1adn.ent 1adn-1-AS { _ 1 _ to _ 92 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aep.ent 1aep-1-DOMAK { _ 6 _ to _ 158 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aps.ent 1aps-1-AS { _ 1 _ to _ 98 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bbr.ent 1bbrh-1-DOMAK { H 16 _ to H 149 A }
+/home2/geoff/htdocs/dlink//pdb/pdb2pka.ent 2pkaa-1-DOMAK { A 16 _ to A 85 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bet.ent 1bet-1-DOMAK { _ 10 _ to _ 116 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bom.ent 1bomb-1-DOMAK { B -2 _ to B 25 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bts.ent 1bts-1-DOMAK { _ 2 _ to _ 22 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bvh.ent 1bvh-1-AS { _ 1 _ to _ 157 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1c5a.ent 1c5a-1-AS { _ 1 _ to _ 65 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cc5.ent 1cc5-1-DOMAK { _ 5 _ to _ 87 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hnf.ent 1hnf-2-AS { _ 105 _ to _ 182 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cdl.ent 1cdlg-1-DOMAK { G 796 _ to G 815 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cew.ent 1cewi-1-DOMAK { I 9 _ to I 116 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cid.ent 1cid-1-DOMAK { _ 1 _ to _ 106 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cid.ent 1cid-2-DOMAK { _ 107 _ to _ 177 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pow.ent 1powb-2-DOMAK { B 191 _ to B 359 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pow.ent 1powb-3-DOMAK { B 360 _ to B 549 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pow.ent 1powb-4-DOMAK { B 550 _ to B 593 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pyd.ent 1pydb-2-DOMAK { B 189 _ to B 352 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pyd.ent 1pydb-3-DOMAK { B 353 _ to B 556 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ctf.ent 1ctf-1-DOMAK { _ 53 _ to _ 120 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ctm.ent 1ctm-1-DOMAK { _ 1 _ to _ 169 _ _ 230 _ to _ 250 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ctm.ent 1ctm-2-DOMAK { _ 170 _ to _ 229 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1eps.ent 1eps-1-AS { _ 1 _ to _ 21 _ _ 238 _ to _ 427 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1eps.ent 1eps-2-AS { _ 22 _ to _ 237 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fc2.ent 1fc2c-1-DOMAK { C 124 _ to C 166 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fct.ent 1fct-1-AS { _ 1 _ to _ 32 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gcn.ent 1gcn-1-DOMAK { _ 1 _ to _ 29 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gky.ent 1gky-1-AS { _ 1 _ to _ 32 _ _ 83 _ to _ 186 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gky.ent 1gky-2-AS { _ 33 _ to _ 82 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hcr.ent 1hcra-1-DOMAK { A 139 _ to A 190 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hr3.ent 1hr3a-1-AS { A 1 _ to A 118 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hr3.ent 1hr3b-1-AS { B 1 _ to B 118 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hr3.ent 1hr3c-1-AS { C 1 _ to C 118 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ifa.ent 1ifa-1-AS { _ 3 _ to _ 161 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kga.ent 1kga-1-AS { _ 9 _ to _ 181 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lfb.ent 1lfb-1-DOMAK { _ 13 _ to _ 89 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mli.ent 1mli-1-AS { _ 1 _ to _ 96 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pba.ent 1pba-1-AS { _ 1 _ to _ 81 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ecd.ent 1ecd-1-DOMAK { _ 1 _ to _ 136 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pda.ent 1pda-1-AS { _ 3 _ to _ 98 _ _ 201 _ to _ 220 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pda.ent 1pda-2-AS { _ 99 _ to _ 200 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pgi.ent 1pgi-1-AS { _ 1 _ to _ 514 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1phy.ent 1phy-1-AS { _ 1 _ to _ 126 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pkp.ent 1pkp-1-DOMAK { _ 4 _ to _ 73 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pkp.ent 1pkp-2-DOMAK { _ 74 _ to _ 148 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pnh.ent 1pnh-1-AS { _ 1 _ to _ 31 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pps.ent 1pps-1-AS { _ 1 _ to _ 499 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1put.ent 1put-1-AS { _ 1 _ to _ 106 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pyk.ent 1pyk-1-AS { _ 1 _ to _ 67 _ _ 154 _ to _ 305 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pyk.ent 1pyk-2-AS { _ 68 _ to _ 153 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pyk.ent 1pyk-3-AS { _ 306 _ to _ 432 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pyp.ent 1pyp-1-DOMAK { _ 1 _ to _ 280 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hpr.ent 2hpr-1-DOMAK { _ 2 _ to _ 88 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rip.ent 1rip-1-AS { _ 5 _ to _ 85 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1srb.ent 1srb-1-AS { _ 1 _ to _ 21 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1stf.ent 1stfi-1-DOMAK { I 6 _ to I 125 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1thi.ent 1thi-1-AS { _ 1 _ to _ 207 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tie.ent 1tie-1-DOMAK { _ 1 _ to _ 170 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tlk.ent 1tlk-1-DOMAK { _ 33 _ to _ 135 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1wsy.ent 1wsya-1-AS { A 1 _ to A 265 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1xia.ent 1xiaa-1-AS { A 2 _ to A 322 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1xia.ent 1xiab-1-AS { B 2 _ to B 322 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2sh1.ent 2sh1-1-GJB { _ 1 _ to _ 48 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bop.ent 2bopa-1-DOMAK { A 326 _ to A 410 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bpa.ent 2bpa2-1-DOMAK { 2 15 _ to 2 165 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bpa.ent 2bpa3-1-DOMAK { 3 2 _ to 3 37 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2crd.ent 2crd-1-AS { _ 1 _ to _ 37 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ila.ent 2ila-1-AS { _ 5 _ to _ 152 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pgk.ent 2pgk-1-AS { _ 1 _ to _ 194 _ _ 397 _ to _ 407 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pgk.ent 2pgk-2-AS { _ 195 _ to _ 396 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ptl.ent 2ptl-1-AS { _ 17 _ to _ 78 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3bcl.ent 3bcl-1-DOMAK { _ 3 _ to _ 358 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3cts.ent 3cts-1-AS { _ 1 _ to _ 269 _ _ 395 _ to _ 423 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3cts.ent 3cts-2-AS { _ 270 _ to _ 394 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4cat.ent 4cat-1-AS { _ 59 _ to _ 504 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4cat.ent 4cat-2-AS { _ 505 _ to _ 659 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bnh.ent 1bnh-1-AS { _ 1 _ to _ 456 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmy.ent 1hmy-1-AS { _ 1 _ to _ 186 _ _ 285 _ to _ 327 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmy.ent 1hmy-2-AS { _ 187 _ to _ 284 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rec.ent 1rec-1-DOMAK { _ 9 _ to _ 96 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rec.ent 1rec-2-DOMAK { _ 97 _ to _ 198 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dlc.ent 1dlc-2-AS.1 { _ 290 _ to _ 300 _ _ 498 _ to _ 644 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dlc.ent 1dlc-3-AS.1 { _ 301 _ to _ 497 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1trb.ent 1trb-1-AS { _ 1 _ to _ 116 _ _ 245 _ to _ 316 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1trb.ent 1trb-2-AS { _ 117 _ to _ 244 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lba.ent 1lba-1-DOMAK { _ 1 _ to _ 150 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb8i1b.ent 8i1b-1-DOMAK { _ 5 _ to _ 151 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nar.ent 1nar-1-DOMAK { _ 1 _ to _ 289 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1vil.ent 1vil-1-AS { _ 1 _ to _ 126 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2mta.ent 2mtac-1-AS { C 1 _ to C 147 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pte.ent 1pte-1-AS { _ 14 _ to _ 353 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1htd.ent 1htdb-1-AUTO.2 { B 3 _ to B 202 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pii.ent 1pii-1-DOMAK { _ 1 _ to _ 255 _ _ 447 _ to _ 452 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pii.ent 1pii-2-DOMAK { _ 256 _ to _ 446 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sto.ent 1sto-1-DOMAK { _ 1 _ to _ 213 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bct.ent 1bct-1-AS { _ 163 _ to _ 231 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2plv.ent 2plv4-1-DOMAK { 4 2 _ to 4 69 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1r08.ent 1r084-1-DOMAK { 4 29 _ to 4 68 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hyp.ent 1hyp-1-DOMAK { _ 6 _ to _ 80 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bmv.ent 1bmv1-1-DOMAK { 1 1001 _ to 1 1185 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gsg.ent 1gsgp-1-AS { P 8 _ to P 100 _ P 211 _ to P 260 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gsg.ent 1gsgp-2-AS { P 101 _ to P 210 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gsg.ent 1gsgp-3-AS { P 261 _ to P 339 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1chc.ent 1chc-1-DOMAK { _ 1 _ to _ 68 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cbp.ent 1cbp-1-AS { _ 11 _ to _ 96 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gal.ent 1gal-1-AS { _ 3 _ to _ 108 _ _ 225 _ to _ 327 _ _ 514 _ to _ 583 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gal.ent 1gal-3-AS { _ 328 _ to _ 513 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2btf.ent 2btfp-1-AS { P 1 _ to P 139 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bbn.ent 2bbnb-1-GJB { B 1 _ to B 26 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rhd.ent 1rhd-1-AS { _ 1 _ to _ 156 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rhd.ent 1rhd-2-AS { _ 157 _ to _ 293 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4cpa.ent 4cpai-1-DOMAK { I 2 _ to I 38 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mjc.ent 1mjc-1-DOMAK { _ 2 _ to _ 70 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hip.ent 1hip-1-DOMAK { _ 1 _ to _ 85 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1baa.ent 1baa-1-AS { _ 1 _ to _ 243 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1abk.ent 1abk-2-DOMAK { _ 22 _ to _ 134 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2aai.ent 2aaib-1-DOMAK { B 1 _ to B 138 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2aai.ent 2aaib-2-DOMAK { B 139 _ to B 262 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nco.ent 1ncob-1-DOMAK { B 1 _ to B 113 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1adr.ent 1adr-1-GJB { _ 1 _ to _ 76 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4sgb.ent 4sgbi-1-DOMAK { I 1 _ to I 51 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bcx.ent 1bcx-1-DOMAK { _ 1 _ to _ 185 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3cbh.ent 3cbh-1-AS { _ 83 _ to _ 447 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bbo.ent 1bbo-1-GJB { _ 1 _ to _ 57 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gsr.ent 1gsrb-1-GJB { B 1 _ to B 78 _ B 186 _ to B 207 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gsr.ent 1gsrb-2-GJB { B 79 _ to B 185 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2fxb.ent 2fxb-1-DOMAK { _ 1 _ to _ 81 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ans.ent 1ans-1-AS { _ 1 _ to _ 27 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1eng.ent 1eng-1-AS { _ 1 _ to _ 213 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aaf.ent 1aaf-1-AS { _ 1 _ to _ 55 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tnr.ent 1tnrr-1-AS { R 15 _ to R 97 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1poc.ent 1poc-1-DOMAK { _ 1 _ to _ 134 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ris.ent 1ris-1-DOMAK { _ 1 _ to _ 97 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1wsy.ent 1wsyb-1-DOMAK { B 9 _ to B 53 _ B 87 _ to B 205 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1wsy.ent 1wsyb-2-DOMAK { B 54 _ to B 86 _ B 206 _ to B 393 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3dpa.ent 3dpa-1-GJB { _ 1 _ to _ 123 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3dpa.ent 3dpa-2-GJB { _ 124 _ to _ 218 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sbp.ent 1sbp-1-DOMAK { _ 1 _ to _ 94 _ _ 220 _ to _ 275 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sbp.ent 1sbp-2-DOMAK { _ 95 _ to _ 219 _ _ 276 _ to _ 309 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hst.ent 1hstb-1-DOMAK { B 24 _ to B 97 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tpt.ent 1tpt-1-AS { _ 1 _ to _ 70 _ _ 158 _ to _ 196 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tpt.ent 1tpt-2-AS { _ 71 _ to _ 157 _ _ 197 _ to _ 440 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nfp.ent 1nfp-1-AS { _ 1 _ to _ 228 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1daa.ent 1daab-2-AS { B 120 _ to B 277 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pes.ent 1pesd-1-AS { C 325 _ to C 355 _ D 325 _ to D 355 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1olh.ent 1olhd-1-AS { B 319 _ to B 360 _ D 319 _ to D 360 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tnv.ent 1tnva-1-AS { A 90 _ to A 275 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tnv.ent 1tnvb-1-AS { B 90 _ to B 275 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tnv.ent 1tnvc-1-AS { C 66 _ to C 275 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pec.ent 2pec-1-AS { _ 1 _ to _ 352 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lki.ent 1lki-1-AS { _ 9 _ to _ 180 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hpc.ent 1hpcb-1-AUTO.1 { B 1 _ to B 131 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2blt.ent 2bltb-2-AUTO.1 { B 85 _ to B 157 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bcf.ent 1bcfb-1-AUTO.1 { B 1 _ to B 158 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1xys.ent 1xys-1-AS { _ 1 _ to _ 345 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pvi.ent 1pvib-1-AS { A 2 _ to A 47 _ B 2 _ to B 47 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1wfb.ent 1wfbb-1-AUTO.1 { B 1 _ to B 37 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cks.ent 1cksc-1-AUTO.1 { C 2 _ to C 79 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fli.ent 1flia-1-AS { A 276 _ to A 373 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aor.ent 1aorb-1-AS { B 1 _ to B 211 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aor.ent 1aorb-2-AS { B 212 _ to B 232 _ B 418 _ to B 605 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aor.ent 1aorb-3-AS { B 233 _ to B 417 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pgd.ent 2pgd-2-AUTO.1 { _ 182 _ to _ 434 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tck.ent 1tck-1-AS { _ 1 _ to _ 22 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1png.ent 1png-1-AS { _ 5 _ to _ 314 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lpt.ent 1lpt-1-AS { _ 1 _ to _ 90 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pil.ent 1pil-1-AS { _ 1 _ to _ 112 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ord.ent 1ordb-1-AUTO.1 { B 1 _ to B 107 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ord.ent 1ordb-2-AUTO.1 { B 108 _ to B 420 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ord.ent 1ordb-3-AUTO.1 { B 421 _ to B 600 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ret.ent 1ret-1-AS { _ 1 _ to _ 43 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pkn.ent 1pkn-1-AS { _ 12 _ to _ 41 _ _ 385 _ to _ 530 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pkn.ent 1pkn-2-AS { _ 42 _ to _ 115 _ _ 219 _ to _ 384 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pkn.ent 1pkn-3-AS { _ 116 _ to _ 218 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1trt.ent 1trt-1-AUTO.1 { _ 2 _ to _ 208 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cfh.ent 1cfh-1-AS { _ 1 _ to _ 47 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3kau.ent 3kaua-1-AUTO.1 { A 1 _ to A 100 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3kau.ent 3kaub-1-AUTO.1 { B 1 _ to B 15 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3kau.ent 3kaub-2-AUTO.1 { B 16 _ to B 101 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3kau.ent 3kauc-1-AS { C 2 _ to C 567 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1plp.ent 1plp-1-AS { _ 1 _ to _ 25 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1plr.ent 1plr-1-AUTO.1 { _ 1 _ to _ 258 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cgl.ent 1cglb-1-AUTO.2 { B 106 _ to B 265 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1srp.ent 1srp-1-AS { _ 4 _ to _ 16 _ _ 248 _ to _ 471 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1srp.ent 1srp-2-AS { _ 17 _ to _ 247 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ecl.ent 1ecl-1-AS { _ 2 _ to _ 163 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ecl.ent 1ecl-2-AS { _ 164 _ to _ 212 _ _ 474 _ to _ 590 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ecl.ent 1ecl-3-AS { _ 213 _ to _ 279 _ _ 405 _ to _ 473 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ecl.ent 1ecl-4-AS { _ 280 _ to _ 404 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ter.ent 1ter-1-AS { _ 1 _ to _ 21 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1amc.ent 1amc-1-AS { _ 1 _ to _ 28 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1amy.ent 1amy-1-GJB { _ 1 _ to _ 403 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb154l.ent 154l-1-AUTO.1 { _ 1 _ to _ 185 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1anp.ent 1anp-1-AS { _ 1 _ to _ 28 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1csm.ent 1csmb-1-AUTO.1 { B 1 _ to B 256 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2dtb.ent 2dtb-1-GJB { _ 1 _ to _ 26 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ppi.ent 1ppi-1-AS { _ 1 _ to _ 403 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ppi.ent 1ppi-2-AS { _ 404 _ to _ 496 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1clc.ent 1clc-1-AS { _ 35 _ to _ 136 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tvt.ent 1tvt-1-AS { _ 1 _ to _ 75 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lyp.ent 1lyp-1-AS { _ 1 _ to _ 32 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ehs.ent 1ehs-1-AS { _ 1 _ to _ 48 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hjr.ent 1hjrd-1-AUTO.1 { D 1 _ to D 158 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dpr.ent 1dprb-1-AUTO.1 { B 3 _ to B 75 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dpr.ent 1dprb-2-AUTO.1 { B 76 _ to B 136 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1psf.ent 1psf-1-AS { _ 1 _ to _ 69 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1psm.ent 1psm-1-AS { _ 1 _ to _ 38 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ndh.ent 1ndh-1-AUTO.1 { _ 3 _ to _ 272 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ptr.ent 1ptr-1-AUTO.1 { _ 231 _ to _ 280 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bvp.ent 1bvp6-1-AUTO.1 { 6 1 _ to 6 120 _ 6 254 _ to 6 349 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bvp.ent 1bvp6-2-AUTO.1 { 6 121 _ to 6 253 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1efg.ent 1efga-1-AS { A 1 _ to A 287 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1efg.ent 1efga-2-AS { A 288 _ to A 403 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1efg.ent 1efga-3-AS { A 477 _ to A 603 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1efg.ent 1efga-4-AS { A 604 _ to A 689 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1efg.ent 1efgb-1-AS { B 700 _ to B 735 _ C 800 _ to C 827 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1efg.ent 1efgc-1-AS { B 700 _ to B 735 _ C 800 _ to C 827 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aty.ent 1aty-1-AS { _ 9 _ to _ 79 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1asz.ent 1aszb-1-AS { B 68 _ to B 204 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1asz.ent 1aszb-2-AS { B 205 _ to B 557 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rsy.ent 1rsy-1-AS { _ 9 F to _ 265 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hcg.ent 1hcgb-1-AS { B 1 _ to B 51 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1csn.ent 1csn-1-AS { _ 6 _ to _ 91 _ _ 136 _ to _ 154 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1csn.ent 1csn-2-AS { _ 92 _ to _ 135 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ctl.ent 1ctl-1-AS { _ 1 _ to _ 67 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pdn.ent 1pdnc-1-AS { C 2 _ to C 69 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pdn.ent 1pdnc-2-AS { C 70 _ to C 124 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3pte.ent 3pte-1-AS { _ 1 _ to _ 347 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ctu.ent 1ctu-1-AUTO.1 { _ 1 _ to _ 164 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ctu.ent 1ctu-2-AUTO.1 { _ 165 _ to _ 294 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2mlt.ent 2mltb-1-GJB { B 1 _ to B 26 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tsp.ent 1tsp-1-AS { _ 113 _ to _ 666 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ilk.ent 1ilk-1-AS { _ 10 _ to _ 115 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ilk.ent 1ilk-2-AS { _ 116 _ to _ 160 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1grj.ent 1grj-1-AS { _ 2 _ to _ 75 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1grj.ent 1grj-2-AS { _ 76 _ to _ 158 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1inp.ent 1inp-1-AS { _ 1 _ to _ 400 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hnt.ent 2hnte-1-AS { L 1 B to L 14 L C 16 _ to C 72 _ E 80 _ to E 142 _ F 152 _ to F 244 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ags.ent 1agsb-1-AS { B 1 _ to B 221 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1exh.ent 1exh-1-AS { _ 1 _ to _ 110 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ikb.ent 1ikb-1-AS { _ 3 _ to _ 416 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1apl.ent 1apld-1-AUTO.1 { C 131 _ to D 189 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1knb.ent 1knb-1-AS { _ 396 _ to _ 581 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1irk.ent 1irk-1-AS { _ 981 _ to _ 1079 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bam.ent 1bam-1-AS { _ 1 _ to _ 213 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mmo.ent 1mmoh-1-AS { H 4 _ to H 165 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1itg.ent 1itg-1-AS { _ 55 _ to _ 209 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1htr.ent 1htrp-1-AS { P 1 _ to P 43 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sso.ent 1sso-1-AUTO.1 { _ 1 _ to _ 62 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bmt.ent 1bmtb-1-AUTO.1 { B 651 _ to B 896 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1scu.ent 1scud-1-AUTO.1 { D 1 _ to D 288 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1scu.ent 1scue-1-AUTO.1 { E 1 _ to E 239 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1scu.ent 1scue-2-AUTO.1 { E 240 _ to E 388 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1krt.ent 1krt-1-AS { _ 40 _ to _ 149 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dts.ent 1dts-1-AUTO.1 { _ 1 _ to _ 224 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1wap.ent 1wapv-1-AUTO.1 { V 8 _ to V 74 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ncg.ent 1ncg-1-AUTO.2 { _ 1 _ to _ 99 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nch.ent 1nchb-1-AUTO.1 { A -2 _ to B 100 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bip.ent 1bip-1-AS { _ 1 _ to _ 122 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmf.ent 1hmf-1-GJB { _ 1 _ to _ 77 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ms2.ent 2ms2c-1-AUTO.1 { C 1 _ to C 129 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fiv.ent 1fiva-1-AS { A 4 _ to A 116 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tlf.ent 1tlfd-3-AS { A 337 _ to A 356 _ B 337 _ to B 356 _ C 337 _ to C 356 _ D 337 _ to D 356 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ebn.ent 2ebn-1-AS { _ 5 _ to _ 289 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1eri.ent 1eria-1-AS { A 17 _ to A 277 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dhx.ent 1dhx-1-AS { _ 44 _ to _ 151 _ _ 334 _ to _ 967 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dhx.ent 1dhx-2-AS { _ 152 _ to _ 333 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dih.ent 1dih-1-AS { _ 2 _ to _ 129 _ _ 240 _ to _ 273 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dih.ent 1dih-2-AS { _ 130 _ to _ 239 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pcd.ent 2pcdr-1-AS { F 1 _ to F 200 _ R 301 _ to R 536 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tht.ent 1thtb-1-AUTO.1 { B 4 _ to B 305 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tru.ent 1tru-1-GJB { _ 1 _ to _ 105 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hft.ent 1hft-1-AS { _ 4 _ to _ 109 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hft.ent 1hft-2-AS { _ 110 _ to _ 210 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmp.ent 1hmpb-1-AUTO.1 { B 4 _ to B 217 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1spf.ent 1spf-1-AS { _ 1 _ to _ 35 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ept.ent 1epta-1-AS { A 16 _ to A 60 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ept.ent 1eptb-1-AS { B 61 _ to B 145 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1btr.ent 1btr-1-AS { _ 2 _ to _ 21 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bnc.ent 1bncb-1-AUTO.1 { B 1 _ to B 130 _ B 206 _ to B 448 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bnc.ent 1bncb-2-AUTO.1 { B 131 _ to B 205 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1huc.ent 1hucd-2-AS { D 153 _ to D 247 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hip.ent 2hipb-1-DOMAK { B 1 _ to B 71 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1frn.ent 1frn-1-AUTO.1 { _ 19 _ to _ 314 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1std.ent 1std-1-AS { _ 9 _ to _ 170 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1stu.ent 1stu-1-AS { _ 1 _ to _ 68 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ifo.ent 2ifo-1-AS { _ 1 _ to _ 46 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1prt.ent 1prtg-1-AUTO.1 { G 2 _ to G 235 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1prt.ent 1prti-1-AUTO.1 { I 4 _ to I 199 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1prt.ent 1prtk-1-AUTO.1 { K 1 _ to K 110 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1prt.ent 1prtl-1-AUTO.1 { L 2 _ to L 99 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2cpl.ent 2cpl-1-GJB { _ 2 _ to _ 165 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fps.ent 1fps-1-AS { _ 20 _ to _ 367 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1svr.ent 1svr-1-AS { _ 158 _ to _ 251 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1vca.ent 1vcab-2-AUTO.1 { B 90 _ to B 199 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hmx.ent 1hmx-1-AS { _ 1 _ to _ 113 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hns.ent 1hns-1-AS { _ 90 _ to _ 136 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hph.ent 1hph-1-AS { _ 1 _ to _ 37 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1trl.ent 1trlb-1-AS { B 255 _ to B 316 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tab.ent 1tabi-1-DOMAK { I 12 _ to I 73 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb6ins.ent 6insf-1-DOMAK { F 1 D to F 21 C }
+/home2/geoff/htdocs/dlink//pdb/pdb1tmf.ent 1tmf2-2-DOMAK { 2 137 _ to 2 180 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2mev.ent 2mev2-1-GJB { 2 8 _ to 2 29 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2mev.ent 2mev2-2-GJB { 2 30 _ to 2 256 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dlh.ent 1dlhd-1-GJB { D 3 _ to D 82 _ E 3 _ to E 87 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cos.ent 1cosb-1-DOMAK { B 1 _ to B 29 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ton.ent 1ton-1-DOMAK { _ 16 _ to _ 22 _ _ 124 _ to _ 233 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ton.ent 1ton-2-DOMAK { _ 23 _ to _ 123 _ _ 234 _ to _ 246 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ech.ent 2ech-1-GJB { _ 1 _ to _ 49 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mgs.ent 1mgsb-1-GJB { B 1 _ to B 73 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1per.ent 1perr-1-DOMAK { R 1 _ to R 63 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1zta.ent 1zta-1-AS { _ 1 _ to _ 35 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ysa.ent 1ysad-1-DOMAK { D 224 _ to D 280 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hpg.ent 1hpga-1-AS { A 16 _ to A 125 _ A 231 _ to A 242 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hpg.ent 1hpga-2-AS { A 126 _ to A 230 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2sga.ent 2sga-1-AS { _ 16 _ to _ 116 _ _ 231 _ to _ 242 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2sga.ent 2sga-2-AS { _ 117 _ to _ 230 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rpc.ent 1rpc-1-GJB { _ 1 _ to _ 21 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1omc.ent 1omc-1-GJB { _ 1 _ to _ 27 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cta.ent 1ctab-1-DOMAK { B 1 _ to B 34 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb5rub.ent 5rubb-1-AS { B 2 _ to B 137 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb5rub.ent 5rubb-2-AS { B 138 _ to B 457 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3adk.ent 3adk-1-DOMAK { _ 1 _ to _ 194 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tmf.ent 1tmf3-1-DOMAK { 3 52 _ to 3 232 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1scm.ent 1scma-1-DOMAK { A 777 _ to A 836 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1med.ent 1med-1-AS { _ 1 _ to _ 28 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bal.ent 1bal-1-GJB { _ 1 _ to _ 51 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bp2.ent 2bp2-1-GJB { _ 1 _ to _ 123 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1st3.ent 1st3-1-DOMAK { _ 1 _ to _ 269 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bbr.ent 1bbre-1-DOMAK { E 158 _ to E 234 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2eql.ent 2eql-1-DOMAK { _ 1 _ to _ 39 _ _ 103 _ to _ 129 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2eql.ent 2eql-2-DOMAK { _ 40 _ to _ 102 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4xia.ent 4xiab-1-DOMAK { B 2 _ to B 323 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dma.ent 1dmab-1-AUTO.1 { B 400 _ to B 599 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2asr.ent 2asr-1-DOMAK { _ 38 _ to _ 179 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1esl.ent 1esl-1-GJB { _ 1 _ to _ 120 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mda.ent 1mdam-1-DOMAK { M 16 _ to M 127 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tec.ent 1teci-1-DOMAK { I 8 _ to I 70 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1scm.ent 1scmb-1-DOMAK { B 12 _ to B 83 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hoa.ent 2hoa-1-GJB { _ 0 _ to _ 67 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cd8.ent 1cd8-1-DOMAK { _ 1 _ to _ 114 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hds.ent 1hdsc-1-DOMAK { C 1 _ to C 141 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dmf.ent 1dmf-1-AS { _ 1 _ to _ 28 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb6rlx.ent 6rlxc-1-DOMAK { C -3 _ to C 20 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pls.ent 1pls-1-AS { _ 1 _ to _ 113 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dyn.ent 1dynb-1-AUTO.1 { B 10 _ to B 122 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2drp.ent 2drpd-2-AS { D 137 _ to D 166 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb7znf.ent 7znf-1-GJB { _ 1 _ to _ 30 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3lad.ent 3ladb-2-AS { B 155 _ to B 276 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2npx.ent 2npx-1-AS { _ 1 _ to _ 114 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gdh.ent 1gdhb-1-DOMAK { B 2 _ to B 100 _ B 290 _ to B 321 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1psd.ent 1psdb-1-AS { B 7 _ to B 110 _ B 295 _ to B 321 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2cpk.ent 2cpke-1-AS { E 15 _ to E 31 _ E 127 _ to E 317 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1irk.ent 1irk-2-AS { _ 1080 _ to _ 1283 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pow.ent 1powb-1-DOMAK { B 9 _ to B 190 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pyd.ent 1pydb-1-DOMAK { B 2 _ to B 188 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2drp.ent 2drpd-1-AS { D 102 _ to D 136 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1znf.ent 1znf-1-GJB { _ 1 _ to _ 25 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1arf.ent 1arf-1-GJB { _ 102 _ to _ 130 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3tgf.ent 3tgf-1-GJB { _ 1 _ to _ 50 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tnr.ent 1tnrr-2-AS { R 98 _ to R 153 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fdx.ent 1fdx-1-DOMAK { _ 1 _ to _ 54 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fxr.ent 1fxrb-1-AUTO.1 { B 1 _ to B 64 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bbh.ent 1bbhb-1-DOMAK { B 1 _ to B 131 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2ccy.ent 2ccyb-1-DOMAK { B 2 _ to B 128 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gdh.ent 1gdhb-3-DOMAK { B 144 _ to B 211 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1psd.ent 1psdb-3-AS { B 144 _ to B 211 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bds.ent 2bds-1-GJB { _ 1 _ to _ 43 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1afp.ent 1afp-1-AS { _ 1 _ to _ 51 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1apl.ent 1aplc-1-AS { C 131 _ to C 189 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hdd.ent 1hddd-1-DOMAK { D 3 _ to D 59 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cfb.ent 1cfb-1-AS { _ 610 _ to _ 710 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cfb.ent 1cfb-2-AS { _ 711 _ to _ 814 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ypt.ent 1yptb-1-AUTO.1 { B 189 _ to B 468 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2hnq.ent 2hnq-1-AUTO.1 { _ 5 _ to _ 282 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2act.ent 2act-2-DOMAK { _ 19 _ to _ 114 _ _ 214 _ to _ 218 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1huc.ent 1hucd-1-AS { D 50 _ to D 152 _ D 248 _ to D 254 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pde.ent 2pde-1-AS { _ 1 _ to _ 43 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bbl.ent 1bbl-1-GJB { _ 12 _ to _ 48 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hle.ent 1hleb-1-DOMAK { B 361 _ to B 391 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb8api.ent 8apib-1-DOMAK { B 359 _ to B 394 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sac.ent 1sacb-1-DOMAK { B 1 _ to B 204 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2nad.ent 2nadb-1-AS { A 1 _ to A 149 _ A 335 _ to A 383 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gpt.ent 1gpt-1-GJB { _ 1 _ to _ 47 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ica.ent 1ica-1-AS { _ 1 _ to _ 40 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1erp.ent 1erp-1-GJB { _ 1 _ to _ 38 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1erd.ent 1erd-1-AS { _ 1 _ to _ 40 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2gbp.ent 2gbp-1-DOMAK { _ 1 _ to _ 110 _ _ 257 _ to _ 293 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bap.ent 1bap-1-DOMAK { _ 2 _ to _ 108 _ _ 254 _ to _ 285 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hlc.ent 1hlcb-1-DOMAK { B 4 _ to B 132 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1daa.ent 1daab-1-AS { B 1 _ to B 119 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pol.ent 2polb-1-AS { B 1 _ to B 123 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pol.ent 2polb-2-AS { B 124 _ to B 247 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb6hir.ent 6hir-1-DOMAK { _ 1 _ to _ 49 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dec.ent 1dec-1-AS { _ 1 _ to _ 39 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1r08.ent 1r081-1-GJB { 1 64 _ to 1 274 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3ts1.ent 3ts1-1-AS { _ 1 _ to _ 222 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cgi.ent 1cgie-2-DOMAK { E 31 _ to E 113 _ E 234 _ to E 245 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sgt.ent 1sgt-2-DOMAK { _ 23 _ to _ 121 _ _ 234 _ to _ 245 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1clc.ent 1clc-2-AS { _ 137 _ to _ 575 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ctn.ent 1ctn-2-AS { _ 133 _ to _ 561 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bmv.ent 1bmv2-2-DOMAK { 2 3182 _ to 2 2192 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gsg.ent 1gsgp-4-AS { P 340 _ to P 547 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sis.ent 1sis-1-AS { _ 1 _ to _ 35 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kal.ent 1kal-1-AS { _ 1 _ to _ 29 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pda.ent 1pda-3-AS { _ 221 _ to _ 307 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1sxl.ent 1sxl-1-AS { _ 1 _ to _ 97 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ahb.ent 1ahb-2-GJB { _ 180 _ to _ 246 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pag.ent 1pagb-2-GJB { B 198 _ to B 262 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb5tgl.ent 5tgl-1-AS { _ 5 _ to _ 269 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2dkb.ent 2dkb-2-AS { _ 61 _ to _ 324 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb7pcy.ent 7pcy-1-DOMAK { _ 0 _ to _ 99 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aan.ent 1aan-1-DOMAK { _ 1 _ to _ 105 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mdt.ent 1mdta-2-AS { A 200 _ to A 376 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2stv.ent 2stv-1-DOMAK { _ 25 _ to _ 195 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tmf.ent 1tmf1-1-DOMAK { 1 27 _ to 1 252 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1dlc.ent 1dlc-1-AS.1 { _ 61 _ to _ 289 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1lis.ent 1lis-1-DOMAK { _ 4 _ to _ 134 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb4fxn.ent 4fxn-1-DOMAK { _ 1 _ to _ 138 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tcb.ent 1tcba-1-DOMAK { A 1 _ to A 137 _ A 171 _ to A 288 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fcd.ent 1fcdb-1-AS { B 1 _ to B 107 _ B 257 _ to B 401 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bw4.ent 1bw4-1-AS { _ 1 _ to _ 125 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2cy3.ent 2cy3-1-DOMAK { _ 1 _ to _ 118 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3hhr.ent 3hhra-1-DOMAK { A 1 _ to A 190 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2pgd.ent 2pgd-1-AUTO.1 { _ 1 _ to _ 181 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tfi.ent 1tfi-1-AS { _ 1 _ to _ 50 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pdc.ent 1pdc-1-DOMAK { _ -4 _ to _ 42 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2bbi.ent 2bbi-1-GJB { _ 1 _ to _ 71 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1kst.ent 1kst-1-GJB { _ 1 _ to _ 68 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1c53.ent 1c53-1-AS { _ 1 _ to _ 79 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cth.ent 1cthb-1-DOMAK { B 29 _ to B 107 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tym.ent 1tymd-1-DOMAK { D 3 _ to D 29 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb6rlx.ent 6rlxd-1-DOMAK { D -2 _ to D 22 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fod.ent 1fod1-1-DOMAK { 1 24 _ to 1 191 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3cla.ent 3cla-1-DOMAK { _ 6 _ to _ 91 _ _ 141 _ to _ 219 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1olb.ent 1olba-1-AS { A 1 _ to A 227 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb3pgm.ent 3pgm-1-AS { _ 1 _ to _ 230 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1isa.ent 1isab-2-GJB { B 84 _ to B 192 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gal.ent 1gal-2-AS { _ 109 _ to _ 224 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1egr.ent 1egr-1-GJB { _ 1 _ to _ 85 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aaz.ent 1aazb-1-DOMAK { B 1 _ to B 87 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1cdi.ent 1cdi-1-DOMAK { _ 0 _ to _ 98 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1vca.ent 1vcab-1-AUTO.1 { B 1 _ to B 89 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1mrr.ent 1mrrb-1-DOMAK { B 1 _ to B 340 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hpl.ent 1hplb-1-AS { B 1 _ to B 337 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb8cat.ent 8cata-1-AS { A 3 _ to A 68 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tnt.ent 1tnt-1-AS { _ 1 _ to _ 76 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1fut.ent 1fut-1-DOMAK { _ 1 _ to _ 107 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1iaa.ent 1iaa-2-DOMAK { _ 9 _ to _ 100 _ _ 180 _ to _ 200 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pkt.ent 1pkt-1-GJB { _ 4 _ to _ 79 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1gbr.ent 1gbra-1-AS { A -8 _ to A 65 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nba.ent 1nbac-1-AS { C 36 _ to C 249 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1aoz.ent 1aozb-2-AS { B 131 _ to B 336 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2blt.ent 2bltb-1-AUTO.1 { B 2 _ to B 84 _ B 158 _ to B 360 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1nal.ent 1nal4-1-AUTO.1 { 4 4 _ to 4 294 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1rld.ent 1rlds-1-DOMAK { S 510 _ to S 623 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ctn.ent 1ctn-1-AS { _ 24 _ to _ 132 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1trk.ent 1trkb-1-AS { B 3 _ to B 331 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bpm.ent 1bpm-2-AS { _ 162 _ to _ 484 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb8rxn.ent 8rxna-1-DOMAK { A 1 _ to A 52 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tap.ent 1tap-1-AS { _ 1 _ to _ 60 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1pxt.ent 1pxtb-1-DOMAK { B 28 _ to B 160 _ B 221 _ to B 253 _ B 274 _ to B 302 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1har.ent 1har-1-AS { _ 1 _ to _ 216 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1onc.ent 1onc-1-DOMAK { _ 1 _ to _ 104 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1abk.ent 1abk-1-DOMAK { _ 1 _ to _ 21 _ _ 135 _ to _ 211 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1glb.ent 1glbf-1-AS { F 1 _ to F 168 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bgu.ent 1bgu-1-GJB.1 { _ 1 _ to _ 166 _ _ 333 _ to _ 351 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1bfg.ent 1bfg-1-DOMAK { _ 19 _ to _ 144 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hce.ent 1hce-1-GJB { _ 1 _ to _ 118 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1amp.ent 1amp-1-AS { _ 1 _ to _ 291 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1tml.ent 1tml-1-AS { _ 1 _ to _ 286 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1brq.ent 1brq-1-DOMAK { _ 1 _ to _ 174 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1hag.ent 1hage-1-AS { E 1 _ to E 29 _ E 120 _ to E 233 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb2end.ent 2end-1-DOMAK { _ 2 _ to _ 138 _ }
+/home2/geoff/htdocs/dlink//pdb/pdb1ord.ent 1ordb-4-AUTO.1 { B 601 _ to B 730 _ }

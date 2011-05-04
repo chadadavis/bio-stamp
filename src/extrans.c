@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,7 +33,7 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* EXTRANS
  * Given a file of transformations and a set of domain IDs, this program
@@ -42,8 +41,6 @@
  *  (probably one could do this in perl, but hell)
  *
  * RBR 20 June 1996 */
-
-void exit_error();
 
 main(int argc, char *argv[]) {
 	
@@ -81,12 +78,9 @@ main(int argc, char *argv[]) {
 	buff=(char*)malloc(1000*sizeof(char));
 	infile=(char*)malloc(1000*sizeof(char));
 	indx=(int*)malloc(100*sizeof(int));
-/* SMJS Was sizeof(float) */
-	invmat=(float**)malloc(3*sizeof(float *));
-/* SMJS Was sizeof(float) */
-	R=(float**)malloc(4*sizeof(float *));
-/* SMJS Was sizeof(float) */
-	RI=(float**)malloc(4*sizeof(float *));
+	invmat=(float**)malloc(3*sizeof(float));
+	R=(float**)malloc(4*sizeof(float));
+	RI=(float**)malloc(4*sizeof(float));
 	negvec=(float*)malloc(3*sizeof(float));
 	for(i=0; i<4; ++i) { 
 	   R[i]=(float*)malloc(4*sizeof(float));
@@ -118,7 +112,7 @@ main(int argc, char *argv[]) {
 		 len=strlen(argv[j]);
 		 id_list[n_ids]=(char*)malloc((len+1)*sizeof(char));
 	         strcpy(id_list[n_ids],argv[j]);
-/*		 printf("ID %d is %s\n",n_ids+1,id_list[n_ids]);  */
+/*		 printf("ID %d is %s\n",n_ids+1,id_list[n_ids]); */
 		 n_ids++;
 		 id_list=(char**)realloc(id_list,(n_ids+1)*sizeof(char*));
 		 j++;
@@ -156,10 +150,10 @@ main(int argc, char *argv[]) {
 	  exit(-1);
 	}
 	
-/*	for(i=0; i<n_ids; ++i) {
+	for(i=0; i<n_ids; ++i) {
 	    for(j=0; j<strlen(id_list[i]); ++j) id_list[i][j]=utol(id_list[i][j]);
 	}
-*/ 
+	   
 	/* find which domain ID to use */
 	which=(int*)malloc(ndomain*sizeof(int));
 	for(i=0; i<ndomain; ++i) {
@@ -188,7 +182,7 @@ main(int argc, char *argv[]) {
 	exit(0);
 }
 
-void exit_error()
+int exit_error()
 {
 	fprintf(stderr,"format: extrans -f <transformation file> -i <ids to extract> \n");
 	exit(-1);

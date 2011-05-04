@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,7 +33,7 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 
 #define chainstring "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
@@ -42,8 +41,6 @@
  *   program outputs a series of PDB format files
  *   called <ident>.pdb (where ident is from the
  *   domain_loc structure */
-
-void exit_error();
 
 main(int argc, char *argv[]) {
 
@@ -192,7 +189,7 @@ main(int argc, char *argv[]) {
 	   }
 	   
 	   tmp_hetero=hetero; tmp_waters=waters; tmp_nucleic=nucleic;
-	   if((IN=openfile(domain[i].filename,"r"))==NULL) {
+	   if((IN=fopen(domain[i].filename,"r"))==NULL) {
 	      fprintf(stderr,"error: PDB file %s does not exist.  Skipping this domain.\n",domain[i].filename);
 	   } else {
 	      for(j=0; j<domain[i].nobj; ++j) {
@@ -203,13 +200,12 @@ main(int argc, char *argv[]) {
 			     domain[i].R,domain[i].V,k,tmp_hetero,tmp_nucleic,tmp_waters,chainlabel,verbose,filename,OUT);
 		 else extract_dssp(IN,domain[i].start[j],domain[i].end[j],domain[i].type[j],
 			     domain[i].R,domain[i].V,k,chainlabel,OUT);
-	   	 closefile(IN,domain[i].filename);
-	   	 IN=openfile(domain[i].filename,"r");
+	   	 rewind(IN);
 		 tmp_hetero=0;
 		 tmp_nucleic=0;
 		 tmp_waters=0; /* only output hetero-atoms, waters, nucleic acid */
 	      }
-	      closefile(IN,domain[i].filename);
+	      fclose(IN);
 	   }
 	   if(graphics==0) {
               fclose(OUT);
@@ -225,7 +221,7 @@ main(int argc, char *argv[]) {
 
 	exit(0);
 }
-void exit_error()
+int exit_error()
 {
 	  fprintf(stderr,"format: transform -f <domain descriptor file> [ -het -hoh -nuc -d -g -v ]\n");
 	  fprintf(stderr,"        -o <combined output file> (-g only) \n");

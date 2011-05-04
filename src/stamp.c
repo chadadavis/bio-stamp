@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -33,17 +32,16 @@
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
 
-#include "stamp.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
-#define lastmod "25 March 1999"
+#include <stamp.h>
 
-/* STAMP version 4.2 
- * Lots and lots and lots of changes 
- * RTFM */
+#define lastmod "1 November 1995"
 
-void exit_error();
-void help_exit_error();
+/* STAMP version 4.0 */
 
 main(int argc, char *argv[]) {
 
@@ -61,24 +59,14 @@ main(int argc, char *argv[]) {
 	struct parameters *parms;
 	struct domain_loc *domain;
 
-/* SMJS Added stream setup code */
-/*
-   if (!SetDefaultStreams(0))
-   {
-      printf("Failed to set default streams in main()\n");
-      return 0;
-   }
-*/
-
-	if(argc<2) exit_error();
+	if(argc<3) exit_error();
 
 	/* get environment variable */
 	if((env=getenv("STAMPDIR"))==NULL) {
 	  fprintf(stderr,"error: environment variable STAMPDIR must be set\n");
 	  exit(-1);
 	}
-/* SMJS Changed malloc to calloc to zero struct */
-	parms=(struct parameters*)calloc(1,sizeof(struct parameters));
+	parms=(struct parameters*)malloc(sizeof(struct parameters));
 
 	strcpy(parms[0].stampdir,env);
 	
@@ -110,11 +98,15 @@ main(int argc, char *argv[]) {
 		 value[0]=='O');
 	   /* enables one to write '1', 'YES', 'Yes', 'yes', 'T_FLAG', 'True' or 'true' to 
 	    *  set any boolean parmsiable to one */
-           if((strcmp(&argv[i][1],"l")==0) || (strcmp(&argv[i][1],"f")==0) || (strcmp(&argv[i][1],"p")==0)) {
+           if(strcmp(&argv[i][1],"l")==0) {
 	      if(i+1>=argc) exit_error();
               /* listfile name */
 	      strcpy(parms[0].listfile,argv[i+1]);
 	      i++;
+           } else if(strcmp(&argv[i][1],"p")==0) {
+	     parms[0].PAIRWISE=1;
+	   } else if(strcmp(&argv[i][1],"t")==0) {
+	     parms[0].TREEWISE=1;
 	   } else if(strcmp(&argv[i][1],"P")==0) {
 	      /* want to read in parameter file */
 	      if(i+1>=argc) exit_error();
@@ -130,9 +122,7 @@ main(int argc, char *argv[]) {
 	     if(i+1>=argc) exit_error();
 	     strcpy(parms[0].logfile,argv[i+1]);
 	     i++;
-	   } else if(strcmp(&argv[i][1],"help")==0) {
-		help_exit_error();
-	   } else if((strcmp(&argv[i][1],"V")==0) || (strcmp(&argv[i][1],"v")==0)) {
+	   } else if(strcmp(&argv[i][1],"V")==0) {
 	     parms[0].verbose=1;
 	     strcpy(parms[0].logfile,"stdout");
 	   } else if(strcmp(&argv[i][1],"s")==0) {
@@ -271,13 +261,13 @@ main(int argc, char *argv[]) {
 		strcpy(&parms[0].scanfile[0],value); i++;
 	   } else if(strcmp(keyword,"LOGFILE")==0) {
 		strcpy(&parms[0].logfile[0],value); i++;
-	   } else if(strcmp(keyword,"SECTYPE")==0) {
-		sscanf(value,"%d",&parms[0].SECTYPE); i++;
+	   } else if(strcmp(keyword,"SEC")==0) {
+		sscanf(value,"%d",&parms[0].SEC); i++;
 	   } else if(strcmp(keyword,"SCANSEC")==0) {
 		sscanf(value,"%d",&parms[0].SCANSEC); i++;
 	   } else if(strcmp(keyword,"SECFILE")==0) {
 		strcpy(&parms[0].secfile[0],value); i++;
-		parms[0].SECTYPE=2;
+		parms[0].SEC=2;
 	   } else if(strcmp(keyword,"BOOLEAN")==0) {
 		parms[0].BOOLEAN=T_FLAG; i++;
 	   } else if(strcmp(keyword,"BOOLMETHOD")==0) {
@@ -377,6 +367,9 @@ main(int argc, char *argv[]) {
 	      exit(-1);
 	   } 
 	}
+	parms[0].CPUtime=0.0;   
+	k=clock();
+	parms[0].CPUtime+=(float)k/(60000000);
 
 	if(strcmp(parms[0].logfile,"silent")==0) {
 	   printf("\nSTAMP Structural Alignment of Multiple Proteins\n");
@@ -544,8 +537,8 @@ main(int argc, char *argv[]) {
 	fprintf(parms[0].LOG,"Reading coordinates...\n");
 	for(i=0; i<ndomain; ++i) {
 	   fprintf(parms[0].LOG,"Domain %3d %s %s\n   ",i+1,domain[i].filename,domain[i].id);
-	   if((PDB=openfile(domain[i].filename,"r"))==NULL) {
-	      fprintf(stderr,"error opening file %s\n",domain[i].filename);
+	   if((PDB=fopen(domain[i].filename,"r"))==NULL) {
+	      fprintf(stderr,"error: file %s does not exist\n",domain[i].filename);
 	      exit(-1);
 	   }
 	   domain[i].ncoords=0;
@@ -576,7 +569,7 @@ main(int argc, char *argv[]) {
 		}
 		fprintf(parms[0].LOG,"%4d CAs ",add);
 	        total+=add;
-		closefile(PDB,domain[i].filename); PDB=openfile(domain[i].filename,"r");
+	        rewind(PDB);
 	    }
 	    domain[i].ncoords=total;
 	    fprintf(parms[0].LOG,"=> %4d CAs in total\n",domain[i].ncoords);
@@ -584,14 +577,14 @@ main(int argc, char *argv[]) {
 	    printmat(domain[i].R,domain[i].V,3,parms[0].LOG);
 	    fprintf(parms[0].LOG,"      ...to these coordinates.\n");
 	    matmult(domain[i].R,domain[i].V,domain[i].coords,domain[i].ncoords,parms[0].PRECISION);
-	    closefile(PDB,domain[i].filename);
+	    fclose(PDB);
 	}
 	fprintf(parms[0].LOG,"\n\n");
 	fprintf(parms[0].LOG,"Secondary structure...\n");
 	for(i=0; i<ndomain; ++i) 
 	   domain[i].sec=(char*)malloc(parms[0].MAX_SEQ_LEN*sizeof(char));
 
-	switch(parms[0].SECTYPE) {
+	switch(parms[0].SEC) {
 	  case 0: {
 	      fprintf(parms[0].LOG,"No secondary structure assignment will be considered\n");
 	      for(i=0; i<ndomain; ++i) {
@@ -622,14 +615,11 @@ main(int argc, char *argv[]) {
 	   if(strcmp(parms[0].logfile,"silent")==0) {
 
 	     printf("Results of scan will be written to file %s\n",parms[0].scanfile);
-	     printf("Fits  = no. of fits performed, Sc = STAMP score, RMS = RMS deviation\n");
+	     printf("Fits = no. of fits performed, Sc = STAMP score, RMS = RMS deviation\n");
 	     printf("Align = alignment length, Nfit = residues fitted, Eq. = equivalent residues\n");
-	     printf("Secs  = no. equiv. secondary structures, %%I = seq. identity, %%S = sec. str. identity\n");
-/* SMJS Added NC stuff for now */
-	     printf("P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694\n");
-	     printf("        (NC = P value not calculated - potential FP overflow)\n");
+	     printf("Secs = no. equiv. secondary structures, %%I = seq. identity, %%S = sec. str. identity\n");
 	     printf("\n");
-	     printf("     Domain1         Domain2          Fits  Sc      RMS   Len1 Len2 Align Fit   Eq. Secs    %%I    %%S     P(m)\n");
+	     printf("        Domain1    Domain2   Fits  Sc       RMS Len1 Len2 Align Fit   Eq. Secs    %%I    %%S \n");
 	   }
 
 	   if(parms[0].SLOWSCAN==1) {
@@ -667,32 +657,18 @@ main(int argc, char *argv[]) {
 	}
 	free(domain);
 
+	k=clock();
+	parms[0].CPUtime+=(float)k/(60000000);
+	fprintf(parms[0].LOG,"\n\ntotal CPU time used: %10.3f minutes\n",parms[0].CPUtime);
 	exit(0);
 }
 
-void help_exit_error() {
-	fprintf(stderr,"format: stamp -f <starting domain file> [options] \n");
-	fprintf(stderr,"\n");
-	fprintf(stderr,"GENERAL OPTIONS:\n");
-        fprintf(stderr,"     -o <output log file>  DEF is stdout\n");
-        fprintf(stderr,"     -P <parameter file>   DEF is $STAMPDIR/stamp.defaults\n");
-	fprintf(stderr,"     -n <1 or 2 fits>      DEF is 1\n");
-	fprintf(stderr,"     -prefix <string>      DEF is stamp_trans\n");
-	fprintf(stderr,"     -pen1 <gap penatly 1> DEF is 0\n");
-	fprintf(stderr,"     -pen2 <gap penalty 2> DEF is 0\n");
-	fprintf(stderr,"     -<parameter> <value> (any parameter defined in the manual)\n");
-	fprintf(stderr,"MULTIPLE ALIGNMENT:\n");
-	fprintf(stderr,"     -rough => do ROUGHFIT initial superimposition\n");
-	fprintf(stderr,"SCANNING:\n");
-	fprintf(stderr,"     -s     => invoke SCAN mode\n");
-	fprintf(stderr,"     -cut   => truncate domains\n");
-	fprintf(stderr,"     -d <database file>              DEF is dbase.dom\n");
-	fprintf(stderr,"     -slide <slide parameter>        DEF is 10\n");
-	fprintf(stderr,"     -scancut <scan Sc cutoff value> DEF is 2.0 \n");
-	exit(-1);
-}
-void exit_error() {
-	fprintf(stderr,"format: stamp -f <starting domain file> [options] \n");
-	fprintf(stderr,"        stamp -help  will give a list of options\n");
+int exit_error()
+{
+	printf("format: stamp -l <listfile> -p -t -s -o <output file> -P <parameter file>\n");
+	printf("        -n <1 or 2 fits> -d <database file for scans> -slide <slide value>\n");
+	printf("        -pen1 <gap penatly 1> -pen2 <gap pentalty 2> -prefix <output file prefix>\n");
+	printf("        -scancut <scan cutoff value> -<parameter> <value>\n");
+	printf("        -rough\n");
 	exit(-1);
 }

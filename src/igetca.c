@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -33,7 +32,7 @@
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
 #include <stdio.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* slightly varied version of getca.  
  * Coordinates are multiplied by 1000 and converted to integers */
@@ -73,20 +72,18 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 	   if((strncmp(buff,"ENDMDL",6)==0 || strncmp(buff,"END   ",6)==0) && begin==1) {
                 break;
            }
-	   if(strncmp(buff,"ATOM  ",6)==0) {
-	     /* get chain, number and insertion code */
-	     cid=buff[21];
-	     sscanf(&buff[22],"%d",&number);
-	     in=buff[26];
-	     alt=buff[16]; /* alternate position indicator */
+	   if(strncmp(buff,"ATOM  ",6)==0 && strncmp(&buff[12]," CA ",4)==0) {
+	      /* get chain, number and insertion code */
+	      cid=buff[21];
+	      sscanf(&buff[22],"%d",&number);
+	      in=buff[26];
+	      alt=buff[16]; /* alternate position indicator */
 	      if(!begin && 
 		 ((start.cid==cid && start.n==number && start.in==in) ||
 		  (start.cid==cid && type==2) ||
 		  (type==1) )) begin=1;
 	      if(begin && type==2 && start.cid!=cid) break;
-/* SMJS Changed to be like Robs version */
-	     if(strncmp(&buff[12]," CA ",4)==0) {
-	      if(begin && (alt==' ' || alt=='A' || alt=='1' || alt=='L' || alt=='O') && 
+	      if(begin && (alt==' ' || alt=='A' || alt=='1') && 
 		  !(cid==last_cid && number==last_number && in==last_in)) { 
 		 /* only reads in the first position if more than one are given */
 		if(seq_only==0) {
@@ -110,25 +107,21 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 		(*ncoord)++;
 
 		if((*ncoord)>MAXats) {
-		    fprintf(OUTPUT,"error: number of coordinates read surpasses memory limit\n");
+		    fprintf(stderr,"error: number of coordinates read surpasses memory limit\n");
 		    return -1;
 		 }
 		 aa[(*ncoord)]=' ';
+		 last_cid = cid; last_in = in; last_number = number;
 	      } 
-              last_cid = cid; last_in = in; last_number = number;
-
 	      if(begin && end.cid==cid && end.n==number && end.in==in && type==3) 
-		  break;
+		 break;
 	      /* this residing after the last "if" makes the set of atoms inclusive */
-            }
-            /* in case of missing CA in the last residue */
-	    if(begin && cid==end.cid && number>end.n && type==3) break;  
 	   } 
 	} 
 	aa[(*ncoord)]='\0';
 	free(add_buff);
 	if(!begin) {
-	   fprintf(OUTPUT,"error: begin of sequence not found in PDB file\n");
+	   fprintf(stderr,"error: begin of sequence not found in PDB file\n");
 	   (*ncoord)=0;
 	   free(ccoord);
 	   return -1;

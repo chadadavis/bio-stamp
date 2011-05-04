@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,31 +11,34 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
   Structure Comparison: Assignment of Global and Residue Confidence Levels",
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
 
-#include "poststamp.h"
+#include <poststamp.h>
 
-#define MAX_SEQ_LEN 10000
+#define MAX_SEQ_LEN 2000
 #define PRECISION 1000
 #define E1 3.8
 #define E2 3.8
@@ -75,9 +78,6 @@ main(int argc, char *argv[]) {
 	struct seqdat *bloc;
 	struct stampdat *stamp;
 
-/* SMJS Added prec2i inverse squared precision constant for rossmann */
-        float prec2i=1.0/(float)(PRECISION*PRECISION);
-
 	printf("POSTSTAMP, R.B. Russell 1995\n");
 
 	if((env=getenv("STAMPDIR"))==NULL) {
@@ -110,10 +110,8 @@ main(int argc, char *argv[]) {
              exit_error();
            }
         }
-/* SMJS Changed to use inverse constants and -2.0 instead of -2 */
-/* SMJS Incorporate prec2i into const1 and const2 */
-	const1=(1.0/(-2.0*E1*E1))*prec2i;
-	const2=(1.0/(-2.0*E2*E2))*prec2i;
+	const1=-2*E1*E1;
+	const2=-2*E2*E2;
 	if(min_Pij<0.0 || min_Pij>1.0) {
 	   fprintf(stderr,"error: minimum Pij value must be between 0 and 1\n");
 	   exit(-1);
@@ -201,7 +199,7 @@ main(int argc, char *argv[]) {
 	   /* output the domain descriptors again */
 	   printdomain(OUT,domain[i],1);
 	   printf(" Domain %3d %s %s\n   ",i+1,domain[i].filename,domain[i].id); 
-	   if((PDB=openfile(domain[i].filename,"r"))==NULL) {
+	   if((PDB=fopen(domain[i].filename,"r"))==NULL) {
 	      fprintf(stderr,"error: file %s does not exist\n",domain[i].filename);
 	      exit(-1);
 	   }
@@ -228,23 +226,19 @@ main(int argc, char *argv[]) {
 		} 
 		printf("%4d CAs ",add); 
 	        total+=add;
-	        closefile(PDB,domain[i].filename); PDB=openfile(domain[i].filename,"r");
+	        rewind(PDB);
 	    }
 	    domain[i].ncoords=total;
 	    printf("=> %4d CAs in total\n",domain[i].ncoords);
 	    printf(" Transforming coordinates...\n");
 	    matmult(domain[i].R,domain[i].V,domain[i].coords,domain[i].ncoords,PRECISION);  
-	    closefile(PDB,domain[i].filename);
+	    fclose(PDB);
 	}
 	
 	/* output ">" descriptors */
 	fprintf(OUT,"\n\n");
-	for(i=0; i<nbloc; ++i) { 
-	  for(j=0; j<strlen(bloc[i+1].id); ++j) if(bloc[i+1].id[j]=='\n') bloc[i+1].id[j]='\0';
-	  for(j=0; j<strlen(bloc[i+1].title); ++j) if(bloc[i+1].title[j]=='\n') bloc[i+1].title[j]='\0';
-
-	  fprintf(OUT,">%s %s\n",bloc[i+1].id,bloc[i+1].title);
-	}
+	for(i=0; i<nbloc; ++i) 
+	  fprintf(OUT,">%s %s",bloc[i+1].id,bloc[i+1].title);
 	/* output "#" descriptors */
 	for(i=0; i<nstamp; ++i) 
 	  fprintf(OUT,"#%c %s",stamp[i].what,stamp[i].title);
@@ -266,9 +260,8 @@ main(int argc, char *argv[]) {
 	       if(bloc[j+1].seq[i+1]!=' ' && bloc[k+1].seq[i+1]!=' ') {
 		  if(pointer[j]==0 || pointer[k]==0) atstart=1;
 		  if(pointer[j]>=(domain[j].ncoords-1) || pointer[k]>=(domain[k].ncoords-1)) atend=1;
-/* SMJS Changed PRECISION to prec2i */
 		  Pij[l][i]=rossmann(&domain[j].coords[pointer[j]],&domain[k].coords[pointer[k]],
-		   atstart,atend,const1,const2,&Dij,&Cij);
+		   atstart,atend,const1,const2,&Dij,&Cij,PRECISION);
 		} else Pij[l][i]=0.0;
 	  	counter[i]+=(Pij[l][i]>=min_Pij);
 		all[i]*=(Pij[l][i]>=min_Pij);
@@ -296,7 +289,7 @@ main(int argc, char *argv[]) {
 	free(pointer);
 	exit(0);
 }
-void exit_error() {
+int exit_error() {
     fprintf(stderr,"format: poststamp -f <alignment file> -min <minimum Pij> -aligned\n");
     fprintf(stderr,"        -d <domains file> [use only if using a non-STAMP alignment]\n");
     fprintf(stderr,"        -aligned will consider all aligned positions\n");

@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,7 +33,7 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <string.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* Given a file containing a list of protein descriptors, returns
  *  a list of brookhaven starts and ends, or appropriate wild cards
@@ -61,9 +60,6 @@ int getdomain(FILE *IN, struct domain_loc *domains, int *ndomain, int maxdomain,
 	(*gottrans)=0;
 	while(!end) {
 	  end=domdefine(&domains[count],&i,env,DSSP,IN,OUTPUT);
-/*	  printf("Domain %s\n",domains[count].id);
-          printdomain(stdout,domains[count],1); */
-
 	  if(i==1) (*gottrans)=1;
 	  if(end==-1) {
 	     fprintf(stderr,"error in domain specification file\n");
@@ -125,7 +121,7 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	 *  ending at the end brace */
 	
 	while((c=getc(INPUT))!=(char)EOF) {
-	   if(c!='%' && c!='#' && c!='\n') { /* not a comment */
+	   if(c!='%' && c!='#') { /* not a comment */
 	     /* lets just read in the whole thing */
 	     i=0;
 	     buff[i++]=c;
@@ -150,7 +146,7 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	 *  leave the file pointer ready for next time */
 	while((c=getc(INPUT))!=(char)EOF && c!='\n');
 
-/*      printf("Domain is %s\n",buff); */
+/*	printf("Domain is %s\n",buff);    */
 
 	/* First read the file name */
 
@@ -158,7 +154,7 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	pt=0;
 	if((pt=skiptononspace(buff,pt))==-1) getdomain_error(buff);
 	sscanf(&buff[pt],"%s",&domain[0].id[0]);	/* read the identifier */
-/*	printf("Read in file %s\n",domain[0].filename); */
+/*	printf("Read in file %s\n",domain[0].filename);  */
 
 	/* check to see whether the file exists, otherwise, look for a file
 	 *  with a similar ID */
@@ -179,11 +175,9 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	}
 	   
 
-/*
-	printf("Updated file and id %s and %s\n",domain[0].filename,domain[0].id); 
+/*	printf("Updated file and id %s and %s\n",domain[0].filename,domain[0].id); 
 	printf("Buff is %s\n",buff); 
-	printf("Length is %d\n",strlen(buff)); 
-*/
+	printf("Length is %d\n",strlen(buff)); */
 
 	if((pt=skiptononspace(buff,pt))==-1) getdomain_error(buff);
 	/* copy the bit between the braces into the string called descriptor */
@@ -199,7 +193,7 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	   j++;
 	}
 	descriptor[j]='\0';
-/*	printf("descriptor= '%s'\n",descriptor);     */
+/*	printf("descriptor= '%s'\n",descriptor);    */
 	/* allocation of memory, initially */
 	domain[0].reverse=(int*)malloc(sizeof(int));
 	domain[0].type=(int*)malloc(sizeof(int));
@@ -223,7 +217,7 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	pt=0;
 	if(strlen(descriptor)==0) getdomain_error(buff);
 	while(descriptor[pt]==' ' && descriptor[pt]!='\0') pt++;
-	if(descriptor[pt]=='\0' || descriptor[pt]=='}') getdomain_error(buff);
+	if(descriptor[pt]=='\0' || descriptor[pt]=='}') getdomain_error();
 	while(pt!=-1 && descriptor[pt]!='\0' && descriptor[pt]!='\n') { /* read until end of string */
 	   if(strncmp(&descriptor[pt],"REVERSE",7)==0) { /* coordinates are to be reversed */
 		 domain[0].reverse[nobjects]=1;
@@ -310,15 +304,22 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	   return 0;
 }
 
-int skiptononspace(char *string, int pointer) {
+int skiptononspace(string,pointer)
+char *string;
+int pointer;
+{
+/*	printf("Before skiptononspace '%s' %d\n",&string[pointer],pointer); */
 	while(string[pointer]!=' ' && string[pointer]!='\0' && string[pointer]!='\n') pointer++;
 	if(string[pointer]=='\0') return -1;
 	while(string[pointer]==' ' && string[pointer]!='\0' && string[pointer]!='\n') pointer++;
 	if(string[pointer]=='\0') return -1;
+/*	printf("After skiptononspace '%s' %d\n",&string[pointer],pointer); */
 	return pointer;
 }
 
-int getdomain_error(char *buff) {
+int getdomain_error(buff)
+char *buff;
+{
 	fprintf(stderr,"error in domain descriptors\n");
 	fprintf(stderr,"Last domain read:\n%s\n",buff);
 	exit(-1);

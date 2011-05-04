@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -37,17 +36,15 @@
 #include <math.h>
 #include <time.h>
 
-#include "stamp.h"
-#include "stamprel.h"
+#include <general.h>
+#include <domain.h>
+#include <stamprel.h>
 
 #define MAX_SEQ_LEN 2000
 #define PRECISION 1000
 
 /* gstamp: reads in a stamp output file and generates molscripts files
  *   displaying the regions of similarity */
-
-void exit_error();
-
 main(int argc, char *argv[]) {
 
 	int i,j,k,l,test;
@@ -62,7 +59,6 @@ main(int argc, char *argv[]) {
 	int gen_average;
 	int helix,strand,coil;
 	int cons_sec;
-	int colour;
 	int verbose;
 
 	int *counter;
@@ -104,7 +100,7 @@ main(int argc, char *argv[]) {
 	
 	buff=(char*)malloc(100*sizeof(char));
 	all_aligned=0; gen_average=0;
-	cons_sec=0; colour=0;
+	cons_sec=0; 
 
 	for(i=1; i<argc; ++i) {
 	   if(argv[i][0]!='-') exit_error();
@@ -134,8 +130,6 @@ main(int argc, char *argv[]) {
 	     gen_average=1;
 	   } else if(strcmp(&argv[i][1],"cons")==0) {
 	     cons_sec=1;
-	   } else if(strcmp(&argv[i][1],"colour")==0) {
-	     colour=1;
 	   } else if(strcmp(&argv[i][1],"V")==0) {
 	      verbose=1;
 	   } else {
@@ -180,7 +174,7 @@ main(int argc, char *argv[]) {
 	rewind(TRANS);
 	printf(" ");
 	if(Agetbloc(TRANS,bloc,&nbloc)==-1) {
-	  fprintf(stderr,"error: alignment file %s appears to be incomplete\n",filename); 
+	  fprintf(stderr,"error: alignment file %s appears to be incomplete %s\n",filename); 
 	  exit(-1); 
         } 
 	bloclen=strlen(&bloc[1].seq[1]);
@@ -248,7 +242,7 @@ main(int argc, char *argv[]) {
 	for(i=0; i<ndomain; ++i) {
 	   /* output the domain descriptors again */
 	   printf(" Domain %3d %s %s\n   ",i+1,domain[i].filename,domain[i].id); 
-	   if((PDB=openfile(domain[i].filename,"r"))==NULL) {
+	   if((PDB=fopen(domain[i].filename,"r"))==NULL) {
 	      fprintf(stderr,"error: file %s does not exist\n",domain[i].filename);
 	      exit(-1);
 	   }
@@ -275,7 +269,7 @@ main(int argc, char *argv[]) {
 		} 
 		printf("%4d CAs ",add); 
 	        total+=add;
-		closefile(PDB,domain[i].filename); PDB=openfile(domain[i].filename,"r");
+	        rewind(PDB);
 	    }
 	    domain[i].ncoords=total;
 	    printf(" A total of %4d CAs in total\n",domain[i].ncoords);
@@ -284,7 +278,7 @@ main(int argc, char *argv[]) {
 /*	    printmat(domain[i].R,domain[i].V,3,stdout);
 	    printf("      ...to these coordinates.\n");  */
 	    matmult(domain[i].R,domain[i].V,domain[i].coords,domain[i].ncoords,PRECISION);  
-	    closefile(PDB,domain[i].filename);
+	    fclose(PDB);
 	}
         summary=(char*)malloc(bloclen*sizeof(char));
 
@@ -342,18 +336,9 @@ main(int argc, char *argv[]) {
 	     type=summary[j];
 	     if(rel[j]==1) { /* reliable region */
                 switch(type) {
-                     case 'H':  {
-				if(colour==1) fprintf(OUT,"set planecolour blue;\nset plane2colour blue;\n");
-				fprintf(OUT,"helix "); break;
-		     }
-                     case 'B':  {
-				if(colour==1) fprintf(OUT,"set planecolour red;\nset plane2colour red;\n");
-			 	fprintf(OUT,"strand "); break;
-		     }          
-                     default:   {
-			   if(colour==1) fprintf(OUT,"set planecolour white;\nset plane2colour white;\n");
-			   fprintf(OUT,"coil ");
-		     }
+                     case 'H':  fprintf(OUT,"helix "); break;
+                     case 'B':  fprintf(OUT,"strand "); break;
+                     default:   fprintf(OUT,"coil ");
                 }
 	        fprintf(OUT,"from A%d to ",nres+1);
                 while(rel[j]==1 && j<bloclen && summary[j]==type) {
@@ -393,8 +378,8 @@ main(int argc, char *argv[]) {
 	    fprintf(OUT,"read mol \"%s.pdb\";\n",domain[i].id);
             fprintf(OUT,"  transform atom *\n");
             fprintf(OUT,"      by centre position atom *\n");
-            fprintf(OUT,"      by rotation x 0.0\n");
-            fprintf(OUT,"      by rotation y 0.0\n");
+            fprintf(OUT,"      by rotation x 90.0\n");
+            fprintf(OUT,"      by rotation y 170.0\n");
             fprintf(OUT,"      by rotation z 0.0\n");
             fprintf(OUT,"      ;\n");
             fprintf(OUT," set shading 0.0;\n");
@@ -409,19 +394,10 @@ main(int argc, char *argv[]) {
 	      if(type!=' ') {
 	        if(rel[j]==1) { /* reliable region */
 		  switch(type) {
-                     case 'H':  {
-                                if(colour==1) fprintf(OUT,"set planecolour blue;\nset plane2colour blue;\n");
-                                fprintf(OUT,"helix "); break;
-                     }
-                     case 'B':  {
-                                if(colour==1) fprintf(OUT,"set planecolour red;\nset plane2colour red;\n");
-                                fprintf(OUT,"strand "); break;
-                     }
-                     default:   {
-                           if(colour==1) fprintf(OUT,"set planecolour white;\nset plane2colour white;\n");
-                           fprintf(OUT,"coil ");
-                     }
-                  }
+		     case 'H':  fprintf(OUT,"helix "); break;
+		     case 'B':  fprintf(OUT,"strand "); break;
+		     default:   fprintf(OUT,"coil ");
+		  }
 		  if(type=='c' && nres>0 && rel[j-1]==1) { /* last residue can't be trace */
 	             fprintf(OUT,"from %c%d%c to ",
                         domain[i].numb[nres-1].cid,
@@ -494,7 +470,7 @@ main(int argc, char *argv[]) {
 
 	exit(0);
 }
-void exit_error()
+int exit_error()
 {
 	 fprintf(stderr,"format:  gstamp -f <file> -c <char> -w <win> -t <thresh> -a -aligned -cons\n");
  	 fprintf(stderr,"          -aligned ==> consider all aligned positions\n");

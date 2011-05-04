@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,7 +33,7 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 #define MAX_SEQ_LEN 3000
 
 /* Reads a list of domains from the standard input (or a file),
@@ -47,10 +46,7 @@
  * Modification 7 March 1996 Fixed naff tendancy to put an extra
  *  residue on the first line (call me anal-retentive call me what you will) 
  * Modification 15 January 1997 Now outputs a more useful summary on
- *  the command line rather than "Chain B taken from PDB file /disk3/pdb/pdb1gsf.ent" 
- * Change: FASTA format by default */
-
-void exit_error();
+ *  the command line rather than "Chain B taken from PDB file /disk3/pdb/pdb1gsf.ent" */
 
 main(int argc, char *argv[]) {
 
@@ -76,7 +72,7 @@ main(int argc, char *argv[]) {
 	max_len = 5000;
 	title_limit = -1; /* All of the title will be printed out (MAX 1000 hardwired) */
 	strcpy(&format[0],"NBRF(PIR)");
-	ftype=1; sepfiles=0;
+	ftype=0; sepfiles=0;
 
 	if(argc<3) exit_error();
 	for(i=1; i<argc; ++i) {
@@ -155,7 +151,7 @@ main(int argc, char *argv[]) {
 	for(i=0; i<ndomain; ++i) {
 	   skip[i]=0;
 	   if(ftype==0 && verbose==1) printf("Domain %3d %s %s ",i+1,domain[i].filename,domain[i].id); 
-	   if((PDB=openfile(domain[i].filename,"r"))==NULL) {
+	   if((PDB=fopen(domain[i].filename,"r"))==NULL) {
 	      if(ftype==0 && verbose==1) printf("\nError: file %s does not exist\n",domain[i].filename);
 	      if(ftype==0 && verbose==1) printf("\nSkipping this domain...\n");
 	      skip[i]=1;
@@ -185,8 +181,7 @@ main(int argc, char *argv[]) {
 			sprintf(&domain[i].align[strlen(domain[i].align)],"%s ",&buff[10]);
 		 }
 	     }
-	     closefile(PDB,domain[i].filename);
-	     PDB=openfile(domain[i].filename,"r");
+	     rewind(PDB);
 	     if(title_limit!=-1) domain[i].align[title_limit]='\0';
 	     for(j=0; j<strlen(domain[i].align); ++j) {
 		if(domain[i].align[j]=='\n') domain[i].align[j]=' ';
@@ -213,9 +208,7 @@ main(int argc, char *argv[]) {
 	       }
 	       if(ftype==0 && verbose==1) printf("%4d CAs ",add);
 	       total+=add;
-	       closefile(PDB,domain[i].filename);
-               PDB=openfile(domain[i].filename,"r");
-
+	       rewind(PDB);
 	     }
 	     domain[i].ncoords=total;
 	     if(ftype==0 && verbose==1) printf("= %4d CAs in total\n",domain[i].ncoords);
@@ -223,8 +216,7 @@ main(int argc, char *argv[]) {
 		if(ftype==0 && verbose==1) printf("Sequence is too short or too long, will ignore\n");
 		skip[i]=1;
 	     }
-	     closefile(PDB,domain[i].filename);
-
+	     fclose(PDB);
 	     if(ftype==0 && verbose==1) { printf("Descriptor is %s\n",domain[i].align); }
 	   }
 	}
@@ -272,7 +264,7 @@ main(int argc, char *argv[]) {
 	}
 	exit(0);
 }
-void exit_error() {
+int exit_error() {
 
 	   fprintf(stderr,"format: pdbseq -f <domain descriptor file> [-min <val> -max <val>] > <output file>\n");
 	   fprintf(stderr,"               -format <pir, fasta> -separate -tl <title string max length>\n");

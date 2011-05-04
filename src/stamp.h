@@ -1,8 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <malloc.h>
 #include <string.h>
-
 #define defaultsfile "$STAMPDIR/stamp.defaults"
 #define max(A,B) ((A) > (B) ? (A) : (B))
 #define leq(A,B) ((A) <= (B) ? (A) : (B))
@@ -17,7 +14,7 @@ struct brookn { /* structure to represent brookhaven residue numbers */
 
 struct domain_loc{		/* This structure allows rather complex domains to be described */
    char filename[100];
-   char id[100];
+   char id[30];
    int nobj;			/* The number of objects considered within the named file */
    int *type;			/* The type that each object is:
 					0 ==> an error
@@ -43,49 +40,48 @@ struct domain_loc{		/* This structure allows rather complex domains to be descri
    };
 
 struct parameters {
-	float E1,E2;			
-	float first_E1,first_E2;	
-	float second_E1,second_E2;
-	float const1,const2;		
-	float CUTOFF;			
-	float first_CUTOFF;		
-	float second_CUTOFF;		
-	float ADD;			
-	float NMEAN;			
+	float E1,E2;			/* Rossmann and Argos Parameters */
+	float first_E1,first_E2;	/* if more than one pass is suggested, use these first */
+	float second_E1,second_E2;	/* if more than one pass is suggested, use these second */
+	float const1,const2;		/* 2*E1*E1, 2*E2*E2 */
+	float CUTOFF;			/* Cutoff value for fitting */
+	float first_CUTOFF;		/* when NPASS == 2 */
+	float second_CUTOFF;		/* when NPASS == 2 */
+	float ADD;			/* Value added to matrix */
+	float NMEAN;			/* Statistics values from the paper version */
 	float NSD,NA,NB;
 	float NASD,NBSD;
-	float SCORETOL;			
-	float THRESH;
-        float CPUtime;			
-        float murzin_est;
-	int PRECISION;			
-	int MAX_SEQ_LEN;		
+	float SCORETOL;			/* Score tolerance for convergence */
+	float THRESH;			/* Threshold for fitting */
+        float CPUtime;			/* running total of CPU time used by the program */
+	int PRECISION;			/* Precision for float to int conversion */
+	int MAX_SEQ_LEN;		/* Maximum number length of protein that can be used */
 	float PAIRPEN; 
 	float first_PAIRPEN;
-	float second_PAIRPEN; 		
-	float first_THRESH;		
+	float second_PAIRPEN; 		/* Gap penalties */
+	float first_THRESH;		/* if the Sc value is not >= this number then do not do the second fit (NPASS==2 only) */
 	float TREEPEN;
 	float first_TREEPEN;
 	float second_TREEPEN;		
-	int DSSP;			
-	int PAIROUTPUT;			
-	int MAXPITER,MAXTITER;		
-	int CLUSTMETHOD;		
-	int MAXLEN;			
-	int MAXATS;			
-	int PAIRPLOT,TREEPLOT;		
-	int PAIRALIGN,TREEALIGN;	
-	int PAIRALLALIGN, TREEALLALIGN; 
-        int NALIGN;			
-	int DISPALL; 			
-	int HORIZ;			
-	int STATS;			
-	int PAIRWISE; 			
-	int TREEWISE;			
-	int SCAN;			
-	int SCANMODE;			
-	int SCANALIGN;			
-	float SCANCUT;			
+	int DSSP;			/* if true, read coordinates from DSSP files, not PDB files */
+	int PAIROUTPUT;			/* if true, output all pairwise alignments */
+	int MAXPITER,MAXTITER;		/* Maximum number of iterations */		
+	int CLUSTMETHOD;		/* What to derive tree from 1=rms, 2=Sc */
+	int MAXLEN;			/* Maximum sequence length */
+	int MAXATS;			/* Maximum number of atoms */
+	int PAIRPLOT,TREEPLOT;		/* 1 = plot distance matrix */
+	int PAIRALIGN,TREEALIGN;	/* 1 = display pairwise or treewise alignments */
+	int PAIRALLALIGN, TREEALLALIGN; /* 1 = display pairwise or treewise alignments during each iteration */
+        int NALIGN;			/* Number of alignments displayed */
+	int DISPALL; 			/* 1 = display all alignments */
+	int HORIZ;			/* 1 = display horizontal alignments */
+	int STATS;			/* 1 = use statistics rather than supplied parameters */
+	int PAIRWISE; 			/* 1 = do pairwise calculations */
+	int TREEWISE;			/* 1 = do treewise calculations */
+	int SCAN;			/* 1 = scan the named domain database */
+	int SCANMODE;			/* 0 = report score only; 1 = report alignment and transformation */
+	int SCANALIGN;			/* 1 = display scan alignment */
+	float SCANCUT;			/* only report (1 above) for alignments > SCANCUT */
 	int SLOWSCAN;			/* new method of obtaining initial superimpositions */
 	int SCANSLIDE;			/* align the N-terminus of the query with every SCANSLIDEth amino acid on the database structure */
 	int SECSCREEN;			/* When scanning, if SECSCREEN is set to one, then an initial comparison of  */
@@ -102,22 +98,24 @@ struct parameters {
 	int BOOLEAN;			/* 1 = use new boolean method */
 	float BOOLCUT;			/* cutoff for Pij if boolean method is used */
 	int BOOLMETHOD;			/* 0 = use a 1 or a 0 in the matrix if all pairwise comparisons are favorable (pen = 0) */
-					/* 1 = each position will be the total number of equivalent pairwise comparisons */
-					/* (pen = PAIRPEN * Nx(N-1)/2) */
+					/* 1 = each position will be the total number of equivalent pairwise comparisons (pen = */
+					/*     PAIRPEN * Nx(N-1)/2) */
 	int BOOLFRAC;			/* BOOLMETHOD=1 only; minimum fraction of Nx(N-1)/2 of comparisons required to have */
-				        /* Pij>BOOLCUT allowed for a position to be considered equivalent */
+					/*  Pij>BOOLCUT allowed for a position to be considered equivalent */
 	float first_BOOLCUT;
 	float second_BOOLCUT;
 	int SCANSEC;
-	int CO;				
-	int SECTYPE;			/* 0 = none 1 = DSSP */
+	int CO;				/* 1 = Cut output (i.e. cut domain descriptors in output) */
+					/* 0 = Leave descriptors as is */
+	int SEC;			/* 0 = do not use secondary structure */
+					/* 1 = use Kabsch and Sander's DSSP for secondary structures  */
 					/* 2 = read in assignments from a supplied summary file */
 	int ROUGHFIT;			/* 1 = calculate a rough initial transformation by simply aligning */
 					/* the sequences from their N-terminal ends */
 	int roughout;			/* 1 = output transformations to the file roughfitout (below) */
-	int CLUST;			/* 1 = use single linkage cluster analysis (maketree) to generate 
-					    a tree and order file, else the program expects a tree  
-					    file to be supplied (ie generated by another method, such as UPGMA */
+	int CLUST;			/* 1 = use single linkage cluster analysis (maketree) to generate */
+					/*  a tree and order file, else the program expects a tree  */
+					/*  file to be supplied (ie generated by another method, such as UPGMA */
 
 	int COLUMNS;			/* number of columns for alignment purposes */
 	int SW;				/* SW = 0 ==> normal Smith Waterman Routine; 1 ==> cut corners */
@@ -293,10 +291,6 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
         struct brookn start, struct brookn end, int type, int MAXats,
         int REVERSE, int PRECISION, FILE *OUTPUT);
 
-int igetp_nt(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
-        struct brookn start, struct brookn end, int type, int MAXats,
-        int REVERSE, int PRECISION, FILE *OUTPUT);
-
 int igetcadssp(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
         struct brookn start, struct brookn end, int type, int MAXats, 
         int REVERSE, int PRECISION, FILE *OUTPUT);
@@ -358,6 +352,7 @@ float pairpath(struct domain_loc domain1, struct domain_loc domain2, int **prob,
 
 int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms);
 
+int printdomain(FILE *TRANS, struct domain_loc domain, int writetrans);
 
 int printmat(float **R, float *V, int n, FILE *OUTPUT);
 
@@ -377,11 +372,8 @@ int revmatmult(float **r, float *v, int **coord, int n, int PRECISION);
 
 void rmsp(char *c);
 
-/* SMJS Changed to use precalculated inverse squared precision (float PREC2I) */
-/*      instead of int PRECISION */
-/* SMJS Removed precision argument (incorporated into constants) */
 float rossmann(int **atoms1, int **atoms2, int start, int end,
-        float const1, float const2, float *Dij, float *Cij);
+        float const1, float const2, float *Dij, float *Cij, int PRECISION);
 
 int roughfit(struct domain_loc *domain, int ndomain, struct parameters *parms);
 
@@ -397,8 +389,6 @@ int smoothsec(char *sec, int minhelixlen, int minstrandlen);
 
 
 int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FILE *INPUT, FILE *OUTPUT);
-int skiptononspace(char *string, int pointer);
-int getdomain_error(char *buff); 
 
 int getpars(FILE *fp, struct parameters *var);
 
@@ -406,13 +396,8 @@ int sw7ccs(int  lena, int lenb, int **prob, int pen, struct olist *result,
         int *total, unsigned char **patha, int min_score, 
         int auto_corner, float fk);
 
-/*
 int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
         int *total, unsigned char **patha, int min_score);
-*/
-int swstruc(const int  lena, const int lenb, const int pen, int ** prob, struct olist * const result,
-        int * total, unsigned char ** patha, const int min_score);
-
 
 int testfile(char *file);
 
@@ -449,19 +434,3 @@ float *RBR_vector_cross(float *V1, float *V2);
 float *RBR_vector_set_dist(float *V1, float R);
 
 char **RBR_c_split(char *str, int *n,  char delimiter);
-
-FILE *openfile(char *filename, char *type);
-int closefile(FILE *handle,char *filename);
-
-/* SMJS Added */
-int present(struct path *new, struct olist *result);
-
-/* SMJS Changed to void */
-void addsco(struct path *new,struct olist *result,int *total);
-
-int transcompare(float **R1, float *V1, float **R2, float *V2, int dim);
-
-double murzin_P(int n, int m, double p);
-
-/* SMJS Added CopyPath */
-void CopyPath(struct path *to, struct path *from);

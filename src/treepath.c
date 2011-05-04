@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -35,7 +34,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 /* treepath: given a cluster, a list of domains, and a probability matrix, returns
  *  the transormation superimposing the two clusters, and updates their alignments
@@ -77,8 +76,6 @@ int treepath(struct domain_loc *domain, int ndomain, struct cluster cl,
 	struct olist *result;
 	struct path *sortarr;
 
-/* SMJS Added for debugging */
-        int nres,idbg,nOne;
 
 	/* Allocating memory */
 	acount = (int*)malloc(ndomain*sizeof(int));
@@ -100,24 +97,6 @@ int treepath(struct domain_loc *domain, int ndomain, struct cluster cl,
 
 	pasize=strlen(domain[cl.a.member[0]].align)+1;
 	pbsize=strlen(domain[cl.b.member[0]].align)+1;
-
-#ifdef DBGTREEP
-        printf("DBG>> pasize = %d\ndomain[%d].align = |%s|\n",pasize,
-               cl.a.member[0],domain[cl.a.member[0]].align);
-        nres = 0;
-        for (idbg = 0;idbg < strlen(domain[cl.a.member[0]].align);idbg++)
-           if (domain[cl.a.member[0]].align[idbg]!=' ')
-              nres++;
-        printf("DBG>> nres (A) = %d\n",nres);
-
-        printf("DBG>> pbsize = %d\ndomain[%d].align = |%s|\n",pbsize,
-               cl.b.member[0],domain[cl.b.member[0]].align);
-        nres = 0;
-        for (idbg = 0;idbg < strlen(domain[cl.b.member[0]].align);idbg++)
-           if (domain[cl.b.member[0]].align[idbg]!=' ')
-              nres++;
-        printf("DBG>> nres (B) = %d\n",nres);
-#endif
 
 	patha = (unsigned char**)malloc((unsigned)(pbsize+1)*sizeof(unsigned char*));
 	for(i=0;i<(pbsize+1); ++i)
@@ -165,9 +144,8 @@ int treepath(struct domain_loc *domain, int ndomain, struct cluster cl,
 	    (*score)=((((float)sortarr[0].score/(float)allen) * 
 		     ((float)(allen-ia)/(float)(pasize-1)) * ((float)(allen-ib)/(float)(pbsize-1)) ));
 	    if(!parms[0].BOOLEAN) (*score)/=(float)parms[0].PRECISION;
-/* SMJS Changed sizeof(int) to sizeof(int *) */
-	    atoms1=(int**)malloc((*length)*sizeof(int *));
-	    atoms2=(int**)malloc((*length)*sizeof(int *));
+	    atoms1=(int**)malloc((*length)*sizeof(int));
+	    atoms2=(int**)malloc((*length)*sizeof(int));
 	    natoms=0;
 	    /* get the pointers for each domain to the right place */
 	    for(k=0; k<cl.a.number; ++k) 
@@ -185,109 +163,35 @@ int treepath(struct domain_loc *domain, int ndomain, struct cluster cl,
 	     * We first  need to pad each old alignment with ' 's to make all sequences 
 	     *  aligned the same length (this makes this simpler for future fits) */
 	    finala=finalb=0;
-	    for(j=0; j<(sortarr[0].start.i-sortarr[0].start.j); ++j) {
-#ifdef DBGTREEP
-               printf("Initial B gap\n");
-#endif
-               finalbseq[finalb++]=' ';
-            }
-	    for(j=0; j<(sortarr[0].start.j-sortarr[0].start.i); ++j) {
-#ifdef DBGTREEP
-               printf("Initial A gap\n");
-#endif
-               finalaseq[finala++]=' ';
-            }
+	    for(j=0; j<(sortarr[0].start.i-sortarr[0].start.j); ++j) finalbseq[finalb++]=' ';
+	    for(j=0; j<(sortarr[0].start.j-sortarr[0].start.i); ++j) finalaseq[finala++]=' ';
 	    /* Now we add the start bits of the alignment that were not in the optimal path */
-	    for(j=0; j<sortarr[0].start.i-1; ++j) {
-#ifdef DBGTREEP
-               printf("Initial A 1\n");
-#endif
-               finalaseq[finala++]='1';
-            }
-	    for(j=0; j<sortarr[0].start.j-1; ++j) {
-#ifdef DBGTREEP
-               printf("Initial B 1\n");
-#endif
-               finalbseq[finalb++]='1';
-            }
+	    for(j=0; j<sortarr[0].start.i-1; ++j) finalaseq[finala++]='1';
+	    for(j=0; j<sortarr[0].start.j-1; ++j) finalbseq[finalb++]='1';
 
 	    for(j=0; j<finala; ++j) 
 	        Pij[j]=Dij[j]=Pijp[j]=distance[j]=0.0;
 	    datcount=finala;
 
 	    /* Now we copy bestaseq and bestbseq to finalaseq and finalbseq as appropriate */
-#ifdef DBGTREEP
-            printf("bestaseq = %s\n",bestaseq);
-            printf("bestbseq = %s\n",bestbseq);
-#endif
-/* SMJS Changed 1 to 0 for bestaseq and bestbseq in next 4 lines */
-	    sprintf(&finalaseq[finala],"%s",&bestaseq[0]); 
-	    sprintf(&finalbseq[finalb],"%s",&bestbseq[0]); 
-	    finala+=strlen(&bestaseq[0]);
-	    finalb+=strlen(&bestbseq[0]);
+	    sprintf(&finalaseq[finala],"%s",&bestaseq[1]); 
+	    sprintf(&finalbseq[finalb],"%s",&bestbseq[1]); 
+	    finala+=strlen(&bestaseq[1]);
+	    finalb+=strlen(&bestbseq[1]);
 
 	    /* Now we add the end bits of the alignment that were not in the optimal path */
-/* SMJS Changed 1 to 0 for taseq and tbseq in next 2 lines */
-#ifdef DBGTREEP
-            printf("sortarr[0].end.i = %d; strlen(&taseq[0]) = %d n to add = %d\n",
-                    sortarr[0].end.i,strlen(&taseq[0]),sortarr[0].end.i-strlen(&taseq[0]));
-#endif
-	    for(j=sortarr[0].end.i; j<strlen(&taseq[0]); ++j) {
-#ifdef DBGTREEP
-               printf("Adding terminal 1 to A\n");
-#endif
-               finalaseq[finala++]='1';
-            }
-#ifdef DBGTREEP
-            printf("sortarr[0].end.j = %d; strlen(&tbseq[0]) = %d n to add = %d\n",
-                    sortarr[0].end.j,strlen(&tbseq[0]),sortarr[0].end.j-strlen(&tbseq[0]));
-#endif
-	    for(j=sortarr[0].end.j; j<strlen(&tbseq[0]); ++j) {
-#ifdef DBGTREEP
-               printf("Adding terminal 1 to B\n");
-#endif
-               finalbseq[finalb++]='1';
-            }
+	    for(j=sortarr[0].end.i-1; j<strlen(&taseq[1]); ++j) finalaseq[finala++]='1';
+	    for(j=sortarr[0].end.j-1; j<strlen(&tbseq[1]); ++j) finalbseq[finalb++]='1';
 
 	    /* Now pad each sequence with spaces as appropriate */
 	    diffab=(finala-finalb);
-#ifdef DBGTREEP
-            printf("diffab = %d\n",diffab);
-#endif
-	    for(j=0; j<(-1*diffab); ++j) { 
-               Pij[finala]=Dij[finala]=Pijp[finala]=distance[finala]=0.0; finalaseq[finala++]=' '; 
-#ifdef DBGTREEP
-               printf("Adding space to A\n"); 
-#endif
-            }
-	    for(j=0; j<diffab; ++j) { 
-               Pij[finalb]=Dij[finalb]=Pijp[finalb]=distance[finalb]=0.0; finalbseq[finalb++]=' ';  
-#ifdef DBGTREEP
-               printf("Adding space to B\n");
-#endif
-            }
+	    for(j=0; j<(-1*diffab); ++j) { Pij[finala]=Dij[finala]=Pijp[finala]=distance[finala]=0.0; finalaseq[finala++]=' '; }
+	    for(j=0; j<diffab; ++j) { Pij[finalb]=Dij[finalb]=Pijp[finalb]=distance[finalb]=0.0; finalbseq[finalb++]=' '; }
 	    if(finala!=finalb) {
 	       fprintf(stderr,"error: something funny is going on in treepath()\n");
 	       return -1;
 	    }
 	    finalaseq[finala]=finalbseq[finalb]='\0'; 
-
-#ifdef DBGTREEP
-        nOne=0;
-        for (idbg = 0;idbg < strlen(finalaseq);idbg++)
-           if (finalaseq[idbg]!=' ')
-              nOne++;
-        printf("DBG>> nOne A = %d\n",nOne);
-
-        nOne=0;
-        for (idbg = 0;idbg < strlen(finalbseq);idbg++)
-           if (finalbseq[idbg]!=' ')
-              nOne++;
-        printf("DBG>> nOne B = %d\n",nOne);
-
-        printf("finalaseq = |%s|\n",finalaseq);
-        printf("finalbseq = |%s|\n",finalbseq);
-#endif
 
 	    /* finalaseq and finalbseq now consist of strings of '1's and ' 's that we
 	     *  can use in conjunction with all the sequences in cluster a and b to
@@ -295,7 +199,7 @@ int treepath(struct domain_loc *domain, int ndomain, struct cluster cl,
 
 	    /* find the equivalences and calculate a set of average coordinates */
 	    proba=sortarr[0].start.i; probb=sortarr[0].start.j; /* probability matrix pointers */
-	    for(j=0; j<strlen(&bestaseq[0]); ++j) {
+	    for(j=0; j<strlen(&bestaseq[1]); ++j) {
 	       use=1;
 	       for(k=0; k<cl.a.number; ++k) {
 	         inda=cl.a.member[k];
@@ -338,7 +242,7 @@ int treepath(struct domain_loc *domain, int ndomain, struct cluster cl,
 	     distance[datcount+j]=sqrt(distance[datcount+j]);
 
 	       if( ( (prob[proba][probb]>=(parms[0].CUTOFF*(float)parms[0].PRECISION) && !parms[0].BOOLEAN) || 
-		     (prob[proba][probb]==1 && parms[0].BOOLEAN)) && bestaseq[j]=='1' && bestbseq[j]=='1') {
+		     (prob[proba][probb]==1 && parms[0].BOOLEAN)) && bestaseq[j+1]=='1' && bestbseq[j+1]=='1') {
 		  atoms1[natoms]=(int*)malloc(3*sizeof(int));
 		  atoms2[natoms]=(int*)malloc(3*sizeof(int));
 		  for(k=0; k<3; ++k) {
@@ -348,14 +252,14 @@ int treepath(struct domain_loc *domain, int ndomain, struct cluster cl,
 		  natoms++;
 	       } 
 	      }
-	      if(bestaseq[j]=='1') {
+	      if(bestaseq[j+1]=='1') {
 	         for(k=0; k<cl.a.number; ++k) {
 		     inda=cl.a.member[k];
 		     acount[k]+=(domain[inda].align[proba-1]!=' ');
 	          }
 	          proba++;
 	      }
-	      if(bestbseq[j]=='1') {
+	      if(bestbseq[j+1]=='1') {
 		  for(k=0; k<cl.b.number; ++k) {
 		     indb=cl.b.member[k];
 		     bcount[k]+=(domain[indb].align[probb-1]!=' ');
@@ -385,9 +289,6 @@ int treepath(struct domain_loc *domain, int ndomain, struct cluster cl,
 		}
 	     } 
 	     tmp[j]='\0';
-#ifdef DBGTREEP
-             printf("\nDone (A) tmp for %s = |%s|\n",domain[inda].id,tmp);
-#endif
 	     strcpy(domain[inda].align,tmp);
 	     pseq1[k]=domain[inda].align;
 	  }
@@ -396,32 +297,16 @@ int treepath(struct domain_loc *domain, int ndomain, struct cluster cl,
 	  for(k=0; k<cl.b.number; ++k) {
 	     bcount[k]=0;
 	     indb=cl.b.member[k];
-#ifdef DBGTREEP
-             printf("Building seq for %d\n",k);
-             printf("Seq: ");
-#endif
 	     for(j=0; j<strlen(finalbseq); ++j) {
 		if(finalbseq[j]=='1') {
 		  tmp[j]=domain[indb].align[bcount[k]];
-#ifdef DBGTREEP
-                  printf("%c",tmp[j]);
-#endif
 		  bcount[k]++;
 		} else {
 		  tmp[j]=' ';
-#ifdef DBGTREEP
-                  printf("%c",tmp[j]);
-#endif
 		}
 	     }
 	     tmp[j]='\0';
-#ifdef DBGTREEP
-             printf("\nDone (B) tmp for %s = |%s|\n",domain[indb].id,tmp);
-#endif
 	     strcpy(domain[indb].align,tmp);
-#ifdef DBGTREEP
-             printf("domain[%d].align = %s\n",indb,domain[indb].align);
-#endif
 	     pseq2[k]=domain[indb].align;
 	   }
 

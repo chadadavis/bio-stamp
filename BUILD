@@ -1,4 +1,3 @@
-#!/bin/csh
 #
 #  csh script to compile the elements of STAMP
 #  
@@ -20,13 +19,6 @@ if(! -e bin) then
 	echo "Creating bin directory"
 	mkdir bin
 endif
-echo makefile.$1
-#if(! -e makefile.$1) then
-#	echo "Error: no suitable makefile for "$1
-#	echo "  try editing one of the src/makefile.* files yourself"
-#	echo 
-#	exit
-#endif
 if(! -e bin/$1) then
 	echo  "Creating subdirectory bin/$1"
 	mkdir bin/$1
@@ -44,24 +36,27 @@ echo ""
 echo "Moving executables to bin directory"
 echo ""
 /bin/mv avestruc ../bin/$1
-/bin/mv alignfit ../bin/$1
+/bin/mv clus2blc ../bin/$1
 /bin/mv dstamp ../bin/$1
 /bin/mv extrans ../bin/$1
 /bin/mv gstamp ../bin/$1
 /bin/mv mergetrans ../bin/$1
-/bin/mv mergestamp ../bin/$1
+/bin/mv smsf2blc ../bin/$1
 /bin/mv pdbc ../bin/$1
 /bin/mv pdbseq ../bin/$1
 /bin/mv pickframe ../bin/$1
 /bin/mv poststamp ../bin/$1
 /bin/mv sorttrans ../bin/$1
 /bin/mv stamp ../bin/$1
+/bin/mv stamp2casp ../bin/$1
 /bin/mv stamp_clean ../bin/$1
 /bin/mv transform ../bin/$1
 /bin/mv ver2hor ../bin/$1
-/bin/mv cofm ../bin/$1
 
+echo ""
 echo "Deleting object files"
+echo ""
 /bin/rm  *.o
-
-echo "All should be complete."
+echo ""
+echo " All should be complete!"
+echo ""

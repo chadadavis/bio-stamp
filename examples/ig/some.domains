@@ -5,35 +5,35 @@
 % Various constant and variable domains (light and heavy chain)
 /data/newpdb/pdb/pdb2fb4.ent 2fb4lc { L 110 _ to L 214 _ }
 % Both variable and constant domain (ie. should find both)
-/db/pdb/pdb/pdb2fb4.ent 2fb4l { CHAIN L } 
-/db/pdb/pdb/pdb1mcp.ent 1mcplv { L   1 _ to L 113 _ }
-/db/pdb/pdb/pdb1mcp.ent 1mcphv { H   1 _ to H 122 _ }
+/data/newpdb/pdb/pdb2fb4.ent 2fb4l { CHAIN L } 
+/data/newpdb/pdb/pdb1mcp.ent 1mcplv { L   1 _ to L 113 _ }
+/data/newpdb/pdb/pdb1mcp.ent 1mcphv { H   1 _ to H 122 _ }
 %
 % aspartic proteinase C terminal lobe
-/db/pdb/pdb1cms.ent 1cmsC { _ 176 _ to _ 323 _ }
+/data/pdb/pdb1cms.ent 1cmsC { _ 176 _ to _ 323 _ }
 % CD4
-/db/pdb/pdb/pdb3cd4.ent 3cd4 { ALL }
+/data/newpdb/pdb/pdb3cd4.ent 3cd4 { ALL }
 % Human hemoglobin beta chain
-/db/pdb/pdb2hhb.ent 2hhbb { CHAIN B }
+/data/pdb/pdb2hhb.ent 2hhbb { CHAIN B }
 % Chaperonin
-/db/pdb/pdb/pdb3dpa.ent 3dpa { ALL }
+/data/newpdb/pdb/pdb3dpa.ent 3dpa { ALL }
 % S. griseus proteinase B
-/db/pdb/pdb/pdb3sgb.ent 3sgbe { CHAIN E }
+/data/newpdb/pdb/pdb3sgb.ent 3sgbe { CHAIN E }
 % Actinoxanthin
-/db/pdb/pdb/pdb1acx.ent 1acx { ALL }
-% Snke toxin
-/db/pdb/pdb//pdb2abx.ent 2abxa { CHAIN A }
+/data/newpdb/pdb/pdb1acx.ent 1acx { ALL }
+% Snake toxin
+/data/newpdb/pdb//pdb2abx.ent 2abxa { CHAIN A }
 % T4 lysozyme
-/db/pdb/pdb/pdb1l01.ent 1l01 { ALL }
+/data/newpdb/pdb/pdb1l01.ent 1l01 { ALL }
 % Azurin
-/db/pdb/pdb/pdb2aza.ent 2azaa { CHAIN A }
-% Rionuclease
-/db/pdb/pdb/pdb1rnt.ent 1rnt { ALL }
+/data/newpdb/pdb/pdb2aza.ent 2azaa { CHAIN A }
+% Ribonuclease
+/data/newpdb/pdb/pdb1rnt.ent 1rnt { ALL }
 % Superoxide dismutase
-/db/pdb/pdb/pdb2sod.ent 2sodo { CHAIN O }
+/data/newpdb/pdb/pdb2sod.ent 2sodo { CHAIN O }
 % Rubico small subunit
-%/db/pdb/pdb/pdb8rub.ent 8rubs { CHAIN S }
+/data/newpdb/pdb/pdb8rub.ent 8rubs { CHAIN S }
 % Plastocyanin
-/db/pdb/pdb/pdb2pcy.ent 2pcy { ALL } 
+/data/newpdb/pdb/pdb2pcy.ent 2pcy { ALL } 
 % Aspartate transcarbamylase
-/db/pdb/pdb//pdb8atc.ent 8atca { CHAIN A }
+/data/newpdb/pdb//pdb8atc.ent 8atca { CHAIN A }

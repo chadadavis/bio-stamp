@@ -1,4 +1,4 @@
-\documentstyle[12pt]{report}
+\documentstyle[a4wide,12pt,jmb]{report}
 
 \newcommand{\al}{\mbox{$\alpha$~}}  
 \newcommand{\be}{\mbox{$\beta$~}}  
@@ -14,10 +14,6 @@
 \newcommand{\jp}{\mbox{$j^{\prime}$~}}
 \newcommand{\sdp}{\setlength{\baselineskip}{18truept}}
 \newcommand{\ssp}{\setlength{\baselineskip}{13.6truept}}
-
-%latex2html barfs on some of the above commands, so substitute the actual latex% for them.  Add academic license to this document.
-%GJB 13/4/1999
-%
   
 
 \begin{document}
@@ -30,13 +26,13 @@ S T A M P\\
 \end{Huge}
 \begin{Large}
 Structural Alignment of Multiple Proteins \\
-Version 4.3\\
+Version 4.1\\
 User Guide\\
 \end{Large}
 \end{bf}
 \vskip 0.25in
 
-{\em By Robert B. Russell}\\
+{\em By Robert B. Russell \& Geoffrey J. Barton}\\
 \end{center}
 \vskip 0.25in
 
@@ -48,33 +44,23 @@ comparison, {\em PROTEINS: Struct. Funct. Genet.},{\bf 14},
 
 \vskip 0.25in
 
-The STAMP authors contact addresses (16 August 2002) are:
-
-\vskip 0.1in
-
 \begin{tabular}{ll}
-Robert B. Russell (RBR)		         & Prof. Geoffrey J. Barton (GJB)\\
-EMBL - European Bioinformatics Institute & School of Life Sciences\\
-Meyerhofstrasse 1                        & University of Dundee\\
-D-69117 Heidelberg                       & Dow Street\\
-Germany                                  & Dundee, DD1 5EH\\
-                                         & \\
-Tel: +49 6221 387 473                    & Tel: +44 1382 345860\\
-FAX: +44 6221 387 517                    & FAX: +44 1382 345764\\
-e-mail: russell@embl-heidelberg.de       & e-mail geoff@compbio.dundee.ac.uk\\
-WWW:http://russell.embl-heidelberg.de    & WWW: http://www.compbio.dundee.ac.uk \\
+Robert B. Russell (RBR)		   & Geoffrey J. Barton (GJB)\\
+Biomolecular Modelling Laboratory  & Laboratory of Molecular Biophysics\\
+Imperial Cancer Research Fund      & The Rex Richards Building\\
+Lincoln's Inn Fields, P.O. Box 123 & South Parks Road\\
+London, WC2A 3PX, U.K.             & Oxford, OX1 3PG, U.K.\\
+Tel: +44 171 269 3583              & Tel: +44 865 275368\\
+FAX: +44 171 269 3417              & FAX: 44 865 510454\\
+e-mail: russell@icrf.icnet.uk      & e-mail gjb@bioch.ox.ac.uk\\
+WWW: http://bonsai.lif.icnet.uk/   & WWW: http://geoff.biop.ox.ac.uk/\\
 \end{tabular}
 \vskip 0.25in
 \noindent
 \begin{center}
-Copyright (1997, 1998, 1999) Robert B. Russell \& Geoffrey J. Barton.\\
-Redistribution without permission is forbidden.  Please see the LICENSE\\
-at the end of this document.
-
-\vskip 0.1in
-
-This work was originally developed in the Laboratory of Molecular
-Biophysics, University of Oxford.
+Robert B. Russell\\
+University of Oxford, 1995.\\
+Redistribution is strictly forbidden.\\
 \noindent
 
 \end{center}
@@ -86,72 +72,108 @@ Biophysics, University of Oxford.
 \parindent 0in
 
 \chapter{Introduction and Overview}
-\section{Preface to Version 4.3}
 
+\section{Preface to Version 4.1}
 
-\section{Preface to Version 4.2}
-
-First, a big acknowledgement to Steve Searle (European Bioinformatics Institute)
-for getting STAMP to run (finally) under OSF and 64 bit machines generally.
-Also thanks to Andrew Torda 
+This version of STAMP mostly comprises minor changes to version 4.0 (mostly bug fixes).
+Thanks to all those who reported bugs.  Particular thanks must go to Andrew Torda 
 (Australian National University, Canberra), Dave Schuller (University of California-Irvine),
-Mike Tennant (SmithKline Beecham Pharmaceuticals, Harlow, UK),
-Asim Siddiqui (LMB, Oxford) G.P.S. Raghava (LMB, Oxford), and James Cuff (EBI)
-for their help and various painstaking trawls through my spaghetti code.\\
+Mike Tennant (SmithKline Beecham Pharmaceuticals, Harlow, UK)
+and Asim Siddiqui (Laboratory of Molecular
+Biophysics, Oxford) for their painstaking trawls through my spagetti code.\\
 \\
 Apart from bugs, etc., the noticable changes are:\\
 \\
-1. STAMP now reads compressed PDB and DSSP files.  It will also look for files that
-are stored in a brookhaven style directory structure (e.g. distr/mb/pdb4mbn.ent).\\
-\\
-2. Output is now flushed (fflush) during scanning.  Purely a cosmetic thing for those who
+1. Output is now flushed (fflush) during scanning.  Purely a cosmetic thing for those who
 want up to the minute output when the program is running.\\
 \\
-3. AVESTRUC now has an option to calculate an average for all aligned positions.  It also
+2. AVESTRUC now has an option to calculate an average for all aligned positions.  It also
 now outputs values to the temperature factor fields in the PDB output to denote those
 averaged positions corresponding to structurally equivalent regions (blue in RASMOL 
 colour by temperature) and those equivalenced fortuitously (red).  It will also highlight
 positions showing identical or conserved residue character.\\
 \\
-4. PDBSEQ has some new options, including the ability to output {\em separate} files
+3. PDBSEQ has some new options, including the ability to output {\em separate} files
 for each domain, and now outputs a sensible description of the protein by
-considering the TITLE, COMPND and SOURCE entries in each PDB file.  Note that the
-default format is now FASTA.\\
+considering the TITLE, COMPND and SOURCE entries in each PDB file.\\
 \\
-5. DSTAMP has been changed drammatically, and is now (I think) much more useful.  The
+4. DSTAMP has been changed drammatically, and is now (I think) much more useful.  The
 input files for ALSCRIPT are now much prettier, including cylinders/arrows for helices/strands 
 and colouring/fonting according to residue property conservation within the sequence alignment.
 It can also be used on alignments not derived using STAMP (i.e. from GCG, AMPS etc.).\\
 \\
-6. STAMP now appears to run smoothly under OSF.  Once again thanks to Steve Searle.  Versions
-have also been compiled and tested on IRIX, Solaris and Linux.\\
-\\
-7. CLUS2BLC and SMSF2BLC have been replaced by a general alignment conversion program written
-in PERL (ACONVERT).  More details are given below.  Note that this is a general alignment
-conversion utility that might be useful in other contexts apart from STAMP.\\
-\\
-8. The significance of sequence identity following structural alignment is now estimated 
-according to Murzin (1993), JMB, 230, 689-694.\\
-\\
-9. Three new programs have been added to the package (see specific instructions below):\\
+5. Three new programs have been added to the package (see specific instructions below):\\
 \\
 MERGETRANS allows one to combine transformations from a variety of different 
 sources (i.e. ALIGNFIT and STAMP).  It either uses a user-specified identifier to link the 
 two files (i.e. one found in both files) or the first common identifier if none is specified.\\
 \\
-MERGESTAMP.  Like MERGETRANS this program permits one to merge
-various kinds of STAMP data.  However, it considers more than merely
-the transformations, and attempts to combine the alignments as well.
-It can be used in exactly the same way as MERGETRANS (i.e. to combine
-files that contain only transformations), but will also attempt to merge
-alignments in the file, if they are present.  The alignments must be
-in BLOCK format (see the depths of the manual for details, and for how
-to convert things like Clustal or MSF into BLOCK format).  MERGESTAMP
-can combine files that do not contain transformations as well (i.e. those
-that contain only alignments), and can thus be used for sequence data
-handling as well.\\
+EXTRANS allows one to select and extract particular domains from a transformation file. \\
 \\
-EXTRANS allows one to select and extract particular domains from a transformation file. 
+STAMP2CASP converts a STAMP alignment into an alignment comparable with the Critical Assessment of
+Structure Prediction (CASP2) format.
+
+\section{Preface to Version 4.0}
+
+Much has changed with STAMP.  The changes are all described
+in detail somewhere in this document. I list the major changes here:\\
+\\
+1. STAMP programs now all accept command line arguments.  
+Parameter files are no longer necessary, but one can still use 
+them if prefered.  \\
+\\
+2. The scanning protocol has been improved; there
+are several new options, a new scoring system, and multiple
+means of sorting output.\\
+\\
+3. Initial fitting via ROUGHFIT, and tree generation have
+been incorporated into the main program;  the program MAKETREE is
+thus no longer needed, and is no longer included in the 
+distribution. \\
+\\
+4. Several new programs are now available in the package:\\
+\\
+AVESTRUC  ---  creates an average model for a protein structural
+ family given a STAMP alignment.\\
+\\
+GSTAMP    --- a program to create input for Kraulis' program
+ Molscript, to display structurally similar/dissimilar regions
+ within a family of aligned protein structures.\\
+\\
+PICKFRAME --- allows the selection of a particular domain to
+ be the `parent' in a superimposition (i.e. to have all other
+ domains superimposed on top of it, leaving it un-transformed).  This is
+ very useful if you wish to combine, say, similarites involving separate
+ domains from the same protein. \\
+\\
+POSTSTAMP --- a method for reassessing STAMP alignments.\\
+\\
+STAMP\_CLEAN --- cleans up un-reliable regions (i.e. shortens
+ long gaps where there is no structural similarity).  This is
+ most useful when one wishes to display or analyse an alignment.\\
+\\
+VER2HOR --- converts the text alignment file output from STAMP to
+vertical format, for a quick analysis of the alignment (i.e. if you
+don't have ALSCRIPT)\\
+\\
+CLUS2BLC, SMSF2BLC --- two little programs to convert CLUSTAL or MSF
+format to the BLOCK format used within certain STAMP programs.  Useful
+particularly if you don't have AMPS.\\
+\\
+All of these are described in the sections that follow.\\
+\\
+5. I hope that several bugs have been removed.  As I have said
+before, STAMP was my first program, and I suspect that other bugs
+are still to be found.  Thanks to all of those users who reported
+bugs, and I hope you keep reporting them.  As ever, I shall swallow
+my pride.\\
+\\
+This is the third version of STAMP to be distributed; comments are
+always greatly appreciated.  STAMP was developed on a SUN
+SPARCstation and most recently modified using a Silicon Graphics
+INDY.   As a consequence, it may suffer from system specific
+problems when running on other types of machines.   Please let me know if
+you have such problems.
 
 
 \section{Overview}
@@ -179,7 +201,7 @@ than 10 residues, etc.).  Complicated things are possible with STAMP but
 as a consequence, the method is very detailed.  Please be patient, and 
 read this manual carefully.\\
 \\
-Alternatively, if you only want to do fairly straightforward things, such
+Alternatively, if you only want to to fairly straightforward things, such
 as align a set of structures or search a database of structures for
 similarities, you can skip this entire chapter and go straight to the
 next one, which contains a few worked examples that should demonstrate how
@@ -196,7 +218,7 @@ been applied to alignments of more than two sequences, and no
 systematic method for assessing the quality of the alignments had 
 been provided.  These, then, were the goals of this work.\\
 \\
-At the heart of the method is the Argos \& Rossmann \cite{argos76}
+At the heart of the method is the Rossmann and Argos \cite{rossmann75} 
 equation for expressing the probability of equivalence of
 residue structural equivalence:\\
 
@@ -205,13 +227,13 @@ P_{ij} = exp \frac{d_{ij}^{2}}{-2 \times E_{1}^{2}}
          exp \frac{s_{ij}^{2}}{-2 \times E_{2}^{2}} 
 \]
 
-where $d_{ij}$ is the distance between ${\rm C}_{\alpha}$ atoms for residues $i$
+where $d_{ij}$ is the distance between \Cal atoms for residues $i$
 and $j$, and $s_{ij}$ is a measure of the local main chain conformation.
 A detailed description of this equation, and how it has been
 applied to multiple structures is given in \cite{rb92b}. \\
 \\
 STAMP makes extensive use of the Smith Waterman (SW) algorithm 
-\cite{smith81,barton93b,timewarps}.  This is a widely used algorithm 
+\cite{smith81,barton94,timewarps}.  This is a widely used algorithm 
 which allows fast determination of the best path through a matrix 
 containing a numerical measure of the pairwise similarity of each 
 position in one sequence to each position in another sequence.  Within 
@@ -220,7 +242,7 @@ values (above).\\
 \\
 The result of the SW algorithm applied to a matrix of modified $P_{ij}$
 values is a list of residue equivalences.  From this list, which
-we may obtain a set of equivalenced ${\rm C}_{\alpha}$ positions.  These are
+we may obtain a set of equivalenced \Cal positions.  These are
 used to obtain a best fit transormation and RMS deviation by a
 least squares method of \cite{kabsch78,mclachlan79}.  This
 transformation can be applied in the relevant way to yield two
@@ -291,8 +313,8 @@ sections.
 
 \subsection{Initial superimposition}
 
-The structure comparison algorithm of Argos \& Rossmann
-\cite{argos76}, which is the method used by STAMP, requires that the 
+The structure comparison algorithm of Rossmann and Argos 
+\cite{rossmann74}, which is the method used by STAMP, requires that the 
 protein structures being compared are approximately superimposed 
 initially.  If not then structural similarity may be undetected, and 
 reliable superimpositions and alignments unattainable.  This is a very important
@@ -368,7 +390,7 @@ PAIRWISE similarity scores, the TREEWISE option will
 perform all alignments that are possible given a dendrgoram (generated 
 by considering the PAIRIWISE scores). 
 Statistics, transformations and alignments are output at each stage
-of the hierarchy so that a continuum of structure variation can be
+of the hierarchy so that a continuim of structure variation can be
 observed (ie. the output will get more and more structural varied
 as the program progresses).\\
 \\
@@ -606,42 +628,12 @@ Kraulis.  One simple needs to run TRANSFORM (see below) on a STAMP
 alignment file, and then run GSTAMP on the same file, followed by
 separate runs of MOLSCRIPT, to produce separate Postscript files
 for each aligned structure, with structually equivalent regions
-shown as ribbons, the rest as ${\rm C}_{\alpha}$ trace.
-
-
-\section{Some comments on interpretting structural similarities}
-
-There is a wealth of literature on the nature of protein structural similarities, 
-and this manual is not the place to review them.  If you want to look into
-the subject, then I would refer you to some of my papers \cite{rb94,russell97b,russell98a}
-and references therein.\\
-\\
-An important aspect of assessing the meaning of structural similarity is discerning whether
-a similarity between proteins in the absense of obvious sequence identity implies a common
-evolutionary acestor, and usually an associated similarity in molecular function.  Some studies
-have found that it is possible to discern homology by the analysis of the sequence identity
-calculated following protein structure alignment.  Note that this is a very different 
-identity than that quoted during typical sequence comparison (e.g. BLAST, FASTA, SSEARCH, etc).
-During sequence comparison, the reported \% identity is the result of optimising the alignment of
-two sequences, thus numbers as high as \% 20-30 are possible for proteins that are definitely
-not homologous (i.e. those having different tertiary folds).  However, if an alignment has been
-derived without consideration of the amino acid sequence, then lower \% identities can still
-be significant.  See Russell \ea, 1997, and Murzin, 1993 for examples, and more details.\\ 
-\\
-\nocite{murzin93}
-STAMP reports both the \% identity from structure comparison, defined as the precentage 
-residue identities ($m$) within structurally equivalent residues ($n$), and an estimate of the statistical
-significance (reported as $P(m)$) of a given a particular combination of $m$ and $n$.  The latter is
-described in Murzin (1993).  Values of $P(m)$ smaller than about $10^{-3}$ very often indicate that
-the pair of proteins are within the same protein superfamily, which implies a common
-ancestor, and more importantly very often indicates a similarity in molecular function.  Specifically,
-the $P(m)$ is calculated for a $p = 0.1$; please see Murzin (1993) for a more through explanation
-of this calculation.
+shown as ribbons, the rest as \Cal trace.
 
 \section{The programs contained within the package}
 
 STAMP consists of the main program (usually refered to as STAMP)
-and several  sub-programs.  Briefly, the programs are:\\
+and seventeen  sub-programs.  Briefly, the programs are:\\
 
 
 \begin{center}
@@ -683,6 +675,10 @@ The programs contained within the package (continued):\\
 \begin{center}
 \begin{tabular}{|ll|}
 \hline
+STAMP2CASP & Given a STAMP alignment file, outputs alignment in format\\
+	   &  for the Critical Assessment of Structure Prediction (CASP2)\\
+           &  meeting.\\
+\hline
 AVESTRUC & Given a STAMP alignment file, generates an average\\
          &    set of main chain or C alpha coordinates for the \\
          &    structural family.\\
@@ -698,21 +694,22 @@ MERGETRANS & Given two transformation files, merges them by centering \\
            &  on a common identifier, either the first common one found\\
            &  or one specified by the user.\\
 \hline
-MERGESTAMP & Given two files containing alignments or transformations or both\\
-           &  merges them by centering on a common identifier, either the first \\
-           &  common one found or one specified by the user.\\
-\hline
 EXTRANS    & Given a transformation file and a list of domain identifiers \\
            &  it will output a new transformation file containing only the \\
            &  domains given \\
 \hline
-ACONVERT   & General alignment format conversion utility.\\
-\hline
 STAMP\_CLEAN & Tidies up STAMP alignments to remove nonsensical gaps\\
+\hline
+CLUS2BLC & Takes a sequence alignment in CLUSTAL format and \\
+	    &    converts it to AMPS format for use during\\
+         &    the program ALIGNFIT.\\
+\hline
+SMSF2BLC  & Takes a sequence alignment in MSF format and \\
+         &    converts it to AMPS format for use during\\
+         &    the program ALIGNFIT.\\
 \hline
 \end{tabular}
 \end{center}
-
 
 \chapter{Worked examples}
 
@@ -760,9 +757,8 @@ sequence similarity that are not detectable during a comparison of
 sequence.  The files for this example are in the directory examples/s\_prot in the 
 directory where you have installed STAMP.\\
 \\
-A list of the domains is given in the file s\_prot.domains.  Note
- that you can create such a file by using the PDBC program.  
-Running PDBSEQ:\\
+A list of the domains is given in the file s\_prot.domains. The
+output.  Running PDBSEQ:\\
 
 \begin{scriptsize}\begin{verbatim}
 pdbseq -f s_prot.domains > s_prot.seqs
@@ -804,42 +800,35 @@ stamp -l s_prot_alignfit.trans -prefix s_prot
 
 Should produce the following output:\\
 \begin{scriptsize}\begin{verbatim}
-
 STAMP Structural Alignment of Multiple Proteins
  by Robert B. Russell & Geoffrey J. Barton 
  Please cite PROTEINS, v14, 309-323, 1992
-
 
     Sc = STAMP score, RMS = RMS deviation, Align = alignment length
     Len1, Len2 = length of domain, Nfit = residues fitted
     Secs = no. equivalent sec. strucs. Eq = no. equivalent residues
     %I = seq. identity, %S = sec. str. identity
-    P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
 
-     No.  Domain1  Domain2  Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S    P(m)
-Pair   1  4chaa    3est     7.73  10.58    239  240   242  209 207   20  37.08  74.17 0.00e+00 
-Pair   2  4chaa    2ptn     7.80   9.43    239  223   234  201 198   20  40.17  75.31 0.00e+00 
-Pair   3  4chaa    1ton     6.81   9.38    239  227   245  183 178   19  29.71  66.11 2.19e-42 
-Pair   4  4chaa    3rp2a    7.45   9.95    239  224   235  195 188   18  29.71  67.78 2.36e-63 
-Pair   5  4chaa    2pkaab   7.27   9.65    239  232   241  198 195   19  29.71  73.64 0.00e+00 
-Pair   6  4chaa    1sgt     7.09   9.76    239  223   239  191 183   20  27.62  69.04 3.68e-49 
-Pair   7  4chaa    2sga     3.66   9.75    239  181   238  105  99   14  11.72  33.05 2.03e-07 
-Pair   8  4chaa    3sgbe    3.56   9.24    239  185   239  103  98   16  10.04  33.47 1.89e-05 
-Pair   9  4chaa    2alp     3.49   9.13    239  198   246  102  97   14   9.21  31.38 1.28e-04 
-
+    No.   Domain1  Domain2 Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S 
+Pair   1     4chaa     3est 7.68   1.12    239  240   241  207 205   20  36.67  79.58
+Pair   2     4chaa     2ptn 7.74   1.01    239  223   233  200 199   20  41.42  82.01
+Pair   3     4chaa     1ton 6.82   1.28    239  227   241  182 178   19  31.80  76.57
+Pair   4     4chaa    3rp2a 7.40   1.15    239  224   234  194 187   18  30.96  75.31
+Pair   5     4chaa   2pkaab 7.21   1.34    239  232   240  197 194   19  31.38  80.75
+Pair   6     4chaa     1sgt 7.04   1.33    239  223   238  189 182   20  30.13  79.92
                                       <etc.>
 Reading in matrix file s_prot.mat...
 Doing cluster analysis...
-Cluster: 1 (  2ptn &  2pkaab ) Sc 8.50 RMS 10.20 Len 232 nfit 213 
+Cluster:  1 (    2ptn  &   2pkaab ) Sc  8.50 RMS   1.08 Len 232 nfit 213 
  See file s_prot.1 for the alignment and transformations
-Cluster: 2 (  2sga &  3sgbe ) Sc 8.34 RMS 10.37 Len 191 nfit 164 
+Cluster:  2 (    2sga  &    3sgbe ) Sc  8.36 RMS   0.62 Len 191 nfit 164 
  See file s_prot.2 for the alignment and transformations
                              <etc.>    
-Cluster: 7 (  2alp &   2sga  3sgbe ) Sc 8.40 RMS 10.30 Len 202 nfit 161 
- See file s_prot.7 for the alignment and transformations
-Cluster: 8 ( 1sgt &  4chaa   3est  3rp2a   1ton   2ptn  2pkaab ) Sc 7.59 RMS  9.50 Len 268 nfit 175 
+Cluster:  8 (    1sgt  &    4chaa     3est    3rp2a     1ton     2ptn   2pkaab ) 
+	Sc  7.58 RMS   1.14 Len 267 nfit 177 
  See file s_prot.8 for the alignment and transformations
-Cluster: 9 (  1sgt  4chaa   3est  3rp2a   1ton   2ptn  2pkaab &   2alp   2sga  3sgbe ) Sc 4.77 RMS  9.74 Len 290 nfit 111 
+Cluster:  9 (    1sgt    4chaa     3est    3rp2a     1ton     2ptn   2pkaab  
+	&   2alp     2sga    3sgbe ) Sc  4.79 RMS   1.86 Len 292 nfit 109 
  See file s_prot.9 for the alignment and transformations
 \end{verbatim} \end{scriptsize}
 
@@ -873,7 +862,7 @@ After these details, various details of the similarity (RMS deviation,
 $S_{c}$ value, etc) are given.  The bottom portion of the file contains 
 the structural alignment in STAMP format.  Positions not aligned with 
 gaps contain information as to the degree of local structural similarity, 
-such as the distance between (averaged) ${\rm C}_{\alpha}$ atoms, and the 
+such as the distance between (averaged) \Cal atoms, and the 
 $P_{ij}^{\prime}$ value.\\
 \\
 Methods for displaying sequence alignments and structures are described below.
@@ -904,29 +893,22 @@ stamp -l globin.domains -rough -n 2 -prefix globin
 should produce the following on the standard output (ignoring the header):\\
 
 \begin{scriptsize}\begin{verbatim}
-
 Running roughfit.
 
     Sc = STAMP score, RMS = RMS deviation, Align = alignment length
     Len1, Len2 = length of domain, Nfit = residues fitted
     Secs = no. equivalent sec. strucs. Eq = no. equivalent residues
     %I = seq. identity, %S = sec. str. identity
-    P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
 
-     No.  Domain1  Domain2  Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S    P(m)
-Pair   1  2hhbb    2hhba    6.59  10.63    146  141   147  125 125    7  39.04  72.60 1.45e-24 
-Pair   2  2hhbb    2lhb     5.72  10.08    146  149   151  120 120    7  20.13  68.46 1.29e-06 
-Pair   3  2hhbb    4mbn     6.03   9.93    146  153   155  122 114    7  18.95  66.01 1.32e-06 
-Pair   4  2hhbb    1ecd     6.61  10.37    146  136   143  115 109    7  15.07  65.07 6.37e-04 
-Pair   5  2hhbb    1lh1     5.62  10.89    146  153   155  106  92    5   9.80  49.02 1.96e-02 
+    No.   Domain1  Domain2 Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S 
+Pair   1     2hhbb    2hhba 8.08   1.37    146  141   146  133 130    7  41.10  78.08
+Pair   2     2hhbb     2lhb 7.01   1.49    146  149   150  125 124    7  24.16  77.18
+Pair   3     2hhbb     4mbn 7.96   1.42    146  153   147  138 137    8  23.53  77.78
+Pair   4     2hhbb     1ecd 6.79   2.10    146  136   143  122 114    7  17.12  76.71
+Pair   5     2hhbb     1lh1 5.80   2.39    146  153   154  112 106    7  15.69  69.28
                                      <etc.>
-Pair  14  4mbn     1lh1     4.73  10.30    153  153   159   91  77    6  10.46  45.75 2.21e-03 
-Pair  15  1ecd     1lh1     5.84  11.38    136  153   149  110 101    6  11.76  57.52 5.94e-03 
-Reading in matrix file globin.mat...
-Doing cluster analysis...
-Cluster: 1 (  2hhba &   4mbn ) Sc 7.65 RMS 10.25 Len 148 nfit 134 
-                                     <etc.>
-Cluster: 5 (  1lh1 &   2lhb  2hhba   4mbn  2hhbb   1ecd ) Sc 7.63 RMS 10.11 Len 158 nfit 112 
+Cluster:  5 (    1lh1  &     2lhb     1ecd     4mbn    2hhbb    2hhba ) 
+	Sc  7.83 RMS   2.45 Len 156 nfit 116 
  See file globin.5 for the alignment and transformations
 \end{verbatim} \end{scriptsize}
 
@@ -986,25 +968,30 @@ standard output (again, ignoring the header):
 \begin{scriptsize}\begin{verbatim}
 
 Results of scan will be written to file 2fb4lv_stamp.scan
-Fits  = no. of fits performed, Sc = STAMP score, RMS = RMS deviation
-Align = alignment length, Nfit = residues fitted, Eq. = equivalent residues
-Secs  = no. equiv. secondary structures, %I = seq. identity, %S = sec. str. identity
-P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
+Fits = no. of fits performed, Sc = STAMP score, RMS = RMS deviation
+Align = alignment length, Fit = residues fitted, Eq = equivalent residues
+Secs = no. equiv. secondary structures, %I = seq. identity, %S = sec. str. identity
 
-     Domain1  Domain2   Fits  Sc      RMS   Len1 Len2 Align Fit   Eq. Secs    %I    %S     P(m)
-Scan 2fb4lv   2fb4lc      1   3.819   7.880  111  105  127   45   45    7   6.31  26.13 8.28e-02 
-Scan 2fb4lv   2fb4l       8   9.799  10.383  111  166  111  111  110   11  66.27  64.46 0.00e+00 
-Scan 2fb4lv   1mcplv      1   7.802   9.561  111  113  118   94   90   10  39.82  69.03 9.06e-22 
-Scan 2fb4lv   1mcphv      1   5.637   8.513  111  122  125   71   68    9  18.85  47.54 7.00e-08 
-Scan 2fb4lv   1cmsC       1   2.152   6.421  111  148  153   27   21    4   1.35   8.78 1.00e+00 
-                                     <etc.>
-Scan 2fb4lv          1rnt               1   2.210   4.679  111  104  145   28   28    4   1.80  18.92 1.00e+00 
-Scan 2fb4lv          2sodo              1   3.586   7.776  111  151  158   39   32    7   1.32  15.23 1.00e+00 
-Scan 2fb4lv          8rubs            skipped domain -  sequence is too short
-Scan 2fb4lv          2pcy               1   3.331   7.604  111   99  124   41   33    6   5.41  19.82 6.44e-02 
-Scan 2fb4lv          8atca              0   0.000 100.000  111  166    0    0   33    0   0.00   0.00 1.00e+00 
+        Domain1    Domain2   Fits  Sc       RMS Len1 Len2 Align Fit  Eq   Secs   %I    %S 
+Scan     2fb4lv     2fb4lc    1   3.460   2.730  111  105  127   50   41    7   9.01  49.55 
+Scan     2fb4lv      2fb4l    3   9.711   0.001  111  166  110  110  109   11  66.27  64.46 
+Scan     2fb4lv     1mcplv    1   7.430   1.292  111  113  115   95   93   11  44.25  79.65 
+Scan     2fb4lv     1mcphv    1   6.111   1.686  111  122  124   83   80   10  22.95  75.41 
+Scan     2fb4lv      1cmsC    0   1.382   2.236  111  148  159   20   13    2   4.73  18.92 
+Scan     2fb4lv       3cd4    3   4.376   2.059  111  166  114   57   55   10   7.83  29.52 
+Scan     2fb4lv      2hhbb    0   0.000 100.000  111  146    0    0   55    0   0.00   0.00 
+Scan     2fb4lv       3dpa    3   3.846   2.397  111  166  132   58   53    6   4.82  34.94 
+Scan     2fb4lv      3sgbe    0   0.922   2.939  111  166  184   15   12    3   2.41  16.27 
+Scan     2fb4lv       1acx    1   2.951   2.237  111  108  135   47   42    5   8.11  36.04 
+Scan     2fb4lv      2abxa    0   0.973   2.740  111   74  108   11    5    0   0.90  19.82 
+Scan     2fb4lv       1l01    0   0.000 100.000  111  164    0    0    5    0   0.00   0.00 
+Scan     2fb4lv      2azaa    1   3.354   2.765  111  129  131   41   32    6   7.75  49.61 
+Scan     2fb4lv       1rnt    0   1.146   2.313  111  104  155   19   18    4   3.60  25.23 
+Scan     2fb4lv      2sodo    1   2.535   2.471  111  151  159   38   29    7   6.62  42.38 
+Scan     2fb4lv      8rubs    1   2.366   2.137  111  123  143   36   30    5   2.44  33.33 
+Scan     2fb4lv       2pcy    1   3.102   2.064  111   99  120   39   33    5  12.61  42.34 
+Scan     2fb4lv      8atca    0   1.054   2.353  111  166  165   19   17    2   2.41  17.47 
 See the file 2fb4lv_stamp.scan
-
 \end{verbatim} \end{scriptsize}
 
 where all of the fields are as for the PAIRWISE mode, save for Fits, which indicates the 
@@ -1094,6 +1081,7 @@ before performaing a multiple alignment (i.e. to include only those domains
 one wants to consider further).
 
 
+
 \section{Using scans as a starting point for multiple alignment}
 
 In certain instances initial fits based on multiple sequence
@@ -1128,18 +1116,17 @@ stamp -l 1cmsN.domain -n 2 -s -slide 5 -d ac_prot.domains -prefix ac_prot
 Should produce:
 
 \begin{scriptsize}\begin{verbatim}
-
-     Domain1  Domain2   Fits  Sc      RMS   Len1 Len2 Align Fit   Eq. Secs    %I    %S     P(m)
-Scan 1cmsN    1cmsN       1   9.800  10.091  175  175  175  175  174   18  99.43  94.29 0.00e+00 
-Scan 1cmsN    1cmsC       2   3.211   7.858  175  148  204   64   57   13   7.43  25.14 2.37e-03 
-Scan 1cmsN    4apeN       1   8.195   9.708  175  178  182  155  151   15  26.97  72.47 1.36e-13 
-Scan 1cmsN    4apeC       1   3.434   7.939  175  152  210   69   68   14   5.14  30.29 1.00e+00 
-Scan 1cmsN    3appN       1   7.967   9.830  175  174  183  149  148   18  26.86  74.86 2.51e-13 
-Scan 1cmsN    3appC       1   3.260   8.137  175  149  206   63   54   13   5.71  24.57 2.32e-02 
-Scan 1cmsN    2aprN       1   8.386  10.130  175  178  178  158  154   15  30.34  76.40 3.81e-17 
-Scan 1cmsN    2aprC       1   3.335   7.787  175  147  202   68   62   14   6.86  27.43 1.11e-02 
-Scan 1cmsN    4pepN       1   8.880  10.162  175  174  174  170  169   15  56.00  87.43 3.00e-53 
-Scan 1cmsN    4pepC       1   3.227   8.315  175  152  206   63   51   11   6.86  24.00 2.61e-03 
+        Domain1    Domain2   Fits  Sc       RMS Len1 Len2 Align Fit   Eq. Secs    %I    %S 
+Scan      1cmsN      1cmsN    1   9.744   0.000  174  175  175  174  173   18  99.43  94.86 
+Scan      1cmsN      1cmsC    1   2.749   2.352  204  175  148   63   58   13   8.00  41.14 
+Scan      1cmsN      4apeN    1   7.854   1.314  181  175  178  155  153   15  27.53  80.90 
+Scan      1cmsN      4apeC    1   2.901   2.207  208  175  152   69   68   14   7.43  40.57 
+Scan      1cmsN      3appN    1   7.574   1.291  182  175  174  148  147   18  26.86  83.43 
+Scan      1cmsN      3appC    1   2.775   2.422  205  175  149   61   58   13   7.43  41.71 
+Scan      1cmsN      2aprN    1   8.246   1.115  177  175  178  160  157   15  32.02  83.15 
+Scan      1cmsN      2aprC    1   2.941   2.099  201  175  147   65   58   14   9.14  39.43 
+Scan      1cmsN      4pepN    1   8.901   1.020  173  175  174  169  168   15  56.57  89.71 
+Scan      1cmsN      4pepC    1   2.738   2.561  206  175  152   64   52   11   8.00  40.00 
 See the file ac_prot.scan
 \end{verbatim} \end{scriptsize}
 
@@ -1201,34 +1188,24 @@ to the four letter code is one your system.  In other words, the files
 given in this distribution should work on your system, provided that
 you have all the PDB files.\\
 \\
+Sensitive STAMP database comparisons can take a long time.  For this 
+reason we have compared the current PDB database to itself based on 
+sequence, and clustered the data such that only one member of each
+sequence family is in our domain database.  We have also split
+these structures into domains using author definitions.  This database, even
+when a high degree of sequence similarity is required for
+clustering, reduces the size of the brookhaven database
+drastically (from over 4500 independent chains down to just under
+1000 protein domains).  It is probably sensible to scan this
+database, which contains just one representative of each sequence
+family, then if something interesting is found one can scan other
+structures related to the representative by sequence.
+A copy of this representative database is in the file
+defs/brookhaven\_subset.domains.\\
+\\
 Note that PDBC can be used to probe information about a PDB entry by
 using the `-q' option.  Try it and see.   This is a good test of whether 
-STAMP has been set up properly on your system.  If you just want to test
-where STAMP is looking for PDB and DSSP files, then use the `-m' (minimal)
-options.  This just reports PDB/DSSP files if found and exits.\\
-\\
-STAMP database comparisons are computationally intensive, so it is prudent
-to avoid comparisons that are redundant (e.g. multiple mutants or binding studies
-of the same protein, T4 lysozyme for example).  The STAMP distribution
-contains a series of non-redundant databases derived by a parsing of the
-SCOP database.  In the STAMPDIR/defs directory there are several databases:
-
-\begin{tabular}{lcl}
-Domain database         & N & Description\\
-\hline
-scop.dom		& 17891 & All PDB entries classified in SCOP\\
-scop\_domain.dom 	& 10741 & The above, though ignoring multiple copies of the same chain\\
-scop\_species.dom	& 3495  & One representative from protein of every species\\
-scop\_prot.dom		& 2420  & One representative from each protein \\
-scop\_fam.dom		& 1031  & One representative from each protein family\\
-scop\_supf.dom		&  716  & One representative from each protein superfamily\\
-scop\_fold.dom		&  506  & One representative per fold\\
-\end{tabular}
-
-Probably the first two databases are too big to be used sensible with STAMP (and contain
-too much redundancy); they have only been included for completeness.  I tend to
-use ``scop\_species.dom'' or ``scop\_prot.dom'', but probably one could get away with
-using ``scop\_fam.dom''.  It entirely depends on your patience and CPU resources.
+STAMP has been set up properly on your system.
 
 \section{Generating transformed coordinates}
 
@@ -1310,7 +1287,7 @@ aspartic proteinase domains one needs to type:\\
 avestruc -f ac_prot.8 -o ac_prot_ave.pdb
 \end{verbatim} \end{scriptsize}
 
-The file ac\_prot\_ave.pdb will contain a set of averaged ${\rm C}_{\alpha}$ atoms taken 
+The file ac\_prot\_ave.pdb will contain a set of averaged \Cal atoms taken 
 by averaging the coordinates for those positions within the file 
 ac\_prot.8 that are found to be structurally equivalent.  To obtain a poly 
 Alanine set of coordinates (i.e. including main chain and $C_{\beta}$ 
@@ -1321,7 +1298,7 @@ avestruc -f ac_prot.8 -o ac_prot_ave.pdb -polyA
 \end{verbatim} \end{scriptsize}
 
 Note that this will only work if all main chain atoms are found in the file
-(i.e. it won't work if the PDB files contain only ${\rm C}_{\alpha}$ atoms).\\
+(i.e. it won't work if the PDB files contain only \Cal atoms).\\
 \\
 A useful feature in AVESTRUC in stamp version 4.1 is the use of the -ident
 and -cons options.  The program now labels all residues in the averaged model 
@@ -1363,7 +1340,7 @@ the sequence alignment.
 
 There is something inherrently wrong with the way STAMP assigns 
 equivalences within multiple alignments.  It considers an average set of 
-${\rm C}_{\alpha}$ coordinates and uses an average set of probabilities to derive 
+\Cal coordinates and uses an average set of probabilities to derive 
 equivalences when more than two structures are involved, and as a 
 consequence, it appears to go wrong (sometimes only) during this process.  
 Usually this is only when very distantly related proteins are being 
@@ -1387,7 +1364,7 @@ or equal to the cutoff (e.g. 0.5).\\
 For example, \\
 
 \begin{scriptsize}\begin{verbatim}
-poststamp -f globin.5 -min 0.5
+poststamp globin.5 0.5
 \end{verbatim} \end{scriptsize}
 
 Creates a file globin.5.post, containing the above data for a $P_{ij}$ 
@@ -1414,20 +1391,8 @@ shortened to their minimum length.
 
 \subsection{Displaying text alignments}
 
-There are two ways to display STAMP alignments in a vertical format.
-The first is simply to use ACONVERT to change the STAMP block file format into
-another such as MSF or CLUSTAL.  The format would be:\\
-\\
-\begin{scriptsize}\begin{verbatim}
-aconvert -in b -out c < <stamp alignment file>
-\end{verbatim} \end{scriptsize}
-
-Where `-out c' denotes CLUSTAL format (using `-out m' would give MSF format).\\
-\\
-ACONVERT does not use any of the STAMP specific parts of the alignment (i.e reliable
-structural equivalences, etc.).  There is a program specifically designed for displaying
-these data in a vertical format.  VER2HOR takes a STAMP alignment file and outputs a 
-horizonal text format.  For example, to display the globin alignment, one needs to
+The program VER2HOR takes a STAMP alignment file and outputs a horizonal
+text format.  For example, to display the globin alignment, one needs to
 type:\\
 
 \begin{scriptsize}\begin{verbatim}
@@ -1480,6 +1445,7 @@ the displaying of secondary structures by the option `-sec false', or can displa
 a summary of the secondary structures (an average) by typing `-secsum true'.  Try 
 these and see.  The column width can be modified by using `-columns $<$value$>$'.  The
 remaning parameters are as for DSTAMP (see next section).
+
 
 \subsection{Pretty Alignments via ALSCRIPT}
 
@@ -1573,13 +1539,45 @@ To give the two postscript files are shown in Figure 2.\\
 
 By default, GSTAMP will show equivalent helix, strand and coil residues
 as MOLSCRIPT \al helix, \be strand and coil, with un-equivalent regions 
-being shown as ${\rm C}_{\alpha}$ trace.\\
+being shown as \Cal trace.\\
 \\
 At best, GSTAMP will give only a starting point for further refinement.  
 Invariably, one will need to modify the orientation of the image for the 
 best view, and probably need to tweak the assignments of helix and strand 
 to look clear; MOLSCRIPT will not work, for example, if one has very 
 short \be strands.
+
+\section{STAMP and Fold Recognition Assessment}
+
+STAMP2CASP provides a means to convert STAMP alignments into the alignment
+format specified by the Critical Assessment of Structure Prediction (CASP2)
+format.  This is likely to be very useful for assessing the results of
+these competetitions.\\
+\\
+First one must create a STAMP alignment where the {\em target} structure (i.e.
+the correct answer) is the first alignment in the file.  You may have to
+do this in a ``one pair at a time'' fashion, by ensuring that the target
+structure is listed first in the starting domain/transformation file.\\
+\\
+Once you have done this, type:\\
+\begin{scriptsize}\begin{verbatim}
+stamp2casp -f <name of alignment file>
+\end{verbatim} \end{scriptsize}
+
+The program will output a file for each of the domains (excluding the 1st
+which is presumed to be the target) in the CASP2 format.  You have have
+to edit these files slightly to get them in precisely the format you want,
+since the CASP2 format has some problems with chains, etc.  The options for
+stamp2casp are identical to those for GSTAMP (with obvious exlusions).\\
+\\
+For more information see URL:\\
+\begin{verbatim}
+http://www.mrc-cpe.cam.ac.uk/casp2/
+\end{verbatim} 
+or \\
+\begin{verbatim}
+http://iris4.carb.nist.gov/casp2/
+\end{verbatim} 
 
 \chapter{Input and Output format for all programs}
 
@@ -1594,7 +1592,7 @@ possibilities may be used (e.g. all the coordinates in a PDB file,
 one  chain, bits of one chain, two chains, one chain and bits of
 another, etc) is solved by defining a domain by: 1) a file, 2) an
 identifier, and 3) a list of `objects', from the file, to be
-included in the domain.  An object is defined as a run of ${\rm C}_{\alpha}$
+included in the domain.  An object is defined as a run of \Cal
 coordinates, and a domain may contain more than one object.\\
 \\
 Domains are stored in STAMP in files which may contain one or
@@ -1638,18 +1636,18 @@ $<$objects$>$ are coordinate descriptions, and may be one of three types:
 \begin{scriptsize}\begin{verbatim}
 1.  ALL  
 \end{verbatim} \end{scriptsize}
-all ${\rm C}_{\alpha}$'s from the file.\\
+all \Cal's from the file.\\
 
 \begin{scriptsize}\begin{verbatim}
 2. CHAIN X 
 \end{verbatim} \end{scriptsize}
-only ${\rm C}_{\alpha}$'s labeled as chain X.\\
+only \Cal's labeled as chain X.\\
 
 \begin{scriptsize}\begin{verbatim}
 3.  <chain1> <number1> <insert1> to <chain2> <number2> <insert2>
 e.g.  B 20 _ to B 67 P 
 \end{verbatim} \end{scriptsize}
-only ${\rm C}_{\alpha}$'s between (and including) the two full brookhaven\\
+only \Cal's between (and including) the two full brookhaven\\
 residue names (chain, number, insertion code;
 the `\_` character denotes a space)\\
 \\
@@ -1854,7 +1852,7 @@ Briefly, the numeric fields are:\\
 \\
 \#P  averaged Rossmann and Argos Pij value\\
 \\
-\#A  distance between averaged ${\rm C}_{\alpha}$ atoms\\
+\#A  distance between averaged \Cal atoms\\
 \\
 \#G  corrected Pij value ($P_{ij}{\prime}$)\\
 \\
@@ -1939,7 +1937,7 @@ a detailed description of this output, but I am getting tired.
 The format for running STAMP is:
 
 \begin{scriptsize}\begin{verbatim}
-stamp -l <starting domain file> -s -o <output file> -P <parameter file>
+stamp -l <listfile> -s -o <output file> -P <parameter file>
       -n <1 or 2 fits> -d <database file for scans> 
       -slide <slide value>
       -pen1 <gap penatly 1> -pen2 <gap pentalty 2> 
@@ -1959,7 +1957,7 @@ For example, `-first\_pairpen 0.5'.  However, I have made some
 abbreviations for frequently used commands, these are:
 
 \begin{scriptsize}\begin{verbatim}
--l <starting domain file>           same as -listfile <list file>
+-l <list file>           same as -listfile <list file>
 -o <output file>         same as -logfile <output file>
 -n <1 or 2>              same as -npass <1 or 2>
 -pen1 <gap penalty 1>    same as -first_pairpen <gap penalty 1>
@@ -2028,28 +2026,28 @@ description of the domains to be analysed and, if desired, an
 initial transformation.\\  
 Default LISTFILE = domain.list\\
 \\
-SECTYPE $<$integer$>$\\
+SEC $<$integer$>$\\
 This must be set to 0 (no secondary structure assignment) or
 to one of the following values:\\
 \\
-SECTYPE = 1 Kabsch and Sander's DSSP output.  This program, which
+SEC = 1 Kabsch and Sander's DSSP output.  This program, which
 calculates secondary structure based on hydrogen bonding criteria 
 \cite{dssp} is available from the EMBL fileserver.
 \\
-SECTYPE = 2 Secondary structure summary format.  A string of residue by
+SEC = 2 Secondary structure summary format.  A string of residue by
 residue secondary structure assignments for each domain is to be 
 read in from SECFILE in the format specified in the previous chapter.\\
 \\
 Note that it is not possible to mix assignments.  This is probably
 not a very realistic thing to do anyway, since assignments can
 differ substantially.  If you really want to do this, then the only
-possible way is to set SECTYPE = 3, and define each secondary structure
+possible way is to set SEC = 3, and define each secondary structure
 independently in SECFILE.\\
-Default SECTYPE = 1 (for DSSP).\\
+Default SEC = 1 (for DSSP).\\
 \\
 SECFILE $<$string$>$\\
 The file from which user specified secondary structure assignments
-are to be read (ie. SECTYPE = 2 only).\\
+are to be read (ie. SEC = 2 only).\\
 Default SECFILE = stamp.sec\\
 \\
 PAIRWISE $<$boolean$>$\\
@@ -2252,13 +2250,6 @@ of the similar region.  This is not always desireable, since there can
 be more than one hit within  repetetive structures, such as $\alpha/\beta$ barrels.\\
 Default SKIPAHED = TRUE\\
 \\
-OPD $<$boolean$>$\\
-Means ``One Per Domain''.  When the first hit for a domain is found during a SCAN
-(i.e. with Sc above SCANCUT), the rest of the comparisons involving that domain
-are skipped.  Means that multiple matches involving the probe and database structures
-will be missed.\\
-Default OPD = FALSE\\
-\\
 SCANCUT $<$float$>$\\
 If SCANMODE = 1, then Sc must be $>$= SCANCUT in order for a 
 transformation to be output.\\
@@ -2456,9 +2447,10 @@ MAX\_SEQ\_LEN $<$integer$>$\\
 The maximum length of alignment to be tolerated.\\
 Default is 3000\\
 \\
-For most purposes, the default parameters should suffice.  Note that one can
-use ACONVERT to convert CLUSTAL and MSF formats to block format, so that one can use alignments created
-using other programs (e.g. PILEUP, CLUSTAL, etc.) as a starting point for superimposition.
+For most purposes, the default parameters should suffice.  Note that CLUS2BLC and SMSF2BLC
+convert CLUSTAL and MSF formats to block format, so that one can use alignments created
+using other programs (e.g. PILEUP, etc.) as a starting point for superimposition.
+
 
 \subsection{VER2HOR}
 
@@ -2561,14 +2553,10 @@ sec_id          percent secondary structure identity
 
 sorted transformations are written to the standard output.
 \\
-The option -i ==$>$ identifiers only.  Consider only the best
-transformation per identifier.\\
-\\
-The option -n ==$>$ ignore domain descriptors.  This means
-that only the filename and the transformations are used.  This is
-useful if you have different domain names attributed to the same 
-region of the structure.  Why I put this in I can't remember, but it
-must have been useful for something.
+The option -t ==$>$ ignore identifiers.  This means that domains will be 
+ignored if they have similar transformations and the same filename (i.e.
+assumes that  if the same transformation is applied to the same
+file, we are dealing with the same superimposition).
 
 \subsection{TRANSFORM}
 
@@ -2663,24 +2651,6 @@ extrans -f <transformation file> -i <id1> <id2> <id3> ... <idN>
 A new transformation file will be output to the standard output containing only those domains
 that have been input on the command line.
 
-\subsection{MERGESTAMP}
-
-Sometimes one has several files containing transformations or alignemnts or both
-and wants to combine them.  Alignments/transformations from STAMP may need to be
-combined with (for example) an alignment of a single PDB sequence with it's homologues
-from a sequence database search, etc.  MERGESTAMP does just this.  It is essentially
-an extension of MERGETRANS.\\
-
-The format is:\\
-
-\begin{scriptsize}\begin{verbatim}
-mergestamp -f1 <transformation file1> -f2 <transformation file2> [-i <domain identifier>]
-\end{verbatim} \end{scriptsize}
-
-If an identifier is given, then that identifier will be used to link the two files (provided it
-can be found in both).   Otherwise the program will simply search for the first identifier that 
-is exactly in common across the two transformation/alignment files.
-
 \subsection{AVESTRUC}
 
 For various reasons, it is often useful to derive `average`
@@ -2729,7 +2699,7 @@ avestruc -f <STAMP alignment file>
 \\
 `-ident' `-cons'  these flags will name residues either as a single amino acid
   type (ident) or a conserved type (cons) according to the sequence alignment.
-  See the appropriate sections in the preceding chapter for a further explanation.
+  See the sections in the preceding chapter for a further explanation.
 
 
 \subsection{GSTAMP}
@@ -2744,7 +2714,7 @@ MOLSCRIPT.\\
 \\
 When multiple structure are considered, structurally equivalent regions
 (specified as for AVESTRUC) are shown as MOLSCRIPT helix, strand or coil.
-Non-structurally equivalent regions are shown as ${\rm C}_{\alpha}$ trace.  For an
+Non-structurally equivalent regions are shown as \Cal trace.  For an
 example of how this looks, see Figure 1 \cite{rb94} or Figure 1 in 
 \cite{russell94}.\\
 \\
@@ -2796,25 +2766,18 @@ be considered significant.  I always use 3, since this means that short stretche
 1-2 residues that are surround by gaps (i.e. in any sequence) are `cleaned'.  Try it 
 and see what I mean.
 
-\subsection{Converting alignment formats ACONVERT}
+\subsection{Converting alignment formats (SMSF2BLC, CLUS2BLC)}
 
-A perl utility is now included in the STAMP package.  In the STAMPDIR/bin directory you
-should find a perl program called ACONVERT.  This program converts various alignment formats
-back and forth.  The format is:
-
-\begin{scriptsize}\begin{verbatim}
-aconvert [-in <type> -out <type>] < <input file> > <output file>
-\end{verbatim} \end{scriptsize}
-
-where `type' is one of `c', `m', `b', `f', `p', which denote CLUSTAL, MSF, BLOCK,
-FASTA and PIR format respectively.  If no `-in' argument is given, the program tries
-to guess the format, though note that this can sometimes fail (the program will usually
-tell you).  So to convert a STAMP alignment into CLUSTAL format, you type (e.g.):\\
+Two command line driven programs can be used to convert MSF or CLUSTAL NBRF-PIR
+alignment format to the AMPS block format used by STAMP.  One need only give
+these programs the name of the MSF/CLUSTAL alignment file and the name of a new
+file to store the converted alignment.\\
 \\
-\begin{scriptsize}\begin{verbatim}
-aconvert -in b -out c < stamp_trans.10 > stamp_trans.10.aln
-\end{verbatim} \end{scriptsize}
-
+MSF2BLC is no longer in the STAMP distribution.  A new program SMSF2BLC
+has replaced it (MSF2BLC is still available through ALSCRIPT).
+SMSF2BLC runs with the format:
+smsf2blc < MSF-file > BLOCK-file and will tolerate non-letters within the alignments.
+I hope to  add an equivalent CLUS2BLC version soon.
 
 \chapter{Installation}
 
@@ -2835,7 +2798,7 @@ On most UNIX systems, one can install STAMP with:\\
 gunzip STAMP.tarfile.gz
 tar xvf STAMP.tarfile
 cd stamp.4.1
-BUILD <system type> (e.g. BUILD sgi)
+BUILD <system type> (e.g. BUILD irix5.2)
 \end{verbatim} \end{scriptsize}
 
 should work.\\
@@ -2843,23 +2806,20 @@ should work.\\
 
 The systems that are available are:\\
 \\
-sgi (IRIX64 version 6.2)\\
-mips4-sgi (IRIX64 R10K version 6.2)\\
-dec (OSF1 version 4.0)\\
-sun (SunOS sol4 5.5.1)\\
-linux (Linux 2.0.36)\\
+sunos4.1.3\\
+solaris2.5\\
+irix5.2\\
+irix6.3\\
+osf3.0\\
 \\
 All of these are specified by a makefile in the src/ sub--directory.  If your system
 isn't one of the above, then you can probably just use the one that is nearest, and edit
 the makefile accordingly.  Note that the above are just the systems that I have easy access to. 
-Note also that there are only very few differences between the various makefiles.  I haven't
-been able to test the `linux' version as robustly as the others owing to limited time and access.\\
+Note also that there are few differences between the various makefiles.\\
 \\
 Note that there are several precompiled executables in the distribution.  Files
-found in the directories bin/sgi, bin/sun, bin/dec, bin/linux.  You will
-overwrite these if you attempt a `BUILD' as discussed above.  Note also that these binaries
-may be slightly out of date, as their creation depends entirely on 
-the machine I have access to.\\
+found in the directories bin/irix.5.2, bin/irix.6.3, bin/sunos.4.1.3 and bin/osf.3.0.  You will
+overwrite these if you attempt a `make' as discussed above.\\
 \\
 Once the executables are made, they 
 will be put into the directory bin/$<$system-type$>$, and these can then either be
@@ -2869,15 +2829,15 @@ directory, such as /usr/local/bin.
 \section{Setting up STAMP files}
 
 To use STAMP, all users must define the environment variable
-STAMPDIR, and set it equal to the sub-directory /defs in which 
-the installation was made.  Users must also have STAMPDIR in their path. 
+STAMPDIR, and set it equal to the directory where you have done
+the installation.  Users must also have STAMPDIR in their path. 
 The logical thing is to make modifications to one's .cshrc file to
 this end.\\
 \\
 STAMP reads PDB coordinate information and DSSP information in
 standard format.  Thus, you really must have copies of PDB
 and DSSP output if you wish to make full use of the program
-(though DSSP is not, strictly required).\\
+(though DSSP is not, strictly speaking, required).\\
 \\
 You must create files in the STAMP directory for reading by the 
 program that are specific to your system.  These files must be in
@@ -2892,8 +2852,8 @@ For example:\\
 
 \begin{scriptsize}\begin{verbatim}
 /data/newpdb/pdb/           pdb .ent
-/data/newpdb/prerelase/     pdb .ent.Z
-/usr/people/jack/extrapdb/  _ .pdb.gz
+/data/newpdb/prerelase/     pdb .ent
+/usr/people/jack/extrapdb/  _ .pdb
 ./                          myprefix .pdb
 \end{verbatim} \end{scriptsize}
 
@@ -2903,19 +2863,7 @@ found in the file /data/newpdb/pdb/pdb4mbn.ent.  A `\_' character
 in the suffix or prefix field denotes no prefix or suffix.  When 
 a file is to correspond to a four letter code is to be found, STAMP
 routines will try each of the specifications in turn, and will use
-the first one found.  A recent modification (version 4.2) is to look
-in each of the `distr' type sub-directories for filenames.  Some people
-store PDB files in a format, e.g.\\
-
-\begin{scriptsize}\begin{verbatim}
-<directory>/ab/pdb1abc.ent
-\end{verbatim} \end{scriptsize}
-
-Where the two letter sub-directory name corresponds to the second two characters
-in the four letter PDB code (i.e. ignoring the leading number).  STAMP now
-handles these file types.  If you just specify the top directory, the program
-will explore suitable two-letter sub-directories corresponding to each file it
-is looking for.\\
+the first one found.  \\
 \\
 dssp.directories contains a description as to where possible DSSP files
 may be found.  The format is as for pdb.directories, e.g.\\
@@ -2926,27 +2874,48 @@ may be found.  The format is as for pdb.directories, e.g.\\
 \end{verbatim} \end{scriptsize}
 
 For example, the DSSP file for 4mbn might be found in the file 
-/data/newdssp/4mbn.dssp\\
-\\
-STAMP now reads compressed files (.Z or .gz suffixes).  In order for this
-to work properly, you must have the programs zcat (.Z) and gunzip (.gz) installed
-on your system.
+/data/newdssp/4mbn.dssp
 
 \section{Getting other programs}
 
 There are several other programs that are useful to have when using STAMP:\\
 \\
 {\bf DSSP} -- Definition of Secondary Structure in Proteins, Kabsch \& Sander.  Contact\\
-http://www.sander.embl-heidelberg.de/dssp/\\
-Note that this is the WWW page for both the program and a database of precomputed
-DSSP files corresonding to PDB entries.\\
+Dr Chris Sander\\
+E.M.B.L.\\
+Meyerhofstr. 1\\
+D-69117 Heidelberg\\
+Germany\\
+Tel: +49(6221)387361\\
+Fax: +49(6221)387517\\
+or see the WWW page: http://www.sander.embl-heidelberg.de/dssp/\\
+\\
+{\bf DEFINE} -- Defines secondary structure in proteins, and can be used on PDB files containing
+only \Cal atoms (DSSP won't).  To obtain a copy, contact:\\
+Dr Fred M. Richards\\
+Department of Molecular Biophysics and Biochemistry\\
+Yale University\\
+P.O. Box 6666\\
+260 Whitney Avenue\\
+New Haven, CT 06511\\
+USA\\
 \\
 {\bf ALSCRIPT} -- displays alignments in PostScript format, contact GJB (see address above)\\
-WWW page: http://barton.ebi.ac.uk/\\
+WWW page: http://geoff.biop.ox.ac.uk/\\
 \\
 {\bf MOLSCRIPT} -- displays PDB structures in PostScript format, contact:\\
-http://www.avatar.se/molscript/\\
-email: pjk@avatar.se\\
+Dr Per Kraulis \\
+Center for Structural Biochemistry \\
+Karolinska Institute \\
+Novum \\
+S-141 57 Huddinge \\
+SWEDEN\\
+Tel: +46 8 608 9266 \\
+Fax: +46 8 608 9290 \\
+email: pjk@oyster.csb.ki.se \\
+WWW page: http://www.unige.ch/crystal/prg-molscript.html
+
+
 
 \chapter{Some of our studies involving STAMP}
 
@@ -2964,159 +2933,17 @@ from multiple sequence alignment \cite{rb93c}. It has been used to
 investigate the conservation of various protein structural features 
 across  structural similar (but apparently non-homologous) proteins 
 \cite{rb94,russell97b} and has been used for several investigations into protein domain 
-structure \cite{russell94,sternberg95,siddiqui95}.\\
+structure (Russell, 1994; Sternberg \ea, 1995; Siddiqui \& Barton, in preparation).\\
+\nocite{russell94,sternberg95}\\
 \\
 STAMP has also proved extremely useful when assessing the results of
-protein structure prediction by fold recognition 
-\cite{rcb95a,rcb96,russell98b}.\\
+protein structure prediction by fold recognition (Russell \ea, 1995; Russell \ea 1996).\\
+\nocite{rcb95a,rcb96}
 \\
-Most recently, STAMP has been used to investigate various aspects of protein function 
-and evolution, in addition to doing large scale superimpositions of the entire
-protein database according to SCOP \cite{russell97b,russell98a}, and problems
-associated with alignments for protein comparative modelling 
-\cite{saqi98}.
-
-\chapter{Appendix - STAMP Academic License}
-
-\begin{verbatim}
-
-SOFTWARE LICENCE AGREEMENT FOR ACADEMIC USE OF STAMP
-
-IMPORTANT: This software and its associated documentation are the copyright
-works of the authors, Robert B. Russell and Geoffrey J. Barton hereinafter
-referred to as the LICENSOR. Use of the software and documentation is
-governed by the terms of the Academic License Agreement set out below. You,
-hereinafter referred to as the LICENSEE, will not be able to install the
-software unless you first agree to those terms.
-
-The LICENSOR has developed a body of computer software and associated
-documentation called STAMP hereafter referred to as the WORK.
-
-The LICENSEE desires to use the WORK for education and research purposes.
-
-The LICENSEE and LICENSOR agree as follows:
-
-The LICENSOR grants to the LICENSEE a nonexclusive, nontransferable,
-licence to use the WORK subject to the following conditions.
-
-1. LICENSEE'S RIGHTS
-
-The Licensee shall have the right to use the WORK for educational and
-research purposes on all computers owned or leased by the Licensee and
-located on the LICENSEE'S campus or site.
-
-2. RESTRICTIONS ON USE
-
-No commercial use of any kind is permitted under this licence. For
-commercial use, a commercial licence is required.
-
-3. LICENSING FEE
-
-For a distribution via electronic means, there is no fee. For a physical
-distribution on magnetic media, the fee is fifty (50) pounds (UK).
-
-4. NO SUPPORT
-
-The LICENSEE recognizes that the LICENSOR is not obligated to provide
-support, maintenance, consulting, or revision of the WORK. If the LICENSOR
-chooses to release to the LICENSEE updates of, additions to, or
-modifications of the WORK, this agreement shall apply to them as though
-they were part of the original WORK.
-
-5. NO PRODUCT WARRANTY
-
-The WORK is released on a "as is" basis. There is no warranty whatsoever as
-to functioning, performance or effect on hardware or other software,
-express or implied. The LICENSOR disclaims any implied warranties of
-merchantability or fitness for any particular purpose.
-
-6. OWNERSHIP
-
-The LICENSEE agrees that the WORK including any updates, additions, and
-modifications, is, and shall at all times remain, the property of the
-LICENSOR, and that it has been copyrighted by the LICENSOR. The LICENSEE
-shall have no right, title or interest therein or thereto except as
-expressly set forth in this agreement.
-
-7. CREDITS
-
-All credits and copyright notices in the WORK, both in listings and/or
-documentation, whether names of individuals or organisations, shall be
-retained in place. Publications referring to the WORK, or to other works
-containing the WORK in whole or in part, shall refer to it as STAMP and
-shall specify that the WORK was made by Robert B. Russell and Geoffrey J.
-Barton. Publication of results that use the WORK shall cite: Russell, R. B.
-and Barton, G. J. (1992), Proteins, 14, 309-323.
-
-8. NONDISCLOSURE
-
-Under no conditions shall the LICENSEE disclose the WORK, in whole or in
-part, to third parties, except as expressly provided for in this agreement.
-Nor shall the LICENSEE make the WORK available to third parties via a
-computer network. Permission is hereby granted to the LICENSEE to disclose
-the WORK or modifications thereof to other organisations in possession of a
-valid source licence for the WORK, provided that such disclosure shall be
-for educational or research purposes only. LICENSEE may also disclose the
-WORK to its students and employees for use in their educational and
-research activities, provided that they are bound not to further disclose
-it to third parties. This article shall survive termination of the
-agreement.
-
-9. NO LIABILITY
-
-Neither the LICENSOR nor any individual or any legal entity involved in
-creating, modifying, updating, or supplementing the work, shall be liable
-for damages arising out of the failure or malfunctioning of the WORK. The
-LICENSEE hereby assumes the risk of and releases and forever discharges the
-LICENSOR, its employees and any other individual or legal entity referred
-to in the foregoing sentence with respect to any expense, claim, liability,
-loss or damage, direct or indirect, including any incidental or
-consequential damages, whether made or suffered by LICENSEE in connection
-with the failure or malfunction of the WORK. LICENSEE acknowledges that the
-WORK is in the process of development and is not error-free, that the
-foregoing exclusion of liability is therefore an essential term of this
-Agreement without which exclusion the LICENSOR would not be willing to
-enter into this Agreement and to make the Work available on the Price
-agreed upon herein.
-
-10. GOVERNING LAW
-
-This agreement shall be construed and enforced according to the laws of
-England.
-
-11. TERMINATION AND ENFORCEMENT COSTS
-
-LICENSOR shall have the right to terminate this agreement with immediate
-effect upon notice by registered mail to LICENSEE in the event that
-LICENSEE, its employees, or persons acting on its behalf breach any
-provision of this agreement. Upon termination, the LICENSEE agrees to
-return the orginal WORK immediately, to destroy all copies of the WORK
-(exact or modified) in its possession or under its control, and to send to
-the LICENSOR a signed statement that all such copies have been destroyed.
-If the LICENSOR takes legal action against the LICENSEE to enforce this
-agreement and prevails, the LICENSEE agrees to pay LICENSOR'S legal costs,
-including reasonable attorney's fees.
-
-12. CHANGES TO THIS AGREEMENT
-
-This agreement may only be changed if both parties agree to the proposed
-changes in writing.
-
-\end{verbatim}
-
+We hope you find it useful.
 
 \nocite{TitlesOn}
-\bibliographystyle{unsrt}
-\bibliography{stamp}
+\bibliographystyle{jmb}
+\bibliography{rbr}
 
 \end{document}
-
-
-
-
-
-
-
-
-
-

@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,19 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
- The WORK is Copyright (1997,1998, 1999) Robert B. Russell & Geoffrey J. Barton
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,7 +35,7 @@
 #include <time.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 /* Scan's a database of domain descriptors using the following protocol:
  *  
@@ -50,7 +51,6 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    char endsec,endaa;
 
    int i,j,k,l;
-   int n,m;
    int total,add,error,error2;
    int end,len_d;
    int dstart,dend;
@@ -74,8 +74,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    int **atoms1,**atoms2;
    int **hbcmat,**best_hbcmat;
 
-/* SMJS Initialised score to be like pairwise */
-   float score=0.0,rms,irms;
+   float score,rms,irms;
    float best_score,best_rms;
    float best_seqid,best_secid;
    float t_sec_diff,ratio;
@@ -83,7 +82,6 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    float seqid,secid;
    float *vtemp;
    float **rtemp;
-   double Pm;
 
    FILE *IN,*PDB,*TRANS;
 
@@ -148,8 +146,8 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    printdomain(TRANS,domain,0);
       
    end=0;
-   if(parms[0].SECSCREEN && parms[0].SECTYPE!=0) { /* calculate pera,perb,perc if needed */
-      sec_content(domain.sec,domain.ncoords,parms[0].SECTYPE,&pera,&perb,&perc);
+   if(parms[0].SECSCREEN && parms[0].SEC!=0) { /* calculate pera,perb,perc if needed */
+      sec_content(domain.sec,domain.ncoords,parms[0].SEC,&pera,&perb,&perc);
       fprintf(parms[0].LOG,"domain %s, percent helix: %3d, sheet: %3d (coil: %3d)\n",domain.id,pera,perb,perc);
       if(perc==100) parms[0].SECSCREEN=0;  /* don't screen if all coil */
    }
@@ -168,7 +166,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
       if(end==1) break;
       if(end==-1) error=1; /* read in domain next domain descriptor from database */
       if(!error) {
-         if((PDB=openfile(ddomain.filename,"r"))==NULL) {
+         if((PDB=fopen(ddomain.filename,"r"))==NULL) {
 	    fprintf(stderr,"error: file %s does not exist\n",ddomain.filename);
 	    error=2;
 	 }
@@ -194,13 +192,12 @@ int scan(struct domain_loc domain, struct parameters *parms) {
 	 	        ddomain.end[i].cid,ddomain.end[i].n,ddomain.end[i].in); break;
            }
 	   fprintf(parms[0].LOG,"%4d CAs ",add); total+=add;
-	   closefile(PDB,ddomain.filename);
-	   PDB=openfile(ddomain.filename,"r");
+	   rewind(PDB);
 	}
 	fprintf(parms[0].LOG,"\n");
 	ddomain.ncoords=total;
 	ddomainall.ncoords=total;
-        closefile(PDB,ddomain.filename);
+        fclose(PDB);
         /* skip if the database sequence is too short */
         if(ddomain.ncoords<(int)(parms[0].MIN_FRAC*(float)domain.ncoords)) {
   	   fprintf(parms[0].LOG,"MIN_FRAC * query length = %d\n",(int)(parms[0].MIN_FRAC*(float)domain.ncoords));
@@ -483,10 +480,6 @@ int scan(struct domain_loc domain, struct parameters *parms) {
 	ntries++;
         if(ntrans>0 && parms[0].opd == 1) { fprintf(parms[0].LOG," skipping to next domain\n"); break; }
        } 
-       m = (int)(best_nequiv*best_seqid/(float)100);
-       n = best_nequiv;
-       Pm = murzin_P(n,m,0.1);
-
        if(strcmp(parms[0].logfile,"silent")!=0) { 
          fprintf(parms[0].LOG,"Summary: %10s %10s %4d %4d ",domain.id,ddomain.id,ntries,ntrans);
          fprintf(parms[0].LOG,"%7.3f %7.3f %4d %4d %4d %4d %4d %4d %5.2f %5.2f ",
@@ -494,16 +487,9 @@ int scan(struct domain_loc domain, struct parameters *parms) {
         /* for(i=0; i<3; ++i) for(j=i; j<3; ++j) fprintf(parms[0].LOG,"%3d ",best_hbcmat[i][j]); */
          fprintf(parms[0].LOG,"\n");
        } else {
-        printf("Scan %-15s %-15s %4d ",domain.id,ddomain.id,ntrans);
-/* SMJS Added Pm condition */
-        if (Pm > -0.99)
-        {
-           printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f %7.2e",
-                  best_score,best_rms,domain.ncoords,ddomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid,Pm);
-        } else { 
-           printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f   NC   ",
-                  best_score,best_rms,domain.ncoords,ddomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid);
-        }
+        printf("Scan %10s %10s %4d ",domain.id,ddomain.id,ntrans);
+        printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f ",
+               best_score,best_rms,domain.ncoords,ddomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid);
         printf("\n");
 	fflush(stdout);
       } 
@@ -511,9 +497,9 @@ int scan(struct domain_loc domain, struct parameters *parms) {
        for(j=0; j<ddomainall.ncoords; ++j) free(ddomainall.coords[j]);
       } else {
 	 fprintf(parms[0].LOG,"%s -- skipped.\n",ddomain.id);
-	 if(strcmp(parms[0].logfile,"silent")==0) {
-		printf("Scan %-15s %-15s     skipped domain - file missing or too short\n",domain.id,ddomain.id);
-	  }
+	 if(strcmp(parms[0].logfile,"silent")==0) printf("Scan %10s %10s  skipped domain - ",domain.id,ddomain.id);
+	 if(error==2) printf(" no PDB file\n");
+	 else printf(" sequence is too short\n");
       } 
       if(!error) {
         for(j=0; j<3; ++j) {
@@ -537,8 +523,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
       k=clock();
       parms[0].CPUtime+=(float)k/(60000000);
       dcount++;
-      fflush(TRANS);
-   } 
+   } /* end of while(!end... */
    fclose(IN);
    fclose(TRANS);
 	 
@@ -561,3 +546,18 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    free(vtemp);
    return 0;
 }
+
+/* int disp(domain,OUTPUT)
+struct domain_loc domain;
+FILE *OUTPUT;
+{
+	int i,j,k;
+	fprintf(OUTPUT,"The first ten coordinates\n");
+        for(i=0; i<10; ++i) 
+	   fprintf(OUTPUT,"%c %8d %8d %8d\n",domain.aa[i],domain.coords[i][0],domain.coords[i][1],domain.coords[i][2]);
+	fprintf(OUTPUT,"R,V:\n");
+	printmat(domain.R,domain.V,3,OUTPUT);
+	fprintf(OUTPUT,"r,v:\n");
+	printmat(domain.r,domain.v,3,OUTPUT);
+	return 0;
+} */

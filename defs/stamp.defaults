@@ -55,7 +55,7 @@ MAX_SEQ_LEN    1000	#
 ROUGHFIT 	 FALSE	#
 ROUGHOUT	 FALSE
 ROUGHOUTFILE     stamp_rough.trans
-SECTYPE 		  1	# Where are listfile secondary structures to come from?
+SEC 		  1	# Where are listfile secondary structures to come from?
 SCANSEC	 	  1     # Where are database secondary structures to come from?
 CLUST 		  0	#
 COLUMNS		 60	#
@@ -68,7 +68,6 @@ MIN_FRAC       0.50 	#  Minimum fractional length allowed for a database sequenc
 SCORERISE	 FALSE  #  If true, the comparisons are ceased if the Sc drops after an iteration
 SKIPAHEAD 	 TRUE	#  Scanning only.  If true, then skip ahead to the end of the last output transformation (SCANMODE=1 only)
 SCANSCORE	  6     #  See doc/stamp.doc
-OPD          	TRUE  #
 verbose		FALSE
 listfile	domain.list		#
 treefile  	stamp.tree		#
@@ -76,7 +75,7 @@ ordfile  	stamp.ord		#
 plotfile  	stamp.ps		#
 matfile  	stamp.mat		#
 transprefix  	stamp_trans		#
-database  	dbase.dom		#
+database  	domain.database		#
 scanfile  	stamp.scan		#
 logfile   	silent			#
 secfile  	stamp.sec		#

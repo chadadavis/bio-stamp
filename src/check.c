@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,7 +33,7 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 
 #define RES "REMARK   2 RESOLUTION."
 #define REF "REMARK   3"
@@ -112,10 +111,10 @@ main(int argc, char *argv[]) {
 	 * FORMAT(A6,A5,2X,A4,A3,1X,A6,3X,3F8.3,2F6.2,A14)
 	 */
 	if((stampdir=getenv("STAMPDIR"))==NULL) {
-	  fprintf(stderr,"error: environment variable STAMPDIR must be specified\n");
+	  fprintf(stderr,"error: environment variable STAMDIR must be specified\n");
 	  exit(-1);
 	}
-	if((argc!=3) || (argv[1][0] != '-')) {
+	if(argc!=3) {
 	   fprintf(stderr,"format: pdbc -q/m/d/n/r <PDB code>\n");
 	   fprintf(stderr,"        -q verbose mode\n");
 	   fprintf(stderr,"        -m minimalist mode (just report file locations)\n");
@@ -129,7 +128,7 @@ main(int argc, char *argv[]) {
 	   case 'm': mode=4; break;
 	   case 'r': mode=5; break;
 	   default: {
-	     fprintf(stderr,"error: mode %c not recognised\n",argv[1][1]);
+	     fprintf(stderr,"error: mode %c not recognised\n");
 	     exit(-1);
 	   }
 	}
@@ -152,7 +151,7 @@ main(int argc, char *argv[]) {
 	   free(pdbfile);
 	   /* now just try the first four characters */
 	   strncpy(&code[0],argv[2],4); code[4]='\0';
-	   for(j=0; j<strlen(code); ++j) code[j]=code[j];
+	   for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
 	   pdbfile=getfile(code,dirfile,4,stdout);
 	   ftype=0;
 	}
@@ -168,7 +167,7 @@ main(int argc, char *argv[]) {
               free(dsspfile);
               /* now just try the first four characters */
               strncpy(&code[0],argv[2],4); code[4]='\0';
-              for(j=0; j<strlen(code); ++j) code[j]=code[j];
+              for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
               dsspfile=getfile(code,dirfile,4,stdout);
 	   }
 	   if(dsspfile[0]=='\0') {
@@ -186,7 +185,7 @@ main(int argc, char *argv[]) {
     if(mode==1) printf("searching file: %s ",pdbfile);
     if(ftype==0) {
        strncpy(&code[0],argv[2],4);  code[4]='\0';
-       for(j=0; j<strlen(code); ++j) code[j]=code[j];
+       for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
     } else {
        end=strlen(argv[2])-1; start=0;
        for(j=0; j<strlen(argv[2]); ++j) {
@@ -195,7 +194,7 @@ main(int argc, char *argv[]) {
        }
        strncpy(&code[0],&argv[2][start],(end-start+1));
        code[end-start+1]='\0';
-       for(j=0; j<strlen(code); ++j) code[j]=code[j];
+       for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
     }
 	
 
@@ -210,13 +209,13 @@ main(int argc, char *argv[]) {
     }
     if(mode==1) printf("\n\n");
 
+    pdb=fopen(pdbfile,"r");
     new=0;
     N=C=CA=O=ACE=FOR=1;
     HET=0;
     nres=natoms=nchainres=nchainatoms=n_main_miss=total_main_miss=0;
 
-    pdb=openfile(pdbfile,"r");
-
+    rewind(pdb); 
     c=' ';
     while(c!=(char)EOF) {
 	i=0;
@@ -240,13 +239,12 @@ main(int argc, char *argv[]) {
 /* 012345678901234567890123456789012345678901234567890123456789 */
 /* HEADER    OXYGEN STORAGE                          14-JAN-88   4MBN      4MBN   3*/
 	       sscanf(&buff[57],"%d",&year);
-	       /* Year 2000 compliancy (worth 300K per annum apparently).  
-	        * Note that the PDB is not compliant. */
 	       if(year>70) {
 	         year+=1900;
 	       } else {
 	         year+=2000;
 	       }
+	       if(mode==1) printf("Year is %d\n",year);
 	    }
 	}
 	
@@ -277,7 +275,7 @@ main(int argc, char *argv[]) {
 		   if(mode==2 || mode==3) {
 		      yes=(nspecchains==0);
 		      for(i=0; i<nspecchains; ++i) 
-			 if(curchain==chs[i]) printf("%% chain %c missing main chain atoms for %d residues\n",curchain,n_main_miss+1);
+			 if(curchain==utol(chs[i])) printf("%% chain %c missing main chain atoms for %d residues\n",curchain,n_main_miss+1);
 	           }
 	      }
 	      total_main_miss+=n_main_miss;
@@ -289,15 +287,15 @@ main(int argc, char *argv[]) {
 	   if(mode==2 || mode==3) {
 	      if(nspecchains>0) {
 		 yes=0;
-		 for(i=0; i<nspecchains; ++i) if(chs[i]==buff[21]) yes=1;
+		 for(i=0; i<nspecchains; ++i) if(utol(chs[i])==utol(buff[21])) yes=1;
 	      } else yes=1;
 	      if(yes) {
 	       if(mode==2) {
 	        if(buff[21]==' ') printf("%s %s { ALL }\n",pdbfile,code);
-	        else printf("%s %s%c { CHAIN %c }\n",pdbfile,code,(char)buff[21],(char)buff[21]);
+	        else printf("%s %s%c { CHAIN %c }\n",pdbfile,code,(char)utol(buff[21]),(char)ltou(buff[21]));
 	       } else {
                 if(buff[21]==' ') printf("%s %s %s { ALL }\n",pdbfile,dsspfile,code);
-                else printf("%s %s %s%c { CHAIN %c }\n",pdbfile,dsspfile,code,(char)buff[21],(char)buff[21]);
+                else printf("%s %s %s%c { CHAIN %c }\n",pdbfile,dsspfile,code,(char)utol(buff[21]),(char)ltou(buff[21]));
 	       }
 	      }
 	    }
@@ -361,8 +359,7 @@ main(int argc, char *argv[]) {
     }
      
     /* determine resolution  */
-    closefile(pdb,pdbfile); 
-    pdb=openfile(pdbfile,"r");
+    rewind(pdb);
     i=0; found=0;
     while((c=getc(pdb))!=(char)EOF) {
        if(c==RES[i]) i++;
@@ -381,13 +378,9 @@ main(int argc, char *argv[]) {
 	if(NMR) resolution=-1;
 	else resolution=-2;	
      }
-
-    /* davis: trying to flush before whatever is causing the next crash */   
-    fflush(stdout);
- 
+    
     /* get the refinement details */
-    closefile(pdb,pdbfile); 
-    pdb=openfile(pdbfile,"r");
+    rewind(pdb);
 
     reftext[0]='\0';
     found=0;
@@ -428,14 +421,11 @@ main(int argc, char *argv[]) {
        for(i=0; i<strlen(reftext); ++i) {
          for(j=0; j<n_r_val; ++j) {
    	   if(strncmp(&reftext[i],r_val[j],strlen(r_val[j]))==0) {
-/* SMJS Added if */
-	     if (sscanf(&reftext[i+strlen(r_val[j])],"%f",&R_factor))
-             {
-	       if(mode>=1 && mode<=3) printf("%8.5f",R_factor);
-	       found=1;
-	       REFINED=1;
-	       break;
-             }
+	      sscanf(&reftext[i+strlen(r_val[j])],"%f",&R_factor);
+	      if(mode>=1 && mode<=3) printf("%8.5f",R_factor);
+	      found=1;
+	      REFINED=1;
+	      break;
 	   }
          }
        }
@@ -453,6 +443,6 @@ main(int argc, char *argv[]) {
 	for(i=0; i<4; ++i) printf("%c",code[i]);
 	printf(" %8.5f %8.5f %4d %1d %1d %1d %5d %5d %5d\n",resolution,R_factor,year,REFINED,NMR,MODEL,nchains,nres,total_main_miss);
     }
-    closefile(pdb,pdbfile);
+    fclose(pdb);
     free(pdbfile);
 }

@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1992,1993,1995,1996) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,10 +33,9 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 #define min_R_diff 1.50
 #define min_V_diff 60.0
@@ -313,7 +311,7 @@ main(int argc, char *argv[]) {
 	  case 3: printf("%%  alignment lengths less than %4d\n",(int)cutoff); break;
 	  case 4: case 5: case 6: printf("%%  fraction of atoms fitted less than %7.3f\n",cutoff); break;
 	  case 7: printf("%% fewer than %4d equivalent sec. structures\n",(int)cutoff); break;
-	  case 8: case 9: printf("%% identities less than %5.2f %%\n",cutoff); break;
+	  case 8: case 9: printf("%% identities less than %5.2 %%\n",cutoff); break;
 	}
 	printf("%% All of these were removed\n");
 	printf("%% Leaving %d domains in this file\n",left);
@@ -350,7 +348,10 @@ main(int argc, char *argv[]) {
  *  matrix and vector components respectively. */
 
 
-int transcompare(float **R1, float *V1, float **R2, float *V2, int dim )
+int transcompare(R1,V1,R2,V2,dim)
+float **R1,**R2;
+float *V1,*V2;
+int dim;
 {	
 	int i,j,k;
 	float Rdiffsq,Rdiff;
@@ -369,7 +370,7 @@ int transcompare(float **R1, float *V1, float **R2, float *V2, int dim )
 }
 int exit_error()
 {
-	  fprintf(stderr,"format: sorttrans -f <filename> [-s <sort method> <value> -i -n] \n");
+	  fprintf(stderr,"format: sorttrans -f <filename> -s <sort method> <value> -t -n \n");
 	  fprintf(stderr,"  sort (-s) keywords: \n");
 	  fprintf(stderr,"      Sc sort by STAMP Sc value\n");
 	  fprintf(stderr,"      rms   sort by RMS deviations\n");
@@ -381,7 +382,7 @@ int exit_error()
 	  fprintf(stderr,"      seq_id sort by sequence identity\n");
 	  fprintf(stderr,"      sec_id sort by secondary structure identity\n");
 	  fprintf(stderr,"      n_sec  sort by number of equivalent secondary structures\n");
-	  fprintf(stderr,"  -i only allow the best superimposition per identifier\n");
+	  fprintf(stderr,"  -t ignore transformations (just filename and descriptors)\n");
 	  fprintf(stderr,"  -n ignore domain descriptors (just filename and transformation)\n");
 	  exit(-1);
 }
