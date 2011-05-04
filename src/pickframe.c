@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* Given a file of transformations and a domain ID, this program
  *  centres all transformations such that all transformations are

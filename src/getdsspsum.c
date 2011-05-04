@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stamp.h"
+#include <stamp.h>
 #define MAXL 200    /* max length for input line */
 
 /* get_dssp_sum:  return the secondary structure summary
@@ -41,7 +41,7 @@ int get_dssp_sum(FILE *DSSP, struct brookn begin, struct brookn end, int type,
 	       return -1;
 	    }
 	    sec[(*count)] = line[16];
-	    if(sec[(*count)]==' ') sec[(*count)]='-';
+	    if(sec[(*count)]==' ') sec[(*count)]='c';
 	    (*count)++;
 	}
 	if(start && line[13]!='!' && cid==end.cid && in==end.in && n==end.n && type==3) break;

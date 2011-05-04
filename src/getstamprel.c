@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "dstamp.h"
+#include <dstamp.h>
 
 /* Given a structure of STAMP values, and specifications about
  *  which data to use, this returns an array of  booleans where 
@@ -33,8 +33,7 @@ int *getstamprel(struct stampdat *stamp, int nval, int npos, char type, float cu
 	   return NULL;
 	}
 
-/* SMJS Changed malloc to calloc */
-	rel=(int*)calloc((npos+1),sizeof(int));
+	rel=(int*)malloc((npos+1)*sizeof(int));
 
 	/* first run through and set values to 1 or 0 according to
 	 *  whether they are greater than or equal to the cutoff */

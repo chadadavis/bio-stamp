@@ -1,8 +1,7 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 #define MAXLINE 200 
 

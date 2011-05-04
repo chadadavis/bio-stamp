@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "dstamp.h"
+#include <dstamp.h>
 
 /* This routine works in conjunction with Agetbloc.
  *

@@ -5,12 +5,10 @@
 # 
 # C compiler
 CC = gcc
-#CC = icc
 #
 # compiler options
 #CFLAGS = -g -I.
 CFLAGS = -O2 -I.
-#CFLAGS = -O3 -tpp6 -axMK -unroll -I.
 #
 #
 # Object files needed for each main program
@@ -22,7 +20,7 @@ STAMPOBJS = a3to1.o aliseq.o dosort.o igetca.o getdomain.o getfile.o getdsspsum.
             readtree.o reval.o revmatmult.o rossmann.o roughfit.o slow_scan.o \
             scan.o stamp.o sw7ccs.o swstruc.o testfile.o treefit.o treepath.o \
             treewise.o  update.o utol.o qkfit.o display_align.o get_clust.o \
-            count_domain.o sec_content.o igetp_nt.o igetcadssp.o  gjnoc.o gjutil.o openfile.o closefile.o murzin_P.o
+            count_domain.o sec_content.o igetcadssp.o  gjnoc.o gjutil.o openfile.o closefile.o murzin_P.o
 ALIGNFITOBJS=alignfit.o getdomain.o getca.o alignfitgetpars.o newoutput.o agetbloc.o \
             a3to1.o fmatmult.o fmatfit.o update.o ltou.o readtree.o  \
             qkfit.o count_domain.o rmsp.o getfile.o utol.o testfile.o gjnoc.o gjutil.o \
@@ -55,7 +53,7 @@ MERGESTAMPOBJS= mergestamp.o matprod.o matinv.o getdomain.o printdomain.o \
 AVESTRUCOBJS= avestruc.o matmult.o igetca.o agetbloc.o printmat.o count_domain.o \
             getdomain.o rossmann.o a3to1.o printdomain.o getstampdat.o ltou.o \
             disp.o testfile.o getfile.o utol.o getstamprel.o igetcb.o vector.o \
-            igetgen.o gjutil.o igetside.o openfile.o closefile.o igetp_nt.o
+            igetgen.o gjutil.o igetside.o openfile.o closefile.o
 GSTAMPOBJS= gstamp.o matmult.o igetca.o agetbloc.o printmat.o count_domain.o \
             getdomain.o rossmann.o a3to1.o printdomain.o getstampdat.o ltou.o \
             disp.o testfile.o getfile.o utol.o getstamprel.o igetcb.o vector.o \
@@ -70,7 +68,7 @@ COFMOBJS = utol.o testfile.o a3to1.o ltou.o getfile.o R.o matmult.o printmat.o \
 
 PROGS = stamp alignfit transform pdbc pdbseq dstamp sorttrans \
             poststamp pickframe avestruc gstamp \
-	    stamp_clean ver2hor mergetrans mergestamp extrans cofm
+	    stamp_clean ver2hor mergetrans mergestamp extrans cofm 
 all: $(PROGS)
 #
 # Man programs in the package
@@ -138,8 +136,6 @@ reval.o: reval.c
 	$(CC) -c $(CFLAGS) reval.c 
 igetca.o: igetca.c
 	$(CC) -c $(CFLAGS) igetca.c
-igetp_nt.o: igetp_nt.c
-	$(CC) -c $(CFLAGS) igetp_nt.c
 igetcb.o: igetcb.c
 	$(CC) -c $(CFLAGS) igetcb.c
 igetgen.o: igetgen.c

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 
 
 /*****************************************************************************
@@ -30,45 +30,33 @@ int aliseq(char *seqa, char *seqb, struct path *apath, unsigned char **patha,
     *k = -1; *hgap = 0; *vgap = 0;
 
     while ( i > apath->start.i-1 || j > apath->start.j-1 ) {
-	if((DIAG & patha[j][i]) == DIAG){
+	if((DIAG & patha[j][i]) == DIAG) {
 	    ++*k;
 	    alseq[*k] = seqa[i-1];
 	    blseq[*k] = seqb[j-1];
 	    i--; j--;
-	}
-	else if((HORIZ & patha[j][i]) == HORIZ){
+	} else if((HORIZ & patha[j][i]) == HORIZ) {
 	    ++*k;
 	    alseq[*k] = GAP;
 	    *hgap += 1;
 	    blseq[*k] = seqb[j-1];
 	    j--;
-	}
-	else if((VERT & patha[j][i]) == VERT){
+	} else if((VERT & patha[j][i]) == VERT) {
 	    ++*k;
 	    alseq[*k] = seqa[i-1];
 	    blseq[*k] = GAP;
 	    *vgap += 1;
 	    i--;
-	}
-	else {
+	} else {
 	    printf("Disaster in aliseq\n");
 	    return 0;
-	    } /* End of else... */
+	}
     }
-#ifdef DBGSTEVE
-/* SMJS Put in to allow printing before reverse */
-    alseq[*k+1] = '\0';
-    blseq[*k+1] = '\0';
-    printf("Before reverse\nalseq=|%s|\nblseq=|%s|\n",alseq,blseq);
-#endif
-/* SMJS End added */
     reval(alseq,0,*k);
     reval(blseq,0,*k);
-/* SMJS Split into two statements to fix the missing terminal residues bug */
-    alseq[++*k] = '\0';
+    ++(*k);
+    alseq[*k] = '\0';
     blseq[*k] = '\0';
-#ifdef DBGSTEVE
-    printf("After reverse\nalseq=|%s|\nblseq=|%s|\n",alseq,blseq);
-#endif
+    return 0;
 }
 

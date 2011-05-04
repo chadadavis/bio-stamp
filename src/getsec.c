@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* Get secondary structures from a file */
 
@@ -35,6 +35,14 @@ int getsec(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 	while((c=getc(IN))!=(char)EOF) {
 	   if(c=='>') {  
 	      if(fscanf(IN,"%s",&id[0])==(int)EOF) return -1; 
+	      /* Change - remove "P1;" symbol if there */
+	      if(strncmp(id,"P1;",3)==0) {
+		   j=strlen(id);
+		   for(i=3; i<=j; ++i) {
+			id[i-3] = id[i];
+		   }
+		   id[i-3]='\0';
+	      }
 	      which=-1;
 	      for(i=0; i<ndomain; ++i) 
 		 if(strcmp(id,domain[i].id)==0 && !found[i]) { which=i; found[i]=1; break; }

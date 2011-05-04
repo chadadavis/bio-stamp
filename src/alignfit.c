@@ -1,6 +1,6 @@
-#include "alignfit.h"
-#include "gjutil.h"
-#include "gjnoc.h"
+#include <alignfit.h>
+#include <gjutil.h>
+#include <gjnoc.h>
 
 /* Reads an AMPS format block file containing structurally derived sequences and a
  *  file containing a description as to where the coordinates may be found */
@@ -49,13 +49,12 @@ main(int argc, char *argv[]) {
 	struct parameters *parms;
 
 	strcpy(noc_parms,"noc sim single");
-/* SMJS Changed malloc to calloc to zero struct */
-	parms=(struct parameters*)calloc(1,sizeof(struct parameters));
+	parms=(struct parameters*)malloc(sizeof(struct parameters));
 	
 	if(argc<3) exit_error(); 
 
 	/* define/get parameters etc. */
-	parms[0].MAX_SEQ_LEN=1000;
+	parms[0].MAX_SEQ_LEN=20000;
 	parms[0].PAIRWISE=1;
 	parms[0].TREEWISE=1;
 	parms[0].OLDFORMAT=0;
@@ -159,6 +158,11 @@ main(int argc, char *argv[]) {
 		     strcpy(&bloc[i+1].id[0],&tmpstring[0]);
 		     printf("%s\n",bloc[i+1].id);
 		}
+                for(j=0; j<strlen(bloc[i+1].id); ++j) {
+                    if(bloc[i+1].id[j]=='\n') { 
+                       bloc[i+1].id[j]='\0'; 
+                    }
+                }
 	}
 	    
 	counter=(int*)malloc(nbloc*sizeof(int));
@@ -191,11 +195,16 @@ main(int argc, char *argv[]) {
 	   for(j=0; j<nbloc; ++j) {
 	      /* finds which id in the blocfile corresponds to the id in
 	       *  the domain file */
-	      if(strcmp(domain[i].id,bloc[j+1].id)==0) 
+	      if(strcmp(domain[i].id,bloc[j+1].id)==0)  {
 		 pointers[i]=j;
+              }
 	   }
 	   if(pointers[i]==-1) {
 	      fprintf(stderr,"error: id %s not found in block file\n",domain[i].id);
+              fprintf(stderr,"       possible ids in block file are:\n");
+	      for(j=0; j<nbloc; ++j) {
+                  fprintf(stderr,"       --- |%s|\n",bloc[j+1].id);
+              }
 	      exit(-1);
 	   }
 	   fprintf(TRANS,"%%Domain %3d %s %s\n",i+1,domain[i].filename,domain[i].id);

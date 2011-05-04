@@ -123,6 +123,7 @@ int ludcmp(float **a, int n, int *indx, float *d)
 		}
 	}
 	free_vector(vv,1,n);
+        return 0;
 }
 float *vector(int nl, int nh)
 {

@@ -9,7 +9,7 @@ free, string functions etc...
 #include <string.h>
 #include <ctype.h>
 #include <errno.h>
-#include "gjutil.h"
+#include <gjutil.h>
 
 /* define pointers for standard streams to allow redefinition to files */
 
@@ -670,8 +670,7 @@ struct tokens *GJgettokens(const char *delims, char *buff)
   return tok;
 }
 
-/* SMJS changed from void * to void */
-void GJfreetokens(struct tokens *tok)
+void *GJfreetokens(struct tokens *tok)
 /* frees a tokens structure */
 
 {

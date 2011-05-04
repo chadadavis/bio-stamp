@@ -1,4 +1,4 @@
-#include "ver2hor.h"
+#include <ver2hor.h>
 
 /* Reads in a STAMP file, and an optional parameter file and
  *  produces a  horizontal alignment.  Pirated from DSTAMP.
@@ -36,8 +36,8 @@ main(int argc, char *argv[]) {
 	struct seqdat *bloc;
 	struct stampdat *stampstuff;
 
-/* SMJS Changed malloc to calloc to zero struct */
-	parms=(struct parameters*)calloc(1,sizeof(struct parameters));
+
+	parms=(struct parameters*)malloc(sizeof(struct parameters));
 	/* open files */
 	/* set default parameter values
 	 *  these are changed if a paramter file is specified */

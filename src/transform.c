@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stamp.h"
+#include <stamp.h>
 
 #define chainstring "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 

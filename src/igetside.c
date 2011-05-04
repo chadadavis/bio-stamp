@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "stamp.h"
+#include <stamp.h>
 #define PI 3.141592653589793
 #define MAX_NATS 50
 
@@ -105,8 +105,7 @@ int igetside(FILE *IN, struct side_chain *side, char *aa, struct brookn *numb, i
 		  numb[(*nres)].n=this.n;
 		  (*nres)++;
 /* SMJS Changed to be like Robs version */
-/* SMJS Changed to add () around ||s */
-	       } else if(begin && (alt==' ' || alt=='A' || alt=='1' || alt=='L' || alt=='O')) {
+	       } else if(begin && alt==' ' || alt=='A' || alt=='1' || alt=='L' || alt=='O') {
 		 /* only reads in the first position if more than one are given */
 		 for(i=0; i<3; ++i) {
 		   strncpy(&tmp[0],&buff[30+i*8],8); 

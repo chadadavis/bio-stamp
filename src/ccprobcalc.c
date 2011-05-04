@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 int ccprobcalc(int **atoms1, int **atoms2, int **prob, int lena, int lenb, 
 	struct parameters *parms)
@@ -21,13 +21,9 @@ int ccprobcalc(int **atoms1, int **atoms2, int **prob, int lena, int lenb,
 	float sum,sumsq;
         float Dij,Cij,mean,sd,const1,const2;
 	float fcut,fm,fn,jt,fk1;
-/* SMJS Added inverse precision squared constant */
-        float prec2i;
 
-/* SMJS Use inverse constants in rossmann */
-        prec2i=1.0/(float)(parms[0].PRECISION*parms[0].PRECISION);
-	const1=(1.0/parms[0].const1)*prec2i;
-	const2=(1.0/parms[0].const2)*prec2i;
+	const1=parms[0].const1;
+	const2=parms[0].const2;
 
 	mean=((float)parms[0].PRECISION*parms[0].NMEAN); 
 	sd=((float)parms[0].PRECISION*parms[0].NSD); 
@@ -69,19 +65,15 @@ int ccprobcalc(int **atoms1, int **atoms2, int **prob, int lena, int lenb,
 	      }
 	    }
 	    if(!parms[0].BOOLEAN) {
-/* Use prec2i instead of parms[0].PRECISION */
-/* Now incorporate prec2i into const1 and const2 */
                prob[jj][ii]=(int)((float)parms[0].PRECISION*rossmann(&atoms1[j],&atoms2[i],
 			   (i==0 || j==0),(j==lena-1 || i==lenb-1),
-			   const1,const2,&Dij,&Cij)); 
+			   const1,const2,&Dij,&Cij,parms[0].PRECISION)); 
                prob[jj][ii]=(int)( (float)parms[0].PRECISION*((float)((float)prob[jj][ii]-mean)/(float)(sd)));
 	       sum+=(float)prob[jj][ii]; sumsq+=(float)(prob[jj][ii]*prob[jj][ii]); 
 /*		prob[jj][ii]=10*parms[0].PRECISION; */
 	    } else {
-/* Use prec2i instead of parms[0].PRECISION */
-/* Now incorporate prec2i into const1 and const2 */
 	       prob[jj][ii]=(rossmann(&atoms1[j],&atoms2[i], (i==0 || j==0),(j==lena-1 || i==lenb-1),
-			       const1,const2,&Dij,&Cij)>=parms[0].BOOLCUT);
+			       const1,const2,&Dij,&Cij,parms[0].PRECISION)>=parms[0].BOOLCUT);
 	    }
 	    l2:; /* jump to here if corner cutting */
          }  /* for (i=... */

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 
 /* A path through the matrix if found using the Smith and Waterman
@@ -36,11 +36,6 @@ float pairpath(struct domain_loc domain1, struct domain_loc domain2, int **prob,
 	float conf;
 
 	float RMSE;
-
-/* SMJS Added tmplen */
-        int tmplen;
-/* SMJS Added for speedup */
-        int lenstr;
 
 
 	/* Allocating memory */
@@ -88,19 +83,14 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
         }
     (*start2)=(*end2)=0;
     if(total!=0) {
-/* SMJS Added tmplen stuff to stop k!=total errors in dosort. I'm not sure if */
-/*      this is correct. */
-/* SMJS sortarr = dosort(result,&domain1.ncoords,&total); */
-        tmplen = domain1.ncoords+1;
-        sortarr = dosort(result,&tmplen,&total);
-/* SMJS End */
+	sortarr = dosort(result,&domain1.ncoords,&total);
+	for(i=0; i<domain1.ncoords+1; ++i) { free(result[i].res); }
+	free(result);
 
 	i=0; /* i=0 will always be the alignment we want */
 
-/* SMJS Changed sortarr[i] to sortarr[0] for clarity */
-	aliseq(domain1.aa,domain2.aa,&sortarr[0],patha,bestaseq,bestbseq,&allen,&ia,&ib);
-/* SMJS Changed sortarr[i] to sortarr[0] for clarity */
-	highest=stl=sortarr[0].score; best=0;
+	aliseq(domain1.aa,domain2.aa,&sortarr[i],patha,bestaseq,bestbseq,&allen,&ia,&ib);
+	highest=stl=sortarr[i].score; best=0;
 	if( (sortarr[0].start.i+allen+(strlen(domain1.aa)-sortarr[0].end.i))>parms[0].MAX_SEQ_LEN ||
                 (sortarr[0].start.j+allen+(strlen(domain2.aa)-sortarr[0].end.j))>parms[0].MAX_SEQ_LEN) {
                   fprintf(stderr,"error: MAX_SEQ_LEN limit surpassed, set value > %d in parameter file or command line\n",
@@ -112,25 +102,19 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
 	  
 
 	(*len)=allen;
-/* SMJS Changed sortarr[i] to sortarr[0] for clarity */
-	(*start1)=sortarr[0].start.i-1;
-	(*end1)=sortarr[0].end.i-1;
-	(*start2)=sortarr[0].start.j-1;
-	(*end2)=sortarr[0].end.j-1;
+	(*start1)=sortarr[i].start.i-1;
+	(*end1)=sortarr[i].end.i-1;
+	(*start2)=sortarr[i].start.j-1;
+	(*end2)=sortarr[i].end.j-1;
 
 	/* Now it is necessary to make use of the results, initially it is
 	 *   probably best to use the best path to arrive at a set of
 	 *   coordinates for use in least squares fitting. 
 	 *
 	 * Locating the coordinates to use. */
-#ifdef DBGPREC
-        fprintf(parms[0].LOG,"start1 = %d end1 = %d start2 = %d end2 = %d len = %d highest = %d\n",
-               *start1,*end1,*start2,*end2,*len,highest);
-#endif
 
-/* SMJS Changed sortarr[best] to sortarr[0] for clarity */
-	acount=sortarr[0].start.i;
-	bcount=sortarr[0].start.j;
+	acount=sortarr[best].start.i;
+	bcount=sortarr[best].start.j;
 	j=0;
 	/* memory for natoms1 and natoms2 is allocated */
 	natoms1=(int**)malloc((allen+10)*sizeof(int*));
@@ -145,11 +129,6 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
 	 *  2) whether the value of prob is above a predetermined
 	 *     parms[0].CUTOFF value.  */
 	q=0;
-
-#ifdef DBGSTEVE
-        printf("bestaseq = %s\n",bestaseq);
-        printf("bestbseq = %s\n",bestbseq);
-#endif
 	for(i=0; i<allen; ++i) {
 	  puse[i]=0.0;
 	/* Displaying the alignment:  (only if parms[0].PAIRALIGN || parms[0].PAIRALLALIGN is set to 1)
@@ -159,7 +138,7 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
 	 *   probabilities. */
   	if(parms[0].PAIROUTPUT || parms[0].PAIRALIGN || parms[0].PAIRALLALIGN) { touse[i]=' '; touse[i+1]='\0'; puse[i]=0.0;  }
 
-	   if(bestaseq[i/* SMJS+1*/] !=' ' && bestbseq[i/* SMJS+1*/] !=' ') {
+	   if(bestaseq[i+1] !=' ' && bestbseq[i+1] !=' ') {
 	      ++q;
 
 /*	    if(parms[0].PAIROUTPUT || parms[0].PAIRALIGN || parms[0].PAIRALLALIGN) { */
@@ -174,32 +153,19 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
 /*	    } */
 	      if( (prob[acount][bcount] >= (int)(parms[0].CUTOFF*(float)parms[0].PRECISION) && !parms[0].BOOLEAN) ||
 		  (prob[acount][bcount] == 1 && parms[0].BOOLEAN) ) {
-#ifdef TESTWRONG
-                 if (acount<domain1.ncoords && bcount<domain2.ncoords)
-                 {
-	            natoms1[j]=domain1.coords[acount];
-                    printf("Coords for %d %c = %d %d %d\n",acount,domain1.aa[acount],natoms1[j][0],natoms1[j][1],natoms1[j][2]);
-	            natoms2[j]=domain2.coords[bcount];
-	            j++;
-	            touse[i]='1'; touse[i+1]='\0';
-                 }
-                 else
-                 {
-	            touse[i]='0'; touse[i+1]='\0';
-                 }
-#else
-	         natoms1[j]=domain1.coords[acount-1];
-	         natoms2[j]=domain2.coords[bcount-1];
-	         j++;
-	         touse[i]='1'; touse[i+1]='\0';
-#endif
+	      for(k=0; k<3; ++k) {
+	      natoms1[j]=domain1.coords[acount-1];
+	      natoms2[j]=domain2.coords[bcount-1];
+	      }  /* end for for(k=... */
+	      j++;
+	      touse[i]='1'; touse[i+1]='\0';
 	      } else {
                  touse[i]='0';  /* End of if(prob... */
 		 touse[i+1]='\0';
 	      }
 	   } else { touse[i]=' '; touse[i+1]='\0'; puse[i]=-1.0; } /* End of if(best... */
-	acount += (bestaseq[i/* SMJS+1*/] != ' ');
-	bcount += (bestbseq[i/* SMJS+1*/] != ' ');
+	acount += (bestaseq[i+1] != ' ');
+	bcount += (bestbseq[i+1] != ' ');
 	}  /* End of for loop  */
 /*	if(parms[0].PAIROUTPUT || parms[0].PAIRALIGN || parms[0].PAIRALLALIGN) */
 	touse[i]='\0';
@@ -220,40 +186,31 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
 	    fpuse[finala]=-1.0;
 	    finala++;
 	 }
-/* SMJS Added -1 because the start.i is 1 based*/
-	 for(j=0; j<sortarr[0].start.i-1; ++j) {
+	 for(j=0; j<sortarr[0].start.i; ++j) {
 	    domain1.align[finala]=domain1.aa[j];
 	    fpuse[finala]=-1.0;
 	    ftouse[finala]=' ';
 	    finala++;
 	 }
-/* SMJS Added -1 because the start.j is 1 based*/
-	 for(j=0; j<sortarr[0].start.j-1; ++j) {
+	 for(j=0; j<sortarr[0].start.j; ++j) {
 	    domain2.align[finalb]=domain2.aa[j];
 	    fpuse[finalb]=-1.0;
 	    ftouse[finalb]=' ';
 	    finalb++;
 	 }
-/* SMJS Changed 1 to 0 because the sequence starts at 0 */
-	 sprintf(&domain1.align[finala],"%s",&bestaseq[/* SMJS1*/0]); 
-	 sprintf(&domain2.align[finalb],"%s",&bestbseq[/* SMJS1*/0]);
-/* SMJS Added lenstr */
-         lenstr = strlen(touse);
-	 for(i=0; i<lenstr; ++i) fpuse[finala+i]=puse[i];
+	 sprintf(&domain1.align[finala],"%s",&bestaseq[1]); 
+	 sprintf(&domain2.align[finalb],"%s",&bestbseq[1]);
+	 for(i=0; i<strlen(touse); ++i) fpuse[finala+i]=puse[i];
 	 sprintf(&ftouse[finalb],"%s",touse);
 	 finala+=strlen(bestaseq);
 	 finalb+=strlen(bestbseq);
-/* SMJS Added lenstr */
-         lenstr = strlen(domain1.aa);
-         for(j=sortarr[0].end.i; j<lenstr; ++j) {
+         for(j=sortarr[0].end.i; j<strlen(domain1.aa); ++j) {
 	   domain1.align[finala]=domain1.aa[j];
 	   fpuse[finala]=-1.0;
 	   ftouse[finala]=' ';
 	   finala++;
 	 }
-/* SMJS Added lenstr */
-         lenstr = strlen(domain2.aa);
-	 for(j=sortarr[0].end.j; j<lenstr; ++j) {
+	 for(j=sortarr[0].end.j; j<strlen(domain2.aa); ++j) {
 	    domain2.align[finalb]=domain2.aa[j];
 	    fpuse[finalb]=-1.0;
 	    ftouse[finalb]=' ';
@@ -272,11 +229,6 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
 	 }
 	 domain1.align[finala]=domain2.align[finalb]=ftouse[finala]='\0';
 	 domain1.align[finalb]=domain2.align[finala]=ftouse[finalb]='\0';
-#ifdef DBGSTEVE
-         printf("domain1.align = %s\n",domain1.align);
-         printf("domain2.align = %s\n",domain2.align);
-         printf("ftouse        = %s\n",ftouse);
-#endif
 	 fpuse[finala]=fpuse[finalb]=-1.0;
 	 if(finala!=finalb) fprintf(parms[0].LOG,"Something funny in pairpath.c\n");
 /*	} */
@@ -321,30 +273,10 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
 	free(natoms1); 
 	free(natoms2);
 
-#ifdef DBGSTEVE
-        if (*score>100)
-        {
-           for(i=0;i<domain1.ncoords+2;i++)
-           {
-              printf("%4d",i); 
-              for (j=0;j<domain2.ncoords+2;j++)
-              {
-                 printf("|%4d|",prob[i][j]);
-              }
-              printf("\n");
-           }
-        }
-#endif
 	
 	/* Modification: now we redifine the start, lengths and ends to ignore
  	 *  un-equivalent regions lying off the ends */
-
-/* SMJS I don't see why p1 and p2 were set to sortarr[0].start.i-1 and */
-/*      sortarr[0].start.j-1 respectively. The equivalent prob array element */
-/*      to bestaseq[0] and bestbseq[0] is  */
-/*      prob[sortarr[0].start.i][sortarr[0].start.j] */
-
-	p1=sortarr[0].start.i/* SMJS-1*/; p2=sortarr[0].start.j/* SMJS-1*/;
+	p1=sortarr[0].start.i-1; p2=sortarr[0].start.j-1;
 	for(j=0; j<allen-1;  ++j) {
 	  if(bestaseq[j]!=' ' && bestbseq[j]!=' ' && prob[p1][p2]>=parms[0].CUTOFF &&
 	     bestaseq[j+1]!=' ' && bestbseq[j+1]!=' ' && 
@@ -355,16 +287,8 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
 	  }
 	  if(bestaseq[j]!=' ') p1++;
 	  if(bestbseq[j]!=' ') p2++;
-#ifdef DBGSTEVE
-          printf("Did a start iter\n");
-#endif
 	}
-/* SMJS I don't see why p1 and p2 were set to sortarr[0].end.i-1 and */
-/*      sortarr[0].end.j-1 respectively. The equivalent prob array element */
-/*      to bestaseq[allen-1] and bestbseq[allen-1] is  */
-/*      prob[sortarr[0].end.i][sortarr[0].end.j] */
-
-	p1=sortarr[0].end.i/* SMJS-1*/; p2=sortarr[0].end.j/* SMJS-1*/;
+	p1=sortarr[0].end.i-1; p2=sortarr[0].end.j-1;
 	for(j=allen-1; j>1; --j) {
 	  if(bestaseq[j]!=' ' && bestbseq[j]!=' ' && prob[p1][p2]>parms[0].CUTOFF &&
              bestaseq[j-1]!=' ' && bestbseq[j-1]!=' ' && prob[p1-1][p2-1]>parms[0].CUTOFF) {
@@ -374,9 +298,6 @@ int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
           }
 	  if(bestaseq[j]!=' ') p1--;
           if(bestbseq[j]!=' ') p2--;
-#ifdef DBGSTEVE
-          printf("Did an end iter\n");
-#endif
 	} 
      } else { 
        fprintf(parms[0].LOG,"No paths found\n");

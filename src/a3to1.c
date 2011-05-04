@@ -2,8 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define acids3 "ALA ARG ASN ASP CYS GLN GLU GLY HIS ILE LEU LYS MET PHE PRO SER THR TRP TYR VAL ASX GLX UNK CYH"
-#define acids1 "ARNDCQEGHILKMFPSTWYVBZXc"
+#define acids3 "ALA ARG ASN ASP CYS GLN GLU GLY HIS ILE LEU LYS MET PHE PRO SER THR TRP TYR VAL ASX GLX UNK CYH MSE"
+#define acids1 "ARNDCQEGHILKMFPSTWYVBZXcK"
 
 /* Converts three letter amino acid code to one letter
  *  amino acid code 

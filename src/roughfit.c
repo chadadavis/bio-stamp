@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 /* roughfit: this writes a bloc file which consists of the sequences aligned from
  *   their N-terminal ends, and uses this to run 'ampsfit'. It then reads in the

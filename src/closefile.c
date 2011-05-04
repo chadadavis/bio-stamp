@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int closefile(FILE *handle, char *filename) {
+void closefile(FILE *handle, char *filename) {
 
 
 	char b[1000];
@@ -20,6 +20,4 @@ int closefile(FILE *handle, char *filename) {
 	} else { 
 	    fclose(handle);
 	}
-/* SMJS Added return */
-        return 0;
 }

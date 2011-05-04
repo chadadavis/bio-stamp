@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* Takes a DSSP file, a description of a domain, and a transformation.
  *  It applies the transformation to the coordinates outputs the 
