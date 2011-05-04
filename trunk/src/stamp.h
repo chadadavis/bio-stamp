@@ -85,6 +85,7 @@ struct parameters {
 	int SCAN;			
 	int SCANMODE;			
 	int SCANALIGN;			
+    int FITCUT;         /* Added 2008 - allow output by nfit rather than only Sc */
 	float SCANCUT;			
 	int SLOWSCAN;			/* new method of obtaining initial superimpositions */
 	int SCANSLIDE;			/* align the N-terminus of the query with every SCANSLIDEth amino acid on the database structure */
@@ -146,6 +147,10 @@ struct parameters {
 	char stampdir[4096];		/* $STAMPDIR environment variable */
 	FILE *LOG;			/* The opened version of the above (passed everywhere) */
 	int verbose;
+    int pairoutput_to_log;
+    int ud_section;
+    int ud_start;
+    int ud_end;
 	};
 #if !defined(CLUST_STRUCT)
 struct indclust {
@@ -324,7 +329,7 @@ float matfit(int **atoms1, int **atoms2, float **R, float *V,
         int nats, int entry, int PRECISION);
 
 
-void matinv(float **a, float **y, float d, int *indx);
+void matinv(float **a, float **y, float *d, int *indx);
 
 void lubksb(float **A, int n, int *indx, float b[]);
 
