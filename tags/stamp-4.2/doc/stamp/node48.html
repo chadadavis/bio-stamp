@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>AVESTRUC</TITLE>
+<META NAME="description" CONTENT="AVESTRUC">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node49.html">
+<LINK REL="previous" HREF="node47.html">
+<LINK REL="up" HREF="node37.html">
+<LINK REL="next" HREF="node49.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html704"
+ HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html701"
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html695"
+ HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html703"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html705"
+ HREF="node49.html">GSTAMP</A>
+<B> Up:</B> <A NAME="tex2html702"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html696"
+ HREF="node47.html">MERGESTAMP</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION005211000000000000000">
+AVESTRUC</A>
+</H2>
+
+<P>
+For various reasons, it is often useful to derive `average`
+structures (i.e. for homology modelling, molecular replacement
+search objects, etc.).  STAMP output provides an obvious starting
+point for obtaining an average structure.  AVESTRUC reads in a
+STAMP alignment file, and generates another PDB file containing
+averaged coordaintes (either as C alpha or as a polyalanine 
+structure).
+<BR>
+<BR>
+The format is:
+<BR>
+<BR><PRE>
+avestruc -f &lt;STAMP alignment file&gt; 
+       [ -polyA -c &lt;STAMP char&gt; -t &lt;threshold&gt; -w &lt;window&gt; -aligned ]
+</PRE>
+<P>
+`-f' specifies the file to be considered.  Note that this MUST BE 
+  a STAMP alignment file, containing both transformations and a
+  sequence alignment.  It will not work on transformation files
+  lacking sequence alignment data or STAMP data.
+<BR>
+<BR>
+`-polyA' generate  polyalanine model, the default is a C alpha
+   model
+<BR>
+<BR>
+`-c &lt;STAMP char&gt;' `-t &lt;threshold&gt;' `-w &lt;window&gt;'
+<BR>
+these three parameters tell the program how to define structurally
+  equivalent residues.  `STAMP char' is the label of the STAMP field
+  specified by the `#' character  in the alignment file.
+  `threshold' is the minimum (or maximum in the case of RMS deviation)
+  value of the specified STAMP parameter tolerated, and `window' tells
+  the minimum number of residues over which this must be true for 
+  structural equivalence.  This is less complicated than it sounds.
+<BR>
+<BR>
+The default is as described in [<A
+ HREF="node58.html#rb92b">1</A>]:
+<BR>
+STAMP char = `G' (i.e. 
+<!-- MATH: $P_{ij}{\prime}$ -->
+<IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.gif"
+ ALT="$P_{ij}{\prime}$">)
+<BR>
+threshold  = 6.0
+<BR>
+window     = 3 <BR>
+   (i.e. stretches of three or more residues having 
+<!-- MATH: $P_{ij}{\prime} > 6.0$ -->
+<IMG
+ WIDTH="83" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$P_{ij}{\prime} > 6.0$">
+are considered equivalent)
+<BR>
+<BR>
+`-aligned' this flag will generate an averaged position for all positions
+  structures are present at a position (i.e. positions not containing any 
+  gaps are deamed equivalent).   The temperature factor will then distinguish
+  between genuine structural equivalences and fortitously aligned residues.
+<BR>
+<BR>
+`-ident' `-cons'  these flags will name residues either as a single amino acid
+  type (ident) or a conserved type (cons) according to the sequence alignment.
+  See the appropriate sections in the preceding chapter for a further explanation.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html704"
+ HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html701"
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html695"
+ HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html703"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html705"
+ HREF="node49.html">GSTAMP</A>
+<B> Up:</B> <A NAME="tex2html702"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html696"
+ HREF="node47.html">MERGESTAMP</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

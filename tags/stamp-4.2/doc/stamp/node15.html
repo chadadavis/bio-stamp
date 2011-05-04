@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Multiple alignment (PAIRWISE and TREEWISE)</TITLE>
+<META NAME="description" CONTENT="Multiple alignment (PAIRWISE and TREEWISE)">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node16.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html308"
+ HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html305"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html299"
+ HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html307"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html309"
+ HREF="node16.html">Alignment using an initial</A>
+<B> Up:</B> <A NAME="tex2html306"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html300"
+ HREF="node14.html">Worked examples</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00310000000000000000">
+Multiple alignment (PAIRWISE and TREEWISE)</A>
+</H1>
+
+<P>
+<B>Mammalian and Bacterial Serine Proteinases</B>
+<BR>
+<BR>
+(This example is discussed in Russell &amp; Barton, (1992).)
+<BR>
+<BR>
+Despite a pronounced functional similarity (a highly conserved catalytic 
+triad), this family of proteins shows little overall sequence similarity.  
+Indeed, sequence alignment methods generally fail to provide an accurate
+alignment of these protein sequences.  In situations like these, STAMP 
+can be used to provide an accuarate alignment of protein sequences based 
+on a comparison of 3D structure.  This can often reveal regions of weak 
+sequence similarity that are not detectable during a comparison of 
+sequence.  The files for this example are in the directory examples/s_prot in the 
+directory where you have installed STAMP.
+<BR>
+<BR>
+A list of the domains is given in the file s_prot.domains. The
+output.  Note that you can create such a file by using the PDBC program.  
+Running PDBSEQ:
+<BR>
+
+<P><PRE>
+pdbseq -f s_prot.domains &gt; s_prot.seqs
+</PRE>
+<P>
+produced the file s_prot.seqs, from which an AMPS multiple
+sequence alignment was produced, and stored in the file 
+s_prot_amps.align.  Running ALIGNFIT:
+<BR>
+
+<P><PRE>
+alignfit -f s_prot_amps.align -d s_prot.domains -out s_prot_alignfit.trans
+</PRE>
+<P>
+should give the output:
+<BR>
+
+<P><PRE>
+ALIGNFIT R.B. Russell 1995
+ Reading in block file...
+ Blocfile read: Length: 261
+ Reading in coordinate descriptions...
+ Reading coordinates...
+ Checking for inconsistencies...
+ Doing pairwise comparisons...
+ Doing treewise comparisons...
+ ALIGNFIT done.
+ Look in the file s_prot_alignfit.trans for output and details
+</PRE>
+<P>
+The final transformation 
+(called alignfit.trans if default ALIGNFIT settings are used) is
+in the file s_prot_alignfit.trans.
+<BR>
+<BR>
+This provides an initial set of transformations for use by
+STAMP.  To run STAMP type:
+
+<P><PRE>
+stamp -l s_prot_alignfit.trans -prefix s_prot
+</PRE>
+<P>
+Should produce the following output:
+<BR><PRE>
+STAMP Structural Alignment of Multiple Proteins
+ by Robert B. Russell &amp; Geoffrey J. Barton 
+ Please cite PROTEINS, v14, 309-323, 1992
+
+
+    Sc = STAMP score, RMS = RMS deviation, Align = alignment length
+    Len1, Len2 = length of domain, Nfit = residues fitted
+    Secs = no. equivalent sec. strucs. Eq = no. equivalent residues
+    %I = seq. identity, %S = sec. str. identity
+    P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
+
+     No.  Domain1  Domain2  Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S    P(m)
+Pair   1  4chaa    3est     7.73  10.58    239  240   242  209 207   20  37.08  74.17 0.00e+00 
+Pair   2  4chaa    2ptn     7.80   9.43    239  223   234  201 198   20  40.17  75.31 0.00e+00 
+Pair   3  4chaa    1ton     6.81   9.38    239  227   245  183 178   19  29.71  66.11 2.19e-42 
+Pair   4  4chaa    3rp2a    7.45   9.95    239  224   235  195 188   18  29.71  67.78 2.36e-63 
+Pair   5  4chaa    2pkaab   7.27   9.65    239  232   241  198 195   19  29.71  73.64 0.00e+00 
+Pair   6  4chaa    1sgt     7.09   9.76    239  223   239  191 183   20  27.62  69.04 3.68e-49 
+Pair   7  4chaa    2sga     3.66   9.75    239  181   238  105  99   14  11.72  33.05 2.03e-07 
+Pair   8  4chaa    3sgbe    3.56   9.24    239  185   239  103  98   16  10.04  33.47 1.89e-05 
+Pair   9  4chaa    2alp     3.49   9.13    239  198   246  102  97   14   9.21  31.38 1.28e-04 
+
+                                      &lt;etc.&gt;
+Reading in matrix file s_prot.mat...
+Doing cluster analysis...
+Cluster: 1 (  2ptn &amp;  2pkaab ) Sc 8.50 RMS 10.20 Len 232 nfit 213 
+ See file s_prot.1 for the alignment and transformations
+Cluster: 2 (  2sga &amp;  3sgbe ) Sc 8.34 RMS 10.37 Len 191 nfit 164 
+ See file s_prot.2 for the alignment and transformations
+                             &lt;etc.&gt;    
+Cluster: 7 (  2alp &amp;   2sga  3sgbe ) Sc 8.40 RMS 10.30 Len 202 nfit 161 
+ See file s_prot.7 for the alignment and transformations
+Cluster: 8 ( 1sgt &amp;  4chaa   3est  3rp2a   1ton   2ptn  2pkaab ) Sc 7.59 RMS  9.50 Len 268 nfit 175 
+ See file s_prot.8 for the alignment and transformations
+Cluster: 9 (  1sgt  4chaa   3est  3rp2a   1ton   2ptn  2pkaab &amp;   2alp   2sga  3sgbe ) Sc 4.77 RMS  9.74 Len 290 nfit 111 
+ See file s_prot.9 for the alignment and transformations
+</PRE>
+<P>
+The various fields describe details of the pairwise and treewise
+comparisons: <I>S</I><SUB><I>c</I></SUB>, RMS deviation, the alignment length (Align),
+the length of each structure in residues (Len1, Len2), the number of
+atoms used in the RMS fit (Nfit), the number of equivalent secondary
+structure elements (Secs), and the number of equivalent residues
+(see above, Eq.).
+<BR>
+
+<P>
+STAMP will also produce several files: <BR>
+
+<P>
+s_prot.mat - a file containing the information used to derive the 
+structural similarity tree (i.e. the output from the PAIRWISE) mode.  This
+is an upper diagonal matrix containing the pairwise <I>S</I><SUB><I>c</I></SUB> values.
+<BR>
+<BR>
+s_prot.<I>N</I> - a series of files containing transformations and alignments 
+created by running the TREEWISE mode in STAMP.  Each file corresponds to 
+a <EM>node</EM> in the similarity tree (i.e. a <EM>cluster</EM>), where two 
+groups of one or more structures have been combined to form an
+alignment and transformations.  The higher the value of <I>N</I> the more 
+structurally dissimilar the proteins contained in the file are.  Highly 
+similar structures are clustered (aligned/superimposed) at an early stage 
+in the program, with more distantly related structures being clustered 
+towards the end.
+<BR>
+<BR>
+The top of each file contains the information needed to generate (using
+TRANSFORM, see below)
+superimposed coordinates (in STAMP domain format, see below). 
+After these details, various details of the similarity (RMS deviation, 
+<I>S</I><SUB><I>c</I></SUB> value, etc) are given.  The bottom portion of the file contains 
+the structural alignment in STAMP format.  Positions not aligned with 
+gaps contain information as to the degree of local structural similarity, 
+such as the distance between (averaged) 
+<!-- MATH: ${\rm C}_{\alpha}$ -->
+<IMG
+ WIDTH="28" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="${\rm C}_{\alpha}$">
+atoms, and the 
+
+<!-- MATH: $P_{ij}^{\prime}$ -->
+<IMG
+ WIDTH="28" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.gif"
+ ALT="$P_{ij}^{\prime}$">
+value.
+<BR>
+<BR>
+Methods for displaying sequence alignments and structures are described below.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html308"
+ HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html305"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html299"
+ HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html307"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html309"
+ HREF="node16.html">Alignment using an initial</A>
+<B> Up:</B> <A NAME="tex2html306"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html300"
+ HREF="node14.html">Worked examples</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

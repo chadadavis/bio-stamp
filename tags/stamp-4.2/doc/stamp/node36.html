@@ -1,0 +1,704 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Main program (STAMP)</TITLE>
+<META NAME="description" CONTENT="Main program (STAMP)">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node37.html">
+<LINK REL="previous" HREF="node35.html">
+<LINK REL="up" HREF="node35.html">
+<LINK REL="next" HREF="node37.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html560"
+ HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html557"
+ HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html551"
+ HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html559"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html561"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Up:</B> <A NAME="tex2html558"
+ HREF="node35.html">Summary of STAMP parameters</A>
+<B> Previous:</B> <A NAME="tex2html552"
+ HREF="node35.html">Summary of STAMP parameters</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00510000000000000000">
+Main program (STAMP)</A>
+</H1>
+
+<P>
+The format for running STAMP is:
+
+<P><PRE>
+stamp -l &lt;starting domain file&gt; -s -o &lt;output file&gt; -P &lt;parameter file&gt;
+      -n &lt;1 or 2 fits&gt; -d &lt;database file for scans&gt; 
+      -slide &lt;slide value&gt;
+      -pen1 &lt;gap penatly 1&gt; -pen2 &lt;gap pentalty 2&gt; 
+      -prefix &lt;output file prefix&gt;
+      -V
+      -rough 
+      -cut
+      -&lt;parameter&gt; &lt;value&gt;
+</PRE>
+<P>
+If you have old STAMP parameter files, they can be read by using
+the command stamp -P &lt;parameter file&gt;.  This means that the old
+file can be read in exactly the same way as for version 2.0.
+<BR>
+<BR>
+In general, all commands can be specified by -&lt;parameter&gt; &lt;value&gt;.
+For example, `-first_pairpen 0.5'.  However, I have made some
+abbreviations for frequently used commands, these are:
+
+<P><PRE>
+-l &lt;starting domain file&gt;           same as -listfile &lt;list file&gt;
+-o &lt;output file&gt;         same as -logfile &lt;output file&gt;
+-n &lt;1 or 2&gt;              same as -npass &lt;1 or 2&gt;
+-pen1 &lt;gap penalty 1&gt;    same as -first_pairpen &lt;gap penalty 1&gt;
+-pen2 &lt;gap penalty 2&gt;    same as -second_pairpen &lt;gap pentalty 2&gt;
+-prefix &lt;output prefix&gt;  same as -transprefix &lt;output prefix&gt;
+-s                       same as -scan true
+-d &lt;database file&gt;       same as -database &lt;database file&gt;
+-slide &lt;slide parameter&gt; same as -scanslide &lt;slide parameter&gt;
+-cut                     same as -co true 
+-rough                   same as -roughfit true
+</PRE>
+<P>
+Default parameters are always looked for in the file
+STAMPDIR/stamp.defaults.  You can personalise this is as you like, but I 
+would recommend using the defaults, unless you have a thorough 
+understnading of the method. The values described below were essentially 
+chosen to mimick the  successful and well-tested parameters 
+[<A
+ HREF="node58.html#rb92b">1</A>].
+<BR>
+<BR>
+I would recommend using the command line parameters.  The commands, and 
+their arguments are given below.  The command line parameters are case 
+insensitive.  To use a parameter one need only type `-&lt;parameter&gt; &lt;value&gt;'
+or use on of the short forms listed above.
+<BR>
+<BR>
+STAMP can also be supplied with a parameter file.  Parameters in
+a parameter file can be supplied in the format:
+<BR>
+
+<P><PRE>
+&lt;Parameter&gt; &lt;Value&gt; &lt;Optional Comments&gt; [return]
+</PRE>
+<P>
+eg.
+<BR>
+
+<P><PRE>
+PAIRWISE Yes   Perform pairwise calculations
+E1 3.8
+E2 3.8
+CUTOFF 4.5
+</PRE>
+<P>
+Since the program is written in C, the input is read in an open 
+format.  Generally, data are expected to be separated by spaces or 
+return characters.  The number and position of spaces, tabs and 
+returns generally should not matter with the exception of PDB
+format, which is read as the fixed format described in the
+brookhaven documentation.
+<BR>
+<BR>
+The possible parameters are listed below.  Strings, characters,
+floats and integers are as expected (though strings may not contain
+spaces). Boolean variables may be set by any of the following:
+
+<P><PRE>
+TRUE  == TRUE, True, T, true, Yes, YES, yes, Y, 1
+FALSE == FALSE, False, F, false, No, NO, n, 0
+</PRE>
+<P>
+LOGFILE &lt;string&gt;
+<BR>
+This is the file into which the log is to be written.  If
+`stdout' is supplied then the information is written to the
+standard output.
+<BR>
+Default LOGFILE = stdout
+<BR>
+<BR>
+LISTFILE &lt;string&gt; (or `-l &lt;string&gt;' or `-f &lt;string&gt;')
+<BR>
+This is the name of a file that contains the location and
+description of the domains to be analysed and, if desired, an
+initial transformation.
+<BR>
+Default LISTFILE = domain.list
+<BR>
+<BR>
+SECTYPE &lt;integer&gt;
+<BR>
+This must be set to 0 (no secondary structure assignment) or
+to one of the following values:
+<BR>
+<BR>
+SECTYPE = 1 Kabsch and Sander's DSSP output.  This program, which
+calculates secondary structure based on hydrogen bonding criteria 
+[<A
+ HREF="node58.html#dssp">19</A>] is available from the EMBL fileserver.
+<BR>
+SECTYPE = 2 Secondary structure summary format.  A string of residue by
+residue secondary structure assignments for each domain is to be 
+read in from SECFILE in the format specified in the previous chapter.
+<BR>
+<BR>
+Note that it is not possible to mix assignments.  This is probably
+not a very realistic thing to do anyway, since assignments can
+differ substantially.  If you really want to do this, then the only
+possible way is to set SECTYPE = 3, and define each secondary structure
+independently in SECFILE.
+<BR>
+Default SECTYPE = 1 (for DSSP).
+<BR>
+<BR>
+SECFILE &lt;string&gt;
+<BR>
+The file from which user specified secondary structure assignments
+are to be read (ie. SECTYPE = 2 only).
+<BR>
+Default SECFILE = stamp.sec
+<BR>
+<BR>
+PAIRWISE &lt;boolean&gt;
+<BR>
+If TRUE, then pairwise comparisons are to be performed for each 
+possible pair of domains described in LISTFILE.  A matrix of
+pairwise (<I>S</I><SUB><I>c</I></SUB>) scores will be output (to MATFILE).
+<BR>
+Default PAIRWISE = TRUE
+<BR>
+<BR>
+N.B. Many of the following parameters also apply to TREEWISE and
+SCAN comparisons.  For clarity they are discussed here in the
+PAIRWISE comparison context.
+<BR>
+<BR>
+NPASS &lt;1 or 2&gt; (or `-n  &lt;1 or 2&gt;')
+<BR>
+Whether one or two fits are to be performed.  The idea is that the 
+initial fit can be used with a conformation biased set of
+parameters to improve the initial fit prior to fitting using
+distance and conformation parameters.  The parameters described
+below are called `first_' and `second_' accordingly.  When NPASS =
+1, then only the `second_' (or unprefixed) parameters are used.
+Default NPASS = 1
+<BR>
+<BR>
+SW &lt;0 or 1&gt; <BR>
+If set to 0, then the entire M x N matrix will be calculated and
+used during the Smith Waterman path finding routine.  If set to 1,
+then a corner cutting routine will be used (to save time).  Note
+that corner cutting will nullify many of the parameters specified
+in [<A
+ HREF="node58.html#rb92b">1</A>], and is only recommended for SCAN mode. 
+Accordingly, corner cutting parameters are specified below (after
+SCAN).
+<BR>
+<BR>
+PAIRPEN &lt;float&gt; (or `-pen1 &lt;float&gt;'/ `-pen2 &lt;float&gt;')
+<BR>
+(first_PAIRPEN)
+<BR>
+(second_PAIRPEN)
+<BR>
+Smith-Waterman gap penalty to be used during the fitting. 
+second_PAIRPEN and PAIRPEN are equivalent. (PAIRPEN is also
+relevant to treewise fitting)
+<BR>
+Defaults PAIRPEN = second_PAIRPEN = 0.0  first_PAIRPEN = 0.0
+<BR>
+<BR>
+E1 &lt;float&gt; <BR>
+E2 &lt;float&gt;
+<BR>
+(first_E1,first_E2)
+<BR>
+(second_E2,second_E2)
+<BR>
+<BR>
+Rossmann and Argos parameters to be used during the fitting.
+Rossmann and Argos suggested that E1 = E2 = 3.8 lead to good
+superimpositions, and further suggested that E1 = 20.0 and E2 = 3.8
+would relax the distance requirement, and allow poor initial
+superimpositions to be improved.  The defaults are defined
+accordingly.
+<BR>
+Defaults:
+<BR>
+E1 = second_E1 = 3.8
+<BR>
+E2 = second_E2 = 3.8
+<BR>
+first_E1 = 20.0
+<BR>
+first_E2 =  3.8
+<BR>
+<BR>
+I would not recommend modifying these parameters, since I really
+don't know what changing them will do.  If it ain't broke, don't
+fix it as my father would say.
+<BR>
+<BR>
+<BR>
+NA    &lt;float&gt;
+<BR>
+NB    &lt;float&gt;
+<BR>
+NASD  &lt;float&gt;
+<BR>
+NBSD  &lt;float&gt;
+<BR>
+NSD   &lt;float&gt;
+<BR>
+NMEAN &lt;float&gt;
+<BR>
+<BR>
+Parameters used to define 
+<!-- MATH: $P_{ij}{\prime}$ -->
+<IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.gif"
+ ALT="$P_{ij}{\prime}$">
+and <I>S</I><SUB><I>c</I></SUB> values.  These are 
+defined in [<A
+ HREF="node58.html#rb92b">1</A>].  I wouldn't change these. <BR>
+<BR>
+Defaults:
+<BR>
+NA    = -0.9497
+<BR>
+NB    =  0.6859
+<BR>
+NASD  = -0.4743
+<BR>
+NBSD  =  0.01522
+<BR>
+NMEAN =  0.02
+<BR>
+NSD   =  0.1
+<BR>
+<BR>
+CUTOFF &lt;float&gt;
+<BR>
+(first_CUTOFF)
+<BR>
+(second_CUTOFF)
+<BR>
+This is the minimum 
+<!-- MATH: $P_{ij}{\prime}$ -->
+<IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.gif"
+ ALT="$P_{ij}{\prime}$">
+value allowed for atoms to be used 
+for a  least squares fit.  Equivalences above this value will be used to
+determine a transformation and RMS deviation.
+<BR>
+Defaults:
+<BR>
+CUTOFF = second_CUTOFF = 4.5
+<BR>
+first_CUTOFF = 1.0
+<BR>
+<BR>
+PAIRALIGN &lt;boolean&gt;
+<BR>
+If true, then each final pairwise alignment will be output to the
+log file.
+<BR>
+Default PAIRALIGN = FALSE
+<BR>
+<BR>
+COLUMNS &lt;integer&gt;
+<BR>
+Number of sequence positions to be displayed per line when either
+PAIRALIGN, SCANALIN or TREEALIGN is set to TRUE.
+<BR>
+Default COLUMNS = 80
+<BR>
+<BR>
+<BR>
+SCORETOL &lt;float&gt; <BR>
+This is the percent Sc difference that will result in convergence
+being reached.  In other words, if 
+<!-- MATH: $100 \times abs | S_{c} - S_{c,old} |/S_{c,old} \leq$ -->
+<IMG
+ WIDTH="243" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.gif"
+ ALT="$100 \times abs \vert S_{c} - S_{c,old} \vert/S_{c,old} \leq$">
+SCORETOL then
+the fitting will be considered done.
+<BR>
+Default SCORETOL = 1.0
+<BR>
+<BR>
+
+<P>
+MAXPITER &lt;integer&gt;
+<BR>
+The maximum number of iterations allowed during the pairwise
+comparisons.  This prevents a particular fit, which jumps between
+two values rather than converging, from lasting indefinitely.
+<BR>
+Default MAXPITER = 10
+<BR>
+<BR>
+MATFILE &lt;string&gt;
+<BR>
+This is the file which contains an upper diagonal matrix consisting
+of the pairwise Scores (either 1/RMS, or Sc) for each comparison. 
+It may then be used to derive a tree, if desired, for treewise 
+analysis.
+<BR>
+Default MATFILE = &lt;stamp_prefix&gt;.mat
+<BR>
+<BR>
+ROUGHFIT &lt;boolean&gt; (or `-rough' to set to TRUE)
+<BR>
+If set to TRUE, then an initial rough superimposition will be
+performed by aligning the N-terminal ends of the sequences and
+fitting on whatever atoms this process equivalences.  Probably
+this is too crude for structures that differ quite a bit, but if
+they are very similar, one can use this to avoid having to
+perform a multiple sequence alignment.
+<BR>
+<BR>
+TREEWISE &lt;boolean&gt;
+<BR>
+If TRUE, then a treewise comparison is performed by following a
+derived hierarchy.   Reads in the matrix file specified (either
+created by PAIRWISE or some other method), derives a tree (dendrogram),
+and does a tree-based alignment.
+<BR>
+Default TREEWISE = TRUE
+<BR>
+<BR>
+TREEPEN &lt;float&gt;
+<BR>
+(first_TREEPEN)
+<BR>
+(second_TREEPEN)
+<BR>
+Value subtracted from the 
+<!-- MATH: $P_{ij}{\prime}$ -->
+<IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.gif"
+ ALT="$P_{ij}{\prime}$">
+matrix at positions where a
+residue is to be aligned with a gap.  For details see [<A
+ HREF="node58.html#rb92b">1</A>].
+<BR>
+Defaults TREEPEN = second_TREEPEN = 0.0  first_TREEPEN = 0.0
+<BR>
+<BR>
+MAXTITER &lt;int&gt;
+<BR>
+As for MAXPITER, but applied to the treewise case.
+<BR>
+Default MAXPITER = 10
+<BR>
+<BR>
+TREEALIGN &lt;boolean&gt;
+<BR>
+As for PAIRALIGN, only for treewise comparisons.
+<BR>
+Default TREEALIGN = TRUE
+<BR>
+<BR>
+STAMPPREFIX &lt;string&gt; (or `-prefix &lt;string&gt;')
+<BR>
+This is the name of the family of files that will be produced from 
+a multiple alignment.  The files will be named STAMPPREFIX.&lt;N&gt;, 
+where N is the number of the cluster after which the alignment 
+has been derived.  There are always one fewer clusters than their 
+are domains being compared.
+<BR>
+Default STAMPPREFIX = `stamp_trans'
+<BR>
+<BR>
+SCAN &lt;boolean&gt; (or simply `-s' to set true) <BR>
+If TRUE, then SCAN mode is selected.  TREEWISE and PAIRWISE are set
+to FALSE.  The first domain described in LISTFILE (the query) is 
+used to scan all the domains listed in DATABASE.  The parameters 
+for scanning are described below.  The output of a SCAN run appears
+in the file called STAMPPREFIX.scan.
+<BR>
+Default SCAN = FALSE
+<BR>
+<BR>
+DATABASE &lt;string&gt; (or -d &lt;string&gt;)
+<BR>
+The list of domains to be compared with the query during a scan.
+<BR>
+Default DATABASE = domain.database
+<BR>
+<BR>
+MAXSITER &lt;int&gt;
+<BR>
+As for MAXPITER and MAXTITER, but for scanning.  Equivalent
+within the program to MAXPITER.
+<BR>
+Default MAXSITER = 10
+<BR>
+<BR>
+SCANALIGN &lt;boolean&gt;
+<BR>
+As for PAIRALIGN and TREEALIGN, but for scanning.  Equivalent
+within the program to MAXPITER.
+<BR>
+Default SCANALIGN = FALSE
+<BR>
+<BR>
+SCANSCORE &lt;integer&gt;
+<BR>
+Specifies how the Sc value is to be calculated.  This depends on
+the particular application.  The values are described in the
+first chapter.
+<BR>
+<BR>
+As a general rule of thumb, use SCANSCORE=6 for large database
+scans, when you are scanning with a small domain, and wishing to
+find all examples of this domain - even within large structures. 
+Use SCANSCORE=1 when  you wish to obtain a set of
+transformations for a set of domains which you know are similar
+(and have defined fairly precisely as domains rather than the
+larger structure that they may be a part of).
+<BR>
+Default SCANSCORE = 6
+<BR>
+<BR>
+SKIPAHEAD &lt;boolean&gt;
+<BR>
+If set to TRUE, then the program will skip over all hits.  In
+other words, if a similarity is found with a particular starting
+fit position, then the next fit position will be the last residue
+of the similar region.  This is not always desireable, since there can
+be more than one hit within  repetetive structures, such as 
+<!-- MATH: $\alpha/\beta$ -->
+<IMG
+ WIDTH="38" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.gif"
+ ALT="$\alpha/\beta$">
+barrels.
+<BR>
+Default SKIPAHED = TRUE
+<BR>
+<BR>
+OPD &lt;boolean&gt;
+<BR>
+Means ``One Per Domain''.  When the first hit for a domain is found during a SCAN
+(i.e. with Sc above SCANCUT), the rest of the comparisons involving that domain
+are skipped.  Means that multiple matches involving the probe and database structures
+will be missed.
+<BR>
+Default OPD = FALSE
+<BR>
+<BR>
+SCANCUT &lt;float&gt;
+<BR>
+If SCANMODE = 1, then Sc must be &gt;= SCANCUT in order for a 
+transformation to be output.
+<BR>
+Default SCANCUT = 2.0
+<BR>
+<BR>
+SCANSLIDE &lt;integer&gt; (or `-slide &lt;integer&gt;')
+This is the number of residues that a query sequence is `slid`
+along a database sequence to derive each initial superimposition. 
+Initially, the N-terminus of the query is aligned to the 1st
+residue of the databse, once this fit has been performed and
+refined, and tested for good structural similarity, the N-terminus
+is aligned with  the 1+&lt;SCANSLIDE&gt;th position, and the process
+repeated until the end of the database sequence has been reached.
+<BR>
+Default SCANSLIDE = 5 <BR>
+<BR>
+SCANTRUNC &lt;boolean&gt;
+<BR>
+If TRUE, then sequences from DATABASE that are more than
+SCANTRUNCFACTOR x the length of the query sequence are truncated to
+this size.  This saves a lot of CPU time, as comparisons between 
+things that are vastly different in size are largely meaningless. 
+Moreover, since most scans will be done with discrete domains, then
+this allows separate domains in large proteins to be compared 
+to the query separately.
+<BR>
+Default SCANTRUNC = TRUE
+<BR>
+<BR>
+SCANTRUNCFACTOR &lt;float&gt;
+<BR>
+The largest size of sequence which may be compared to the query 
+sequence (expressed as SCANTRUNCFACTOR x query sequence length). 
+Structures in the DATABASE that are larger than this will be
+truncated  to this size if SCANTRUNC = TRUE.
+<BR>
+Default SCANTRUNCFACTOR = 2.0
+<BR>
+<BR>
+SLOWSCAN &lt;boolean&gt;
+<BR>
+If set to TRUE, then the SLOW method of getting the initial fits
+for scanning will be used (See chapter 1).
+<BR>
+Default SLOWSCAN = FALSE
+<BR>
+<BR>
+MIN_FRAC &lt;float&gt;
+<BR>
+This is the minimum ratio of database length/query length to be 
+allowed.  In other words, if a database structure is too small 
+(ie. if databaselength/query length &lt; MIN_FRAC), then the
+comparison will be skipped.  Whether to use this or not depends on
+whether or not one is interested in sub alignments where only a
+part of the query structure is used.  The default implies that all
+comparisons will be performed.
+<BR>
+Default MIN_FRAC = 0.001
+<BR>
+<BR>
+SECSCREEN &lt;boolean&gt;
+<BR>
+If TRUE, then an initial comparison between query and DATABASE
+secondary structure assignments (if available) is performed.  A
+secondary structure distance is defined by:
+<BR>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+D_{sec} = \sqrt{(\|Q_{h} - D_{h}\|^{2} + \|Q_{b} - D_{b}\|^{2})}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="304" HEIGHT="36"
+ SRC="img28.gif"
+ ALT="\begin{displaymath}D_{sec} = \sqrt{(\Vert Q_{h} - D_{h}\Vert^{2} + \Vert Q_{b} - D_{b}\Vert^{2})}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+where <I>Q</I><SUB><I>h</I></SUB> and <I>Q</I><SUB><I>b</I></SUB> are the percent of Helix and Beta
+structure in the query, and <I>D</I><SUB><I>h</I></SUB> and <I>D</I><SUB><I>b</I></SUB> are the same for the
+database sequence.  If Dist is larger than a threshold
+(SECSCREENMAX) then the comparison will be ignored.
+<BR>
+Default SECSCREEN = true
+<BR>
+<BR>
+SECSCREENMAX &lt;float&gt;
+<BR>
+This is the maximum value of Dist (above) tolerated.  If Dist is
+larger than SECSCREENMAX then the comparison is ignored.  For
+screening to be effective, it is important that secondary structure
+assignments are accurate (preferably done using the same program).
+<BR>
+Default SECSCREENMAX = 60.0 (this is very lenient; 40 is usually safe)
+<BR>
+<BR>
+CCFACTOR &lt;float&gt;
+<BR>
+Corner cutting factor.  This is approximately the maximum number of
+gaps to be tolerated in any pairwise comparison.  Only used if SW = 1.
+For a more  detailed explanation, refer to [<A
+ HREF="node58.html#timewarps">6</A>] (pp 
+279 - 281).
+<BR>
+Default CCFACTOR = 30.0
+<BR>
+<BR>
+CCADD &lt;boolean&gt;
+<BR>
+If TRUE, then the difference between query and database sequence
+lengths will be added to CCFACTOR.  Probably this is only realistic
+when SCANTRUNC is set TRUE.
+<BR>
+Default CCADD = FALSE
+<BR>
+<BR>
+PRECISION &lt;integer&gt;
+<BR>
+Since STAMP works as much as possible with integers, this is what
+all floating point values are multiplied by during conversion.  A
+value of 1000 has never presented us with any problems.
+<BR>
+Default PRECISION = 1000
+<BR>
+<BR>
+MAX_SEQ_LEN &lt;integer&gt;
+<BR>
+The maximum length of alignment tolerated.  The program ought to 
+inform you when this value is surpassed.
+<BR>
+Default MAX_SEQ_LEN = 1500
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html560"
+ HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html557"
+ HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html551"
+ HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html559"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html561"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Up:</B> <A NAME="tex2html558"
+ HREF="node35.html">Summary of STAMP parameters</A>
+<B> Previous:</B> <A NAME="tex2html552"
+ HREF="node35.html">Summary of STAMP parameters</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

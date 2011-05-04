@@ -1,0 +1,2420 @@
+/data/CASS1/pdb/coords/3sdh.pdb 3sdha.A.1.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2hbg.pdb 2hbg.A.1.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bvc.pdb 1bvc.A.1.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eca.pdb 1eca.A.1.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2gdm.pdb 2gdm.A.1.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2hhb.pdb 2hhba.A.1.1.1.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2hhb.pdb 2hhbb.A.1.1.1.7.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/2lhb.pdb 2lhb.A.1.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ash.pdb 1ash.A.1.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ith.pdb 1itha.A.1.1.1.10.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vhb.pdb 1vhba.A.1.1.1.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1phn.pdb 1phna.A.1.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cpc.pdb 1cpca.A.1.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1all.pdb 1alla.A.1.1.2.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1lia.pdb 1liaa.A.1.1.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2erl.pdb 2erl.A.10.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1erd.pdb 1erd.A.10.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1erp.pdb 1erp.A.10.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ery.pdb 1ery.A.10.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aon.pdb 1aonaa.A.100.1.1.1.1.1.1 {  A 2 _ to A 136 _  A 410 _ to A 525 _  } 
+/data/CASS1/pdb/coords/1ecm.pdb 1ecma.A.101.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2csm.pdb 2csma.A.101.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ppr.pdb 1pprm.A.102.1.1.1.1.1.1 {  M 1 _ to M 156 _  } 
+/data/CASS1/pdb/coords/1poc.pdb 1poc.A.103.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1poa.pdb 1poa.A.103.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kvo.pdb 1kvoa.A.103.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bun.pdb 1buna.A.103.1.2.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1clp.pdb 1clpa.A.103.1.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1beo.pdb 1beo.A.104.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rtm.pdb 1rtm1.A.105.1.1.1.1.1.1 {  1 73 _ to 1 104 _  } 
+/data/CASS1/pdb/coords/1htn.pdb 1htn.A.105.1.1.2.1.1.1 {  _ 26 _ to _ 53 _  } 
+/data/CASS1/pdb/coords/2zta.pdb 2ztaa.A.105.2.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1d66.pdb 1d66a.A.105.2.1.2.1.1.1 {  A 49 _ to A 64 _  } 
+/data/CASS1/pdb/coords/1pyi.pdb 1pyia.A.105.2.1.3.1.1.1 {  A 72 _ to A 117 _  } 
+/data/CASS1/pdb/coords/1ajy.pdb 1ajya.A.105.2.1.4.1.1.1 {  A 67 _ to A 100 _  } 
+/data/CASS1/pdb/coords/1fos.pdb 1fose.A.105.2.1.5.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1fos.pdb 1fosf.A.105.2.1.6.1.1.1 {  CHAIN F } 
+/data/CASS1/pdb/coords/1ifj.pdb 1ifj.A.105.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2tma.pdb 2tmaa.A.105.4.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aq5.pdb 1aq5a.A.105.5.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vdf.pdb 1vdfa.A.105.6.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fza.pdb 1fzaa.A.105.7.1.1.1.1.1 { CHAIN A } 
+/data/CASS1/pdb/coords/1dkg.pdb 1dkga.A.105.8.1.1.1.1.1 {  A 34 _ to A 138 _  } 
+/data/CASS1/pdb/coords/1dip.pdb 1dipa.A.105.9.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1av1.pdb 1av1a.A.105.10.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/4aah.pdb 4aahb.A.106.1.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1got.pdb 1gotg.A.106.2.1.1.1.1.1 {  CHAIN G } 
+/data/CASS1/pdb/coords/2cy3.pdb 2cy3.A.107.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1new.pdb 1new.A.107.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1prc.pdb 1prcc.A.107.1.3.1.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1fgj.pdb 1fgja.A.107.1.4.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2abd.pdb 2abd.A.11.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nre.pdb 1nre.A.13.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vii.pdb 1vii.A.14.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ail.pdb 1ail.A.15.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a32.pdb 1a32.A.15.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hp8.pdb 1hp8.A.16.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2end.pdb 2end.A.17.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lis.pdb 1lis.A.18.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bmf.pdb 1bmfg.A.19.1.1.1.1.1.1 {  CHAIN G } 
+/data/CASS1/pdb/coords/1grj.pdb 1grj.A.2.1.1.1.1.1.1 {  _ 2 _ to _ 79 _  } 
+/data/CASS1/pdb/coords/1hdj.pdb 1hdj.A.2.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1xbl.pdb 1xbl.A.2.2.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sry.pdb 1srya.A.2.3.1.1.1.1.1 {  A 1 _ to A 110 _  } 
+/data/CASS1/pdb/coords/1ids.pdb 1idsa.A.2.4.1.1.1.1.1 {  A 2 _ to A 85 _  } 
+/data/CASS1/pdb/coords/1abm.pdb 1abma.A.2.4.1.2.1.1.1 {  A 1 _ to A 83 _  } 
+/data/CASS1/pdb/coords/1ar4.pdb 1ar4a.A.2.4.1.3.1.1.1 {  A 1 _ to A 86 _  } 
+/data/CASS1/pdb/coords/1lbu.pdb 1lbu.A.20.1.1.1.1.1.1 {  _ 1 _ to _ 83 _  } 
+/data/CASS1/pdb/coords/1hme.pdb 1hme.A.21.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hma.pdb 1hma.A.21.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hry.pdb 1hrya.A.21.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1lef.pdb 1lefa.A.21.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bfm.pdb 1bfma.A.22.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1taf.pdb 1tafa.A.22.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1taf.pdb 1tafb.A.22.1.3.2.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1mty.pdb 1mtyg.A.23.1.1.1.1.1.1 {  CHAIN G } 
+/data/CASS1/pdb/coords/1nfn.pdb 1nfn.A.24.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nfo.pdb 1nfo.A.24.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1le4.pdb 1le4.A.24.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2asr.pdb 2asr.A.24.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/256b.pdb 256ba.A.24.3.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2ccy.pdb 2ccya.A.24.3.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2hmz.pdb 2hmza.A.24.4.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2mhr.pdb 2mhr.A.24.4.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2tmv.pdb 2tmvp.A.24.5.1.1.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1cgm.pdb 1cgme.A.24.5.1.2.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1rmv.pdb 1rmva.A.24.5.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1buc.pdb 1buca.A.24.6.1.1.1.1.1 {  A 233 _ to A 383 _  } 
+/data/CASS1/pdb/coords/3mdd.pdb 3mdda.A.24.6.1.2.1.1.1 {  A 242 _ to A 395 _  } 
+/data/CASS1/pdb/coords/1ivh.pdb 1ivha.A.24.6.1.3.1.1.1 {  A 242 _ to A 392 _  } 
+/data/CASS1/pdb/coords/1fap.pdb 1fapb.A.24.7.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1avo.pdb 1avoab.A.24.8.1.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1a0b.pdb 1a0b.A.24.9.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ryt.pdb 1ryt.A.25.1.1.1.1.1.1 {  _ 2 _ to _ 147 _  } 
+/data/CASS1/pdb/coords/1bcf.pdb 1bcfa.A.25.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2fha.pdb 2fha.A.25.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mty.pdb 1mtyb.A.25.1.2.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1xik.pdb 1xika.A.25.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1afr.pdb 1afra.A.25.1.2.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rhg.pdb 1rhga.A.26.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1il6.pdb 1il6.A.26.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lki.pdb 1lki.A.26.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3hhr.pdb 3hhra.A.26.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cnt.pdb 1cnt1.A.26.1.1.5.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/2gmf.pdb 2gmfa.A.26.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rcb.pdb 1rcb.A.26.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hul.pdb 1hula.A.26.1.2.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hmc.pdb 1hmca.A.26.1.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3ink.pdb 3inkc.A.26.1.2.5.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1jli.pdb 1jli.A.26.1.2.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ilk.pdb 2ilk.A.26.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1au1.pdb 1au1a.A.26.1.3.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rh2.pdb 1rh2a.A.26.1.3.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1itf.pdb 1itf.A.26.1.3.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rfb.pdb 1rfba.A.26.1.3.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1acp.pdb 1acp.A.27.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2af8.pdb 2af8.A.27.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1unk.pdb 1unka.A.27.2.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1imq.pdb 1imq.A.27.2.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1am3.pdb 1am3.A.27.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ffh.pdb 1ffh.A.28.1.1.1.1.1.1 {  _ 2 _ to _ 88 _  } 
+/data/CASS1/pdb/coords/1fts.pdb 1fts.A.28.1.1.2.1.1.1 {  _ 201 _ to _ 284 _  } 
+/data/CASS1/pdb/coords/1rop.pdb 1ropa.A.29.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ctj.pdb 1ctj.A.3.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1c52.pdb 1c52.A.3.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ycc.pdb 1ycc.A.3.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3c2c.pdb 3c2c.A.3.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cc5.pdb 1cc5.A.3.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cor.pdb 1cor.A.3.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aof.pdb 1aofa.A.3.1.2.1.1.1.1 {  A 36 _ to A 133 _  } 
+/data/CASS1/pdb/coords/1etp.pdb 1etpa.A.3.1.3.1.1.1.1 {  A 1 _ to A 92 _  } 
+/data/CASS1/pdb/coords/1fcd.pdb 1fcdc.A.3.1.3.2.1.1.1 {  C 1 _ to C 80 _  } 
+/data/CASS1/pdb/coords/1ytf.pdb 1ytfb.A.30.1.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1eci.pdb 1ecia.A.31.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1oct.pdb 1octc.A.32.1.1.1.1.1.1 {  C 5 _ to C 75 _  } 
+/data/CASS1/pdb/coords/1au7.pdb 1au7a.A.32.1.1.2.1.1.1 {  A 5 _ to A 74 _  } 
+/data/CASS1/pdb/coords/1lmb.pdb 1lmb3.A.32.1.2.1.1.1.1 {  CHAIN 3 } 
+/data/CASS1/pdb/coords/1r69.pdb 1r69.A.32.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2cro.pdb 2cro.A.32.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1adr.pdb 1adr.A.32.1.2.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/5cro.pdb 5croo.A.32.1.2.5.1.1.1 {  CHAIN O } 
+/data/CASS1/pdb/coords/1neq.pdb 1neq.A.32.1.2.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bdi.pdb 1bdia.A.32.1.3.1.1.1.1 {  A 3 _ to A 58 _  } 
+/data/CASS1/pdb/coords/1lcc.pdb 1lcca.A.32.1.3.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1uxd.pdb 1uxd.A.32.1.3.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2tct.pdb 2tct.A.33.1.1.1.1.1.1 {  _ 2 _ to _ 67 _  } 
+/data/CASS1/pdb/coords/1a04.pdb 1a04a.A.33.1.2.1.1.1.1 {  A 155 _ to A 216 _  } 
+/data/CASS1/pdb/coords/1coo.pdb 1coo.A.34.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1skn.pdb 1sknp.A.35.1.1.1.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1hlo.pdb 1hloa.A.36.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mdy.pdb 1mdya.A.36.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1an4.pdb 1an4a.A.36.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a0a.pdb 1a0aa.A.36.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1am9.pdb 1am9a.A.36.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/4icb.pdb 4icb.A.37.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cnp.pdb 1cnpa.A.37.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1sra.pdb 1sra.A.37.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rro.pdb 1rro.A.37.1.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cdp.pdb 1cdp.A.37.1.4.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ncx.pdb 1ncx.A.37.1.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2scp.pdb 2scpa.A.37.1.5.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cll.pdb 1cll.A.37.1.5.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1wdc.pdb 1wdcb.A.37.1.5.4.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1wdc.pdb 1wdcc.A.37.1.5.5.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1tco.pdb 1tcob.A.37.1.5.6.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1jsa.pdb 1jsa.A.37.1.5.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qas.pdb 1qasa.A.37.1.6.1.1.1.1 {  A 205 _ to A 281 _  } 
+/data/CASS1/pdb/coords/1dvi.pdb 1dvia.A.37.1.6.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cpo.pdb 1cpo.A.37.2.1.1.1.1.1 {  _ 1 _ to _ 119 _  } 
+/data/CASS1/pdb/coords/1bkr.pdb 1bkr.A.38.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aoa.pdb 1aoa.A.38.1.1.2.1.1.1 {  _ 121 _ to _ 251 _  } 
+/data/CASS1/pdb/coords/1pax.pdb 1pax.A.39.1.1.1.1.1.1 {  _ 662 _ to _ 796 _  } 
+/data/CASS1/pdb/coords/1enh.pdb 1enh.A.4.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1yrn.pdb 1yrna.A.4.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1yrn.pdb 1yrnb.A.4.1.1.3.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1lfb.pdb 1lfb.A.4.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1oct.pdb 1octc.A.4.1.1.5.1.1.1 {  C 102 _ to C 161 _  } 
+/data/CASS1/pdb/coords/1au7.pdb 1au7a.A.4.1.1.6.1.1.1 {  A 103 _ to A 160 _  } 
+/data/CASS1/pdb/coords/1ftt.pdb 1ftt.A.4.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hdp.pdb 1hdp.A.4.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ocp.pdb 1ocp.A.4.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hom.pdb 1hom.A.4.1.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ftz.pdb 1ftz.A.4.1.1.11.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vnd.pdb 1vnd.A.4.1.1.12.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fjl.pdb 1fjla.A.4.1.1.13.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hcr.pdb 1hcra.A.4.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1res.pdb 1res.A.4.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tc3.pdb 1tc3c.A.4.1.2.3.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/2ezk.pdb 2ezk.A.4.1.2.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ezh.pdb 2ezh.A.4.1.2.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a5j.pdb 1a5j.A.4.1.3.2.1.1.1 {  _ 1 _ to _ 55 _  } 
+/data/CASS1/pdb/coords/1pdn.pdb 1pdnc.A.4.1.4.1.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1ign.pdb 1igna.A.4.1.5.1.1.1.1 {  A 360 _ to A 445 _  } 
+/data/CASS1/pdb/coords/1sfe.pdb 1sfe.A.4.2.1.1.1.1.1 {  _ 93 _ to _ 176 _  } 
+/data/CASS1/pdb/coords/1bia.pdb 1bia.A.4.3.1.1.1.1.1 {  _ 1 _ to _ 63 _  } 
+/data/CASS1/pdb/coords/1lea.pdb 1lea.A.4.3.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aoy.pdb 1aoy.A.4.3.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cgp.pdb 1cgpa.A.4.3.4.1.1.1.1 {  A 138 _ to A 205 _  } 
+/data/CASS1/pdb/coords/1opc.pdb 1opc.A.4.3.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1smt.pdb 1smta.A.4.3.6.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fok.pdb 1foka.A.4.3.8.1.1.1.1 {  A 4 _ to A 143 _  } 
+/data/CASS1/pdb/coords/1hst.pdb 1hsta.A.4.3.9.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ghc.pdb 1ghc.A.4.3.9.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2hfh.pdb 2hfh.A.4.3.11.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fli.pdb 1flia.A.4.3.12.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1etc.pdb 1etc.A.4.3.12.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pue.pdb 1puee.A.4.3.12.3.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1awc.pdb 1awca.A.4.3.12.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hks.pdb 1hks.A.4.3.13.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1if1.pdb 1if1a.A.4.3.14.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1irf.pdb 1irf.A.4.3.14.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dpr.pdb 1dpra.A.4.3.15.1.1.1.1 {  A 3 _ to A 64 _  } 
+/data/CASS1/pdb/coords/1xgs.pdb 1xgsa.A.4.3.16.1.1.1.1 {  A 195 _ to A 271 _  } 
+/data/CASS1/pdb/coords/1tns.pdb 1tns.A.4.3.17.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1foy.pdb 1foy.A.4.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1wja.pdb 1wjaa.A.4.5.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ycq.pdb 1ycqa.A.40.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1par.pdb 1para.A.41.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mnt.pdb 1mnta.A.41.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cmb.pdb 1cmba.A.41.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dsb.pdb 1dsba.A.42.1.1.1.1.1.1 {  A 65 _ to A 128 _  } 
+/data/CASS1/pdb/coords/2gst.pdb 2gsta.A.43.1.1.1.1.1.1 {  A 85 _ to A 217 _  } 
+/data/CASS1/pdb/coords/1bmt.pdb 1bmta.A.44.1.1.1.1.1.1 {  A 651 _ to A 740 _  } 
+/data/CASS1/pdb/coords/1tpt.pdb 1tpt.A.44.2.1.1.1.1.1 {  _ 1 _ to _ 70 _  } 
+/data/CASS1/pdb/coords/1kjs.pdb 1kjs.A.45.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1occ.pdb 1occh.A.46.1.1.1.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1hyp.pdb 1hyp.A.47.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lpt.pdb 1lpt.A.47.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hss.pdb 1hssa.A.47.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1jfo.pdb 1jfo.A.47.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pnb.pdb 1pnbab.A.47.1.3.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/8ico.pdb 8icoa.A.48.1.1.1.1.1.1 {  A 9 _ to A 91 _  } 
+/data/CASS1/pdb/coords/1aie.pdb 1aie.A.49.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cuk.pdb 1cuk.A.5.1.1.1.1.1.1 {  _ 156 _ to _ 203 _  } 
+/data/CASS1/pdb/coords/1aua.pdb 1aua.A.5.2.1.1.1.1.1 {  _ 4 _ to _ 96 _  } 
+/data/CASS1/pdb/coords/1adt.pdb 1adt.A.50.1.1.1.1.1.1 {  _ 176 _ to _ 265 _  } 
+/data/CASS1/pdb/coords/1ihf.pdb 1ihfa.A.51.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hnr.pdb 1hnr.A.51.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hue.pdb 1huea.A.51.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1wtu.pdb 1wtua.A.51.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1alo.pdb 1alo.A.52.1.1.1.1.1.1 {  _ 81 _ to _ 193 _  } 
+/data/CASS1/pdb/coords/1aep.pdb 1aep.A.53.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nkl.pdb 1nkl.A.54.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ain.pdb 1ain.A.55.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1axn.pdb 1axn.A.55.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ann.pdb 1ann.A.55.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ala.pdb 1ala.A.55.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1avc.pdb 1avc.A.55.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aei.pdb 1aeia.A.55.1.1.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tad.pdb 1tada.A.56.1.1.1.1.1.1 {  A 57 _ to A 177 _  } 
+/data/CASS1/pdb/coords/1ezm.pdb 1ezm.A.57.1.1.1.1.1.1 {  _ 154 _ to _ 298 _  } 
+/data/CASS1/pdb/coords/8tln.pdb 8tlne.A.57.1.1.2.1.1.1 {  E 156 _ to E 316 _  } 
+/data/CASS1/pdb/coords/1npc.pdb 1npc.A.57.1.1.3.1.1.1 {  _ 157 _ to _ 317 _  } 
+/data/CASS1/pdb/coords/2ts1.pdb 2ts1.A.58.1.1.1.1.1.1 {  _ 228 _ to _ 319 _  } 
+/data/CASS1/pdb/coords/1bmf.pdb 1bmfa.A.59.1.1.1.1.1.1 {  A 380 _ to A 510 _  } 
+/data/CASS1/pdb/coords/1pys.pdb 1pysbb.A.6.1.1.1.1.1.1 {  B 1 _ to B 38 _  B 152 _ to B 190 _  } 
+/data/CASS1/pdb/coords/1abv.pdb 1abv.A.60.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1afv.pdb 1afva.A.61.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hiw.pdb 1hiwa.A.62.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1jvr.pdb 1jvr.A.62.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bax.pdb 1bax.A.62.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fin.pdb 1finb.A.63.1.1.1.1.1.1 {  B 173 _ to B 309 _  } 
+/data/CASS1/pdb/coords/1jkw.pdb 1jkw.A.63.1.1.2.1.1.1 {  _ 11 _ to _ 161 _  } 
+/data/CASS1/pdb/coords/1vol.pdb 1vola.A.63.1.2.1.1.1.1 {  A 113 _ to A 207 _  } 
+/data/CASS1/pdb/coords/1cuk.pdb 1cuk.A.64.1.1.1.1.1.1 {  _ 65 _ to _ 142 _  } 
+/data/CASS1/pdb/coords/1hus.pdb 1hus.A.65.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dpr.pdb 1dpra.A.66.1.1.1.1.1.1 {  A 65 _ to A 136 _  } 
+/data/CASS1/pdb/coords/1ngr.pdb 1ngr.A.67.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ddf.pdb 1ddf.A.67.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1crk.pdb 1crka.A.68.1.1.1.1.1.1 {  A 1 _ to A 98 _  } 
+/data/CASS1/pdb/coords/1al0.pdb 1al01.A.69.1.1.1.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/2spc.pdb 2spca.A.7.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1e2a.pdb 1e2aa.A.7.2.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1agr.pdb 1agre.A.70.1.1.1.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1jdb.pdb 1jdbb.A.71.1.1.1.1.1.1 {  B 403 _ to B 555 _  } 
+/data/CASS1/pdb/coords/1llp.pdb 1llp.A.72.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aru.pdb 1aru.A.72.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2cyp.pdb 2cyp.A.72.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mnp.pdb 1mnp.A.72.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1apx.pdb 1apxa.A.72.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2atj.pdb 2atja.A.72.1.1.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bgp.pdb 1bgp.A.72.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mhl.pdb 1mhlac.A.72.1.2.1.1.1.1 {  CHAIN A CHAIN C } 
+/data/CASS1/pdb/coords/1pth.pdb 1pth.A.72.1.2.2.1.1.1 {  _ 74 _ to _ 583 _  } 
+/data/CASS1/pdb/coords/1aa7.pdb 1aa7a.A.73.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2abk.pdb 2abk.A.74.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mpg.pdb 1mpga.A.74.1.2.1.1.1.1 {  A 100 _ to A 282 _  } 
+/data/CASS1/pdb/coords/1gln.pdb 1gln.A.75.1.1.1.1.1.1 {  _ 306 _ to _ 468 _  } 
+/data/CASS1/pdb/coords/1rlr.pdb 1rlr.A.76.1.1.1.1.1.1 {  _ 10 _ to _ 221 _  } 
+/data/CASS1/pdb/coords/1dnp.pdb 1dnpa.A.77.1.1.1.1.1.1 {  A 201 _ to A 469 _  } 
+/data/CASS1/pdb/coords/1lla.pdb 1lla.A.78.1.1.1.1.1.1 {  _ 2 _ to _ 379 _  } 
+/data/CASS1/pdb/coords/2pgd.pdb 2pgd.A.79.1.1.1.1.1.1 {  _ 177 _ to _ 473 _  } 
+/data/CASS1/pdb/coords/1yve.pdb 1yvei.A.79.1.2.1.1.1.1 {  I 308 _ to I 595 _  } 
+/data/CASS1/pdb/coords/1fc2.pdb 1fc2c.A.8.1.1.1.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1prb.pdb 1prb.A.8.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1utg.pdb 1utg.A.80.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ccd.pdb 1ccd.A.80.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gai.pdb 1gai.A.81.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cem.pdb 1cem.A.81.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tf4.pdb 1tf4a.A.81.1.2.2.1.1.1 {  A 1 _ to A 460 _  } 
+/data/CASS1/pdb/coords/1clc.pdb 1clc.A.81.1.2.3.1.1.1 {  _ 135 _ to _ 575 _  } 
+/data/CASS1/pdb/coords/5eat.pdb 5eat.A.81.2.1.1.1.1.1 {  _ 24 _ to _ 220 _  } 
+/data/CASS1/pdb/coords/1sqc.pdb 1sqc.A.81.2.2.1.1.1.1 {  _ 10 _ to _ 36 _  _ 308 _ to _ 628 _  } 
+/data/CASS1/pdb/coords/1ft1.pdb 1ft1b.A.81.3.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1csh.pdb 1csh.A.82.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1phc.pdb 1phc.A.83.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2rom.pdb 2rom.A.83.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1oxa.pdb 1oxa.A.83.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cpt.pdb 1cpt.A.83.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fia.pdb 1fiaa.A.84.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2wrp.pdb 2wrpr.A.85.1.1.1.1.1.1 {  CHAIN R } 
+/data/CASS1/pdb/coords/1aor.pdb 1aora.A.86.1.1.1.1.1.1 {  A 211 _ to A 605 _  } 
+/data/CASS1/pdb/coords/1vnc.pdb 1vnc.A.87.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sig.pdb 1sig.A.88.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bvp.pdb 1bvp11.A.89.1.1.1.1.1.1 {  1 1 _ to 1 120 _  1 255 _ to 1 349 _  } 
+/data/CASS1/pdb/coords/1ebd.pdb 1ebdc.A.9.1.1.1.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1bal.pdb 1bal.A.9.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2pdd.pdb 2pdd.A.9.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rgp.pdb 1rgp.A.90.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pbw.pdb 1pbwa.A.90.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1wer.pdb 1wer.A.90.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2bct.pdb 2bct.A.91.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lrv.pdb 1lrv.A.91.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ycs.pdb 1ycsb.A.91.3.1.1.1.1.1 {  B 327 _ to B 456 _  } 
+/data/CASS1/pdb/coords/1awc.pdb 1awcb.A.91.3.1.2.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1sly.pdb 1sly.A.91.5.1.1.1.1.1 {  _ 1 _ to _ 450 _  } 
+/data/CASS1/pdb/coords/1ft1.pdb 1ft1a.A.91.6.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a17.pdb 1a17.A.91.8.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1occ.pdb 1occe.A.91.9.1.1.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1yge.pdb 1yge.A.92.1.1.1.1.1.1 {  _ 150 _ to _ 839 _  } 
+/data/CASS1/pdb/coords/1a5t.pdb 1a5t.A.93.1.1.1.1.1.1 {  _ 167 _ to _ 330 _  } 
+/data/CASS1/pdb/coords/2tct.pdb 2tct.A.94.1.1.1.1.1.1 {  _ 68 _ to _ 208 _  } 
+/data/CASS1/pdb/coords/1lbd.pdb 1lbd.A.95.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2lbd.pdb 2lbd.A.95.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a28.pdb 1a28a.A.95.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ah7.pdb 1ah7.A.96.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ak0.pdb 1ak0.A.96.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ao6.pdb 1ao6a.A.97.1.1.1.1.1.1 {  A 5 _ to A 196 _  } 
+/data/CASS1/pdb/coords/1jsw.pdb 1jswa.A.98.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fuq.pdb 1fuqa.A.98.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aos.pdb 1aosa.A.98.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1auw.pdb 1auwabcd.A.98.1.3.2.1.1.1 {  CHAIN A CHAIN B CHAIN C CHAIN D } 
+/data/CASS1/pdb/coords/1fps.pdb 1fps.A.99.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/5eat.pdb 5eat.A.99.1.2.1.1.1.1 {  _ 221 _ to _ 548 _  } 
+/data/CASS1/pdb/coords/1ps1.pdb 1ps1a.A.99.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vjs.pdb 1vjs.AB.1.1.1.1.1.1.1 {  _ 3 _ to _ 373 _  } 
+/data/CASS1/pdb/coords/1cdg.pdb 1cdg.AB.1.1.1.2.1.1.1 {  _ 1 _ to _ 382 _  } 
+/data/CASS1/pdb/coords/1pig.pdb 1pig.AB.1.1.1.3.1.1.1 {  _ 2 _ to _ 403 _  } 
+/data/CASS1/pdb/coords/2aaa.pdb 2aaa.AB.1.1.1.4.1.1.1 {  _ 1 _ to _ 353 _  } 
+/data/CASS1/pdb/coords/2amg.pdb 2amg.AB.1.1.1.5.1.1.1 {  _ 1 _ to _ 357 _  } 
+/data/CASS1/pdb/coords/1amy.pdb 1amy.AB.1.1.1.6.1.1.1 {  _ 1 _ to _ 346 _  } 
+/data/CASS1/pdb/coords/1byb.pdb 1byb.AB.1.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1xyz.pdb 1xyza.AB.1.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1edg.pdb 1edg.AB.1.1.3.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1exp.pdb 1exp.AB.1.1.3.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cec.pdb 1cec.AB.1.1.3.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ece.pdb 1ecea.AB.1.1.3.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ghs.pdb 1ghsa.AB.1.1.3.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bgl.pdb 1bgla.AB.1.1.3.7.1.1.1 {  A 334 _ to A 625 _  } 
+/data/CASS1/pdb/coords/1bhg.pdb 1bhga.AB.1.1.3.8.1.1.1 {  A 329 _ to A 632 _  } 
+/data/CASS1/pdb/coords/1xas.pdb 1xas.AB.1.1.3.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2myr.pdb 2myr.AB.1.1.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cbg.pdb 1cbg.AB.1.1.4.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pbg.pdb 1pbga.AB.1.1.4.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bga.pdb 1bgaa.AB.1.1.4.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gow.pdb 1gowa.AB.1.1.4.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2hvm.pdb 2hvm.AB.1.1.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nar.pdb 1nar.AB.1.1.5.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ebn.pdb 2ebn.AB.1.1.5.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ctn.pdb 1ctn.AB.1.1.5.4.1.1.1 {  _ 133 _ to _ 441 _  _ 516 _ to _ 561 _  } 
+/data/CASS1/pdb/coords/1qba.pdb 1qba.AB.1.1.6.1.1.1.1 {  _ 338 _ to _ 780 _  } 
+/data/CASS1/pdb/coords/1add.pdb 1add.AB.1.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2kau.pdb 2kaucc.AB.1.2.2.1.1.1.1 {  C 130 _ to C 422 _  C 476 _ to C 567 _  } 
+/data/CASS1/pdb/coords/1psc.pdb 1psca.AB.1.2.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1nal.pdb 1nal1.AB.1.3.1.1.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/1dhp.pdb 1dhpa.AB.1.3.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ald.pdb 1ald.AB.1.3.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kga.pdb 1kga.AB.1.3.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1onr.pdb 1onra.AB.1.3.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dos.pdb 1dosa.AB.1.4.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1frb.pdb 1frb.AB.1.5.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2acs.pdb 2acs.AB.1.5.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1afs.pdb 1afsa.AB.1.5.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ak5.pdb 1ak5.AB.1.5.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2one.pdb 2onea.AB.1.6.1.1.1.1.1 {  A 142 _ to A 436 _  } 
+/data/CASS1/pdb/coords/1muc.pdb 1muca.AB.1.6.2.1.1.1.1 {  A 131 _ to A 372 _  } 
+/data/CASS1/pdb/coords/2mnr.pdb 2mnr.AB.1.6.2.2.1.1.1 {  _ 133 _ to _ 359 _  } 
+/data/CASS1/pdb/coords/2chr.pdb 2chr.AB.1.6.2.3.1.1.1 {  _ 127 _ to _ 370 _  } 
+/data/CASS1/pdb/coords/1dor.pdb 1dora.AB.1.7.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1oyb.pdb 1oyb.AB.1.7.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gox.pdb 1gox.AB.1.7.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2tmd.pdb 2tmda.AB.1.7.1.4.1.1.1 {  A 1 _ to A 340 _  } 
+/data/CASS1/pdb/coords/1ltd.pdb 1ltda.AB.1.7.1.5.1.1.1 {  A 98 _ to A 511 _  } 
+/data/CASS1/pdb/coords/1pii.pdb 1pii.AB.1.8.1.1.1.1.1 {  _ 1 _ to _ 254 _  } 
+/data/CASS1/pdb/coords/1pii.pdb 1pii.AB.1.8.1.2.1.1.1 {  _ 255 _ to _ 452 _  } 
+/data/CASS1/pdb/coords/1ttq.pdb 1ttqa.AB.1.8.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pkm.pdb 1pkm.AB.1.9.1.1.1.1.1 {  _ 12 _ to _ 115 _  _ 218 _ to _ 395 _  } 
+/data/CASS1/pdb/coords/1dik.pdb 1dik.AB.1.9.2.1.1.1.1 {  _ 510 _ to _ 874 _  } 
+/data/CASS1/pdb/coords/3rub.pdb 3rubl.AB.1.10.1.1.1.1.1 {  L 148 _ to L 467 _  } 
+/data/CASS1/pdb/coords/1tph.pdb 1tph1.AB.1.11.1.1.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/6xia.pdb 6xia.AB.1.12.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1luc.pdb 1luca.AB.1.13.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1nfp.pdb 1nfp.AB.1.13.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qap.pdb 1qapa.AB.1.14.1.1.1.1.1 {  A 130 _ to A 296 _  } 
+/data/CASS1/pdb/coords/1qas.pdb 1qasa.AB.1.15.1.1.1.1.1 {  A 299 _ to A 606 _  } 
+/data/CASS1/pdb/coords/1gym.pdb 1gym.AB.1.15.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1req.pdb 1reqa.AB.1.16.1.1.1.1.1 {  A 2 _ to A 560 _  } 
+/data/CASS1/pdb/coords/1pud.pdb 1pud.AB.1.17.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sft.pdb 1sfta.AB.1.18.1.1.1.1.1 {  A 12 _ to A 244 _  } 
+/data/CASS1/pdb/coords/1aj2.pdb 1aj2.AB.1.19.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rvv.pdb 1rvva.AB.10.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pau.pdb 1pauab.AB.11.1.1.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1ice.pdb 1iceab.AB.11.1.1.2.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1akz.pdb 1akz.AB.12.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mug.pdb 1muga.AB.12.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mla.pdb 1mla.AB.13.1.1.1.1.1.1 {  _ 3 _ to _ 127 _  _ 198 _ to _ 307 _  } 
+/data/CASS1/pdb/coords/4cat.pdb 4cat.AB.14.1.1.1.1.1.1 {  _ 502 _ to _ 658 _  } 
+/data/CASS1/pdb/coords/3chy.pdb 3chy.AB.14.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a04.pdb 1a04a.AB.14.2.1.2.1.1.1 {  A 5 _ to A 142 _  } 
+/data/CASS1/pdb/coords/1ntr.pdb 1ntr.AB.14.2.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1srr.pdb 1srra.AB.14.2.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a2o.pdb 1a2oa.AB.14.2.1.5.1.1.1 {  A 1 _ to A 140 _  } 
+/data/CASS1/pdb/coords/1scu.pdb 1scua.AB.14.3.1.1.1.1.1 {  A 122 _ to A 288 _  } 
+/data/CASS1/pdb/coords/1scu.pdb 1scub.AB.14.3.1.2.1.1.1 {  B 245 _ to B 388 _  } 
+/data/CASS1/pdb/coords/2fcr.pdb 2fcr.AB.14.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1amo.pdb 1amoa.AB.14.4.2.1.1.1.1 {  A 64 _ to A 235 _  } 
+/data/CASS1/pdb/coords/1qrd.pdb 1qrda.AB.14.4.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bmt.pdb 1bmta.AB.14.5.1.1.1.1.1 {  A 741 _ to A 896 _  } 
+/data/CASS1/pdb/coords/1req.pdb 1reqa.AB.14.5.2.1.1.1.1 {  A 561 _ to A 728 _  } 
+/data/CASS1/pdb/coords/1ord.pdb 1orda.AB.14.6.1.1.1.1.1 {  A 1 _ to A 107 _  } 
+/data/CASS1/pdb/coords/1cex.pdb 1cex.AB.14.7.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1esc.pdb 1esc.AB.14.8.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1wab.pdb 1wab.AB.14.8.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2nac.pdb 2nacaa.AB.14.9.1.1.1.1.1 {  A 1 _ to A 147 _  A 336 _ to A 374 _  } 
+/data/CASS1/pdb/coords/1dxy.pdb 1dxy.AB.14.9.1.2.1.1.1 {  _ 1 _ to _ 100 _  } 
+/data/CASS1/pdb/coords/1gdh.pdb 1gdhaa.AB.14.9.1.3.1.1.1 {  A 2 _ to A 100 _  A 292 _ to A 321 _  } 
+/data/CASS1/pdb/coords/1psd.pdb 1psdaa.AB.14.9.1.4.1.1.1 {  A 7 _ to A 107 _  A 296 _ to A 326 _  } 
+/data/CASS1/pdb/coords/2dld.pdb 2dlda.AB.14.9.1.5.1.1.1 {  A 1 _ to A 103 _  } 
+/data/CASS1/pdb/coords/1jdb.pdb 1jdbb.AB.15.1.1.1.1.1.1 {  B 936 _ to B 1072 _  } 
+/data/CASS1/pdb/coords/1fnb.pdb 1fnb.AB.16.1.1.1.1.1.1 {  _ 155 _ to _ 314 _  } 
+/data/CASS1/pdb/coords/2cnd.pdb 2cnd.AB.16.1.1.2.1.1.1 {  _ 125 _ to _ 270 _  } 
+/data/CASS1/pdb/coords/1ndh.pdb 1ndh.AB.16.1.1.3.1.1.1 {  _ 126 _ to _ 272 _  } 
+/data/CASS1/pdb/coords/2pia.pdb 2pia.AB.16.1.2.1.1.1.1 {  _ 104 _ to _ 223 _  } 
+/data/CASS1/pdb/coords/1amo.pdb 1amoa.AB.16.1.3.1.1.1.1 {  A 519 _ to A 678 _  } 
+/data/CASS1/pdb/coords/2ts1.pdb 2ts1.AB.17.1.1.1.1.1.1 {  _ 1 _ to _ 217 _  } 
+/data/CASS1/pdb/coords/1qtq.pdb 1qtqa.AB.17.1.1.2.1.1.1 {  A 8 _ to A 338 _  } 
+/data/CASS1/pdb/coords/1gln.pdb 1gln.AB.17.1.1.3.1.1.1 {  _ 1 _ to _ 305 _  } 
+/data/CASS1/pdb/coords/1gpm.pdb 1gpma.AB.17.2.1.1.1.1.1 {  A 208 _ to A 404 _  } 
+/data/CASS1/pdb/coords/1nsy.pdb 1nsya.AB.17.2.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tpt.pdb 1tpt.AB.18.1.1.1.1.1.1 {  _ 71 _ to _ 335 _  } 
+/data/CASS1/pdb/coords/1dnp.pdb 1dnpa.AB.19.1.1.1.1.1.1 {  A 1 _ to A 200 _  } 
+/data/CASS1/pdb/coords/1tml.pdb 1tml.AB.2.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3cbh.pdb 3cbh.AB.2.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1uag.pdb 1uag.AB.20.1.1.1.1.1.1 {  _ 1 _ to _ 93 _  } 
+/data/CASS1/pdb/coords/2tmd.pdb 2tmdaa.AB.21.1.1.1.1.1.1 {  A 341 _ to A 489 _  A 646 _ to A 729 _  } 
+/data/CASS1/pdb/coords/1kif.pdb 1kifaa.AB.21.1.2.1.1.1.1 {  A 1 _ to A 194 _  A 288 _ to A 339 _  } 
+/data/CASS1/pdb/coords/3bto.pdb 3btoa.AB.22.1.1.1.1.1.1 {  A 175 _ to A 324 _  } 
+/data/CASS1/pdb/coords/1kev.pdb 1keva.AB.22.1.1.2.1.1.1 {  A 151 _ to A 314 _  } 
+/data/CASS1/pdb/coords/1qor.pdb 1qora.AB.22.1.1.3.1.1.1 {  A 136 _ to A 265 _  } 
+/data/CASS1/pdb/coords/1xel.pdb 1xel.AB.22.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cyd.pdb 1cyda.AB.22.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fds.pdb 1fds.AB.22.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fmc.pdb 1fmca.AB.22.1.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hdc.pdb 1hdca.AB.22.1.2.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bdb.pdb 1bdb.AB.22.1.2.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dhr.pdb 1dhr.AB.22.1.2.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eno.pdb 1eno.AB.22.1.2.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ybv.pdb 1ybva.AB.22.1.2.9.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gad.pdb 1gadoo.AB.22.1.3.1.1.1.1 {  O 1 _ to O 148 _  O 313 _ to O 330 _  } 
+/data/CASS1/pdb/coords/2dap.pdb 2dap.AB.22.1.3.2.1.1.1 {  _ 1 _ to _ 118 _  _ 269 _ to _ 320 _  } 
+/data/CASS1/pdb/coords/1dru.pdb 1dru.AB.22.1.3.3.1.1.1 {  _ 4 _ to _ 130 _  _ 241 _ to _ 273 _  } 
+/data/CASS1/pdb/coords/1ofg.pdb 1ofgaa.AB.22.1.3.4.1.1.1 {  A 1 _ to A 160 _  A 323 _ to A 381 _  } 
+/data/CASS1/pdb/coords/1dpg.pdb 1dpgaa.AB.22.1.3.5.1.1.1 {  A 1 _ to A 181 _  A 413 _ to A 426 _  } 
+/data/CASS1/pdb/coords/2nac.pdb 2naca.AB.22.1.4.1.1.1.1 {  A 148 _ to A 335 _  } 
+/data/CASS1/pdb/coords/1dxy.pdb 1dxy.AB.22.1.4.2.1.1.1 {  _ 101 _ to _ 330 _  } 
+/data/CASS1/pdb/coords/1gdh.pdb 1gdha.AB.22.1.4.3.1.1.1 {  A 101 _ to A 291 _  } 
+/data/CASS1/pdb/coords/1psd.pdb 1psda.AB.22.1.4.4.1.1.1 {  A 108 _ to A 295 _  } 
+/data/CASS1/pdb/coords/2dld.pdb 2dlda.AB.22.1.4.5.1.1.1 {  A 104 _ to A 300 _  } 
+/data/CASS1/pdb/coords/1mld.pdb 1mlda.AB.22.1.5.1.1.1.1 {  A 1 _ to A 144 _  } 
+/data/CASS1/pdb/coords/1hyh.pdb 1hyha.AB.22.1.5.2.1.1.1 {  A 21 _ to A 166 _  } 
+/data/CASS1/pdb/coords/9ldt.pdb 9ldta.AB.22.1.5.3.1.1.1 {  A 1 _ to A 162 _  } 
+/data/CASS1/pdb/coords/1yve.pdb 1yvei.AB.22.1.6.1.1.1.1 {  I 83 _ to I 307 _  } 
+/data/CASS1/pdb/coords/2pgd.pdb 2pgd.AB.22.1.6.2.1.1.1 {  _ 1 _ to _ 176 _  } 
+/data/CASS1/pdb/coords/1hrd.pdb 1hrda.AB.22.1.7.1.1.1.1 {  A 195 _ to A 449 _  } 
+/data/CASS1/pdb/coords/1leh.pdb 1leha.AB.22.1.7.2.1.1.1 {  A 135 _ to A 364 _  } 
+/data/CASS1/pdb/coords/1scu.pdb 1scua.AB.22.1.8.1.1.1.1 {  A 1 _ to A 121 _  } 
+/data/CASS1/pdb/coords/1bnc.pdb 1bnca.AB.23.1.1.1.1.1.1 {  A 1 _ to A 114 _  } 
+/data/CASS1/pdb/coords/1jdb.pdb 1jdbb.AB.23.1.1.2.1.1.1 {  B 1 _ to B 127 _  } 
+/data/CASS1/pdb/coords/2dln.pdb 2dln.AB.23.1.2.1.1.1.1 {  _ 1 _ to _ 96 _  } 
+/data/CASS1/pdb/coords/1gsa.pdb 1gsa.AB.23.1.3.1.1.1.1 {  _ 1 _ to _ 122 _  } 
+/data/CASS1/pdb/coords/1auv.pdb 1auva.AB.23.1.4.1.1.1.1 {  A 112 _ to A 213 _  } 
+/data/CASS1/pdb/coords/1dhs.pdb 1dhs.AB.24.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1efv.pdb 1efva.AB.24.1.2.1.1.1.1 {  A 208 _ to A 331 _  } 
+/data/CASS1/pdb/coords/1pow.pdb 1powa.AB.24.1.3.1.1.1.1 {  A 183 _ to A 365 _  } 
+/data/CASS1/pdb/coords/1pyd.pdb 1pyda.AB.24.1.3.2.1.1.1 {  A 182 _ to A 360 _  } 
+/data/CASS1/pdb/coords/1bfd.pdb 1bfd.AB.24.1.3.3.1.1.1 {  _ 182 _ to _ 341 _  } 
+/data/CASS1/pdb/coords/1fsz.pdb 1fsz.AB.25.1.1.1.1.1.1 {  _ 23 _ to _ 231 _  } 
+/data/CASS1/pdb/coords/1nba.pdb 1nbaa.AB.26.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dea.pdb 1deaa.AB.27.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pyd.pdb 1pyda.AB.28.1.1.1.1.1.1 {  A 2 _ to A 181 _  } 
+/data/CASS1/pdb/coords/1pow.pdb 1powa.AB.28.1.1.2.1.1.1 {  A 9 _ to A 182 _  } 
+/data/CASS1/pdb/coords/1bfd.pdb 1bfd.AB.28.1.1.3.1.1.1 {  _ 2 _ to _ 181 _  } 
+/data/CASS1/pdb/coords/1trk.pdb 1trka.AB.28.1.2.1.1.1.1 {  A 3 _ to A 337 _  } 
+/data/CASS1/pdb/coords/1gky.pdb 1gky.AB.29.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ukz.pdb 1ukz.AB.29.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dek.pdb 1deka.AB.29.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2ukd.pdb 2ukd.AB.29.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kim.pdb 1kima.AB.29.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3adk.pdb 3adk.AB.29.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tmk.pdb 1tmka.AB.29.1.1.7.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a7j.pdb 1a7j.AB.29.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bif.pdb 1bif.AB.29.1.3.1.1.1.1 {  _ 37 _ to _ 249 _  } 
+/data/CASS1/pdb/coords/5p21.pdb 5p21.AB.29.1.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mh1.pdb 1mh1.AB.29.1.4.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gua.pdb 1guaa.AB.29.1.4.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1kao.pdb 1kao.AB.29.1.4.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a2k.pdb 1a2kc.AB.29.1.4.5.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1ftn.pdb 1ftn.AB.29.1.4.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hur.pdb 1hura.AB.29.1.4.7.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aje.pdb 1aje.AB.29.1.4.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tad.pdb 1tadaa.AB.29.1.4.9.1.1.1 {  A 27 _ to A 56 _  A 178 _ to A 342 _  } 
+/data/CASS1/pdb/coords/1efu.pdb 1efua.AB.29.1.4.10.1.1.1 {  A 9 _ to A 204 _  } 
+/data/CASS1/pdb/coords/1dar.pdb 1dar.AB.29.1.4.11.1.1.1 {  _ 1 _ to _ 282 _  } 
+/data/CASS1/pdb/coords/2mys.pdb 2mysaa.AB.29.1.5.1.1.1.1 {  A 4 _ to A 33 _  A 80 _ to A 750 _  } 
+/data/CASS1/pdb/coords/2kin.pdb 2kinab.AB.29.1.5.2.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1dts.pdb 1dts.AB.29.1.6.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ade.pdb 1adea.AB.29.1.6.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1nip.pdb 1nipa.AB.29.1.6.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ffh.pdb 1ffh.AB.29.1.6.4.1.1.1 {  _ 89 _ to _ 295 _  } 
+/data/CASS1/pdb/coords/1fts.pdb 1fts.AB.29.1.6.5.1.1.1 {  _ 285 _ to _ 495 _  } 
+/data/CASS1/pdb/coords/2reb.pdb 2reb.AB.29.1.7.1.1.1.1 {  _ 3 _ to _ 268 _  } 
+/data/CASS1/pdb/coords/1bmf.pdb 1bmfa.AB.29.1.7.2.1.1.1 {  A 95 _ to A 379 _  } 
+/data/CASS1/pdb/coords/1pjr.pdb 1pjr.AB.29.1.8.1.1.1.1 {  _ 1 _ to _ 318 _  } 
+/data/CASS1/pdb/coords/1a5t.pdb 1a5t.AB.29.1.8.2.1.1.1 {  _ 1 _ to _ 166 _  } 
+/data/CASS1/pdb/coords/1rlr.pdb 1rlr.AB.3.1.1.1.1.1.1 {  _ 222 _ to _ 748 _  } 
+/data/CASS1/pdb/coords/1ble.pdb 1ble.AB.30.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1chd.pdb 1chd.AB.31.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1efv.pdb 1efva.AB.32.1.1.1.1.1.1 {  A 20 _ to A 207 _  } 
+/data/CASS1/pdb/coords/1cse.pdb 1csee.AB.33.1.1.1.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1thm.pdb 1thm.AB.33.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1svn.pdb 1svn.AB.33.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1st3.pdb 1st3.AB.33.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sup.pdb 1sup.AB.33.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2prk.pdb 2prk.AB.33.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mee.pdb 1meea.AB.33.1.1.7.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mpt.pdb 1mpt.AB.33.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ah2.pdb 1ah2.AB.33.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rla.pdb 1rlaa.AB.34.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3cla.pdb 3cla.AB.35.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eaf.pdb 1eaf.AB.35.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1phr.pdb 1phr.AB.36.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1iib.pdb 1iiba.AB.36.2.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vhr.pdb 1vhra.AB.37.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2hnq.pdb 2hnq.AB.37.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2trx.pdb 2trxa.AB.38.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aaz.pdb 1aaza.AB.38.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1kte.pdb 1kte.AB.38.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mek.pdb 1mek.AB.38.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dsb.pdb 1dsbaa.AB.38.1.3.1.1.1.1 {  A 1 _ to A 64 _  A 129 _ to A 188 _  } 
+/data/CASS1/pdb/coords/2gst.pdb 2gsta.AB.38.1.4.1.1.1.1 {  A 1 _ to A 84 _  } 
+/data/CASS1/pdb/coords/2trc.pdb 2trcp.AB.38.1.5.1.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1gp1.pdb 1gp1a.AB.38.1.6.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1prx.pdb 1prxa.AB.38.1.7.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1foh.pdb 1foha.AB.38.1.8.1.1.1.1 {  A 463 _ to A 662 _  } 
+/data/CASS1/pdb/coords/1trk.pdb 1trka.AB.39.1.1.1.1.1.1 {  A 535 _ to A 680 _  } 
+/data/CASS1/pdb/coords/2tmd.pdb 2tmda.AB.4.1.1.1.1.1.1 {  A 490 _ to A 645 _  } 
+/data/CASS1/pdb/coords/3cox.pdb 3cox.AB.4.1.2.1.1.1.1 {  _ 5 _ to _ 318 _  } 
+/data/CASS1/pdb/coords/1pbe.pdb 1pbe.AB.4.1.2.2.1.1.1 {  _ 1 _ to _ 173 _  _ 276 _ to _ 391 _  } 
+/data/CASS1/pdb/coords/1foh.pdb 1foha.AB.4.1.2.3.1.1.1 {  A 1 _ to A 240 _  } 
+/data/CASS1/pdb/coords/1gal.pdb 1gal.AB.4.1.2.4.1.1.1 {  _ 3 _ to _ 324 _  } 
+/data/CASS1/pdb/coords/1gnd.pdb 1gnd.AB.4.1.3.1.1.1.1 {  _ 1 _ to _ 291 _  _ 389 _ to _ 430 _  } 
+/data/CASS1/pdb/coords/3grs.pdb 3grs.AB.4.1.4.1.1.1.1 {  _ 18 _ to _ 165 _  _ 291 _ to _ 363 _  } 
+/data/CASS1/pdb/coords/1fec.pdb 1fecaa.AB.4.1.4.2.1.1.1 {  A 1 _ to A 169 _  A 287 _ to A 357 _  } 
+/data/CASS1/pdb/coords/1tde.pdb 1tde.AB.4.1.4.3.1.1.1 {  _ 1 _ to _ 118 _  _ 245 _ to _ 316 _  } 
+/data/CASS1/pdb/coords/1npx.pdb 1npx.AB.4.1.4.4.1.1.1 {  _ 1 _ to _ 119 _  _ 243 _ to _ 321 _  } 
+/data/CASS1/pdb/coords/3lad.pdb 3ladaa.AB.4.1.4.5.1.1.1 {  A 1 _ to A 158 _  A 278 _ to A 348 _  } 
+/data/CASS1/pdb/coords/1fcd.pdb 1fcdaa.AB.4.1.4.6.1.1.1 {  A 1 _ to A 114 _  A 256 _ to A 327 _  } 
+/data/CASS1/pdb/coords/1pkm.pdb 1pkm.AB.40.1.1.1.1.1.1 {  _ 396 _ to _ 530 _  } 
+/data/CASS1/pdb/coords/1lcp.pdb 1lcpa.AB.41.1.1.1.1.1.1 {  A 1 _ to A 159 _  } 
+/data/CASS1/pdb/coords/1htt.pdb 1htta.AB.42.1.1.1.1.1.1 {  A 326 _ to A 424 _  } 
+/data/CASS1/pdb/coords/1ati.pdb 1atia.AB.42.1.1.2.1.1.1 {  A 395 _ to A 505 _  } 
+/data/CASS1/pdb/coords/1eri.pdb 1eria.AB.43.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rva.pdb 1rvaa.AB.43.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bam.pdb 1bam.AB.43.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pvu.pdb 1pvua.AB.43.1.4.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cfr.pdb 1cfr.AB.43.1.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fok.pdb 1foka.AB.43.1.6.1.1.1.1 {  A 387 _ to A 579 _  } 
+/data/CASS1/pdb/coords/1avq.pdb 1avqa.AB.43.1.7.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1azo.pdb 1azo.AB.43.1.8.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2rsl.pdb 2rsla.AB.44.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tfr.pdb 1tfr.AB.45.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tau.pdb 1taua.AB.45.1.2.1.1.1.1 {  A 10 _ to A 289 _  } 
+/data/CASS1/pdb/coords/1exn.pdb 1exna.AB.45.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pdo.pdb 1pdo.AB.46.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hpm.pdb 1hpm.AB.47.1.1.1.1.1.1 {  _ 4 _ to _ 188 _  } 
+/data/CASS1/pdb/coords/2btf.pdb 2btfa.AB.47.1.1.2.1.1.1 {  A 2 _ to A 146 _  } 
+/data/CASS1/pdb/coords/2yhx.pdb 2yhx.AB.47.1.2.1.1.1.1 {  _ 2 _ to _ 202 _  } 
+/data/CASS1/pdb/coords/1hkg.pdb 1hkg.AB.47.1.2.2.1.1.1 {  _ 2 _ to _ 202 _  } 
+/data/CASS1/pdb/coords/1hkb.pdb 1hkba.AB.47.1.2.3.1.1.1 {  A 16 _ to A 222 _  } 
+/data/CASS1/pdb/coords/1gla.pdb 1glag.AB.47.1.3.1.1.1.1 {  G 4 _ to G 253 _  } 
+/data/CASS1/pdb/coords/1chm.pdb 1chma.AB.47.2.1.1.1.1.1 {  A 2 _ to A 156 _  } 
+/data/CASS1/pdb/coords/2rn2.pdb 2rn2.AB.47.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vrt.pdb 1vrta.AB.47.3.1.2.1.1.1 {  A 430 _ to A 539 _  } 
+/data/CASS1/pdb/coords/1vsd.pdb 1vsd.AB.47.3.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1itg.pdb 1itg.AB.47.3.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bco.pdb 1bco.AB.47.3.3.1.1.1.1 {  _ 258 _ to _ 480 _  } 
+/data/CASS1/pdb/coords/1dpi.pdb 1dpi.AB.47.3.4.1.1.1.1 {  _ 326 _ to _ 518 _  } 
+/data/CASS1/pdb/coords/1t7p.pdb 1t7pa.AB.47.3.5.1.1.1.1 {  A 1 _ to A 210 _  } 
+/data/CASS1/pdb/coords/1noy.pdb 1noya.AB.47.3.5.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hjr.pdb 1hjra.AB.47.3.6.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1sfe.pdb 1sfe.AB.47.4.1.1.1.1.1 {  _ 12 _ to _ 92 _  } 
+/data/CASS1/pdb/coords/4pgm.pdb 4pgma.AB.48.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rpa.pdb 1rpa.AB.48.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ihp.pdb 1ihp.AB.48.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fbt.pdb 1fbta.AB.48.1.4.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1nul.pdb 1nula.AB.49.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hgx.pdb 1hgxa.AB.49.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ao0.pdb 1ao0a.AB.49.1.1.3.1.1.1 {  A 235 _ to A 459 _  } 
+/data/CASS1/pdb/coords/1hmp.pdb 1hmpa.AB.49.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1opr.pdb 1opr.AB.49.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dik.pdb 1dik.AB.5.1.1.1.1.1.1 {  _ 377 _ to _ 505 _  } 
+/data/CASS1/pdb/coords/1zym.pdb 1zyma.AB.5.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/7acn.pdb 7acn.AB.5.2.1.1.1.1.1 {  _ 529 _ to _ 754 _  } 
+/data/CASS1/pdb/coords/1jdb.pdb 1jdbc.AB.5.3.1.1.1.1.1 {  C 2 _ to C 152 _  } 
+/data/CASS1/pdb/coords/1aon.pdb 1aona.AB.5.4.1.1.1.1.1 {  A 191 _ to A 366 _  } 
+/data/CASS1/pdb/coords/1ass.pdb 1ass.AB.5.4.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lfa.pdb 1lfaa.AB.50.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1atz.pdb 1atza.AB.50.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ido.pdb 1ido.AB.50.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1poi.pdb 1poia.AB.51.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1poi.pdb 1poib.AB.51.1.1.2.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1gar.pdb 1gara.AB.52.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fmt.pdb 1fmta.AB.52.1.1.2.1.1.1 {  A 1 _ to A 206 _  } 
+/data/CASS1/pdb/coords/1vid.pdb 1vid.AB.53.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1xva.pdb 1xvaa.AB.53.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1af7.pdb 1af7.AB.53.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vp3.pdb 1vp3.AB.53.1.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1yub.pdb 1yub.AB.53.1.4.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hmy.pdb 1hmy.AB.53.1.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2adm.pdb 2adma.AB.53.1.5.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dct.pdb 1dcta.AB.53.1.5.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/7aat.pdb 7aata.AB.54.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tpl.pdb 1tpla.AB.54.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ax4.pdb 1ax4a.AB.54.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2dkb.pdb 2dkb.AB.54.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2gsa.pdb 2gsaa.AB.54.1.3.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1oat.pdb 1oata.AB.54.1.3.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ord.pdb 1orda.AB.54.1.4.1.1.1.1 {  A 108 _ to A 569 _  } 
+/data/CASS1/pdb/coords/1gpm.pdb 1gpma.AB.55.1.1.1.1.1.1 {  A 3 _ to A 207 _  } 
+/data/CASS1/pdb/coords/1jdb.pdb 1jdbc.AB.55.1.1.2.1.1.1 {  C 153 _ to C 380 _  } 
+/data/CASS1/pdb/coords/2ace.pdb 2ace.AB.56.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1akn.pdb 1akn.AB.56.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1wht.pdb 1whtab.AB.56.1.2.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1ivy.pdb 1ivya.AB.56.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2had.pdb 2had.AB.56.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1din.pdb 1din.AB.56.1.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bro.pdb 1broa.AB.56.1.5.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a8q.pdb 1a8q.AB.56.1.5.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a7u.pdb 1a7ua.AB.56.1.5.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a8s.pdb 1a8s.AB.56.1.5.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tht.pdb 1thta.AB.56.1.6.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1auo.pdb 1auoa.AB.56.1.7.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1jfr.pdb 1jfra.AB.56.1.8.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tca.pdb 1tca.AB.56.1.9.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1thg.pdb 1thg.AB.56.1.9.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tah.pdb 1tahb.AB.56.1.10.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1hpl.pdb 1hpla.AB.56.1.11.1.1.1.1 {  A 1 _ to A 336 _  } 
+/data/CASS1/pdb/coords/1yas.pdb 1yasa.AB.56.1.12.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2mas.pdb 2masa.AB.57.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ulb.pdb 1ulb.AB.58.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2pth.pdb 2pth.AB.58.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a2z.pdb 1a2za.AB.58.3.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2ctb.pdb 2ctb.AB.58.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nsa.pdb 1nsa.AB.58.4.1.2.1.1.1 {  _ 4 _ to _ 308 _  } 
+/data/CASS1/pdb/coords/1obr.pdb 1obr.AB.58.4.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lcp.pdb 1lcpa.AB.58.4.3.1.1.1.1 {  A 160 _ to A 484 _  } 
+/data/CASS1/pdb/coords/1amp.pdb 1amp.AB.58.4.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cg2.pdb 1cg2aa.AB.58.4.4.2.1.1.1 {  A 26 _ to A 213 _  A 327 _ to A 414 _  } 
+/data/CASS1/pdb/coords/1uag.pdb 1uag.AB.59.1.1.1.1.1.1 {  _ 298 _ to _ 437 _  } 
+/data/CASS1/pdb/coords/1bta.pdb 1bta.AB.6.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ra9.pdb 1ra9.AB.60.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/8dfr.pdb 8dfr.AB.60.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hrd.pdb 1hrda.AB.61.1.1.1.1.1.1 {  A 1 _ to A 194 _  } 
+/data/CASS1/pdb/coords/1leh.pdb 1leha.AB.61.1.1.2.1.1.1 {  A 1 _ to A 134 _  } 
+/data/CASS1/pdb/coords/1rkd.pdb 1rkd.AB.62.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1uag.pdb 1uag.AB.62.2.1.1.1.1.1 {  _ 94 _ to _ 297 _  } 
+/data/CASS1/pdb/coords/1fua.pdb 1fua.AB.63.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1alk.pdb 1alka.AB.64.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1auk.pdb 1auk.AB.64.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fsu.pdb 1fsu.AB.64.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1xaa.pdb 1xaa.AB.65.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/9icd.pdb 9icd.AB.65.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/4at1.pdb 4at1a.AB.66.1.1.1.1.1.1 {  A 1 _ to A 150 _  } 
+/data/CASS1/pdb/coords/1ort.pdb 1orta.AB.66.1.1.2.1.1.1 {  A 1 _ to A 150 _  } 
+/data/CASS1/pdb/coords/1ttq.pdb 1ttqb.AB.67.1.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/2ora.pdb 2ora.AB.68.1.1.1.1.1.1 {  _ 1 _ to _ 149 _  } 
+/data/CASS1/pdb/coords/1cxs.pdb 1cxsa.AB.69.1.1.1.1.1.1 {  A 1 _ to A 625 _  } 
+/data/CASS1/pdb/coords/1aa6.pdb 1aa6.AB.69.1.1.2.1.1.1 {  _ 1 _ to _ 564 _  } 
+/data/CASS1/pdb/coords/2bnh.pdb 2bnh.AB.7.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ad3.pdb 1ad3a.AB.70.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/7acn.pdb 7acn.AB.71.1.1.1.1.1.1 {  _ 2 _ to _ 528 _  } 
+/data/CASS1/pdb/coords/3pmg.pdb 3pmga.AB.72.1.1.1.1.1.1 {  A 1 _ to A 190 _  } 
+/data/CASS1/pdb/coords/1fui.pdb 1fuia.AB.73.1.1.1.1.1.1 {  A 1 _ to A 355 _  } 
+/data/CASS1/pdb/coords/3pgk.pdb 3pgk.AB.74.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mio.pdb 1mioa.AB.75.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2bgu.pdb 2bgu.AB.76.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gpb.pdb 1gpb.AB.76.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ahp.pdb 1ahpa.AB.76.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3eca.pdb 3ecaa.AB.77.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1agx.pdb 1agx.AB.77.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pfk.pdb 1pfka.AB.78.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ayl.pdb 1ayl.AB.79.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aua.pdb 1aua.AB.8.1.1.1.1.1.1 {  _ 97 _ to _ 299 _  } 
+/data/CASS1/pdb/coords/1auz.pdb 1auz.AB.8.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ak1.pdb 1ak1.AB.80.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2dri.pdb 2dri.AB.81.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1abe.pdb 1abe.AB.81.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2gbp.pdb 2gbp.AB.81.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pea.pdb 1pea.AB.81.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dbq.pdb 1dbqa.AB.81.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2liv.pdb 2liv.AB.81.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tlf.pdb 1tlfa.AB.81.1.1.7.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2lbp.pdb 2lbp.AB.81.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1jet.pdb 1jeta.AB.82.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pda.pdb 1pda.AB.82.1.1.2.1.1.1 {  _ 3 _ to _ 219 _  } 
+/data/CASS1/pdb/coords/1lst.pdb 1lst.AB.82.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sbp.pdb 1sbp.AB.82.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2abh.pdb 2abh.AB.82.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1omp.pdb 1omp.AB.82.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mrp.pdb 1mrp.AB.82.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dpe.pdb 1dpe.AB.82.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hsl.pdb 1hsla.AB.82.1.1.9.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pot.pdb 1pot.AB.82.1.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ggg.pdb 1ggga.AB.82.1.1.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1wod.pdb 1wod.AB.82.1.1.12.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1al3.pdb 1al3.AB.82.1.1.13.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lct.pdb 1lct.AB.82.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ovb.pdb 1ovb.AB.82.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tfd.pdb 1tfd.AB.82.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1afw.pdb 1afwa.AB.83.1.1.1.1.1.1 {  A 25 _ to A 293 _  } 
+/data/CASS1/pdb/coords/1aln.pdb 1aln.AB.84.1.1.1.1.1.1 {  _ 1 _ to _ 150 _  } 
+/data/CASS1/pdb/coords/1tyf.pdb 1tyfa.AB.9.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1nzy.pdb 1nzya.AB.9.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dub.pdb 1duba.AB.9.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rge.pdb 1rgea.ApB.1.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fus.pdb 1fus.ApB.1.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/9rnt.pdb 9rnt.ApB.1.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rtu.pdb 1rtu.ApB.1.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1brn.pdb 1brnl.ApB.1.1.1.5.1.1.1 {  CHAIN L } 
+/data/CASS1/pdb/coords/1rms.pdb 1rms.ApB.1.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aqz.pdb 1aqza.ApB.1.1.1.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dar.pdb 1dar.ApB.10.1.1.1.1.1.1 {  _ 477 _ to _ 599 _  } 
+/data/CASS1/pdb/coords/1pkp.pdb 1pkp.ApB.10.1.1.2.1.1.1 {  _ 78 _ to _ 148 _  } 
+/data/CASS1/pdb/coords/1mld.pdb 1mlda.ApB.100.1.1.1.1.1.1 {  A 145 _ to A 313 _  } 
+/data/CASS1/pdb/coords/1hyh.pdb 1hyha.ApB.100.1.1.2.1.1.1 {  A 167 _ to A 329 _  } 
+/data/CASS1/pdb/coords/9ldt.pdb 9ldta.ApB.100.1.1.3.1.1.1 {  A 163 _ to A 331 _  } 
+/data/CASS1/pdb/coords/1aih.pdb 1aiha.ApB.101.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ae9.pdb 1ae9a.ApB.101.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a0p.pdb 1a0p.ApB.101.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mrj.pdb 1mrj.ApB.102.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bry.pdb 1bryy.ApB.102.1.1.2.1.1.1 {  CHAIN Y } 
+/data/CASS1/pdb/coords/1mrg.pdb 1mrg.ApB.102.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1abr.pdb 1abra.ApB.102.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1apa.pdb 1apa.ApB.102.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rtc.pdb 1rtc.ApB.102.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lts.pdb 1ltsac.ApB.103.1.1.1.1.1.1 {  CHAIN A CHAIN C } 
+/data/CASS1/pdb/coords/1ddt.pdb 1ddt.ApB.103.1.1.2.1.1.1 {  _ 1 _ to _ 187 _  } 
+/data/CASS1/pdb/coords/1aer.pdb 1aera.ApB.103.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1prt.pdb 1prta.ApB.103.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1xtc.pdb 1xtcac.ApB.103.1.1.5.1.1.1 {  CHAIN A CHAIN C } 
+/data/CASS1/pdb/coords/1pax.pdb 1pax.ApB.103.1.2.1.1.1.1 {  _ 797 _ to _ 1011 _  } 
+/data/CASS1/pdb/coords/2def.pdb 2def.ApB.104.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lit.pdb 1lit.ApB.105.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ixx.pdb 1ixxa.ApB.105.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1esl.pdb 1esl.ApB.105.1.1.3.1.1.1 {  _ 1 _ to _ 118 _  } 
+/data/CASS1/pdb/coords/1hup.pdb 1hup.ApB.105.1.1.4.1.1.1 {  _ 112 _ to _ 228 _  } 
+/data/CASS1/pdb/coords/1htn.pdb 1htn.ApB.105.1.1.5.1.1.1 {  _ 54 _ to _ 181 _  } 
+/data/CASS1/pdb/coords/1prt.pdb 1prtb.ApB.105.1.2.1.1.1.1 {  B 4 _ to B 87 _  } 
+/data/CASS1/pdb/coords/1pre.pdb 1prea.ApB.105.1.2.2.1.1.1 {  A 2 _ to A 84 _  } 
+/data/CASS1/pdb/coords/1tsg.pdb 1tsg.ApB.105.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fid.pdb 1fid.ApB.106.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a74.pdb 1a74a.ApB.107.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gc1.pdb 1gc1g.ApB.108.1.1.1.1.1.1 {  CHAIN G } 
+/data/CASS1/pdb/coords/1msk.pdb 1msk.ApB.109.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1igd.pdb 1igd.ApB.11.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ptl.pdb 2ptl.ApB.11.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ubi.pdb 1ubi.ApB.11.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rfa.pdb 1rfa.ApB.11.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lxd.pdb 1lxda.ApB.11.3.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2sak.pdb 2sak.ApB.11.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1frd.pdb 1frd.ApB.11.5.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1alo.pdb 1alo.ApB.11.5.1.2.1.1.1 {  _ 1 _ to _ 80 _  } 
+/data/CASS1/pdb/coords/2pia.pdb 2pia.ApB.11.5.1.3.1.1.1 {  _ 224 _ to _ 321 _  } 
+/data/CASS1/pdb/coords/1put.pdb 1put.ApB.11.5.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1esf.pdb 1esfa.ApB.11.6.1.1.1.1.1 {  A 121 _ to A 233 _  } 
+/data/CASS1/pdb/coords/1ste.pdb 1ste.ApB.11.6.1.2.1.1.1 {  _ 121 _ to _ 238 _  } 
+/data/CASS1/pdb/coords/2qil.pdb 2qila.ApB.11.6.1.3.1.1.1 {  A 94 _ to A 194 _  } 
+/data/CASS1/pdb/coords/1se4.pdb 1se4.ApB.11.6.1.4.1.1.1 {  _ 122 _ to _ 239 _  } 
+/data/CASS1/pdb/coords/1jck.pdb 1jckb.ApB.11.6.1.5.1.1.1 {  B 122 _ to B 239 _  } 
+/data/CASS1/pdb/coords/1an8.pdb 1an8.ApB.11.6.1.6.1.1.1 {  _ 96 _ to _ 208 _  } 
+/data/CASS1/pdb/coords/1tif.pdb 1tif.ApB.11.7.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lgr.pdb 1lgr.ApB.11.8.1.1.1.1.1 {  _ 1 _ to _ 100 _  } 
+/data/CASS1/pdb/coords/1pmd.pdb 1pmd.ApB.110.1.1.1.1.1.1 {  _ 76 _ to _ 263 _  } 
+/data/CASS1/pdb/coords/1sox.pdb 1soxa.ApB.111.1.1.1.1.1.1 {  A 94 _ to A 343 _  } 
+/data/CASS1/pdb/coords/1toh.pdb 1toh.ApB.112.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3cox.pdb 3cox.ApB.12.1.1.1.1.1.1 {  _ 319 _ to _ 450 _  } 
+/data/CASS1/pdb/coords/1pbe.pdb 1pbe.ApB.12.1.2.1.1.1.1 {  _ 174 _ to _ 275 _  } 
+/data/CASS1/pdb/coords/1foh.pdb 1foha.ApB.12.1.2.2.1.1.1 {  A 241 _ to A 341 _  } 
+/data/CASS1/pdb/coords/1kif.pdb 1kifa.ApB.12.1.3.1.1.1.1 {  A 195 _ to A 287 _  } 
+/data/CASS1/pdb/coords/1gal.pdb 1gal.ApB.12.1.4.1.1.1.1 {  _ 518 _ to _ 583 _  } 
+/data/CASS1/pdb/coords/1gnd.pdb 1gnd.ApB.12.1.5.1.1.1.1 {  _ 292 _ to _ 388 _  } 
+/data/CASS1/pdb/coords/1mol.pdb 1mola.ApB.13.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cew.pdb 1cewi.ApB.13.1.2.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1dvc.pdb 1dvc.ApB.13.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1stf.pdb 1stfi.ApB.13.1.2.3.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1oac.pdb 1oaca.ApB.13.2.1.1.1.1.1 {  A 91 _ to A 185 _  } 
+/data/CASS1/pdb/coords/1std.pdb 1std.ApB.13.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1oun.pdb 1ouna.ApB.13.3.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1isk.pdb 1iska.ApB.13.3.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1udi.pdb 1udii.ApB.13.4.1.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1pcf.pdb 1pcfa.ApB.14.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1frt.pdb 1frta.ApB.15.1.1.1.1.1.1 {  A 1 _ to A 178 _  } 
+/data/CASS1/pdb/coords/1cd1.pdb 1cd1a.ApB.15.1.1.2.1.1.1 {  A 7 _ to A 185 _  } 
+/data/CASS1/pdb/coords/1seb.pdb 1seba.ApB.15.1.1.3.1.1.1 {  A 1 _ to A 81 _  } 
+/data/CASS1/pdb/coords/1hla.pdb 1hlaa.ApB.15.1.1.4.1.1.1 {  A 1 _ to A 181 _  } 
+/data/CASS1/pdb/coords/2aak.pdb 2aak.ApB.16.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ema.pdb 1ema.ApB.17.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2pil.pdb 2pil.ApB.18.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fkd.pdb 1fkd.ApB.19.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pbk.pdb 1pbk.ApB.19.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rot.pdb 1rot.ApB.19.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ctn.pdb 1ctn.ApB.19.3.1.1.1.1.1 {  _ 442 _ to _ 515 _  } 
+/data/CASS1/pdb/coords/1grj.pdb 1grj.ApB.19.4.1.1.1.1.1 {  _ 80 _ to _ 158 _  } 
+/data/CASS1/pdb/coords/1cns.pdb 1cnsa.ApB.2.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3lzt.pdb 3lzt.ApB.2.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1alc.pdb 1alc.ApB.2.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/4lzm.pdb 4lzm.ApB.2.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1am7.pdb 1am7a.ApB.2.1.4.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/153l.pdb 153l.ApB.2.1.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sly.pdb 1sly.ApB.2.1.6.1.1.1.1 {  _ 451 _ to _ 618 _  } 
+/data/CASS1/pdb/coords/1chk.pdb 1chka.ApB.2.1.7.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fro.pdb 1froa.ApB.20.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dhy.pdb 1dhy.ApB.20.1.3.1.1.1.1 {  _ 1 _ to _ 132 _  } 
+/data/CASS1/pdb/coords/1mka.pdb 1mkaa.ApB.21.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cse.pdb 1csei.ApB.22.1.1.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/2sni.pdb 2snii.ApB.22.1.1.2.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1tin.pdb 1tin.ApB.22.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1alo.pdb 1alo.ApB.23.1.1.1.1.1.1 {  _ 194 _ to _ 310 _  } 
+/data/CASS1/pdb/coords/1qap.pdb 1qapa.ApB.23.2.1.1.1.1.1 {  A 8 _ to A 129 _  } 
+/data/CASS1/pdb/coords/1tpt.pdb 1tpt.ApB.23.3.1.1.1.1.1 {  _ 336 _ to _ 440 _  } 
+/data/CASS1/pdb/coords/1a68.pdb 1a68.ApB.24.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1efu.pdb 1efub.ApB.25.1.1.1.1.1.1 {  B 1 _ to B 139 _  } 
+/data/CASS1/pdb/coords/1vew.pdb 1vewa.ApB.26.1.1.1.1.1.1 {  A 91 _ to A 205 _  } 
+/data/CASS1/pdb/coords/3sdp.pdb 3sdpa.ApB.26.1.1.2.1.1.1 {  A 84 _ to A 190 _  } 
+/data/CASS1/pdb/coords/1ar4.pdb 1ar4a.ApB.26.1.1.3.1.1.1 {  A 87 _ to A 201 _  } 
+/data/CASS1/pdb/coords/1ctf.pdb 1ctf.ApB.27.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2reb.pdb 2reb.ApB.28.1.1.1.1.1.1 {  _ 269 _ to _ 328 _  } 
+/data/CASS1/pdb/coords/1stu.pdb 1stu.ApB.29.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pkp.pdb 1pkp.ApB.29.1.2.1.1.1.1 {  _ 4 _ to _ 77 _  } 
+/data/CASS1/pdb/coords/1pda.pdb 1pda.ApB.29.2.1.1.1.1.1 {  _ 220 _ to _ 307 _  } 
+/data/CASS1/pdb/coords/2act.pdb 2act.ApB.3.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ppn.pdb 1ppn.ApB.3.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ppo.pdb 1ppo.ApB.3.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1yal.pdb 1yal.ApB.3.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1huc.pdb 1hucab.ApB.3.1.1.5.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1gec.pdb 1gece.ApB.3.1.1.6.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1gcb.pdb 1gcb.ApB.3.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aim.pdb 1aim.ApB.3.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cjl.pdb 1cjl.ApB.3.1.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mem.pdb 1mema.ApB.3.1.1.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fie.pdb 1fiea.ApB.3.1.2.1.1.1.1 {  A 191 _ to A 515 _  } 
+/data/CASS1/pdb/coords/1uch.pdb 1uch.ApB.3.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1avp.pdb 1avpa.ApB.3.1.4.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vih.pdb 1vih.ApB.30.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2fmr.pdb 2fmr.ApB.30.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gpm.pdb 1gpma.ApB.31.1.1.1.1.1.1 {  A 405 _ to A 525 _  } 
+/data/CASS1/pdb/coords/2one.pdb 2onea.ApB.32.1.1.1.1.1.1 {  A 1 _ to A 141 _  } 
+/data/CASS1/pdb/coords/1muc.pdb 1muca.ApB.32.1.1.2.1.1.1 {  A 4 _ to A 130 _  } 
+/data/CASS1/pdb/coords/2mnr.pdb 2mnr.ApB.32.1.1.3.1.1.1 {  _ 3 _ to _ 132 _  } 
+/data/CASS1/pdb/coords/2chr.pdb 2chr.ApB.32.1.1.4.1.1.1 {  _ 1 _ to _ 126 _  } 
+/data/CASS1/pdb/coords/1aon.pdb 1aonaa.ApB.33.1.1.1.1.1.1 {  A 137 _ to A 190 _  A 367 _ to A 409 _  } 
+/data/CASS1/pdb/coords/1fxd.pdb 1fxd.ApB.34.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/6fd1.pdb 6fd1.ApB.34.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1xer.pdb 1xer.ApB.34.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vjw.pdb 1vjw.ApB.34.1.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fxr.pdb 1fxra.ApB.34.1.4.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2fxb.pdb 2fxb.ApB.34.1.4.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/4at1.pdb 4at1b.ApB.34.2.1.1.1.1.1 {  B 8 _ to B 100 _  } 
+/data/CASS1/pdb/coords/1pca.pdb 1pca.ApB.34.3.1.1.1.1.1 {  _ 4a _ to _ 99a _  } 
+/data/CASS1/pdb/coords/1nsa.pdb 1nsa.ApB.34.3.1.2.1.1.1 {  _ 7a _ to _ 95a _  } 
+/data/CASS1/pdb/coords/1spb.pdb 1spbp.ApB.34.3.2.1.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1mli.pdb 1mli.ApB.34.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2pii.pdb 2pii.ApB.34.5.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nue.pdb 1nuea.ApB.34.6.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1up1.pdb 1up1.ApB.34.7.1.1.1.1.1 {  _ 7 _ to _ 92 _  } 
+/data/CASS1/pdb/coords/1fht.pdb 1fht.ApB.34.7.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sxl.pdb 1sxl.ApB.34.7.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pys.pdb 1pysb.ApB.34.8.1.1.1.1.1 {  B 682 _ to B 785 _  } 
+/data/CASS1/pdb/coords/2bop.pdb 2bopa.ApB.34.9.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vhi.pdb 1vhia.ApB.34.9.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3rub.pdb 3rubl.ApB.34.10.1.1.1.1.1 {  L 22 _ to L 147 _  } 
+/data/CASS1/pdb/coords/2acy.pdb 2acy.ApB.34.11.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ris.pdb 1ris.ApB.34.12.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dar.pdb 1dar.ApB.34.13.1.1.1.1.1 {  _ 600 _ to _ 689 _  } 
+/data/CASS1/pdb/coords/1afi.pdb 1afi.ApB.34.15.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2aw0.pdb 2aw0.ApB.34.15.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1psd.pdb 1psda.ApB.34.16.1.1.1.1.1 {  A 327 _ to A 410 _  } 
+/data/CASS1/pdb/coords/1cg2.pdb 1cg2a.ApB.34.17.1.1.1.1.1 {  A 214 _ to A 326 _  } 
+/data/CASS1/pdb/coords/1mla.pdb 1mla.ApB.34.19.1.1.1.1.1 {  _ 128 _ to _ 197 _  } 
+/data/CASS1/pdb/coords/1eay.pdb 1eayc.ApB.34.20.1.1.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1reg.pdb 1regx.ApB.34.21.1.1.1.1.1 {  CHAIN X } 
+/data/CASS1/pdb/coords/1ab8.pdb 1ab8a.ApB.34.22.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1azs.pdb 1azsa.ApB.34.22.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1azs.pdb 1azsb.ApB.34.22.1.3.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1vao.pdb 1vaoa.ApB.34.23.1.1.1.1.1 {  A 274 _ to A 560 _  } 
+/data/CASS1/pdb/coords/5aop.pdb 5aop.ApB.34.24.1.1.1.1.1 {  _ 81 _ to _ 145 _  } 
+/data/CASS1/pdb/coords/1lbu.pdb 1lbu.ApB.35.1.1.1.1.1.1 {  _ 84 _ to _ 213 _  } 
+/data/CASS1/pdb/coords/1vhh.pdb 1vhh.ApB.35.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tig.pdb 1tig.ApB.36.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1uae.pdb 1uae.ApB.36.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eps.pdb 1eps.ApB.36.2.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kpt.pdb 1kpta.ApB.37.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1kvd.pdb 1kvdab.ApB.37.1.2.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/3rub.pdb 3rubs.ApB.38.1.1.1.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/1dco.pdb 1dcoa.ApB.39.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1xxa.pdb 1xxaa.ApB.39.2.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/7rsa.pdb 7rsa.ApB.4.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1onc.pdb 1onc.ApB.4.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bsr.pdb 1bsra.ApB.4.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ang.pdb 1ang.ApB.4.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2chs.pdb 2chsa.ApB.40.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fsz.pdb 1fsz.ApB.40.2.1.1.1.1.1 {  _ 232 _ to _ 356 _  } 
+/data/CASS1/pdb/coords/1otf.pdb 1otfa.ApB.41.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1otg.pdb 1otga.ApB.41.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gif.pdb 1gifa.ApB.41.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gad.pdb 1gado.ApB.42.1.1.1.1.1.1 {  O 149 _ to O 312 _  } 
+/data/CASS1/pdb/coords/2dap.pdb 2dap.ApB.42.1.2.1.1.1.1 {  _ 119 _ to _ 268 _  } 
+/data/CASS1/pdb/coords/1dru.pdb 1dru.ApB.42.1.2.2.1.1.1 {  _ 131 _ to _ 240 _  } 
+/data/CASS1/pdb/coords/1ofg.pdb 1ofga.ApB.42.1.3.1.1.1.1 {  A 161 _ to A 322 _  } 
+/data/CASS1/pdb/coords/1dpg.pdb 1dpgaa.ApB.42.1.3.2.1.1.1 {  A 182 _ to A 412 _  A 427 _ to A 485 _  } 
+/data/CASS1/pdb/coords/1oac.pdb 1oaca.ApB.43.1.1.1.1.1.1 {  A 5 _ to A 90 _  } 
+/data/CASS1/pdb/coords/1bp1.pdb 1bp1.ApB.44.1.1.1.1.1.1 {  _ 1 _ to _ 217 _  } 
+/data/CASS1/pdb/coords/3sic.pdb 3sici.ApB.45.1.1.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1zdh.pdb 1zdha.ApB.46.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1una.pdb 1unaa.ApB.46.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1frs.pdb 1frsa.ApB.46.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1qbe.pdb 1qbea.ApB.46.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ap8.pdb 1ap8.ApB.47.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3grs.pdb 3grs.ApB.48.1.1.1.1.1.1 {  _ 364 _ to _ 478 _  } 
+/data/CASS1/pdb/coords/1fec.pdb 1feca.ApB.48.1.1.2.1.1.1 {  A 358 _ to A 485 _  } 
+/data/CASS1/pdb/coords/1npx.pdb 1npx.ApB.48.1.1.3.1.1.1 {  _ 322 _ to _ 447 _  } 
+/data/CASS1/pdb/coords/3lad.pdb 3lada.ApB.48.1.1.4.1.1.1 {  A 349 _ to A 472 _  } 
+/data/CASS1/pdb/coords/1fcd.pdb 1fcda.ApB.48.1.1.5.1.1.1 {  A 328 _ to A 401 _  } 
+/data/CASS1/pdb/coords/1srs.pdb 1srsa.ApB.49.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mnm.pdb 1mnma.ApB.49.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ag2.pdb 1ag2.ApB.5.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tbd.pdb 1tbd.ApB.50.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nox.pdb 1nox.ApB.51.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cum.pdb 1cuma.ApB.51.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1kuh.pdb 1kuh.ApB.52.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ezm.pdb 1ezm.ApB.52.1.2.1.1.1.1 {  _ 1 _ to _ 153 _  } 
+/data/CASS1/pdb/coords/8tln.pdb 8tlne.ApB.52.1.2.2.1.1.1 {  E 1 _ to E 155 _  } 
+/data/CASS1/pdb/coords/1npc.pdb 1npc.ApB.52.1.2.3.1.1.1 {  _ 1 _ to _ 156 _  } 
+/data/CASS1/pdb/coords/1lml.pdb 1lml.ApB.52.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ast.pdb 1ast.ApB.52.1.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1iag.pdb 1iag.ApB.52.1.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kap.pdb 1kapp.ApB.52.1.6.1.1.1.1 {  P 1 _ to P 239 _  } 
+/data/CASS1/pdb/coords/1hfc.pdb 1hfc.ApB.52.1.7.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1jap.pdb 1japa.ApB.52.1.7.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1slm.pdb 1slm.ApB.52.1.7.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mmq.pdb 1mmq.ApB.52.1.7.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qba.pdb 1qba.ApB.52.2.1.1.1.1.1 {  _ 201 _ to _ 337 _  } 
+/data/CASS1/pdb/coords/1lkk.pdb 1lkka.ApB.53.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1sha.pdb 1shaa.ApB.53.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fmk.pdb 1fmk.ApB.53.1.1.3.1.1.1 {  _ 146 _ to _ 248 _  } 
+/data/CASS1/pdb/coords/1aot.pdb 1aotf.ApB.53.1.1.4.1.1.1 {  CHAIN F } 
+/data/CASS1/pdb/coords/1aya.pdb 1ayaa.ApB.53.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tze.pdb 1tzee.ApB.53.1.1.6.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1ad5.pdb 1ad5a.ApB.53.1.1.7.1.1.1 {  A 146 _ to A 248 _  } 
+/data/CASS1/pdb/coords/1mil.pdb 1mil.ApB.53.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2pna.pdb 2pna.ApB.53.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ab2.pdb 1ab2.ApB.53.1.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1csz.pdb 1csza.ApB.53.1.1.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2pld.pdb 2plda.ApB.53.1.1.12.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1blj.pdb 1blj.ApB.53.1.1.13.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2abl.pdb 2abl.ApB.53.1.1.14.1.1.1 {  _ 140 _ to _ 237 _  } 
+/data/CASS1/pdb/coords/1sph.pdb 1spha.ApB.54.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1iba.pdb 1iba.ApB.55.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1af5.pdb 1af5.ApB.55.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vde.pdb 1vdea.ApB.55.2.2.1.1.1.1 {  A 181 _ to A 298 _  } 
+/data/CASS1/pdb/coords/1gtp.pdb 1gtpa.ApB.56.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gtq.pdb 1gtqa.ApB.56.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1puc.pdb 1puc.ApB.57.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cks.pdb 1cksa.ApB.57.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dks.pdb 1dksa.ApB.57.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1avv.pdb 1avv.ApB.59.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2kau.pdb 2kaua.ApB.6.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cby.pdb 1cby.ApB.60.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sry.pdb 1srya.ApB.61.1.1.1.1.1.1 {  A 111 _ to A 421 _  } 
+/data/CASS1/pdb/coords/1lyl.pdb 1lyla.ApB.61.1.1.2.1.1.1 {  A 161 _ to A 502 _  } 
+/data/CASS1/pdb/coords/1htt.pdb 1htta.ApB.61.1.1.3.1.1.1 {  A 4 _ to A 325 _  } 
+/data/CASS1/pdb/coords/1ati.pdb 1atia.ApB.61.1.1.4.1.1.1 {  A 1 _ to A 394 _  } 
+/data/CASS1/pdb/coords/1asz.pdb 1asza.ApB.61.1.1.5.1.1.1 {  A 205 _ to A 557 _  } 
+/data/CASS1/pdb/coords/1pys.pdb 1pysa.ApB.61.1.1.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pys.pdb 1pysb.ApB.61.1.1.7.1.1.1 {  B 475 _ to B 681 _  } 
+/data/CASS1/pdb/coords/1bia.pdb 1bia.ApB.61.1.2.1.1.1.1 {  _ 64 _ to _ 270 _  } 
+/data/CASS1/pdb/coords/2vik.pdb 2vik.ApB.62.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1svq.pdb 1svq.ApB.62.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cfy.pdb 1cfya.ApB.62.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ahq.pdb 1ahq.ApB.62.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ak6.pdb 1ak6.ApB.62.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pne.pdb 1pne.ApB.63.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2phy.pdb 2phy.ApB.63.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cfe.pdb 1cfe.ApB.64.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a6j.pdb 1a6ja.ApB.65.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mut.pdb 1mut.ApB.66.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tlc.pdb 1tlca.ApB.67.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1lba.pdb 1lba.ApB.68.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3il8.pdb 3il8.ApB.7.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1plf.pdb 1plfa.ApB.7.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mgs.pdb 1mgsa.ApB.7.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rod.pdb 1roda.ApB.7.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hum.pdb 1huma.ApB.7.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rto.pdb 1rtoa.ApB.7.1.1.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dom.pdb 1doma.ApB.7.1.1.7.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ncv.pdb 1ncva.ApB.7.1.1.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tvx.pdb 1tvxa.ApB.7.1.1.9.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1sdf.pdb 1sdf.ApB.7.1.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mi2.pdb 1mi2a.ApB.7.1.1.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1sso.pdb 1sso.ApB.7.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ap0.pdb 1ap0.ApB.7.2.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cyo.pdb 1cyo.ApB.70.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ltd.pdb 1ltda.ApB.70.1.1.2.1.1.1 {  A 10 _ to A 97 _  } 
+/data/CASS1/pdb/coords/1sox.pdb 1soxa.ApB.70.1.1.3.1.1.1 {  A 3 _ to A 93 _  } 
+/data/CASS1/pdb/coords/1vcc.pdb 1vcc.ApB.71.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1yua.pdb 1yua.ApB.71.1.2.1.1.1.1 {  _ 1 _ to _ 65 _  } 
+/data/CASS1/pdb/coords/1ah6.pdb 1ah6.ApB.72.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aj6.pdb 1aj6.ApB.72.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ord.pdb 1orda.ApB.74.1.1.1.1.1.1 {  A 570 _ to A 730 _  } 
+/data/CASS1/pdb/coords/1smn.pdb 1smna.ApB.75.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1jdw.pdb 1jdw.ApB.76.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1chm.pdb 1chma.ApB.77.1.1.1.1.1.1 {  A 157 _ to A 402 _  } 
+/data/CASS1/pdb/coords/1mat.pdb 1mat.ApB.77.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lgr.pdb 1lgr.ApB.78.1.1.1.1.1.1 {  _ 101 _ to _ 468 _  } 
+/data/CASS1/pdb/coords/1crk.pdb 1crka.ApB.78.1.2.1.1.1.1 {  A 99 _ to A 380 _  } 
+/data/CASS1/pdb/coords/1cdw.pdb 1cdwa.ApB.79.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mpg.pdb 1mpga.ApB.79.1.2.1.1.1.1 {  A 1 _ to A 99 _  } 
+/data/CASS1/pdb/coords/3pmg.pdb 3pmga.ApB.79.2.1.1.1.1.1 {  A 421 _ to A 561 _  } 
+/data/CASS1/pdb/coords/1bv1.pdb 1bv1.ApB.79.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pmd.pdb 1pmd.ApB.8.1.1.1.1.1.1 {  _ 620 _ to _ 692 _  } 
+/data/CASS1/pdb/coords/1mxa.pdb 1mxa.ApB.80.1.1.1.1.1.1 {  _ 1 _ to _ 101 _  } 
+/data/CASS1/pdb/coords/2pol.pdb 2pola.ApB.81.1.1.1.1.1.1 {  A 1 _ to A 122 _  } 
+/data/CASS1/pdb/coords/1plq.pdb 1plq.ApB.81.1.2.1.1.1.1 {  _ 1 _ to _ 126 _  } 
+/data/CASS1/pdb/coords/1alo.pdb 1alo.ApB.82.1.1.1.1.1.1 {  _ 311 _ to _ 442 _  } 
+/data/CASS1/pdb/coords/5aop.pdb 5aop.ApB.83.1.1.1.1.1.1 {  _ 149 _ to _ 345 _  } 
+/data/CASS1/pdb/coords/1hqi.pdb 1hqi.ApB.84.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pys.pdb 1pysb.ApB.85.1.1.1.1.1.1 {  B 191 _ to B 399 _  } 
+/data/CASS1/pdb/coords/1sei.pdb 1seia.ApB.86.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1div.pdb 1div.ApB.88.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gsa.pdb 1gsa.ApB.89.1.1.1.1.1.1 {  _ 123 _ to _ 314 _  } 
+/data/CASS1/pdb/coords/2dln.pdb 2dln.ApB.89.1.1.2.1.1.1 {  _ 97 _ to _ 306 _  } 
+/data/CASS1/pdb/coords/1bnc.pdb 1bnca.ApB.89.1.2.1.1.1.1 {  A 115 _ to A 330 _  } 
+/data/CASS1/pdb/coords/1jdb.pdb 1jdbb.ApB.89.1.2.2.1.1.1 {  B 128 _ to B 402 _  } 
+/data/CASS1/pdb/coords/1auv.pdb 1auva.ApB.89.1.3.1.1.1.1 {  A 214 _ to A 417 _  } 
+/data/CASS1/pdb/coords/1scu.pdb 1scub.ApB.89.1.4.1.1.1.1 {  B 1 _ to B 244 _  } 
+/data/CASS1/pdb/coords/1dik.pdb 1dik.ApB.89.1.5.1.1.1.1 {  _ 2 _ to _ 376 _  } 
+/data/CASS1/pdb/coords/1a0i.pdb 1a0i.ApB.89.2.1.1.1.1.1 {  _ 2 _ to _ 240 _  } 
+/data/CASS1/pdb/coords/1ckm.pdb 1ckma.ApB.89.2.2.1.1.1.1 {  A 11 _ to A 238 _  } 
+/data/CASS1/pdb/coords/4rhn.pdb 4rhn.ApB.9.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fit.pdb 1fit.ApB.9.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kpa.pdb 1kpaa.ApB.9.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hxp.pdb 1hxpa.ApB.9.1.2.1.1.1.1 {  A 2 _ to A 177 _  } 
+/data/CASS1/pdb/coords/1vao.pdb 1vaoa.ApB.90.1.1.1.1.1.1 {  A 6 _ to A 273 _  } 
+/data/CASS1/pdb/coords/1mbb.pdb 1mbb.ApB.90.1.2.1.1.1.1 {  _ 3 _ to _ 200 _  } 
+/data/CASS1/pdb/coords/1mbb.pdb 1mbb.ApB.91.1.1.1.1.1.1 {  _ 201 _ to _ 342 _  } 
+/data/CASS1/pdb/coords/1ahj.pdb 1ahja.ApB.92.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ako.pdb 1ako.ApB.93.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2dnj.pdb 2dnja.ApB.93.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aor.pdb 1aora.ApB.94.1.1.1.1.1.1 {  A 1 _ to A 210 _  } 
+/data/CASS1/pdb/coords/1gdo.pdb 1gdoa.ApB.95.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ao0.pdb 1ao0a.ApB.95.1.1.2.1.1.1 {  A 1 _ to A 234 _  } 
+/data/CASS1/pdb/coords/1pnk.pdb 1pnkab.ApB.95.1.2.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1pma.pdb 1pmab.ApB.95.1.3.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1pma.pdb 1pmaa.ApB.95.1.3.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ned.pdb 1neda.ApB.95.1.3.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1apy.pdb 1apyab.ApB.95.1.4.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1pya.pdb 1pyaab.ApB.96.1.1.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1bme.pdb 1bme.ApB.97.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a6q.pdb 1a6q.ApB.98.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/4kbp.pdb 4kbpa.ApB.99.1.1.1.1.1.1 {  A 121 _ to A 432 _  } 
+/data/CASS1/pdb/coords/1fjm.pdb 1fjma.ApB.99.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tco.pdb 1tcoa.ApB.99.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1neu.pdb 1neu.B.1.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1akj.pdb 1akjd.B.1.1.1.2.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/3cd4.pdb 3cd4.B.1.1.1.3.1.1.1 {  _ 1 _ to _ 97 _  } 
+/data/CASS1/pdb/coords/1hnf.pdb 1hnf.B.1.1.1.4.1.1.1 {  _ 4 _ to _ 104 _  } 
+/data/CASS1/pdb/coords/1igt.pdb 1igta.B.1.1.1.5.1.1.1 {  A 1 _ to A 108 _  } 
+/data/CASS1/pdb/coords/1tcr.pdb 1tcra.B.1.1.1.6.1.1.1 {  A 1 _ to A 117 _  } 
+/data/CASS1/pdb/coords/1ah1.pdb 1ah1.B.1.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1frt.pdb 1frta.B.1.1.2.1.1.1.1 {  A 179 _ to A 269 _  } 
+/data/CASS1/pdb/coords/1bmg.pdb 1bmg.B.1.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1igt.pdb 1igta.B.1.1.2.3.1.1.1 {  A 109 _ to A 214 _  } 
+/data/CASS1/pdb/coords/1tcr.pdb 1tcra.B.1.1.2.4.1.1.1 {  A 118 _ to A 213 _  } 
+/data/CASS1/pdb/coords/1cd1.pdb 1cd1a.B.1.1.2.5.1.1.1 {  A 186 _ to A 279 _  } 
+/data/CASS1/pdb/coords/1seb.pdb 1seba.B.1.1.2.6.1.1.1 {  A 82 _ to A 181 _  } 
+/data/CASS1/pdb/coords/1vca.pdb 1vcaa.B.1.1.3.1.1.1.1 {  A 91 _ to A 199 _  } 
+/data/CASS1/pdb/coords/1iam.pdb 1iam.B.1.1.3.2.1.1.1 {  _ 83 _ to _ 185 _  } 
+/data/CASS1/pdb/coords/1zxq.pdb 1zxq.B.1.1.3.3.1.1.1 {  _ 87 _ to _ 192 _  } 
+/data/CASS1/pdb/coords/3cd4.pdb 3cd4.B.1.1.3.4.1.1.1 {  _ 98 _ to _ 178 _  } 
+/data/CASS1/pdb/coords/1hnf.pdb 1hnf.B.1.1.3.5.1.1.1 {  _ 105 _ to _ 182 _  } 
+/data/CASS1/pdb/coords/1vca.pdb 1vcaa.B.1.1.4.1.1.1.1 {  A 1 _ to A 90 _  } 
+/data/CASS1/pdb/coords/1iam.pdb 1iam.B.1.1.4.2.1.1.1 {  _ 1 _ to _ 82 _  } 
+/data/CASS1/pdb/coords/1zxq.pdb 1zxq.B.1.1.4.3.1.1.1 {  _ 1 _ to _ 86 _  } 
+/data/CASS1/pdb/coords/1tlk.pdb 1tlk.B.1.1.4.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ncm.pdb 2ncm.B.1.1.4.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nct.pdb 1nct.B.1.1.4.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1koa.pdb 1koa.B.1.1.4.7.1.1.1 {  _ 6265 _ to _ 6361 _  } 
+/data/CASS1/pdb/coords/1itb.pdb 1itbb.B.1.1.4.8.1.1.1 {  B 6 _ to B 101 _  } 
+/data/CASS1/pdb/coords/1gof.pdb 1gof.B.1.1.5.1.1.1.1 {  _ 538 _ to _ 639 _  } 
+/data/CASS1/pdb/coords/1qba.pdb 1qba.B.1.1.5.2.1.1.1 {  _ 781 _ to _ 885 _  } 
+/data/CASS1/pdb/coords/1svb.pdb 1svb.B.1.1.5.3.1.1.1 {  _ 304 _ to _ 395 _  } 
+/data/CASS1/pdb/coords/1cdg.pdb 1cdg.B.1.1.5.4.1.1.1 {  _ 496 _ to _ 581 _  } 
+/data/CASS1/pdb/coords/1lla.pdb 1lla.B.1.1.5.5.1.1.1 {  _ 380 _ to _ 628 _  } 
+/data/CASS1/pdb/coords/1clc.pdb 1clc.B.1.1.5.6.1.1.1 {  _ 35 _ to _ 134 _  } 
+/data/CASS1/pdb/coords/1ctn.pdb 1ctn.B.1.1.5.7.1.1.1 {  _ 24 _ to _ 132 _  } 
+/data/CASS1/pdb/coords/1fie.pdb 1fiea.B.1.1.5.8.1.1.1 {  A 9 _ to A 190 _  } 
+/data/CASS1/pdb/coords/1eut.pdb 1eut.B.1.1.5.9.1.1.1 {  _ 403 _ to _ 505 _  } 
+/data/CASS1/pdb/coords/1ksr.pdb 1ksr.B.1.1.5.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rho.pdb 1rhoa.B.1.1.5.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a02.pdb 1a02n.B.1.1.5.12.1.1.1 {  N 577 _ to N 678 _  } 
+/data/CASS1/pdb/coords/1svc.pdb 1svcp.B.1.1.5.13.1.1.1 {  P 251 _ to P 353 _  } 
+/data/CASS1/pdb/coords/1ahk.pdb 1ahk.B.1.1.5.14.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sox.pdb 1soxa.B.1.1.5.15.1.1.1 {  A 344 _ to A 466 _  } 
+/data/CASS1/pdb/coords/2hft.pdb 2hft.B.1.2.1.1.1.1.1 {  _ 1 _ to _ 106 _  } 
+/data/CASS1/pdb/coords/1fna.pdb 1fna.B.1.2.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ten.pdb 1ten.B.1.2.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cfb.pdb 1cfb.B.1.2.1.4.1.1.1 {  _ 610 _ to _ 709 _  } 
+/data/CASS1/pdb/coords/3hhr.pdb 3hhrb.B.1.2.1.5.1.1.1 {  B 32 _ to B 130 _  } 
+/data/CASS1/pdb/coords/1ebp.pdb 1ebpa.B.1.2.1.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cto.pdb 1cto.B.1.2.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1jrh.pdb 1jrhi.B.1.2.1.9.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1bgl.pdb 1bgla.B.1.3.1.1.1.1.1 {  A 220 _ to A 333 _  } 
+/data/CASS1/pdb/coords/1bhg.pdb 1bhga.B.1.3.1.2.1.1.1 {  A 226 _ to A 328 _  } 
+/data/CASS1/pdb/coords/1fie.pdb 1fiea.B.1.4.1.1.1.1.1 {  A 516 _ to A 627 _  } 
+/data/CASS1/pdb/coords/1suh.pdb 1suh.B.1.5.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1edh.pdb 1edha.B.1.5.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2mcm.pdb 2mcm.B.1.6.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1noa.pdb 1noa.B.1.6.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1acx.pdb 1acx.B.1.6.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1akp.pdb 1akp.B.1.6.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sxc.pdb 1sxca.B.1.7.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3dpa.pdb 3dpa.B.1.8.1.1.1.1.1 {  _ 1 _ to _ 119 _  } 
+/data/CASS1/pdb/coords/1msp.pdb 1mspa.B.1.8.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/4kbp.pdb 4kbpa.B.1.9.1.1.1.1.1 {  A 9 _ to A 120 _  } 
+/data/CASS1/pdb/coords/1ajw.pdb 1ajw.B.1.10.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1yge.pdb 1yge.B.10.1.1.1.1.1.1 {  _ 1 _ to _ 149 _  } 
+/data/CASS1/pdb/coords/1hpl.pdb 1hpla.B.10.2.1.1.1.1.1 {  A 337 _ to A 449 _  } 
+/data/CASS1/pdb/coords/1pgs.pdb 1pgs.B.11.1.1.1.1.1.1 {  _ 4 _ to _ 140 _  } 
+/data/CASS1/pdb/coords/1ecz.pdb 1ecza.B.12.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gof.pdb 1gof.B.13.1.1.1.1.1.1 {  _ 1 _ to _ 150 _  } 
+/data/CASS1/pdb/coords/1eut.pdb 1eut.B.13.1.1.2.1.1.1 {  _ 506 _ to _ 647 _  } 
+/data/CASS1/pdb/coords/1dlc.pdb 1dlc.B.13.1.2.1.1.1.1 {  _ 500 _ to _ 644 _  } 
+/data/CASS1/pdb/coords/1bgl.pdb 1bgla.B.13.1.3.1.1.1.1 {  A 3 _ to A 219 _  } 
+/data/CASS1/pdb/coords/1bhg.pdb 1bhga.B.13.1.3.2.1.1.1 {  A 22 _ to A 225 _  } 
+/data/CASS1/pdb/coords/1ulo.pdb 1ulo.B.13.1.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bvp.pdb 1bvp1.B.14.1.1.1.1.1.1 {  1 121 _ to 1 254 _  } 
+/data/CASS1/pdb/coords/1hgi.pdb 1hgia.B.14.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aol.pdb 1aol.B.15.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1knb.pdb 1knb.B.16.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aly.pdb 1aly.B.17.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tnr.pdb 1tnra.B.17.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1sfp.pdb 1sfp.B.18.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1spp.pdb 1sppa.B.18.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1spp.pdb 1sppb.B.18.1.1.3.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1aun.pdb 1aun.B.19.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1thw.pdb 1thw.B.19.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ddt.pdb 1ddt.B.2.1.1.1.1.1.1 {  _ 381 _ to _ 535 _  } 
+/data/CASS1/pdb/coords/1exg.pdb 1exg.B.2.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nbc.pdb 1nbca.B.2.2.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tf4.pdb 1tf4a.B.2.2.2.2.1.1.1 {  A 461 _ to A 605 _  } 
+/data/CASS1/pdb/coords/1anu.pdb 1anu.B.2.2.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aoh.pdb 1aoha.B.2.2.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1qba.pdb 1qba.B.2.2.3.1.1.1.1 {  _ 28 _ to _ 200 _  } 
+/data/CASS1/pdb/coords/1amx.pdb 1amx.B.2.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tup.pdb 1tupa.B.2.4.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1nfa.pdb 1nfa.B.2.4.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1svc.pdb 1svcp.B.2.4.1.3.1.1.1 {  P 43 _ to P 250 _  } 
+/data/CASS1/pdb/coords/1xbr.pdb 1xbra.B.2.4.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hcz.pdb 1hcz.B.2.5.1.1.1.1.1 {  _ 1 _ to _ 167 _  _ 231 _ to _ 250 _  } 
+/data/CASS1/pdb/coords/1ygs.pdb 1ygs.B.20.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nls.pdb 1nls.B.21.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ltn.pdb 2ltnab.B.21.1.1.2.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1fat.pdb 1fata.B.21.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gbg.pdb 1gbg.B.21.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1slt.pdb 1slta.B.21.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1lcl.pdb 1lcl.B.21.1.3.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a3k.pdb 1a3k.B.21.1.3.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sac.pdb 1saca.B.21.1.4.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gnh.pdb 1gnha.B.21.1.4.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1af9.pdb 1af9.B.21.1.5.1.1.1.1 {  _ 875 _ to _ 1110 _  } 
+/data/CASS1/pdb/coords/1kit.pdb 1kit.B.21.1.7.1.1.1.1 {  _ 25 _ to _ 216 _  } 
+/data/CASS1/pdb/coords/1cel.pdb 1cela.B.21.1.8.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1eg1.pdb 1eg1a.B.21.1.8.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1xnb.pdb 1xnb.B.21.1.9.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bgl.pdb 1bgla.B.22.1.1.1.1.1.1 {  A 731 _ to A 1023 _  } 
+/data/CASS1/pdb/coords/1oac.pdb 1oaca.B.22.2.1.1.1.1.1 {  A 301 _ to A 724 _  } 
+/data/CASS1/pdb/coords/1rie.pdb 1rie.B.23.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rfs.pdb 1rfs.B.23.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bia.pdb 1bia.B.24.1.1.1.1.1.1 {  _ 271 _ to _ 317 _  } 
+/data/CASS1/pdb/coords/1ay9.pdb 1ay9a.B.24.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2dtr.pdb 2dtr.B.24.1.3.1.1.1.1 {  _ 148 _ to _ 226 _  } 
+/data/CASS1/pdb/coords/1cka.pdb 1ckaa.B.24.2.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1shf.pdb 1shfa.B.24.2.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1neb.pdb 1neb.B.24.2.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1abo.pdb 1aboa.B.24.2.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pht.pdb 1pht.B.24.2.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1shg.pdb 1shg.B.24.2.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1awj.pdb 1awj.B.24.2.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ad5.pdb 1ad5a.B.24.2.1.8.1.1.1 {  A 82 _ to A 145 _  } 
+/data/CASS1/pdb/coords/1fmk.pdb 1fmk.B.24.2.1.9.1.1.1 {  _ 82 _ to _ 145 _  } 
+/data/CASS1/pdb/coords/1awx.pdb 1awx.B.24.2.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gri.pdb 1gria.B.24.2.1.11.1.1.1 {  A 1 _ to A 63 _  } 
+/data/CASS1/pdb/coords/1hsq.pdb 1hsq.B.24.2.1.12.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1srl.pdb 1srl.B.24.2.1.13.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lck.pdb 1lcka.B.24.2.1.14.1.1.1 {  A 63 _ to A 116 _  } 
+/data/CASS1/pdb/coords/1ycs.pdb 1ycsb.B.24.2.1.15.1.1.1 {  B 457 _ to B 519 _  } 
+/data/CASS1/pdb/coords/1bb9.pdb 1bb9.B.24.2.1.16.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aoj.pdb 1aoja.B.24.2.1.17.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2mys.pdb 2mysa.B.24.3.1.1.1.1.1 {  A 34 _ to A 79 _  } 
+/data/CASS1/pdb/coords/1vie.pdb 1vie.B.24.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1psf.pdb 1psf.B.24.5.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ahj.pdb 1ahjb.B.24.6.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/3vub.pdb 3vub.B.24.7.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ihv.pdb 1ihva.B.24.8.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aon.pdb 1aono.B.25.1.1.1.1.1.1 {  CHAIN O } 
+/data/CASS1/pdb/coords/3bto.pdb 3btoaa.B.25.1.2.1.1.1.1 {  A 1 _ to A 174 _  A 325 _ to A 374 _  } 
+/data/CASS1/pdb/coords/1kev.pdb 1kevaa.B.25.1.2.2.1.1.1 {  A 1 _ to A 150 _  A 315 _ to A 351 _  } 
+/data/CASS1/pdb/coords/1qor.pdb 1qoraa.B.25.1.2.3.1.1.1 {  A 2 _ to A 135 _  A 266 _ to A 327 _  } 
+/data/CASS1/pdb/coords/1auu.pdb 1auua.B.25.2.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pdr.pdb 1pdr.B.26.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kwa.pdb 1kwaa.B.26.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1g3p.pdb 1g3p.B.27.1.1.1.1.1.1 {  _ 1 _ to _ 65 _  _ 91 _ to _ 117 _  } 
+/data/CASS1/pdb/coords/1whi.pdb 1whi.B.28.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1snc.pdb 1snc.B.29.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lts.pdb 1ltsd.B.29.2.1.1.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/2chb.pdb 2chbd.B.29.2.1.2.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1bov.pdb 1bova.B.29.2.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1prt.pdb 1prtb.B.29.2.1.4.1.1.1 {  B 88 _ to B 199 _  } 
+/data/CASS1/pdb/coords/1prt.pdb 1prtd.B.29.2.1.5.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1prt.pdb 1prtf.B.29.2.1.6.1.1.1 {  CHAIN F } 
+/data/CASS1/pdb/coords/1esf.pdb 1esfa.B.29.2.2.1.1.1.1 {  A 1 _ to A 120 _  } 
+/data/CASS1/pdb/coords/1ste.pdb 1ste.B.29.2.2.2.1.1.1 {  _ 1 _ to _ 120 _  } 
+/data/CASS1/pdb/coords/2qil.pdb 2qila.B.29.2.2.3.1.1.1 {  A 1 _ to A 93 _  } 
+/data/CASS1/pdb/coords/1se4.pdb 1se4.B.29.2.2.4.1.1.1 {  _ 1 _ to _ 121 _  } 
+/data/CASS1/pdb/coords/1jck.pdb 1jckb.B.29.2.2.5.1.1.1 {  B 1 _ to B 121 _  } 
+/data/CASS1/pdb/coords/1an8.pdb 1an8.B.29.2.2.6.1.1.1 {  _ 3 _ to _ 95 _  } 
+/data/CASS1/pdb/coords/1asz.pdb 1asza.B.29.4.1.1.1.1.1 {  A 68 _ to A 204 _  } 
+/data/CASS1/pdb/coords/1krs.pdb 1krs.B.29.4.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cuk.pdb 1cuk.B.29.4.2.1.1.1.1 {  _ 1 _ to _ 64 _  } 
+/data/CASS1/pdb/coords/3ull.pdb 3ulla.B.29.4.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1jmc.pdb 1jmca.B.29.4.3.2.1.1.1 {  A 183 _ to A 298 _  } 
+/data/CASS1/pdb/coords/1pys.pdb 1pysb.B.29.4.4.1.1.1.1 {  B 39 _ to B 151 _  } 
+/data/CASS1/pdb/coords/1mjc.pdb 1mjc.B.29.4.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sro.pdb 1sro.B.29.4.5.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ah9.pdb 1ah9.B.29.4.5.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a62.pdb 1a62.B.29.4.5.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ckm.pdb 1ckma.B.29.4.6.1.1.1.1 {  A 239 _ to A 327 _  } 
+/data/CASS1/pdb/coords/1a0i.pdb 1a0i.B.29.4.6.2.1.1.1 {  _ 241 _ to _ 315 _  } 
+/data/CASS1/pdb/coords/1rip.pdb 1rip.B.29.4.7.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gvp.pdb 1gvp.B.29.4.8.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gpc.pdb 1gpc.B.29.4.8.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ypp.pdb 1yppa.B.29.5.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cdg.pdb 1cdg.B.3.1.1.1.1.1.1 {  _ 582 _ to _ 686 _  } 
+/data/CASS1/pdb/coords/1kum.pdb 1kum.B.3.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tta.pdb 1ttaa.B.3.2.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2pcd.pdb 2pcda.B.3.3.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2pcd.pdb 2pcdm.B.3.3.1.2.1.1.1 {  CHAIN M } 
+/data/CASS1/pdb/coords/1prc.pdb 1prch.B.30.1.1.1.1.1.1 {  H 37 _ to H 258 _  } 
+/data/CASS1/pdb/coords/4fgf.pdb 4fgf.B.31.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bar.pdb 1bara.B.31.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1i1b.pdb 1i1b.B.31.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ilr.pdb 1ilr1.B.31.1.2.2.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/2ila.pdb 2ila.B.31.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2aai.pdb 2aaib.B.31.2.1.1.1.1.1 {  B 1 _ to B 135 _  } 
+/data/CASS1/pdb/coords/1jlx.pdb 1jlxa.B.31.3.1.1.1.1.1 {  A 1 _ to A 153 _  } 
+/data/CASS1/pdb/coords/1wba.pdb 1wba.B.31.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tie.pdb 1tie.B.31.4.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2wbc.pdb 2wbc.B.31.4.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ba7.pdb 1ba7a.B.31.4.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1af9.pdb 1af9.B.31.4.2.1.1.1.1 {  _ 1111 _ to _ 1315 _  } 
+/data/CASS1/pdb/coords/1hce.pdb 1hce.B.31.5.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fnb.pdb 1fnb.B.32.1.1.1.1.1.1 {  _ 19 _ to _ 154 _  } 
+/data/CASS1/pdb/coords/2cnd.pdb 2cnd.B.32.1.1.2.1.1.1 {  _ 11 _ to _ 124 _  } 
+/data/CASS1/pdb/coords/1ndh.pdb 1ndh.B.32.1.1.3.1.1.1 {  _ 3 _ to _ 125 _  } 
+/data/CASS1/pdb/coords/2pia.pdb 2pia.B.32.1.2.1.1.1.1 {  _ 1 _ to _ 103 _  } 
+/data/CASS1/pdb/coords/1amo.pdb 1amoa.B.32.1.4.1.1.1.1 {  A 243 _ to A 518 _  } 
+/data/CASS1/pdb/coords/1axj.pdb 1axj.B.32.1.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fui.pdb 1fuia.B.32.2.1.1.1.1.1 {  A 356 _ to A 591 _  } 
+/data/CASS1/pdb/coords/1efu.pdb 1efua.B.32.3.1.1.1.1.1 {  A 205 _ to A 296 _  } 
+/data/CASS1/pdb/coords/1dar.pdb 1dar.B.32.3.1.2.1.1.1 {  _ 283 _ to _ 400 _  } 
+/data/CASS1/pdb/coords/1efu.pdb 1efua.B.33.1.1.1.1.1.1 {  A 297 _ to A 393 _  } 
+/data/CASS1/pdb/coords/1fmt.pdb 1fmta.B.34.1.1.1.1.1.1 {  A 207 _ to A 314 _  } 
+/data/CASS1/pdb/coords/1arb.pdb 1arb.B.35.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tal.pdb 1tal.B.35.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2sga.pdb 2sga.B.35.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hpg.pdb 1hpga.B.35.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1sgt.pdb 1sgt.B.35.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2sfa.pdb 2sfa.B.35.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3sgb.pdb 3sgbe.B.35.1.1.7.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1agj.pdb 1agja.B.35.1.1.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/5ptp.pdb 5ptp.B.35.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ab9.pdb 1ab9abc.B.35.1.2.2.1.1.1 {  CHAIN A CHAIN B CHAIN C } 
+/data/CASS1/pdb/coords/1azz.pdb 1azza.B.35.1.2.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2hlc.pdb 2hlca.B.35.1.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tom.pdb 1tomlh.B.35.1.2.5.1.1.1 {  CHAIN L CHAIN H } 
+/data/CASS1/pdb/coords/1fon.pdb 1fona.B.35.1.2.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ppf.pdb 1ppfe.B.35.1.2.7.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1ae5.pdb 1ae5.B.35.1.2.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cgh.pdb 1cgha.B.35.1.2.9.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dan.pdb 1danh.B.35.1.2.10.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/3rp2.pdb 3rp2a.B.35.1.2.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2pka.pdb 2pkaab.B.35.1.2.12.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1ton.pdb 1ton.B.35.1.2.13.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sgf.pdb 1sgfa.B.35.1.2.14.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dsu.pdb 1dsua.B.35.1.2.15.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rtf.pdb 1rtfab.B.35.1.2.16.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1ao5.pdb 1ao5a.B.35.1.2.17.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hcg.pdb 1hcga.B.35.1.2.18.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fxy.pdb 1fxya.B.35.1.2.19.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aut.pdb 1autc.B.35.1.2.20.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1fuj.pdb 1fuja.B.35.1.2.21.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pfx.pdb 1pfxc.B.35.1.2.22.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1lmw.pdb 1lmwab.B.35.1.2.23.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1kxf.pdb 1kxf.B.35.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ns3.pdb 1ns3ac.B.35.1.3.2.1.1.1 {  CHAIN A CHAIN C } 
+/data/CASS1/pdb/coords/1bco.pdb 1bco.B.36.1.1.1.1.1.1 {  _ 481 _ to _ 560 _  } 
+/data/CASS1/pdb/coords/1bmf.pdb 1bmfa.B.37.1.1.1.1.1.1 {  A 24 _ to A 94 _  } 
+/data/CASS1/pdb/coords/1sft.pdb 1sftaa.B.37.2.1.1.1.1.1 {  A 2 _ to A 11 _  A 245 _ to A 383 _  } 
+/data/CASS1/pdb/coords/1dif.pdb 1difa.B.38.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3fiv.pdb 3fiva.B.38.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ida.pdb 1idaa.B.38.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2rsp.pdb 2rspa.B.38.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mvp.pdb 1mvpa.B.38.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1siv.pdb 1siva.B.38.1.1.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fmb.pdb 1fmb.B.38.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1epn.pdb 1epne.B.38.1.2.1.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1ppm.pdb 1ppme.B.38.1.2.2.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/3psg.pdb 3psg.B.38.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mpp.pdb 1mpp.B.38.1.2.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lyb.pdb 1lybab.B.38.1.2.5.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/4cms.pdb 4cms.B.38.1.2.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sme.pdb 1smea.B.38.1.2.7.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2eng.pdb 2eng.B.39.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bw3.pdb 1bw3.B.39.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aw8.pdb 1aw8ab.B.39.2.1.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1cxs.pdb 1cxsa.B.39.2.2.1.1.1.1 {  A 626 _ to A 780 _  } 
+/data/CASS1/pdb/coords/1aa6.pdb 1aa6.B.39.2.2.2.1.1.1 {  _ 565 _ to _ 715 _  } 
+/data/CASS1/pdb/coords/1hoe.pdb 1hoe.B.4.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ait.pdb 2ait.B.4.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qtq.pdb 1qtqa.B.40.1.1.1.1.1.1 {  A 339 _ to A 547 _  } 
+/data/CASS1/pdb/coords/1mai.pdb 1mai.B.41.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1btn.pdb 1btn.B.41.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2dyn.pdb 2dyna.B.41.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1btk.pdb 1btka.B.41.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pls.pdb 1pls.B.41.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pms.pdb 1pms.B.41.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bak.pdb 1bak.B.41.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aqc.pdb 1aqca.B.41.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1irs.pdb 1irsa.B.41.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1shc.pdb 1shca.B.41.1.2.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ytf.pdb 1ytfc.B.42.1.1.1.1.1.1 {  CHAIN C }
+/data/CASS1/pdb/coords/1wpo.pdb 1wpoa.B.43.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pkn.pdb 1pkn.B.44.1.1.1.1.1.1 {  _ 116 _ to _ 217 _  } 
+/data/CASS1/pdb/coords/1hbq.pdb 1hbq.B.45.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1obp.pdb 1obpa.B.45.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1beb.pdb 1beba.B.45.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bbp.pdb 1bbpa.B.45.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1epb.pdb 1epba.B.45.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mup.pdb 1mup.B.45.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hms.pdb 1hms.B.45.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ifc.pdb 1ifc.B.45.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lib.pdb 1lib.B.45.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mdc.pdb 1mdc.B.45.1.2.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cbs.pdb 1cbs.B.45.1.2.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1opa.pdb 1opaa.B.45.1.2.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1lfo.pdb 1lfo.B.45.1.2.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pmp.pdb 1pmpa.B.45.1.2.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1eal.pdb 1eal.B.45.1.2.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sri.pdb 1sria.B.46.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2avi.pdb 2avia.B.46.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1smp.pdb 1smpi.B.46.2.1.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/2cpl.pdb 2cpl.B.47.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2rmc.pdb 2rmca.B.47.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cyn.pdb 1cyna.B.47.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1lop.pdb 1lopa.B.47.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1jsg.pdb 1jsg.B.48.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a1x.pdb 1a1x.B.48.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hxn.pdb 1hxn.B.49.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gen.pdb 1gen.B.49.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fbl.pdb 1fbl.B.49.1.1.3.1.1.1 {  _ 272 _ to _ 466 _  } 
+/data/CASS1/pdb/coords/1pex.pdb 1pex.B.49.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aac.pdb 1aac.B.5.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1plc.pdb 1plc.B.5.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1paz.pdb 1paz.B.5.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2cbp.pdb 2cbp.B.5.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1azc.pdb 1azca.B.5.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rcy.pdb 1rcy.B.5.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1jer.pdb 1jer.B.5.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cyw.pdb 1cyw.B.5.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1occ.pdb 1occb.B.5.1.2.2.1.1.1 {  B 91 _ to B 227 _  } 
+/data/CASS1/pdb/coords/1nif.pdb 1nif.B.5.1.3.1.1.1.1 {  _ 8 _ to _ 166 _  } 
+/data/CASS1/pdb/coords/1aoz.pdb 1aoza.B.5.1.3.2.1.1.1 {  A 1 _ to A 129 _  } 
+/data/CASS1/pdb/coords/1kcw.pdb 1kcw.B.5.1.3.3.1.1.1 {  _ 1 _ to _ 192 _  } 
+/data/CASS1/pdb/coords/2sil.pdb 2sil.B.50.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nnc.pdb 1nnc.B.50.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eur.pdb 1eur.B.50.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kit.pdb 1kit.B.50.1.1.4.1.1.1 {  _ 217 _ to _ 346 _  _ 544 _ to _ 781 _  } 
+/data/CASS1/pdb/coords/1gof.pdb 1gof.B.51.1.1.1.1.1.1 {  _ 151 _ to _ 537 _  } 
+/data/CASS1/pdb/coords/2bbk.pdb 2bbkh.B.51.2.1.1.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1got.pdb 1gotb.B.51.3.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/4aah.pdb 4aaha.B.52.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aof.pdb 1aofa.B.52.2.1.1.1.1.1 {  A 134 _ to A 567 _  } 
+/data/CASS1/pdb/coords/1vjs.pdb 1vjs.B.53.1.1.1.1.1.1 {  _ 374 _ to _ 482 _  } 
+/data/CASS1/pdb/coords/1cdg.pdb 1cdg.B.53.1.1.2.1.1.1 {  _ 383 _ to _ 495 _  } 
+/data/CASS1/pdb/coords/1pig.pdb 1pig.B.53.1.1.3.1.1.1 {  _ 404 _ to _ 496 _  } 
+/data/CASS1/pdb/coords/2aaa.pdb 2aaa.B.53.1.1.4.1.1.1 {  _ 374 _ to _ 476 _  } 
+/data/CASS1/pdb/coords/2amg.pdb 2amg.B.53.1.1.5.1.1.1 {  _ 358 _ to _ 418 _  } 
+/data/CASS1/pdb/coords/1amy.pdb 1amy.B.53.1.1.6.1.1.1 {  _ 347 _ to _ 403 _  } 
+/data/CASS1/pdb/coords/1aiw.pdb 1aiw.B.54.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dkg.pdb 1dkga.B.55.1.1.1.1.1.1 {  A 139 _ to A 197 _  } 
+/data/CASS1/pdb/coords/1hcb.pdb 1hcb.B.56.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3bcl.pdb 3bcl.B.57.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1osp.pdb 1ospo.B.58.1.1.1.1.1.1 {  CHAIN O } 
+/data/CASS1/pdb/coords/1vmo.pdb 1vmoa.B.59.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dlc.pdb 1dlc.B.59.2.1.1.1.1.1 {  _ 290 _ to _ 499 _  } 
+/data/CASS1/pdb/coords/1jac.pdb 1jacab.B.59.3.1.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1qas.pdb 1qasa.B.6.1.1.1.1.1.1 {  A 626 _ to A 756 _  } 
+/data/CASS1/pdb/coords/1rlw.pdb 1rlw.B.6.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rsy.pdb 1rsy.B.6.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a25.pdb 1a25a.B.6.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3dpa.pdb 3dpa.B.6.2.1.1.1.1.1 {  _ 120 _ to _ 218 _  } 
+/data/CASS1/pdb/coords/1who.pdb 1who.B.6.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1jpc.pdb 1jpc.B.60.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kap.pdb 1kapp.B.61.1.1.1.1.1.1 {  P 247 _ to P 470 _  } 
+/data/CASS1/pdb/coords/1air.pdb 1air.B.62.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1idk.pdb 1idk.B.62.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tyu.pdb 1tyu.B.62.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rmg.pdb 1rmg.B.62.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lxa.pdb 1lxa.B.63.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tdt.pdb 1tdta.B.63.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2xat.pdb 2xat.B.63.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1thj.pdb 1thja.B.63.1.4.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2phl.pdb 2phla.B.64.1.1.1.1.1.1 {  A 11 _ to A 210 _  } 
+/data/CASS1/pdb/coords/1cau.pdb 1caua.B.64.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pmi.pdb 1pmi.B.64.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ips.pdb 1ipsa.B.64.3.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cgp.pdb 1cgpa.B.64.4.1.1.1.1.1 {  A 9 _ to A 137 _  } 
+/data/CASS1/pdb/coords/1rgs.pdb 1rgs.B.64.4.2.1.1.1.1 {  _ 113 _ to _ 242 _  } 
+/data/CASS1/pdb/coords/2arc.pdb 2arca.B.64.5.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1wap.pdb 1wapa.B.64.6.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bdo.pdb 1bdo.B.65.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1htp.pdb 1htp.B.65.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lab.pdb 1lab.B.65.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ghj.pdb 1ghj.B.65.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bnc.pdb 1bnca.B.65.2.1.1.1.1.1 {  A 331 _ to A 446 _  } 
+/data/CASS1/pdb/coords/1hcz.pdb 1hcz.B.65.2.2.1.1.1.1 {  _ 168 _ to _ 230 _  } 
+/data/CASS1/pdb/coords/1gpr.pdb 1gpr.B.65.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1f3g.pdb 1f3g.B.65.3.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1msi.pdb 1msi.B.66.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2kau.pdb 2kaub.B.66.2.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1dup.pdb 1dupa.B.66.3.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tul.pdb 1tul.B.66.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1at0.pdb 1at0.B.67.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vde.pdb 1vdeaa.B.67.1.2.1.1.1.1 {  A 1 _ to A 180 _  A 416 _ to A 454 _  } 
+/data/CASS1/pdb/coords/1am2.pdb 1am2.B.67.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lkt.pdb 1lkta.B.68.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2kau.pdb 2kaucc.B.69.1.1.1.1.1.1 {  C 2 _ to C 129 _  C 423 _ to C 475 _  } 
+/data/CASS1/pdb/coords/1npo.pdb 1npoa.B.7.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aqt.pdb 1aqt.B.70.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1al0.pdb 1al0f.B.8.1.1.1.1.1.1 {  CHAIN F } 
+/data/CASS1/pdb/coords/1stm.pdb 1stma.B.8.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a34.pdb 1a34a.B.8.1.2.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2stv.pdb 2stv.B.8.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1smv.pdb 1smva.B.8.1.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bmv.pdb 1bmv1.B.8.1.2.5.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/1a6c.pdb 1a6ca.B.8.1.2.6.1.1.1 {  A 1 _ to A 176 _  } 
+/data/CASS1/pdb/coords/4sbv.pdb 4sbva.B.8.1.2.7.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2tbv.pdb 2tbva.B.8.1.2.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cwp.pdb 1cwpa.B.8.1.2.9.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tnv.pdb 1tnva.B.8.1.2.10.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1auy.pdb 1auya.B.8.1.2.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2bbv.pdb 2bbva.B.8.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vps.pdb 1vpsa.B.8.1.4.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bbt.pdb 1bbt1.B.8.1.4.2.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/2plv.pdb 2plv1.B.8.1.4.3.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/2cas.pdb 2cas.B.8.1.4.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mvm.pdb 1mvma.B.8.1.4.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/4rhv.pdb 4rhv1.B.8.1.4.6.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/2mev.pdb 2mev1.B.8.1.4.7.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/1cov.pdb 1cov1.B.8.1.4.8.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/1tme.pdb 1tme1.B.8.1.4.9.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/1fpv.pdb 1fpv.B.8.1.4.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sva.pdb 1sva1.B.8.1.4.11.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/1dhx.pdb 1dhx.B.8.1.4.12.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1amm.pdb 1amm.B.9.1.1.1.1.1.1 {  _ 1 _ to _ 85 _  } 
+/data/CASS1/pdb/coords/2bb2.pdb 2bb2.B.9.1.1.2.1.1.1 {  _ -1  _ to _ 85 _  } 
+/data/CASS1/pdb/coords/1prr.pdb 1prr.B.9.1.2.1.1.1.1 {  _ 1 _ to _ 90 _  } 
+/data/CASS1/pdb/coords/1ag4.pdb 1ag4.B.9.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1wkt.pdb 1wkt.B.9.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cis.pdb 1cis.Des.1.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tmz.pdb 1tmza.Des.1.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1abz.pdb 1abz.Des.10.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ebp.pdb 1ebpc.Des.11.1.1.1.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1soc.pdb 1soc.Des.12.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1al1.pdb 1al1.Des.2.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cag.pdb 1caga.Des.3.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cos.pdb 1cosa.Des.4.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/4hb1.pdb 4hb1.Des.5.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pef.pdb 1pef.Des.6.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mey.pdb 1meyc.Des.7.1.1.1.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1znm.pdb 1znm.Des.7.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1zdb.pdb 1zdb.Des.8.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fsv.pdb 1fsv.Des.9.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1psv.pdb 1psv.Des.9.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hcw.pdb 1hcw.Des.9.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1col.pdb 1cola.Memb.1.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cii.pdb 1cii.Memb.1.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ddt.pdb 1ddt.Memb.1.2.1.1.1.1.1 {  _ 200 _ to _ 380 _  } 
+/data/CASS1/pdb/coords/1dlc.pdb 1dlc.Memb.1.3.1.1.1.1.1 {  _ 61 _ to _ 289 _  } 
+/data/CASS1/pdb/coords/1maz.pdb 1maz.Memb.1.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pre.pdb 1prea.Memb.10.1.1.1.1.1.1 {  A 85 _ to A 470 _  } 
+/data/CASS1/pdb/coords/1svb.pdb 1svb.Memb.11.1.1.1.1.1.1 {  _ 1 _ to _ 302 _  } 
+/data/CASS1/pdb/coords/1acc.pdb 1acc.Memb.12.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1htm.pdb 1htmb.Memb.2.1.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1aik.pdb 1aiknc.Memb.2.2.1.1.1.1.1 {  CHAIN N CHAIN C } 
+/data/CASS1/pdb/coords/1vsg.pdb 1vsga.Memb.3.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aa0.pdb 1aa0.Memb.4.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1prc.pdb 1prcl.Memb.5.1.1.1.1.1.1 {  CHAIN L } 
+/data/CASS1/pdb/coords/1occ.pdb 1occa.Memb.5.1.1.2.1.1.1 {  CHAIN a  } 
+/data/CASS1/pdb/coords/2brd.pdb 2brd.Memb.5.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a91.pdb 1a91.Memb.5.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kzu.pdb 1kzua.Memb.6.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2omf.pdb 2omf.Memb.7.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mpm.pdb 1mpma.Memb.7.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a0t.pdb 1a0tp.Memb.7.1.2.2.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/7ahl.pdb 7ahla.Memb.8.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hcl.pdb 1hcl.Mult.1.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cdk.pdb 1cdka.Mult.1.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a06.pdb 1a06.Mult.1.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1phk.pdb 1phk.Mult.1.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kob.pdb 1koba.Mult.1.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1wfc.pdb 1wfc.Mult.1.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1erk.pdb 1erk.Mult.1.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cki.pdb 1ckia.Mult.1.1.1.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a6o.pdb 1a6o.Mult.1.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ad5.pdb 1ad5a.Mult.1.1.2.1.1.1.1 {  A 249 _ to A 531 _  } 
+/data/CASS1/pdb/coords/3lck.pdb 3lck.Mult.1.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fmk.pdb 1fmk.Mult.1.1.2.3.1.1.1 {  _ 249 _ to _ 533 _  } 
+/data/CASS1/pdb/coords/1agw.pdb 1agwa.Mult.1.1.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1irk.pdb 1irk.Mult.1.1.2.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/8ico.pdb 8icoa.Mult.10.1.1.1.1.1.1 {  A 92 _ to A 335 _  } 
+/data/CASS1/pdb/coords/1kny.pdb 1knya.Mult.10.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ecl.pdb 1ecl.Mult.11.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ois.pdb 1ois.Mult.12.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bgw.pdb 1bgw.Mult.13.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2daa.pdb 2daaa.Mult.14.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a3g.pdb 1a3ga.Mult.14.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1frv.pdb 1frvb.Mult.15.1.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1frv.pdb 1frva.Mult.16.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dkz.pdb 1dkza.Mult.17.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1jud.pdb 1jud.Mult.18.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lci.pdb 1lci.Mult.19.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1amu.pdb 1amua.Mult.19.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hle.pdb 1hleab.Mult.2.1.1.1.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1ova.pdb 1ovaa.Mult.2.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2ach.pdb 2achab.Mult.2.1.1.3.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/9api.pdb 9apiab.Mult.2.1.1.4.1.1.1 {  CHAIN A CHAIN B } 
+/data/CASS1/pdb/coords/1att.pdb 1atta.Mult.2.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ad2.pdb 1ad2.Mult.20.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ecr.pdb 1ecra.Mult.3.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3pte.pdb 3pte.Mult.4.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1btl.pdb 1btl.Mult.4.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3blm.pdb 3blm.Mult.4.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pmd.pdb 1pmd.Mult.4.1.1.5.1.1.1 {  _ 264 _ to _ 619 _  } 
+/data/CASS1/pdb/coords/1lbe.pdb 1lbea.Mult.5.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/8cat.pdb 8cata.Mult.6.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1buc.pdb 1buca.Mult.7.1.1.1.1.1.1 {  A 1 _ to A 232 _  } 
+/data/CASS1/pdb/coords/3mdd.pdb 3mdda.Mult.7.1.1.2.1.1.1 {  A 11 _ to A 241 _  } 
+/data/CASS1/pdb/coords/1ivh.pdb 1ivha.Mult.7.1.1.3.1.1.1 {  A 6 _ to A 241 _  } 
+/data/CASS1/pdb/coords/5fbp.pdb 5fbpa.Mult.8.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2hhm.pdb 2hhma.Mult.8.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1inp.pdb 1inp.Mult.8.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dpi.pdb 1dpi.Mult.9.1.1.1.1.1.1 {  _ 519 _ to _ 928 _  } 
+/data/CASS1/pdb/coords/1t7p.pdb 1t7pa.Mult.9.1.1.2.1.1.1 {  A 211 _ to A 704 _  } 
+/data/CASS1/pdb/coords/1waj.pdb 1waj.Mult.9.1.1.3.1.1.1 {  _ 376 _ to _ 901 _  } 
+/data/CASS1/pdb/coords/1mml.pdb 1mml.Mult.9.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vrt.pdb 1vrta.Mult.9.1.2.2.1.1.1 {  A 4 _ to A 429 _  } 
+/data/CASS1/pdb/coords/4rnp.pdb 4rnpa.Mult.9.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2rec.pdb 2rec.Non.1.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2pcf.pdb 2pcf.Non.1.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1atm.pdb 1atm.Non.2.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aag.pdb 1aag.Non.2.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ige.pdb 1ige.Non.2.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hfm.pdb 1hfm.Non.2.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2hfm.pdb 2hfm.Non.2.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1iif.pdb 1iif.Non.2.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mig.pdb 1mig.Non.2.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fvb.pdb 1fvb.Non.2.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2fvb.pdb 2fvb.Non.2.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hli.pdb 1hli.Non.2.1.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1als.pdb 1als.Non.2.1.1.11.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rog.pdb 1rog.Non.2.1.1.12.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kjc.pdb 1kjc.Non.2.1.1.13.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1apk.pdb 1apk.Non.2.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2apk.pdb 2apk.Non.2.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bpk.pdb 1bpk.Non.2.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2bpk.pdb 2bpk.Non.2.1.2.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2hie.pdb 2hie.Non.2.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2hif.pdb 2hif.Non.2.1.3.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ovi.pdb 1ovi.Non.2.1.3.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ita.pdb 1ita.Non.2.1.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1itn.pdb 1itn.Non.2.1.4.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ilm.pdb 1ilm.Non.2.1.4.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ill.pdb 1ill.Non.2.1.4.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ite.pdb 1ite.Non.2.1.4.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3itr.pdb 3itr.Non.2.1.4.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hvp.pdb 1hvp.Non.2.1.5.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1phv.pdb 1phv.Non.2.1.5.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2phv.pdb 2phv.Non.2.1.5.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rvl.pdb 1rvl.Non.2.1.5.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/262d.pdb 262d.Non.2.1.5.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/163d.pdb 163d.Non.2.1.5.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rlx.pdb 1rlx.Non.2.1.6.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gf1.pdb 1gf1.Non.2.1.6.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1msr.pdb 1msr.Non.2.1.7.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bac.pdb 1bac.Non.2.1.7.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bad.pdb 1bad.Non.2.1.7.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1psl.pdb 1psl.Non.2.1.7.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2gap.pdb 2gapa.Non.2.1.8.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gpv.pdb 1gpva.Non.2.1.8.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/3utr.pdb 3utrb.Non.2.1.8.3.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1kja.pdb 1kja.Non.2.1.9.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kjb.pdb 1kjb.Non.2.1.9.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kjd.pdb 1kjd.Non.2.1.9.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kje.pdb 1kje.Non.2.1.9.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1an3.pdb 1an3.Non.2.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1az7.pdb 1az7.Non.2.2.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1alm.pdb 1alm.Non.2.2.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1awl.pdb 1awl.Non.2.2.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1scg.pdb 1scg.Non.2.2.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1awm.pdb 1awm.Non.2.2.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sr1.pdb 1sr1.Non.2.2.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2clj.pdb 2clj.Non.2.2.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1plm.pdb 1plm.Non.2.2.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1awn.pdb 1awn.Non.2.2.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a8x.pdb 1a8x.Non.2.2.1.11.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1awk.pdb 1awk.Non.2.2.1.12.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fsm.pdb 1fsm.Non.2.2.1.13.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1akf.pdb 1akf.Non.2.2.1.14.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1yps.pdb 1yps.Non.2.2.1.15.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/8cel.pdb 8cel.Non.2.2.1.16.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1clt.pdb 1clt.Non.2.2.1.17.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1avj.pdb 1avj.Non.2.2.1.18.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1il7.pdb 1il7.Non.2.2.1.19.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1xul.pdb 1xul.Non.2.2.1.20.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1xum.pdb 1xum.Non.2.2.1.21.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1boj.pdb 1boj.Non.2.2.1.22.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bok.pdb 1bok.Non.2.2.1.23.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2psk.pdb 2psk.Non.2.2.1.24.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dop.pdb 1dop.Non.2.2.1.25.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nbd.pdb 1nbd.Non.2.2.1.26.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1afy.pdb 1afy.Non.2.2.1.27.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cdf.pdb 1cdf.Non.2.2.1.28.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aji.pdb 1aji.Non.2.2.1.29.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lut.pdb 1lut.Non.2.2.1.30.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1as1.pdb 1as1.Non.2.2.1.31.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1obe.pdb 1obe.Non.2.2.1.32.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ddd.pdb 1ddd.Non.2.2.1.33.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tbi.pdb 1tbi.Non.2.2.1.34.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eoy.pdb 1eoy.Non.2.2.1.35.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eox.pdb 1eox.Non.2.2.1.36.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nlh.pdb 1nlh.Non.2.2.1.37.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nlg.pdb 1nlg.Non.2.2.1.38.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fji.pdb 1fji.Non.2.2.1.39.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qbc.pdb 1qbc.Non.2.2.1.40.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1atf.pdb 1atf.Non.2.2.1.41.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2apd.pdb 2apd.Non.2.2.1.42.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bst.pdb 1bst.Non.2.2.1.43.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2gdp.pdb 2gdp.Non.2.2.1.44.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pom.pdb 1pom.Non.2.2.1.45.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cda.pdb 1cda.Non.2.2.1.46.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/4sod.pdb 4sod.Non.2.2.1.47.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1scc.pdb 1scc.Non.2.2.1.48.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2cp1.pdb 2cp1.Non.2.2.1.49.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2pte.pdb 2pte.Non.2.2.1.50.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dld.pdb 1dld.Non.2.2.1.51.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dhl.pdb 1dhl.Non.2.2.1.52.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hlh.pdb 1hlh.Non.2.2.1.53.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eqi.pdb 1eqi.Non.2.2.1.54.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1glk.pdb 1glk.Non.2.2.1.55.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hf1.pdb 1hf1.Non.2.2.1.56.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ina.pdb 1ina.Non.2.2.1.57.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ltp.pdb 1ltp.Non.2.2.1.58.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cme.pdb 1cme.Non.2.2.1.59.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aao.pdb 1aao.Non.2.2.1.60.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1iaf.pdb 1iaf.Non.2.2.1.61.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mca.pdb 1mca.Non.2.2.1.62.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mlp.pdb 1mlp.Non.2.2.1.63.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2mvp.pdb 2mvp.Non.2.2.1.64.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2cln.pdb 2cln.Non.2.2.1.65.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pfa.pdb 1pfa.Non.2.2.1.66.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pcu.pdb 1pcu.Non.2.2.1.67.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pai.pdb 1pai.Non.2.2.1.68.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1abl.pdb 1abl.Non.2.2.1.69.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sdg.pdb 1sdg.Non.2.2.1.70.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tnc.pdb 1tnc.Non.2.2.1.71.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1van.pdb 1van.Non.2.2.1.72.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1phx.pdb 1phx.Non.2.2.1.73.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mtm.pdb 1mtm.Non.2.2.1.74.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/7tmn.pdb 7tmn.Non.2.2.1.75.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eiu.pdb 1eiu.Non.2.2.1.76.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cgd.pdb 1cgd.Non.2.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1clg.pdb 1clg.Non.2.3.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bbe.pdb 1bbe.Non.2.3.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bbf.pdb 1bbf.Non.2.3.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/4clg.pdb 4clg.Non.2.3.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1slk.pdb 1slk.Non.2.3.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2slk.pdb 2slk.Non.2.3.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mmh.pdb 1mmh.Non.2.3.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sea.pdb 1sea.Non.2.3.2.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1has.pdb 1has.Non.2.3.2.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1crv.pdb 1crv.Non.2.3.2.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qbd.pdb 1qbd.Non.2.3.2.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1flx.pdb 1flx.Non.2.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1btd.pdb 1btd.Non.2.4.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ssr.pdb 1ssr.Non.2.4.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tne.pdb 1tne.Non.2.5.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qdi.pdb 1qdi.Non.2.5.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qdj.pdb 1qdj.Non.2.5.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qdk.pdb 1qdk.Non.2.5.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qdh.pdb 1qdh.Non.2.5.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qdg.pdb 1qdg.Non.2.5.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/5zna.pdb 5zna.Non.2.5.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dn7.pdb 1dn7.Non.2.5.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dnn.pdb 1dnn.Non.2.5.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1d71.pdb 1d71.Non.2.5.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2gap.pdb 2gapc.Non.2.5.1.11.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1rrn.pdb 1rrn.Non.2.5.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ipt.pdb 1ipt.Non.2.5.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sun.pdb 1sun.Non.2.5.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/5tra.pdb 5tra.Non.2.5.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3utr.pdb 3utra.Non.2.5.3.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bmv.pdb 1bmv.Non.3.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1af2.pdb 1af2b.Non.3.1.1.2.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1a34.pdb 1a34c.Non.3.1.1.3.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1zdi.pdb 1zdir.Non.3.1.1.4.1.1.1 {  CHAIN R } 
+/data/CASS1/pdb/coords/1arj.pdb 1arjn.Non.3.1.1.5.1.1.1 {  CHAIN N } 
+/data/CASS1/pdb/coords/1cwp.pdb 1cwpd.Non.3.1.1.6.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/2bbv.pdb 2bbvn.Non.3.1.1.7.1.1.1 {  CHAIN N } 
+/data/CASS1/pdb/coords/1aju.pdb 1ajua.Non.3.1.1.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mnb.pdb 1mnbb.Non.3.1.1.9.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1qtq.pdb 1qtqb.Non.3.1.1.10.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1akx.pdb 1akxa.Non.3.1.1.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1urn.pdb 1urnp.Non.3.1.1.12.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1etf.pdb 1etfa.Non.3.1.1.13.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a4t.pdb 1a4ta.Non.3.1.1.14.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ttt.pdb 1tttd.Non.3.1.1.15.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1koc.pdb 1koca.Non.3.1.1.16.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a1t.pdb 1a1tb.Non.3.1.1.17.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1awc.pdb 1awcd.Non.3.1.2.1.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1apg.pdb 1apgd.Non.3.1.2.2.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1gsg.pdb 1gsgt.Non.3.1.2.3.1.1.1 {  CHAIN T } 
+/data/CASS1/pdb/coords/1pnn.pdb 1pnnb.Non.3.1.2.4.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1av6.pdb 1av6b.Non.3.1.2.5.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/3fit.pdb 3fitb.Non.3.1.2.6.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1jmc.pdb 1jmcb.Non.3.1.2.7.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1cgm.pdb 1cgmi.Non.3.1.2.8.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1a34.pdb 1a34b.Non.3.1.2.9.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1rmv.pdb 1rmvb.Non.3.1.2.10.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1asz.pdb 1aszr.Non.3.1.2.11.1.1.1 {  CHAIN R } 
+/data/CASS1/pdb/coords/1bkx.pdb 1bkxb.Non.3.1.2.12.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1wah.pdb 1wahp.Non.3.1.2.13.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1ijs.pdb 1ijsa.Non.3.1.2.14.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cxt.pdb 1cxtb.Non.3.1.2.15.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1mvm.pdb 1mvmb.Non.3.1.2.16.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1ahd.pdb 1ahda.Non.3.1.2.17.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vtm.pdb 1vtmr.Non.3.1.2.18.1.1.1 {  CHAIN R } 
+/data/CASS1/pdb/coords/1ser.pdb 1sert.Non.3.1.2.19.1.1.1 {  CHAIN T } 
+/data/CASS1/pdb/coords/1rnm.pdb 1rnmb.Non.3.1.2.20.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1pfi.pdb 1pfib.Non.3.1.2.21.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1brn.pdb 1brna.Non.3.1.2.22.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hvn.pdb 1hvnd.Non.3.1.2.23.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1srs.pdb 1srsw.Non.3.1.2.24.1.1.1 {  CHAIN W } 
+/data/CASS1/pdb/coords/2bpa.pdb 2bpa.Non.3.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bdi.pdb 1bdib.Non.3.1.3.2.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1lcc.pdb 1lccb.Non.3.1.3.3.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1hao.pdb 1haod.Non.3.1.3.4.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/4gat.pdb 4gatb.Non.3.1.3.5.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1t7p.pdb 1t7pp.Non.3.1.3.6.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1au7.pdb 1au7c.Non.3.1.3.7.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1ubd.pdb 1ubda.Non.3.1.3.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hcr.pdb 1hcrb.Non.3.1.3.9.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1az0.pdb 1az0c.Non.3.1.3.10.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1tf6.pdb 1tf6b.Non.3.1.3.11.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/2nll.pdb 2nllc.Non.3.1.3.12.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1skn.pdb 1skna.Non.3.1.3.13.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2or1.pdb 2or1a.Non.3.1.3.14.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mey.pdb 1meya.Non.3.1.3.15.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/4dpv.pdb 4dpvn.Non.3.1.3.16.1.1.1 {  CHAIN N } 
+/data/CASS1/pdb/coords/1fjl.pdb 1fjld.Non.3.1.3.17.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1pvi.pdb 1pvic.Non.3.1.3.18.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1lli.pdb 1llid.Non.3.1.3.19.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1a02.pdb 1a02a.Non.3.1.3.20.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rcn.pdb 1rcnd.Non.3.1.3.21.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1ign.pdb 1ignc.Non.3.1.3.22.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1dct.pdb 1dctm.Non.3.1.3.23.1.1.1 {  CHAIN M } 
+/data/CASS1/pdb/coords/1a74.pdb 1a74c.Non.3.1.3.24.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1d66.pdb 1d66d.Non.3.1.3.25.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1if1.pdb 1if1c.Non.3.1.3.26.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/2dgc.pdb 2dgcb.Non.3.1.3.27.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1noy.pdb 1noys.Non.3.1.3.28.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/1yui.pdb 1yuib.Non.3.1.3.29.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1lat.pdb 1latc.Non.3.1.3.30.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1tau.pdb 1taup.Non.3.1.3.31.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1uaa.pdb 1uaac.Non.3.1.3.32.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1wag.pdb 1wage.Non.3.1.3.33.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/2hdd.pdb 2hddc.Non.3.1.3.34.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1fos.pdb 1fosa.Non.3.1.3.35.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1mnm.pdb 1mnme.Non.3.1.3.36.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1vol.pdb 1volc.Non.3.1.3.37.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1hmi.pdb 1hmip.Non.3.1.3.38.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1oct.pdb 1octa.Non.3.1.3.39.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2stw.pdb 2stwb.Non.3.1.3.40.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1an2.pdb 1an2b.Non.3.1.3.41.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1tc3.pdb 1tc3a.Non.3.1.3.42.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gpv.pdb 1gpvc.Non.3.1.3.43.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1a1f.pdb 1a1fb.Non.3.1.3.44.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1xbr.pdb 1xbrc.Non.3.1.3.45.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/193d.pdb 193da.Non.3.1.3.46.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ihf.pdb 1ihfc.Non.3.1.3.47.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/4cro.pdb 4croh.Non.3.1.3.48.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1yrn.pdb 1yrnc.Non.3.1.3.49.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1ber.pdb 1berc.Non.3.1.3.50.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1pdn.pdb 1pdna.Non.3.1.3.51.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2bop.pdb 2bopb.Non.3.1.3.52.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/3mht.pdb 3mhtc.Non.3.1.3.53.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1lau.pdb 1laud.Non.3.1.3.54.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/9ica.pdb 9icap.Non.3.1.3.55.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1fja.pdb 1fjaa.Non.3.1.3.56.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1an4.pdb 1an4c.Non.3.1.3.57.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1lbg.pdb 1lbgh.Non.3.1.3.58.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1vas.pdb 1vasb.Non.3.1.3.59.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1fok.pdb 1fokb.Non.3.1.3.60.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1msf.pdb 1msfa.Non.3.1.3.61.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gdt.pdb 1gdtc.Non.3.1.3.62.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1fli.pdb 1flib.Non.3.1.3.63.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1am9.pdb 1am9h.Non.3.1.3.64.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1rcs.pdb 1rcse.Non.3.1.3.65.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1hcq.pdb 1hcqh.Non.3.1.3.66.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/3cro.pdb 3croa.Non.3.1.3.67.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1srs.pdb 1srsc.Non.3.1.3.68.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1a0a.pdb 1a0ac.Non.3.1.3.69.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1pyi.pdb 1pyid.Non.3.1.3.70.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1tsr.pdb 1tsre.Non.3.1.3.71.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1lef.pdb 1lefb.Non.3.1.3.72.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1pue.pdb 1puea.Non.3.1.3.73.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cbv.pdb 1cbvd.Non.3.1.3.74.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1cma.pdb 1cmac.Non.3.1.3.75.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1bhm.pdb 1bhmc.Non.3.1.3.76.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1ecr.pdb 1ecrb.Non.3.1.3.77.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1dnk.pdb 1dnkb.Non.3.1.3.78.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1nfk.pdb 1nfkc.Non.3.1.3.79.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/2ezg.pdb 2ezgb.Non.3.1.3.80.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1ahd.pdb 1ahdb.Non.3.1.3.81.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1par.pdb 1pare.Non.3.1.3.82.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/2drp.pdb 2drpb.Non.3.1.3.83.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1eri.pdb 1erib.Non.3.1.3.84.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1hry.pdb 1hryb.Non.3.1.3.85.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1mdy.pdb 1mdyh.Non.3.1.3.86.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/2gli.pdb 2glic.Non.3.1.3.87.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1u2a.pdb 1u2a.Non.3.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/359d.pdb 359da.Non.3.2.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a3m.pdb 1a3ma.Non.3.2.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2a9l.pdb 2a9l.Non.3.2.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rrr.pdb 1rrra.Non.3.2.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1r3x.pdb 1r3xc.Non.3.2.1.6.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1vop.pdb 1vop.Non.3.2.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kod.pdb 1koda.Non.3.2.1.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1rmn.pdb 1rmn.Non.3.2.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1yfg.pdb 1yfg.Non.3.2.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/176d.pdb 176db.Non.3.2.1.11.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/176d.pdb 176da.Non.3.2.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1pdt.pdb 1pdtb.Non.3.2.2.2.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/165d.pdb 165da.Non.3.2.2.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/246d.pdb 246da.Non.3.2.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1nao.pdb 1naoa.Non.3.2.2.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/8psh.pdb 8psha.Non.3.2.2.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ac3.pdb 1ac3a.Non.3.2.2.7.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1nxr.pdb 1nxra.Non.3.2.2.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1d3x.pdb 1d3xa.Non.3.2.2.9.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/219d.pdb 219da.Non.3.2.2.10.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/8drh.pdb 8drha.Non.3.2.2.11.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/169d.pdb 169da.Non.3.2.2.12.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dnf.pdb 1dnfa.Non.3.2.2.13.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/124d.pdb 124da.Non.3.2.2.14.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/104d.pdb 104da.Non.3.2.2.15.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ikd.pdb 1ikd.Non.3.2.2.16.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hmh.pdb 1hmha.Non.3.2.2.17.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1qdf.pdb 1qdf.Non.3.2.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dns.pdb 1dnsa.Non.3.2.3.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1saa.pdb 1saaa.Non.3.2.3.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1axv.pdb 1axva.Non.3.2.3.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1d3x.pdb 1d3xb.Non.3.2.3.5.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1a9g.pdb 1a9ga.Non.3.2.3.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gtc.pdb 1gtca.Non.3.2.3.7.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/372d.pdb 372da.Non.3.2.3.8.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1grm.pdb 1grma.Pep.1.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1gcn.pdb 1gcn.Pep.10.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1etf.pdb 1etfb.Pep.11.1.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1biv.pdb 1bivb.Pep.11.2.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1a4t.pdb 1a4tb.Pep.11.3.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1dsj.pdb 1dsj.Pep.12.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ztn.pdb 1ztn.Pep.13.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1zto.pdb 1zto.Pep.13.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cfg.pdb 1cfg.Pep.14.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pei.pdb 1pei.Pep.15.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hph.pdb 1hph.Pep.16.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lyp.pdb 1lyp.Pep.18.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1psm.pdb 1psm.Pep.19.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aa5.pdb 1aa5.Pep.2.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2mlt.pdb 2mlta.Pep.20.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ter.pdb 1ter.Pep.21.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1wfb.pdb 1wfba.Pep.22.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1a2x.pdb 1a2xb.Pep.23.1.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1paj.pdb 1paj.Pep.24.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rpc.pdb 1rpc.Pep.25.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1anp.pdb 1anp.Pep.26.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a1p.pdb 1a1p.Pep.27.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1edn.pdb 1edn.Pep.28.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1srb.pdb 1srb.Pep.28.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1etn.pdb 1etn.Pep.29.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gna.pdb 1gna.Pep.29.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aj1.pdb 1aj1.Pep.3.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tcg.pdb 1tcg.Pep.30.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gib.pdb 1gib.Pep.30.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pen.pdb 1pen.Pep.30.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1akg.pdb 1akg.Pep.30.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1not.pdb 1not.Pep.30.1.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1p1p.pdb 1p1p.Pep.30.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1onu.pdb 1onu.Pep.31.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ont.pdb 1ont.Pep.31.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1brv.pdb 1brv.Pep.32.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bdk.pdb 1bdk.Pep.33.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bct.pdb 1bct.Pep.34.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1btq.pdb 1btq.Pep.34.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1spf.pdb 1spf.Pep.34.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dep.pdb 1dep.Pep.34.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1afo.pdb 1afoa.Pep.34.1.1.5.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aty.pdb 1aty.Pep.34.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3mra.pdb 3mra.Pep.34.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1a11.pdb 1a11.Pep.34.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2nr1.pdb 2nr1.Pep.34.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fct.pdb 1fct.Pep.35.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vtp.pdb 1vtp.Pep.35.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2mlp.pdb 2mlp.Pep.35.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1plp.pdb 1plp.Pep.36.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1smf.pdb 1smfi.Pep.37.1.1.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1ale.pdb 1ale.Pep.38.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tvs.pdb 1tvs.Pep.39.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2leu.pdb 2leu.Pep.4.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pg1.pdb 1pg1.Pep.4.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sut.pdb 1sut.Pep.40.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1amb.pdb 1amb.Pep.41.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sol.pdb 1sol.Pep.42.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tor.pdb 1tor.Pep.43.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fgd.pdb 1fgd.Pep.44.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mof.pdb 1mof.Pep.45.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1wbr.pdb 1wbr.Pep.46.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1egs.pdb 1egs.Pep.47.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1loi.pdb 1loi.Pep.48.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1zec.pdb 1zec.Pep.49.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2mag.pdb 2mag.Pep.5.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1jsu.pdb 1jsuc.Pep.50.1.1.1.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1aft.pdb 1aft.Pep.51.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1alg.pdb 1alg.Pep.52.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/4cpa.pdb 4cpag.Pep.53.1.1.1.1.1.1 {  CHAIN G } 
+/data/CASS1/pdb/coords/1odw.pdb 1odwc.Pep.53.1.1.2.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/3fiv.pdb 3fivi.Pep.53.1.1.3.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1vwr.pdb 1vwrp.Pep.53.1.1.4.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1mhc.pdb 1mhcc.Pep.53.1.1.5.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1vad.pdb 1vadp.Pep.53.1.1.6.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1al2.pdb 1al20.Pep.53.1.1.7.1.1.1 {  CHAIN 0 } 
+/data/CASS1/pdb/coords/1hpg.pdb 1hpgb.Pep.53.1.1.8.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1iak.pdb 1iakp.Pep.53.1.1.9.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1hpb.pdb 1hpbl.Pep.53.1.1.10.1.1.1 {  CHAIN L } 
+/data/CASS1/pdb/coords/1fpt.pdb 1fptp.Pep.53.1.1.11.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1cqg.pdb 1cqgb.Pep.53.1.1.12.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1sps.pdb 1spsd.Pep.53.1.1.13.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1xxa.pdb 1xxah.Pep.53.1.1.14.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1nrr.pdb 1nrrp.Pep.53.1.1.15.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1npo.pdb 1npob.Pep.53.1.1.16.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1exf.pdb 1exfb.Pep.53.1.1.17.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/2rmp.pdb 2rmpb.Pep.53.1.1.18.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1ucy.pdb 1ucyi.Pep.53.1.1.19.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1bll.pdb 1blli.Pep.53.1.1.20.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1vlt.pdb 1vltc.Pep.53.1.1.21.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/2pld.pdb 2pldb.Pep.53.1.1.22.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1ola.pdb 1olab.Pep.53.1.1.23.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/2rmc.pdb 2rmch.Pep.53.1.1.24.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1cdk.pdb 1cdki.Pep.53.1.1.25.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1frg.pdb 1frgp.Pep.53.1.1.26.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1aix.pdb 1aixi.Pep.53.1.1.27.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1fiv.pdb 1fivb.Pep.53.1.1.28.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1ikf.pdb 1ikfc.Pep.53.1.1.29.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/2hnt.pdb 2hntd.Pep.53.1.1.30.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1a8g.pdb 1a8gc.Pep.53.1.1.31.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1rcs.pdb 1rcsc.Pep.53.1.1.32.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1lne.pdb 1lnep.Pep.53.1.1.33.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1smr.pdb 1smrb.Pep.53.1.1.34.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/148l.pdb 148ls.Pep.53.1.1.35.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/1a30.pdb 1a30c.Pep.53.1.1.36.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/2lpr.pdb 2lprp.Pep.53.1.1.37.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1lyb.pdb 1lybi.Pep.53.1.1.38.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1pop.pdb 1popb.Pep.53.1.1.39.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/2cwg.pdb 2cwgd.Pep.53.1.1.40.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/7api.pdb 7apic.Pep.53.1.1.41.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/193d.pdb 193dc.Pep.53.1.1.42.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1ao7.pdb 1ao7c.Pep.53.1.1.43.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1ab9.pdb 1ab9d.Pep.53.1.1.44.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/2seb.pdb 2sebe.Pep.53.1.1.45.1.1.1 {  CHAIN E } 
+/data/CASS1/pdb/coords/1seb.pdb 1sebc.Pep.53.1.1.46.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1eed.pdb 1eedi.Pep.53.1.1.47.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1ifh.pdb 1ifhp.Pep.53.1.1.48.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1sld.pdb 1sldp.Pep.53.1.1.49.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1lna.pdb 1lnap.Pep.53.1.1.50.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1akj.pdb 1akjc.Pep.53.1.1.51.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/180l.pdb 180lc.Pep.53.1.1.52.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1fja.pdb 1fjac.Pep.53.1.1.53.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/207l.pdb 207lb.Pep.53.1.1.54.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1hao.pdb 1haop.Pep.53.1.1.55.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1a4w.pdb 1a4wi.Pep.53.1.1.56.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1rmh.pdb 1rmhc.Pep.53.1.1.57.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1str.pdb 1strp.Pep.53.1.1.58.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1tmn.pdb 1tmni.Pep.53.1.1.59.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1dlh.pdb 1dlhc.Pep.53.1.1.60.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1cdl.pdb 1cdlh.Pep.53.1.1.61.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/3cys.pdb 3cysb.Pep.53.1.1.62.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1tmu.pdb 1tmui.Pep.53.1.1.63.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1the.pdb 1thec.Pep.53.1.1.64.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1cpi.pdb 1cpic.Pep.53.1.1.65.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1a3r.pdb 1a3rp.Pep.53.1.1.66.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1jhg.pdb 1jhgb.Pep.53.1.1.67.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1cka.pdb 1ckab.Pep.53.1.1.68.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1mpa.pdb 1mpap.Pep.53.1.1.69.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1wat.pdb 1wats.Pep.53.1.1.70.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/1cfa.pdb 1cfab.Pep.53.1.1.71.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1aqd.pdb 1aqdi.Pep.53.1.1.72.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/3tpi.pdb 3tpis.Pep.53.1.1.73.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/1pic.pdb 1picb.Pep.53.1.1.74.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1htt.pdb 1htth.Pep.53.1.1.75.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1wrp.pdb 1wrpw.Pep.53.1.1.76.1.1.1 {  CHAIN W } 
+/data/CASS1/pdb/coords/1pts.pdb 1ptsp.Pep.53.1.1.77.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1fmo.pdb 1fmoi.Pep.53.1.1.78.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1hct.pdb 1hcta.Pep.53.1.1.79.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1adj.pdb 1adjh.Pep.53.1.1.80.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1shd.pdb 1shdb.Pep.53.1.1.81.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1r1r.pdb 1r1rp.Pep.53.1.1.82.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1arj.pdb 1arjp.Pep.53.1.1.83.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1gmc.pdb 1gmcb.Pep.53.1.1.84.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1a6a.pdb 1a6ac.Pep.53.1.1.85.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1csm.pdb 1csml.Pep.53.1.1.86.1.1.1 {  CHAIN L } 
+/data/CASS1/pdb/coords/1tbz.pdb 1tbzi.Pep.53.1.1.87.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/2csm.pdb 2csmb.Pep.53.1.1.88.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1mem.pdb 1memb.Pep.53.1.1.89.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1jdb.pdb 1jdb1.Pep.53.1.1.90.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/1lan.pdb 1lanb.Pep.53.1.1.91.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1bn2.pdb 1bn28.Pep.53.1.1.92.1.1.1 {  CHAIN 8 } 
+/data/CASS1/pdb/coords/4cyh.pdb 4cyhb.Pep.53.1.1.93.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1piv.pdb 1piv0.Pep.53.1.1.94.1.1.1 {  CHAIN 0 } 
+/data/CASS1/pdb/coords/1fip.pdb 1fipc.Pep.53.1.1.95.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1wdn.pdb 1wdnb.Pep.53.1.1.96.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1loc.pdb 1loc1.Pep.53.1.1.97.1.1.1 {  CHAIN 1 } 
+/data/CASS1/pdb/coords/1hlt.pdb 1hlti.Pep.53.1.1.98.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1a1a.pdb 1a1ac.Pep.53.1.1.99.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1rst.pdb 1rstp.Pep.53.1.1.100.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1hef.pdb 1hefi.Pep.53.1.1.101.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/2fib.pdb 2fibb.Pep.53.1.1.102.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/2rkm.pdb 2rkmb.Pep.53.1.1.103.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1po1.pdb 1po10.Pep.53.1.1.104.1.1.1 {  CHAIN 0 } 
+/data/CASS1/pdb/coords/3apr.pdb 3apri.Pep.53.1.1.105.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/4ts1.pdb 4ts1s.Pep.53.1.1.106.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/1tyb.pdb 1tybs.Pep.53.1.1.107.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/2hpf.pdb 2hpfs.Pep.53.1.1.108.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/1af0.pdb 1af0b.Pep.53.1.1.109.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1efr.pdb 1efrq.Pep.53.1.1.110.1.1.1 {  CHAIN Q } 
+/data/CASS1/pdb/coords/1psd.pdb 1psdc.Pep.53.1.1.111.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1jet.pdb 1jetb.Pep.53.1.1.112.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1lkk.pdb 1lkkb.Pep.53.1.1.113.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1wrs.pdb 1wrsv.Pep.53.1.1.114.1.1.1 {  CHAIN V } 
+/data/CASS1/pdb/coords/1hne.pdb 1hnei.Pep.53.1.1.115.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1gbr.pdb 1gbrb.Pep.53.1.1.116.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1csb.pdb 1csbc.Pep.53.1.1.117.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1gbf.pdb 1gbfp.Pep.53.1.1.118.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1ahg.pdb 1ahgc.Pep.53.1.1.119.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1ubs.pdb 1ubsc.Pep.53.1.1.120.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1vbd.pdb 1vbd0.Pep.53.1.1.121.1.1.1 {  CHAIN 0 } 
+/data/CASS1/pdb/coords/1cwe.pdb 1cweb.Pep.53.1.1.122.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1fxy.pdb 1fxyi.Pep.53.1.1.123.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1bxl.pdb 1bxlb.Pep.53.1.1.124.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1ice.pdb 1icet.Pep.53.1.1.125.1.1.1 {  CHAIN T } 
+/data/CASS1/pdb/coords/1a1n.pdb 1a1nc.Pep.53.1.1.126.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1tro.pdb 1troh.Pep.53.1.1.127.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1abw.pdb 1abwp.Pep.53.1.1.128.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1koc.pdb 1kocc.Pep.53.1.1.129.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1ytg.pdb 1ytgi.Pep.53.1.1.130.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1laf.pdb 1lafs.Pep.53.1.1.131.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/2ckb.pdb 2ckbp.Pep.53.1.1.132.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1abt.pdb 1abtb.Pep.53.1.1.133.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1atl.pdb 1atlc.Pep.53.1.1.134.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1hxb.pdb 1hxbi.Pep.53.1.1.135.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1fjm.pdb 1fjmm.Pep.53.1.1.136.1.1.1 {  CHAIN M } 
+/data/CASS1/pdb/coords/1dkx.pdb 1dkxb.Pep.53.1.1.137.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/2h1p.pdb 2h1pp.Pep.53.1.1.138.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/4jdw.pdb 4jdwb.Pep.53.1.1.139.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1sha.pdb 1shab.Pep.53.1.1.140.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1aya.pdb 1ayap.Pep.53.1.1.141.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/8tln.pdb 8tlnd.Pep.53.1.1.142.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1aot.pdb 1aotp.Pep.53.1.1.143.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1kap.pdb 1kapi.Pep.53.1.1.144.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/3r1r.pdb 3r1rp.Pep.53.1.1.145.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1fzb.pdb 1fzbh.Pep.53.1.1.146.1.1.1 {  CHAIN H } 
+/data/CASS1/pdb/coords/1tya.pdb 1tyas.Pep.53.1.1.147.1.1.1 {  CHAIN S } 
+/data/CASS1/pdb/coords/2lgs.pdb 2lgsb.Pep.53.1.1.148.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1ir3.pdb 1ir3b.Pep.53.1.1.149.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1amu.pdb 1amuc.Pep.53.1.1.150.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1gss.pdb 1gssi.Pep.53.1.1.151.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1agb.pdb 1agbc.Pep.53.1.1.152.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1srn.pdb 1srnb.Pep.53.1.1.153.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1lcj.pdb 1lcjb.Pep.53.1.1.154.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1akx.pdb 1akxb.Pep.53.1.1.155.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1cya.pdb 1cya.Pep.53.1.1.156.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lcm.pdb 1lcm.Pep.53.1.1.157.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gac.pdb 1gaca.Pep.53.1.1.158.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1auh.pdb 1auhb.Pep.53.1.1.159.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1dsr.pdb 1dsr.Pep.53.1.1.160.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aju.pdb 1ajub.Pep.53.1.1.161.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/3btb.pdb 3btb.Pep.53.1.1.162.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1acy.pdb 1acyp.Pep.53.1.1.163.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1bbt.pdb 1bbt4.Pep.53.1.1.164.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1cdm.pdb 1cdmb.Pep.53.1.1.165.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1cmk.pdb 1cmki.Pep.53.1.1.166.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1efg.pdb 1efgb.Pep.53.1.1.167.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1hri.pdb 1hri4.Pep.53.1.1.168.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1r08.pdb 1r084.Pep.53.1.1.169.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1r1a.pdb 1r1a4.Pep.53.1.1.170.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1htm.pdb 1htma.Pep.53.1.1.171.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ihs.pdb 1ihsi.Pep.53.1.1.172.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1nrn.pdb 1nrnr.Pep.53.1.1.173.1.1.1 {  CHAIN R } 
+/data/CASS1/pdb/coords/1mec.pdb 1mec4.Pep.53.1.1.174.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1piv.pdb 1piv4.Pep.53.1.1.175.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1scm.pdb 1scma.Pep.53.1.1.176.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tme.pdb 1tme4.Pep.53.1.1.177.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1tmf.pdb 1tmf4.Pep.53.1.1.178.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/2bbm.pdb 2bbmb.Pep.53.1.1.179.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/2bbv.pdb 2bbvd.Pep.53.1.1.180.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/2bpa.pdb 2bpa3.Pep.53.1.1.181.1.1.1 {  CHAIN 3 } 
+/data/CASS1/pdb/coords/2hwb.pdb 2hwb4.Pep.53.1.1.182.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/2hwd.pdb 2hwd4.Pep.53.1.1.183.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/2plv.pdb 2plv4.Pep.53.1.1.184.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/2r04.pdb 2r044.Pep.53.1.1.185.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1aym.pdb 1aym4.Pep.53.1.1.186.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/7ins.pdb 7insg.Pep.53.1.1.187.1.1.1 {  CHAIN G } 
+/data/CASS1/pdb/coords/1pvc.pdb 1pvc4.Pep.53.1.1.188.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1rug.pdb 1rug4.Pep.53.1.1.189.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1rud.pdb 1rud4.Pep.53.1.1.190.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1rue.pdb 1rue4.Pep.53.1.1.191.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1ruf.pdb 1ruf4.Pep.53.1.1.192.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1ruj.pdb 1ruj4.Pep.53.1.1.193.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1cov.pdb 1cov4.Pep.53.1.1.194.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1gff.pdb 1gff3.Pep.53.1.1.195.1.1.1 {  CHAIN 3 } 
+/data/CASS1/pdb/coords/1dit.pdb 1ditp.Pep.53.1.1.196.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1vba.pdb 1vba4.Pep.53.1.1.197.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1vbd.pdb 1vbd4.Pep.53.1.1.198.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1wdc.pdb 1wdca.Pep.53.1.1.199.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vrh.pdb 1vrh4.Pep.53.1.1.200.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1rhi.pdb 1rhi4.Pep.53.1.1.201.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1fgl.pdb 1fglb.Pep.53.1.1.202.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1ai1.pdb 1ai1p.Pep.53.1.1.203.1.1.1 {  CHAIN P } 
+/data/CASS1/pdb/coords/1al2.pdb 1al24.Pep.53.1.1.204.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1ar7.pdb 1ar74.Pep.53.1.1.205.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1ar8.pdb 1ar84.Pep.53.1.1.206.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1ar9.pdb 1ar94.Pep.53.1.1.207.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1asj.pdb 1asj4.Pep.53.1.1.208.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1po1.pdb 1po14.Pep.53.1.1.209.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1po2.pdb 1po24.Pep.53.1.1.210.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1al0.pdb 1al0b.Pep.53.1.1.211.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1nov.pdb 1novd.Pep.53.1.1.212.1.1.1 {  CHAIN D } 
+/data/CASS1/pdb/coords/1ayn.pdb 1ayn4.Pep.53.1.1.213.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/5gds.pdb 5gdsi.Pep.53.1.1.214.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1axc.pdb 1axcb.Pep.53.1.1.215.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1rvf.pdb 1rvf4.Pep.53.1.1.216.1.1.1 {  CHAIN 4 } 
+/data/CASS1/pdb/coords/1cm1.pdb 1cm1b.Pep.53.1.1.217.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1amt.pdb 1amta.Pep.6.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bba.pdb 1bba.Pep.7.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ron.pdb 1ron.Pep.7.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1xy1.pdb 1xy1a.Pep.8.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2dtb.pdb 2dtb.Pep.9.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pid.pdb 1pidba.Small.1.1.1.1.1.1.1 {  CHAIN B CHAIN A } 
+/data/CASS1/pdb/coords/6rlx.pdb 6rlxba.Small.1.1.1.2.1.1.1 {  CHAIN B CHAIN A } 
+/data/CASS1/pdb/coords/2gf1.pdb 2gf1.Small.1.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bom.pdb 1bomba.Small.1.1.1.4.1.1.1 {  CHAIN B CHAIN A } 
+/data/CASS1/pdb/coords/1ans.pdb 1ans.Small.10.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ajj.pdb 1ajj.Small.11.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cbn.pdb 1cbn.Small.12.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bhp.pdb 1bhp.Small.12.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2plh.pdb 2plh.Small.12.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1krn.pdb 1krn.Small.13.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tpk.pdb 1tpka.Small.13.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1cea.pdb 1ceaa.Small.13.1.1.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2pf2.pdb 2pf2.Small.13.1.1.4.1.1.1 {  _ 66 _ to _ 145 _  } 
+/data/CASS1/pdb/coords/1a0h.pdb 1a0ha.Small.13.1.1.5.1.1.1 {  A 164 _ to A 270 _  } 
+/data/CASS1/pdb/coords/1kdu.pdb 1kdu.Small.13.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3sgb.pdb 3sgbi.Small.14.1.1.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1hpt.pdb 1hpt.Small.14.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tbr.pdb 1tbrr.Small.14.1.1.3.1.1.1 {  R 1 _ to R 51 _  } 
+/data/CASS1/pdb/coords/1bmo.pdb 1bmoa.Small.14.1.1.4.1.1.1 {  A 78 _ to A 135 _  } 
+/data/CASS1/pdb/coords/1bus.pdb 1bus.Small.14.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pce.pdb 1pce.Small.14.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ldt.pdb 1ldtl.Small.14.1.1.7.1.1.1 {  CHAIN L } 
+/data/CASS1/pdb/coords/4sgb.pdb 4sgbi.Small.14.1.2.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/2psp.pdb 2pspa.Small.15.1.1.1.1.1.1 {  A 2 _ to A 53 _  } 
+/data/CASS1/pdb/coords/1ps2.pdb 1ps2.Small.15.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pdg.pdb 1pdga.Small.16.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1vpf.pdb 1vpfa.Small.16.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1tgj.pdb 1tgj.Small.16.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2tgi.pdb 2tgi.Small.16.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1klc.pdb 1klca.Small.16.1.2.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bmp.pdb 1bmp.Small.16.1.2.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1agq.pdb 1agqa.Small.16.1.3.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bnd.pdb 1bnda.Small.16.1.3.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bet.pdb 1bet.Small.16.1.3.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1hcn.pdb 1hcna.Small.16.1.4.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aoc.pdb 1aoca.Small.16.1.5.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hfh.pdb 1hfh.Small.17.1.1.1.1.1.1 {  _ 1 _ to _ 63 _  } 
+/data/CASS1/pdb/coords/1vvc.pdb 1vvc.Small.17.1.1.2.1.1.1 {  _ 1 _ to _ 58 _  } 
+/data/CASS1/pdb/coords/1bgk.pdb 1bgk.Small.18.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ech.pdb 2ech.Small.19.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fvl.pdb 1fvl.Small.19.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kst.pdb 1kst.Small.19.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ehs.pdb 1ehs.Small.2.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1vib.pdb 1vib.Small.2.2.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2bbk.pdb 2bbkl.Small.20.1.1.1.1.1.1 {  CHAIN L } 
+/data/CASS1/pdb/coords/1pdc.pdb 1pdc.Small.21.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ata.pdb 1ata.Small.22.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1apj.pdb 1apj.Small.23.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ext.pdb 1exta.Small.24.1.1.1.1.1.1 {  A 13 _ to A 70 _  } 
+/data/CASS1/pdb/coords/2vgh.pdb 2vgh.Small.25.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1afp.pdb 1afp.Small.26.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1fbr.pdb 1fbr.Small.27.1.1.1.1.1.1 {  _ 1 _ to _ 46 _  } 
+/data/CASS1/pdb/coords/1tpm.pdb 1tpm.Small.27.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dan.pdb 1danl.Small.28.1.1.1.1.1.1 {  L 1 _ to L 46 _  } 
+/data/CASS1/pdb/coords/2pf2.pdb 2pf2.Small.28.1.1.2.1.1.1 {  _ 1 _ to _ 65 _  } 
+/data/CASS1/pdb/coords/1cfi.pdb 1cfi.Small.28.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1whe.pdb 1whe.Small.28.1.1.4.1.1.1 {  _ 1 _ to _ 46 _  } 
+/data/CASS1/pdb/coords/1vpu.pdb 1vpu.Small.29.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1wgt.pdb 1wgta.Small.3.1.1.1.1.1.1 {  A 1 _ to A 52 _  } 
+/data/CASS1/pdb/coords/1hev.pdb 1hev.Small.3.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mmc.pdb 1mmc.Small.3.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mct.pdb 1mcti.Small.3.2.1.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/4cpa.pdb 4cpai.Small.3.2.1.2.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/2eti.pdb 2eti.Small.3.2.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kal.pdb 1kal.Small.3.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gur.pdb 1gur.Small.3.4.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1omc.pdb 1omc.Small.3.5.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1oma.pdb 1oma.Small.3.5.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1eit.pdb 1eit.Small.3.5.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1axh.pdb 1axh.Small.3.5.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qdp.pdb 1qdp.Small.3.5.2.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2sn3.pdb 2sn3.Small.3.6.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mtx.pdb 1mtx.Small.3.6.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sxm.pdb 1sxm.Small.3.6.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1txm.pdb 1txm.Small.3.6.2.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2crd.pdb 2crd.Small.3.6.2.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1scy.pdb 1scy.Small.3.6.2.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1agt.pdb 1agt.Small.3.6.2.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1chl.pdb 1chl.Small.3.6.2.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tsk.pdb 1tsk.Small.3.6.2.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sis.pdb 1sis.Small.3.6.2.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pnh.pdb 1pnh.Small.3.6.2.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1acw.pdb 1acw.Small.3.6.2.11.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sco.pdb 1sco.Small.3.6.2.12.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ktx.pdb 2ktx.Small.3.6.2.13.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lqh.pdb 1lqh.Small.3.6.2.14.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lir.pdb 1lir.Small.3.6.2.15.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lqq.pdb 1lqq.Small.3.6.2.16.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2pta.pdb 2pta.Small.3.6.2.17.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1myn.pdb 1myn.Small.3.6.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ica.pdb 1ica.Small.3.6.3.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gpt.pdb 1gpt.Small.3.6.4.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ayj.pdb 1ayj.Small.3.6.4.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2brz.pdb 2brz.Small.3.6.4.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cbh.pdb 1cbh.Small.3.7.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lpb.pdb 1lpba.Small.3.8.1.1.1.1.1 {  A 6 _ to A 44 _  } 
+/data/CASS1/pdb/coords/1edm.pdb 1edmb.Small.3.9.1.1.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1dan.pdb 1danl.Small.3.9.1.2.1.1.1 {  L 47 _ to L 86 _  } 
+/data/CASS1/pdb/coords/1esl.pdb 1esl.Small.3.9.1.3.1.1.1 {  _ 119 _ to _ 157 _  } 
+/data/CASS1/pdb/coords/1hcg.pdb 1hcgb.Small.3.9.1.4.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1aut.pdb 1autl.Small.3.9.1.5.1.1.1 {  L 49 _ to L 96 _  } 
+/data/CASS1/pdb/coords/1pth.pdb 1pth.Small.3.9.1.6.1.1.1 {  _ 33 _ to _ 73 _  } 
+/data/CASS1/pdb/coords/1fsb.pdb 1fsb.Small.3.9.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1egf.pdb 1egf.Small.3.9.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2tgf.pdb 2tgf.Small.3.9.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1xdt.pdb 1xdtr.Small.3.9.1.10.1.1.1 {  CHAIN R } 
+/data/CASS1/pdb/coords/1urk.pdb 1urk.Small.3.9.1.11.1.1.1 {  _ 6 _ to _ 49 _  } 
+/data/CASS1/pdb/coords/1hre.pdb 1hre.Small.3.9.1.12.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1zaq.pdb 1zaq.Small.3.9.1.13.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1emn.pdb 1emn.Small.3.9.1.14.1.1.1 {  _ 2124 _ to _ 2166 _  } 
+/data/CASS1/pdb/coords/1apq.pdb 1apq.Small.3.9.1.15.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tpg.pdb 1tpg.Small.3.9.1.16.1.1.1 {  _ 51 _ to _ 91 _  } 
+/data/CASS1/pdb/coords/1klo.pdb 1klo.Small.3.9.2.1.1.1.1 {  _ 11 _ to _ 65 _  } 
+/data/CASS1/pdb/coords/1bmo.pdb 1bmoa.Small.3.9.3.1.1.1.1 {  A 54 _ to A 77 _  } 
+/data/CASS1/pdb/coords/1bi6.pdb 1bi6hl.Small.3.10.1.1.1.1.1 {  H 8 _ to H 31 _  } 
+/data/CASS1/pdb/coords/1tab.pdb 1tabi.Small.3.11.1.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1fle.pdb 1flei.Small.3.12.1.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1hia.pdb 1hiaij.Small.3.13.1.1.1.1.1 {  CHAIN I CHAIN J } 
+/data/CASS1/pdb/coords/1skz.pdb 1skz.Small.3.13.1.2.1.1.1 {  _ 7 _ to _ 58 _  } 
+/data/CASS1/pdb/coords/4htc.pdb 4htci.Small.3.13.2.1.1.1.1 {  CHAIN I } 
+/data/CASS1/pdb/coords/1dec.pdb 1dec.Small.3.13.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1isu.pdb 1isua.Small.30.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1aay.pdb 1aaya.Small.31.1.1.1.1.1.1 {  A 103 _ to A 131 _  } 
+/data/CASS1/pdb/coords/1rmd.pdb 1rmd.Small.31.1.1.2.1.1.1 {  _ 87 _ to _ 116 _  } 
+/data/CASS1/pdb/coords/2drp.pdb 2drpa.Small.31.1.1.3.1.1.1 {  A 103 _ to A 139 _  } 
+/data/CASS1/pdb/coords/2adr.pdb 2adr.Small.31.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1znf.pdb 1znf.Small.31.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/5znf.pdb 5znf.Small.31.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ncs.pdb 1ncs.Small.31.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2gli.pdb 2glia.Small.31.1.1.8.1.1.1 {  A 103 _ to A 134 _  } 
+/data/CASS1/pdb/coords/3znf.pdb 3znf.Small.31.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sp1.pdb 1sp1.Small.31.1.1.10.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ubd.pdb 1ubdc.Small.31.1.1.11.1.1.1 {  C 295 _ to C 322 _  } 
+/data/CASS1/pdb/coords/1tf6.pdb 1tf6a.Small.31.1.1.12.1.1.1 {  A 10 _ to A 40 _  } 
+/data/CASS1/pdb/coords/1yui.pdb 1yuia.Small.31.1.1.13.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1d66.pdb 1d66a.Small.32.1.1.1.1.1.1 {  A 8 _ to A 48 _  } 
+/data/CASS1/pdb/coords/1pyi.pdb 1pyia.Small.32.1.1.2.1.1.1 {  A 30 _ to A 71 _  } 
+/data/CASS1/pdb/coords/1ajy.pdb 1ajya.Small.32.1.1.3.1.1.1 {  A 30 _ to A 66 _  } 
+/data/CASS1/pdb/coords/1pyc.pdb 1pyc.Small.32.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cld.pdb 1cld.Small.32.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1gat.pdb 1gata.Small.33.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2nll.pdb 2nlla.Small.33.1.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2nll.pdb 2nllb.Small.33.1.2.2.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1hcq.pdb 1hcqa.Small.33.1.2.3.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1glu.pdb 1glua.Small.33.1.2.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1hra.pdb 1hra.Small.33.1.2.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ctl.pdb 1ctl.Small.33.1.3.1.1.1.1 {  _ 1 _ to _ 35 _  } 
+/data/CASS1/pdb/coords/1zfo.pdb 1zfo.Small.33.1.3.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2znf.pdb 2znf.Small.34.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1aaf.pdb 1aaf.Small.34.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mea.pdb 1mea.Small.35.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1zin.pdb 1zin.Small.35.2.1.1.1.1.1 {  _ 126 _ to _ 160 _  } 
+/data/CASS1/pdb/coords/1tfi.pdb 1tfi.Small.35.3.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1qyp.pdb 1qyp.Small.35.3.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pft.pdb 1pft.Small.35.3.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/8rxn.pdb 8rxna.Small.35.4.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1ryt.pdb 1ryt.Small.35.4.1.2.1.1.1 {  _ 148 _ to _ 191 _  } 
+/data/CASS1/pdb/coords/1dxg.pdb 1dxga.Small.35.4.2.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1occ.pdb 1occf.Small.35.4.3.1.1.1.1 {  CHAIN F } 
+/data/CASS1/pdb/coords/4at1.pdb 4at1b.Small.35.5.1.1.1.1.1 {  B 101 _ to B 153 _  } 
+/data/CASS1/pdb/coords/1fre.pdb 1fre.Small.36.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1rmd.pdb 1rmd.Small.37.1.1.1.1.1.1 {  _ 1 _ to _ 86 _  } 
+/data/CASS1/pdb/coords/1chc.pdb 1chc.Small.37.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bor.pdb 1bor.Small.37.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1mhu.pdb 1mhu.Small.38.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1adn.pdb 1adn.Small.39.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1pmc.pdb 1pmc.Small.4.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ptq.pdb 1ptq.Small.40.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1far.pdb 1far.Small.40.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tbn.pdb 1tbn.Small.40.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1adt.pdb 1adt.Small.41.1.1.1.1.1.1 {  _ 266 _ to _ 385 _  } 
+/data/CASS1/pdb/coords/1adt.pdb 1adt.Small.41.1.1.2.1.1.1 {  _ 386 _ to _ 529 _  } 
+/data/CASS1/pdb/coords/1bbg.pdb 1bbg.Small.5.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/3ebx.pdb 3ebx.Small.6.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tgx.pdb 1tgxa.Small.6.1.1.2.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1fas.pdb 1fas.Small.6.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/5ebx.pdb 5ebx.Small.6.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ntn.pdb 1ntn.Small.6.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kxi.pdb 1kxia.Small.6.1.1.6.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2ctx.pdb 2ctx.Small.6.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1lsi.pdb 1lsi.Small.6.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tfs.pdb 1tfs.Small.6.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1abt.pdb 1abta.Small.6.1.1.10.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/2cdx.pdb 2cdx.Small.6.1.1.11.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2ccx.pdb 2ccx.Small.6.1.1.12.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cre.pdb 1cre.Small.6.1.1.13.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2crs.pdb 2crs.Small.6.1.1.14.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1kbs.pdb 1kbs.Small.6.1.1.15.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1cod.pdb 1cod.Small.6.1.1.16.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nea.pdb 1nea.Small.6.1.1.17.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1nor.pdb 1nor.Small.6.1.1.18.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1txa.pdb 1txa.Small.6.1.1.19.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1drs.pdb 1drs.Small.6.1.2.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1erg.pdb 1erg.Small.6.1.3.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bpi.pdb 1bpi.Small.7.1.1.1.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2knt.pdb 2knt.Small.7.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1tfx.pdb 1tfxc.Small.7.1.1.3.1.1.1 {  CHAIN C } 
+/data/CASS1/pdb/coords/1aap.pdb 1aapa.Small.7.1.1.4.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1dtx.pdb 1dtx.Small.7.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bun.pdb 1bunb.Small.7.1.1.6.1.1.1 {  CHAIN B } 
+/data/CASS1/pdb/coords/1shp.pdb 1shp.Small.7.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dtk.pdb 1dtk.Small.7.1.1.8.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dem.pdb 1dem.Small.7.1.1.9.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1toc.pdb 1tocr.Small.7.1.2.1.1.1.1 {  R 1 _ to R 56 _  } 
+/data/CASS1/pdb/coords/1tap.pdb 1tap.Small.7.1.2.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1dfn.pdb 1dfna.Small.8.1.1.1.1.1.1 {  CHAIN A } 
+/data/CASS1/pdb/coords/1bnb.pdb 1bnb.Small.8.1.1.2.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1bds.pdb 1bds.Small.8.1.1.3.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1sh1.pdb 1sh1.Small.8.1.1.4.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1atx.pdb 1atx.Small.8.1.1.5.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1ahl.pdb 1ahl.Small.8.1.1.6.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/1apf.pdb 1apf.Small.8.1.1.7.1.1.1 { ALL } 
+/data/CASS1/pdb/coords/2hgf.pdb 2hgf.Small.9.1.1.1.1.1.1 { ALL } 

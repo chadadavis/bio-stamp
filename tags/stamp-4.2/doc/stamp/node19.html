@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Protein domain databases</TITLE>
+<META NAME="description" CONTENT="Protein domain databases">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node20.html">
+<LINK REL="previous" HREF="node18.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node20.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html352"
+ HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html349"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html343"
+ HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html351"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html353"
+ HREF="node20.html">Generating transformed coordinates</A>
+<B> Up:</B> <A NAME="tex2html350"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html344"
+ HREF="node18.html">Using scans as a</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00350000000000000000">
+Protein domain databases</A>
+</H1>
+
+<P>
+The program PDBC may be used to output a set of STAMP readable
+domain descriptions.  Given a list of four letter brookhaven
+codes and an optional set of chains.  This will only work if you have
+a suitable `pdb.directories' file.  See the chapter on installation for details
+on how to do this.
+
+<P><PRE>
+pdbc -d 2hhba &gt;! globin_fold.domains
+pdbc -d 2hhbb &gt;&gt; globin_fold.domains
+pdbc -d 4mbn  &gt;&gt; globin_fold.domains
+pdbc -d 1lh1  &gt;&gt; globin_fold.domains
+pdbc -d 1cola &gt;&gt; globin_fold.domains
+pdbc -d 1cpca &gt;&gt; globin_fold.domains
+</PRE>
+<P>
+will produce the following output (ignoring comments, which are specified by a `%`
+in column 0):
+
+<P><PRE>
+/(PDB PATH)/pdb2hhb.ent 2hhba { CHAIN A }
+/(PDB PATH)/pdb2hhb.ent 2hhbb { CHAIN B }
+/(PDB PATH)/pdb4mbn.ent 4mbn { ALL }
+/(PDB PATH)/pdb1lh1.ent 1lh1 { ALL }
+/(PDB PATH)/pdb1col.ent 1cola { CHAIN A }
+</PRE>
+<P>
+Where (PDB PATH) denotes the location of the relevant PDB file on your 
+system.   Note that your PDB files may be called (code).pdb instead, or
+may follow some other convention.  This is OK, see Chapter 5 (installation) for
+details as to setting this up.
+<BR>
+<BR>
+Note that there doesn't need to be a filename in the domain file.  One 
+can merely leave it as `Unknown` or some other string (i.e. not empty 
+spaces), and the programs will try and find where the file corresonding 
+to the four letter code is one your system.  In other words, the files 
+given in this distribution should work on your system, provided that
+you have all the PDB files.
+<BR>
+<BR>
+Note that PDBC can be used to probe information about a PDB entry by
+using the `-q' option.  Try it and see.   This is a good test of whether 
+STAMP has been set up properly on your system.  If you just want to test
+where STAMP is looking for PDB and DSSP files, then use the `-m' (minimal)
+options.  This just reports PDB/DSSP files if found and exits.
+<BR>
+<BR>
+STAMP database comparisons are computationally intensive, so it is prudent
+to avoid comparisons that are redundant (e.g. multiple mutants or binding studies
+of the same protein, T4 lysozyme for example).  The STAMP distribution
+contains a series of non-redundant databases derived by a parsing of the
+SCOP database.  In the STAMPDIR/defs directory there are several databases:
+
+<P>
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT">Domain database</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="LEFT">Description</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop.dom</TD>
+<TD ALIGN="CENTER">17891</TD>
+<TD ALIGN="LEFT">All PDB entries classified in SCOP</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_domain.dom</TD>
+<TD ALIGN="CENTER">10741</TD>
+<TD ALIGN="LEFT">The above, though ignoring multiple copies of the same chain</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_species.dom</TD>
+<TD ALIGN="CENTER">3495</TD>
+<TD ALIGN="LEFT">One representative from protein of every species</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_prot.dom</TD>
+<TD ALIGN="CENTER">2420</TD>
+<TD ALIGN="LEFT">One representative from each protein</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_fam.dom</TD>
+<TD ALIGN="CENTER">1031</TD>
+<TD ALIGN="LEFT">One representative from each protein family</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_supf.dom</TD>
+<TD ALIGN="CENTER">716</TD>
+<TD ALIGN="LEFT">One representative from each protein superfamily</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_fold.dom</TD>
+<TD ALIGN="CENTER">506</TD>
+<TD ALIGN="LEFT">One representative per fold</TD>
+</TR>
+</TABLE>
+<P>
+Probably the first two databases are too big to be used sensible with STAMP (and contain
+too much redundancy); they have only been included for completeness.  I tend to
+use ``scop_species.dom'' or ``scop_prot.dom'', but probably one could get away with
+using ``scop_fam.dom''.  It entirely depends on your patience and CPU resources.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html352"
+ HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html349"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html343"
+ HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html351"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html353"
+ HREF="node20.html">Generating transformed coordinates</A>
+<B> Up:</B> <A NAME="tex2html350"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html344"
+ HREF="node18.html">Using scans as a</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

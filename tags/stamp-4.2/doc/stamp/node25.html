@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Displaying text alignments</TITLE>
+<META NAME="description" CONTENT="Displaying text alignments">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node26.html">
+<LINK REL="previous" HREF="node24.html">
+<LINK REL="up" HREF="node22.html">
+<LINK REL="next" HREF="node26.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html421"
+ HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html418"
+ HREF="node22.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html412"
+ HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html420"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html422"
+ HREF="node26.html">Pretty Alignments via ALSCRIPT</A>
+<B> Up:</B> <A NAME="tex2html419"
+ HREF="node22.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html413"
+ HREF="node24.html">STAMP_CLEAN</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00383000000000000000">
+Displaying text alignments</A>
+</H2>
+
+<P>
+There are two ways to display STAMP alignments in a vertical format.
+The first is simply to use ACONVERT to change the STAMP block file format into
+another such as MSF or CLUSTAL.  The format would be:
+<BR>
+<BR><PRE>
+aconvert -in b -out c &lt; &lt;stamp alignment file&gt;
+</PRE>
+<P>
+Where `-out c' denotes CLUSTAL format (using `-out m' would give MSF format).
+<BR>
+<BR>
+ACONVERT does not use any of the STAMP specific parts of the alignment (i.e reliable
+structural equivalences, etc.).  There is a program specifically designed for displaying
+these data in a vertical format.  VER2HOR takes a STAMP alignment file and outputs a 
+horizonal text format.  For example, to display the globin alignment, one needs to
+type:
+<BR>
+
+<P><PRE>
+ver2hor -f globin.5.clean
+</PRE>
+<P>
+to give (see examples/globin/globin.5.ver2hor):
+<BR>
+
+<P><PRE>
+VER2HOR R.B. Russell, 1995
+ Prints STAMP alignments in horizontal format
+  for quick viewing
+ Reading Alignment...
+ Blocfile read: Length: 163
+ Getting STAMP information...
+ 6 STAMP fields read in for 163 positions 
+ Processing the alignment...
+ Output:
+ Very reliable =&gt; Pij' &gt;=6 for stretches of &gt;=3
+ Less reliable =&gt; Pij' &gt;=4.5 for stretches of &gt;=3
+ Post reliable =&gt; All Pij' &gt; stamp_post parameter for stretches &gt;=3
+
+Number               10        20        30        40        50    
+     1lh1            gaLTESQAALVKSSWEEfnanipKHTHRFFILVLEIAPAAKDLFSFLkg
+     2lhb    pivdtgsvapLSAAEKTKIRSAWAPvystyeTSGVDILVKFFTSTPAAQEFFPKFkg
+     1ecd              LSADQISTVQASFDKv    kGDPVGILYAVFKADPSIMAKFTQFag
+     4mbn             vLSEGEWQLVLHVWAKveadvaGHGQDILIRLFKSHPETLEKFDRFkh
+    2hhbb            vhLTPEEKSAVTALWGKvn  vdEVGGEALGRLLVVYPWTQRFFESFgd
+    2hhba             vLSPADKTNVKAAWGKvgahagEYGAEALERMFLSFPTTKTYFPHF  
+
+1lh1_dssp            ----HHHHHHHHHHHHHhhtthhHHHHHHHHHHHHH-GGGGGG-TTTtt
+2lhb_dssp    ---sss------HHHHHHHHHHHHHhhhthhHHHHHHHHHHHHH-GGGGGG-GGGtt
+1ecd_dssp              --HHHHHHHHHHHHTt    tT-HHHHHHHHHHH-HHHHTT-TTTtt
+4mbn_dssp             --HHHHHHHHHHHHHGg--hhhHHHHHHHHHHHHHHHHHGGGG----s
+2hhbb_dssp           ----HHHHHHHHHHHTT--  hhHHHHHHHHHHHHHSGGGGGG-GGG--
+2hhba_dssp            ---HHHHHHHHHHHHHhggghhHHHHHHHHHHHHH-GGGGGG-TTS  
+
+Very similar ----------1111111111111110----0111111111111111111111111--
+Less similar ----------1111111111111110----0111111111111111111111111--
+Post similar ----------1111111111111110----0111111111111111111111111--
+
+				&lt;etc.&gt;
+</PRE>
+<P>
+The sequences are displayed, as are the DSSP secondary structures and three
+measures of similarity (explained at the top of the output).  One can suppress
+the displaying of secondary structures by the option `-sec false', or can display 
+a summary of the secondary structures (an average) by typing `-secsum true'.  Try 
+these and see.  The column width can be modified by using `-columns &lt;value&gt;'.  The
+remaning parameters are as for DSTAMP (see next section).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html421"
+ HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html418"
+ HREF="node22.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html412"
+ HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html420"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html422"
+ HREF="node26.html">Pretty Alignments via ALSCRIPT</A>
+<B> Up:</B> <A NAME="tex2html419"
+ HREF="node22.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html413"
+ HREF="node24.html">STAMP_CLEAN</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

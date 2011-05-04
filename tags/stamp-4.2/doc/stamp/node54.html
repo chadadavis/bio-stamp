@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Setting up STAMP files</TITLE>
+<META NAME="description" CONTENT="Setting up STAMP files">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node55.html">
+<LINK REL="previous" HREF="node53.html">
+<LINK REL="up" HREF="node52.html">
+<LINK REL="next" HREF="node55.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html771"
+ HREF="node55.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html768"
+ HREF="node52.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html762"
+ HREF="node53.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html770"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html772"
+ HREF="node55.html">Getting other programs</A>
+<B> Up:</B> <A NAME="tex2html769"
+ HREF="node52.html">Installation</A>
+<B> Previous:</B> <A NAME="tex2html763"
+ HREF="node53.html">Compiling/running</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00620000000000000000">
+Setting up STAMP files</A>
+</H1>
+
+<P>
+To use STAMP, all users must define the environment variable
+STAMPDIR, and set it equal to the directory where you have done
+the installation.  Users must also have STAMPDIR in their path. 
+The logical thing is to make modifications to one's .cshrc file to
+this end.
+<BR>
+<BR>
+STAMP reads PDB coordinate information and DSSP information in
+standard format.  Thus, you really must have copies of PDB
+and DSSP output if you wish to make full use of the program
+(though DSSP is not, strictly required).
+<BR>
+<BR>
+You must create files in the STAMP directory for reading by the 
+program that are specific to your system.  These files must be in
+STAMPDIR/pdb.directories.   This file contains a description as to
+where possible PDB files may be found.  The format is:
+<BR>
+
+<P><PRE>
+&lt;directory&gt;  &lt;prefix&gt;  &lt;suffix&gt; [RETURN]
+</PRE>
+<P>
+For example:
+<BR>
+
+<P><PRE>
+/data/newpdb/pdb/           pdb .ent
+/data/newpdb/prerelase/     pdb .ent.Z
+/usr/people/jack/extrapdb/  _ .pdb.gz
+./                          myprefix .pdb
+</PRE>
+<P>
+A four letter code is meant to go between the suffix and prefix.
+For example, the file corresponding the PDB code 4mbn might be 
+found in the file /data/newpdb/pdb/pdb4mbn.ent.  A `_' character 
+in the suffix or prefix field denotes no prefix or suffix.  When 
+a file is to correspond to a four letter code is to be found, STAMP
+routines will try each of the specifications in turn, and will use
+the first one found.  A recent modification (version 4.2) is to look
+in each of the `distr' type sub-directories for filenames.  Some people
+store PDB files in a format, e.g.
+<BR>
+
+<P><PRE>
+&lt;directory&gt;/ab/pdb1abc.ent
+</PRE>
+<P>
+Where the two letter sub-directory name corresponds to the second two characters
+in the four letter PDB code (i.e. ignoring the leading number).  STAMP now
+handles these file types.  If you just specify the top directory, the program
+will explore suitable two-letter sub-directories corresponding to each file it
+is looking for.
+<BR>
+<BR>
+dssp.directories contains a description as to where possible DSSP files
+may be found.  The format is as for pdb.directories, e.g.
+<BR>
+
+<P><PRE>
+/data/newdssp/  _ .dssp
+/data/dssp/     _ .dssp
+</PRE>
+<P>
+For example, the DSSP file for 4mbn might be found in the file 
+/data/newdssp/4mbn.dssp
+<BR>
+<BR>
+STAMP now reads compressed files (.Z or .gz suffixes).  In order for this
+to work properly, you must have the programs zcat (.Z) and gunzip (.gz) installed
+on your system.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html771"
+ HREF="node55.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html768"
+ HREF="node52.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html762"
+ HREF="node53.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html770"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html772"
+ HREF="node55.html">Getting other programs</A>
+<B> Up:</B> <A NAME="tex2html769"
+ HREF="node52.html">Installation</A>
+<B> Previous:</B> <A NAME="tex2html763"
+ HREF="node53.html">Compiling/running</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

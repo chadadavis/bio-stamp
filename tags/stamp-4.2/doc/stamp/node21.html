@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Generating averaged coordinates</TITLE>
+<META NAME="description" CONTENT="Generating averaged coordinates">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node22.html">
+<LINK REL="previous" HREF="node20.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node22.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html374"
+ HREF="node22.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html371"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html365"
+ HREF="node20.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html373"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html375"
+ HREF="node22.html">Displaying/processing the output</A>
+<B> Up:</B> <A NAME="tex2html372"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html366"
+ HREF="node20.html">Generating transformed coordinates</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00370000000000000000">
+Generating averaged coordinates</A>
+</H1>
+
+<P>
+It may also be useful to have a set of <EM>averaged</EM> coordinates derived 
+from a protein structural family.  This makes it possible to see what 
+portions of the structure are common to all members of the family (i.e. 
+the common core).  The program AVESTRUC takes the output from STAMP 
+(i.e. an aligned family of protein structures), and generates a PDB file 
+containing averaged coordinates for the common core as identified by 
+STAMP.  For example, to generate the averaged coordinates for the 
+aspartic proteinase domains one needs to type:
+<BR>
+
+<P><PRE>
+avestruc -f ac_prot.8 -o ac_prot_ave.pdb
+</PRE>
+<P>
+The file ac_prot_ave.pdb will contain a set of averaged 
+<!-- MATH: ${\rm C}_{\alpha}$ -->
+<IMG
+ WIDTH="28" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="${\rm C}_{\alpha}$">
+atoms taken 
+by averaging the coordinates for those positions within the file 
+ac_prot.8 that are found to be structurally equivalent.  To obtain a poly 
+Alanine set of coordinates (i.e. including main chain and <IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$C_{\beta}$">
+coordinates), type:
+<BR>
+
+<P><PRE>
+avestruc -f ac_prot.8 -o ac_prot_ave.pdb -polyA
+</PRE>
+<P>
+Note that this will only work if all main chain atoms are found in the file
+(i.e. it won't work if the PDB files contain only 
+<!-- MATH: ${\rm C}_{\alpha}$ -->
+<IMG
+ WIDTH="28" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="${\rm C}_{\alpha}$">
+atoms).
+<BR>
+<BR>
+A useful feature in AVESTRUC in stamp version 4.1 is the use of the -ident
+and -cons options.  The program now labels all residues in the averaged model 
+as `UNK'.  If positions are totally conserved across all structures in the
+averaged model, the `-ident' option will name residues accordingly.  The -cons
+option will label residues additionally as conserved in character if all
+amino acids in the set have the following properties:
+<BR>
+
+<P>
+<TABLE CELLPADDING=3>
+<TR><TD ALIGN="LEFT">SMA</TD>
+<TD ALIGN="LEFT">small</TD>
+</TR>
+<TR><TD ALIGN="LEFT">TIN</TD>
+<TD ALIGN="LEFT">tiny</TD>
+</TR>
+<TR><TD ALIGN="LEFT">POL</TD>
+<TD ALIGN="LEFT">polar</TD>
+</TR>
+<TR><TD ALIGN="LEFT">HYD</TD>
+<TD ALIGN="LEFT">hydrophobic</TD>
+</TR>
+<TR><TD ALIGN="LEFT">POS</TD>
+<TD ALIGN="LEFT">positive</TD>
+</TR>
+<TR><TD ALIGN="LEFT">NEG</TD>
+<TD ALIGN="LEFT">negative</TD>
+</TR>
+<TR><TD ALIGN="LEFT">CHA</TD>
+<TD ALIGN="LEFT">charged</TD>
+</TR>
+<TR><TD ALIGN="LEFT">ARO</TD>
+<TD ALIGN="LEFT">aromatic</TD>
+</TR>
+<TR><TD ALIGN="LEFT">ALI</TD>
+<TD ALIGN="LEFT">aliphatic</TD>
+</TR>
+<TR><TD ALIGN="LEFT">BRA</TD>
+<TD ALIGN="LEFT"><IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.gif"
+ ALT="$C_{\beta}$">
+branched</TD>
+</TR>
+</TABLE>
+<P>
+See Taylor (1986) for a description of amino acid properties.
+<BR> 
+
+<BR>
+Another new feature is that the tempeature factors now reflect whether
+postions are structural conserved, or simply fortitously aligned.  If you
+add the option `-aligned' to the command line, all positions that are
+not matched to a gap will be considered in the generation of the
+averaged model.  If you then colour your model according to temperature
+(e.g. with RasMol) the blue regions will correspond to those that
+are structural equivalent (as you have defined or by default) whereas
+the red regions will show those that are simply in the same position in
+the sequence alignment.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html374"
+ HREF="node22.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html371"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html365"
+ HREF="node20.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html373"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html375"
+ HREF="node22.html">Displaying/processing the output</A>
+<B> Up:</B> <A NAME="tex2html372"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html366"
+ HREF="node20.html">Generating transformed coordinates</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

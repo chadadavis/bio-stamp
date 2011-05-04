@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>MERGETRANS &amp; EXTRANS</TITLE>
+<META NAME="description" CONTENT="MERGETRANS &amp; EXTRANS">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node47.html">
+<LINK REL="previous" HREF="node45.html">
+<LINK REL="up" HREF="node37.html">
+<LINK REL="next" HREF="node47.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html682"
+ HREF="node47.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html679"
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html673"
+ HREF="node45.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html681"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html683"
+ HREF="node47.html">MERGESTAMP</A>
+<B> Up:</B> <A NAME="tex2html680"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html674"
+ HREF="node45.html">PICKFRAME</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00529000000000000000">
+MERGETRANS &amp; EXTRANS</A>
+</H2>
+
+<P>
+Sometimes one has several transformations and wants to combine them.  For example,
+one may have transformations from an ALIGNFIT run (i.e. taken from a multiple alignment) and
+those from a STAMP run and want to combine them, since they have at least one domain 
+in common.  This would avoid having to run the more time-consumming STAMP program on
+things where similarity was obvious (i.e. clear sequence homologues).  MERGETRANS allows this to
+be done.
+
+<P>
+The format is:
+<BR>
+
+<P><PRE>
+mergetrans -f1 &lt;transformation file1&gt; -f2 &lt;transformation file2&gt; [-i &lt;domain identifier&gt;]
+</PRE>
+<P>
+If an identifier is given, then that identifier will be used to link the two files (provided it
+can be found in both).   Otherwise the program will simply search for the first identifier that 
+is exactly in common across the two transformation files.
+<BR>
+<BR>
+One may also wish to extract particular transformations from a file.  To do this, use EXTRANS as follows:
+<BR>
+
+<P><PRE>
+extrans -f &lt;transformation file&gt; -i &lt;id1&gt; &lt;id2&gt; &lt;id3&gt; ... &lt;idN&gt;
+</PRE>
+<P>
+A new transformation file will be output to the standard output containing only those domains
+that have been input on the command line.
+
+<P>
+<BR><HR>
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

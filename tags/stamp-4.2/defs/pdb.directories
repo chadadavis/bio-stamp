@@ -1,0 +1,10 @@
+./ _ _
+./ _ .pdb
+./ _ .pdb.Z
+./ _ .pdb.gz
+./ pdb .ent
+./ pdb .ent.Z
+./ pdb .ent.gz
+/data/CASS1/pdb/coords/ _ .pdb
+/data/CASS1/pdb/coords/ _ .pdb.Z
+/data/CASS1/pdb/coords/ _ .pdb.gz

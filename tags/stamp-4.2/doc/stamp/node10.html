@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Structure database scanning (SCAN)</TITLE>
+<META NAME="description" CONTENT="Structure database scanning (SCAN)">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node11.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="node6.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html244"
+ HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html241"
+ HREF="node6.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html235"
+ HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html243"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html245"
+ HREF="node11.html">Displaying STAMP output (VER2HOR,</A>
+<B> Up:</B> <A NAME="tex2html242"
+ HREF="node6.html">A brief description of</A>
+<B> Previous:</B> <A NAME="tex2html236"
+ HREF="node9.html">Multiple alignment (TREEWISE)</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00244000000000000000">
+Structure database scanning (SCAN)</A>
+</H2>
+
+<P>
+It is often desirable to compare a particular domain or protein 
+structure to a database of known 3D structures in order that structurally similar 
+proteins may be found.  The PAIRWISE option within STAMP was a
+logical starting point from which protein structure database scans
+could be performed.
+<BR>
+<BR>
+Given a single protein domain (a <EM>query</EM>) and a list of domains to which it is
+to be compared (a <EM>database</EM>), STAMP can be used to perform all possible
+comparisons of the query to the database structures.  The initial
+superimposition problem is solved by attempting more than one
+initial fit with each database structure.    This can be done in one of two ways,
+which I will call FAST and SLOW, for the obvious reasons.
+<BR>
+<BR>
+In FAST mode, fits are performed by lying
+query sequence onto the database structure starting at every <I>i</I>th position,
+where <I>i</I> is an adjustable parameter usually set to five (i.e. the sequence
+is laid onto the 1st, 6th, 11th, etc. position).   Diagramatically, this looks
+like:
+<BR>
+
+<P>
+<PRE>
+Q=query, D=database
+
+Fit 1  Q -------
+       D -----------
+Fit 2  Q  -------
+       D -----------
+Fit 3  Q   -------
+       D -----------
+      &lt;etc.&gt;
+</PRE>
+<P>
+This approach is fine if the query is a single domain, and there is a strong similarity in
+the database structure.  However, if similarity is weaker, or if the query is multi-domain (not
+always a good idea, I would recommend splitting the structure into domains first, though this
+may not always be possible), then SLOW mode will perform more fits (hence ``SLOW'') by sliding
+query and database sequences along each other like:
+<BR>
+
+<P>
+<PRE>
+Q=query, D=database
+
+Fit 1   Q -------
+        D       -----------
+Fit 2   Q -------
+        D      -----------
+Fit 3   Q -------
+        D    -----------
+      &lt;etc.&gt;
+Fit N-2 Q         -------
+        D -----------
+Fit N-1 Q          -------
+        D -----------
+Fit N   Q           -------
+        D -----------
+</PRE>
+<P>
+In this approach, initial superimpositions are calulated using many more fractions of query and
+database structure, making detectiong of weak similarities more likely.
+<BR>
+<BR>
+The residues that are
+equivalenced by either FAST or SLOW procedures are used to perform an initial fit, which is
+refined by the conformation-based and distance-based fit used during 
+PAIRWISE/TREEWISE comparison of distantly related structures.  If a 
+high enough similarity score (<I>S</I><SUB><I>c</I></SUB>) is found after these three
+steps, then the transformation is saved for further analysis.
+The output from the SCAN routine is directly readable by STAMP so
+that once a list of domains similar to one's query is obtained,
+multiple alignment (ie. PAIRWISE and TREEWISE) may be performed.
+<BR>
+<BR>
+The program PDBC can be used to generate a list of protein domains 
+given a set of PDB identifier codes, and the program SORTTRANS can
+be used to sort the output from SCAN, and remove any redundancies.
+<BR>
+<BR>
+The Sc values output during a SCAN differ slightly from those
+output during a PAIRWISE comparison.  The correction  introduced 
+to correct the SW Score according to the length of the sequence 
+lengths is removed.   During multiple alignment the start and end  
+points of the domains to be superimposed should be known, thus one 
+can penalise all for all positions which are not involved in the 
+alignment.  During a scan, however, it is desireable to detect sub 
+alignments of the two structures being compared (eg., N-terminal helix 
+from query missing in database structure, a much longer database 
+structure, etc.).  Thus, the Sc for scanning may be defined in one of 
+three ways (a=query, b=database, p=path, i=insertion, L=length):
+<BR>
+
+<P>
+<B>Scheme 1</B>
+<BR>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{a}}{L_{a}}
+\right)
+\left(
+\frac{L_{p}-i_{b}}{L_{b}}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="263" HEIGHT="54"
+ SRC="img9.gif"
+ ALT="\begin{displaymath}S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{a}}{L_{a}}
+\right)
+\left(
+\frac{L_{p}-i_{b}}{L_{b}}
+\right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+As for multiple structure alignment.   As discussed, this is generally not the 
+best way to compare a 
+query to the database, since one would not usually wish to penalise insertions
+or omitted missing segments within the database structure (due to truncation values,
+etc.).  However, this scheme may be useful if one is scanning a database of
+structures known to exhibit a particular fold (i.e., if one is merely after 
+accurate superimpositions for a family of known structures; see Chapter 2).
+<BR>
+
+<P>
+<B>Scheme 2</B>
+<BR>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{a}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{b}}{L_{p}}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="267" HEIGHT="54"
+ SRC="img10.gif"
+ ALT="\begin{displaymath}S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{a}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{b}}{L_{p}}
+\right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+<I>L</I><SUB><I>a</I></SUB> and <I>L</I><SUB><I>b</I></SUB> have been replaced by <I>L</I><SUB><I>p</I></SUB> to removed any dependence
+on query or database structure length.  The second two terms
+lower the score if gaps in the path are placed in query (a) or 
+database structure (b).  This avoids a consideration of length, but will
+allow short stretches structural equivalences to score highly.
+<BR>
+
+<P>
+<B>Scheme 3</B>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{a}}{L_{a}}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="176" HEIGHT="54"
+ SRC="img11.gif"
+ ALT="\begin{displaymath}S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{a}}{L_{a}}
+\right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Only penalises insertions in the query sequence.  If a small
+fraction of the query sequence is in the actual path, then
+<I>S</I><SUB><I>c</I></SUB> drops.  
+This scheme is most useful if one only wants similarities
+to the entire protein under consideration, since it penalises
+any omissions from the query structure.
+<BR>
+
+<P>
+<B>Scheme 4</B>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{b}}{L_{b}}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="175" HEIGHT="54"
+ SRC="img12.gif"
+ ALT="\begin{displaymath}S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\left(
+\frac{L_{p}-i_{b}}{L_{b}}
+\right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+The opposite of 3.  Only penalises insertions in the database sequence.  
+If a small fraction of the database sequence is in the actual path, then <I>S</I><SUB><I>c</I></SUB> 
+drops.  This scheme may be useful if one is scanning with a collection of
+secondary structure elements, since gaps are to be expected within the 
+query (i.e., since the loops have been omitted).
+<BR>
+
+<P>
+<B>Scheme 5</B>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="88" HEIGHT="54"
+ SRC="img13.gif"
+ ALT="\begin{displaymath}S_{c} =
+\left(
+\frac{S_{p}}{L_{p}}
+\right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Raw score, no length requirement, will report even short alignments between
+similar sub-structures.  This scheme may be useful for the search for
+short stretches of structural similarity, such as supersecondary structures.
+<BR>
+
+<P>
+<B>Scheme 6</B>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+S_{c} =
+\left(
+\frac{S_{p}}{L_{a}}
+\right)
+\left(
+\frac{L_{a}-i_{a}}{L_{a}}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="176" HEIGHT="49"
+ SRC="img14.gif"
+ ALT="\begin{displaymath}S_{c} =
+\left(
+\frac{S_{p}}{L_{a}}
+\right)
+\left(
+\frac{L_{a}-i_{a}}{L_{a}}
+\right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Vaguely similar to Scheme 3, but this only scores hits favourably
+if the involve a significant fraction of the query structure
+(i.e. similarities only containing part of the query will not
+stand out).  This is useful when one is comparing a particular
+domain to a database and is not interested in local similarities.
+This is the default for scanning.
+<BR>
+<BR>
+For the most part, all of these scoring schemes will yield similar
+numbers for very similar structures.  However, when more distantly
+related structures are compared, it becomes more useful to use a
+scheme specific to the particular problem (i.e., whether one wishes
+to scan with secondary structures only, when one is after only
+very similar structures, etc.).
+<BR>
+<BR>
+Schemes are specified by the parameter SCANSCORE (see below).  If 
+you are confused, or haven't thought about this at all, just use the 
+defaults.  I do.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html244"
+ HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html241"
+ HREF="node6.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html235"
+ HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html243"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html245"
+ HREF="node11.html">Displaying STAMP output (VER2HOR,</A>
+<B> Up:</B> <A NAME="tex2html242"
+ HREF="node6.html">A brief description of</A>
+<B> Previous:</B> <A NAME="tex2html236"
+ HREF="node9.html">Multiple alignment (TREEWISE)</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Compiling/running</TITLE>
+<META NAME="description" CONTENT="Compiling/running">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node54.html">
+<LINK REL="previous" HREF="node52.html">
+<LINK REL="up" HREF="node52.html">
+<LINK REL="next" HREF="node54.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html760"
+ HREF="node54.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html757"
+ HREF="node52.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html751"
+ HREF="node52.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html759"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html761"
+ HREF="node54.html">Setting up STAMP files</A>
+<B> Up:</B> <A NAME="tex2html758"
+ HREF="node52.html">Installation</A>
+<B> Previous:</B> <A NAME="tex2html752"
+ HREF="node52.html">Installation</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00610000000000000000">
+Compiling/running</A>
+</H1>
+
+<P>
+STAMP was developed on a Sun SPARCstation, and later on a Silicon Graphics
+system.  Consequently it may encounter difficulties running on other systems.  <BR>
+<BR>
+Most of STAMP was written in C, thus STAMP requires an ansi-C 
+compiler (e.g. gcc) for installation. <BR>
+<BR>
+STAMP should be received as a gzipped tar file, so must be 
+uncompressed and de-tarred to expose all files and directories.
+<BR>
+<BR>
+On most UNIX systems, one can install STAMP with:
+<BR>
+
+<P><PRE>
+gunzip STAMP.tarfile.gz
+tar xvf STAMP.tarfile
+cd stamp.4.1
+BUILD &lt;system type&gt; (e.g. BUILD sgi)
+</PRE>
+<P>
+should work.
+<BR>
+<BR>
+
+<P>
+The systems that are available are:
+<BR>
+<BR>
+sgi (IRIX64 version 6.2)
+<BR>
+mips4-sgi (IRIX64 R10K version 6.2)
+<BR>
+dec (OSF1 version 4.0)
+<BR>
+sun (SunOS sol4 5.5.1)
+<BR>
+linux (Linux 2.0.36)
+<BR>
+<BR>
+All of these are specified by a makefile in the src/ sub-directory.  If your system
+isn't one of the above, then you can probably just use the one that is nearest, and edit
+the makefile accordingly.  Note that the above are just the systems that I have easy access to. 
+Note also that there are only very few differences between the various makefiles.  I haven't
+been able to test the `linux' version as robustly as the others owing to limited time and access.
+<BR>
+<BR>
+Note that there are several precompiled executables in the distribution.  Files
+found in the directories bin/sgi, bin/sun, bin/dec, bin/linux.  You will
+overwrite these if you attempt a `BUILD' as discussed above.  Note also that these binaries
+may be slightly out of date, as their creation depends entirely on 
+the machine I have access to.
+<BR>
+<BR>
+Once the executables are made, they 
+will be put into the directory bin/&lt;system-type&gt;, and these can then either be
+included in your path name, or linked/copied to some central 
+directory, such as /usr/local/bin.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html760"
+ HREF="node54.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html757"
+ HREF="node52.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html751"
+ HREF="node52.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html759"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html761"
+ HREF="node54.html">Setting up STAMP files</A>
+<B> Up:</B> <A NAME="tex2html758"
+ HREF="node52.html">Installation</A>
+<B> Previous:</B> <A NAME="tex2html752"
+ HREF="node52.html">Installation</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

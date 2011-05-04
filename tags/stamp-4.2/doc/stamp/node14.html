@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Worked examples</TITLE>
+<META NAME="description" CONTENT="Worked examples">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node28.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="stamp.html">
+<LINK REL="next" HREF="node15.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html284"
+ HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html281"
+ HREF="stamp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html275"
+ HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html283"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html285"
+ HREF="node15.html">Multiple alignment (PAIRWISE and</A>
+<B> Up:</B> <A NAME="tex2html282"
+ HREF="stamp.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html276"
+ HREF="node13.html">The programs contained within</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00300000000000000000">
+Worked examples</A>
+</H1>
+
+<P>
+The examples described below show how to apply STAMP to particular 
+problems.  A description of the Input and Output and a summary
+of all parameters appear in Chapter 4.
+<BR>
+<BR>
+All example output files may be found in the directory examples/ 
+within the directory where STAMP is installed.   There are four sub-directories
+in the examples directory corresponding to each of the four protein
+structure familes discussed in the examples below (s_prot/, ac_prot/, ig/, globin/).
+<BR>
+<BR>
+Before begining you must ensure a few things:
+<BR>
+<BR>
+1. That you have set the environment variable STAMPDIR to the name of the 
+directory containing the various STAMP defaults files.  This directory is
+called defs/ within the directory where STAMP is installed. <BR>
+<BR>
+2. Ensure that you have a copy of the PDB, and that you edit the file
+STAMPDIR/pdb.directories (see below) to tell the program where the PDB 
+files might be found (it is OK if they are stored in more than one place, 
+or with different extensions).   Given a PDB code, these programs search 
+through the various directories until an appropriate file is found.
+<BR>
+<BR>
+3. (optional, but worthwhile).  Get a copy of DSSP and run it on the PDB
+structures used in the examples below (and indeed any others you wish to analyse). 
+Edit the file STAMPDIR/dssp.directories to tell the program where to find them (in the 
+same manner as STAMPDIR/pdb.directories).  I would recommend putting DSSP files
+somewhere central for all users to share (this saves having to run the program many
+times on the same PDB files).
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html286"
+ HREF="node15.html">Multiple alignment (PAIRWISE and TREEWISE)</A>
+<LI><A NAME="tex2html287"
+ HREF="node16.html">Alignment using an initial rough superimposition</A>
+<LI><A NAME="tex2html288"
+ HREF="node17.html">Database Scanning</A>
+<LI><A NAME="tex2html289"
+ HREF="node18.html">Using scans as a starting point for multiple alignment</A>
+<LI><A NAME="tex2html290"
+ HREF="node19.html">Protein domain databases</A>
+<LI><A NAME="tex2html291"
+ HREF="node20.html">Generating transformed coordinates</A>
+<LI><A NAME="tex2html292"
+ HREF="node21.html">Generating averaged coordinates</A>
+<LI><A NAME="tex2html293"
+ HREF="node22.html">Displaying/processing the output</A>
+<UL>
+<LI><A NAME="tex2html294"
+ HREF="node23.html">POSTSTAMP</A>
+<LI><A NAME="tex2html295"
+ HREF="node24.html">STAMP_CLEAN</A>
+<LI><A NAME="tex2html296"
+ HREF="node25.html">Displaying text alignments</A>
+<LI><A NAME="tex2html297"
+ HREF="node26.html">Pretty Alignments via ALSCRIPT</A>
+<LI><A NAME="tex2html298"
+ HREF="node27.html">Pretty Structures via MOLSCRIPT</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html284"
+ HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html281"
+ HREF="stamp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html275"
+ HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html283"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html285"
+ HREF="node15.html">Multiple alignment (PAIRWISE and</A>
+<B> Up:</B> <A NAME="tex2html282"
+ HREF="stamp.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html276"
+ HREF="node13.html">The programs contained within</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

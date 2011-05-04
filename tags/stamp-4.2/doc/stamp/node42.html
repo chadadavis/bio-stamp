@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>DSTAMP</TITLE>
+<META NAME="description" CONTENT="DSTAMP">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node43.html">
+<LINK REL="previous" HREF="node41.html">
+<LINK REL="up" HREF="node37.html">
+<LINK REL="next" HREF="node43.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html638"
+ HREF="node43.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html635"
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html629"
+ HREF="node41.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html637"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html639"
+ HREF="node43.html">SORTTRANS</A>
+<B> Up:</B> <A NAME="tex2html636"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html630"
+ HREF="node41.html">VER2HOR</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00525000000000000000">
+DSTAMP</A>
+</H2>
+
+<P>
+This program provides input for ALSCRIPT [<A
+ HREF="node58.html#barton93a">20</A>], GJB's program
+for the display of multiple sequence alignments.  To get a copy of
+this program, refer to GJB at the above address.  <BR>
+<BR>
+The format is:
+<BR>
+
+<P><PRE>
+dstamp -f &lt;STAMP alignment file&gt; -prefix &lt;output prefix&gt; 
+   (-&lt;parameter&gt; [&lt;value&gt;])
+</PRE>
+<P>
+where &lt;parameter&gt; is one of the many parameters described below.
+The new command line argument -P reads in parameter files, so if 
+you have old DSTAMP files, they can still be read in this way. <BR>
+<BR>
+The parameters for DSTAMP, and their defaults, are (parameter names
+are case insensitive):
+<BR>
+<BR>
+prefix &lt;string&gt; <BR>
+Prefix specify the name of the alscript (.als) and postscript files (.ps)
+to be generated.
+<BR>
+Default prefix = `alscript'
+<BR>
+<BR>
+t  &lt;character&gt;
+<BR>
+The type of STAMP data to be used (ie. the first letter that 
+occurs after the `#' characters in STAMP multiple alignment
+output).
+Default t = `G'
+<BR>
+<BR>
+c  &lt;float&gt; <BR>
+The minimum (or maximum in the case of RMS deviation) value to make
+a position considered as reliably aligned.
+<BR>
+Default c = 6.0
+<BR>
+<BR>
+w     &lt;integer&gt; <BR>
+The minimum length of a stetch of reliable regions to be allowed.
+<BR>
+Default w = 3
+<BR>
+<BR>
+ignore &lt;integer&gt;
+<BR>
+This is the number of sequences that can be ignored during the calculation
+of residue or residue-property conservation (i.e. if ignore = 1 you allow
+one `error' in one sequence during the calculation of conserved positions).
+<BR>
+<BR>
+colour
+<BR>
+Boolean parameter.  If specified, the output will be in colour (via alscript).
+<BR>
+<BR>
+motif
+<BR>
+Boolean parameter.  If specified, then a motif is written in the space between
+the sequence alignment and the aligned secondary structures.
+<BR>
+<BR>
+The output is an ALSCRIPT command file.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html638"
+ HREF="node43.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html635"
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html629"
+ HREF="node41.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html637"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html639"
+ HREF="node43.html">SORTTRANS</A>
+<B> Up:</B> <A NAME="tex2html636"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html630"
+ HREF="node41.html">VER2HOR</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

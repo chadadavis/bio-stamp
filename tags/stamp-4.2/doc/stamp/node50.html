@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>STAMP_CLEAN</TITLE>
+<META NAME="description" CONTENT="STAMP_CLEAN">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node51.html">
+<LINK REL="previous" HREF="node49.html">
+<LINK REL="up" HREF="node37.html">
+<LINK REL="next" HREF="node51.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html726"
+ HREF="node51.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html723"
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html717"
+ HREF="node49.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html725"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html727"
+ HREF="node51.html">Converting alignment formats ACONVERT</A>
+<B> Up:</B> <A NAME="tex2html724"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html718"
+ HREF="node49.html">GSTAMP</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION005213000000000000000">
+STAMP_CLEAN</A>
+</H2>
+
+<P>
+This program allows you to tidy up gaps that are not meaningful in the context
+of a multiple sequence alignment derived from structure.  In other words, regions
+that are not similar across all members of a structural family can be `cleaned' to
+remove isolated residues aligned in the middle of nowhere.  Note that one doesn't always 
+want  to do this (since the sub-alignments can be meaningful).  I just find this
+useful if I am preparing a figure for publication or something.
+<BR>
+<BR>
+The format is:
+
+<P><PRE>
+stamp_clean &lt;stamp alignment file&gt; &lt;minimum segment length&gt; &gt; &lt;output file&gt;
+</PRE>
+<P>
+The &lt;minimum segment length&gt; is the minimum number of residues that is to
+be considered significant.  I always use 3, since this means that short stretches of
+1-2 residues that are surround by gaps (i.e. in any sequence) are `cleaned'.  Try it 
+and see what I mean.
+
+<P>
+<BR><HR>
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Generating transformed coordinates</TITLE>
+<META NAME="description" CONTENT="Generating transformed coordinates">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node21.html">
+<LINK REL="previous" HREF="node19.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node21.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html363"
+ HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html360"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html354"
+ HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html362"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html364"
+ HREF="node21.html">Generating averaged coordinates</A>
+<B> Up:</B> <A NAME="tex2html361"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html355"
+ HREF="node19.html">Protein domain databases</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00360000000000000000">
+Generating transformed coordinates</A>
+</H1>
+
+<P>
+The program TRANSFORM can be used with any file containing domain
+descriptions to output a set of PDB format files for display or
+further analysis.  For example, if the transformed PDB files for
+the globin structural alignment are desired, then it is only necessary to type:
+<BR>
+
+<P><PRE>
+transform -f globin.5
+</PRE>
+<P>
+should write the following to the standard output:
+<BR>
+
+<P><PRE>
+TRANSFORM R.B. Russell, 1995
+ Using PDB files
+ Files will not include heteroatoms
+ Files will not include waters
+ Domain   1,   1lh1 =&gt; to 1lh1.pdb
+ Domain   2,   2lhb =&gt; to 2lhb.pdb
+ Domain   3,   1ecd =&gt; to 1ecd.pdb
+ Domain   4,   4mbn =&gt; to 4mbn.pdb
+ Domain   5,  2hhbb =&gt; to 2hhbb.pdb
+ Domain   6,  2hhba =&gt; to 2hhba.pdb
+</PRE>
+<P>
+To get a set of PDB format files containing the superimposed
+coordinates.  Running the program as shown above will produce one PDB 
+file for each domain identifier.  If one wishes to look at the 
+superimposed structures <EM>together</EM> (in the same file), then the 
+option -g (i.e. graphics) can be used:
+<BR>
+
+<P><PRE>
+transform -f globin.5 -g -o globins.pdb
+</PRE>
+<P>
+should write the following:
+<BR>
+
+<P><PRE>
+TRANSFORM R.B. Russell, 1995
+ Using PDB files
+ Files will not include heteroatoms
+ Files will not include waters
+ All coordinates will be in file globins.pdb
+ Domain   1,   1lh1 =&gt; to globins.pdb (chain A)
+ Domain   2,   2lhb =&gt; to globins.pdb (chain B)
+ Domain   3,   1ecd =&gt; to globins.pdb (chain C)
+ Domain   4,   4mbn =&gt; to globins.pdb (chain D)
+ Domain   5,  2hhbb =&gt; to globins.pdb (chain E)
+ Domain   6,  2hhba =&gt; to globins.pdb (chain F)
+</PRE>
+<P>
+This options puts transformed coordinates for each domain into one file
+(specified by -o, in this example it is globins.pdb).  Each domain will 
+be labelled sequentially with a different chain identifier (i.e. A, B, C,
+etc.).  Note that only `globins.pdb' is included in the example directory.
+<BR>
+<BR>
+Be default, TRANSFORM does not include heteroatoms in the output.  If you 
+wish heteroatoms to be included, then add -het to the transform command.  
+If you wish waters to be included in the file add -hoh.
+Note that heteroatoms/waters are sometimes included that fall outside the
+range of your domain descriptor.  This may seem silly, but it
+is difficult to deterine which heteroatoms are associated with which residues
+given PDB format.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html363"
+ HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html360"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html354"
+ HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html362"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html364"
+ HREF="node21.html">Generating averaged coordinates</A>
+<B> Up:</B> <A NAME="tex2html361"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html355"
+ HREF="node19.html">Protein domain databases</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

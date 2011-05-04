@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Initial superimposition</TITLE>
+<META NAME="description" CONTENT="Initial superimposition">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node6.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html211"
+ HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html208"
+ HREF="node6.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html202"
+ HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html210"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html212"
+ HREF="node8.html">Pairwise comparisons and alignments</A>
+<B> Up:</B> <A NAME="tex2html209"
+ HREF="node6.html">A brief description of</A>
+<B> Previous:</B> <A NAME="tex2html203"
+ HREF="node6.html">A brief description of</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00241000000000000000">
+Initial superimposition</A>
+</H2>
+
+<P>
+The structure comparison algorithm of Argos &amp; Rossmann
+[<A
+ HREF="node58.html#argos76">3</A>], which is the method used by STAMP, requires that the 
+protein structures being compared are approximately superimposed 
+initially.  If not then structural similarity may be undetected, and 
+reliable superimpositions and alignments unattainable.  This is a very important
+thing to remember of STAMP.  If initial superimpositions do not yield high
+enough scores (i.e. 
+<!-- MATH: $S_{c} < 2.0$ -->
+<I>S</I><SUB><I>c</I></SUB> &lt; 2.0) or if the structures are generally different, 
+STAMP will warn you with `LOW SCORE'.
+<BR>
+<BR>
+The STAMP package provides three methods of arriving at an initial 
+superimposition.  The first of these is to make use of an alignment
+derived on the basis of sequence.  The program ALIGNFIT requires
+that the sequences extracted from the PDB files (using the program
+PDBSEQ) are aligned vertically in AMPS block format (see format and
+examples below); one may use AMPS or another method of aligning sequences 
+(provided one has first converted the alignment to the AMPS format; 
+two programs to do so are included in the distribution: one converts CLUSTAL
+format, the other MSF format).
+The program compares all possible pairs of
+structures by performing a least squares fit on all equivalenced 
+
+<!-- MATH: $C_{\alpha}$ -->
+<IMG
+ WIDTH="28" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$C_{\alpha}$">
+atoms.  Once all pairwise comparisons are compared, the
+program makes use of a tree to superimpose  multiply all
+coordinates following the tree.  Thus the final superimposition
+output is the best possible fit of the structure given the
+alignment.  For an example where ALIGNFIT is used to provide an
+initial superimposition, refer to the alignment of the serine
+proteinases Chapter 2.  AMPS can be obtained from GJB.
+<BR>
+<BR>
+In instances when multiple sequence alignment is inaccurate,
+ALIGNFIT may still be used, though the initial superimpositions may
+not be accurate enough for STAMP to find structural similarity. <BR>
+<BR>
+It is possible to skip the use of a multiple sequence alignment by 
+using the ROUGHFIT option within STAMP.  This option generates an initial 
+alignment which simply consists of the sequences from 
+each domain aligned from their N-terminal ends.  This works well in
+cases where the lengths of the domains to be aligned are similar,
+and when they exhibit good structural similarity, but will often
+fail to provide a good starting point.  See the alignment of the
+globin structures in Chapter 2 for an example of using ROUGHFIT.
+<BR>
+<BR>
+By far the best way to arrive at initial superimpositions is to use
+the SCAN option within STAMP.  One must merely select a domain with
+which to scan the other domains to be superimposed.  
+One can obtain (by SCAN and after running SORTTRANS, and 
+removing other redundancies) a set of
+superimpositions for all other domains onto the domain used to scan.  
+This provides an excellent and accurate starting point from which to
+begin a multiple structure based alignment by STAMP.  This works
+particularly well when structures are very diverse.  For an
+example, see the alignment of the aspartyl proteinase N- and C-
+terminal lobes in Chapter 2.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html211"
+ HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html208"
+ HREF="node6.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html202"
+ HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html210"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html212"
+ HREF="node8.html">Pairwise comparisons and alignments</A>
+<B> Up:</B> <A NAME="tex2html209"
+ HREF="node6.html">A brief description of</A>
+<B> Previous:</B> <A NAME="tex2html203"
+ HREF="node6.html">A brief description of</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

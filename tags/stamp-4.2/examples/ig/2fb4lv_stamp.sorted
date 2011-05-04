@@ -1,0 +1,75 @@
+% Sorted output from STAMP scan routine
+% The file 2fb4lv_stamp.scan was sorted according to 
+% Sc values
+% Repeated transformations were ignored
+% Out of an initial 26 domains,
+% a total of 13 repeated domains were found
+% and 1 domains were found to have 
+%  Sc values less than   2.500
+% All of these were removed
+% Leaving 13 domains in this file
+# Sc=  10.000 RMS=   0.010 len=  999 nfit=  999 seq_id= 100.00 sec_id= 100.00 q_len=  111 d_len=  111 n_sec= 100 fit_pos= _   0 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2fb4.ent 2fb4lv { L 1 _ to L 109 _ 
+   1.00000    0.00000    0.00000         0.00000  
+   0.00000    1.00000    0.00000         0.00000  
+   0.00000    0.00000    1.00000         0.00000  }
+# Sc=   9.799 RMS=   0.001 len=  111 nfit=  111 seq_id= 66.87 sec_id= 65.06 q_len=  111 d_len=  216 n_sec=  11 fit_pos= L   1 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2fb4.ent 2fb4l_1 { L 2 _ to L 109 _ 
+   1.00000    0.00000    0.00001         0.00169  
+   0.00000    1.00000    0.00000         0.00182  
+  -0.00001    0.00000    1.00000         0.00290  }
+# Sc=   7.849 RMS=   1.213 len=  116 nfit=   96 seq_id= 44.25 sec_id= 80.53 q_len=  111 d_len=  113 n_sec=  11 fit_pos= L   1 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb1mcp.ent 1mcplv_1 { L 4 _ to L 112 _ 
+  -0.54263    0.77594    0.32167        38.06813  
+   0.79883    0.35833    0.48318         0.59291  
+   0.25966    0.51914   -0.81429       -33.32988  }
+# Sc=   6.915 RMS=   1.540 len=  126 nfit=   85 seq_id= 22.95 sec_id= 75.41 q_len=  111 d_len=  122 n_sec=  10 fit_pos= H   1 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb1mcp.ent 1mcphv_1 { H 2 _ to H 122 _ 
+   0.11472   -0.68685   -0.71769        64.03281  
+   0.77451   -0.39057    0.49758        48.87604  
+  -0.62207   -0.61294    0.48717       120.69744  }
+# Sc=   5.948 RMS=   1.261 len=  114 nfit=   72 seq_id=  9.04 sec_id= 38.55 q_len=  111 d_len=  178 n_sec=  10 fit_pos= _   1 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb3cd4.ent 3cd4_1 { _ 4 _ to _ 97 _ 
+  -0.03522   -0.97701   -0.21027        92.26098  
+  -0.44188   -0.17350    0.88014        44.41894  
+  -0.89638    0.12391   -0.42561        85.03513  }
+# Sc=   4.687 RMS=   1.322 len=  128 nfit=   50 seq_id=  9.04 sec_id= 31.33 q_len=  111 d_len=  216 n_sec=   8 fit_pos= L 172 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2fb4.ent 2fb4l_5 { L 118 _ to L 211 _ 
+  -0.72739   -0.65734    0.19701       130.29614  
+  -0.55831    0.39997   -0.72685        64.36187  
+   0.39899   -0.63869   -0.65793       112.95700  }
+# Sc=   4.664 RMS=   2.136 len=  134 nfit=   56 seq_id=  4.82 sec_id= 25.30 q_len=  111 d_len=  218 n_sec=   0 fit_pos= _   1 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb3dpa.ent 3dpa_1 { _ 2 _ to _ 116 _ 
+  -0.32858   -0.24796    0.91135        47.75013  
+   0.30382    0.88588    0.35057        22.66322  
+  -0.89428    0.39208   -0.21575        70.02827  }
+# Sc=   4.618 RMS=   2.067 len=  115 nfit=   57 seq_id=  8.43 sec_id= 30.12 q_len=  111 d_len=  178 n_sec=  10 fit_pos= _  97 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb3cd4.ent 3cd4_2 { _ 98 _ to _ 178 _ 
+  -0.08198    0.04151    0.99577       -14.72272  
+  -0.09560   -0.99485    0.03360        80.91608  
+   0.99204   -0.09244    0.08553        20.34278  }
+# Sc=   4.036 RMS=   2.580 len=  135 nfit=   45 seq_id=  8.53 sec_id= 46.51 q_len=  111 d_len=  129 n_sec=   5 fit_pos= A  11 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2aza.ent 2azaa_3 { A 12 _ to A 129 _ 
+  -0.27273    0.96202   -0.01199        34.98249  
+  -0.62852   -0.18759   -0.75483        69.98579  
+  -0.72841   -0.19832    0.65581        38.90855  }
+# Sc=   3.999 RMS=   2.401 len=  133 nfit=   48 seq_id= 12.61 sec_id= 44.14 q_len=  111 d_len=  108 n_sec=   5 fit_pos= _   1 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb1acx.ent 1acx_1 { _ 2 _ to _ 106 _ 
+  -0.97531    0.21630    0.04458        49.87366  
+   0.16997    0.60629    0.77687        58.27517  
+   0.14101    0.76526   -0.62808        59.87972  }
+# Sc=   3.785 RMS=   2.052 len=  125 nfit=   43 seq_id= 13.51 sec_id= 41.44 q_len=  111 d_len=   99 n_sec=   6 fit_pos= _   1 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2pcy.ent 2pcy_1 { _ 13 _ to _ 98 _ 
+  -0.49365   -0.74099   -0.45523        85.40724  
+   0.07221   -0.55658    0.82765        62.06677  
+  -0.86666    0.37570    0.32827        31.02170  }
+# Sc=   3.607 RMS=   2.291 len=  160 nfit=   40 seq_id=  5.96 sec_id= 43.71 q_len=  111 d_len=  151 n_sec=   7 fit_pos= O   6 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb2sod.ent 2sodo_2 { O 14 _ to O 150 _ 
+   0.78498    0.17819   -0.59335        58.40174  
+  -0.34850    0.91885   -0.18512        47.37775  
+   0.51221    0.35210    0.78337        56.24519  }
+# Sc=   2.933 RMS=   2.553 len=  118 nfit=   29 seq_id=  4.22 sec_id= 15.06 q_len=  111 d_len=  218 n_sec=   0 fit_pos= _ 121 _
+/ebi/ftp/pub/databases/pdb/all_entries/uncompressed_files//pdb3dpa.ent 3dpa_3 { _ 126 _ to _ 210 _ 
+   0.67476   -0.54255   -0.50034        53.26984  
+   0.67193    0.73204    0.11237       -10.00098  
+   0.30530   -0.41201    0.85851        30.49453  }
