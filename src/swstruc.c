@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -33,12 +32,10 @@
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
 #include <stdio.h>
-#include <stdlib.h>
+#include <malloc.h>
 #include <math.h>
 
-#include "stamp.h"
-
-#define MAX3(A,B,C) ((A)>(B)?(A)>(C)?(A):(C):(B)>(C)?(B):(C))
+#include "include.h"
 
 /**********************************************************************
 sw7: routine to do the Smith Waterman algorithm and retain history of
@@ -52,10 +49,18 @@ sw7: Also stores path array to allow tracing out of alignments.
 see sw6 for further details.
 
 ----------------------------------------------------------------------*/
-/* SMJS Modified to remove structures  = */
-int swstruc(const int  lena, const int lenb, const int pen, int ** prob, struct olist * const result,
-        int * total, unsigned char ** patha, const int min_score) {
+int swstruc(lena,lenb,pen,prob,result,total,patha,min_score)
 
+int  lena, lenb;
+int pen;
+int **prob;
+struct olist *result;
+int *total;
+unsigned char **patha;  /* path array*/
+int min_score;
+
+
+{
     register int diag, vert, horiz, rtemp,i , j, im1, done,k;
 
     unsigned char DIAG = 01; /* mask for diagonal move */
@@ -71,34 +76,23 @@ int swstruc(const int  lena, const int lenb, const int pen, int ** prob, struct 
 
     register int minscore = min_score;
 
-/* SMJS Added for speedup */
-    int starti,endi,startj,endj;
-    struct path *pathP;
-    unsigned char flags;
-    unsigned char *pathaj;
-
     *total = 0;
 
-/* SMJS Changed malloc to calloc for zeroing */
-    old = (struct path *) calloc(lena,sizeof(struct path));
+    old = (struct path *) malloc(sizeof(struct path)*lena);
     if(old == NULL) fprintf(stderr,"Cannot get space for old\n");
 
-    new = (struct path *) calloc(lena,sizeof(struct path));
+    new = (struct path *) malloc(sizeof(struct path)*lena);
     if(new == NULL) fprintf(stderr,"Cannot get space for new\n");
-    
+
     for (i=0; i< (lena-1); ++i){
-/* SMJS already zeroed
 	old[i].col = 0;
 	old[i].score = 0;
-*/
 	old[i].start.i = i;
 	old[i].start.j = 1;
 	old[i].end.i = i;
 	old[i].end.j = 1;
-/* SMJS already zeroed
 	new[i].col = 0;
 	new[i].score =0;
-*/
 	new[i].start.i = i;
 	new[i].start.j = 1;
 	new[i].end.i = i;
@@ -112,29 +106,16 @@ int swstruc(const int  lena, const int lenb, const int pen, int ** prob, struct 
 
 /*    printf("lena: %d, lendb: %d\n",lena,lenb); */
     for(j = 1; j < (lenb-1); ++j){
-        pathaj = patha[j];
-	for( i = 1,im1 = 0; i < (lena-1); ++i, ++im1){
-/*	    im1 = i - 1; */
+	for( i = 1; i < (lena-1); ++i){
+	    im1 = i - 1;
 	    diag = old[im1].col + prob[i][j];
 	    horiz= old[i].col - pen;
 	    vert = new[im1].col - pen;
-/*
 	    rtemp = max4(diag,horiz,vert,0);
-*/
-	    rtemp = MAX3(0,diag,horiz);
-            rtemp = max(rtemp,vert);
-/*
 	    patha[j][i] = 00;
 	    if(rtemp == diag)	patha[j][i] = DIAG;
 	    if(rtemp == horiz)	patha[j][i] = patha[j][i] | HORIZ;
 	    if(rtemp == vert)	patha[j][i] = patha[j][i] | VERT;
-*/
-            flags = 00;
-	    if(rtemp == diag)	flags = DIAG;
-	    if(rtemp == horiz)	flags |= HORIZ;
-	    if(rtemp == vert)	flags |= VERT;
-/* indexing from 1 therefore ++pathaj */
-            *(++pathaj) = flags;
 	    if(rtemp > 0){
 		if(diag == rtemp){
 		    if(old[im1].col == 0){
@@ -145,12 +126,7 @@ int swstruc(const int  lena, const int lenb, const int pen, int ** prob, struct 
 			new[i].end.j = j;
 		    }
 		    else{
-#ifdef ASSIGNSTRUCT
-			new[i].start = old[im1].start; 
-#else
-			new[i].start.i = old[im1].start.i;
-			new[i].start.j = old[im1].start.j;
-#endif
+			new[i].start = old[im1].start;
 			if(rtemp >= old[im1].score){
 			    new[i].score = rtemp;
 			    new[i].end.i = i;
@@ -158,112 +134,54 @@ int swstruc(const int  lena, const int lenb, const int pen, int ** prob, struct 
 			}
 			else{
 			    new[i].score = old[im1].score;
-#ifdef ASSIGNSTRUCT
-			    new[i].end = old[im1].end; 
-#else
-                            new[i].end.i = old[im1].end.i;
-                            new[i].end.j = old[im1].end.j;
-#endif
+			    new[i].end = old[im1].end;
 			}
 		    }
 		}
 		else if(horiz == rtemp){
-#ifdef ASSIGNSTRUCT
 		    new[i].start = old[i].start;
-#else
-		    new[i].start.i = old[i].start.i;
-		    new[i].start.j = old[i].start.j;
-#endif
 		    if(horiz >= old[i].score){
 			new[i].score = horiz;
 			new[i].end.i = i;
 			new[i].end.j = j;
 		    }else{
 			new[i].score = old[i].score;
-#ifdef ASSIGNSTRUCT
 			new[i].end = old[i].end;
-#else
-                        new[i].end.i = old[i].end.i;
-                        new[i].end.j = old[i].end.j;
-#endif
 		    }
 		}
 		else if(vert == rtemp){
-#ifdef ASSIGNSTRUCT
-		    new[i].start = new[im1].start; 
-#else
-		    new[i].start.i = new[im1].start.i;
-		    new[i].start.j = new[im1].start.j;
-#endif
+		    new[i].start = new[im1].start;
 		    if(vert > new[im1].score){
 			new[i].score = vert;
 			new[i].end.i = i;
 			new[i].end.j = j;
 		    }else{
 			new[i].score = new[im1].score;
-#ifdef ASSIGNSTRUCT
 			new[i].end = new[im1].end;
-#else
-			new[i].end.i = new[im1].end.i;
-			new[i].end.j = new[im1].end.j;
-#endif
 		    }
 		}
 		}
 		if((i == (lena-2)) || (j == (lenb-2))){
-
-                    pathP = &(new[i]);
-                    starti = pathP->start.i;
-                    startj = pathP->start.j;
-                    endi = pathP->end.i;
-                    endj = pathP->end.j;
-
-/*
 		    if((new[i].score >= minscore) &&
 			(new[i].start.i > 0) &&
 			(new[i].start.i != new[i].end.i) &&
 		       (new[i].start.j != new[i].end.j)){
-*/
-		    if((new[i].score >= minscore) &&
-			(starti > 0) &&
-			(starti != endi) &&
-		       (startj != endj)){
-/* SMJS Combined condition */
-/*
 			done = present(&new[i],&result[new[i].start.i]);
 			if(!done){
-*/
-			if(!present(pathP,&result[starti])){
-			    addsco(pathP,&result[starti],total);
+			    addsco(&new[i],&result[new[i].start.i],total);
 			}
 			}
 		}
 	    else if(rtemp == 0){
 		if(old[im1].score > 0){
-
-                    pathP = &(old[im1]);
-                    starti = pathP->start.i;
-                    startj = pathP->start.j;
-                    endi = pathP->end.i;
-                    endj = pathP->end.j;
-
-/*
 		    if((old[im1].score >= minscore) &&
 			(old[im1].start.i > 0) &&
 			(old[im1].start.i != old[im1].end.i) &&
 		       (old[im1].start.j != old[im1].end.j)){
-*/
-		    if((old[im1].score >= minscore) &&
-			(starti > 0) &&
-			(starti != endi) &&
-		       (startj != endj)){
-/* SMJS Combined condition */
-/*
 			   done = present(&old[im1],&result[old[im1].start.i]);
 			   if(!done){
-*/
-			   if(!present(pathP,&result[starti])){
-				addsco(pathP,&result[starti],total);
+				addsco(&old[im1],&result[old[im1].start.i],
+				total);
 			   }
 					   
 		       }
@@ -279,21 +197,7 @@ int swstruc(const int  lena, const int lenb, const int pen, int ** prob, struct 
 	old = new;
 	new = tempp;
 	for(k=0; k<(lena-1); ++k) 
-        {
-#ifdef ASSIGNSTRUCT
 	   new[k].start=new[k].end;
-#else
-/* SMJS Changed to zero for speed. Shouldn't affect results */
-/*      because this loop is basically setting the path to  */
-/*      zero length */
-/*
-	   new[k].start.i=new[k].end.i;
-	   new[k].start.j=new[k].end.j;
-*/
-	   new[k].start.i=0;
-	   new[k].start.j=0;
-#endif
-        }
 
     }
 /*
@@ -315,39 +219,32 @@ then check if the new score is > the old score.  If it is, then store the
 new path in the result and return 1.  If it isn't then do nothing, but return
 0.
 ----------------------------------------------------------------------------*/
-int present(struct path *new, struct olist *result)
+present(new, result)
+
+struct path *new;
+struct olist *result;
+
 {
     int i;
     for(i = 0; i < result->len; ++i){
 	if(new->start.j == result->res[i].start.j){
 	    if(new->score > result->res[i].score){
-#ifdef ASSIGNSTRUCT
-		result->res[i] = *new; 
-#else
-                CopyPath(&(result->res[i]),new);
-#endif
+		result->res[i] = *new;
 	    }
 	    return 1;
 	}
     }
     return 0;
 }
-
-/* SMJS Added routine CopyPath */
-void CopyPath(struct path *to,struct path *from)
-{
-   to->start.i = from->start.i;
-   to->start.j = from->start.j;
-   to->end.i = from->end.i;
-   to->end.j = from->end.j;
-   to->score = from->score;
-   to->col   = from->col;
-}
-
 /**************************************************************************
 addsco
 --------------------------------------------------------------------------*/
-void addsco(struct path *new,struct olist *result,int *total)
+addsco(new,result,total)
+
+struct path *new;
+struct olist *result;
+int *total;
+
 {
     ++result->len;
     ++*total;
@@ -355,11 +252,7 @@ void addsco(struct path *new,struct olist *result,int *total)
 	result->res = 
 	(struct path *) realloc(result->res,sizeof(struct path)*result->len);
     }
-#ifdef ASSIGNSTRUCT
-    result->res[result->len - 1] = *new; 
-#else
-    CopyPath(&(result->res[result->len - 1]),new);
-#endif
+    result->res[result->len - 1] = *new;
 }
 /***************************************************************************
 ppath - print out the paths as stored in result array
@@ -435,3 +328,5 @@ int total,lena;
     fprintf(fp,"!END_RANGE\n");
     fclose(fp);
 }
+
+

@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,15 +33,21 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
+#include <malloc.h>
 
-#include "stamp.h"
+#include "include.h"
 
-int treefit(struct domain_loc *domain, int ndomain, struct cluster cl, 
-	float *score, float *rms, int *length, int *nfit,
-	float *Pij, float *Dij, float *dist, float *Pijp,
-	int rev, int align, struct parameters *parms) {
-
+int treefit(domain,ndomain,cl,score,rms,length,nfit,Pij,Dij,dist,Pijp,rev,align,parms)
+struct domain_loc *domain;
+int ndomain;
+struct cluster cl;
+float *score,*rms;
+int *length,*nfit;
+float *Pij,*Dij,*dist,*Pijp;
+int rev;
+int align;
+struct parameters *parms;
+{
 	char **pseq1,**pseq2,**psec1,**psec2;
 	char *puse,*touse;
 
@@ -63,8 +68,6 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 	float D,P,C;
 	float Rossmann;
 	float **R2,*V2,**dR2,*dV2;
-/* SMJS Added variables for inverse consts in rossmann */
-        float const1,const2,prec2i;
 
 	FILE *IN;
 
@@ -86,8 +89,7 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 
 	prob=(int**)malloc((pxsize+2) *sizeof(int*));
 	for(j=0; j<(pxsize+2); ++j)
-/* SMJS Was sizeof(int *) */
-	   prob[j]=(int*)malloc((pysize+2)*sizeof(int));
+	   prob[j]=(int*)malloc((pysize+2)*sizeof(int*));
 
         iter=0; oldscore=0.0; diff=parms[0].SCORETOL+1;
 	(*nfit)=100; scorerise=1;
@@ -107,11 +109,6 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 	   no_matrix=(pxsize-1)*(pysize-1);
 	   no_comparisons=cl.a.number*cl.b.number;
 
-/* SMJS Added const1 and const2 and prec2i */
-          prec2i=1.0/(float)(parms[0].PRECISION*parms[0].PRECISION);
-          const1=(1.0/parms[0].const1)*prec2i;
-          const2=(1.0/parms[0].const2)*prec2i;
-
 	  for(j=0; j<cl.a.number; ++j) xcount[j]=0;
           for(l=0; l<strlen(domain[cl.a.member[0]].align); ++l) {
 	    for(k=0; k<cl.b.number; ++k) ycount[k]=0;
@@ -123,16 +120,10 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 		     indy=cl.b.member[k];
 	             if(j==0 && k==0) prob[l+1][m+1]=(parms[0].BOOLEAN);
 	             if(domain[indx].align[l]!=' ' && domain[indy].align[m]!=' ') {
-/* SMJS Changed to use inverse constants (its faster)
 	 	          Rossmann=rossmann(&domain[indx].coords[xcount[j]],&domain[indy].coords[ycount[k]],
 		  	       (xcount[j]==0 || ycount[k]==0),
 			       (xcount[j]==(domain[indx].ncoords-1) || ycount[k]==(domain[indy].ncoords-1)),
 				parms[0].const1,parms[0].const2,&D,&C,parms[0].PRECISION);
-*/
-	 	          Rossmann=rossmann(&domain[indx].coords[xcount[j]],&domain[indy].coords[ycount[k]],
-		  	       (xcount[j]==0 || ycount[k]==0),
-			       (xcount[j]==(domain[indx].ncoords-1) || ycount[k]==(domain[indy].ncoords-1)),
-				const1,const2,&D,&C);
 			  if(!parms[0].BOOLEAN) P+=Rossmann;
 			  else prob[l+1][m+1]*=(Rossmann>=parms[0].BOOLCUT);
 			  if(P>(1.0*(float)no_comparisons)) {
@@ -190,7 +181,7 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 	   for(i=0; i<cl.b.number; ++i) {
 	      indy=cl.b.member[i];
 	      matmult(R2,V2,domain[indy].coords,domain[indy].ncoords,parms[0].PRECISION);
-	      update(R2,domain[indy].r,V2,domain[indy].v);
+	      update(R2,V2,domain[indy].r,domain[indy].v);
 	   }
 
 	}
@@ -227,11 +218,7 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 	   } 
 	   psec2[i][j]='\0'; 
 	 }
-	 if(strcmp(parms[0].logfile,"silent")!=0) {
-	   display_align(pseq1,cl.a.number,pseq2,cl.b.number,psec1,psec2,touse,puse,parms[0].COLUMNS,1,1,parms[0].LOG);
-	 } else {
-	   display_align(pseq1,cl.a.number,pseq2,cl.b.number,psec1,psec2,touse,puse,parms[0].COLUMNS,1,1,stdout);
-	 }
+	 display_align(pseq1,cl.a.number,pseq2,cl.b.number,psec1,psec2,touse,puse,parms[0].COLUMNS,1,1,parms[0].LOG);
 	 for(i=0; i<cl.a.number; ++i) free(psec1[i]);
 	 for(i=0; i<cl.b.number; ++i) free(psec2[i]);
 	}

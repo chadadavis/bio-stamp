@@ -1,0 +1,55 @@
+C ---------------------------------------------------------------
+C Include file of various bits and pieces for subroutine
+C CLUST and GJPLOT
+C ---------------------------------------------------------------
+C
+C maximum number of clusters allowed, maximum number of characters to a line
+C in lineprinter mode
+      INTEGER MACLUS,malin
+      PARAMETER(MACLUS= 650,malin=132)
+C
+C --  variable NOT held in common
+      INTEGER N,NENTRY
+      REAL SIMMAT(N,N)
+      CHARACTER*(*) IDENT(NENTRY)
+C
+C --  Score for the cluster,temp max val
+      REAL CSCORE(MACLUS),MAXVAL
+C
+C --  Pairs making up the current cluster, all entries in cluster,
+C     Number of entries in cluster
+      INTEGER CPAIRS(2,MACLUS),CTOTAL(MACLUS,MACLUS),NCTOT(MACLUS),
+     -        CELM(2,MACLUS)
+C
+C --  position of element i,j,current no of clusters
+      INTEGER IPOS,JPOS,NCLUST
+C
+C--   min value parameter,add on parameter to indicate cluster
+      INTEGER MINSET,CADD
+      PARAMETER(MINSET=-100000)
+      PARAMETER(CADD  = 2000)
+C
+C --
+      INTEGER I,J,II,IPOINT,JPOINT
+C
+C --  variables associated with plotting
+      REAL XRANGE,DIVIT,TOT,ABIT,TMAG,BBIT,xscale
+      INTEGER  TINDEX,POINT(MACLUS),ENDFIN,IOS,MBIT
+      CHARACTER*4 INCHAR
+      character*80  xtit,tit,LINE*300
+      LOGICAL VERT,fexist
+C use real numbers here in pscript program - integers in textout version
+      real xmin,xlim,xmax,x(4),y(4)
+      real xr,yr,ymin,xfac,yfac
+C
+C --  
+      common /gjreap/cscore,maxval,xrange,divit,tot,
+     -               abit,tmag,bbit
+      common /gjintp/cpairs,ctotal,nctot,celm,ipos,jpos,nclust,
+     -               i,j,ii,ipoint,jpoint,tindex,point,ios,mbit,
+     -               xmin,xlim,xmax,x,y,xr,yr,ymin,xfac,yfac
+      common /gjchap/xtit,tit,line
+      common /gjlogp/vert,fexist
+C
+C end of include
+C

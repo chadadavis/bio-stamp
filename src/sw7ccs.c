@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -35,7 +34,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "stamp.h"
+#include "include.h"
 
 /**********************************************************************
 sw7: routine to do the Smith Waterman algorithm and retain history of
@@ -51,10 +50,20 @@ see sw6 for further details.
 sw7cc:  Version to do corner cutting.  I hope this works.
 sw7ccs: Structure comparison version
 ----------------------------------------------------------------------*/
-int sw7ccs(int  lena, int lenb, int **prob, int pen, struct olist *result,
-	int *total, unsigned char **patha, int min_score, 
-	int auto_corner, float fk) {
+int sw7ccs(lena,lenb,pen,prob,result,total,patha,min_score,auto_corner,fk)
 
+int  lena, lenb;
+int **prob;
+int pen;
+struct olist *result;
+int *total;
+unsigned char **patha;  /* path array*/
+int min_score;
+int auto_corner;
+float fk;
+
+
+{
     register int diag, vert, horiz, rtemp,i , j, im1, done, k;
 
     unsigned char DIAG = 01; /* mask for diagonal move */

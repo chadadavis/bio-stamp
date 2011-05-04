@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -35,16 +34,14 @@
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
-/*
-#include <machine/fpu.h>
-*/
-#include <signal.h>
-#include "stamp.h"
-void handler(int);
-int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms) {
+#include "include.h"
 
+int pairwise(domain,ndomain,parms)
+struct domain_loc *domain;
+int ndomain;
+struct parameters *parms;
+{
 	int i,j,k,l;
-	int n,m;
 	int length,nfit;
 	int start1,end1;
 	int start2,end2;
@@ -54,21 +51,13 @@ int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 	int **hbcmat;
 
 	float rms;
-/* SMJS For some reason score needed to be initialised */
-	float score=0.0;
+	float score;
 	float seqid,secid;
 	float secdist,ratio;
 	float **pairmat;
 
- 	double Pm;
-
 	FILE *MAT;
 
-/*
-        signal(SIGFPE,handler);
-        ieee_set_fp_control(IEEE_TRAP_ENABLE_INV|IEEE_TRAP_ENABLE_DZE|IEEE_TRAP_ENABLE_OVF|IEEE_TRAP_ENABLE_UNF);
-*/
-        
 	fprintf(parms[0].LOG,"\n\nPAIRWISE comparisons\n");
 
 	pairmat=(float**)malloc(ndomain*sizeof(float*));
@@ -89,13 +78,8 @@ int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 	    printf("\n    Sc = STAMP score, RMS = RMS deviation, Align = alignment length\n");
 	    printf("    Len1, Len2 = length of domain, Nfit = residues fitted\n");
 	    printf("    Secs = no. equivalent sec. strucs. Eq = no. equivalent residues\n");
-	    printf("    %%I = seq. identity, %%S = sec. str. identity\n");
-	    printf("    P(m)  = P value (p=%4.2f) calculated after Murzin (1993), JMB, 230, 689-694\n",parms[0].murzin_est);
-            printf("            (NC = P value not calculated - potential FP overflow)\n\n");
-
-	    printf("     No.  Domain1         Domain2         Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %%I   %%S   P(m)\n");
-
-
+	    printf("     %%I = seq. identity, %%S = sec. str. identity\n\n");
+	    printf("     No.   Domain1  Domain2 Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %%I   %%S \n");
 /* 	           "Pair   1      4mbn    2hhba 7.71 100.00    153   141        133   7  132"  */  
 
 	}
@@ -135,52 +119,32 @@ int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 		 fprintf(parms[0].LOG,"not performed since Sc < %7.3f\n",parms[0].first_THRESH);
 		 score/=10.0;
 	      }
-	      if(parms[0].SECTYPE!=0) { /* secondary structure distance */
-		sec_content(domain[i].sec,domain[i].ncoords,parms[0].SECTYPE,&a1,&b1,&c1);
-		sec_content(domain[j].sec,domain[j].ncoords,parms[0].SECTYPE,&a2,&b2,&c2);
+	      if(parms[0].SEC!=0) { /* secondary structure distance */
+		sec_content(domain[i].sec,domain[i].ncoords,parms[0].SEC,&a1,&b1,&c1);
+		sec_content(domain[j].sec,domain[j].ncoords,parms[0].SEC,&a2,&b2,&c2);
 		fprintf(parms[0].LOG,"secondary structure: %10s,  H: %3d, S: %3d (C: %3d)\n",
 			domain[i].id,a1,b1,c1);
 	        fprintf(parms[0].LOG,"secondary structure: %10s,  H: %3d, S: %3d (C: %3d)\n",
 			domain[j].id,a2,b2,c2);
-/* SMJS Shouldn't be float */
-		secdist=sqrt((double)((a1-a2)*(a1-a2)+(b1-b2)*(b1-b2)));
+		secdist=sqrt((float)((a1-a2)*(a1-a2)+(b1-b2)*(b1-b2)));
 		fprintf(parms[0].LOG,"distance = %6.2f\n",secdist);
 	      } else { 
 		secdist=0.0;
 	      }
-
-	      m = (int)((float)nequiv*seqid/(float)100.0);
-              n = nequiv;
-              Pm = murzin_P(n,m,parms[0].murzin_est);
-
 	      if(strcmp(parms[0].logfile,"silent")!=0) {
-/* SMJS Added Pm condition */
-                if (Pm > -0.99)
-                {
-	           fprintf(parms[0].LOG,"Sum: %s & %s, Sc: %7.3f, RMS: %7.3f, Len: %d, maxlen: %d nfit: %d nsec: %d nequiv %d P(m, p=1/10) = %7.2e\n",
-		          domain[i].id,domain[j].id,score,rms,length,max(domain[i].ncoords,domain[j].ncoords),nfit,nsec,nequiv,Pm);
-                } else {
-	           fprintf(parms[0].LOG,"Sum: %s & %s, Sc: %7.3f, RMS: %7.3f, Len: %d, maxlen: %d nfit: %d nsec: %d nequiv %d P(m, p=1/10) = Not Calculated\n",
-		          domain[i].id,domain[j].id,score,rms,length,max(domain[i].ncoords,domain[j].ncoords),nfit,nsec,nequiv);
-                }
+	        fprintf(parms[0].LOG,"Sum: %s & %s, Sc: %7.3f, RMS: %7.3f, Len: %d, maxlen: %d nfit: %d nsec: %d nequiv %d\n",
+		      domain[i].id,domain[j].id,score,rms,length,max(domain[i].ncoords,domain[j].ncoords),nfit,nsec,nequiv);
 	      } else {
-
-	         printf("Pair %3d  %-15s %-15s %4.2f %6.2f ",
+	         printf("Pair %3d  %8s %8s %4.2f %6.2f ",
                       k+1,domain[i].id,domain[j].id,score,rms);
 		 printf("  %4d %4d  %4d %4d %3d %4d ",
                       domain[i].ncoords,domain[j].ncoords,length,nfit,nequiv,nsec);
-/* SMJS Added Pm condition */
-                 if (Pm > -0.99)
-		    printf("%6.2f %6.2f %7.2e ",seqid,secid,Pm);
-                 else
-		    printf("%6.2f %6.2f   NC    ",seqid,secid);
-                    
+		 printf("%6.2f %6.2f\n",seqid,secid);
 		 if(score<2.0) {
-  		    printf(" LOW SCORE");
-		 }
-	         printf("\n");
+  		    printf(" LOW SCORE - see the manual\n");
+		 } 
+		           
 		 if(parms[0].PAIROUTPUT==1) printf("See file %s.pairs.%d for alignment and transformations\n",parms[0].transprefix,k+1);
-	         fflush(stdout);
 	      }
 	      if(domain[i].ncoords>domain[j].ncoords) 
 		 ratio=(float)domain[i].ncoords/(float)domain[j].ncoords;
@@ -195,7 +159,7 @@ int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 	      l=clock();
 	      parms[0].CPUtime+=(float)l/(60000000);
 /*	      fprintf(parms[0].LOG,"after fitting:\n"); disp(domain[j],parms[0].LOG);  */
-	    } 
+	    } /* end of for (j=.... */ 
 	
 	fprintf(parms[0].LOG,"\nPairwise calculations done.\n\n");
 	/* Now we write pairmat to the file parms[0].matfile. */
@@ -216,8 +180,3 @@ int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 
 	return 0;
 } /* end of pairwise */
-void handler(int a)
-{
-printf("GOT SIGNAL\n");
-raise(SIGSEGV);
-}

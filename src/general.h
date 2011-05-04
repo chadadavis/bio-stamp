@@ -74,9 +74,3 @@ struct olist{
 	int len;
 	struct path *res;
 };
-struct side_chain {
-        int n;
-	int **names;
-	int **coords;
-};
-	

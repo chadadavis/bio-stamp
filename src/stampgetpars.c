@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,10 +33,12 @@
 *****************************************************************************/
 #include <stdlib.h>
 #include <stdio.h>
-#include "stamp.h"
+#include "include.h"
 
-int getpars(FILE *fp, struct parameters *var) {
-
+int getpars(fp,var)
+FILE *fp;
+struct parameters *var;
+{
     char c;
 
     char *parm;		/* name of following dimension */
@@ -120,8 +121,6 @@ int getpars(FILE *fp, struct parameters *var) {
 		sscanf(dim,"%f",&var[0].NBSD);
 	else if(strcmp(parm,"PAIRWISE") == 0) 
 		var[0].PAIRWISE=T_FLAG;
-	else if(strcmp(parm,"OPD") ==0)
-		var[0].opd = T_FLAG;
 	else if(strcmp(parm,"TREEWISE") == 0)
 		var[0].TREEWISE=T_FLAG;
 	else if(strcmp(parm,"ORDFILE") == 0)
@@ -150,12 +149,7 @@ int getpars(FILE *fp, struct parameters *var) {
 		sscanf(dim,"%d",&var[0].MAX_SEQ_LEN);
 	else if(strcmp(parm,"ROUGHFIT")==0)
 		var[0].ROUGHFIT=T_FLAG;
-	else if(strcmp(parm,"ROUGHOUT")==0) 
-		var[0].roughout=T_FLAG;
-	else if(strcmp(parm,"ROUGHOUTFILE")==0) { 
-		strcpy(&var[0].roughoutfile[0],dim);
-		var[0].roughout=1;
-	} else if(strcmp(parm,"BOOLCUT")==0 || strcmp(parm,"SECOND_BOOLCUT")==0)
+	else if(strcmp(parm,"BOOLCUT")==0 || strcmp(parm,"SECOND_BOOLCUT")==0)
 		sscanf(dim,"%f",&var[0].second_BOOLCUT);
 	else if(strcmp(parm,"FIRST_BOOLCUT")==0)
 		sscanf(dim,"%f",&var[0].first_BOOLCUT);
@@ -185,8 +179,8 @@ int getpars(FILE *fp, struct parameters *var) {
 		strcpy(&var[0].scanfile[0],dim);
 	else if(strcmp(parm,"LOGFILE")==0)
 		strcpy(&var[0].logfile[0],dim);
-	else if(strcmp(parm,"SECTYPE")==0)
-		sscanf(dim,"%d",&var[0].SECTYPE);
+	else if(strcmp(parm,"SEC")==0)
+		sscanf(dim,"%d",&var[0].SEC);
 	else if(strcmp(parm,"SCANSEC")==0)
 		sscanf(dim,"%d",&var[0].SCANSEC);
 	else if(strcmp(parm,"SECFILE")==0)

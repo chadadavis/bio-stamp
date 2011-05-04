@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -33,8 +32,9 @@
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
 #include <stdio.h>
-#include <stdlib.h>
+#include <malloc.h>
 #include <math.h>
+#define N 3
 #define TINY 1.0e-20
 
 /* Inverts a 3 x 3 matrix. This routine was written with reference to
@@ -43,28 +43,26 @@
  * "Numerical Recipes in C: The Art of Scientific Computing",    
  * Cambridge University Press, 1988. */
 
-void lubksb(float **A, int n, int *indx, float b[]);
-int ludcmp(float **a, int n, int *indx, float *d);
-float *vector(int nl, int nh);
-void free_vector(float *v, int nl, int nh);
+int ludcmp();
+void lubksb();
+float *vector();
+void free_vector();
 
+void matinv(a,y,d,indx)
+float **a, **y;
+float d;
+int *indx;
 
-void matinv(float **a, float **y, float d, int *indx) {
+{
 
-int i,j,N;
+int i,j;
 float *col;
 
-
-
 col=(float*)malloc(10*sizeof(float));
-N=3;
 
 if(ludcmp(a,N,indx,&d)==-1) { /* matrix is singular, so just copy a to y (ie. I^-1 = I) */
-   for(j=1; j<=N; j++) { 
-      for(i=1; i<=N; i++) {
-		y[i][j]=a[i][j];
-      }
-   }
+   for(j=1; j<=N; j++) 
+      for(i=1; i<=N; i++) y[i][j]=a[i][j];
 } else {
    for(j=1; j<=N; j++) {
       for(i=1; i<=N; i++) col[i]=0.0;
@@ -79,7 +77,9 @@ free(col);
 
 }
 
-void lubksb(float **a, int n, int *indx, float b[])
+void lubksb(a,n,indx,b)
+float **a,b[];
+int n,*indx;
 {
 	int i,ii=0,ip,j;
 	float sum;
@@ -89,7 +89,7 @@ void lubksb(float **a, int n, int *indx, float b[])
 		sum=b[ip];
 		b[ip]=b[i];
 		if (ii)
-		for (j=ii;j<=i-1;j++) sum -= a[i][j]*b[j];
+			for (j=ii;j<=i-1;j++) sum -= a[i][j]*b[j];
 		else if (sum) ii=i;
 		b[i]=sum;
 	}
@@ -103,7 +103,9 @@ void lubksb(float **a, int n, int *indx, float b[])
 
 
 
-int ludcmp(float **a, int n, int *indx, float *d)
+int ludcmp(a,n,indx,d)
+int n,*indx;
+float **a,*d;
 {
 	int i,imax,j,k;
 	float big,dum,sum,temp;
@@ -158,7 +160,8 @@ int ludcmp(float **a, int n, int *indx, float *d)
 	}
 	free_vector(vv,1,n);
 }
-float *vector(int nl, int nh)
+float *vector(nl,nh)
+int nl,nh;
 {
         float *v;
 
@@ -172,7 +175,9 @@ float *vector(int nl, int nh)
 }
 
 
-void free_vector(float *v, int nl, int nh)
+void free_vector(v,nl,nh)
+float *v;
+int nl,nh;
 {
         free((char*) (v+nl));
 }

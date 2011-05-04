@@ -1,11 +1,7 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
-#define MAXslen 10000
-#define MAXnbloc 1000
-/* SMJS Increased MAXtlen from 200 */
-#define MAXtlen 1000
+#define MAXslen 2000
+#define MAXnbloc 200
+#define MAXtlen 200
 
 struct brookn { /* structure to represent brookhaven residue numbers */
     int n;      /* numerical part of number */
@@ -15,7 +11,7 @@ struct brookn { /* structure to represent brookhaven residue numbers */
 
 struct domain_loc {		/* This structure allows rather complex domains to be described */
    char filename[100];
-   char id[100];
+   char id[30];
    int nobj;			/* The number of objects considered within the named file */
    int *type;			/* The type that each object is:
 					0 ==> an error
@@ -79,25 +75,7 @@ struct cluster {
 #define CLUST_STRUCT
 #endif
 #include "gjutil.h"
+struct cluster *readtree();
+float matfit();
+struct cluster *get_clust();
 
-struct cluster *readtree(char *tordfile, char *treefile, int *number, int method, FILE *OUT);
-float fmatfit(float **atoms1, float **atoms2, float **R, float *V, int nats, int entry);
-struct cluster *get_clust(double **matrix, char **ids, int ndomain, char *noc_parms);
-int closefile(FILE *handle,char *filename);
-FILE *openfile(char *filename, char *type);
-char ltou(char c);
-char utol(char c);
-void fmatmult(float **r, float *v, float **coord, int n);
-void update(float **dR, float **R, float *dV, float *V);
-int count_domain(FILE *IN);
-void rmsp(char *c);
-int getca(FILE *IN, float **coords, char *aa, struct brookn *numb, int *ncoord,
-        struct brookn start, struct brookn end, int type,  int MAXats, int REVERSE, FILE *OUTPUT);
-int newoutput(FILE *TRANS, struct domain_loc *domain, int ndomain, int writetrans);
-void exit_error();
-int getpars(FILE *fp, struct parameters *var);
-int Agetbloc(FILE *bfile, struct seqdat *bloc, int *nbloc);
-int getdomain(FILE *IN, struct domain_loc *domains, int *ndomain, int maxdomain, 
-        int *gottrans, char *env, int DSSP, FILE *OUTPUT);
-
-int getdomain_error(char *buff); 

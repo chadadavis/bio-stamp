@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,15 +33,28 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <math.h>
-#include "stamp.h"
+#include "include.h"
 
 
-int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score, float *rms,
-	int *length, int *nfit, struct parameters *parms, int rev,
-	int *start1, int *end1, int *start2, int *end2,
-	float *seqid, float *secid, int *nequiv, int *nsec, int **hbcmat,
-	int ALIGN, int count, int FINAL) { 
-
+int pairfit(domain1,domain2,score,rms,length,nfit,parms,rev,start1,end1,start2,end2,seqid,secid,nequiv,nsec,hbcmat,ALIGN,count,FINAL)
+struct domain_loc *domain1, *domain2;
+float *score;
+float *rms;
+int *length;
+int *nfit;
+struct parameters *parms;
+int rev;	/* if set to 1, then reverse the transformation, otherwise the transformation is saved and
+		 *  the coordinates left */
+int *start1,*end1;
+int *start2,*end2;
+float *seqid,*secid;
+int *nequiv;
+int *nsec;
+int **hbcmat;
+int ALIGN;
+int count;
+int FINAL;	/* 1 ==> this is the final fit */
+{
      int i,j,k,iter;
      int len,pcount;
      int temp_len;
@@ -52,6 +64,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
      int **prob;
      int not_gap,align_len;
      int seqcount,seccount;
+     int max_len;
      int n_sec_equiv,n_pos_equiv;
      int slen,neighbors;
      int nsec1,nsec2;
@@ -72,15 +85,9 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 
      struct cluster *cl;
      struct domain_loc *dcl;
-/* SMJS Added not_endali */
-     int not_endali;
-/* SMJS Added for speedup */
-     int dom1seclen,dom2seclen;
 
-/* SMJS Changed malloc(3*sizeof(float*) to malloc(3*sizeof(float) */
-     v=(float*)malloc(3*sizeof(float));
-/* SMJS Changed malloc(3*sizeof(float*) to malloc(3*sizeof(float) */
-     vt=(float*)malloc(3*sizeof(float));
+     v=(float*)malloc(3*sizeof(float*));
+     vt=(float*)malloc(3*sizeof(float*));
      r=(float**)malloc(3*sizeof(float*));
      rt=(float**)malloc(3*sizeof(float*));
      for(i=0; i<3; ++i) {
@@ -97,10 +104,9 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
      /* these will be used if pairwise output is required */
 
      /* allocating the probability matrix */
-/* SMJS Changed malloc to calloc */
-     prob=(int**)calloc((domain1[0].ncoords+2),sizeof(int*));
+     prob=(int**)malloc((domain1[0].ncoords+2)*sizeof(int*));
      for(i=0; i<(domain1[0].ncoords+2); ++i)
-        prob[i]=(int*)calloc((domain2[0].ncoords+2),sizeof(int));
+        prob[i]=(int*)malloc((domain2[0].ncoords+2)*sizeof(int));
 
      touse = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
      puse = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
@@ -137,21 +143,15 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	if(parms[0].SW==1) {
 	  /* corner cutting */
 /*	  fprintf(parms[0].LOG,"Corner cutting, CCFACTOR=%f\n",parms[0].CCFACTOR); */
-	  if(ccprobcalc(domain1[0].coords,domain2[0].coords,
-	     prob, domain1[0].ncoords,domain2[0].ncoords,parms)==-1) return -1;
+	  if(ccprobcalc(domain1[0].coords,domain1[0].ncoords,
+	     domain2[0].coords,domain2[0].ncoords,prob,parms)==-1) return -1;
 	} else {
-	  if(probcalc(domain1[0].coords,domain2[0].coords,
-	     prob,domain1[0].ncoords,domain2[0].ncoords,parms)==-1) return -1;
+	  if(probcalc(domain1[0].coords,domain1[0].ncoords,
+	     domain2[0].coords,domain2[0].ncoords,prob,parms)==-1) return -1;
 	}
 
 	oldscore=*score;
-	(*rms) = pairpath(domain1[0],domain2[0],prob,1,r,v,&len,score,nfit,touse,fpuse,start1,end1,start2,end2,parms);
-
-/* float pairpath(struct domain_loc domain1, struct domain_loc domain2, int **prob,
-        long int entry, float **R2, float *V2, int *len, float *score,
-        int *nfit, char *ftouse, float *fpuse, int *start1, int *end1,
-        int *start2,int *end2, struct parameters *parms);
-*/
+	(*rms) = pairpath(domain1[0],domain2[0],r,v,prob,1,&len,score,nfit,touse,fpuse,start1,end1,start2,end2,parms);
 	if((*score)>0)
 	   scorediff=(100*fabs(*score-oldscore)/(*score));
 	else 
@@ -166,7 +166,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	/* transform the coordinates after the most recent transformation */
 	matmult(r,v,domain2[0].coords,domain2[0].ncoords,parms[0].PRECISION);
 
-	update(r,rt,v,vt); /* since we need to get the old coordinates back, we must keep track of the overall transformation */
+	update(r,v,rt,vt); /* since we need to get the old coordinates back, we must keep track of the overall transformation */
      }  /* End of while. */ 
      (*length)=len;
      if(parms[0].PAIRPLOT) { 
@@ -179,7 +179,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
      else fprintf(parms[0].LOG,"No convergence ");
      fprintf(parms[0].LOG,"after %d iterations \n",(iter-1));
 
-     update(rt,domain2[0].r,vt,domain2[0].v);  
+     update(rt,vt,domain2[0].r,domain2[0].v);  
 
      /* output the alignment if required */
      if((parms[0].PAIRWISE && parms[0].PAIROUTPUT && count>=0) ||
@@ -216,16 +216,8 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	   } else psec2[i]=' ';
 	}
 	psec2[i]='\0';
-	if(parms[0].PAIRALIGN || parms[0].SCANALIGN) {
-	    if(strcmp(parms[0].logfile,"silent")!=0) {
-		display_align(&domain1[0].align,1,&domain2[0].align,1,
-	          &psec1,&psec2,touse,puse,parms[0].COLUMNS,1,1,parms[0].LOG);
-	    } else {
-		display_align(&domain1[0].align,1,&domain2[0].align,1,
-                  &psec1,&psec2,touse,puse,parms[0].COLUMNS,1,1,parms[0].LOG);
-	    }
-	}
-
+	if(parms[0].PAIRALIGN || parms[0].SCANALIGN) display_align(&domain1[0].align,1,&domain2[0].align,1,
+	       &psec1,&psec2,touse,puse,parms[0].COLUMNS,1,1,parms[0].LOG);
      }
      if(parms[0].PAIROUTPUT && FINAL) { 
         dcl[0]=domain1[0];
@@ -240,12 +232,6 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
      for(i=0; i<3; ++i) {
 	for(j=0; j<3; ++j) hbcmat[i][j]=0;
      }
-/* SMJS Added not_endali and sec_len1 and 2*/
-#ifndef USESTRLEN
-     dom1seclen = strlen(domain1[0].sec);
-     dom2seclen = strlen(domain2[0].sec);
-#endif
-     not_endali=1;
      for(i=0; i<slen; ++i) {
 	not_gap=0;
 	if(domain1[0].align[i]!=' ' && domain2[0].align[i]!=' ') not_gap=1;
@@ -270,11 +256,6 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
           else break;
         }
 	if(fpuse[i]>parms[0].second_CUTOFF && neighbors>=2) {
-
-	    /* identities are only in structural equivalences */
-	    if(not_gap && domain1[0].align[i]==domain2[0].align[i]) seqcount++; 
-	    if(not_gap && ss1==ss2) seccount++;
-
             n_pos_equiv++;
 	    if(ss1=='H') xpos=0;
 	    else if(ss1=='B') xpos=1;
@@ -286,9 +267,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
             if(xpos!=ypos) hbcmat[ypos][xpos]++;
 	}
 
-#ifdef DBGSTEVE
-	printf("%c %c %c(%c) %c(%c) %7.5f %4d\n",domain1[0].align[i],domain2[0].align[i],ss1,domain1[0].sec[c1],ss2,domain2[0].sec[c2],fpuse[i],touse[i]);
-#endif
+/*	printf("%c %c %c %c %7.5f %4d ",domain1[0].align[i],domain2[0].align[i],ss1,ss2,fpuse[i],touse[i]);  */
 	if(ss1=='c') {
           in_sec1=0;
  	}  else {
@@ -302,53 +281,30 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
            in_sec2=1;
         }
 
-        /*printf("Conditions: not_gap = %d, in_sec1 = %d, in_sec2 = %d fpuse[%d]>=parms[0].second_CUTOFF = %d, neighbors>=2 = %d, (nsec1!=last_matched1 || nsec2!=last_matched2) = %d\n",not_gap,in_sec1,in_sec2,i,fpuse[i]>=parms[0].second_CUTOFF,neighbors>=2,(nsec1!=last_matched1 || nsec2!=last_matched2)); */
 	if(not_gap && in_sec1 && in_sec2 && fpuse[i]>=parms[0].second_CUTOFF && neighbors>=2 && (nsec1!=last_matched1 || nsec2!=last_matched2)) {
 	    n_sec_equiv++;
 	    last_matched1=nsec1;
 	    last_matched2=nsec2;
 	}
+/*	printf("%d %d %d %d %d\n",in_sec1,in_sec2,nsec1,nsec2,n_sec_equiv);  */
+	if(not_gap && domain1[0].align[i]==domain2[0].align[i]) seqcount++;
+	if(not_gap && ss1==ss2) seccount++;
 	if(domain1[0].align[i]!=' ') c1++;
 	if(domain2[0].align[i]!=' ') c2++;
-/* SMJS I don't think these should be strlen(domain1[0].sec)-1 and */
-/*      strlen(domain2[0].sec)-1. c1 and c2 are incremented before */
-/*      this condition and so will reach strlen(domain1[0].sec) */
-/*      and strlen(domain2[0].sec) respectively for the last residue. */
-/* SMJS However the corrected condition fails because c1 and c2 do not */
-/*      get incremented past strlen(domain1[0].sec) and strlen(domain2[0].sec) */
-/* SMJS Added bodge to fix this */
-/* SMJS Replaced strlen(domain1[0].sec) with sec_len1. Same for strlen(domain2[0].sec) */
-#ifdef USESTRLEN
-	if(c1>0 && c1<=(strlen(domain1[0].sec)/* SMJS-1*/) && c2>0 && c2<=(strlen(domain2[0].sec)/* SMJS-1*/) && not_endali)
-#else
-	if(c1>0 && c1<=dom1seclen && c2>0 && c2<=dom2seclen && not_endali)
-#endif
-        {
-#ifdef DBGSTEVE
-           printf("Align_len incremented. c1=%d c2=%d strlen(domain1[0].sec)=%d strlen(domain2[0].sec)=%d\n",c1,c2,
-                  strlen(domain1[0].sec),strlen(domain1[0].sec));
-#endif
-           align_len++; 
-/* SMJS Replaced strlen(domain1[0].sec) with sec_len1. Same for strlen(domain2[0].sec) */
-#ifdef USESTRLEN
-           if (c1==strlen(domain1[0].sec) || c2==strlen(domain2[0].sec)) not_endali=0;
-#else
-           if (c1==dom1seclen || c2==dom2seclen) not_endali=0;
-#endif
-        }
-            
+	if(c1>0 && c1<=(strlen(domain1[0].sec)-1) && c2>0 && c2<=(strlen(domain2[0].sec)-1)) align_len++;
      }
      /* Determine the approximate number of equivalent secondary structures Pij'>=4.5 & len>=2 */
 
      fprintf(parms[0].LOG,"Alignment length: %4d, seqid: %4d, secid: %4d, n_sec_equiv: %4d\n",align_len,seqcount,seccount,n_sec_equiv);
      (*nsec)=n_sec_equiv;
      (*nequiv)=n_pos_equiv;
-     if((i==0) || ((*score)<0.01) || ((*nequiv)<=0)) {
+     max_len=max(domain1[0].ncoords,domain2[0].ncoords);
+     if(i==0 || (*score)<0.01) {
 	(*seqid)=0.0;
 	(*secid)=0.0;
      } else {
-        (*seqid)=100.0*(float)seqcount/(float)(*nequiv);
-        (*secid)=100.0*(float)seccount/(float)(*nequiv);
+        (*seqid)=100.0*(float)seqcount/(float)max_len;
+        (*secid)=100.0*(float)seccount/(float)max_len;
      }
      /* this means that the coordinates, at the moment are the original coordinates transformed by domain2[0].r/v */
 

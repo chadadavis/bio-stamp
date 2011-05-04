@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,7 +33,7 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <math.h>
-#include "stamp.h"
+#include "include.h"
 #include "igetcb.h"
 #define PI 3.141592653589793
 
@@ -43,19 +42,20 @@
  * If a glycine is encountered, a "ghost" CB is built around an
  *  ideal geometry (see RBR_build_cb()) */
 
-float *RBR_build_cb(float *GLY_N,
-		    float *GLY_CA,
-		    float *GLY_CO,
-		    float angle,
-		    float distance,
-		    FILE *OUT
-);
 
-
-int igetcb(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
-	struct brookn start, struct brookn end, int type, int MAXats,
-	int REVERSE, int PRECISION, FILE *OUTPUT) {
-
+int igetcb(IN,coords,aa,numb,ncoord,start,end,type,MAXats,REVERSE,PRECISION,OUTPUT)
+FILE *IN;
+int **coords;
+char *aa;
+struct brookn *numb;
+int *ncoord;
+struct brookn start,end;
+int type; 	/* 1 = all CB atoms in the file, 2 = single chain, 3 = specific start and end */
+int MAXats;
+int REVERSE;	/* if 1, then reverse the order of the data */
+int PRECISION;
+FILE *OUTPUT;
+{
 	int i,j,k;
 	int begin;
 	int number;
@@ -77,7 +77,7 @@ int igetcb(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 
 	struct brookn cnumb;
 
-
+	float *RBR_build_cb();
 
 	angle=54.0*PI/180;
 	distance=1.54;
@@ -93,14 +93,14 @@ int igetcb(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 	got_gly_ca=got_gly_co=got_gly_n=0;
 
 	while((buff=fgets(buff,99,IN))!=NULL) {
-	   if((strncmp(buff,"ENDMDL",6)==0 || strncmp(buff,"END   ",6)==0) && begin==1) {
+	   if((strncmp(buff,"ENDMDL",6)==0 || strcmp(buff,"END   ",6)==0) && begin==1) {
                 break;
            }
 	   if(strncmp(buff,"ATOM  ",6)==0 && strncmp(&buff[17],"ACE",3)!=0 && strncmp(&buff[17],"FOR",3)!=0) {
 	    alt=buff[16]; /* alternate position indicator */
 	    /* to make ghost CB for glycine we must read in the N, CA and C coordinates */
 	    if(strncmp(&buff[17],"GLY",3)==0) {
-	       if(strncmp(&buff[12]," CA ",4)==0 && (alt==' ' || alt=='A' || alt=='1' || alt=='L' || alt=='O')) {
+	       if(strncmp(&buff[12]," CA ",4)==0 && (alt==' ' || alt=='A' || alt=='1')) {
 		  for(i=0; i<3; ++i) {
 		    strncpy(&tmp[0],&buff[30+i*8],8);
 		    tmp[8]='\0';
@@ -159,8 +159,7 @@ int igetcb(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 	 	  else numb[(*ncoord)].in=in;
 		  numb[(*ncoord)].n=number;
 		  (*ncoord)++;
-/* SMJS () added around ||s */
-	       } else if(begin && (alt==' ' || alt=='A' || alt=='1')) {
+	       } else if(begin && alt==' ' || alt=='A' || alt=='1') {
 		 coords[(*ncoord)]=(int*)malloc(3*sizeof(int));
 		 /* only reads in the first position if more than one are given */
 		 for(i=0; i<3; ++i) {
@@ -231,14 +230,13 @@ int igetcb(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
 	}
 }
 
-float *RBR_build_cb(
-		    float *GLY_N,
-		    float *GLY_CA,
-		    float *GLY_CO,
-		    float angle,
-		    float distance,
-		    FILE *OUT
-)
+float *RBR_build_cb(GLY_N,GLY_CA,GLY_CO,angle,distance,OUT)
+float *GLY_N;
+float *GLY_CA;
+float *GLY_CO;
+float angle;
+float distance;
+FILE *OUT;
 {
 	int i;
 	float *V1,*V2;

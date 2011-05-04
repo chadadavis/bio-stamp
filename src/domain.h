@@ -1,8 +1,8 @@
 #include <malloc.h>
 
 struct domain_loc{		/* This structure allows rather complex domains to be described */
-   char filename[500];
-   char id[100];
+   char filename[100];
+   char id[30];
    int nobj;			/* The number of objects considered within the named file */
    int *type;			/* The type that each object is:
 					0 ==> an error

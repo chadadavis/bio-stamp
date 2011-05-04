@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,36 +11,40 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
- The WORK is Copyright (1997,1998) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
   Structure Comparison: Assignment of Global and Residue Confidence Levels",
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 *****************************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
 #include "alignfit.h"
 #include "gjutil.h"
 #include "gjnoc.h"
+#define noc_parms "noc sim single"
 
 /* Reads an AMPS format block file containing structurally derived sequences and a
  *  file containing a description as to where the coordinates may be found */
 
-main(int argc, char *argv[]) {
-
+main(argc,argv)
+int argc;
+char *argv[];
+{
 	char c;
 	char ins,cid;
 	char *env;
@@ -60,9 +64,6 @@ main(int argc, char *argv[]) {
 
 	char keyword[100];
 	char value[100];
-	char tmpstring[100];
-	char noc_parms[200];
-
 
 	int *pointers,*counter;
 
@@ -82,9 +83,7 @@ main(int argc, char *argv[]) {
 	struct cluster *cl;
 	struct parameters *parms;
 
-	strcpy(noc_parms,"noc sim single");
-/* SMJS Changed malloc to calloc to zero struct */
-	parms=(struct parameters*)calloc(1,sizeof(struct parameters));
+	parms=(struct parameters*)malloc(sizeof(struct parameters));
 	
 	if(argc<3) exit_error(); 
 
@@ -141,8 +140,8 @@ main(int argc, char *argv[]) {
 	}
 
 	if(RP) { /* read parameters from file (old method) */
-	   if((IN=fopen(parms[0].parm_file,"r"))==NULL) {
-	      fprintf(stderr,"error: parameter file %s does not exist\n",parms[0].parm_file);
+	   if((IN=fopen(argv[3],"r"))==NULL) {
+	      fprintf(stderr,"error: parameter file %s does not exist\n",argv[3]);
 	      exit(-1);
 	   }
 	   if(getpars(IN,parms)==-1) exit(-1);
@@ -185,16 +184,6 @@ main(int argc, char *argv[]) {
 	rewind(BLOC);
 	printf(" ");
 	if(Agetbloc(BLOC,bloc,&nbloc)==-1) exit(-1);
-	/* Ok, hack to take out "P1;" if it is in the IDs */
-	for(i=0; i<nbloc; ++i) {
-		if(strncmp(bloc[i+1].id,"P1;",3)==0) {
-		     printf(" Warning: changing ID %s in alignment file to ",bloc[i+1].id);
-		     sprintf(&tmpstring[0],"%s",&bloc[i+1].id[3]);
-		     strcpy(&bloc[i+1].id[0],&tmpstring[0]);
-		     printf("%s\n",bloc[i+1].id);
-		}
-	}
-	    
 	counter=(int*)malloc(nbloc*sizeof(int));
 	bloclen=strlen(bloc[1].seq)-1;
 	fclose(BLOC);
@@ -233,7 +222,7 @@ main(int argc, char *argv[]) {
 	      exit(-1);
 	   }
 	   fprintf(TRANS,"%%Domain %3d %s %s\n",i+1,domain[i].filename,domain[i].id);
-	   if((PDB=openfile(domain[i].filename,"r"))==NULL) {
+	   if((PDB=fopen(domain[i].filename,"r"))==NULL) {
 	      fprintf(stderr,"error: PDB file %s does not exist\n",domain[i].filename);
 	      exit(-1);
 	   }
@@ -256,13 +245,12 @@ main(int argc, char *argv[]) {
 	      }
 	      fprintf(TRANS,"(%3d CAs) ",add);
 	      total+=add;
-	      closefile(PDB,domain[i].filename);
-	      PDB=openfile(domain[i].filename,"r");
+	      rewind(PDB);
 	   }
 	   fprintf(TRANS,"\n");
 	   domain[i].ncoords=total;
 	   fprintf(TRANS,"%% %4d CAs in total\n",domain[i].ncoords);
-	   closefile(PDB,domain[i].filename);
+	   fclose(PDB);
 	   domain[i].use=(int*)malloc(bloclen*sizeof(int));
 	   counter[i]=0;
 	}
@@ -353,7 +341,7 @@ main(int argc, char *argv[]) {
 		 fprintf(TRANS,"%%  %4d CAs to fit, ",ntofit);
 		 l++;
 		 m=0;
-		 rmsd=fmatfit(coords1,coords2,R,V,ntofit,m);
+		 rmsd=matfit(coords1,coords2,R,V,ntofit,m);
 		 matrix[i][j-i-1]=(double)(1/rmsd);
 		 fprintf(TRANS,"RMS deviation %10.4f.\n",rmsd);
 	      }
@@ -417,16 +405,14 @@ main(int argc, char *argv[]) {
 		  } /* end of if(no_gap... */
 	      } /* end of for(j... */
 	      fprintf(TRANS,"%% CAs to fit: %4d, ",ntofit);
-	      rmsd=fmatfit(coords1,coords2,R,V,ntofit,1);
+	      rmsd=matfit(coords1,coords2,R,V,ntofit,1);
 	      fprintf(TRANS," RMS between ave atoms: %10.5f.\n",rmsd);
 	      /* now we must apply the transformation to each set of
 	       *  coordinates in the 'B' cluster */
 	      for(k=0; k<cl[i].b.number; ++k) {
-		/* void fmatmult(float **r, float *v, float **coord, int n)  */
-		 fmatmult(R,V,domain[cl[i].b.member[k]].coords,
+		 matmult(R,V,domain[cl[i].b.member[k]].coords,
 			domain[cl[i].b.member[k]].ncoords);
-		 /* void update(float **dR, float **R, float *dV, float *V) */
-		 update(R,domain[cl[i].b.member[k]].R,V,domain[cl[i].b.member[k]].V);
+		 update(R,V,domain[cl[i].b.member[k]].R,domain[cl[i].b.member[k]].V);
 	      } 
 	   } 
 	   /* outputing transformations */
@@ -447,7 +433,7 @@ main(int argc, char *argv[]) {
 
 	exit(0);
 }
-void exit_error()
+int exit_error()
 {
 	   fprintf(stderr,"format: alignfit -f <block format alignment file> -d <domain description file>\n");
 	   fprintf(stderr,"               -out <output file> -P <paramter file>\n");

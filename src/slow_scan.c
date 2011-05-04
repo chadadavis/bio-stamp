@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -36,7 +35,7 @@
 #include <time.h>
 #include <math.h>
 
-#include "stamp.h"
+#include "include.h"
 
 /* Scan's a database of domain descriptors using the following protocol:
  *  
@@ -105,13 +104,14 @@
  *
  */
 
-int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
-
+int slow_scan(qdomain,parms)
+struct domain_loc qdomain;
+struct parameters *parms;
+{
    char qendsec,qendaa;
    char dendsec,dendaa;
 
    int i,j,k,l;
-   int n,m;
    int total,add,error;
    int end,len_d;
    int dstart,dend;
@@ -139,8 +139,7 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
    int **atoms1,**atoms2;
    int **hbcmat,**best_hbcmat;
 
-/* SMJS Initialised score to be like pairwise */
-   float score=0.0,rms,irms;
+   float score,rms,irms;
    float best_score,best_rms;
    float best_seqid,best_secid;
    float t_sec_diff,ratio;
@@ -148,8 +147,6 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
    float seqid,secid;
    float *vtemp;
    float **rtemp;
-
-   double Pm;
 
    FILE *IN,*PDB,*TRANS;
 
@@ -220,8 +217,8 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
    printdomain(TRANS,qdomain,0);
       
    end=0;
-   if(parms[0].SECSCREEN && parms[0].SECTYPE!=0) { /* calculate qpera,qperb,perc if needed */
-      sec_content(qdomain.sec,qdomain.ncoords,parms[0].SECTYPE,&qpera,&qperb,&qperc);
+   if(parms[0].SECSCREEN && parms[0].SEC!=0) { /* calculate qpera,qperb,perc if needed */
+      sec_content(qdomain.sec,qdomain.ncoords,parms[0].SEC,&qpera,&qperb,&qperc);
       fprintf(parms[0].LOG,"domain %s, percent helix: %3d, sheet: %3d (coil: %3d)\n",qdomain.id,qpera,qperb,qperc);
       if(qperc==100) parms[0].SECSCREEN=0;  /* don't screen if all coil */
    }
@@ -240,7 +237,7 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
       if(end) break;
       if(end==-1) error=1; /* read in domain next domain descriptor from database */
       if(!error) {
-         if((PDB=openfile(ddomain.filename,"r"))==NULL) {
+         if((PDB=fopen(ddomain.filename,"r"))==NULL) {
 	    fprintf(stderr,"error opening file %s \n",ddomain.filename);
 	    error=1;
 	 }
@@ -266,12 +263,12 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
 	 	        ddomain.end[i].cid,ddomain.end[i].n,ddomain.end[i].in); break;
            }
 	   fprintf(parms[0].LOG,"%4d CAs ",add); total+=add;
-	   closefile(PDB,ddomain.filename); PDB=openfile(ddomain.filename,"r");
+	   rewind(PDB);
 	}
 	fprintf(parms[0].LOG,"\n");
 	ddomain.ncoords=total;
 	ddomainall.ncoords=total;
-	closefile(PDB,ddomain.filename);
+        fclose(PDB);
         /* skip if the database sequence is too short */
         if(ddomain.ncoords<(int)(parms[0].MIN_FRAC*(float)qdomain.ncoords)) {
   	   fprintf(parms[0].LOG,"MIN_FRAC * query length = %d\n",(int)(parms[0].MIN_FRAC*(float)qdomain.ncoords));
@@ -301,7 +298,7 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
 	      else gotsec=0;
 	      if(strlen(ddomain.sec)==0) gotsec=0;
 	      }
-	    default: { return -1; } 
+	    default: { return -1; } break;
 	}
 
 /*       if(parms[0].SCANTRUNC) {
@@ -484,7 +481,7 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
 		 rtemp[i][j]=ddomain.R[i][j];
 	      vtemp[i]=ddomain.V[i];
 	   }
-	   update(ddomain.r,rtemp,ddomain.v,vtemp);
+	   update(ddomain.r,ddomain.v,rtemp,vtemp);
 /*	   printmat(rtemp,vtemp,3,parms[0].LOG); */
 	   fprintf(parms[0].LOG,"Second fit\n");
 	 } /* else fprintf(parms[0].LOG,"Fitting with: ");  */
@@ -521,7 +518,7 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
 	  *  This modification has been moved to the pairfit routine */
 	 
 	 /* combine the rough matrix with the refined one */
-	 update(ddomain.r,ddomain.R,ddomain.v,ddomain.V);
+	 update(ddomain.r,ddomain.v,ddomain.R,ddomain.V);
 /*	 printmat(ddomain.R,ddomain.V,3,parms[0].LOG); */
 
 	 /* output the results */
@@ -611,7 +608,6 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
 	    i=0; 
 	    fprintf(parms[0].LOG,"Transformation # %d output.\n",ntrans+1);
 	    ntrans++;
-            if(parms[0].opd == 1) { fprintf(parms[0].LOG," skipping to next domain\n"); break; }
 	 } else {
 	    fprintf(parms[0].LOG,"No transformation output.\n");
 	 }
@@ -639,48 +635,23 @@ int slow_scan(struct domain_loc qdomain, struct parameters *parms) {
 	fprintf(parms[0].LOG,"\n");
 	P+=parms[0].SCANSLIDE; /* slide the sequences along */
 	ntries++;
-	if(ntrans>0 && parms[0].opd == 1) { fprintf(parms[0].LOG," skipping to next domain\n"); break; }
        } 
        fprintf(parms[0].LOG,"Fitting %s to %s, %4d initial fits were tried, %4d transformations were output\n",qdomain.id,ddomain.id,ntries,ntrans);
        for(j=0; j<ddomainall.ncoords; ++j) free(ddomainall.coords[j]);
       } else {
 	 fprintf(parms[0].LOG,"%s -- skipped.\n",ddomain.id);
-      } 
-
-      m = (int)(best_nequiv*best_seqid/(float)100);
-      n = best_nequiv;
-      Pm = murzin_P(n,m,0.1);
-
+      } /* end of if(!error) */
       if(strcmp(parms[0].logfile,"silent")!=0) {
         fprintf(parms[0].LOG,"Summary: %10s %10s %4d %4d ",qdomain.id,ddomain.id,ntries,ntrans);
-/* SMJS Added Pm condition */
-        if (Pm > -0.99)
-        {
-           fprintf(parms[0].LOG,"%7.3f %7.3f %4d %4d %4d %4d %4d %4d %5.2f %5.2f %7.2e",
-                   best_score,best_rms,best_len,qdomain.ncoords,ddomain.ncoords,best_nfit,best_nsec,best_nequiv,best_seqid,best_secid,Pm);
-        } else {
-           fprintf(parms[0].LOG,"%7.3f %7.3f %4d %4d %4d %4d %4d %4d %5.2f %5.2f   NC   ",
-                   best_score,best_rms,best_len,qdomain.ncoords,ddomain.ncoords,best_nfit,best_nsec,best_nequiv,best_seqid,best_secid);
-        }
+        fprintf(parms[0].LOG,"%7.3f %7.3f %4d %4d %4d %4d %4d %4d %5.2f %5.2f ",
+               best_score,best_rms,best_len,qdomain.ncoords,ddomain.ncoords,best_nfit,best_nsec,best_nequiv,best_seqid,best_secid);
 /*      for(j=0; j<3; ++j) for(k=i; k<3; ++k) fprintf(parms[0].LOG,"%3d ",best_hbcmat[j][k]); */
         fprintf(parms[0].LOG,"\n");
       } else {
-
-	printf("Scan %-15s %-15s %4d ",qdomain.id,ddomain.id,ntrans);
-
-/* SMJS Added Pm condition */
-        if (Pm > -0.99)
-        {
-           printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f %7.2e ",
-                  best_score,best_rms,qdomain.ncoords,ddomain.ncoords,best_len,best_nfit,
-     	          best_nequiv,best_nsec,best_seqid,best_secid,Pm);
-        } else { 
-           printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f   NC    ",
-                  best_score,best_rms,qdomain.ncoords,ddomain.ncoords,best_len,best_nfit,
-     	          best_nequiv,best_nsec,best_seqid,best_secid);
-        }
+	printf("Scan %10s %10s %4d ",qdomain.id,ddomain.id,ntrans);
+        printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f ",
+               best_score,best_rms,ddomain.ncoords,qdomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid);
         printf("\n");
-	fflush(stdout);
       }
       for(j=0; j<3; ++j) {
         free(ddomain.R[j]);

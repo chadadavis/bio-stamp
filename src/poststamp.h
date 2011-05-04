@@ -1,8 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
-
 struct brookn { /* structure to represent brookhaven residue numbers */
     int n;      /* numerical part of number */
     char cid;   /* chain identifier */
@@ -11,7 +6,7 @@ struct brookn { /* structure to represent brookhaven residue numbers */
 
 struct domain_loc{		/* This structure allows rather complex domains to be described */
    char filename[100];
-   char id[100];
+   char id[30];
    int nobj;			/* The number of objects considered within the named file */
    int *type;			/* The type that each object is:
 					0 ==> an error
@@ -58,28 +53,7 @@ struct stampdat{
    char *title;
    float *n;
 };
-
+int getstampdat();
+int *getstamprel();
 int *getstampsecsum();
-
-int getstampdat(struct stampdat *stamp, FILE *IN, int *nstamp, int *nseq, int *npos, int maxpos);
-
-int *getstamprel(struct stampdat *stamp, int nval, int npos, char type, float cutoff, int window);
-
-/* SMJS Removed PRECISION */
-float rossmann(int **atoms1, int **atoms2, int start, int end,
-        float const1, float const2, float *Dij, float *Cij);
-
-
-int count_domain(FILE *IN);
-int matmult(float **r, float *v, int **coord, int n, int PRECISION);
-int printdomain(FILE *TRANS, struct domain_loc domain, int writetrans);
-void exit_error();
-int getdomain(FILE *IN, struct domain_loc *domains, int *ndomain, int maxdomain, 
-        int *gottrans, char *env, int DSSP, FILE *OUTPUT);
-int Agetbloc(FILE *bfile, struct seqdat *bloc, int *nbloc);
-int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
-        struct brookn start, struct brookn end, int type, int MAXats,
-        int REVERSE, int PRECISION, FILE *OUTPUT);
-
-int closefile(FILE *handle,char *filename);
-FILE *openfile(char *filename, char *type);
+float rossmann();

@@ -1,0 +1,90 @@
+\begin{thebibliography}{}
+
+\bibitem[Barton, 1993]{barton93a}
+Barton, G.~J. (1993{\em{}}).
+\newblock {\em Prot. Eng.} {\bf 6}, 37--40.
+
+\bibitem[Barton {\em et~al.}, 1994]{barton94}
+Barton, G.~J., Barford, D.~A.  \& Cohen, P.~T. (1994{\em{}}).
+\newblock {\em European Journal of Biochemsitry, } {\bf 220}, 225--237.
+
+\bibitem[Kabsch, 1978]{kabsch78}
+Kabsch, W. (1978{\em{}}).
+\newblock {\em Acta crystallographica, } {\bf A34}, 827.
+
+\bibitem[Kabsch \& Sander, 1983]{dssp}
+Kabsch, W. \& Sander, C. (1983{\em{}}).
+\newblock {\em Biopolymers, } {\bf 22}, 2577--2637.
+
+\bibitem[Kraulis, 1991]{molscript}
+Kraulis, P.~J. (1991{\em{}}).
+\newblock {\em J. App. Cryst.} {\bf 24}, 964--950.
+
+\bibitem[Matthews {\em et~al.}, 1994]{matthews94}
+Matthews, S., Barlow, P., Boyd, J., Barton, G., Russell, R., Mills, H.,
+  Cunningham, M., Meyers, N., Burns, N., Clark, N., Kingsman, S., Kingsman, A.
+  \& Campbell, I. (1994{\em{}}).
+\newblock {\em Nature, } {\bf 370}, 666--668.
+
+\bibitem[McLachlan, 1979]{mclachlan79}
+McLachlan, A.~D. (1979{\em{}}).
+\newblock {\em J. Mol. Biol.} {\bf 128}, 49--79.
+
+\bibitem[Richards \& Kundrot, 1988]{define}
+Richards, F.~M. \& Kundrot, C.~E. (1988{\em{}}).
+\newblock {\em Proteins, } {\bf 3}, 71--84.
+
+\bibitem[Rossmann {\em et~al.}, 1975]{rossmann75}
+Rossmann, M.~G., Liljas, A., Branden, C.-I.  \& Banaszak, L.~J. (1975{\em{}}).
+\newblock {\em The Enzymes, } {\bf 11}, 61--102.
+
+\bibitem[Rossmann {\em et~al.}, 1974]{rossmann74}
+Rossmann, M.~G., Moras, D.  \& Olsen, K.~W. (1974{\em{}}).
+\newblock {\em Nature, } {\bf 250}, 194--199.
+
+\bibitem[Russell, 1994]{russell94}
+Russell, R.~B. (1994{\em{}}).
+\newblock {\em Prot. Eng.} {\bf 7}, 1407--1410.
+
+\bibitem[Russell \& Barton, 1992]{rb92b}
+Russell, R.~B. \& Barton, G.~J. (1992{\em{}}).
+\newblock {\em Proteins, } {\bf 14}, 309--323.
+
+\bibitem[Russell \& Barton, 1993{\em{a}}]{rb93b}
+Russell, R.~B. \& Barton, G.~J. (1993{\em{a}}).
+\newblock {\em Nature, } {\bf 364}, 765.
+
+\bibitem[Russell \& Barton, 1993{\em{b}}]{rb93c}
+Russell, R.~B. \& Barton, G.~J. (1993{\em{b}}).
+\newblock {\em J. Mol. Biol.} {\bf 234}, 951--957.
+
+\bibitem[Russell \& Barton, 1994]{rb94}
+Russell, R.~B. \& Barton, G.~J. (1994{\em{}}).
+\newblock {\em J. Mol. Biol.} {\bf 244}, 332--350.
+
+\bibitem[Russell {\em et~al.}, 1995]{rcb95a}
+Russell, R.~B., Copley, R.~R.  \& Barton, G.~J. (1995{\em{}}).
+\newblock {\em Proc. 28th Hawaii. Int. Conf. Sys. Sci. IEEE Press, } {\bf 5},
+  302--311.
+
+\bibitem[Sali \& Blundell, 1990]{sali90}
+Sali, A. \& Blundell, T.~L. (1990{\em{}}).
+\newblock {\em J. Mol. Biol.} {\bf 212}, 403--428.
+
+\bibitem[Sankoff \& Kruskal, 1983]{timewarps}
+Sankoff, D. \& Kruskal, J.~B., eds (1983{\em{}}).
+\newblock {\em Time warps, string edits, and macromolecules: The theory and
+  practice of sequence comparison}.
+\newblock Addison-Wesley, Inc., Reading, Mass., USA.
+
+\bibitem[Smith \& Waterman, 1981]{smith81}
+Smith, T.~F. \& Waterman, M.~S. (1981{\em{}}).
+\newblock {\em J. Mol. Biol.} {\bf 147}, 195--197.
+
+\bibitem[Sternberg {\em et~al.}, 1995]{sternberg95}
+Sternberg, M. J.~E., Hegyi, H., Islam, S.~A., Luo, J.  \& Russell, R.~B.
+  (1995{\em{}}).
+\newblock {\em Proceedings of the 3rd Annual Conference on Intelligent Systems
+  for Molecular Biology, } {\bf }, 376--383.
+
+\end{thebibliography}

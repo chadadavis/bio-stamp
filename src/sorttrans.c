@@ -1,8 +1,8 @@
 /******************************************************************************
  The computer software and associated documentation called STAMP hereinafter
  referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+ Appendix A of the file LICENSE.  Conditions and restrictions for use of
+ this package are also in this file.
 
  The WORK is only available to licensed institutions.
 
@@ -11,21 +11,20 @@
 
  Of current addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Biomolecular Modelling Laboratory   Laboratory of Molecular Biophysics
+ Imperial Cancer Research Fund       The Rex Richards Building
+ Lincoln's Inn Fields, P.O. Box 123  South Parks Road
+ London, WC2A 3PX, U.K.              Oxford, OX1 3PG, U.K.
+ Tel: +44 171 269 3583               Tel: +44 865 275368
+ FAX: +44 171 269 3417               FAX: 44 865 510454
+ e-mail: russell@icrf.icnet.uk       e-mail gjb@bioch.ox.ac.uk
+ WWW: http://bonsai.lif.icnet.uk/    WWW: http://geoff.biop.ox.ac.uk/
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ The WORK is Copyright (1995) University of Oxford
+	Administrative Offices
+	Wellington Square
+	Oxford OX1 2JD U.K.
 
  All use of the WORK must cite: 
  R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
@@ -34,10 +33,9 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <math.h>
 
-#include "stamp.h"
+#include "include.h"
 
 #define min_R_diff 1.50
 #define min_V_diff 60.0
@@ -61,17 +59,51 @@ struct info_struc {
   struct brookn fitpos;
   };
 
-void compared_sc_hsort(int n,struct domain_loc* domain);
-void comparei_sc_hsort(int n,struct info_struc* info);
-void compared_rms_hsort(int n,struct domain_loc* domain);
-void comparei_rms_hsort(int n,struct info_struc* info);
+/* compare functions for qsort() */
+int compared_sc(x1,x2)
+struct domain_loc *x1,*x2;
+{
+	float diff;
+	diff = x2->value-x1->value;
+	if(diff < 0.0) return -1;
+	else if(diff > 0.0) return 1;
+	else return 0;
+}
+int compared_rms(x1,x2)
+struct domain_loc *x1,*x2;
+{
+	float diff; 
+	diff = x1->value-x2->value; 
+	if(diff < 0.0) return -1;
+	else if(diff > 0.0) return 1;
+	else return 0; 
+
+}
+int comparei_sc(x1,x2)
+struct info_struc *x1,*x2;
+{
+	float diff; 
+	diff = x2->value-x1->value; 
+	if(diff < 0.0) return -1;
+	else if(diff > 0.0) return 1;
+	else return 0; 
+
+}
+int comparei_rms(x1,x2)
+struct info_struc *x1,*x2;
+{
+	float diff; 
+	diff = x1->value-x2->value; 
+	if(diff < 0.0) return -1;
+	else if(diff > 0.0) return 1;
+	else return 0; 
+}
 
 
-
-int exit_error();
-
-main(int argc, char *argv[]) {
-
+main(argc,argv)
+int argc;
+char *argv[];
+{
 	char c;
 	char *buff;
 
@@ -96,8 +128,7 @@ main(int argc, char *argv[]) {
 	filename=(char*)malloc(1000*sizeof(char));
 
 	if(argc<3) exit_error();
-	ignore_trans=0;
-	finicky=1;
+	ignore_trans=finicky=0;
 	method=0; cutoff=2.0;
 	for(i=1; i<argc; ++i) {
 	   if(argv[i][0]!='-') exit_error();
@@ -127,7 +158,7 @@ main(int argc, char *argv[]) {
 	   } else if(argv[i][1]=='i') {
 	     ignore_trans=1;
 	   } else if(argv[i][1]=='n') {
-	     finicky=0;
+	     finicky=1;
 	   } else exit_error();
 	}
 
@@ -224,16 +255,11 @@ main(int argc, char *argv[]) {
 	   }
 	}
 	if(method!=1) {
-	/* from stdlib.h
-	 * extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *)); */
-
-	   compared_sc_hsort(ndomain,&(domain[-1]));
-	   comparei_sc_hsort(ndomain,&(info[-1]));
-
-
+	   qsort((char*)info,ndomain,sizeof(struct info_struc),comparei_sc);
+	   qsort((char*)domain,ndomain,sizeof(struct domain_loc),compared_sc);
 	} else {
-	   compared_rms_hsort(ndomain,&(domain[-1]));
-	   comparei_rms_hsort(ndomain,&(info[-1]));
+	   qsort((char*)info,ndomain,sizeof(struct info_struc),comparei_rms);
+	   qsort((char*)domain,ndomain,sizeof(struct domain_loc),compared_rms);
 	}
 	
 	/* now let us determine which transformations are worth ignoring 
@@ -243,10 +269,10 @@ main(int argc, char *argv[]) {
 	for(i=0; i<ndomain; ++i) {
 	   k=0; while(k<strlen(domain[i].id) && domain[i].id[k]!='_') k++;
 	   for(j=i+1; j<ndomain; ++j) {
-	      if(ignore_trans==0) similar=transcompare(domain[i].R,domain[i].V,domain[j].R,domain[j].V,3);
-	      else similar=1;
-/*	      printf("%s and %s => %d\n",domain[i].id,domain[j].id,similar); */
-
+/*	      printf("%s and %s => ",domain[i].id,domain[j].id);
+	      similar=transcompare(domain[i].R,domain[i].V,domain[j].R,domain[j].V,3);
+	      printf("%d\n",similar);
+*/
 	     if(!finicky) {
 	       /* if we are not finicky, all that we require is that the transformations and the file name be
 		*  the same  (since similar transformations of the same file will give the same result */
@@ -264,7 +290,7 @@ main(int argc, char *argv[]) {
 		 domain[i].end[0].cid   == domain[j].end[0].cid &&
 		 abs(domain[i].end[0].n -  domain[j].end[0].n)<max_start_diff   &&
 		 domain[i].end[0].in    == domain[j].end[0].in &&  /* the start and end are the same */
-		 (!gottrans || similar))  {  
+		 (!gottrans || transcompare(domain[i].R,domain[i].V,domain[j].R,domain[j].V,3)) ) {  
 		    /* the transformations are sufficiently similar */
 		   info[j].ignore=1;
 	         }
@@ -313,7 +339,7 @@ main(int argc, char *argv[]) {
 	  case 3: printf("%%  alignment lengths less than %4d\n",(int)cutoff); break;
 	  case 4: case 5: case 6: printf("%%  fraction of atoms fitted less than %7.3f\n",cutoff); break;
 	  case 7: printf("%% fewer than %4d equivalent sec. structures\n",(int)cutoff); break;
-	  case 8: case 9: printf("%% identities less than %5.2f %%\n",cutoff); break;
+	  case 8: case 9: printf("%% identities less than %5.2 %%\n",cutoff); break;
 	}
 	printf("%% All of these were removed\n");
 	printf("%% Leaving %d domains in this file\n",left);
@@ -350,7 +376,10 @@ main(int argc, char *argv[]) {
  *  matrix and vector components respectively. */
 
 
-int transcompare(float **R1, float *V1, float **R2, float *V2, int dim )
+int transcompare(R1,V1,R2,V2,dim)
+float **R1,**R2;
+float *V1,*V2;
+int dim;
 {	
 	int i,j,k;
 	float Rdiffsq,Rdiff;
@@ -369,7 +398,7 @@ int transcompare(float **R1, float *V1, float **R2, float *V2, int dim )
 }
 int exit_error()
 {
-	  fprintf(stderr,"format: sorttrans -f <filename> [-s <sort method> <value> -i -n] \n");
+	  fprintf(stderr,"format: sorttrans -f <filename> -s <sort method> <value> -t -n \n");
 	  fprintf(stderr,"  sort (-s) keywords: \n");
 	  fprintf(stderr,"      Sc sort by STAMP Sc value\n");
 	  fprintf(stderr,"      rms   sort by RMS deviations\n");
@@ -381,129 +410,7 @@ int exit_error()
 	  fprintf(stderr,"      seq_id sort by sequence identity\n");
 	  fprintf(stderr,"      sec_id sort by secondary structure identity\n");
 	  fprintf(stderr,"      n_sec  sort by number of equivalent secondary structures\n");
-	  fprintf(stderr,"  -i only allow the best superimposition per identifier\n");
+	  fprintf(stderr,"  -t ignore transformations (just filename and descriptors)\n");
 	  fprintf(stderr,"  -n ignore domain descriptors (just filename and transformation)\n");
 	  exit(-1);
-}
-void compared_sc_hsort(int n,struct domain_loc* domain) {
-	int l,j,ir,i;
-	struct domain_loc rra;
-
-	l=(n >> 1)+1;
-	ir=n;
-	for (;;) {
-		if (l > 1)
-			rra=domain[--l];
-		else {
-			rra=domain[ir];
-			domain[ir]=domain[1];
-			if (--ir == 1) {
-				domain[1]=rra;
-				return;
-			}
-		}
-		i=l;
-		j=l << 1;
-		while (j <= ir) {
-			if (j < ir && domain[j].value > domain[j+1].value) ++j;
-			if (rra.value > domain[j].value){
-				domain[i]=domain[j];
-				j += (i=j);
-			}
-			else j=ir+1;
-		}
-		domain[i]=rra;
-	}
-}
-
-void comparei_sc_hsort(int n,struct info_struc* info) {
-	int l,j,ir,i;
-	struct info_struc rra;
-
-	l=(n >> 1)+1;
-	ir=n;
-	for (;;) {
-		if (l > 1)
-			rra=info[--l];
-		else {
-			rra=info[ir];
-			info[ir]=info[1];
-			if (--ir == 1) {
-				info[1]=rra;
-				return;
-			}
-		}
-		i=l;
-		j=l << 1;
-		while (j <= ir) {
-			if (j < ir && info[j].value > info[j+1].value) ++j;
-			if (rra.value > info[j].value){
-				info[i]=info[j];
-				j += (i=j);
-			}
-			else j=ir+1;
-		}
-		info[i]=rra;
-	}
-}
-void compared_rms_hsort(int n,struct domain_loc* domain) {
-	int l,j,ir,i;
-	struct domain_loc rra;
-
-	l=(n >> 1)+1;
-	ir=n;
-	for (;;) {
-		if (l > 1)
-			rra=domain[--l];
-		else {
-			rra=domain[ir];
-			domain[ir]=domain[1];
-			if (--ir == 1) {
-				domain[1]=rra;
-				return;
-			}
-		}
-		i=l;
-		j=l << 1;
-		while (j <= ir) {
-			if (j < ir && domain[j].value < domain[j+1].value) ++j;
-			if (rra.value < domain[j].value){
-				domain[i]=domain[j];
-				j += (i=j);
-			}
-			else j=ir+1;
-		}
-		domain[i]=rra;
-	}
-}
-
-void comparei_rms_hsort(int n,struct info_struc* info) {
-	int l,j,ir,i;
-	struct info_struc rra;
-
-	l=(n >> 1)+1;
-	ir=n;
-	for (;;) {
-		if (l > 1)
-			rra=info[--l];
-		else {
-			rra=info[ir];
-			info[ir]=info[1];
-			if (--ir == 1) {
-				info[1]=rra;
-				return;
-			}
-		}
-		i=l;
-		j=l << 1;
-		while (j <= ir) {
-			if (j < ir && info[j].value < info[j+1].value) ++j;
-			if (rra.value < info[j].value){
-				info[i]=info[j];
-				j += (i=j);
-			}
-			else j=ir+1;
-		}
-		info[i]=rra;
-	}
 }
