@@ -41,7 +41,7 @@
 
 /* This program checks pdb files for inconsitencies, and
  *  other stuff */
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	int i,j,k,l,mode,yes,n_main_miss,total_main_miss;
 	int ftype;
@@ -455,4 +455,5 @@ main(int argc, char *argv[]) {
     }
     closefile(pdb,pdbfile);
     free(pdbfile);
+    return 0;
 }
