@@ -1,0 +1,149 @@
+% Output from STAMP scanning routine
+%
+% Domain 2fb4lv was used to scan the domain database:
+%  some.domains
+% 2 fits were performed
+% Fit 1 E1= 20.000, E2=  3.800, CUT=  1.000
+% Fit 2 E1=  3.800, E2=  3.800, CUT=  4.500
+% Approximate fits (alignment from N-termini) were performed
+%   at every 5 residue of the database sequences 
+% Transformations were output for Sc=  2.000
+% 
+% Domain used to scan 
+# Sc= 10.000 RMS=  0.01  Len= 999 nfit= 999 Seqid= 100.00 Secid= 100.00 q_len=  111 d_len=  111 n_sec= 100 n_equiv 999 fit_pos= _  0 _ 
+/disk3/pdb/pdb2fb4.ent 2fb4lv { L 1 _ to L 109 _  }
+# Sc=   4.434 RMS=   2.274 len=  128 nfit=   55 seq_id=  8.11 sec_id= 50.45 q_len=  111 d_len=  105 n_sec=    8 n_equiv=   48 fit_pos= L 110 _ 
+/disk3/pdb/pdb2fb4.ent 2fb4lc_1 {  L 110 _ to L 214 _  
+  -0.69348   -0.71816   -0.05781       145.53287 
+  -0.49348    0.53192   -0.68814        53.08043 
+   0.52494   -0.44868   -0.72327        89.96626  }
+# Sc=   9.623 RMS=   0.001 len=  110 nfit=  110 seq_id= 66.27 sec_id= 64.46 q_len=  111 d_len=  216 n_sec=   11 n_equiv=  109 fit_pos= L   1 _ 
+/disk3/pdb/pdb2fb4.ent 2fb4l_1 {  CHAIN L  
+   1.00000    0.00006   -0.00002         0.00006 
+  -0.00006    1.00000   -0.00001         0.00606 
+   0.00002    0.00001    1.00000         0.00027  }
+# Sc=   4.496 RMS=   2.265 len=  127 nfit=   55 seq_id=  4.22 sec_id= 34.34 q_len=  111 d_len=  216 n_sec=    8 n_equiv=   48 fit_pos= L 108 _ 
+/disk3/pdb/pdb2fb4.ent 2fb4l_2 {  CHAIN L  
+  -0.69401   -0.71878   -0.04124       144.97321 
+  -0.51303    0.53392   -0.67211        53.02931 
+   0.50512   -0.44529   -0.73930        91.06301  }
+# Sc=   4.605 RMS=   1.427 len=  126 nfit=   51 seq_id=  9.04 sec_id= 30.72 q_len=  111 d_len=  216 n_sec=    9 n_equiv=   49 fit_pos= L 170 _ 
+/disk3/pdb/pdb2fb4.ent 2fb4l_5 {  CHAIN L  
+  -0.72983   -0.65345    0.20088       129.71106 
+  -0.54405    0.37724   -0.74947        66.74806 
+   0.41396   -0.65627   -0.63083       113.34539  }
+# Sc=   4.593 RMS=   1.453 len=  126 nfit=   52 seq_id=  9.04 sec_id= 30.72 q_len=  111 d_len=  216 n_sec=    9 n_equiv=   50 fit_pos= L 175 _ 
+/disk3/pdb/pdb2fb4.ent 2fb4l_6 {  CHAIN L  
+  -0.72797   -0.65440    0.20449       129.64087 
+  -0.55000    0.37933   -0.74405        66.52338 
+   0.40934   -0.65412   -0.63606       113.42809  }
+# Sc=   4.593 RMS=   1.453 len=  126 nfit=   52 seq_id=  9.04 sec_id= 30.72 q_len=  111 d_len=  216 n_sec=    9 n_equiv=   50 fit_pos= L 195 _ 
+/disk3/pdb/pdb2fb4.ent 2fb4l_10 {  CHAIN L  
+  -0.72798   -0.65440    0.20447       129.63913 
+  -0.55001    0.37939   -0.74402        66.51868 
+   0.40931   -0.65409   -0.63611       113.44402  }
+# Sc=   4.604 RMS=   1.427 len=  126 nfit=   51 seq_id=  9.04 sec_id= 30.72 q_len=  111 d_len=  216 n_sec=    9 n_equiv=   49 fit_pos= L 200 _ 
+/disk3/pdb/pdb2fb4.ent 2fb4l_11 {  CHAIN L  
+  -0.72983   -0.65345    0.20086       129.71645 
+  -0.54407    0.37730   -0.74942        66.75217 
+   0.41393   -0.65624   -0.63089       113.36919  }
+# Sc=   4.604 RMS=   1.427 len=  126 nfit=   51 seq_id=  9.04 sec_id= 30.72 q_len=  111 d_len=  216 n_sec=    9 n_equiv=   49 fit_pos= L 205 _ 
+/disk3/pdb/pdb2fb4.ent 2fb4l_12 {  CHAIN L  
+  -0.72983   -0.65345    0.20086       129.72157 
+  -0.54407    0.37730   -0.74942        66.75703 
+   0.41393   -0.65623   -0.63089       113.37330  }
+# Sc=   7.708 RMS=   1.375 len=  115 nfit=   95 seq_id= 44.25 sec_id= 79.65 q_len=  111 d_len=  113 n_sec=   11 n_equiv=   93 fit_pos= L   1 _ 
+/disk3/pdb/pdb1mcp.ent 1mcplv_1 {  L 1 _ to L 113 _  
+  -0.53115    0.77848    0.33443        37.35475 
+   0.80718    0.34494    0.47903         0.98690 
+   0.25756    0.52438   -0.81159       -33.51113  }
+# Sc=   6.836 RMS=   1.751 len=  125 nfit=   83 seq_id= 22.95 sec_id= 74.59 q_len=  111 d_len=  122 n_sec=   10 n_equiv=   81 fit_pos= H   1 _ 
+/disk3/pdb/pdb1mcp.ent 1mcphv_1 {  H 1 _ to H 122 _  
+   0.12114   -0.69396   -0.70974        64.07755 
+   0.77725   -0.37842    0.50267        48.20017 
+  -0.61742   -0.61255    0.49354       120.56134  }
+# Sc=   2.066 RMS=   2.328 len=  148 nfit=   25 seq_id=  3.38 sec_id= 17.57 q_len=  111 d_len=  148 n_sec=    4 n_equiv=   21 fit_pos= _ 246 _ 
+/disk3/pdb/pdb1cms.ent 1cmsC_15 {  _ 176 _ to _ 323 _  
+   0.41842   -0.66797    0.61542        61.83846 
+   0.89781    0.20176   -0.39144        52.78676 
+   0.13730    0.71632    0.68413        10.61852  }
+# Sc=   2.101 RMS=   2.494 len=  151 nfit=   27 seq_id=  3.38 sec_id= 16.22 q_len=  111 d_len=  148 n_sec=    4 n_equiv=   21 fit_pos= _ 309 _ 
+/disk3/pdb/pdb1cms.ent 1cmsC_25 {  _ 176 _ to _ 323 _  
+   0.44310   -0.69140    0.57064        62.24986 
+   0.88717    0.24674   -0.38993        51.64282 
+   0.12880    0.67903    0.72272        11.73965  }
+# Sc=   2.101 RMS=   2.494 len=  151 nfit=   27 seq_id=  3.38 sec_id= 16.22 q_len=  111 d_len=  148 n_sec=    4 n_equiv=   21 fit_pos= _ 314 _ 
+/disk3/pdb/pdb1cms.ent 1cmsC_26 {  _ 176 _ to _ 323 _  
+   0.44312   -0.69139    0.57064        62.25061 
+   0.88717    0.24677   -0.38992        51.64826 
+   0.12877    0.67903    0.72273        11.74424  }
+# Sc=   5.862 RMS=   1.307 len=  112 nfit=   72 seq_id=  9.04 sec_id= 39.76 q_len=  111 d_len=  178 n_sec=   10 n_equiv=   69 fit_pos= _   1 _ 
+/disk3/pdb/pdb3cd4.ent 3cd4_1 {  ALL  
+  -0.01278   -0.97666   -0.21443        91.64351 
+  -0.44454   -0.18654    0.87612        44.88703 
+  -0.89567    0.10652   -0.43178        85.79961  }
+# Sc=   4.583 RMS=   2.199 len=  114 nfit=   58 seq_id=  7.83 sec_id= 29.52 q_len=  111 d_len=  178 n_sec=   10 n_equiv=   54 fit_pos= _  98 _ 
+/disk3/pdb/pdb3cd4.ent 3cd4_2 {  ALL  
+  -0.10960    0.04141    0.99311       -14.24068 
+  -0.07454   -0.99666    0.03334        80.66998 
+   0.99118   -0.07037    0.11232        18.15264  }
+# Sc=   4.578 RMS=   2.199 len=  114 nfit=   58 seq_id=  7.83 sec_id= 29.52 q_len=  111 d_len=  178 n_sec=   10 n_equiv=   54 fit_pos= _ 165 _ 
+/disk3/pdb/pdb3cd4.ent 3cd4_3 {  ALL  
+  -0.10960    0.04142    0.99311       -14.23742 
+  -0.07455   -0.99666    0.03334        80.67340 
+   0.99118   -0.07039    0.11232        18.15696  }
+# Sc=   4.582 RMS=   2.199 len=  114 nfit=   58 seq_id=  7.83 sec_id= 29.52 q_len=  111 d_len=  178 n_sec=   10 n_equiv=   54 fit_pos= _ 170 _ 
+/disk3/pdb/pdb3cd4.ent 3cd4_4 {  ALL  
+  -0.10962    0.04142    0.99311       -14.23241 
+  -0.07454   -0.99666    0.03334        80.67624 
+   0.99117   -0.07038    0.11234        18.15891  }
+# Sc=   4.567 RMS=   2.357 len=  131 nfit=   58 seq_id=  4.82 sec_id= 35.54 q_len=  111 d_len=  218 n_sec=    6 n_equiv=   54 fit_pos= _   1 _ 
+/disk3/pdb/pdb3dpa.ent 3dpa_1 {  ALL  
+  -0.34916   -0.26782    0.89797        49.33364 
+   0.31111    0.87080    0.38069        21.95442 
+  -0.88391    0.41229   -0.22073        69.46207  }
+# Sc=   2.979 RMS=   2.894 len=  118 nfit=   30 seq_id=  3.61 sec_id= 28.31 q_len=  111 d_len=  218 n_sec=    3 n_equiv=   21 fit_pos= _ 121 _ 
+/disk3/pdb/pdb3dpa.ent 3dpa_3 {  ALL  
+   0.59714   -0.62829   -0.49868        61.20383 
+   0.74666    0.66256    0.05930        -9.44267 
+   0.29314   -0.40775    0.86476        30.36598  }
+# Sc=   2.988 RMS=   2.966 len=  116 nfit=   29 seq_id=  3.61 sec_id= 27.71 q_len=  111 d_len=  218 n_sec=    2 n_equiv=   17 fit_pos= _ 168 _ 
+/disk3/pdb/pdb3dpa.ent 3dpa_6 {  ALL  
+   0.60106   -0.61632   -0.50880        60.48937 
+   0.74119    0.66800    0.06642        -9.72682 
+   0.29894   -0.41704    0.85832        30.90717  }
+# Sc=   2.989 RMS=   2.887 len=  116 nfit=   28 seq_id=  3.61 sec_id= 27.71 q_len=  111 d_len=  218 n_sec=    2 n_equiv=   17 fit_pos= _ 173 _ 
+/disk3/pdb/pdb3dpa.ent 3dpa_7 {  ALL  
+   0.59625   -0.61871   -0.51156        60.94262 
+   0.75193    0.65363    0.08587        -9.79687 
+   0.28124   -0.43585    0.85495        32.95502  }
+# Sc=   2.954 RMS=   2.665 len=  116 nfit=   33 seq_id=  2.41 sec_id= 27.71 q_len=  111 d_len=  218 n_sec=    5 n_equiv=   22 fit_pos= _ 193 _ 
+/disk3/pdb/pdb3dpa.ent 3dpa_11 {  ALL  
+   0.66925   -0.65046   -0.35917        54.10552 
+   0.68377    0.72832   -0.04489        -6.75989 
+   0.29079   -0.21555    0.93219        18.16431  }
+# Sc=   3.002 RMS=   2.920 len=  117 nfit=   32 seq_id=  3.61 sec_id= 28.31 q_len=  111 d_len=  218 n_sec=    3 n_equiv=   21 fit_pos= _ 198 _ 
+/disk3/pdb/pdb3dpa.ent 3dpa_12 {  ALL  
+   0.59756   -0.62886   -0.49745        61.21648 
+   0.74644    0.66286    0.05869        -9.40948 
+   0.29283   -0.40639    0.86551        30.39709  }
+# Sc=   3.993 RMS=   2.667 len=  131 nfit=   52 seq_id= 11.71 sec_id= 44.14 q_len=  111 d_len=  108 n_sec=    5 n_equiv=   41 fit_pos= _   1 _ 
+/disk3/pdb/pdb1acx.ent 1acx_1 {  ALL  
+  -0.93787    0.34411    0.04469        50.66914 
+   0.25725    0.60309    0.75505        58.41679 
+   0.23287    0.71963   -0.65414        60.43887  }
+# Sc=   4.011 RMS=   2.819 len=  131 nfit=   42 seq_id=  7.75 sec_id= 49.61 q_len=  111 d_len=  129 n_sec=    5 n_equiv=   28 fit_pos= A  11 _ 
+/disk3/pdb/pdb2aza.ent 2azaa_3 {  CHAIN A  
+  -0.23435    0.97175    0.02814        35.83137 
+  -0.73030   -0.15687   -0.66488        68.32471 
+  -0.64168   -0.17636    0.74642        38.96555  }
+# Sc=   3.613 RMS=   2.350 len=  158 nfit=   36 seq_id=  6.62 sec_id= 43.05 q_len=  111 d_len=  151 n_sec=    7 n_equiv=   29 fit_pos= O   6 _ 
+/disk3/pdb/pdb2sod.ent 2sodo_2 {  CHAIN O  
+   0.81855    0.25704   -0.51371        58.75188 
+  -0.36709    0.92193   -0.12363        47.66669 
+   0.44183    0.28978    0.84901        55.51704  }
+# Sc=   3.646 RMS=   2.009 len=  124 nfit=   42 seq_id= 13.51 sec_id= 40.54 q_len=  111 d_len=   99 n_sec=    6 n_equiv=   33 fit_pos= _   1 _ 
+/disk3/pdb/pdb2pcy.ent 2pcy_1 {  ALL  
+  -0.52216   -0.72697   -0.44594        85.05096 
+   0.02214   -0.53426    0.84503        61.61489 
+  -0.85256    0.43137    0.29507        30.64392  }

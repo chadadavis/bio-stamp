@@ -1,0 +1,11 @@
+/usr/local/data/dssp/defn/ _ .all
+./ _ .dssp
+/usr/local/data/ks _ .dssp
+/usr/local/data/rob_dssp/ _ .dssp
+/usr/local/data/rob_dssp/DEFINE/ _ .define
+/usr/local/data/rob_dssp/NMR/ _ .dssp
+/usr/local/data/rob_dssp/MODIFIED/ _ .dssp
+/home/biomodel1/r_russ/extra/ _ .dssp
+/home/databases/ks/ _ .dssp
+./ _ .define
+/oakdatabases/ks/ _ .dssp

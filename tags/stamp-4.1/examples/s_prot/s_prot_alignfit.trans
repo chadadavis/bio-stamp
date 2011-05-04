@@ -1,0 +1,189 @@
+% Output from the program ALIGNFIT
+% ALIGNFIT was run using the files
+% s_prot_amps.align and s_prot.domains
+%
+% You can generate transformed coordinates by typing
+% transform -f s_prot_alignfit.trans [-g -h ]
+% You can also get a refined StAMP alignment by
+%  typing stamp -l s_prot_alignfit.trans [ other parameters]
+%
+%Domain   1 /disk3/pdb/pdb4cha.ent 4chaa
+% chain A (239 CAs) 
+%  239 CAs in total
+%Domain   2 /disk3/pdb/pdb3est.ent 3est
+% all residues (240 CAs) 
+%  240 CAs in total
+%Domain   3 /disk3/pdb/pdb2ptn.ent 2ptn
+% all residues (223 CAs) 
+%  223 CAs in total
+%Domain   4 /disk3/pdb/pdb1ton.ent 1ton
+% all residues (227 CAs) 
+%  227 CAs in total
+%Domain   5 /disk3/pdb/pdb3rp2.ent 3rp2a
+% chain A (224 CAs) 
+%  224 CAs in total
+%Domain   6 /disk3/pdb/pdb2pka.ent 2pkaab
+% chain A ( 80 CAs) chain B (152 CAs) 
+%  232 CAs in total
+%Domain   7 /disk3/pdb/pdb1sgt.ent 1sgt
+% all residues (223 CAs) 
+%  223 CAs in total
+%Domain   8 /disk3/pdb/pdb2sga.ent 2sga
+% all residues (181 CAs) 
+%  181 CAs in total
+%Domain   9 /disk3/pdb/pdb3sgb.ent 3sgbe
+% chain E (185 CAs) 
+%  185 CAs in total
+%Domain  10 /disk3/pdb/pdb2alp.ent 2alp
+% all residues (198 CAs) 
+%  198 CAs in total
+% There are  157 non-gapped positions in block file
+% These were used for fitting the coordinates in a treewise fashion
+% Comparison:    1, 4chaa and 3est
+%   226 CAs to fit, RMS deviation     2.1117.
+% Comparison:    2, 4chaa and 2ptn
+%   219 CAs to fit, RMS deviation     2.1179.
+% Comparison:    3, 4chaa and 1ton
+%   218 CAs to fit, RMS deviation     2.8415.
+% Comparison:    4, 4chaa and 3rp2a
+%   214 CAs to fit, RMS deviation     2.9221.
+% Comparison:    5, 4chaa and 2pkaab
+%   220 CAs to fit, RMS deviation     2.3945.
+% Comparison:    6, 4chaa and 1sgt
+%   213 CAs to fit, RMS deviation     3.3902.
+% Comparison:    7, 4chaa and 2sga
+%   172 CAs to fit, RMS deviation    12.6827.
+% Comparison:    8, 4chaa and 3sgbe
+%   176 CAs to fit, RMS deviation    12.3131.
+% Comparison:    9, 4chaa and 2alp
+%   189 CAs to fit, RMS deviation    13.0719.
+% Comparison:   10, 3est and 2ptn
+%   221 CAs to fit, RMS deviation     1.9282.
+% Comparison:   11, 3est and 1ton
+%   223 CAs to fit, RMS deviation     2.5986.
+% Comparison:   12, 3est and 3rp2a
+%   223 CAs to fit, RMS deviation     2.9410.
+% Comparison:   13, 3est and 2pkaab
+%   225 CAs to fit, RMS deviation     2.3165.
+% Comparison:   14, 3est and 1sgt
+%   219 CAs to fit, RMS deviation     3.5837.
+% Comparison:   15, 3est and 2sga
+%   179 CAs to fit, RMS deviation    12.7825.
+% Comparison:   16, 3est and 3sgbe
+%   183 CAs to fit, RMS deviation    12.4909.
+% Comparison:   17, 3est and 2alp
+%   194 CAs to fit, RMS deviation    13.0995.
+% Comparison:   18, 2ptn and 1ton
+%   221 CAs to fit, RMS deviation     2.1393.
+% Comparison:   19, 2ptn and 3rp2a
+%   214 CAs to fit, RMS deviation     2.5521.
+% Comparison:   20, 2ptn and 2pkaab
+%   222 CAs to fit, RMS deviation     1.6196.
+% Comparison:   21, 2ptn and 1sgt
+%   212 CAs to fit, RMS deviation     3.3347.
+% Comparison:   22, 2ptn and 2sga
+%   175 CAs to fit, RMS deviation    12.5389.
+% Comparison:   23, 2ptn and 3sgbe
+%   179 CAs to fit, RMS deviation    12.2192.
+% Comparison:   24, 2ptn and 2alp
+%   190 CAs to fit, RMS deviation    12.8458.
+% Comparison:   25, 1ton and 3rp2a
+%   214 CAs to fit, RMS deviation     2.3846.
+% Comparison:   26, 1ton and 2pkaab
+%   227 CAs to fit, RMS deviation     2.1804.
+% Comparison:   27, 1ton and 1sgt
+%   212 CAs to fit, RMS deviation     3.5186.
+% Comparison:   28, 1ton and 2sga
+%   177 CAs to fit, RMS deviation    12.4909.
+% Comparison:   29, 1ton and 3sgbe
+%   181 CAs to fit, RMS deviation    12.1563.
+% Comparison:   30, 1ton and 2alp
+%   192 CAs to fit, RMS deviation    12.7791.
+% Comparison:   31, 3rp2a and 2pkaab
+%   216 CAs to fit, RMS deviation     2.8015.
+% Comparison:   32, 3rp2a and 1sgt
+%   207 CAs to fit, RMS deviation     3.9086.
+% Comparison:   33, 3rp2a and 2sga
+%   173 CAs to fit, RMS deviation    12.6756.
+% Comparison:   34, 3rp2a and 3sgbe
+%   177 CAs to fit, RMS deviation    12.3391.
+% Comparison:   35, 3rp2a and 2alp
+%   186 CAs to fit, RMS deviation    12.9097.
+% Comparison:   36, 2pkaab and 1sgt
+%   212 CAs to fit, RMS deviation     3.3108.
+% Comparison:   37, 2pkaab and 2sga
+%   177 CAs to fit, RMS deviation    12.5514.
+% Comparison:   38, 2pkaab and 3sgbe
+%   181 CAs to fit, RMS deviation    12.2209.
+% Comparison:   39, 2pkaab and 2alp
+%   192 CAs to fit, RMS deviation    12.8980.
+% Comparison:   40, 1sgt and 2sga
+%   174 CAs to fit, RMS deviation    12.8146.
+% Comparison:   41, 1sgt and 3sgbe
+%   178 CAs to fit, RMS deviation    12.2676.
+% Comparison:   42, 1sgt and 2alp
+%   189 CAs to fit, RMS deviation    13.0296.
+% Comparison:   43, 2sga and 3sgbe
+%   177 CAs to fit, RMS deviation     1.4391.
+% Comparison:   44, 2sga and 2alp
+%   179 CAs to fit, RMS deviation     1.9911.
+% Comparison:   45, 3sgbe and 2alp
+%   181 CAs to fit, RMS deviation     2.2762.
+%Cluster:    1 (2sga ) and (3sgbe )
+% CAs to fit:  177,  RMS between ave atoms:    1.43911.
+%Cluster:    2 (2ptn ) and (2pkaab )
+% CAs to fit:  222,  RMS between ave atoms:    1.61958.
+%Cluster:    3 (3est ) and (2ptn 2pkaab )
+% CAs to fit:  220,  RMS between ave atoms:    1.89593.
+%Cluster:    4 (2alp ) and (2sga 3sgbe )
+% CAs to fit:  176,  RMS between ave atoms:    1.96315.
+%Cluster:    5 (4chaa ) and (3est 2ptn 2pkaab )
+% CAs to fit:  217,  RMS between ave atoms:    1.82902.
+%Cluster:    6 (1ton ) and (4chaa 3est 2ptn 2pkaab )
+% CAs to fit:  216,  RMS between ave atoms:    2.03101.
+%Cluster:    7 (3rp2a ) and (1ton 4chaa 3est 2ptn 2pkaab )
+% CAs to fit:  208,  RMS between ave atoms:    2.24598.
+%Cluster:    8 (1sgt ) and (3rp2a 1ton 4chaa 3est 2ptn 2pkaab )
+% CAs to fit:  200,  RMS between ave atoms:    3.26625.
+%Cluster:    9 (2alp 2sga 3sgbe ) and (1sgt 3rp2a 1ton 4chaa 3est 2ptn 2pkaab )
+% CAs to fit:  157,  RMS between ave atoms:   12.17634.
+/disk3/pdb/pdb4cha.ent 4chaa { CHAIN A 
+   0.03700   -0.30431    0.95185       -22.28074 
+   0.89474   -0.41412   -0.16718        30.39039 
+   0.44506    0.85785    0.25695         3.08989  }
+/disk3/pdb/pdb3est.ent 3est { ALL 
+   0.12564    0.47669    0.87005       -27.26115 
+  -0.99177    0.08214    0.09821        15.30657 
+  -0.02465   -0.87523    0.48309        19.77422  }
+/disk3/pdb/pdb2ptn.ent 2ptn { ALL 
+   0.43649   -0.86748   -0.23864        34.37847 
+  -0.21006    0.15965   -0.96457        48.59360 
+   0.87485    0.47115   -0.11253        12.90788  }
+/disk3/pdb/pdb1ton.ent 1ton { ALL 
+   0.40509    0.32800   -0.85342        51.97192 
+   0.79592   -0.58584    0.15264        49.82926 
+  -0.44990   -0.74109   -0.49838        44.52839  }
+/disk3/pdb/pdb3rp2.ent 3rp2a { CHAIN A 
+  -0.37322    0.76277    0.52810        -1.18093 
+   0.64663   -0.19431    0.73764       -17.49160 
+   0.66526    0.61679   -0.42071         6.61483  }
+/disk3/pdb/pdb2pka.ent 2pkaab { CHAIN A  CHAIN B 
+   0.91048    0.27221    0.31134       -64.34635 
+  -0.26620   -0.19039    0.94493       -29.74742 
+   0.31649   -0.94321   -0.10089        89.00764  }
+/disk3/pdb/pdb1sgt.ent 1sgt { ALL 
+  -0.17083    0.92320    0.34427        -7.82574 
+   0.46692    0.38353   -0.79680        42.02510 
+  -0.86764    0.02463   -0.49658        51.92014  }
+/disk3/pdb/pdb2sga.ent 2sga { ALL 
+   0.25530   -0.55933   -0.78865        50.64307 
+  -0.81385    0.31605   -0.48760        25.99883 
+   0.52198    0.76634   -0.37452        15.92336  }
+/disk3/pdb/pdb3sgb.ent 3sgbe { CHAIN E 
+  -0.61204    0.79046    0.02419         0.22758 
+   0.40065    0.28355    0.87125        -5.35468 
+   0.68183    0.54293   -0.49024        10.09377  }
+/disk3/pdb/pdb2alp.ent 2alp { ALL 
+   1.00000    0.00000    0.00000         0.00000 
+   0.00000    1.00000    0.00000         0.00000 
+   0.00000    0.00000    1.00000         0.00000  }

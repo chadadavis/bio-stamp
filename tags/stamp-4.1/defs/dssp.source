@@ -1,0 +1,3786 @@
+#!/bin/csh
+
+if (! -e /usr/local/data/ks/154l.dssp) then
+ 	 echo Doing 154l
+ 	 dssp /disk3/pdb/pdb154l.ent /usr/local/data/ks/154l.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aaf.dssp) then
+ 	 echo Doing 1aaf
+ 	 dssp /disk3/pdb/pdb1aaf.ent /usr/local/data/ks/1aaf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aal.dssp) then
+ 	 echo Doing 1aal
+ 	 dssp /disk3/pdb/pdb1aal.ent /usr/local/data/ks/1aal.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aan.dssp) then
+ 	 echo Doing 1aan
+ 	 dssp /disk3/pdb/pdb1aan.ent /usr/local/data/ks/1aan.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aar.dssp) then
+ 	 echo Doing 1aar
+ 	 dssp /disk3/pdb/pdb1aar.ent /usr/local/data/ks/1aar.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aaz.dssp) then
+ 	 echo Doing 1aaz
+ 	 dssp /disk3/pdb/pdb1aaz.ent /usr/local/data/ks/1aaz.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1abb.dssp) then
+ 	 echo Doing 1abb
+ 	 dssp /disk3/pdb/pdb1abb.ent /usr/local/data/ks/1abb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1abb.dssp) then
+ 	 echo Doing 1abb
+ 	 dssp /disk3/pdb/pdb1abb.ent /usr/local/data/ks/1abb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1abk.dssp) then
+ 	 echo Doing 1abk
+ 	 dssp /disk3/pdb/pdb1abk.ent /usr/local/data/ks/1abk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1abk.dssp) then
+ 	 echo Doing 1abk
+ 	 dssp /disk3/pdb/pdb1abk.ent /usr/local/data/ks/1abk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1acm.dssp) then
+ 	 echo Doing 1acm
+ 	 dssp /disk3/pdb/pdb1acm.ent /usr/local/data/ks/1acm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1acm.dssp) then
+ 	 echo Doing 1acm
+ 	 dssp /disk3/pdb/pdb1acm.ent /usr/local/data/ks/1acm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1acp.dssp) then
+ 	 echo Doing 1acp
+ 	 dssp /disk3/pdb/pdb1acp.ent /usr/local/data/ks/1acp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1add.dssp) then
+ 	 echo Doing 1add
+ 	 dssp /disk3/pdb/pdb1add.ent /usr/local/data/ks/1add.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1adg.dssp) then
+ 	 echo Doing 1adg
+ 	 dssp /disk3/pdb/pdb1adg.ent /usr/local/data/ks/1adg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1adg.dssp) then
+ 	 echo Doing 1adg
+ 	 dssp /disk3/pdb/pdb1adg.ent /usr/local/data/ks/1adg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1adn.dssp) then
+ 	 echo Doing 1adn
+ 	 dssp /disk3/pdb/pdb1adn.ent /usr/local/data/ks/1adn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1adr.dssp) then
+ 	 echo Doing 1adr
+ 	 dssp /disk3/pdb/pdb1adr.ent /usr/local/data/ks/1adr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aep.dssp) then
+ 	 echo Doing 1aep
+ 	 dssp /disk3/pdb/pdb1aep.ent /usr/local/data/ks/1aep.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1afn.dssp) then
+ 	 echo Doing 1afn
+ 	 dssp /disk3/pdb/pdb1afn.ent /usr/local/data/ks/1afn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1afn.dssp) then
+ 	 echo Doing 1afn
+ 	 dssp /disk3/pdb/pdb1afn.ent /usr/local/data/ks/1afn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1afp.dssp) then
+ 	 echo Doing 1afp
+ 	 dssp /disk3/pdb/pdb1afp.ent /usr/local/data/ks/1afp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ags.dssp) then
+ 	 echo Doing 1ags
+ 	 dssp /disk3/pdb/pdb1ags.ent /usr/local/data/ks/1ags.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ahb.dssp) then
+ 	 echo Doing 1ahb
+ 	 dssp /disk3/pdb/pdb1ahb.ent /usr/local/data/ks/1ahb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ahb.dssp) then
+ 	 echo Doing 1ahb
+ 	 dssp /disk3/pdb/pdb1ahb.ent /usr/local/data/ks/1ahb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ake.dssp) then
+ 	 echo Doing 1ake
+ 	 dssp /disk3/pdb/pdb1ake.ent /usr/local/data/ks/1ake.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ake.dssp) then
+ 	 echo Doing 1ake
+ 	 dssp /disk3/pdb/pdb1ake.ent /usr/local/data/ks/1ake.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1alk.dssp) then
+ 	 echo Doing 1alk
+ 	 dssp /disk3/pdb/pdb1alk.ent /usr/local/data/ks/1alk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1amc.dssp) then
+ 	 echo Doing 1amc
+ 	 dssp /disk3/pdb/pdb1amc.ent /usr/local/data/ks/1amc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1amg.dssp) then
+ 	 echo Doing 1amg
+ 	 dssp /disk3/pdb/pdb1amg.ent /usr/local/data/ks/1amg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1amg.dssp) then
+ 	 echo Doing 1amg
+ 	 dssp /disk3/pdb/pdb1amg.ent /usr/local/data/ks/1amg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1amp.dssp) then
+ 	 echo Doing 1amp
+ 	 dssp /disk3/pdb/pdb1amp.ent /usr/local/data/ks/1amp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1amy.dssp) then
+ 	 echo Doing 1amy
+ 	 dssp /disk3/pdb/pdb1amy.ent /usr/local/data/ks/1amy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1anp.dssp) then
+ 	 echo Doing 1anp
+ 	 dssp /disk3/pdb/pdb1anp.ent /usr/local/data/ks/1anp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ans.dssp) then
+ 	 echo Doing 1ans
+ 	 dssp /disk3/pdb/pdb1ans.ent /usr/local/data/ks/1ans.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aor.dssp) then
+ 	 echo Doing 1aor
+ 	 dssp /disk3/pdb/pdb1aor.ent /usr/local/data/ks/1aor.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aor.dssp) then
+ 	 echo Doing 1aor
+ 	 dssp /disk3/pdb/pdb1aor.ent /usr/local/data/ks/1aor.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aor.dssp) then
+ 	 echo Doing 1aor
+ 	 dssp /disk3/pdb/pdb1aor.ent /usr/local/data/ks/1aor.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aoz.dssp) then
+ 	 echo Doing 1aoz
+ 	 dssp /disk3/pdb/pdb1aoz.ent /usr/local/data/ks/1aoz.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aoz.dssp) then
+ 	 echo Doing 1aoz
+ 	 dssp /disk3/pdb/pdb1aoz.ent /usr/local/data/ks/1aoz.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aoz.dssp) then
+ 	 echo Doing 1aoz
+ 	 dssp /disk3/pdb/pdb1aoz.ent /usr/local/data/ks/1aoz.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1apl.dssp) then
+ 	 echo Doing 1apl
+ 	 dssp /disk3/pdb/pdb1apl.ent /usr/local/data/ks/1apl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1apl.dssp) then
+ 	 echo Doing 1apl
+ 	 dssp /disk3/pdb/pdb1apl.ent /usr/local/data/ks/1apl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aps.dssp) then
+ 	 echo Doing 1aps
+ 	 dssp /disk3/pdb/pdb1aps.ent /usr/local/data/ks/1aps.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1arc.dssp) then
+ 	 echo Doing 1arc
+ 	 dssp /disk3/pdb/pdb1arc.ent /usr/local/data/ks/1arc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1arf.dssp) then
+ 	 echo Doing 1arf
+ 	 dssp /disk3/pdb/pdb1arf.ent /usr/local/data/ks/1arf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1arq.dssp) then
+ 	 echo Doing 1arq
+ 	 dssp /disk3/pdb/pdb1arq.ent /usr/local/data/ks/1arq.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1asc.dssp) then
+ 	 echo Doing 1asc
+ 	 dssp /disk3/pdb/pdb1asc.ent /usr/local/data/ks/1asc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1asc.dssp) then
+ 	 echo Doing 1asc
+ 	 dssp /disk3/pdb/pdb1asc.ent /usr/local/data/ks/1asc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ash.dssp) then
+ 	 echo Doing 1ash
+ 	 dssp /disk3/pdb/pdb1ash.ent /usr/local/data/ks/1ash.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1asz.dssp) then
+ 	 echo Doing 1asz
+ 	 dssp /disk3/pdb/pdb1asz.ent /usr/local/data/ks/1asz.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1asz.dssp) then
+ 	 echo Doing 1asz
+ 	 dssp /disk3/pdb/pdb1asz.ent /usr/local/data/ks/1asz.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1atb.dssp) then
+ 	 echo Doing 1atb
+ 	 dssp /disk3/pdb/pdb1atb.ent /usr/local/data/ks/1atb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1atp.dssp) then
+ 	 echo Doing 1atp
+ 	 dssp /disk3/pdb/pdb1atp.ent /usr/local/data/ks/1atp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aty.dssp) then
+ 	 echo Doing 1aty
+ 	 dssp /disk3/pdb/pdb1aty.ent /usr/local/data/ks/1aty.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1avh.dssp) then
+ 	 echo Doing 1avh
+ 	 dssp /disk3/pdb/pdb1avh.ent /usr/local/data/ks/1avh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1avh.dssp) then
+ 	 echo Doing 1avh
+ 	 dssp /disk3/pdb/pdb1avh.ent /usr/local/data/ks/1avh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1aya.dssp) then
+ 	 echo Doing 1aya
+ 	 dssp /disk3/pdb/pdb1aya.ent /usr/local/data/ks/1aya.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1azn.dssp) then
+ 	 echo Doing 1azn
+ 	 dssp /disk3/pdb/pdb1azn.ent /usr/local/data/ks/1azn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1baa.dssp) then
+ 	 echo Doing 1baa
+ 	 dssp /disk3/pdb/pdb1baa.ent /usr/local/data/ks/1baa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bal.dssp) then
+ 	 echo Doing 1bal
+ 	 dssp /disk3/pdb/pdb1bal.ent /usr/local/data/ks/1bal.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bam.dssp) then
+ 	 echo Doing 1bam
+ 	 dssp /disk3/pdb/pdb1bam.ent /usr/local/data/ks/1bam.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bap.dssp) then
+ 	 echo Doing 1bap
+ 	 dssp /disk3/pdb/pdb1bap.ent /usr/local/data/ks/1bap.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bap.dssp) then
+ 	 echo Doing 1bap
+ 	 dssp /disk3/pdb/pdb1bap.ent /usr/local/data/ks/1bap.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bbh.dssp) then
+ 	 echo Doing 1bbh
+ 	 dssp /disk3/pdb/pdb1bbh.ent /usr/local/data/ks/1bbh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bbl.dssp) then
+ 	 echo Doing 1bbl
+ 	 dssp /disk3/pdb/pdb1bbl.ent /usr/local/data/ks/1bbl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bbo.dssp) then
+ 	 echo Doing 1bbo
+ 	 dssp /disk3/pdb/pdb1bbo.ent /usr/local/data/ks/1bbo.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bbp.dssp) then
+ 	 echo Doing 1bbp
+ 	 dssp /disk3/pdb/pdb1bbp.ent /usr/local/data/ks/1bbp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bbr.dssp) then
+ 	 echo Doing 1bbr
+ 	 dssp /disk3/pdb/pdb1bbr.ent /usr/local/data/ks/1bbr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bbr.dssp) then
+ 	 echo Doing 1bbr
+ 	 dssp /disk3/pdb/pdb1bbr.ent /usr/local/data/ks/1bbr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bcf.dssp) then
+ 	 echo Doing 1bcf
+ 	 dssp /disk3/pdb/pdb1bcf.ent /usr/local/data/ks/1bcf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bct.dssp) then
+ 	 echo Doing 1bct
+ 	 dssp /disk3/pdb/pdb1bct.ent /usr/local/data/ks/1bct.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bcx.dssp) then
+ 	 echo Doing 1bcx
+ 	 dssp /disk3/pdb/pdb1bcx.ent /usr/local/data/ks/1bcx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bdm.dssp) then
+ 	 echo Doing 1bdm
+ 	 dssp /disk3/pdb/pdb1bdm.ent /usr/local/data/ks/1bdm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bet.dssp) then
+ 	 echo Doing 1bet
+ 	 dssp /disk3/pdb/pdb1bet.ent /usr/local/data/ks/1bet.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bfg.dssp) then
+ 	 echo Doing 1bfg
+ 	 dssp /disk3/pdb/pdb1bfg.ent /usr/local/data/ks/1bfg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bgu.dssp) then
+ 	 echo Doing 1bgu
+ 	 dssp /disk3/pdb/pdb1bgu.ent /usr/local/data/ks/1bgu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bgu.dssp) then
+ 	 echo Doing 1bgu
+ 	 dssp /disk3/pdb/pdb1bgu.ent /usr/local/data/ks/1bgu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bhb.dssp) then
+ 	 echo Doing 1bhb
+ 	 dssp /disk3/pdb/pdb1bhb.ent /usr/local/data/ks/1bhb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bib.dssp) then
+ 	 echo Doing 1bib
+ 	 dssp /disk3/pdb/pdb1bib.ent /usr/local/data/ks/1bib.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bib.dssp) then
+ 	 echo Doing 1bib
+ 	 dssp /disk3/pdb/pdb1bib.ent /usr/local/data/ks/1bib.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bib.dssp) then
+ 	 echo Doing 1bib
+ 	 dssp /disk3/pdb/pdb1bib.ent /usr/local/data/ks/1bib.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bip.dssp) then
+ 	 echo Doing 1bip
+ 	 dssp /disk3/pdb/pdb1bip.ent /usr/local/data/ks/1bip.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1blh.dssp) then
+ 	 echo Doing 1blh
+ 	 dssp /disk3/pdb/pdb1blh.ent /usr/local/data/ks/1blh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1blh.dssp) then
+ 	 echo Doing 1blh
+ 	 dssp /disk3/pdb/pdb1blh.ent /usr/local/data/ks/1blh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bmt.dssp) then
+ 	 echo Doing 1bmt
+ 	 dssp /disk3/pdb/pdb1bmt.ent /usr/local/data/ks/1bmt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bmv.dssp) then
+ 	 echo Doing 1bmv
+ 	 dssp /disk3/pdb/pdb1bmv.ent /usr/local/data/ks/1bmv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bmv.dssp) then
+ 	 echo Doing 1bmv
+ 	 dssp /disk3/pdb/pdb1bmv.ent /usr/local/data/ks/1bmv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bmv.dssp) then
+ 	 echo Doing 1bmv
+ 	 dssp /disk3/pdb/pdb1bmv.ent /usr/local/data/ks/1bmv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bn2.dssp) then
+ 	 echo Doing 1bn2
+ 	 dssp /disk3/pdb/pdb1bn2.ent /usr/local/data/ks/1bn2.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bnc.dssp) then
+ 	 echo Doing 1bnc
+ 	 dssp /disk3/pdb/pdb1bnc.ent /usr/local/data/ks/1bnc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bnc.dssp) then
+ 	 echo Doing 1bnc
+ 	 dssp /disk3/pdb/pdb1bnc.ent /usr/local/data/ks/1bnc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bnh.dssp) then
+ 	 echo Doing 1bnh
+ 	 dssp /disk3/pdb/pdb1bnh.ent /usr/local/data/ks/1bnh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bod.dssp) then
+ 	 echo Doing 1bod
+ 	 dssp /disk3/pdb/pdb1bod.ent /usr/local/data/ks/1bod.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bom.dssp) then
+ 	 echo Doing 1bom
+ 	 dssp /disk3/pdb/pdb1bom.ent /usr/local/data/ks/1bom.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bov.dssp) then
+ 	 echo Doing 1bov
+ 	 dssp /disk3/pdb/pdb1bov.ent /usr/local/data/ks/1bov.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bph.dssp) then
+ 	 echo Doing 1bph
+ 	 dssp /disk3/pdb/pdb1bph.ent /usr/local/data/ks/1bph.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bpm.dssp) then
+ 	 echo Doing 1bpm
+ 	 dssp /disk3/pdb/pdb1bpm.ent /usr/local/data/ks/1bpm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bpm.dssp) then
+ 	 echo Doing 1bpm
+ 	 dssp /disk3/pdb/pdb1bpm.ent /usr/local/data/ks/1bpm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1brd.dssp) then
+ 	 echo Doing 1brd
+ 	 dssp /disk3/pdb/pdb1brd.ent /usr/local/data/ks/1brd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1brq.dssp) then
+ 	 echo Doing 1brq
+ 	 dssp /disk3/pdb/pdb1brq.ent /usr/local/data/ks/1brq.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1brs.dssp) then
+ 	 echo Doing 1brs
+ 	 dssp /disk3/pdb/pdb1brs.ent /usr/local/data/ks/1brs.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bsd.dssp) then
+ 	 echo Doing 1bsd
+ 	 dssp /disk3/pdb/pdb1bsd.ent /usr/local/data/ks/1bsd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1btr.dssp) then
+ 	 echo Doing 1btr
+ 	 dssp /disk3/pdb/pdb1btr.ent /usr/local/data/ks/1btr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bts.dssp) then
+ 	 echo Doing 1bts
+ 	 dssp /disk3/pdb/pdb1bts.ent /usr/local/data/ks/1bts.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bvh.dssp) then
+ 	 echo Doing 1bvh
+ 	 dssp /disk3/pdb/pdb1bvh.ent /usr/local/data/ks/1bvh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bvp.dssp) then
+ 	 echo Doing 1bvp
+ 	 dssp /disk3/pdb/pdb1bvp.ent /usr/local/data/ks/1bvp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bvp.dssp) then
+ 	 echo Doing 1bvp
+ 	 dssp /disk3/pdb/pdb1bvp.ent /usr/local/data/ks/1bvp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bw4.dssp) then
+ 	 echo Doing 1bw4
+ 	 dssp /disk3/pdb/pdb1bw4.ent /usr/local/data/ks/1bw4.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1bya.dssp) then
+ 	 echo Doing 1bya
+ 	 dssp /disk3/pdb/pdb1bya.ent /usr/local/data/ks/1bya.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1c53.dssp) then
+ 	 echo Doing 1c53
+ 	 dssp /disk3/pdb/pdb1c53.ent /usr/local/data/ks/1c53.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1c5a.dssp) then
+ 	 echo Doing 1c5a
+ 	 dssp /disk3/pdb/pdb1c5a.ent /usr/local/data/ks/1c5a.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1caf.dssp) then
+ 	 echo Doing 1caf
+ 	 dssp /disk3/pdb/pdb1caf.ent /usr/local/data/ks/1caf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1caf.dssp) then
+ 	 echo Doing 1caf
+ 	 dssp /disk3/pdb/pdb1caf.ent /usr/local/data/ks/1caf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cag.dssp) then
+ 	 echo Doing 1cag
+ 	 dssp /disk3/pdb/pdb1cag.ent /usr/local/data/ks/1cag.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cax.dssp) then
+ 	 echo Doing 1cax
+ 	 dssp /disk3/pdb/pdb1cax.ent /usr/local/data/ks/1cax.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cax.dssp) then
+ 	 echo Doing 1cax
+ 	 dssp /disk3/pdb/pdb1cax.ent /usr/local/data/ks/1cax.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cbp.dssp) then
+ 	 echo Doing 1cbp
+ 	 dssp /disk3/pdb/pdb1cbp.ent /usr/local/data/ks/1cbp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cc5.dssp) then
+ 	 echo Doing 1cc5
+ 	 dssp /disk3/pdb/pdb1cc5.ent /usr/local/data/ks/1cc5.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ccf.dssp) then
+ 	 echo Doing 1ccf
+ 	 dssp /disk3/pdb/pdb1ccf.ent /usr/local/data/ks/1ccf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ccn.dssp) then
+ 	 echo Doing 1ccn
+ 	 dssp /disk3/pdb/pdb1ccn.ent /usr/local/data/ks/1ccn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cd8.dssp) then
+ 	 echo Doing 1cd8
+ 	 dssp /disk3/pdb/pdb1cd8.ent /usr/local/data/ks/1cd8.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cdb.dssp) then
+ 	 echo Doing 1cdb
+ 	 dssp /disk3/pdb/pdb1cdb.ent /usr/local/data/ks/1cdb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cdi.dssp) then
+ 	 echo Doing 1cdi
+ 	 dssp /disk3/pdb/pdb1cdi.ent /usr/local/data/ks/1cdi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cdi.dssp) then
+ 	 echo Doing 1cdi
+ 	 dssp /disk3/pdb/pdb1cdi.ent /usr/local/data/ks/1cdi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cdl.dssp) then
+ 	 echo Doing 1cdl
+ 	 dssp /disk3/pdb/pdb1cdl.ent /usr/local/data/ks/1cdl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cdm.dssp) then
+ 	 echo Doing 1cdm
+ 	 dssp /disk3/pdb/pdb1cdm.ent /usr/local/data/ks/1cdm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cdr.dssp) then
+ 	 echo Doing 1cdr
+ 	 dssp /disk3/pdb/pdb1cdr.ent /usr/local/data/ks/1cdr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cel.dssp) then
+ 	 echo Doing 1cel
+ 	 dssp /disk3/pdb/pdb1cel.ent /usr/local/data/ks/1cel.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cew.dssp) then
+ 	 echo Doing 1cew
+ 	 dssp /disk3/pdb/pdb1cew.ent /usr/local/data/ks/1cew.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cfb.dssp) then
+ 	 echo Doing 1cfb
+ 	 dssp /disk3/pdb/pdb1cfb.ent /usr/local/data/ks/1cfb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cfb.dssp) then
+ 	 echo Doing 1cfb
+ 	 dssp /disk3/pdb/pdb1cfb.ent /usr/local/data/ks/1cfb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cfh.dssp) then
+ 	 echo Doing 1cfh
+ 	 dssp /disk3/pdb/pdb1cfh.ent /usr/local/data/ks/1cfh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cgi.dssp) then
+ 	 echo Doing 1cgi
+ 	 dssp /disk3/pdb/pdb1cgi.ent /usr/local/data/ks/1cgi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cgl.dssp) then
+ 	 echo Doing 1cgl
+ 	 dssp /disk3/pdb/pdb1cgl.ent /usr/local/data/ks/1cgl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cgu.dssp) then
+ 	 echo Doing 1cgu
+ 	 dssp /disk3/pdb/pdb1cgu.ent /usr/local/data/ks/1cgu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cgu.dssp) then
+ 	 echo Doing 1cgu
+ 	 dssp /disk3/pdb/pdb1cgu.ent /usr/local/data/ks/1cgu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cgu.dssp) then
+ 	 echo Doing 1cgu
+ 	 dssp /disk3/pdb/pdb1cgu.ent /usr/local/data/ks/1cgu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1chb.dssp) then
+ 	 echo Doing 1chb
+ 	 dssp /disk3/pdb/pdb1chb.ent /usr/local/data/ks/1chb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1chc.dssp) then
+ 	 echo Doing 1chc
+ 	 dssp /disk3/pdb/pdb1chc.ent /usr/local/data/ks/1chc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1chm.dssp) then
+ 	 echo Doing 1chm
+ 	 dssp /disk3/pdb/pdb1chm.ent /usr/local/data/ks/1chm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1chm.dssp) then
+ 	 echo Doing 1chm
+ 	 dssp /disk3/pdb/pdb1chm.ent /usr/local/data/ks/1chm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1chr.dssp) then
+ 	 echo Doing 1chr
+ 	 dssp /disk3/pdb/pdb1chr.ent /usr/local/data/ks/1chr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1chr.dssp) then
+ 	 echo Doing 1chr
+ 	 dssp /disk3/pdb/pdb1chr.ent /usr/local/data/ks/1chr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cid.dssp) then
+ 	 echo Doing 1cid
+ 	 dssp /disk3/pdb/pdb1cid.ent /usr/local/data/ks/1cid.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cid.dssp) then
+ 	 echo Doing 1cid
+ 	 dssp /disk3/pdb/pdb1cid.ent /usr/local/data/ks/1cid.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cks.dssp) then
+ 	 echo Doing 1cks
+ 	 dssp /disk3/pdb/pdb1cks.ent /usr/local/data/ks/1cks.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1clc.dssp) then
+ 	 echo Doing 1clc
+ 	 dssp /disk3/pdb/pdb1clc.ent /usr/local/data/ks/1clc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1clc.dssp) then
+ 	 echo Doing 1clc
+ 	 dssp /disk3/pdb/pdb1clc.ent /usr/local/data/ks/1clc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cld.dssp) then
+ 	 echo Doing 1cld
+ 	 dssp /disk3/pdb/pdb1cld.ent /usr/local/data/ks/1cld.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cma.dssp) then
+ 	 echo Doing 1cma
+ 	 dssp /disk3/pdb/pdb1cma.ent /usr/local/data/ks/1cma.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cma.dssp) then
+ 	 echo Doing 1cma
+ 	 dssp /disk3/pdb/pdb1cma.ent /usr/local/data/ks/1cma.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1col.dssp) then
+ 	 echo Doing 1col
+ 	 dssp /disk3/pdb/pdb1col.ent /usr/local/data/ks/1col.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1com.dssp) then
+ 	 echo Doing 1com
+ 	 dssp /disk3/pdb/pdb1com.ent /usr/local/data/ks/1com.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cor.dssp) then
+ 	 echo Doing 1cor
+ 	 dssp /disk3/pdb/pdb1cor.ent /usr/local/data/ks/1cor.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cos.dssp) then
+ 	 echo Doing 1cos
+ 	 dssp /disk3/pdb/pdb1cos.ent /usr/local/data/ks/1cos.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cpc.dssp) then
+ 	 echo Doing 1cpc
+ 	 dssp /disk3/pdb/pdb1cpc.ent /usr/local/data/ks/1cpc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cpe.dssp) then
+ 	 echo Doing 1cpe
+ 	 dssp /disk3/pdb/pdb1cpe.ent /usr/local/data/ks/1cpe.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cpe.dssp) then
+ 	 echo Doing 1cpe
+ 	 dssp /disk3/pdb/pdb1cpe.ent /usr/local/data/ks/1cpe.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cpn.dssp) then
+ 	 echo Doing 1cpn
+ 	 dssp /disk3/pdb/pdb1cpn.ent /usr/local/data/ks/1cpn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cro.dssp) then
+ 	 echo Doing 1cro
+ 	 dssp /disk3/pdb/pdb1cro.ent /usr/local/data/ks/1cro.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1csg.dssp) then
+ 	 echo Doing 1csg
+ 	 dssp /disk3/pdb/pdb1csg.ent /usr/local/data/ks/1csg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1csm.dssp) then
+ 	 echo Doing 1csm
+ 	 dssp /disk3/pdb/pdb1csm.ent /usr/local/data/ks/1csm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1csn.dssp) then
+ 	 echo Doing 1csn
+ 	 dssp /disk3/pdb/pdb1csn.ent /usr/local/data/ks/1csn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1csn.dssp) then
+ 	 echo Doing 1csn
+ 	 dssp /disk3/pdb/pdb1csn.ent /usr/local/data/ks/1csn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cta.dssp) then
+ 	 echo Doing 1cta
+ 	 dssp /disk3/pdb/pdb1cta.ent /usr/local/data/ks/1cta.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cte.dssp) then
+ 	 echo Doing 1cte
+ 	 dssp /disk3/pdb/pdb1cte.ent /usr/local/data/ks/1cte.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ctf.dssp) then
+ 	 echo Doing 1ctf
+ 	 dssp /disk3/pdb/pdb1ctf.ent /usr/local/data/ks/1ctf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cth.dssp) then
+ 	 echo Doing 1cth
+ 	 dssp /disk3/pdb/pdb1cth.ent /usr/local/data/ks/1cth.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ctl.dssp) then
+ 	 echo Doing 1ctl
+ 	 dssp /disk3/pdb/pdb1ctl.ent /usr/local/data/ks/1ctl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ctm.dssp) then
+ 	 echo Doing 1ctm
+ 	 dssp /disk3/pdb/pdb1ctm.ent /usr/local/data/ks/1ctm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ctm.dssp) then
+ 	 echo Doing 1ctm
+ 	 dssp /disk3/pdb/pdb1ctm.ent /usr/local/data/ks/1ctm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ctn.dssp) then
+ 	 echo Doing 1ctn
+ 	 dssp /disk3/pdb/pdb1ctn.ent /usr/local/data/ks/1ctn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ctn.dssp) then
+ 	 echo Doing 1ctn
+ 	 dssp /disk3/pdb/pdb1ctn.ent /usr/local/data/ks/1ctn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ctu.dssp) then
+ 	 echo Doing 1ctu
+ 	 dssp /disk3/pdb/pdb1ctu.ent /usr/local/data/ks/1ctu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ctu.dssp) then
+ 	 echo Doing 1ctu
+ 	 dssp /disk3/pdb/pdb1ctu.ent /usr/local/data/ks/1ctu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1cyg.dssp) then
+ 	 echo Doing 1cyg
+ 	 dssp /disk3/pdb/pdb1cyg.ent /usr/local/data/ks/1cyg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1czm.dssp) then
+ 	 echo Doing 1czm
+ 	 dssp /disk3/pdb/pdb1czm.ent /usr/local/data/ks/1czm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1d66.dssp) then
+ 	 echo Doing 1d66
+ 	 dssp /disk3/pdb/pdb1d66.ent /usr/local/data/ks/1d66.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1daa.dssp) then
+ 	 echo Doing 1daa
+ 	 dssp /disk3/pdb/pdb1daa.ent /usr/local/data/ks/1daa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1daa.dssp) then
+ 	 echo Doing 1daa
+ 	 dssp /disk3/pdb/pdb1daa.ent /usr/local/data/ks/1daa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dec.dssp) then
+ 	 echo Doing 1dec
+ 	 dssp /disk3/pdb/pdb1dec.ent /usr/local/data/ks/1dec.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dfn.dssp) then
+ 	 echo Doing 1dfn
+ 	 dssp /disk3/pdb/pdb1dfn.ent /usr/local/data/ks/1dfn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dhx.dssp) then
+ 	 echo Doing 1dhx
+ 	 dssp /disk3/pdb/pdb1dhx.ent /usr/local/data/ks/1dhx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dhx.dssp) then
+ 	 echo Doing 1dhx
+ 	 dssp /disk3/pdb/pdb1dhx.ent /usr/local/data/ks/1dhx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dih.dssp) then
+ 	 echo Doing 1dih
+ 	 dssp /disk3/pdb/pdb1dih.ent /usr/local/data/ks/1dih.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dih.dssp) then
+ 	 echo Doing 1dih
+ 	 dssp /disk3/pdb/pdb1dih.ent /usr/local/data/ks/1dih.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dir.dssp) then
+ 	 echo Doing 1dir
+ 	 dssp /disk3/pdb/pdb1dir.ent /usr/local/data/ks/1dir.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dla.dssp) then
+ 	 echo Doing 1dla
+ 	 dssp /disk3/pdb/pdb1dla.ent /usr/local/data/ks/1dla.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dlc.dssp) then
+ 	 echo Doing 1dlc
+ 	 dssp /disk3/pdb/pdb1dlc.ent /usr/local/data/ks/1dlc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dlc.dssp) then
+ 	 echo Doing 1dlc
+ 	 dssp /disk3/pdb/pdb1dlc.ent /usr/local/data/ks/1dlc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dlc.dssp) then
+ 	 echo Doing 1dlc
+ 	 dssp /disk3/pdb/pdb1dlc.ent /usr/local/data/ks/1dlc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dlh.dssp) then
+ 	 echo Doing 1dlh
+ 	 dssp /disk3/pdb/pdb1dlh.ent /usr/local/data/ks/1dlh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dlh.dssp) then
+ 	 echo Doing 1dlh
+ 	 dssp /disk3/pdb/pdb1dlh.ent /usr/local/data/ks/1dlh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dma.dssp) then
+ 	 echo Doing 1dma
+ 	 dssp /disk3/pdb/pdb1dma.ent /usr/local/data/ks/1dma.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dmf.dssp) then
+ 	 echo Doing 1dmf
+ 	 dssp /disk3/pdb/pdb1dmf.ent /usr/local/data/ks/1dmf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dog.dssp) then
+ 	 echo Doing 1dog
+ 	 dssp /disk3/pdb/pdb1dog.ent /usr/local/data/ks/1dog.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dog.dssp) then
+ 	 echo Doing 1dog
+ 	 dssp /disk3/pdb/pdb1dog.ent /usr/local/data/ks/1dog.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dpr.dssp) then
+ 	 echo Doing 1dpr
+ 	 dssp /disk3/pdb/pdb1dpr.ent /usr/local/data/ks/1dpr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dpr.dssp) then
+ 	 echo Doing 1dpr
+ 	 dssp /disk3/pdb/pdb1dpr.ent /usr/local/data/ks/1dpr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dsb.dssp) then
+ 	 echo Doing 1dsb
+ 	 dssp /disk3/pdb/pdb1dsb.ent /usr/local/data/ks/1dsb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dts.dssp) then
+ 	 echo Doing 1dts
+ 	 dssp /disk3/pdb/pdb1dts.ent /usr/local/data/ks/1dts.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dwc.dssp) then
+ 	 echo Doing 1dwc
+ 	 dssp /disk3/pdb/pdb1dwc.ent /usr/local/data/ks/1dwc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1dyn.dssp) then
+ 	 echo Doing 1dyn
+ 	 dssp /disk3/pdb/pdb1dyn.ent /usr/local/data/ks/1dyn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1eab.dssp) then
+ 	 echo Doing 1eab
+ 	 dssp /disk3/pdb/pdb1eab.ent /usr/local/data/ks/1eab.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ecd.dssp) then
+ 	 echo Doing 1ecd
+ 	 dssp /disk3/pdb/pdb1ecd.ent /usr/local/data/ks/1ecd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ecl.dssp) then
+ 	 echo Doing 1ecl
+ 	 dssp /disk3/pdb/pdb1ecl.ent /usr/local/data/ks/1ecl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ecl.dssp) then
+ 	 echo Doing 1ecl
+ 	 dssp /disk3/pdb/pdb1ecl.ent /usr/local/data/ks/1ecl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ecl.dssp) then
+ 	 echo Doing 1ecl
+ 	 dssp /disk3/pdb/pdb1ecl.ent /usr/local/data/ks/1ecl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ecl.dssp) then
+ 	 echo Doing 1ecl
+ 	 dssp /disk3/pdb/pdb1ecl.ent /usr/local/data/ks/1ecl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1edd.dssp) then
+ 	 echo Doing 1edd
+ 	 dssp /disk3/pdb/pdb1edd.ent /usr/local/data/ks/1edd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1efg.dssp) then
+ 	 echo Doing 1efg
+ 	 dssp /disk3/pdb/pdb1efg.ent /usr/local/data/ks/1efg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1efg.dssp) then
+ 	 echo Doing 1efg
+ 	 dssp /disk3/pdb/pdb1efg.ent /usr/local/data/ks/1efg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1efg.dssp) then
+ 	 echo Doing 1efg
+ 	 dssp /disk3/pdb/pdb1efg.ent /usr/local/data/ks/1efg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1efg.dssp) then
+ 	 echo Doing 1efg
+ 	 dssp /disk3/pdb/pdb1efg.ent /usr/local/data/ks/1efg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1efg.dssp) then
+ 	 echo Doing 1efg
+ 	 dssp /disk3/pdb/pdb1efg.ent /usr/local/data/ks/1efg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1efg.dssp) then
+ 	 echo Doing 1efg
+ 	 dssp /disk3/pdb/pdb1efg.ent /usr/local/data/ks/1efg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1eft.dssp) then
+ 	 echo Doing 1eft
+ 	 dssp /disk3/pdb/pdb1eft.ent /usr/local/data/ks/1eft.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1eft.dssp) then
+ 	 echo Doing 1eft
+ 	 dssp /disk3/pdb/pdb1eft.ent /usr/local/data/ks/1eft.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1eft.dssp) then
+ 	 echo Doing 1eft
+ 	 dssp /disk3/pdb/pdb1eft.ent /usr/local/data/ks/1eft.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1egr.dssp) then
+ 	 echo Doing 1egr
+ 	 dssp /disk3/pdb/pdb1egr.ent /usr/local/data/ks/1egr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ehs.dssp) then
+ 	 echo Doing 1ehs
+ 	 dssp /disk3/pdb/pdb1ehs.ent /usr/local/data/ks/1ehs.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1eip.dssp) then
+ 	 echo Doing 1eip
+ 	 dssp /disk3/pdb/pdb1eip.ent /usr/local/data/ks/1eip.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1enc.dssp) then
+ 	 echo Doing 1enc
+ 	 dssp /disk3/pdb/pdb1enc.ent /usr/local/data/ks/1enc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1eng.dssp) then
+ 	 echo Doing 1eng
+ 	 dssp /disk3/pdb/pdb1eng.ent /usr/local/data/ks/1eng.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1epb.dssp) then
+ 	 echo Doing 1epb
+ 	 dssp /disk3/pdb/pdb1epb.ent /usr/local/data/ks/1epb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1eps.dssp) then
+ 	 echo Doing 1eps
+ 	 dssp /disk3/pdb/pdb1eps.ent /usr/local/data/ks/1eps.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1eps.dssp) then
+ 	 echo Doing 1eps
+ 	 dssp /disk3/pdb/pdb1eps.ent /usr/local/data/ks/1eps.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ept.dssp) then
+ 	 echo Doing 1ept
+ 	 dssp /disk3/pdb/pdb1ept.ent /usr/local/data/ks/1ept.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ept.dssp) then
+ 	 echo Doing 1ept
+ 	 dssp /disk3/pdb/pdb1ept.ent /usr/local/data/ks/1ept.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1erd.dssp) then
+ 	 echo Doing 1erd
+ 	 dssp /disk3/pdb/pdb1erd.ent /usr/local/data/ks/1erd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1eri.dssp) then
+ 	 echo Doing 1eri
+ 	 dssp /disk3/pdb/pdb1eri.ent /usr/local/data/ks/1eri.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1erp.dssp) then
+ 	 echo Doing 1erp
+ 	 dssp /disk3/pdb/pdb1erp.ent /usr/local/data/ks/1erp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1esl.dssp) then
+ 	 echo Doing 1esl
+ 	 dssp /disk3/pdb/pdb1esl.ent /usr/local/data/ks/1esl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1etu.dssp) then
+ 	 echo Doing 1etu
+ 	 dssp /disk3/pdb/pdb1etu.ent /usr/local/data/ks/1etu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1exh.dssp) then
+ 	 echo Doing 1exh
+ 	 dssp /disk3/pdb/pdb1exh.ent /usr/local/data/ks/1exh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fba.dssp) then
+ 	 echo Doing 1fba
+ 	 dssp /disk3/pdb/pdb1fba.ent /usr/local/data/ks/1fba.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fbd.dssp) then
+ 	 echo Doing 1fbd
+ 	 dssp /disk3/pdb/pdb1fbd.ent /usr/local/data/ks/1fbd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fbd.dssp) then
+ 	 echo Doing 1fbd
+ 	 dssp /disk3/pdb/pdb1fbd.ent /usr/local/data/ks/1fbd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fc2.dssp) then
+ 	 echo Doing 1fc2
+ 	 dssp /disk3/pdb/pdb1fc2.ent /usr/local/data/ks/1fc2.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fcd.dssp) then
+ 	 echo Doing 1fcd
+ 	 dssp /disk3/pdb/pdb1fcd.ent /usr/local/data/ks/1fcd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fcd.dssp) then
+ 	 echo Doing 1fcd
+ 	 dssp /disk3/pdb/pdb1fcd.ent /usr/local/data/ks/1fcd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fcd.dssp) then
+ 	 echo Doing 1fcd
+ 	 dssp /disk3/pdb/pdb1fcd.ent /usr/local/data/ks/1fcd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fct.dssp) then
+ 	 echo Doing 1fct
+ 	 dssp /disk3/pdb/pdb1fct.ent /usr/local/data/ks/1fct.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fdx.dssp) then
+ 	 echo Doing 1fdx
+ 	 dssp /disk3/pdb/pdb1fdx.ent /usr/local/data/ks/1fdx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fiv.dssp) then
+ 	 echo Doing 1fiv
+ 	 dssp /disk3/pdb/pdb1fiv.ent /usr/local/data/ks/1fiv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fkd.dssp) then
+ 	 echo Doing 1fkd
+ 	 dssp /disk3/pdb/pdb1fkd.ent /usr/local/data/ks/1fkd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fli.dssp) then
+ 	 echo Doing 1fli
+ 	 dssp /disk3/pdb/pdb1fli.ent /usr/local/data/ks/1fli.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fmd.dssp) then
+ 	 echo Doing 1fmd
+ 	 dssp /disk3/pdb/pdb1fmd.ent /usr/local/data/ks/1fmd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fod.dssp) then
+ 	 echo Doing 1fod
+ 	 dssp /disk3/pdb/pdb1fod.ent /usr/local/data/ks/1fod.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fod.dssp) then
+ 	 echo Doing 1fod
+ 	 dssp /disk3/pdb/pdb1fod.ent /usr/local/data/ks/1fod.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fos.dssp) then
+ 	 echo Doing 1fos
+ 	 dssp /disk3/pdb/pdb1fos.ent /usr/local/data/ks/1fos.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fps.dssp) then
+ 	 echo Doing 1fps
+ 	 dssp /disk3/pdb/pdb1fps.ent /usr/local/data/ks/1fps.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1frn.dssp) then
+ 	 echo Doing 1frn
+ 	 dssp /disk3/pdb/pdb1frn.ent /usr/local/data/ks/1frn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1frr.dssp) then
+ 	 echo Doing 1frr
+ 	 dssp /disk3/pdb/pdb1frr.ent /usr/local/data/ks/1frr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1frx.dssp) then
+ 	 echo Doing 1frx
+ 	 dssp /disk3/pdb/pdb1frx.ent /usr/local/data/ks/1frx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fut.dssp) then
+ 	 echo Doing 1fut
+ 	 dssp /disk3/pdb/pdb1fut.ent /usr/local/data/ks/1fut.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1fxr.dssp) then
+ 	 echo Doing 1fxr
+ 	 dssp /disk3/pdb/pdb1fxr.ent /usr/local/data/ks/1fxr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gal.dssp) then
+ 	 echo Doing 1gal
+ 	 dssp /disk3/pdb/pdb1gal.ent /usr/local/data/ks/1gal.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gal.dssp) then
+ 	 echo Doing 1gal
+ 	 dssp /disk3/pdb/pdb1gal.ent /usr/local/data/ks/1gal.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gal.dssp) then
+ 	 echo Doing 1gal
+ 	 dssp /disk3/pdb/pdb1gal.ent /usr/local/data/ks/1gal.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gau.dssp) then
+ 	 echo Doing 1gau
+ 	 dssp /disk3/pdb/pdb1gau.ent /usr/local/data/ks/1gau.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gbr.dssp) then
+ 	 echo Doing 1gbr
+ 	 dssp /disk3/pdb/pdb1gbr.ent /usr/local/data/ks/1gbr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gcn.dssp) then
+ 	 echo Doing 1gcn
+ 	 dssp /disk3/pdb/pdb1gcn.ent /usr/local/data/ks/1gcn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gd1.dssp) then
+ 	 echo Doing 1gd1
+ 	 dssp /disk3/pdb/pdb1gd1.ent /usr/local/data/ks/1gd1.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gd1.dssp) then
+ 	 echo Doing 1gd1
+ 	 dssp /disk3/pdb/pdb1gd1.ent /usr/local/data/ks/1gd1.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gdh.dssp) then
+ 	 echo Doing 1gdh
+ 	 dssp /disk3/pdb/pdb1gdh.ent /usr/local/data/ks/1gdh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gdh.dssp) then
+ 	 echo Doing 1gdh
+ 	 dssp /disk3/pdb/pdb1gdh.ent /usr/local/data/ks/1gdh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gdh.dssp) then
+ 	 echo Doing 1gdh
+ 	 dssp /disk3/pdb/pdb1gdh.ent /usr/local/data/ks/1gdh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gfd.dssp) then
+ 	 echo Doing 1gfd
+ 	 dssp /disk3/pdb/pdb1gfd.ent /usr/local/data/ks/1gfd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ggt.dssp) then
+ 	 echo Doing 1ggt
+ 	 dssp /disk3/pdb/pdb1ggt.ent /usr/local/data/ks/1ggt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ggt.dssp) then
+ 	 echo Doing 1ggt
+ 	 dssp /disk3/pdb/pdb1ggt.ent /usr/local/data/ks/1ggt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ggt.dssp) then
+ 	 echo Doing 1ggt
+ 	 dssp /disk3/pdb/pdb1ggt.ent /usr/local/data/ks/1ggt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ggt.dssp) then
+ 	 echo Doing 1ggt
+ 	 dssp /disk3/pdb/pdb1ggt.ent /usr/local/data/ks/1ggt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ghs.dssp) then
+ 	 echo Doing 1ghs
+ 	 dssp /disk3/pdb/pdb1ghs.ent /usr/local/data/ks/1ghs.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gky.dssp) then
+ 	 echo Doing 1gky
+ 	 dssp /disk3/pdb/pdb1gky.ent /usr/local/data/ks/1gky.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gky.dssp) then
+ 	 echo Doing 1gky
+ 	 dssp /disk3/pdb/pdb1gky.ent /usr/local/data/ks/1gky.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1glb.dssp) then
+ 	 echo Doing 1glb
+ 	 dssp /disk3/pdb/pdb1glb.ent /usr/local/data/ks/1glb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1glb.dssp) then
+ 	 echo Doing 1glb
+ 	 dssp /disk3/pdb/pdb1glb.ent /usr/local/data/ks/1glb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1glb.dssp) then
+ 	 echo Doing 1glb
+ 	 dssp /disk3/pdb/pdb1glb.ent /usr/local/data/ks/1glb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1glv.dssp) then
+ 	 echo Doing 1glv
+ 	 dssp /disk3/pdb/pdb1glv.ent /usr/local/data/ks/1glv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1glv.dssp) then
+ 	 echo Doing 1glv
+ 	 dssp /disk3/pdb/pdb1glv.ent /usr/local/data/ks/1glv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1glv.dssp) then
+ 	 echo Doing 1glv
+ 	 dssp /disk3/pdb/pdb1glv.ent /usr/local/data/ks/1glv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gmp.dssp) then
+ 	 echo Doing 1gmp
+ 	 dssp /disk3/pdb/pdb1gmp.ent /usr/local/data/ks/1gmp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gog.dssp) then
+ 	 echo Doing 1gog
+ 	 dssp /disk3/pdb/pdb1gog.ent /usr/local/data/ks/1gog.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gog.dssp) then
+ 	 echo Doing 1gog
+ 	 dssp /disk3/pdb/pdb1gog.ent /usr/local/data/ks/1gog.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gog.dssp) then
+ 	 echo Doing 1gog
+ 	 dssp /disk3/pdb/pdb1gog.ent /usr/local/data/ks/1gog.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gp1.dssp) then
+ 	 echo Doing 1gp1
+ 	 dssp /disk3/pdb/pdb1gp1.ent /usr/local/data/ks/1gp1.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gp1.dssp) then
+ 	 echo Doing 1gp1
+ 	 dssp /disk3/pdb/pdb1gp1.ent /usr/local/data/ks/1gp1.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gph.dssp) then
+ 	 echo Doing 1gph
+ 	 dssp /disk3/pdb/pdb1gph.ent /usr/local/data/ks/1gph.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gph.dssp) then
+ 	 echo Doing 1gph
+ 	 dssp /disk3/pdb/pdb1gph.ent /usr/local/data/ks/1gph.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gpt.dssp) then
+ 	 echo Doing 1gpt
+ 	 dssp /disk3/pdb/pdb1gpt.ent /usr/local/data/ks/1gpt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1grc.dssp) then
+ 	 echo Doing 1grc
+ 	 dssp /disk3/pdb/pdb1grc.ent /usr/local/data/ks/1grc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1grc.dssp) then
+ 	 echo Doing 1grc
+ 	 dssp /disk3/pdb/pdb1grc.ent /usr/local/data/ks/1grc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1grj.dssp) then
+ 	 echo Doing 1grj
+ 	 dssp /disk3/pdb/pdb1grj.ent /usr/local/data/ks/1grj.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1grj.dssp) then
+ 	 echo Doing 1grj
+ 	 dssp /disk3/pdb/pdb1grj.ent /usr/local/data/ks/1grj.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gsg.dssp) then
+ 	 echo Doing 1gsg
+ 	 dssp /disk3/pdb/pdb1gsg.ent /usr/local/data/ks/1gsg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gsg.dssp) then
+ 	 echo Doing 1gsg
+ 	 dssp /disk3/pdb/pdb1gsg.ent /usr/local/data/ks/1gsg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gsg.dssp) then
+ 	 echo Doing 1gsg
+ 	 dssp /disk3/pdb/pdb1gsg.ent /usr/local/data/ks/1gsg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gsg.dssp) then
+ 	 echo Doing 1gsg
+ 	 dssp /disk3/pdb/pdb1gsg.ent /usr/local/data/ks/1gsg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gsr.dssp) then
+ 	 echo Doing 1gsr
+ 	 dssp /disk3/pdb/pdb1gsr.ent /usr/local/data/ks/1gsr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gsr.dssp) then
+ 	 echo Doing 1gsr
+ 	 dssp /disk3/pdb/pdb1gsr.ent /usr/local/data/ks/1gsr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1gva.dssp) then
+ 	 echo Doing 1gva
+ 	 dssp /disk3/pdb/pdb1gva.ent /usr/local/data/ks/1gva.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hag.dssp) then
+ 	 echo Doing 1hag
+ 	 dssp /disk3/pdb/pdb1hag.ent /usr/local/data/ks/1hag.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1har.dssp) then
+ 	 echo Doing 1har
+ 	 dssp /disk3/pdb/pdb1har.ent /usr/local/data/ks/1har.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hbi.dssp) then
+ 	 echo Doing 1hbi
+ 	 dssp /disk3/pdb/pdb1hbi.ent /usr/local/data/ks/1hbi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hc2.dssp) then
+ 	 echo Doing 1hc2
+ 	 dssp /disk3/pdb/pdb1hc2.ent /usr/local/data/ks/1hc2.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hce.dssp) then
+ 	 echo Doing 1hce
+ 	 dssp /disk3/pdb/pdb1hce.ent /usr/local/data/ks/1hce.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hcg.dssp) then
+ 	 echo Doing 1hcg
+ 	 dssp /disk3/pdb/pdb1hcg.ent /usr/local/data/ks/1hcg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hcr.dssp) then
+ 	 echo Doing 1hcr
+ 	 dssp /disk3/pdb/pdb1hcr.ent /usr/local/data/ks/1hcr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hdd.dssp) then
+ 	 echo Doing 1hdd
+ 	 dssp /disk3/pdb/pdb1hdd.ent /usr/local/data/ks/1hdd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hds.dssp) then
+ 	 echo Doing 1hds
+ 	 dssp /disk3/pdb/pdb1hds.ent /usr/local/data/ks/1hds.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hfh.dssp) then
+ 	 echo Doing 1hfh
+ 	 dssp /disk3/pdb/pdb1hfh.ent /usr/local/data/ks/1hfh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hft.dssp) then
+ 	 echo Doing 1hft
+ 	 dssp /disk3/pdb/pdb1hft.ent /usr/local/data/ks/1hft.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hft.dssp) then
+ 	 echo Doing 1hft
+ 	 dssp /disk3/pdb/pdb1hft.ent /usr/local/data/ks/1hft.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hgd.dssp) then
+ 	 echo Doing 1hgd
+ 	 dssp /disk3/pdb/pdb1hgd.ent /usr/local/data/ks/1hgd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hig.dssp) then
+ 	 echo Doing 1hig
+ 	 dssp /disk3/pdb/pdb1hig.ent /usr/local/data/ks/1hig.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hip.dssp) then
+ 	 echo Doing 1hip
+ 	 dssp /disk3/pdb/pdb1hip.ent /usr/local/data/ks/1hip.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hjr.dssp) then
+ 	 echo Doing 1hjr
+ 	 dssp /disk3/pdb/pdb1hjr.ent /usr/local/data/ks/1hjr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hkt.dssp) then
+ 	 echo Doing 1hkt
+ 	 dssp /disk3/pdb/pdb1hkt.ent /usr/local/data/ks/1hkt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hlc.dssp) then
+ 	 echo Doing 1hlc
+ 	 dssp /disk3/pdb/pdb1hlc.ent /usr/local/data/ks/1hlc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hle.dssp) then
+ 	 echo Doing 1hle
+ 	 dssp /disk3/pdb/pdb1hle.ent /usr/local/data/ks/1hle.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hlm.dssp) then
+ 	 echo Doing 1hlm
+ 	 dssp /disk3/pdb/pdb1hlm.ent /usr/local/data/ks/1hlm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmc.dssp) then
+ 	 echo Doing 1hmc
+ 	 dssp /disk3/pdb/pdb1hmc.ent /usr/local/data/ks/1hmc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmd.dssp) then
+ 	 echo Doing 1hmd
+ 	 dssp /disk3/pdb/pdb1hmd.ent /usr/local/data/ks/1hmd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmf.dssp) then
+ 	 echo Doing 1hmf
+ 	 dssp /disk3/pdb/pdb1hmf.ent /usr/local/data/ks/1hmf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmi.dssp) then
+ 	 echo Doing 1hmi
+ 	 dssp /disk3/pdb/pdb1hmi.ent /usr/local/data/ks/1hmi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmi.dssp) then
+ 	 echo Doing 1hmi
+ 	 dssp /disk3/pdb/pdb1hmi.ent /usr/local/data/ks/1hmi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmi.dssp) then
+ 	 echo Doing 1hmi
+ 	 dssp /disk3/pdb/pdb1hmi.ent /usr/local/data/ks/1hmi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmi.dssp) then
+ 	 echo Doing 1hmi
+ 	 dssp /disk3/pdb/pdb1hmi.ent /usr/local/data/ks/1hmi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmi.dssp) then
+ 	 echo Doing 1hmi
+ 	 dssp /disk3/pdb/pdb1hmi.ent /usr/local/data/ks/1hmi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmi.dssp) then
+ 	 echo Doing 1hmi
+ 	 dssp /disk3/pdb/pdb1hmi.ent /usr/local/data/ks/1hmi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmp.dssp) then
+ 	 echo Doing 1hmp
+ 	 dssp /disk3/pdb/pdb1hmp.ent /usr/local/data/ks/1hmp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmx.dssp) then
+ 	 echo Doing 1hmx
+ 	 dssp /disk3/pdb/pdb1hmx.ent /usr/local/data/ks/1hmx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmy.dssp) then
+ 	 echo Doing 1hmy
+ 	 dssp /disk3/pdb/pdb1hmy.ent /usr/local/data/ks/1hmy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hmy.dssp) then
+ 	 echo Doing 1hmy
+ 	 dssp /disk3/pdb/pdb1hmy.ent /usr/local/data/ks/1hmy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hnf.dssp) then
+ 	 echo Doing 1hnf
+ 	 dssp /disk3/pdb/pdb1hnf.ent /usr/local/data/ks/1hnf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hns.dssp) then
+ 	 echo Doing 1hns
+ 	 dssp /disk3/pdb/pdb1hns.ent /usr/local/data/ks/1hns.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hpc.dssp) then
+ 	 echo Doing 1hpc
+ 	 dssp /disk3/pdb/pdb1hpc.ent /usr/local/data/ks/1hpc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hpg.dssp) then
+ 	 echo Doing 1hpg
+ 	 dssp /disk3/pdb/pdb1hpg.ent /usr/local/data/ks/1hpg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hpg.dssp) then
+ 	 echo Doing 1hpg
+ 	 dssp /disk3/pdb/pdb1hpg.ent /usr/local/data/ks/1hpg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hph.dssp) then
+ 	 echo Doing 1hph
+ 	 dssp /disk3/pdb/pdb1hph.ent /usr/local/data/ks/1hph.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hpl.dssp) then
+ 	 echo Doing 1hpl
+ 	 dssp /disk3/pdb/pdb1hpl.ent /usr/local/data/ks/1hpl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hpl.dssp) then
+ 	 echo Doing 1hpl
+ 	 dssp /disk3/pdb/pdb1hpl.ent /usr/local/data/ks/1hpl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hr3.dssp) then
+ 	 echo Doing 1hr3
+ 	 dssp /disk3/pdb/pdb1hr3.ent /usr/local/data/ks/1hr3.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hr3.dssp) then
+ 	 echo Doing 1hr3
+ 	 dssp /disk3/pdb/pdb1hr3.ent /usr/local/data/ks/1hr3.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hr3.dssp) then
+ 	 echo Doing 1hr3
+ 	 dssp /disk3/pdb/pdb1hr3.ent /usr/local/data/ks/1hr3.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hrf.dssp) then
+ 	 echo Doing 1hrf
+ 	 dssp /disk3/pdb/pdb1hrf.ent /usr/local/data/ks/1hrf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hrp.dssp) then
+ 	 echo Doing 1hrp
+ 	 dssp /disk3/pdb/pdb1hrp.ent /usr/local/data/ks/1hrp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hrs.dssp) then
+ 	 echo Doing 1hrs
+ 	 dssp /disk3/pdb/pdb1hrs.ent /usr/local/data/ks/1hrs.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hsl.dssp) then
+ 	 echo Doing 1hsl
+ 	 dssp /disk3/pdb/pdb1hsl.ent /usr/local/data/ks/1hsl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hsl.dssp) then
+ 	 echo Doing 1hsl
+ 	 dssp /disk3/pdb/pdb1hsl.ent /usr/local/data/ks/1hsl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hst.dssp) then
+ 	 echo Doing 1hst
+ 	 dssp /disk3/pdb/pdb1hst.ent /usr/local/data/ks/1hst.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1htd.dssp) then
+ 	 echo Doing 1htd
+ 	 dssp /disk3/pdb/pdb1htd.ent /usr/local/data/ks/1htd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1htm.dssp) then
+ 	 echo Doing 1htm
+ 	 dssp /disk3/pdb/pdb1htm.ent /usr/local/data/ks/1htm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1htr.dssp) then
+ 	 echo Doing 1htr
+ 	 dssp /disk3/pdb/pdb1htr.ent /usr/local/data/ks/1htr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1huc.dssp) then
+ 	 echo Doing 1huc
+ 	 dssp /disk3/pdb/pdb1huc.ent /usr/local/data/ks/1huc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1huc.dssp) then
+ 	 echo Doing 1huc
+ 	 dssp /disk3/pdb/pdb1huc.ent /usr/local/data/ks/1huc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1huc.dssp) then
+ 	 echo Doing 1huc
+ 	 dssp /disk3/pdb/pdb1huc.ent /usr/local/data/ks/1huc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hum.dssp) then
+ 	 echo Doing 1hum
+ 	 dssp /disk3/pdb/pdb1hum.ent /usr/local/data/ks/1hum.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hur.dssp) then
+ 	 echo Doing 1hur
+ 	 dssp /disk3/pdb/pdb1hur.ent /usr/local/data/ks/1hur.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hvc.dssp) then
+ 	 echo Doing 1hvc
+ 	 dssp /disk3/pdb/pdb1hvc.ent /usr/local/data/ks/1hvc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1hyp.dssp) then
+ 	 echo Doing 1hyp
+ 	 dssp /disk3/pdb/pdb1hyp.ent /usr/local/data/ks/1hyp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1iaa.dssp) then
+ 	 echo Doing 1iaa
+ 	 dssp /disk3/pdb/pdb1iaa.ent /usr/local/data/ks/1iaa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1iaa.dssp) then
+ 	 echo Doing 1iaa
+ 	 dssp /disk3/pdb/pdb1iaa.ent /usr/local/data/ks/1iaa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ica.dssp) then
+ 	 echo Doing 1ica
+ 	 dssp /disk3/pdb/pdb1ica.ent /usr/local/data/ks/1ica.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ice.dssp) then
+ 	 echo Doing 1ice
+ 	 dssp /disk3/pdb/pdb1ice.ent /usr/local/data/ks/1ice.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ifa.dssp) then
+ 	 echo Doing 1ifa
+ 	 dssp /disk3/pdb/pdb1ifa.ent /usr/local/data/ks/1ifa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ifi.dssp) then
+ 	 echo Doing 1ifi
+ 	 dssp /disk3/pdb/pdb1ifi.ent /usr/local/data/ks/1ifi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ifn.dssp) then
+ 	 echo Doing 1ifn
+ 	 dssp /disk3/pdb/pdb1ifn.ent /usr/local/data/ks/1ifn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ikb.dssp) then
+ 	 echo Doing 1ikb
+ 	 dssp /disk3/pdb/pdb1ikb.ent /usr/local/data/ks/1ikb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ilk.dssp) then
+ 	 echo Doing 1ilk
+ 	 dssp /disk3/pdb/pdb1ilk.ent /usr/local/data/ks/1ilk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ilk.dssp) then
+ 	 echo Doing 1ilk
+ 	 dssp /disk3/pdb/pdb1ilk.ent /usr/local/data/ks/1ilk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1inp.dssp) then
+ 	 echo Doing 1inp
+ 	 dssp /disk3/pdb/pdb1inp.ent /usr/local/data/ks/1inp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1irk.dssp) then
+ 	 echo Doing 1irk
+ 	 dssp /disk3/pdb/pdb1irk.ent /usr/local/data/ks/1irk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1irk.dssp) then
+ 	 echo Doing 1irk
+ 	 dssp /disk3/pdb/pdb1irk.ent /usr/local/data/ks/1irk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1isa.dssp) then
+ 	 echo Doing 1isa
+ 	 dssp /disk3/pdb/pdb1isa.ent /usr/local/data/ks/1isa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1isa.dssp) then
+ 	 echo Doing 1isa
+ 	 dssp /disk3/pdb/pdb1isa.ent /usr/local/data/ks/1isa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1isu.dssp) then
+ 	 echo Doing 1isu
+ 	 dssp /disk3/pdb/pdb1isu.ent /usr/local/data/ks/1isu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1itg.dssp) then
+ 	 echo Doing 1itg
+ 	 dssp /disk3/pdb/pdb1itg.ent /usr/local/data/ks/1itg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1itm.dssp) then
+ 	 echo Doing 1itm
+ 	 dssp /disk3/pdb/pdb1itm.ent /usr/local/data/ks/1itm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1iva.dssp) then
+ 	 echo Doing 1iva
+ 	 dssp /disk3/pdb/pdb1iva.ent /usr/local/data/ks/1iva.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1jhl.dssp) then
+ 	 echo Doing 1jhl
+ 	 dssp /disk3/pdb/pdb1jhl.ent /usr/local/data/ks/1jhl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kal.dssp) then
+ 	 echo Doing 1kal
+ 	 dssp /disk3/pdb/pdb1kal.ent /usr/local/data/ks/1kal.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kan.dssp) then
+ 	 echo Doing 1kan
+ 	 dssp /disk3/pdb/pdb1kan.ent /usr/local/data/ks/1kan.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kan.dssp) then
+ 	 echo Doing 1kan
+ 	 dssp /disk3/pdb/pdb1kan.ent /usr/local/data/ks/1kan.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kfd.dssp) then
+ 	 echo Doing 1kfd
+ 	 dssp /disk3/pdb/pdb1kfd.ent /usr/local/data/ks/1kfd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kfd.dssp) then
+ 	 echo Doing 1kfd
+ 	 dssp /disk3/pdb/pdb1kfd.ent /usr/local/data/ks/1kfd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kfd.dssp) then
+ 	 echo Doing 1kfd
+ 	 dssp /disk3/pdb/pdb1kfd.ent /usr/local/data/ks/1kfd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kfd.dssp) then
+ 	 echo Doing 1kfd
+ 	 dssp /disk3/pdb/pdb1kfd.ent /usr/local/data/ks/1kfd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kga.dssp) then
+ 	 echo Doing 1kga
+ 	 dssp /disk3/pdb/pdb1kga.ent /usr/local/data/ks/1kga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kln.dssp) then
+ 	 echo Doing 1kln
+ 	 dssp /disk3/pdb/pdb1kln.ent /usr/local/data/ks/1kln.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1knb.dssp) then
+ 	 echo Doing 1knb
+ 	 dssp /disk3/pdb/pdb1knb.ent /usr/local/data/ks/1knb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1krt.dssp) then
+ 	 echo Doing 1krt
+ 	 dssp /disk3/pdb/pdb1krt.ent /usr/local/data/ks/1krt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1kst.dssp) then
+ 	 echo Doing 1kst
+ 	 dssp /disk3/pdb/pdb1kst.ent /usr/local/data/ks/1kst.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lac.dssp) then
+ 	 echo Doing 1lac
+ 	 dssp /disk3/pdb/pdb1lac.ent /usr/local/data/ks/1lac.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lba.dssp) then
+ 	 echo Doing 1lba
+ 	 dssp /disk3/pdb/pdb1lba.ent /usr/local/data/ks/1lba.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lcd.dssp) then
+ 	 echo Doing 1lcd
+ 	 dssp /disk3/pdb/pdb1lcd.ent /usr/local/data/ks/1lcd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1leb.dssp) then
+ 	 echo Doing 1leb
+ 	 dssp /disk3/pdb/pdb1leb.ent /usr/local/data/ks/1leb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lfb.dssp) then
+ 	 echo Doing 1lfb
+ 	 dssp /disk3/pdb/pdb1lfb.ent /usr/local/data/ks/1lfb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lfg.dssp) then
+ 	 echo Doing 1lfg
+ 	 dssp /disk3/pdb/pdb1lfg.ent /usr/local/data/ks/1lfg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lfg.dssp) then
+ 	 echo Doing 1lfg
+ 	 dssp /disk3/pdb/pdb1lfg.ent /usr/local/data/ks/1lfg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lga.dssp) then
+ 	 echo Doing 1lga
+ 	 dssp /disk3/pdb/pdb1lga.ent /usr/local/data/ks/1lga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lga.dssp) then
+ 	 echo Doing 1lga
+ 	 dssp /disk3/pdb/pdb1lga.ent /usr/local/data/ks/1lga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lib.dssp) then
+ 	 echo Doing 1lib
+ 	 dssp /disk3/pdb/pdb1lib.ent /usr/local/data/ks/1lib.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lis.dssp) then
+ 	 echo Doing 1lis
+ 	 dssp /disk3/pdb/pdb1lis.ent /usr/local/data/ks/1lis.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lki.dssp) then
+ 	 echo Doing 1lki
+ 	 dssp /disk3/pdb/pdb1lki.ent /usr/local/data/ks/1lki.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lmb.dssp) then
+ 	 echo Doing 1lmb
+ 	 dssp /disk3/pdb/pdb1lmb.ent /usr/local/data/ks/1lmb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lpb.dssp) then
+ 	 echo Doing 1lpb
+ 	 dssp /disk3/pdb/pdb1lpb.ent /usr/local/data/ks/1lpb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lpe.dssp) then
+ 	 echo Doing 1lpe
+ 	 dssp /disk3/pdb/pdb1lpe.ent /usr/local/data/ks/1lpe.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lpt.dssp) then
+ 	 echo Doing 1lpt
+ 	 dssp /disk3/pdb/pdb1lpt.ent /usr/local/data/ks/1lpt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ltb.dssp) then
+ 	 echo Doing 1ltb
+ 	 dssp /disk3/pdb/pdb1ltb.ent /usr/local/data/ks/1ltb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ltb.dssp) then
+ 	 echo Doing 1ltb
+ 	 dssp /disk3/pdb/pdb1ltb.ent /usr/local/data/ks/1ltb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ltd.dssp) then
+ 	 echo Doing 1ltd
+ 	 dssp /disk3/pdb/pdb1ltd.ent /usr/local/data/ks/1ltd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lya.dssp) then
+ 	 echo Doing 1lya
+ 	 dssp /disk3/pdb/pdb1lya.ent /usr/local/data/ks/1lya.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lya.dssp) then
+ 	 echo Doing 1lya
+ 	 dssp /disk3/pdb/pdb1lya.ent /usr/local/data/ks/1lya.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lyp.dssp) then
+ 	 echo Doing 1lyp
+ 	 dssp /disk3/pdb/pdb1lyp.ent /usr/local/data/ks/1lyp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lz4.dssp) then
+ 	 echo Doing 1lz4
+ 	 dssp /disk3/pdb/pdb1lz4.ent /usr/local/data/ks/1lz4.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1lz4.dssp) then
+ 	 echo Doing 1lz4
+ 	 dssp /disk3/pdb/pdb1lz4.ent /usr/local/data/ks/1lz4.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mat.dssp) then
+ 	 echo Doing 1mat
+ 	 dssp /disk3/pdb/pdb1mat.ent /usr/local/data/ks/1mat.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mco.dssp) then
+ 	 echo Doing 1mco
+ 	 dssp /disk3/pdb/pdb1mco.ent /usr/local/data/ks/1mco.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mco.dssp) then
+ 	 echo Doing 1mco
+ 	 dssp /disk3/pdb/pdb1mco.ent /usr/local/data/ks/1mco.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mda.dssp) then
+ 	 echo Doing 1mda
+ 	 dssp /disk3/pdb/pdb1mda.ent /usr/local/data/ks/1mda.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mda.dssp) then
+ 	 echo Doing 1mda
+ 	 dssp /disk3/pdb/pdb1mda.ent /usr/local/data/ks/1mda.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mdp.dssp) then
+ 	 echo Doing 1mdp
+ 	 dssp /disk3/pdb/pdb1mdp.ent /usr/local/data/ks/1mdp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mdp.dssp) then
+ 	 echo Doing 1mdp
+ 	 dssp /disk3/pdb/pdb1mdp.ent /usr/local/data/ks/1mdp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mdt.dssp) then
+ 	 echo Doing 1mdt
+ 	 dssp /disk3/pdb/pdb1mdt.ent /usr/local/data/ks/1mdt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mdt.dssp) then
+ 	 echo Doing 1mdt
+ 	 dssp /disk3/pdb/pdb1mdt.ent /usr/local/data/ks/1mdt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mdt.dssp) then
+ 	 echo Doing 1mdt
+ 	 dssp /disk3/pdb/pdb1mdt.ent /usr/local/data/ks/1mdt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mdy.dssp) then
+ 	 echo Doing 1mdy
+ 	 dssp /disk3/pdb/pdb1mdy.ent /usr/local/data/ks/1mdy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1med.dssp) then
+ 	 echo Doing 1med
+ 	 dssp /disk3/pdb/pdb1med.ent /usr/local/data/ks/1med.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mgs.dssp) then
+ 	 echo Doing 1mgs
+ 	 dssp /disk3/pdb/pdb1mgs.ent /usr/local/data/ks/1mgs.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1min.dssp) then
+ 	 echo Doing 1min
+ 	 dssp /disk3/pdb/pdb1min.ent /usr/local/data/ks/1min.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mio.dssp) then
+ 	 echo Doing 1mio
+ 	 dssp /disk3/pdb/pdb1mio.ent /usr/local/data/ks/1mio.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mio.dssp) then
+ 	 echo Doing 1mio
+ 	 dssp /disk3/pdb/pdb1mio.ent /usr/local/data/ks/1mio.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mio.dssp) then
+ 	 echo Doing 1mio
+ 	 dssp /disk3/pdb/pdb1mio.ent /usr/local/data/ks/1mio.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mio.dssp) then
+ 	 echo Doing 1mio
+ 	 dssp /disk3/pdb/pdb1mio.ent /usr/local/data/ks/1mio.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mio.dssp) then
+ 	 echo Doing 1mio
+ 	 dssp /disk3/pdb/pdb1mio.ent /usr/local/data/ks/1mio.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mio.dssp) then
+ 	 echo Doing 1mio
+ 	 dssp /disk3/pdb/pdb1mio.ent /usr/local/data/ks/1mio.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mio.dssp) then
+ 	 echo Doing 1mio
+ 	 dssp /disk3/pdb/pdb1mio.ent /usr/local/data/ks/1mio.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mjc.dssp) then
+ 	 echo Doing 1mjc
+ 	 dssp /disk3/pdb/pdb1mjc.ent /usr/local/data/ks/1mjc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mli.dssp) then
+ 	 echo Doing 1mli
+ 	 dssp /disk3/pdb/pdb1mli.ent /usr/local/data/ks/1mli.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mmo.dssp) then
+ 	 echo Doing 1mmo
+ 	 dssp /disk3/pdb/pdb1mmo.ent /usr/local/data/ks/1mmo.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mmo.dssp) then
+ 	 echo Doing 1mmo
+ 	 dssp /disk3/pdb/pdb1mmo.ent /usr/local/data/ks/1mmo.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mmo.dssp) then
+ 	 echo Doing 1mmo
+ 	 dssp /disk3/pdb/pdb1mmo.ent /usr/local/data/ks/1mmo.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mns.dssp) then
+ 	 echo Doing 1mns
+ 	 dssp /disk3/pdb/pdb1mns.ent /usr/local/data/ks/1mns.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mns.dssp) then
+ 	 echo Doing 1mns
+ 	 dssp /disk3/pdb/pdb1mns.ent /usr/local/data/ks/1mns.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mnt.dssp) then
+ 	 echo Doing 1mnt
+ 	 dssp /disk3/pdb/pdb1mnt.ent /usr/local/data/ks/1mnt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mrr.dssp) then
+ 	 echo Doing 1mrr
+ 	 dssp /disk3/pdb/pdb1mrr.ent /usr/local/data/ks/1mrr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1msa.dssp) then
+ 	 echo Doing 1msa
+ 	 dssp /disk3/pdb/pdb1msa.ent /usr/local/data/ks/1msa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1msb.dssp) then
+ 	 echo Doing 1msb
+ 	 dssp /disk3/pdb/pdb1msb.ent /usr/local/data/ks/1msb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1msf.dssp) then
+ 	 echo Doing 1msf
+ 	 dssp /disk3/pdb/pdb1msf.ent /usr/local/data/ks/1msf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mss.dssp) then
+ 	 echo Doing 1mss
+ 	 dssp /disk3/pdb/pdb1mss.ent /usr/local/data/ks/1mss.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mvp.dssp) then
+ 	 echo Doing 1mvp
+ 	 dssp /disk3/pdb/pdb1mvp.ent /usr/local/data/ks/1mvp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1myl.dssp) then
+ 	 echo Doing 1myl
+ 	 dssp /disk3/pdb/pdb1myl.ent /usr/local/data/ks/1myl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1myp.dssp) then
+ 	 echo Doing 1myp
+ 	 dssp /disk3/pdb/pdb1myp.ent /usr/local/data/ks/1myp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mys.dssp) then
+ 	 echo Doing 1mys
+ 	 dssp /disk3/pdb/pdb1mys.ent /usr/local/data/ks/1mys.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1mys.dssp) then
+ 	 echo Doing 1mys
+ 	 dssp /disk3/pdb/pdb1mys.ent /usr/local/data/ks/1mys.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nal.dssp) then
+ 	 echo Doing 1nal
+ 	 dssp /disk3/pdb/pdb1nal.ent /usr/local/data/ks/1nal.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nar.dssp) then
+ 	 echo Doing 1nar
+ 	 dssp /disk3/pdb/pdb1nar.ent /usr/local/data/ks/1nar.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nba.dssp) then
+ 	 echo Doing 1nba
+ 	 dssp /disk3/pdb/pdb1nba.ent /usr/local/data/ks/1nba.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ncg.dssp) then
+ 	 echo Doing 1ncg
+ 	 dssp /disk3/pdb/pdb1ncg.ent /usr/local/data/ks/1ncg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nch.dssp) then
+ 	 echo Doing 1nch
+ 	 dssp /disk3/pdb/pdb1nch.ent /usr/local/data/ks/1nch.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nco.dssp) then
+ 	 echo Doing 1nco
+ 	 dssp /disk3/pdb/pdb1nco.ent /usr/local/data/ks/1nco.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ndh.dssp) then
+ 	 echo Doing 1ndh
+ 	 dssp /disk3/pdb/pdb1ndh.ent /usr/local/data/ks/1ndh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nel.dssp) then
+ 	 echo Doing 1nel
+ 	 dssp /disk3/pdb/pdb1nel.ent /usr/local/data/ks/1nel.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nel.dssp) then
+ 	 echo Doing 1nel
+ 	 dssp /disk3/pdb/pdb1nel.ent /usr/local/data/ks/1nel.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nfp.dssp) then
+ 	 echo Doing 1nfp
+ 	 dssp /disk3/pdb/pdb1nfp.ent /usr/local/data/ks/1nfp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nga.dssp) then
+ 	 echo Doing 1nga
+ 	 dssp /disk3/pdb/pdb1nga.ent /usr/local/data/ks/1nga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nga.dssp) then
+ 	 echo Doing 1nga
+ 	 dssp /disk3/pdb/pdb1nga.ent /usr/local/data/ks/1nga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nga.dssp) then
+ 	 echo Doing 1nga
+ 	 dssp /disk3/pdb/pdb1nga.ent /usr/local/data/ks/1nga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nga.dssp) then
+ 	 echo Doing 1nga
+ 	 dssp /disk3/pdb/pdb1nga.ent /usr/local/data/ks/1nga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nip.dssp) then
+ 	 echo Doing 1nip
+ 	 dssp /disk3/pdb/pdb1nip.ent /usr/local/data/ks/1nip.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nis.dssp) then
+ 	 echo Doing 1nis
+ 	 dssp /disk3/pdb/pdb1nis.ent /usr/local/data/ks/1nis.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nis.dssp) then
+ 	 echo Doing 1nis
+ 	 dssp /disk3/pdb/pdb1nis.ent /usr/local/data/ks/1nis.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nis.dssp) then
+ 	 echo Doing 1nis
+ 	 dssp /disk3/pdb/pdb1nis.ent /usr/local/data/ks/1nis.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nlk.dssp) then
+ 	 echo Doing 1nlk
+ 	 dssp /disk3/pdb/pdb1nlk.ent /usr/local/data/ks/1nlk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nor.dssp) then
+ 	 echo Doing 1nor
+ 	 dssp /disk3/pdb/pdb1nor.ent /usr/local/data/ks/1nor.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1nrc.dssp) then
+ 	 echo Doing 1nrc
+ 	 dssp /disk3/pdb/pdb1nrc.ent /usr/local/data/ks/1nrc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1oct.dssp) then
+ 	 echo Doing 1oct
+ 	 dssp /disk3/pdb/pdb1oct.ent /usr/local/data/ks/1oct.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ofv.dssp) then
+ 	 echo Doing 1ofv
+ 	 dssp /disk3/pdb/pdb1ofv.ent /usr/local/data/ks/1ofv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1olb.dssp) then
+ 	 echo Doing 1olb
+ 	 dssp /disk3/pdb/pdb1olb.ent /usr/local/data/ks/1olb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1olb.dssp) then
+ 	 echo Doing 1olb
+ 	 dssp /disk3/pdb/pdb1olb.ent /usr/local/data/ks/1olb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1olh.dssp) then
+ 	 echo Doing 1olh
+ 	 dssp /disk3/pdb/pdb1olh.ent /usr/local/data/ks/1olh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1omb.dssp) then
+ 	 echo Doing 1omb
+ 	 dssp /disk3/pdb/pdb1omb.ent /usr/local/data/ks/1omb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1omc.dssp) then
+ 	 echo Doing 1omc
+ 	 dssp /disk3/pdb/pdb1omc.ent /usr/local/data/ks/1omc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1onc.dssp) then
+ 	 echo Doing 1onc
+ 	 dssp /disk3/pdb/pdb1onc.ent /usr/local/data/ks/1onc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ord.dssp) then
+ 	 echo Doing 1ord
+ 	 dssp /disk3/pdb/pdb1ord.ent /usr/local/data/ks/1ord.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ord.dssp) then
+ 	 echo Doing 1ord
+ 	 dssp /disk3/pdb/pdb1ord.ent /usr/local/data/ks/1ord.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ord.dssp) then
+ 	 echo Doing 1ord
+ 	 dssp /disk3/pdb/pdb1ord.ent /usr/local/data/ks/1ord.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ord.dssp) then
+ 	 echo Doing 1ord
+ 	 dssp /disk3/pdb/pdb1ord.ent /usr/local/data/ks/1ord.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ovb.dssp) then
+ 	 echo Doing 1ovb
+ 	 dssp /disk3/pdb/pdb1ovb.ent /usr/local/data/ks/1ovb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ovo.dssp) then
+ 	 echo Doing 1ovo
+ 	 dssp /disk3/pdb/pdb1ovo.ent /usr/local/data/ks/1ovo.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1oyc.dssp) then
+ 	 echo Doing 1oyc
+ 	 dssp /disk3/pdb/pdb1oyc.ent /usr/local/data/ks/1oyc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pag.dssp) then
+ 	 echo Doing 1pag
+ 	 dssp /disk3/pdb/pdb1pag.ent /usr/local/data/ks/1pag.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pag.dssp) then
+ 	 echo Doing 1pag
+ 	 dssp /disk3/pdb/pdb1pag.ent /usr/local/data/ks/1pag.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pba.dssp) then
+ 	 echo Doing 1pba
+ 	 dssp /disk3/pdb/pdb1pba.ent /usr/local/data/ks/1pba.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pbc.dssp) then
+ 	 echo Doing 1pbc
+ 	 dssp /disk3/pdb/pdb1pbc.ent /usr/local/data/ks/1pbc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pbp.dssp) then
+ 	 echo Doing 1pbp
+ 	 dssp /disk3/pdb/pdb1pbp.ent /usr/local/data/ks/1pbp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pbp.dssp) then
+ 	 echo Doing 1pbp
+ 	 dssp /disk3/pdb/pdb1pbp.ent /usr/local/data/ks/1pbp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pca.dssp) then
+ 	 echo Doing 1pca
+ 	 dssp /disk3/pdb/pdb1pca.ent /usr/local/data/ks/1pca.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pda.dssp) then
+ 	 echo Doing 1pda
+ 	 dssp /disk3/pdb/pdb1pda.ent /usr/local/data/ks/1pda.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pda.dssp) then
+ 	 echo Doing 1pda
+ 	 dssp /disk3/pdb/pdb1pda.ent /usr/local/data/ks/1pda.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pda.dssp) then
+ 	 echo Doing 1pda
+ 	 dssp /disk3/pdb/pdb1pda.ent /usr/local/data/ks/1pda.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pdc.dssp) then
+ 	 echo Doing 1pdc
+ 	 dssp /disk3/pdb/pdb1pdc.ent /usr/local/data/ks/1pdc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pdg.dssp) then
+ 	 echo Doing 1pdg
+ 	 dssp /disk3/pdb/pdb1pdg.ent /usr/local/data/ks/1pdg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pdn.dssp) then
+ 	 echo Doing 1pdn
+ 	 dssp /disk3/pdb/pdb1pdn.ent /usr/local/data/ks/1pdn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pdn.dssp) then
+ 	 echo Doing 1pdn
+ 	 dssp /disk3/pdb/pdb1pdn.ent /usr/local/data/ks/1pdn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1per.dssp) then
+ 	 echo Doing 1per
+ 	 dssp /disk3/pdb/pdb1per.ent /usr/local/data/ks/1per.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pes.dssp) then
+ 	 echo Doing 1pes
+ 	 dssp /disk3/pdb/pdb1pes.ent /usr/local/data/ks/1pes.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pga.dssp) then
+ 	 echo Doing 1pga
+ 	 dssp /disk3/pdb/pdb1pga.ent /usr/local/data/ks/1pga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pgi.dssp) then
+ 	 echo Doing 1pgi
+ 	 dssp /disk3/pdb/pdb1pgi.ent /usr/local/data/ks/1pgi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pha.dssp) then
+ 	 echo Doing 1pha
+ 	 dssp /disk3/pdb/pdb1pha.ent /usr/local/data/ks/1pha.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pho.dssp) then
+ 	 echo Doing 1pho
+ 	 dssp /disk3/pdb/pdb1pho.ent /usr/local/data/ks/1pho.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1phs.dssp) then
+ 	 echo Doing 1phs
+ 	 dssp /disk3/pdb/pdb1phs.ent /usr/local/data/ks/1phs.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1phs.dssp) then
+ 	 echo Doing 1phs
+ 	 dssp /disk3/pdb/pdb1phs.ent /usr/local/data/ks/1phs.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1phy.dssp) then
+ 	 echo Doing 1phy
+ 	 dssp /disk3/pdb/pdb1phy.ent /usr/local/data/ks/1phy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pii.dssp) then
+ 	 echo Doing 1pii
+ 	 dssp /disk3/pdb/pdb1pii.ent /usr/local/data/ks/1pii.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pii.dssp) then
+ 	 echo Doing 1pii
+ 	 dssp /disk3/pdb/pdb1pii.ent /usr/local/data/ks/1pii.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pil.dssp) then
+ 	 echo Doing 1pil
+ 	 dssp /disk3/pdb/pdb1pil.ent /usr/local/data/ks/1pil.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pkn.dssp) then
+ 	 echo Doing 1pkn
+ 	 dssp /disk3/pdb/pdb1pkn.ent /usr/local/data/ks/1pkn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pkn.dssp) then
+ 	 echo Doing 1pkn
+ 	 dssp /disk3/pdb/pdb1pkn.ent /usr/local/data/ks/1pkn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pkn.dssp) then
+ 	 echo Doing 1pkn
+ 	 dssp /disk3/pdb/pdb1pkn.ent /usr/local/data/ks/1pkn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pkp.dssp) then
+ 	 echo Doing 1pkp
+ 	 dssp /disk3/pdb/pdb1pkp.ent /usr/local/data/ks/1pkp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pkp.dssp) then
+ 	 echo Doing 1pkp
+ 	 dssp /disk3/pdb/pdb1pkp.ent /usr/local/data/ks/1pkp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pkt.dssp) then
+ 	 echo Doing 1pkt
+ 	 dssp /disk3/pdb/pdb1pkt.ent /usr/local/data/ks/1pkt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1plp.dssp) then
+ 	 echo Doing 1plp
+ 	 dssp /disk3/pdb/pdb1plp.ent /usr/local/data/ks/1plp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1plr.dssp) then
+ 	 echo Doing 1plr
+ 	 dssp /disk3/pdb/pdb1plr.ent /usr/local/data/ks/1plr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pls.dssp) then
+ 	 echo Doing 1pls
+ 	 dssp /disk3/pdb/pdb1pls.ent /usr/local/data/ks/1pls.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1png.dssp) then
+ 	 echo Doing 1png
+ 	 dssp /disk3/pdb/pdb1png.ent /usr/local/data/ks/1png.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pnh.dssp) then
+ 	 echo Doing 1pnh
+ 	 dssp /disk3/pdb/pdb1pnh.ent /usr/local/data/ks/1pnh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1poc.dssp) then
+ 	 echo Doing 1poc
+ 	 dssp /disk3/pdb/pdb1poc.ent /usr/local/data/ks/1poc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pos.dssp) then
+ 	 echo Doing 1pos
+ 	 dssp /disk3/pdb/pdb1pos.ent /usr/local/data/ks/1pos.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pos.dssp) then
+ 	 echo Doing 1pos
+ 	 dssp /disk3/pdb/pdb1pos.ent /usr/local/data/ks/1pos.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pou.dssp) then
+ 	 echo Doing 1pou
+ 	 dssp /disk3/pdb/pdb1pou.ent /usr/local/data/ks/1pou.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pow.dssp) then
+ 	 echo Doing 1pow
+ 	 dssp /disk3/pdb/pdb1pow.ent /usr/local/data/ks/1pow.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pow.dssp) then
+ 	 echo Doing 1pow
+ 	 dssp /disk3/pdb/pdb1pow.ent /usr/local/data/ks/1pow.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pow.dssp) then
+ 	 echo Doing 1pow
+ 	 dssp /disk3/pdb/pdb1pow.ent /usr/local/data/ks/1pow.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pow.dssp) then
+ 	 echo Doing 1pow
+ 	 dssp /disk3/pdb/pdb1pow.ent /usr/local/data/ks/1pow.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ppi.dssp) then
+ 	 echo Doing 1ppi
+ 	 dssp /disk3/pdb/pdb1ppi.ent /usr/local/data/ks/1ppi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ppi.dssp) then
+ 	 echo Doing 1ppi
+ 	 dssp /disk3/pdb/pdb1ppi.ent /usr/local/data/ks/1ppi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pps.dssp) then
+ 	 echo Doing 1pps
+ 	 dssp /disk3/pdb/pdb1pps.ent /usr/local/data/ks/1pps.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ppt.dssp) then
+ 	 echo Doing 1ppt
+ 	 dssp /disk3/pdb/pdb1ppt.ent /usr/local/data/ks/1ppt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1prc.dssp) then
+ 	 echo Doing 1prc
+ 	 dssp /disk3/pdb/pdb1prc.ent /usr/local/data/ks/1prc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1prc.dssp) then
+ 	 echo Doing 1prc
+ 	 dssp /disk3/pdb/pdb1prc.ent /usr/local/data/ks/1prc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1prh.dssp) then
+ 	 echo Doing 1prh
+ 	 dssp /disk3/pdb/pdb1prh.ent /usr/local/data/ks/1prh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1prs.dssp) then
+ 	 echo Doing 1prs
+ 	 dssp /disk3/pdb/pdb1prs.ent /usr/local/data/ks/1prs.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1prt.dssp) then
+ 	 echo Doing 1prt
+ 	 dssp /disk3/pdb/pdb1prt.ent /usr/local/data/ks/1prt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1prt.dssp) then
+ 	 echo Doing 1prt
+ 	 dssp /disk3/pdb/pdb1prt.ent /usr/local/data/ks/1prt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1prt.dssp) then
+ 	 echo Doing 1prt
+ 	 dssp /disk3/pdb/pdb1prt.ent /usr/local/data/ks/1prt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1prt.dssp) then
+ 	 echo Doing 1prt
+ 	 dssp /disk3/pdb/pdb1prt.ent /usr/local/data/ks/1prt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1psd.dssp) then
+ 	 echo Doing 1psd
+ 	 dssp /disk3/pdb/pdb1psd.ent /usr/local/data/ks/1psd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1psd.dssp) then
+ 	 echo Doing 1psd
+ 	 dssp /disk3/pdb/pdb1psd.ent /usr/local/data/ks/1psd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1psd.dssp) then
+ 	 echo Doing 1psd
+ 	 dssp /disk3/pdb/pdb1psd.ent /usr/local/data/ks/1psd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1psf.dssp) then
+ 	 echo Doing 1psf
+ 	 dssp /disk3/pdb/pdb1psf.ent /usr/local/data/ks/1psf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1psm.dssp) then
+ 	 echo Doing 1psm
+ 	 dssp /disk3/pdb/pdb1psm.ent /usr/local/data/ks/1psm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pst.dssp) then
+ 	 echo Doing 1pst
+ 	 dssp /disk3/pdb/pdb1pst.ent /usr/local/data/ks/1pst.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pst.dssp) then
+ 	 echo Doing 1pst
+ 	 dssp /disk3/pdb/pdb1pst.ent /usr/local/data/ks/1pst.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pte.dssp) then
+ 	 echo Doing 1pte
+ 	 dssp /disk3/pdb/pdb1pte.ent /usr/local/data/ks/1pte.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ptr.dssp) then
+ 	 echo Doing 1ptr
+ 	 dssp /disk3/pdb/pdb1ptr.ent /usr/local/data/ks/1ptr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1put.dssp) then
+ 	 echo Doing 1put
+ 	 dssp /disk3/pdb/pdb1put.ent /usr/local/data/ks/1put.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pvi.dssp) then
+ 	 echo Doing 1pvi
+ 	 dssp /disk3/pdb/pdb1pvi.ent /usr/local/data/ks/1pvi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pvi.dssp) then
+ 	 echo Doing 1pvi
+ 	 dssp /disk3/pdb/pdb1pvi.ent /usr/local/data/ks/1pvi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pxt.dssp) then
+ 	 echo Doing 1pxt
+ 	 dssp /disk3/pdb/pdb1pxt.ent /usr/local/data/ks/1pxt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pxt.dssp) then
+ 	 echo Doing 1pxt
+ 	 dssp /disk3/pdb/pdb1pxt.ent /usr/local/data/ks/1pxt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pya.dssp) then
+ 	 echo Doing 1pya
+ 	 dssp /disk3/pdb/pdb1pya.ent /usr/local/data/ks/1pya.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pya.dssp) then
+ 	 echo Doing 1pya
+ 	 dssp /disk3/pdb/pdb1pya.ent /usr/local/data/ks/1pya.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pyd.dssp) then
+ 	 echo Doing 1pyd
+ 	 dssp /disk3/pdb/pdb1pyd.ent /usr/local/data/ks/1pyd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pyd.dssp) then
+ 	 echo Doing 1pyd
+ 	 dssp /disk3/pdb/pdb1pyd.ent /usr/local/data/ks/1pyd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pyd.dssp) then
+ 	 echo Doing 1pyd
+ 	 dssp /disk3/pdb/pdb1pyd.ent /usr/local/data/ks/1pyd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pyi.dssp) then
+ 	 echo Doing 1pyi
+ 	 dssp /disk3/pdb/pdb1pyi.ent /usr/local/data/ks/1pyi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pyk.dssp) then
+ 	 echo Doing 1pyk
+ 	 dssp /disk3/pdb/pdb1pyk.ent /usr/local/data/ks/1pyk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pyk.dssp) then
+ 	 echo Doing 1pyk
+ 	 dssp /disk3/pdb/pdb1pyk.ent /usr/local/data/ks/1pyk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pyk.dssp) then
+ 	 echo Doing 1pyk
+ 	 dssp /disk3/pdb/pdb1pyk.ent /usr/local/data/ks/1pyk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1pyp.dssp) then
+ 	 echo Doing 1pyp
+ 	 dssp /disk3/pdb/pdb1pyp.ent /usr/local/data/ks/1pyp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1r08.dssp) then
+ 	 echo Doing 1r08
+ 	 dssp /disk3/pdb/pdb1r08.ent /usr/local/data/ks/1r08.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1r08.dssp) then
+ 	 echo Doing 1r08
+ 	 dssp /disk3/pdb/pdb1r08.ent /usr/local/data/ks/1r08.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rbs.dssp) then
+ 	 echo Doing 1rbs
+ 	 dssp /disk3/pdb/pdb1rbs.ent /usr/local/data/ks/1rbs.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rec.dssp) then
+ 	 echo Doing 1rec
+ 	 dssp /disk3/pdb/pdb1rec.ent /usr/local/data/ks/1rec.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rec.dssp) then
+ 	 echo Doing 1rec
+ 	 dssp /disk3/pdb/pdb1rec.ent /usr/local/data/ks/1rec.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ret.dssp) then
+ 	 echo Doing 1ret
+ 	 dssp /disk3/pdb/pdb1ret.ent /usr/local/data/ks/1ret.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rhd.dssp) then
+ 	 echo Doing 1rhd
+ 	 dssp /disk3/pdb/pdb1rhd.ent /usr/local/data/ks/1rhd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rhd.dssp) then
+ 	 echo Doing 1rhd
+ 	 dssp /disk3/pdb/pdb1rhd.ent /usr/local/data/ks/1rhd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rhg.dssp) then
+ 	 echo Doing 1rhg
+ 	 dssp /disk3/pdb/pdb1rhg.ent /usr/local/data/ks/1rhg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rip.dssp) then
+ 	 echo Doing 1rip
+ 	 dssp /disk3/pdb/pdb1rip.ent /usr/local/data/ks/1rip.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ris.dssp) then
+ 	 echo Doing 1ris
+ 	 dssp /disk3/pdb/pdb1ris.ent /usr/local/data/ks/1ris.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rld.dssp) then
+ 	 echo Doing 1rld
+ 	 dssp /disk3/pdb/pdb1rld.ent /usr/local/data/ks/1rld.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rpc.dssp) then
+ 	 echo Doing 1rpc
+ 	 dssp /disk3/pdb/pdb1rpc.ent /usr/local/data/ks/1rpc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rpr.dssp) then
+ 	 echo Doing 1rpr
+ 	 dssp /disk3/pdb/pdb1rpr.ent /usr/local/data/ks/1rpr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rpt.dssp) then
+ 	 echo Doing 1rpt
+ 	 dssp /disk3/pdb/pdb1rpt.ent /usr/local/data/ks/1rpt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rsy.dssp) then
+ 	 echo Doing 1rsy
+ 	 dssp /disk3/pdb/pdb1rsy.ent /usr/local/data/ks/1rsy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1rtm.dssp) then
+ 	 echo Doing 1rtm
+ 	 dssp /disk3/pdb/pdb1rtm.ent /usr/local/data/ks/1rtm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sac.dssp) then
+ 	 echo Doing 1sac
+ 	 dssp /disk3/pdb/pdb1sac.ent /usr/local/data/ks/1sac.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sbp.dssp) then
+ 	 echo Doing 1sbp
+ 	 dssp /disk3/pdb/pdb1sbp.ent /usr/local/data/ks/1sbp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sbp.dssp) then
+ 	 echo Doing 1sbp
+ 	 dssp /disk3/pdb/pdb1sbp.ent /usr/local/data/ks/1sbp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1scm.dssp) then
+ 	 echo Doing 1scm
+ 	 dssp /disk3/pdb/pdb1scm.ent /usr/local/data/ks/1scm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1scm.dssp) then
+ 	 echo Doing 1scm
+ 	 dssp /disk3/pdb/pdb1scm.ent /usr/local/data/ks/1scm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1scm.dssp) then
+ 	 echo Doing 1scm
+ 	 dssp /disk3/pdb/pdb1scm.ent /usr/local/data/ks/1scm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1scm.dssp) then
+ 	 echo Doing 1scm
+ 	 dssp /disk3/pdb/pdb1scm.ent /usr/local/data/ks/1scm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1scu.dssp) then
+ 	 echo Doing 1scu
+ 	 dssp /disk3/pdb/pdb1scu.ent /usr/local/data/ks/1scu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1scu.dssp) then
+ 	 echo Doing 1scu
+ 	 dssp /disk3/pdb/pdb1scu.ent /usr/local/data/ks/1scu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1scu.dssp) then
+ 	 echo Doing 1scu
+ 	 dssp /disk3/pdb/pdb1scu.ent /usr/local/data/ks/1scu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sdy.dssp) then
+ 	 echo Doing 1sdy
+ 	 dssp /disk3/pdb/pdb1sdy.ent /usr/local/data/ks/1sdy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ser.dssp) then
+ 	 echo Doing 1ser
+ 	 dssp /disk3/pdb/pdb1ser.ent /usr/local/data/ks/1ser.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ses.dssp) then
+ 	 echo Doing 1ses
+ 	 dssp /disk3/pdb/pdb1ses.ent /usr/local/data/ks/1ses.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ses.dssp) then
+ 	 echo Doing 1ses
+ 	 dssp /disk3/pdb/pdb1ses.ent /usr/local/data/ks/1ses.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sgt.dssp) then
+ 	 echo Doing 1sgt
+ 	 dssp /disk3/pdb/pdb1sgt.ent /usr/local/data/ks/1sgt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sis.dssp) then
+ 	 echo Doing 1sis
+ 	 dssp /disk3/pdb/pdb1sis.ent /usr/local/data/ks/1sis.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1snw.dssp) then
+ 	 echo Doing 1snw
+ 	 dssp /disk3/pdb/pdb1snw.ent /usr/local/data/ks/1snw.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1snw.dssp) then
+ 	 echo Doing 1snw
+ 	 dssp /disk3/pdb/pdb1snw.ent /usr/local/data/ks/1snw.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sob.dssp) then
+ 	 echo Doing 1sob
+ 	 dssp /disk3/pdb/pdb1sob.ent /usr/local/data/ks/1sob.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1spf.dssp) then
+ 	 echo Doing 1spf
+ 	 dssp /disk3/pdb/pdb1spf.ent /usr/local/data/ks/1spf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1srb.dssp) then
+ 	 echo Doing 1srb
+ 	 dssp /disk3/pdb/pdb1srb.ent /usr/local/data/ks/1srb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1srj.dssp) then
+ 	 echo Doing 1srj
+ 	 dssp /disk3/pdb/pdb1srj.ent /usr/local/data/ks/1srj.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1srp.dssp) then
+ 	 echo Doing 1srp
+ 	 dssp /disk3/pdb/pdb1srp.ent /usr/local/data/ks/1srp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1srp.dssp) then
+ 	 echo Doing 1srp
+ 	 dssp /disk3/pdb/pdb1srp.ent /usr/local/data/ks/1srp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ssa.dssp) then
+ 	 echo Doing 1ssa
+ 	 dssp /disk3/pdb/pdb1ssa.ent /usr/local/data/ks/1ssa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sso.dssp) then
+ 	 echo Doing 1sso
+ 	 dssp /disk3/pdb/pdb1sso.ent /usr/local/data/ks/1sso.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1st3.dssp) then
+ 	 echo Doing 1st3
+ 	 dssp /disk3/pdb/pdb1st3.ent /usr/local/data/ks/1st3.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1std.dssp) then
+ 	 echo Doing 1std
+ 	 dssp /disk3/pdb/pdb1std.ent /usr/local/data/ks/1std.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1stf.dssp) then
+ 	 echo Doing 1stf
+ 	 dssp /disk3/pdb/pdb1stf.ent /usr/local/data/ks/1stf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sto.dssp) then
+ 	 echo Doing 1sto
+ 	 dssp /disk3/pdb/pdb1sto.ent /usr/local/data/ks/1sto.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1stu.dssp) then
+ 	 echo Doing 1stu
+ 	 dssp /disk3/pdb/pdb1stu.ent /usr/local/data/ks/1stu.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1svr.dssp) then
+ 	 echo Doing 1svr
+ 	 dssp /disk3/pdb/pdb1svr.ent /usr/local/data/ks/1svr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1sxl.dssp) then
+ 	 echo Doing 1sxl
+ 	 dssp /disk3/pdb/pdb1sxl.ent /usr/local/data/ks/1sxl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tab.dssp) then
+ 	 echo Doing 1tab
+ 	 dssp /disk3/pdb/pdb1tab.ent /usr/local/data/ks/1tab.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tah.dssp) then
+ 	 echo Doing 1tah
+ 	 dssp /disk3/pdb/pdb1tah.ent /usr/local/data/ks/1tah.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tap.dssp) then
+ 	 echo Doing 1tap
+ 	 dssp /disk3/pdb/pdb1tap.ent /usr/local/data/ks/1tap.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tbp.dssp) then
+ 	 echo Doing 1tbp
+ 	 dssp /disk3/pdb/pdb1tbp.ent /usr/local/data/ks/1tbp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tcb.dssp) then
+ 	 echo Doing 1tcb
+ 	 dssp /disk3/pdb/pdb1tcb.ent /usr/local/data/ks/1tcb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tcb.dssp) then
+ 	 echo Doing 1tcb
+ 	 dssp /disk3/pdb/pdb1tcb.ent /usr/local/data/ks/1tcb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tck.dssp) then
+ 	 echo Doing 1tck
+ 	 dssp /disk3/pdb/pdb1tck.ent /usr/local/data/ks/1tck.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tec.dssp) then
+ 	 echo Doing 1tec
+ 	 dssp /disk3/pdb/pdb1tec.ent /usr/local/data/ks/1tec.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ter.dssp) then
+ 	 echo Doing 1ter
+ 	 dssp /disk3/pdb/pdb1ter.ent /usr/local/data/ks/1ter.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tfi.dssp) then
+ 	 echo Doing 1tfi
+ 	 dssp /disk3/pdb/pdb1tfi.ent /usr/local/data/ks/1tfi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1thi.dssp) then
+ 	 echo Doing 1thi
+ 	 dssp /disk3/pdb/pdb1thi.ent /usr/local/data/ks/1thi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1thl.dssp) then
+ 	 echo Doing 1thl
+ 	 dssp /disk3/pdb/pdb1thl.ent /usr/local/data/ks/1thl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1thl.dssp) then
+ 	 echo Doing 1thl
+ 	 dssp /disk3/pdb/pdb1thl.ent /usr/local/data/ks/1thl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1thr.dssp) then
+ 	 echo Doing 1thr
+ 	 dssp /disk3/pdb/pdb1thr.ent /usr/local/data/ks/1thr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tht.dssp) then
+ 	 echo Doing 1tht
+ 	 dssp /disk3/pdb/pdb1tht.ent /usr/local/data/ks/1tht.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1thy.dssp) then
+ 	 echo Doing 1thy
+ 	 dssp /disk3/pdb/pdb1thy.ent /usr/local/data/ks/1thy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1thy.dssp) then
+ 	 echo Doing 1thy
+ 	 dssp /disk3/pdb/pdb1thy.ent /usr/local/data/ks/1thy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tie.dssp) then
+ 	 echo Doing 1tie
+ 	 dssp /disk3/pdb/pdb1tie.ent /usr/local/data/ks/1tie.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tin.dssp) then
+ 	 echo Doing 1tin
+ 	 dssp /disk3/pdb/pdb1tin.ent /usr/local/data/ks/1tin.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tlf.dssp) then
+ 	 echo Doing 1tlf
+ 	 dssp /disk3/pdb/pdb1tlf.ent /usr/local/data/ks/1tlf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tlf.dssp) then
+ 	 echo Doing 1tlf
+ 	 dssp /disk3/pdb/pdb1tlf.ent /usr/local/data/ks/1tlf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tlf.dssp) then
+ 	 echo Doing 1tlf
+ 	 dssp /disk3/pdb/pdb1tlf.ent /usr/local/data/ks/1tlf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tlk.dssp) then
+ 	 echo Doing 1tlk
+ 	 dssp /disk3/pdb/pdb1tlk.ent /usr/local/data/ks/1tlk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tmf.dssp) then
+ 	 echo Doing 1tmf
+ 	 dssp /disk3/pdb/pdb1tmf.ent /usr/local/data/ks/1tmf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tmf.dssp) then
+ 	 echo Doing 1tmf
+ 	 dssp /disk3/pdb/pdb1tmf.ent /usr/local/data/ks/1tmf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tmf.dssp) then
+ 	 echo Doing 1tmf
+ 	 dssp /disk3/pdb/pdb1tmf.ent /usr/local/data/ks/1tmf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tmf.dssp) then
+ 	 echo Doing 1tmf
+ 	 dssp /disk3/pdb/pdb1tmf.ent /usr/local/data/ks/1tmf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tml.dssp) then
+ 	 echo Doing 1tml
+ 	 dssp /disk3/pdb/pdb1tml.ent /usr/local/data/ks/1tml.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tnd.dssp) then
+ 	 echo Doing 1tnd
+ 	 dssp /disk3/pdb/pdb1tnd.ent /usr/local/data/ks/1tnd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tnd.dssp) then
+ 	 echo Doing 1tnd
+ 	 dssp /disk3/pdb/pdb1tnd.ent /usr/local/data/ks/1tnd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tnr.dssp) then
+ 	 echo Doing 1tnr
+ 	 dssp /disk3/pdb/pdb1tnr.ent /usr/local/data/ks/1tnr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tnr.dssp) then
+ 	 echo Doing 1tnr
+ 	 dssp /disk3/pdb/pdb1tnr.ent /usr/local/data/ks/1tnr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tnt.dssp) then
+ 	 echo Doing 1tnt
+ 	 dssp /disk3/pdb/pdb1tnt.ent /usr/local/data/ks/1tnt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tnv.dssp) then
+ 	 echo Doing 1tnv
+ 	 dssp /disk3/pdb/pdb1tnv.ent /usr/local/data/ks/1tnv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tnv.dssp) then
+ 	 echo Doing 1tnv
+ 	 dssp /disk3/pdb/pdb1tnv.ent /usr/local/data/ks/1tnv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tnv.dssp) then
+ 	 echo Doing 1tnv
+ 	 dssp /disk3/pdb/pdb1tnv.ent /usr/local/data/ks/1tnv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ton.dssp) then
+ 	 echo Doing 1ton
+ 	 dssp /disk3/pdb/pdb1ton.ent /usr/local/data/ks/1ton.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ton.dssp) then
+ 	 echo Doing 1ton
+ 	 dssp /disk3/pdb/pdb1ton.ent /usr/local/data/ks/1ton.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tpl.dssp) then
+ 	 echo Doing 1tpl
+ 	 dssp /disk3/pdb/pdb1tpl.ent /usr/local/data/ks/1tpl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tpl.dssp) then
+ 	 echo Doing 1tpl
+ 	 dssp /disk3/pdb/pdb1tpl.ent /usr/local/data/ks/1tpl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tpl.dssp) then
+ 	 echo Doing 1tpl
+ 	 dssp /disk3/pdb/pdb1tpl.ent /usr/local/data/ks/1tpl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tpn.dssp) then
+ 	 echo Doing 1tpn
+ 	 dssp /disk3/pdb/pdb1tpn.ent /usr/local/data/ks/1tpn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tpt.dssp) then
+ 	 echo Doing 1tpt
+ 	 dssp /disk3/pdb/pdb1tpt.ent /usr/local/data/ks/1tpt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tpt.dssp) then
+ 	 echo Doing 1tpt
+ 	 dssp /disk3/pdb/pdb1tpt.ent /usr/local/data/ks/1tpt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1trb.dssp) then
+ 	 echo Doing 1trb
+ 	 dssp /disk3/pdb/pdb1trb.ent /usr/local/data/ks/1trb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1trb.dssp) then
+ 	 echo Doing 1trb
+ 	 dssp /disk3/pdb/pdb1trb.ent /usr/local/data/ks/1trb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1trh.dssp) then
+ 	 echo Doing 1trh
+ 	 dssp /disk3/pdb/pdb1trh.ent /usr/local/data/ks/1trh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1trk.dssp) then
+ 	 echo Doing 1trk
+ 	 dssp /disk3/pdb/pdb1trk.ent /usr/local/data/ks/1trk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1trk.dssp) then
+ 	 echo Doing 1trk
+ 	 dssp /disk3/pdb/pdb1trk.ent /usr/local/data/ks/1trk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1trk.dssp) then
+ 	 echo Doing 1trk
+ 	 dssp /disk3/pdb/pdb1trk.ent /usr/local/data/ks/1trk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1trl.dssp) then
+ 	 echo Doing 1trl
+ 	 dssp /disk3/pdb/pdb1trl.ent /usr/local/data/ks/1trl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1trt.dssp) then
+ 	 echo Doing 1trt
+ 	 dssp /disk3/pdb/pdb1trt.ent /usr/local/data/ks/1trt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tru.dssp) then
+ 	 echo Doing 1tru
+ 	 dssp /disk3/pdb/pdb1tru.ent /usr/local/data/ks/1tru.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tsp.dssp) then
+ 	 echo Doing 1tsp
+ 	 dssp /disk3/pdb/pdb1tsp.ent /usr/local/data/ks/1tsp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tss.dssp) then
+ 	 echo Doing 1tss
+ 	 dssp /disk3/pdb/pdb1tss.ent /usr/local/data/ks/1tss.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tss.dssp) then
+ 	 echo Doing 1tss
+ 	 dssp /disk3/pdb/pdb1tss.ent /usr/local/data/ks/1tss.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ttg.dssp) then
+ 	 echo Doing 1ttg
+ 	 dssp /disk3/pdb/pdb1ttg.ent /usr/local/data/ks/1ttg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tvt.dssp) then
+ 	 echo Doing 1tvt
+ 	 dssp /disk3/pdb/pdb1tvt.ent /usr/local/data/ks/1tvt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1tym.dssp) then
+ 	 echo Doing 1tym
+ 	 dssp /disk3/pdb/pdb1tym.ent /usr/local/data/ks/1tym.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1udp.dssp) then
+ 	 echo Doing 1udp
+ 	 dssp /disk3/pdb/pdb1udp.ent /usr/local/data/ks/1udp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ulb.dssp) then
+ 	 echo Doing 1ulb
+ 	 dssp /disk3/pdb/pdb1ulb.ent /usr/local/data/ks/1ulb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1vca.dssp) then
+ 	 echo Doing 1vca
+ 	 dssp /disk3/pdb/pdb1vca.ent /usr/local/data/ks/1vca.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1vca.dssp) then
+ 	 echo Doing 1vca
+ 	 dssp /disk3/pdb/pdb1vca.ent /usr/local/data/ks/1vca.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1vil.dssp) then
+ 	 echo Doing 1vil
+ 	 dssp /disk3/pdb/pdb1vil.ent /usr/local/data/ks/1vil.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1vmo.dssp) then
+ 	 echo Doing 1vmo
+ 	 dssp /disk3/pdb/pdb1vmo.ent /usr/local/data/ks/1vmo.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1vmo.dssp) then
+ 	 echo Doing 1vmo
+ 	 dssp /disk3/pdb/pdb1vmo.ent /usr/local/data/ks/1vmo.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1vnb.dssp) then
+ 	 echo Doing 1vnb
+ 	 dssp /disk3/pdb/pdb1vnb.ent /usr/local/data/ks/1vnb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1vsg.dssp) then
+ 	 echo Doing 1vsg
+ 	 dssp /disk3/pdb/pdb1vsg.ent /usr/local/data/ks/1vsg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1vsg.dssp) then
+ 	 echo Doing 1vsg
+ 	 dssp /disk3/pdb/pdb1vsg.ent /usr/local/data/ks/1vsg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1wap.dssp) then
+ 	 echo Doing 1wap
+ 	 dssp /disk3/pdb/pdb1wap.ent /usr/local/data/ks/1wap.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1wfb.dssp) then
+ 	 echo Doing 1wfb
+ 	 dssp /disk3/pdb/pdb1wfb.ent /usr/local/data/ks/1wfb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1wht.dssp) then
+ 	 echo Doing 1wht
+ 	 dssp /disk3/pdb/pdb1wht.ent /usr/local/data/ks/1wht.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1wsy.dssp) then
+ 	 echo Doing 1wsy
+ 	 dssp /disk3/pdb/pdb1wsy.ent /usr/local/data/ks/1wsy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1wsy.dssp) then
+ 	 echo Doing 1wsy
+ 	 dssp /disk3/pdb/pdb1wsy.ent /usr/local/data/ks/1wsy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1wsy.dssp) then
+ 	 echo Doing 1wsy
+ 	 dssp /disk3/pdb/pdb1wsy.ent /usr/local/data/ks/1wsy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1xia.dssp) then
+ 	 echo Doing 1xia
+ 	 dssp /disk3/pdb/pdb1xia.ent /usr/local/data/ks/1xia.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1xia.dssp) then
+ 	 echo Doing 1xia
+ 	 dssp /disk3/pdb/pdb1xia.ent /usr/local/data/ks/1xia.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1xys.dssp) then
+ 	 echo Doing 1xys
+ 	 dssp /disk3/pdb/pdb1xys.ent /usr/local/data/ks/1xys.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1yeb.dssp) then
+ 	 echo Doing 1yeb
+ 	 dssp /disk3/pdb/pdb1yeb.ent /usr/local/data/ks/1yeb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ypt.dssp) then
+ 	 echo Doing 1ypt
+ 	 dssp /disk3/pdb/pdb1ypt.ent /usr/local/data/ks/1ypt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ysa.dssp) then
+ 	 echo Doing 1ysa
+ 	 dssp /disk3/pdb/pdb1ysa.ent /usr/local/data/ks/1ysa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1ysc.dssp) then
+ 	 echo Doing 1ysc
+ 	 dssp /disk3/pdb/pdb1ysc.ent /usr/local/data/ks/1ysc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1zaa.dssp) then
+ 	 echo Doing 1zaa
+ 	 dssp /disk3/pdb/pdb1zaa.ent /usr/local/data/ks/1zaa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1znf.dssp) then
+ 	 echo Doing 1znf
+ 	 dssp /disk3/pdb/pdb1znf.ent /usr/local/data/ks/1znf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/1zta.dssp) then
+ 	 echo Doing 1zta
+ 	 dssp /disk3/pdb/pdb1zta.ent /usr/local/data/ks/1zta.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/205l.dssp) then
+ 	 echo Doing 205l
+ 	 dssp /disk3/pdb/pdb205l.ent /usr/local/data/ks/205l.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/205l.dssp) then
+ 	 echo Doing 205l
+ 	 dssp /disk3/pdb/pdb205l.ent /usr/local/data/ks/205l.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/256b.dssp) then
+ 	 echo Doing 256b
+ 	 dssp /disk3/pdb/pdb256b.ent /usr/local/data/ks/256b.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2aai.dssp) then
+ 	 echo Doing 2aai
+ 	 dssp /disk3/pdb/pdb2aai.ent /usr/local/data/ks/2aai.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2aai.dssp) then
+ 	 echo Doing 2aai
+ 	 dssp /disk3/pdb/pdb2aai.ent /usr/local/data/ks/2aai.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2abd.dssp) then
+ 	 echo Doing 2abd
+ 	 dssp /disk3/pdb/pdb2abd.ent /usr/local/data/ks/2abd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2act.dssp) then
+ 	 echo Doing 2act
+ 	 dssp /disk3/pdb/pdb2act.ent /usr/local/data/ks/2act.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2act.dssp) then
+ 	 echo Doing 2act
+ 	 dssp /disk3/pdb/pdb2act.ent /usr/local/data/ks/2act.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ait.dssp) then
+ 	 echo Doing 2ait
+ 	 dssp /disk3/pdb/pdb2ait.ent /usr/local/data/ks/2ait.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2asr.dssp) then
+ 	 echo Doing 2asr
+ 	 dssp /disk3/pdb/pdb2asr.ent /usr/local/data/ks/2asr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2at2.dssp) then
+ 	 echo Doing 2at2
+ 	 dssp /disk3/pdb/pdb2at2.ent /usr/local/data/ks/2at2.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2at2.dssp) then
+ 	 echo Doing 2at2
+ 	 dssp /disk3/pdb/pdb2at2.ent /usr/local/data/ks/2at2.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bat.dssp) then
+ 	 echo Doing 2bat
+ 	 dssp /disk3/pdb/pdb2bat.ent /usr/local/data/ks/2bat.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bbi.dssp) then
+ 	 echo Doing 2bbi
+ 	 dssp /disk3/pdb/pdb2bbi.ent /usr/local/data/ks/2bbi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bbn.dssp) then
+ 	 echo Doing 2bbn
+ 	 dssp /disk3/pdb/pdb2bbn.ent /usr/local/data/ks/2bbn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bbn.dssp) then
+ 	 echo Doing 2bbn
+ 	 dssp /disk3/pdb/pdb2bbn.ent /usr/local/data/ks/2bbn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bbv.dssp) then
+ 	 echo Doing 2bbv
+ 	 dssp /disk3/pdb/pdb2bbv.ent /usr/local/data/ks/2bbv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bds.dssp) then
+ 	 echo Doing 2bds
+ 	 dssp /disk3/pdb/pdb2bds.ent /usr/local/data/ks/2bds.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2blt.dssp) then
+ 	 echo Doing 2blt
+ 	 dssp /disk3/pdb/pdb2blt.ent /usr/local/data/ks/2blt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2blt.dssp) then
+ 	 echo Doing 2blt
+ 	 dssp /disk3/pdb/pdb2blt.ent /usr/local/data/ks/2blt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bop.dssp) then
+ 	 echo Doing 2bop
+ 	 dssp /disk3/pdb/pdb2bop.ent /usr/local/data/ks/2bop.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bp2.dssp) then
+ 	 echo Doing 2bp2
+ 	 dssp /disk3/pdb/pdb2bp2.ent /usr/local/data/ks/2bp2.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bpa.dssp) then
+ 	 echo Doing 2bpa
+ 	 dssp /disk3/pdb/pdb2bpa.ent /usr/local/data/ks/2bpa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bpa.dssp) then
+ 	 echo Doing 2bpa
+ 	 dssp /disk3/pdb/pdb2bpa.ent /usr/local/data/ks/2bpa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bpa.dssp) then
+ 	 echo Doing 2bpa
+ 	 dssp /disk3/pdb/pdb2bpa.ent /usr/local/data/ks/2bpa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bpf.dssp) then
+ 	 echo Doing 2bpf
+ 	 dssp /disk3/pdb/pdb2bpf.ent /usr/local/data/ks/2bpf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bpf.dssp) then
+ 	 echo Doing 2bpf
+ 	 dssp /disk3/pdb/pdb2bpf.ent /usr/local/data/ks/2bpf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bpf.dssp) then
+ 	 echo Doing 2bpf
+ 	 dssp /disk3/pdb/pdb2bpf.ent /usr/local/data/ks/2bpf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bpf.dssp) then
+ 	 echo Doing 2bpf
+ 	 dssp /disk3/pdb/pdb2bpf.ent /usr/local/data/ks/2bpf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2bpg.dssp) then
+ 	 echo Doing 2bpg
+ 	 dssp /disk3/pdb/pdb2bpg.ent /usr/local/data/ks/2bpg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2btf.dssp) then
+ 	 echo Doing 2btf
+ 	 dssp /disk3/pdb/pdb2btf.ent /usr/local/data/ks/2btf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2btf.dssp) then
+ 	 echo Doing 2btf
+ 	 dssp /disk3/pdb/pdb2btf.ent /usr/local/data/ks/2btf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2btf.dssp) then
+ 	 echo Doing 2btf
+ 	 dssp /disk3/pdb/pdb2btf.ent /usr/local/data/ks/2btf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2btf.dssp) then
+ 	 echo Doing 2btf
+ 	 dssp /disk3/pdb/pdb2btf.ent /usr/local/data/ks/2btf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2btf.dssp) then
+ 	 echo Doing 2btf
+ 	 dssp /disk3/pdb/pdb2btf.ent /usr/local/data/ks/2btf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2cas.dssp) then
+ 	 echo Doing 2cas
+ 	 dssp /disk3/pdb/pdb2cas.ent /usr/local/data/ks/2cas.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2cbh.dssp) then
+ 	 echo Doing 2cbh
+ 	 dssp /disk3/pdb/pdb2cbh.ent /usr/local/data/ks/2cbh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ccy.dssp) then
+ 	 echo Doing 2ccy
+ 	 dssp /disk3/pdb/pdb2ccy.ent /usr/local/data/ks/2ccy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2cmd.dssp) then
+ 	 echo Doing 2cmd
+ 	 dssp /disk3/pdb/pdb2cmd.ent /usr/local/data/ks/2cmd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2cmd.dssp) then
+ 	 echo Doing 2cmd
+ 	 dssp /disk3/pdb/pdb2cmd.ent /usr/local/data/ks/2cmd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2cpk.dssp) then
+ 	 echo Doing 2cpk
+ 	 dssp /disk3/pdb/pdb2cpk.ent /usr/local/data/ks/2cpk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2cpk.dssp) then
+ 	 echo Doing 2cpk
+ 	 dssp /disk3/pdb/pdb2cpk.ent /usr/local/data/ks/2cpk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2cpl.dssp) then
+ 	 echo Doing 2cpl
+ 	 dssp /disk3/pdb/pdb2cpl.ent /usr/local/data/ks/2cpl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2crd.dssp) then
+ 	 echo Doing 2crd
+ 	 dssp /disk3/pdb/pdb2crd.ent /usr/local/data/ks/2crd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2cut.dssp) then
+ 	 echo Doing 2cut
+ 	 dssp /disk3/pdb/pdb2cut.ent /usr/local/data/ks/2cut.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2cy3.dssp) then
+ 	 echo Doing 2cy3
+ 	 dssp /disk3/pdb/pdb2cy3.ent /usr/local/data/ks/2cy3.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2dkb.dssp) then
+ 	 echo Doing 2dkb
+ 	 dssp /disk3/pdb/pdb2dkb.ent /usr/local/data/ks/2dkb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2dkb.dssp) then
+ 	 echo Doing 2dkb
+ 	 dssp /disk3/pdb/pdb2dkb.ent /usr/local/data/ks/2dkb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2dnj.dssp) then
+ 	 echo Doing 2dnj
+ 	 dssp /disk3/pdb/pdb2dnj.ent /usr/local/data/ks/2dnj.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2dnj.dssp) then
+ 	 echo Doing 2dnj
+ 	 dssp /disk3/pdb/pdb2dnj.ent /usr/local/data/ks/2dnj.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2drp.dssp) then
+ 	 echo Doing 2drp
+ 	 dssp /disk3/pdb/pdb2drp.ent /usr/local/data/ks/2drp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2drp.dssp) then
+ 	 echo Doing 2drp
+ 	 dssp /disk3/pdb/pdb2drp.ent /usr/local/data/ks/2drp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2dtb.dssp) then
+ 	 echo Doing 2dtb
+ 	 dssp /disk3/pdb/pdb2dtb.ent /usr/local/data/ks/2dtb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ebn.dssp) then
+ 	 echo Doing 2ebn
+ 	 dssp /disk3/pdb/pdb2ebn.ent /usr/local/data/ks/2ebn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ech.dssp) then
+ 	 echo Doing 2ech
+ 	 dssp /disk3/pdb/pdb2ech.ent /usr/local/data/ks/2ech.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2end.dssp) then
+ 	 echo Doing 2end
+ 	 dssp /disk3/pdb/pdb2end.ent /usr/local/data/ks/2end.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2eql.dssp) then
+ 	 echo Doing 2eql
+ 	 dssp /disk3/pdb/pdb2eql.ent /usr/local/data/ks/2eql.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2eql.dssp) then
+ 	 echo Doing 2eql
+ 	 dssp /disk3/pdb/pdb2eql.ent /usr/local/data/ks/2eql.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2fxb.dssp) then
+ 	 echo Doing 2fxb
+ 	 dssp /disk3/pdb/pdb2fxb.ent /usr/local/data/ks/2fxb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2gbp.dssp) then
+ 	 echo Doing 2gbp
+ 	 dssp /disk3/pdb/pdb2gbp.ent /usr/local/data/ks/2gbp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2gbp.dssp) then
+ 	 echo Doing 2gbp
+ 	 dssp /disk3/pdb/pdb2gbp.ent /usr/local/data/ks/2gbp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2gda.dssp) then
+ 	 echo Doing 2gda
+ 	 dssp /disk3/pdb/pdb2gda.ent /usr/local/data/ks/2gda.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2gls.dssp) then
+ 	 echo Doing 2gls
+ 	 dssp /disk3/pdb/pdb2gls.ent /usr/local/data/ks/2gls.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2gls.dssp) then
+ 	 echo Doing 2gls
+ 	 dssp /disk3/pdb/pdb2gls.ent /usr/local/data/ks/2gls.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hbg.dssp) then
+ 	 echo Doing 2hbg
+ 	 dssp /disk3/pdb/pdb2hbg.ent /usr/local/data/ks/2hbg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hhm.dssp) then
+ 	 echo Doing 2hhm
+ 	 dssp /disk3/pdb/pdb2hhm.ent /usr/local/data/ks/2hhm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hhm.dssp) then
+ 	 echo Doing 2hhm
+ 	 dssp /disk3/pdb/pdb2hhm.ent /usr/local/data/ks/2hhm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hip.dssp) then
+ 	 echo Doing 2hip
+ 	 dssp /disk3/pdb/pdb2hip.ent /usr/local/data/ks/2hip.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hla.dssp) then
+ 	 echo Doing 2hla
+ 	 dssp /disk3/pdb/pdb2hla.ent /usr/local/data/ks/2hla.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hla.dssp) then
+ 	 echo Doing 2hla
+ 	 dssp /disk3/pdb/pdb2hla.ent /usr/local/data/ks/2hla.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hnq.dssp) then
+ 	 echo Doing 2hnq
+ 	 dssp /disk3/pdb/pdb2hnq.ent /usr/local/data/ks/2hnq.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hnt.dssp) then
+ 	 echo Doing 2hnt
+ 	 dssp /disk3/pdb/pdb2hnt.ent /usr/local/data/ks/2hnt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hoa.dssp) then
+ 	 echo Doing 2hoa
+ 	 dssp /disk3/pdb/pdb2hoa.ent /usr/local/data/ks/2hoa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hpd.dssp) then
+ 	 echo Doing 2hpd
+ 	 dssp /disk3/pdb/pdb2hpd.ent /usr/local/data/ks/2hpd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hpr.dssp) then
+ 	 echo Doing 2hpr
+ 	 dssp /disk3/pdb/pdb2hpr.ent /usr/local/data/ks/2hpr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2hsd.dssp) then
+ 	 echo Doing 2hsd
+ 	 dssp /disk3/pdb/pdb2hsd.ent /usr/local/data/ks/2hsd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ifo.dssp) then
+ 	 echo Doing 2ifo
+ 	 dssp /disk3/pdb/pdb2ifo.ent /usr/local/data/ks/2ifo.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ila.dssp) then
+ 	 echo Doing 2ila
+ 	 dssp /disk3/pdb/pdb2ila.ent /usr/local/data/ks/2ila.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2imn.dssp) then
+ 	 echo Doing 2imn
+ 	 dssp /disk3/pdb/pdb2imn.ent /usr/local/data/ks/2imn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ldb.dssp) then
+ 	 echo Doing 2ldb
+ 	 dssp /disk3/pdb/pdb2ldb.ent /usr/local/data/ks/2ldb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ldb.dssp) then
+ 	 echo Doing 2ldb
+ 	 dssp /disk3/pdb/pdb2ldb.ent /usr/local/data/ks/2ldb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2let.dssp) then
+ 	 echo Doing 2let
+ 	 dssp /disk3/pdb/pdb2let.ent /usr/local/data/ks/2let.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2liv.dssp) then
+ 	 echo Doing 2liv
+ 	 dssp /disk3/pdb/pdb2liv.ent /usr/local/data/ks/2liv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2liv.dssp) then
+ 	 echo Doing 2liv
+ 	 dssp /disk3/pdb/pdb2liv.ent /usr/local/data/ks/2liv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ltn.dssp) then
+ 	 echo Doing 2ltn
+ 	 dssp /disk3/pdb/pdb2ltn.ent /usr/local/data/ks/2ltn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2mev.dssp) then
+ 	 echo Doing 2mev
+ 	 dssp /disk3/pdb/pdb2mev.ent /usr/local/data/ks/2mev.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2mev.dssp) then
+ 	 echo Doing 2mev
+ 	 dssp /disk3/pdb/pdb2mev.ent /usr/local/data/ks/2mev.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2mev.dssp) then
+ 	 echo Doing 2mev
+ 	 dssp /disk3/pdb/pdb2mev.ent /usr/local/data/ks/2mev.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2mlt.dssp) then
+ 	 echo Doing 2mlt
+ 	 dssp /disk3/pdb/pdb2mlt.ent /usr/local/data/ks/2mlt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ms2.dssp) then
+ 	 echo Doing 2ms2
+ 	 dssp /disk3/pdb/pdb2ms2.ent /usr/local/data/ks/2ms2.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2mta.dssp) then
+ 	 echo Doing 2mta
+ 	 dssp /disk3/pdb/pdb2mta.ent /usr/local/data/ks/2mta.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2nad.dssp) then
+ 	 echo Doing 2nad
+ 	 dssp /disk3/pdb/pdb2nad.ent /usr/local/data/ks/2nad.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2nad.dssp) then
+ 	 echo Doing 2nad
+ 	 dssp /disk3/pdb/pdb2nad.ent /usr/local/data/ks/2nad.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2npx.dssp) then
+ 	 echo Doing 2npx
+ 	 dssp /disk3/pdb/pdb2npx.ent /usr/local/data/ks/2npx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2npx.dssp) then
+ 	 echo Doing 2npx
+ 	 dssp /disk3/pdb/pdb2npx.ent /usr/local/data/ks/2npx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2npx.dssp) then
+ 	 echo Doing 2npx
+ 	 dssp /disk3/pdb/pdb2npx.ent /usr/local/data/ks/2npx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2npx.dssp) then
+ 	 echo Doing 2npx
+ 	 dssp /disk3/pdb/pdb2npx.ent /usr/local/data/ks/2npx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pab.dssp) then
+ 	 echo Doing 2pab
+ 	 dssp /disk3/pdb/pdb2pab.ent /usr/local/data/ks/2pab.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pcd.dssp) then
+ 	 echo Doing 2pcd
+ 	 dssp /disk3/pdb/pdb2pcd.ent /usr/local/data/ks/2pcd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pde.dssp) then
+ 	 echo Doing 2pde
+ 	 dssp /disk3/pdb/pdb2pde.ent /usr/local/data/ks/2pde.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pec.dssp) then
+ 	 echo Doing 2pec
+ 	 dssp /disk3/pdb/pdb2pec.ent /usr/local/data/ks/2pec.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pf1.dssp) then
+ 	 echo Doing 2pf1
+ 	 dssp /disk3/pdb/pdb2pf1.ent /usr/local/data/ks/2pf1.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pfk.dssp) then
+ 	 echo Doing 2pfk
+ 	 dssp /disk3/pdb/pdb2pfk.ent /usr/local/data/ks/2pfk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pgd.dssp) then
+ 	 echo Doing 2pgd
+ 	 dssp /disk3/pdb/pdb2pgd.ent /usr/local/data/ks/2pgd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pgd.dssp) then
+ 	 echo Doing 2pgd
+ 	 dssp /disk3/pdb/pdb2pgd.ent /usr/local/data/ks/2pgd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pgk.dssp) then
+ 	 echo Doing 2pgk
+ 	 dssp /disk3/pdb/pdb2pgk.ent /usr/local/data/ks/2pgk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pgk.dssp) then
+ 	 echo Doing 2pgk
+ 	 dssp /disk3/pdb/pdb2pgk.ent /usr/local/data/ks/2pgk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2phl.dssp) then
+ 	 echo Doing 2phl
+ 	 dssp /disk3/pdb/pdb2phl.ent /usr/local/data/ks/2phl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2phl.dssp) then
+ 	 echo Doing 2phl
+ 	 dssp /disk3/pdb/pdb2phl.ent /usr/local/data/ks/2phl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pia.dssp) then
+ 	 echo Doing 2pia
+ 	 dssp /disk3/pdb/pdb2pia.ent /usr/local/data/ks/2pia.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pia.dssp) then
+ 	 echo Doing 2pia
+ 	 dssp /disk3/pdb/pdb2pia.ent /usr/local/data/ks/2pia.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pka.dssp) then
+ 	 echo Doing 2pka
+ 	 dssp /disk3/pdb/pdb2pka.ent /usr/local/data/ks/2pka.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pka.dssp) then
+ 	 echo Doing 2pka
+ 	 dssp /disk3/pdb/pdb2pka.ent /usr/local/data/ks/2pka.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2plv.dssp) then
+ 	 echo Doing 2plv
+ 	 dssp /disk3/pdb/pdb2plv.ent /usr/local/data/ks/2plv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pmg.dssp) then
+ 	 echo Doing 2pmg
+ 	 dssp /disk3/pdb/pdb2pmg.ent /usr/local/data/ks/2pmg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pmg.dssp) then
+ 	 echo Doing 2pmg
+ 	 dssp /disk3/pdb/pdb2pmg.ent /usr/local/data/ks/2pmg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pmg.dssp) then
+ 	 echo Doing 2pmg
+ 	 dssp /disk3/pdb/pdb2pmg.ent /usr/local/data/ks/2pmg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pmg.dssp) then
+ 	 echo Doing 2pmg
+ 	 dssp /disk3/pdb/pdb2pmg.ent /usr/local/data/ks/2pmg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pol.dssp) then
+ 	 echo Doing 2pol
+ 	 dssp /disk3/pdb/pdb2pol.ent /usr/local/data/ks/2pol.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pol.dssp) then
+ 	 echo Doing 2pol
+ 	 dssp /disk3/pdb/pdb2pol.ent /usr/local/data/ks/2pol.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2pol.dssp) then
+ 	 echo Doing 2pol
+ 	 dssp /disk3/pdb/pdb2pol.ent /usr/local/data/ks/2pol.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2prf.dssp) then
+ 	 echo Doing 2prf
+ 	 dssp /disk3/pdb/pdb2prf.ent /usr/local/data/ks/2prf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2ptl.dssp) then
+ 	 echo Doing 2ptl
+ 	 dssp /disk3/pdb/pdb2ptl.ent /usr/local/data/ks/2ptl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2reb.dssp) then
+ 	 echo Doing 2reb
+ 	 dssp /disk3/pdb/pdb2reb.ent /usr/local/data/ks/2reb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2reb.dssp) then
+ 	 echo Doing 2reb
+ 	 dssp /disk3/pdb/pdb2reb.ent /usr/local/data/ks/2reb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2rnp.dssp) then
+ 	 echo Doing 2rnp
+ 	 dssp /disk3/pdb/pdb2rnp.ent /usr/local/data/ks/2rnp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2rsl.dssp) then
+ 	 echo Doing 2rsl
+ 	 dssp /disk3/pdb/pdb2rsl.ent /usr/local/data/ks/2rsl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2rve.dssp) then
+ 	 echo Doing 2rve
+ 	 dssp /disk3/pdb/pdb2rve.ent /usr/local/data/ks/2rve.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2sbl.dssp) then
+ 	 echo Doing 2sbl
+ 	 dssp /disk3/pdb/pdb2sbl.ent /usr/local/data/ks/2sbl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2sbl.dssp) then
+ 	 echo Doing 2sbl
+ 	 dssp /disk3/pdb/pdb2sbl.ent /usr/local/data/ks/2sbl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2scp.dssp) then
+ 	 echo Doing 2scp
+ 	 dssp /disk3/pdb/pdb2scp.ent /usr/local/data/ks/2scp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2sga.dssp) then
+ 	 echo Doing 2sga
+ 	 dssp /disk3/pdb/pdb2sga.ent /usr/local/data/ks/2sga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2sga.dssp) then
+ 	 echo Doing 2sga
+ 	 dssp /disk3/pdb/pdb2sga.ent /usr/local/data/ks/2sga.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2sh1.dssp) then
+ 	 echo Doing 2sh1
+ 	 dssp /disk3/pdb/pdb2sh1.ent /usr/local/data/ks/2sh1.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2sil.dssp) then
+ 	 echo Doing 2sil
+ 	 dssp /disk3/pdb/pdb2sil.ent /usr/local/data/ks/2sil.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2spc.dssp) then
+ 	 echo Doing 2spc
+ 	 dssp /disk3/pdb/pdb2spc.ent /usr/local/data/ks/2spc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2spt.dssp) then
+ 	 echo Doing 2spt
+ 	 dssp /disk3/pdb/pdb2spt.ent /usr/local/data/ks/2spt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2spt.dssp) then
+ 	 echo Doing 2spt
+ 	 dssp /disk3/pdb/pdb2spt.ent /usr/local/data/ks/2spt.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2stv.dssp) then
+ 	 echo Doing 2stv
+ 	 dssp /disk3/pdb/pdb2stv.ent /usr/local/data/ks/2stv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2tbv.dssp) then
+ 	 echo Doing 2tbv
+ 	 dssp /disk3/pdb/pdb2tbv.ent /usr/local/data/ks/2tbv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2tgi.dssp) then
+ 	 echo Doing 2tgi
+ 	 dssp /disk3/pdb/pdb2tgi.ent /usr/local/data/ks/2tgi.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2tma.dssp) then
+ 	 echo Doing 2tma
+ 	 dssp /disk3/pdb/pdb2tma.ent /usr/local/data/ks/2tma.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2tmd.dssp) then
+ 	 echo Doing 2tmd
+ 	 dssp /disk3/pdb/pdb2tmd.ent /usr/local/data/ks/2tmd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2tmd.dssp) then
+ 	 echo Doing 2tmd
+ 	 dssp /disk3/pdb/pdb2tmd.ent /usr/local/data/ks/2tmd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2tmd.dssp) then
+ 	 echo Doing 2tmd
+ 	 dssp /disk3/pdb/pdb2tmd.ent /usr/local/data/ks/2tmd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2tmv.dssp) then
+ 	 echo Doing 2tmv
+ 	 dssp /disk3/pdb/pdb2tmv.ent /usr/local/data/ks/2tmv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2tsc.dssp) then
+ 	 echo Doing 2tsc
+ 	 dssp /disk3/pdb/pdb2tsc.ent /usr/local/data/ks/2tsc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2tun.dssp) then
+ 	 echo Doing 2tun
+ 	 dssp /disk3/pdb/pdb2tun.ent /usr/local/data/ks/2tun.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2uce.dssp) then
+ 	 echo Doing 2uce
+ 	 dssp /disk3/pdb/pdb2uce.ent /usr/local/data/ks/2uce.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2utg.dssp) then
+ 	 echo Doing 2utg
+ 	 dssp /disk3/pdb/pdb2utg.ent /usr/local/data/ks/2utg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2wgc.dssp) then
+ 	 echo Doing 2wgc
+ 	 dssp /disk3/pdb/pdb2wgc.ent /usr/local/data/ks/2wgc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2yhx.dssp) then
+ 	 echo Doing 2yhx
+ 	 dssp /disk3/pdb/pdb2yhx.ent /usr/local/data/ks/2yhx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2yhx.dssp) then
+ 	 echo Doing 2yhx
+ 	 dssp /disk3/pdb/pdb2yhx.ent /usr/local/data/ks/2yhx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/2yhx.dssp) then
+ 	 echo Doing 2yhx
+ 	 dssp /disk3/pdb/pdb2yhx.ent /usr/local/data/ks/2yhx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3aah.dssp) then
+ 	 echo Doing 3aah
+ 	 dssp /disk3/pdb/pdb3aah.ent /usr/local/data/ks/3aah.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3aah.dssp) then
+ 	 echo Doing 3aah
+ 	 dssp /disk3/pdb/pdb3aah.ent /usr/local/data/ks/3aah.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3adk.dssp) then
+ 	 echo Doing 3adk
+ 	 dssp /disk3/pdb/pdb3adk.ent /usr/local/data/ks/3adk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3b5c.dssp) then
+ 	 echo Doing 3b5c
+ 	 dssp /disk3/pdb/pdb3b5c.ent /usr/local/data/ks/3b5c.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3bcl.dssp) then
+ 	 echo Doing 3bcl
+ 	 dssp /disk3/pdb/pdb3bcl.ent /usr/local/data/ks/3bcl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3cbh.dssp) then
+ 	 echo Doing 3cbh
+ 	 dssp /disk3/pdb/pdb3cbh.ent /usr/local/data/ks/3cbh.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3chy.dssp) then
+ 	 echo Doing 3chy
+ 	 dssp /disk3/pdb/pdb3chy.ent /usr/local/data/ks/3chy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3cla.dssp) then
+ 	 echo Doing 3cla
+ 	 dssp /disk3/pdb/pdb3cla.ent /usr/local/data/ks/3cla.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3cla.dssp) then
+ 	 echo Doing 3cla
+ 	 dssp /disk3/pdb/pdb3cla.ent /usr/local/data/ks/3cla.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3cox.dssp) then
+ 	 echo Doing 3cox
+ 	 dssp /disk3/pdb/pdb3cox.ent /usr/local/data/ks/3cox.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3cts.dssp) then
+ 	 echo Doing 3cts
+ 	 dssp /disk3/pdb/pdb3cts.ent /usr/local/data/ks/3cts.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3cts.dssp) then
+ 	 echo Doing 3cts
+ 	 dssp /disk3/pdb/pdb3cts.ent /usr/local/data/ks/3cts.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3dpa.dssp) then
+ 	 echo Doing 3dpa
+ 	 dssp /disk3/pdb/pdb3dpa.ent /usr/local/data/ks/3dpa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3dpa.dssp) then
+ 	 echo Doing 3dpa
+ 	 dssp /disk3/pdb/pdb3dpa.ent /usr/local/data/ks/3dpa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3eca.dssp) then
+ 	 echo Doing 3eca
+ 	 dssp /disk3/pdb/pdb3eca.ent /usr/local/data/ks/3eca.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3eca.dssp) then
+ 	 echo Doing 3eca
+ 	 dssp /disk3/pdb/pdb3eca.ent /usr/local/data/ks/3eca.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3gap.dssp) then
+ 	 echo Doing 3gap
+ 	 dssp /disk3/pdb/pdb3gap.ent /usr/local/data/ks/3gap.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3gap.dssp) then
+ 	 echo Doing 3gap
+ 	 dssp /disk3/pdb/pdb3gap.ent /usr/local/data/ks/3gap.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3gf1.dssp) then
+ 	 echo Doing 3gf1
+ 	 dssp /disk3/pdb/pdb3gf1.ent /usr/local/data/ks/3gf1.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3hat.dssp) then
+ 	 echo Doing 3hat
+ 	 dssp /disk3/pdb/pdb3hat.ent /usr/local/data/ks/3hat.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3hhr.dssp) then
+ 	 echo Doing 3hhr
+ 	 dssp /disk3/pdb/pdb3hhr.ent /usr/local/data/ks/3hhr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3hhr.dssp) then
+ 	 echo Doing 3hhr
+ 	 dssp /disk3/pdb/pdb3hhr.ent /usr/local/data/ks/3hhr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3hhr.dssp) then
+ 	 echo Doing 3hhr
+ 	 dssp /disk3/pdb/pdb3hhr.ent /usr/local/data/ks/3hhr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3hmg.dssp) then
+ 	 echo Doing 3hmg
+ 	 dssp /disk3/pdb/pdb3hmg.ent /usr/local/data/ks/3hmg.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3ink.dssp) then
+ 	 echo Doing 3ink
+ 	 dssp /disk3/pdb/pdb3ink.ent /usr/local/data/ks/3ink.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3kau.dssp) then
+ 	 echo Doing 3kau
+ 	 dssp /disk3/pdb/pdb3kau.ent /usr/local/data/ks/3kau.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3kau.dssp) then
+ 	 echo Doing 3kau
+ 	 dssp /disk3/pdb/pdb3kau.ent /usr/local/data/ks/3kau.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3kau.dssp) then
+ 	 echo Doing 3kau
+ 	 dssp /disk3/pdb/pdb3kau.ent /usr/local/data/ks/3kau.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3kau.dssp) then
+ 	 echo Doing 3kau
+ 	 dssp /disk3/pdb/pdb3kau.ent /usr/local/data/ks/3kau.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3lad.dssp) then
+ 	 echo Doing 3lad
+ 	 dssp /disk3/pdb/pdb3lad.ent /usr/local/data/ks/3lad.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3lad.dssp) then
+ 	 echo Doing 3lad
+ 	 dssp /disk3/pdb/pdb3lad.ent /usr/local/data/ks/3lad.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3lad.dssp) then
+ 	 echo Doing 3lad
+ 	 dssp /disk3/pdb/pdb3lad.ent /usr/local/data/ks/3lad.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3mdd.dssp) then
+ 	 echo Doing 3mdd
+ 	 dssp /disk3/pdb/pdb3mdd.ent /usr/local/data/ks/3mdd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3mdd.dssp) then
+ 	 echo Doing 3mdd
+ 	 dssp /disk3/pdb/pdb3mdd.ent /usr/local/data/ks/3mdd.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3mon.dssp) then
+ 	 echo Doing 3mon
+ 	 dssp /disk3/pdb/pdb3mon.ent /usr/local/data/ks/3mon.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3pgk.dssp) then
+ 	 echo Doing 3pgk
+ 	 dssp /disk3/pdb/pdb3pgk.ent /usr/local/data/ks/3pgk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3pgk.dssp) then
+ 	 echo Doing 3pgk
+ 	 dssp /disk3/pdb/pdb3pgk.ent /usr/local/data/ks/3pgk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3pgm.dssp) then
+ 	 echo Doing 3pgm
+ 	 dssp /disk3/pdb/pdb3pgm.ent /usr/local/data/ks/3pgm.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3por.dssp) then
+ 	 echo Doing 3por
+ 	 dssp /disk3/pdb/pdb3por.ent /usr/local/data/ks/3por.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3pte.dssp) then
+ 	 echo Doing 3pte
+ 	 dssp /disk3/pdb/pdb3pte.ent /usr/local/data/ks/3pte.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3tgf.dssp) then
+ 	 echo Doing 3tgf
+ 	 dssp /disk3/pdb/pdb3tgf.ent /usr/local/data/ks/3tgf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3ts1.dssp) then
+ 	 echo Doing 3ts1
+ 	 dssp /disk3/pdb/pdb3ts1.ent /usr/local/data/ks/3ts1.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3ts1.dssp) then
+ 	 echo Doing 3ts1
+ 	 dssp /disk3/pdb/pdb3ts1.ent /usr/local/data/ks/3ts1.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/3wrp.dssp) then
+ 	 echo Doing 3wrp
+ 	 dssp /disk3/pdb/pdb3wrp.ent /usr/local/data/ks/3wrp.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4cat.dssp) then
+ 	 echo Doing 4cat
+ 	 dssp /disk3/pdb/pdb4cat.ent /usr/local/data/ks/4cat.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4cat.dssp) then
+ 	 echo Doing 4cat
+ 	 dssp /disk3/pdb/pdb4cat.ent /usr/local/data/ks/4cat.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4cpa.dssp) then
+ 	 echo Doing 4cpa
+ 	 dssp /disk3/pdb/pdb4cpa.ent /usr/local/data/ks/4cpa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4cpa.dssp) then
+ 	 echo Doing 4cpa
+ 	 dssp /disk3/pdb/pdb4cpa.ent /usr/local/data/ks/4cpa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4cpv.dssp) then
+ 	 echo Doing 4cpv
+ 	 dssp /disk3/pdb/pdb4cpv.ent /usr/local/data/ks/4cpv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4fis.dssp) then
+ 	 echo Doing 4fis
+ 	 dssp /disk3/pdb/pdb4fis.ent /usr/local/data/ks/4fis.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4fxn.dssp) then
+ 	 echo Doing 4fxn
+ 	 dssp /disk3/pdb/pdb4fxn.ent /usr/local/data/ks/4fxn.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4gcr.dssp) then
+ 	 echo Doing 4gcr
+ 	 dssp /disk3/pdb/pdb4gcr.ent /usr/local/data/ks/4gcr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4mt2.dssp) then
+ 	 echo Doing 4mt2
+ 	 dssp /disk3/pdb/pdb4mt2.ent /usr/local/data/ks/4mt2.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4mt2.dssp) then
+ 	 echo Doing 4mt2
+ 	 dssp /disk3/pdb/pdb4mt2.ent /usr/local/data/ks/4mt2.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4pfk.dssp) then
+ 	 echo Doing 4pfk
+ 	 dssp /disk3/pdb/pdb4pfk.ent /usr/local/data/ks/4pfk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4pfk.dssp) then
+ 	 echo Doing 4pfk
+ 	 dssp /disk3/pdb/pdb4pfk.ent /usr/local/data/ks/4pfk.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4sbv.dssp) then
+ 	 echo Doing 4sbv
+ 	 dssp /disk3/pdb/pdb4sbv.ent /usr/local/data/ks/4sbv.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4sgb.dssp) then
+ 	 echo Doing 4sgb
+ 	 dssp /disk3/pdb/pdb4sgb.ent /usr/local/data/ks/4sgb.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/4xia.dssp) then
+ 	 echo Doing 4xia
+ 	 dssp /disk3/pdb/pdb4xia.ent /usr/local/data/ks/4xia.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/5csc.dssp) then
+ 	 echo Doing 5csc
+ 	 dssp /disk3/pdb/pdb5csc.ent /usr/local/data/ks/5csc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/5csc.dssp) then
+ 	 echo Doing 5csc
+ 	 dssp /disk3/pdb/pdb5csc.ent /usr/local/data/ks/5csc.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/5rub.dssp) then
+ 	 echo Doing 5rub
+ 	 dssp /disk3/pdb/pdb5rub.ent /usr/local/data/ks/5rub.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/5rub.dssp) then
+ 	 echo Doing 5rub
+ 	 dssp /disk3/pdb/pdb5rub.ent /usr/local/data/ks/5rub.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/5sic.dssp) then
+ 	 echo Doing 5sic
+ 	 dssp /disk3/pdb/pdb5sic.ent /usr/local/data/ks/5sic.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/5tgl.dssp) then
+ 	 echo Doing 5tgl
+ 	 dssp /disk3/pdb/pdb5tgl.ent /usr/local/data/ks/5tgl.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/6dfr.dssp) then
+ 	 echo Doing 6dfr
+ 	 dssp /disk3/pdb/pdb6dfr.ent /usr/local/data/ks/6dfr.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/6hir.dssp) then
+ 	 echo Doing 6hir
+ 	 dssp /disk3/pdb/pdb6hir.ent /usr/local/data/ks/6hir.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/6ins.dssp) then
+ 	 echo Doing 6ins
+ 	 dssp /disk3/pdb/pdb6ins.ent /usr/local/data/ks/6ins.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/6rlx.dssp) then
+ 	 echo Doing 6rlx
+ 	 dssp /disk3/pdb/pdb6rlx.ent /usr/local/data/ks/6rlx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/6rlx.dssp) then
+ 	 echo Doing 6rlx
+ 	 dssp /disk3/pdb/pdb6rlx.ent /usr/local/data/ks/6rlx.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/6taa.dssp) then
+ 	 echo Doing 6taa
+ 	 dssp /disk3/pdb/pdb6taa.ent /usr/local/data/ks/6taa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/6taa.dssp) then
+ 	 echo Doing 6taa
+ 	 dssp /disk3/pdb/pdb6taa.ent /usr/local/data/ks/6taa.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/7pcy.dssp) then
+ 	 echo Doing 7pcy
+ 	 dssp /disk3/pdb/pdb7pcy.ent /usr/local/data/ks/7pcy.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/7znf.dssp) then
+ 	 echo Doing 7znf
+ 	 dssp /disk3/pdb/pdb7znf.ent /usr/local/data/ks/7znf.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/821p.dssp) then
+ 	 echo Doing 821p
+ 	 dssp /disk3/pdb/pdb821p.ent /usr/local/data/ks/821p.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/8api.dssp) then
+ 	 echo Doing 8api
+ 	 dssp /disk3/pdb/pdb8api.ent /usr/local/data/ks/8api.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/8api.dssp) then
+ 	 echo Doing 8api
+ 	 dssp /disk3/pdb/pdb8api.ent /usr/local/data/ks/8api.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/8cat.dssp) then
+ 	 echo Doing 8cat
+ 	 dssp /disk3/pdb/pdb8cat.ent /usr/local/data/ks/8cat.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/8cat.dssp) then
+ 	 echo Doing 8cat
+ 	 dssp /disk3/pdb/pdb8cat.ent /usr/local/data/ks/8cat.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/8cat.dssp) then
+ 	 echo Doing 8cat
+ 	 dssp /disk3/pdb/pdb8cat.ent /usr/local/data/ks/8cat.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/8i1b.dssp) then
+ 	 echo Doing 8i1b
+ 	 dssp /disk3/pdb/pdb8i1b.ent /usr/local/data/ks/8i1b.dssp >& /dev/null 
+endif
+if (! -e /usr/local/data/ks/8rxn.dssp) then
+ 	 echo Doing 8rxn
+ 	 dssp /disk3/pdb/pdb8rxn.ent /usr/local/data/ks/8rxn.dssp >& /dev/null 
+endif

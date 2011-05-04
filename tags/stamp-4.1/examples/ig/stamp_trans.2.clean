@@ -1,0 +1,1 @@
+format: stamp_clean (block file) (minimum continuous segment length) > (output file)

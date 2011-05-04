@@ -1,0 +1,383 @@
+
+OXFORD UNIVERSITY SOFTWARE LICENCING
+------------------------------------
+
+
+SOFTWARE LICENCE FOR ACADEMIC INSTITUTIONS
+
+Please print out and complete TWO copies of the attached licence.
+
+PLEASE COMPLETE ALL PARTS OF THE LICENCE.  THERE IS A SPACE AT THE
+BEGINNING OF THE LICENCE WHICH MUST BE COMPLETED.  THANK YOU.
+
+BOTH copies of the licence should be completed (leave the date
+blank) and SIGNED by your departmental or institutional administrator or 
+other individual who is able to sign agreements on behalf of
+your institution.
+Return BOTH copies to me Geoff.  Barton.   
+
+PLEASE INCLUDE A COVERING LETTER THAT CLEARLY LISTS YOUR EMAIL ADDRESS.
+
+Laboratory of Molecular Biophysics
+Rex Richards Building
+South Parks Road
+Oxford OX1 3QU 
+UK
+
+One  signed copy will be returned to you.  
+
+
+DISTRIBUTION
+------------
+
+1.  ftp:  Send us email to say you have received the licence back from  
+	  June Clarke.
+	  When we receive confirmation, we will email you details of how to 
+	  download the software.  
+	  You can obtain information on other software by anonymous ftp
+	  from geoff.biop.ox.ac.uk.
+
+2.  tape: We can supply the software on a 150 Mbyte cartridge tape, suitable
+	  for Sun or Silicon Graphics machines.  However, we must charge a 
+	  fee of 50 pounds (UK) to cover the cost of media, postage and 
+	  (some of) our time.  Please makes cheques or money orders payable in 
+	  pounds sterling (UK pounds) to:
+	  THE DEPARTMENT OF BIOCHEMISTRY - UNIVERSITY OF OXFORD.
+
+IMPORTANT NOTE: PLEASE get the licence signed by a senior official in
+your organisation, not by a Post Doc, Student or Department Head.  If
+you are at a University, then this should be someone in the University
+central offices who is in a position to sign contracts on behalf of
+the University.  If you do this the licence will apply to your whole
+University and no one else will need to complete a similar licence at
+your university.  Ideally, please complete licences for all the software,
+even things you think you don't want to look at.  Others at your
+University may be interested in them.
+
+
+------------------------------- CUT HERE ---------------------------------
+
+
+Software Licence Agreement for Academic Institutions
+
+This agreement has been entered into as of the __________  day of             
+_______________ by and between the Chancellor, Masters and Scholars of the
+University of Oxford whose administrative offices are at Wellington Square,
+Oxford OX1 2JD, England (hereinafter referred to as the "LICENSOR"), and
+
+
+
+
+
+
+
+
+(hereinafter referred to as the "LICENSEE")
+
+WHEREAS
+
+The LICENSOR has developed a body of computer software and associated
+documentation called STAMP hereafter referred to as the WORK,
+which is more particularly identified and described in Appendix A.
+
+The LICENSEE desires to use the WORK for education and research
+purposes.
+
+The LICENSEE and LICENSOR agree as follows:
+
+The LICENSOR grants to the LICENSEE a nonexclusive, nontransferable,
+licence to use the WORK subject to the following conditions.
+
+1.  LICENSEE'S RIGHTS
+
+    The Licensee shall have the right to use the WORK for educational and
+    research purposes on all computers owned or leased by the Licensee and
+    located on the LICENSEE'S campus or site.
+
+2.  RESTRICTIONS ON USE
+
+    No commercial use of any kind is permitted under this licence.  For
+    commercial use, a commercial licence is required.
+
+3.  LICENSING FEE
+
+    For a distribution via electronic means, there is no fee.  For a physical
+    distribution on magnetic media, the fee is fifty (50) pounds (UK).
+
+4.  NO SUPPORT
+
+    The LICENSEE recognizes that the LICENSOR is not obligated to
+    provide support, maintenance, consulting, or revision of the WORK. 
+    If the LICENSOR chooses to release to the LICENSEE updates of,
+    additions to, or modifications of the WORK, this agreement shall apply
+    to them as though they were part of the original WORK.
+
+5.  NO PRODUCT WARRANTY
+
+    The WORK is released on a "as is" basis.  There is no warranty
+    whatsoever as to functioning, performance or effect on hardware or
+    other software, express or implied.  The LICENSOR disclaims any
+    implied warranties of merchantability or fitness for any particular
+    purpose.
+
+6.  OWNERSHIP
+
+    The LICENSEE agrees that the WORK including any updates,
+    additions, and modifications, is, and shall at all times remain, the
+    property of the LICENSOR, and that it has been copyrighted by the
+    LICENSOR.  The LICENSEE shall have no right, title or interest
+    therein or thereto except as expressly set forth in this agreement.
+
+7.  CREDITS
+
+    All credits and copyright notices in the WORK, both in listings and/or
+    documentation, whether names of individuals or organisations, shall be
+    retained in place.  Publications referring to the WORK, or to other
+    works containing the WORK in whole or in part, shall refer to it
+    as STAMP and shall specify that the WORK was made by R. B. Russell
+    and G. J. Barton. Publication of results that use the WORK shall cite:
+    Russell, R. B. and Barton, G. J. (1992), Proteins, 14, 309-323.
+
+
+8.  NONDISCLOSURE
+
+    Under no conditions shall the LICENSEE disclose the WORK, in whole
+    or in part, to third parties, except as expressly provided for in this
+    agreement.  Nor shall the LICENSEE make the WORK available to
+    third parties via a computer network.  Permission is hereby granted to
+    the LICENSEE to disclose the WORK or modifications thereof to other
+    organisations in possession of a valid source licence for the WORK,
+    provided that such disclosure shall be for educational or research
+    purposes only.  LICENSEE may also disclose the WORK to its students
+    and employees for use in their educational and research activities,
+    provided that they are bound not to further disclose it to third parties. 
+    This article shall survive termination of the agreement.
+
+9.  NO LIABILITY
+
+    Neither the LICENSOR nor any individual or nay legal entity involved
+    in creating, modifying, updating, or supplementing the work, shall be
+    liable for damages arising out of the failure or malfunctionning of the
+    WORK.  The LICENSEE hereby assumes the risk of and releases and
+    forever discharges the LICENSOR, its employees and any other
+    individual or legal entity referred to in the foregoing sentence with
+    respect to any expense, claim, liability, loss or damage, direct or
+    indirect, including any incidental or consequential damages, whether
+    made or suffered by LICENSEE in connection with the failure or
+    malfunction of the WORK.  LICENSEE aknowledges tha the WORK is
+    in the process of development and is not error-free, that the foregoing
+    exclusion of liability is therefore an essential term of this Agreement
+    without which exclusion the LICENSOR would not be willing to enter
+    into this Agreement and to make the Work available on the Price agreed
+    upon herein.
+
+10. GOVERNING LAW
+
+    This agreement shall be construed and enforced according to the laws
+    of England.
+
+11. TERMINATION AND ENFORCEMENT COSTS
+
+    LICENSOR shall have the right to terminate this agreement with
+    immediate effect upon notice by registered mail to LICENSEE in the
+    event that LICENSEE, its employees, or persons acting on its behalf
+    breach any provsion of this agreement.  Upon termination, the
+    LICENSEE agrees to return the orginal WORK immediately, to destroy
+    all copies of the WORK (exact or modified) in its possession or under
+    its control, and to send to the LICENSOR a signed statement that all
+    such copies have been destroyed.  If the LICENSOR takes legal action
+    against the LICENSEE to enforce this agreement and prevails, the
+    LICENSEE agrees to pay LICENSOR'S legal costs, including
+    reasonable attorney's fees.
+
+12. CHANGES TO THIS AGREEMENT
+
+    This agreement may only be changed if both parties agree to the
+    proposed changes in writing.
+
+13. AUTHORITY
+
+    Each of the undersigned warrants that he/she has the legal authority to
+    bind to this agreement the party which he/she represents.
+
+
+SIGNED for and on behalf of          )      SIGNED for and on behalf of      )
+                                     )                                       )
+THE CHANCELLOR,MASTERS               )                                       )
+AND SCHOLARS OF THE                  )                                       )
+UNIVERSITY OF OXFORD                 )                                       )
+
+Name: J. Clark                            Name:
+
+Position: Director, Research Support      Position:
+  and Industrial Liaison Office
+
+
+
+Signature:__________________________      Signature:__________________________
+
+
+
+APPENDIX A
+----------
+
+STAMP is a package for the alignment of protein sequence based on
+three-dimensional structure.  It provides not only multiple
+alignments and the corresponding "best-fit" superimpositions, but
+also a systematic and reproducible method for assessing the
+quality of such alignments.  It also provides a method for protein 3D 
+structure data base scanning, and various other programs for analysis and
+display of protein 3D structure.
+
+Contents of STAMP package (version 4.1)
+
+README	  	         Basic instructions and details
+BUILD                    Shell script to compile the package
+
+src/                     Source code directory
+  a3to1.c                Converts amino acid 3 letter code to one letter.
+  aadat.h                Data about the amino acids (from various sources)
+  agetbloc.c             Reads in AMPS style block alignment format
+  align_clean.c          Cleans AMPS style block alignment format
+  alignfit.c             Takes AMPS style block alignment and uses it to generate an initial superimposition
+  alignfit.h             Include file for the above 
+  alignfitgetpars.c      Gets parameters for the above
+  aliseq.c               Takes path data from GJBs dynammic programming routine and gives alignments
+  array.h                Include file for GJBs alignment routines
+  avestruc.c             Generate averaged structures from STAMP output (main program)
+  c_split.c              C split function (like perl)
+  ccprobcalc.c           Corner cutting probability matrix generation
+  check.c                PDB checker (PDBC) main program
+  clean_block.c          Cleans block files
+  clus2blc.c             Converts CLUSTAL NBRF-PIR format to BLOC format
+  cluster.h              Cluster analysis include file
+  count_domain.c         Counts number of domain entries in a file
+  defaults.h             AMPS defaults structures file
+  disp.c                 Displays data
+  display_align.c        Displays alignments
+  domain.h               Domain include file
+  dosort.c               Sorts SW alignments according to score
+  dstamp.c               Convert STAMP alignments to ALSCRIPT format (main program)
+  dstamp.h               Include file for the above
+  dstampgetpars.c        Get parameters for the above
+  dstampreadcom.c        Read command line for the above
+  extract_dssp.c         Get a particular fraction of a DSSP file
+  extract_pdb.c          Get a particular fraction of a PDB file
+  extrans.c              EXTRANS main program
+  f2c.h                  FORTRAN 2 C include file
+  fmatfit.c              MATRIX fitting using floating point coordinates
+  fmatinv.c              MATRIX  inversion using floating point coordinates
+  fmatmult.c             MATRIX  multiplication using floating point coordinates
+  general.h              General include file
+  get_clust.c            Gets clusters using GJB's OC routines
+  getca.c                Read in Calpha atoms
+  getdomain.c            Read in domain entries
+  getdsspsum.c           Read in DSSP summaries from DSSP file
+  getfile.c              Get PDB/DSSP file for a PDB code
+  getks.c                Get Kabsch and Sander summaries
+  getrksum.c             Get DEFINE summaries
+  getsec.c               Read in secondary structure assignments for a file
+  getstampdat.c          Read in STAMP data from a file
+  getstamprel.c          Get STAMP reliability data given STAMP data
+  gjnoc.c                GJB's cluster analysis routines
+  gjnoc.h                Include file for the above
+  gjutil.c               GJB's utilities
+  gjutil.h               Include file for the above
+  gstamp.c               Make intput for MOLSCRIPT from STAMP output (main program)
+  header.c               Copyright header
+  hsort.c                HEAP sort (GJB after Numerical recipes)
+  idist.c                Get distance between two integer coordinates
+  igetca.c               Get coordinates in integer format (Calpha)
+  igetcadssp.c           Get coordinates in integer format (Calpha) from DSSP file
+  igetcb.c               Get/generate Cbeta coordinates
+  igetcb.h               Include file for the above
+  igetgen.c              Get general atom type from a file
+  igetside.c             Side chain getting code (under development)
+  include.h              General include file
+  ltou.c                 Change lower to upper case
+  makeafile.c            Make a stamp output file (alignment)
+  makefile.irix5.2       SGI IRIX 5.2 make file
+  makefile.irix6.3       SGI IRIX 6.3 make file
+  makefile.osf3.0        DEC OSF 3.0 make file
+  makefile.sunos4.1.3    SunOS 4.1.3 make file
+  matfit.c               Matrix fitting (integer coordinates)
+  matinv.c               Matrix inversion (integer coordinates)
+  matmult.c              Matrix multiplication (integer coordinates)
+  matprod.c              Matrix product (integer coordinates)
+  matvecprod.c           Matrix and vector product (integer coordinates)
+  mergetrans.c           MERGETRANS main program
+  msf2blc.c              Change MSF alignment format to AMPS style block format (main program)
+  msf2blc.h              Include file for the above.
+  newoutput.c            Output STAMP format
+  overlay.c              SLOW/SCAN fitting
+  pairfit.c              Pairwise fitting routine
+  pairpath.c             Pairwise path tracing
+  pairwise.c             Pairwise mode main sub-routine
+  pdbseq.c               Generate sequence files from coordinate data (main program)
+  pickframe.c            Select a reference frame from a transformation file (main program)
+  poststamp.c            POSTSTAMP main program
+  poststamp.h            POSTSTAMP include file
+  printdomain.c          Display a domain identifier
+  printmat.c             Display a transformation
+  probcalc.c             Calculate a STAMP probability matrix
+  probplot.c             Plot a STAMP probability matrix
+  qkfit.c                Matrix fitting routine
+  readtree.c             Read in a tree
+  reval.c                Reverse an alignment
+  revmatmult.c           Reverse a matrix multiplication
+  rmsp.c                 Remove all spaces from a string
+  rossmann.c             Get Rossman and Argos probability
+  roughfit.c             Do an initial rough superimposition
+  routines.h             List of all routines (not used)
+  scan.c                 SCAN main sub-routine
+  sec_content.c          Calculate secondary structure content
+  seq_identity.c         Calculate sequence identity
+  slow_scan.c            SLOW_SCAN main sub-routine
+  smoothsec.c            Smooth out a secondary structure assignment (ignore short elements)
+  smsf2blc.c             Change MSF alignment format to AMPS style block format (main program)
+  sorttrans.c            Sort SCAN output (main program)
+  stamp.c                STAMP main program
+  stamp.h                STAMP include file
+  stamp2casp.c           STAMP2CASP main program
+  stamp_clean_block.c    Clean  STAMP style block file
+  stampgetpars.c         Get stamp parameters
+  stamprel.h             STAMP reliability information include file
+  sw7ccs.c               Corner cutting Smith-Waterman routine
+  swstruct.c             Normal Smith-Waterman routine
+  testfile.c             Test whether a file exists
+  threestate.c           Change a secondary structure assignment to three-state
+  transform.c            Transform coordinates (main program)
+  treefit.c              Treewise fitting
+  treepath.c             Treewise path tracing
+  treewise.c             Treewise main sub-routine
+  update.c               Combine two transformations
+  utol.c                 Upper-to-lower case
+  vector.c               Vector operations routines
+  ver2hor.c              VER2HOR main program
+  ver2hor.h              Include file for the above
+
+examples/
+  ac_prot/		 aspartic proteinase example files
+  ig/			 immunoglobulin example files
+  globin/		 globin example files
+  s_prot/		 serine proteinase example files
+
+
+doc/
+  stamp.tex		 LaTeX version of STAMP manual
+  stamp.bbl              BiBTeX entries for STAMP manaul
+  stamp_a4.ps            PostScript version of STAMP manual (A4 paper)
+  stamp_us.ps            PostScript version of STAMP manual (US letter)
+  license                Copy of license agreement
+  appendix_A             This list of files
+
+defs/			 Various data/defaults files used by the package
+  stamp.defaults
+  pdb.directories
+  dssp.directories
+  brookhaven_subset.domains
+
+bin/			 Pre-compiled binaries
+  sun/			   for Sun SunOS 4.1.3
+  sgi/                     for SGI IRIX 5.2
+  osf/                     for DEC alpha OSF1/V3.0
