@@ -188,7 +188,7 @@ main(int argc, char *argv[]) {
              }
           }
           if(which2==-1) {
-             fprintf(stderr," Error: ID %s not found in file\n",infile2);
+             fprintf(stderr," Error: ID %s not found in file %s\n",id,infile2);
              fprintf(stderr," The identifiers in the file are:\n"); 
              for(i=0; i<ndomain2; ++i) fprintf(stderr,"          %s\n",domain2[i].id);
              exit(-1);
@@ -277,7 +277,7 @@ main(int argc, char *argv[]) {
                R[i+1][j+1]=domain2[which2].R[i][j];
             }
           }
-          matinv(R,RI,sign,indx);
+          matinv(R,RI,i&sign,indx);
           for(i=0; i<3; ++i) {
              for(j=0; j<3; ++j) {
                 invmat[i][j]=RI[i+1][j+1];

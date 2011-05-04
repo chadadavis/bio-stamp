@@ -170,7 +170,7 @@ main(int argc, char *argv[]) {
 /*	printf("The matrix:\n");
 	printmat(domain[which].R,domain[which].V,3,stdout);
 */
-	matinv(R,RI,sign,indx);
+	matinv(R,RI,&sign,indx);
 
 	for(i=0; i<3; ++i) { 
 	   for(j=0; j<3; ++j) {
