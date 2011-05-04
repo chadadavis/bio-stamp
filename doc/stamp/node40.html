@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>ALIGNFIT</TITLE>
+<META NAME="description" CONTENT="ALIGNFIT">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node41.html">
+<LINK REL="previous" HREF="node39.html">
+<LINK REL="up" HREF="node37.html">
+<LINK REL="next" HREF="node41.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html616"
+ HREF="node41.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html613"
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html607"
+ HREF="node39.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html615"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html617"
+ HREF="node41.html">VER2HOR</A>
+<B> Up:</B> <A NAME="tex2html614"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html608"
+ HREF="node39.html">PDBSEQ</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00523000000000000000">
+ALIGNFIT</A>
+</H2>
+
+<P>
+ALIGNFIT takes a multiple sequence alignment of proteins of known 3D structures
+and uses it to superimpose them. It requires two files: an 
+AMPS multiple sequence alignment (block format), and a domain 
+description file.  An optional parameter file may be supplied; if 
+none is given the program simply uses default parameters.
+<BR>
+<BR>
+The format is:
+<BR>
+
+<P><PRE>
+alignfit -a &lt;AMPS file&gt; -d &lt;domain file&gt; 
+   (-P &lt;optional parm file&gt; -&lt;parameter&gt; &lt;value&gt;)
+</PRE>
+<P>
+-P can be used to read in an old ALIGNFIT parameter file (version 3.0 and earlier)
+The possible parameters, and their defaults are (names are case 
+insensitive):
+<BR>
+<BR>
+PAIRWISE &lt;boolean&gt;
+<BR>
+If TRUE, then pairwise comparisons will be performed to derive a
+matrix (MATFILE).
+<BR>
+Default PAIRWISE = TRUE
+<BR>
+<BR>
+TREEWISE &lt;boolean&gt;
+<BR>
+If TRUE, then treewise comparisons will be performed to derive a
+final transformation.
+<BR>
+Default TREEWISE = TRUE
+<BR>
+<BR>
+MATFILE &lt;string&gt;
+<BR>
+The file into which the results of PAIRWISE are output.
+<BR>
+Default MATFILE = alignfit.mat
+<BR>
+<BR>
+MAX_SEQ_LEN &lt;integer&gt;
+<BR>
+The maximum length of alignment to be tolerated.
+<BR>
+Default is 3000
+<BR>
+<BR>
+For most purposes, the default parameters should suffice.  Note that one can
+use ACONVERT to convert CLUSTAL and MSF formats to block format, so that one can use alignments created
+using other programs (e.g. PILEUP, CLUSTAL, etc.) as a starting point for superimposition.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html616"
+ HREF="node41.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html613"
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html607"
+ HREF="node39.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html615"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html617"
+ HREF="node41.html">VER2HOR</A>
+<B> Up:</B> <A NAME="tex2html614"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html608"
+ HREF="node39.html">PDBSEQ</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -30,7 +30,7 @@ S T A M P\\
 \end{Huge}
 \begin{Large}
 Structural Alignment of Multiple Proteins \\
-Version 4.3\\
+Version 4.2\\
 User Guide\\
 \end{Large}
 \end{bf}
@@ -48,21 +48,21 @@ comparison, {\em PROTEINS: Struct. Funct. Genet.},{\bf 14},
 
 \vskip 0.25in
 
-The STAMP authors contact addresses (16 August 2002) are:
+The STAMP authors contact addresses (23 March 1999) are:
 
 \vskip 0.1in
 
 \begin{tabular}{ll}
-Robert B. Russell (RBR)		         & Prof. Geoffrey J. Barton (GJB)\\
-EMBL - European Bioinformatics Institute & School of Life Sciences\\
-Meyerhofstrasse 1                        & University of Dundee\\
-D-69117 Heidelberg                       & Dow Street\\
-Germany                                  & Dundee, DD1 5EH\\
-                                         & \\
-Tel: +49 6221 387 473                    & Tel: +44 1382 345860\\
-FAX: +44 6221 387 517                    & FAX: +44 1382 345764\\
-e-mail: russell@embl-heidelberg.de       & e-mail geoff@compbio.dundee.ac.uk\\
-WWW:http://russell.embl-heidelberg.de    & WWW: http://www.compbio.dundee.ac.uk \\
+Robert B. Russell (RBR)		   & Geoffrey J. Barton (GJB)\\
+SmithKline Beecham Pharmaceuticals & EMBL -- European Bioinformatics Institute\\
+Bioinformatics                     & Wellcome Trust Genome Campus\\
+New Frontiers Science Park         & Hinxton, Cambridge, CB10 1SD U.K.\\
+Third Avenue                       & \\
+Harlow, Essex, CM19 5AW            & \\
+Tel: +44 1279 622 884              & Tel: +44 1223 494414\\
+FAX: +44 1279 622 200              & FAX: +44 1223 494468\\
+e-mail: russelr1@mh.uk.sbphrd.com  & e-mail geoff@ebi.ac.uk\\
+                                   & WWW: http://barton.ebi.ac.uk// \\
 \end{tabular}
 \vskip 0.25in
 \noindent
@@ -73,7 +73,7 @@ at the end of this document.
 
 \vskip 0.1in
 
-This work was originally developed in the Laboratory of Molecular
+Note that this work was originally developed in the Laboratory of Molecular
 Biophysics, University of Oxford.
 \noindent
 
@@ -86,8 +86,6 @@ Biophysics, University of Oxford.
 \parindent 0in
 
 \chapter{Introduction and Overview}
-\section{Preface to Version 4.3}
-
 
 \section{Preface to Version 4.2}
 
@@ -179,7 +177,7 @@ than 10 residues, etc.).  Complicated things are possible with STAMP but
 as a consequence, the method is very detailed.  Please be patient, and 
 read this manual carefully.\\
 \\
-Alternatively, if you only want to do fairly straightforward things, such
+Alternatively, if you only want to to fairly straightforward things, such
 as align a set of structures or search a database of structures for
 similarities, you can skip this entire chapter and go straight to the
 next one, which contains a few worked examples that should demonstrate how
@@ -368,7 +366,7 @@ PAIRWISE similarity scores, the TREEWISE option will
 perform all alignments that are possible given a dendrgoram (generated 
 by considering the PAIRIWISE scores). 
 Statistics, transformations and alignments are output at each stage
-of the hierarchy so that a continuum of structure variation can be
+of the hierarchy so that a continuim of structure variation can be
 observed (ie. the output will get more and more structural varied
 as the program progresses).\\
 \\
@@ -609,7 +607,7 @@ for each aligned structure, with structually equivalent regions
 shown as ribbons, the rest as ${\rm C}_{\alpha}$ trace.
 
 
-\section{Some comments on interpretting structural similarities}
+\section{Some comments on interperetting structural similarities}
 
 There is a wealth of literature on the nature of protein structural similarities, 
 and this manual is not the place to review them.  If you want to look into
@@ -760,8 +758,8 @@ sequence similarity that are not detectable during a comparison of
 sequence.  The files for this example are in the directory examples/s\_prot in the 
 directory where you have installed STAMP.\\
 \\
-A list of the domains is given in the file s\_prot.domains.  Note
- that you can create such a file by using the PDBC program.  
+A list of the domains is given in the file s\_prot.domains. The
+output.  Note that you can create such a file by using the PDBC program.  
 Running PDBSEQ:\\
 
 \begin{scriptsize}\begin{verbatim}
@@ -2869,8 +2867,8 @@ directory, such as /usr/local/bin.
 \section{Setting up STAMP files}
 
 To use STAMP, all users must define the environment variable
-STAMPDIR, and set it equal to the sub-directory /defs in which 
-the installation was made.  Users must also have STAMPDIR in their path. 
+STAMPDIR, and set it equal to the directory where you have done
+the installation.  Users must also have STAMPDIR in their path. 
 The logical thing is to make modifications to one's .cshrc file to
 this end.\\
 \\

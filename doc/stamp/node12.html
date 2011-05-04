@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Some comments on interperetting structural similarities</TITLE>
+<META NAME="description" CONTENT="Some comments on interperetting structural similarities">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html264"
+ HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html261"
+ HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html255"
+ HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html263"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html265"
+ HREF="node13.html">The programs contained within</A>
+<B> Up:</B> <A NAME="tex2html262"
+ HREF="node2.html">Introduction and Overview</A>
+<B> Previous:</B> <A NAME="tex2html256"
+ HREF="node11.html">Displaying STAMP output (VER2HOR,</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00250000000000000000">
+Some comments on interperetting structural similarities</A>
+</H1>
+
+<P>
+There is a wealth of literature on the nature of protein structural similarities, 
+and this manual is not the place to review them.  If you want to look into
+the subject, then I would refer you to some of my papers [<A
+ HREF="node58.html#rb94">11</A>,<A
+ HREF="node58.html#russell97b">13</A>,<A
+ HREF="node58.html#russell98a">14</A>]
+and references therein.
+<BR>
+<BR>
+An important aspect of assessing the meaning of structural similarity is discerning whether
+a similarity between proteins in the absense of obvious sequence identity implies a common
+evolutionary acestor, and usually an associated similarity in molecular function.  Some studies
+have found that it is possible to discern homology by the analysis of the sequence identity
+calculated following protein structure alignment.  Note that this is a very different 
+identity than that quoted during typical sequence comparison (e.g. BLAST, FASTA, SSEARCH, etc).
+During sequence comparison, the reported % identity is the result of optimising the alignment of
+two sequences, thus numbers as high as % 20-30 are possible for proteins that are definitely
+not homologous (i.e. those having different tertiary folds).  However, if an alignment has been
+derived without consideration of the amino acid sequence, then lower % identities can still
+be significant.  See Russell <EM>et al. </EM>, 1997, and Murzin, 1993 for examples, and more details.
+<BR> 
+<BR>
+STAMP reports both the % identity from structure comparison, defined as the precentage 
+residue identities (<I>m</I>) within structurally equivalent residues (<I>n</I>), and an estimate of the statistical
+significance (reported as <I>P</I>(<I>m</I>)) of a given a particular combination of <I>m</I> and <I>n</I>.  The latter is
+described in Murzin (1993).  Values of <I>P</I>(<I>m</I>) smaller than about 10<SUP>-3</SUP> very often indicate that
+the pair of proteins are within the same protein superfamily, which implies a common
+ancestor, and more importantly very often indicates a similarity in molecular function.  Specifically,
+the <I>P</I>(<I>m</I>) is calculated for a <I>p</I> = 0.1; please see Murzin (1993) for a more through explanation
+of this calculation.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html264"
+ HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html261"
+ HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html255"
+ HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html263"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html265"
+ HREF="node13.html">The programs contained within</A>
+<B> Up:</B> <A NAME="tex2html262"
+ HREF="node2.html">Introduction and Overview</A>
+<B> Previous:</B> <A NAME="tex2html256"
+ HREF="node11.html">Displaying STAMP output (VER2HOR,</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

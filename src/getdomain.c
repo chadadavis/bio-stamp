@@ -9,18 +9,17 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current addresses:
+ Of current contact addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Bioinformatics                      EMBL-European Bioinformatics Institute
+ SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
+ New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
+ Harlow, Essex, CM19 5AW, U.K.       
+ Tel: +44 1279 622 884               Tel: +44 1223 494 414
+ FAX: +44 1279 622 200               FAX: +44 1223 494 468
+ e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
+                                     WWW: http://barton.ebi.ac.uk/
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -34,7 +33,7 @@
 *****************************************************************************/
 #include <stdio.h>
 #include <string.h>
-#include "stamp.h"
+#include <stamp.h>
 
 /* Given a file containing a list of protein descriptors, returns
  *  a list of brookhaven starts and ends, or appropriate wild cards
@@ -101,18 +100,21 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	int nobjects;
 	int comment;
 	int pt;
+	int indom;
 
  	char c;
 	char *descriptor;
-	char *buff;
+	char *buff,*guff;
 	char *temp;
 	char *dirfile;
 	
 	FILE *TEST;
 
 	buff=(char*)malloc(2000*sizeof(char));
+	guff=(char*)malloc(2000*sizeof(char));
 	dirfile=(char*)malloc(500*sizeof(char));
 	descriptor=(char*)malloc(2000*sizeof(char));
+	(*gottrans)=0;
 	
 	if(DSSP) {
 	   sprintf(dirfile,"%s/dssp.directories",env);
@@ -123,34 +125,20 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	/* Now then, the best way to do this is to skip the comments, and
 	 *  then just read in a buff starting after the last newline, and
 	 *  ending at the end brace */
-	
-	while((c=getc(INPUT))!=(char)EOF) {
-	   if(c!='%' && c!='#' && c!='\n') { /* not a comment */
-	     /* lets just read in the whole thing */
-	     i=0;
-	     buff[i++]=c;
-	     while((c=getc(INPUT))!=(char)EOF && c!='}') {
-	       buff[i++]=c;
-	     }
-	     if(c==(char)EOF) break;
-	     buff[i]=c;
-	     buff[i+1]='\0';
-	     break;
-	   } else { /* skip over comment */
-	     while((c=getc(INPUT))!=(char)EOF && c!='\n');
-	     if(c==(char)EOF) break;
-	   }
-	}
-	if(c==(char)EOF) { /* End of file, no domain, exit */
-	   free(buff); free(dirfile); free(descriptor);
-	   return 1;
-	}
-	/* if we have a domain, and are not at the end of the file, 
-	 *  we should read until the end of the last line, to 
-	 *  leave the file pointer ready for next time */
-	while((c=getc(INPUT))!=(char)EOF && c!='\n');
 
-/*      printf("Domain is %s\n",buff); */
+	indom = 0;
+	buff[0]='\0';
+	while(fgets(guff,1999,INPUT)!=NULL) {
+	     if((guff[0]!='%') && (guff[0]!='#')) {
+		if(strstr(guff,"{")!=NULL) { indom=1; }
+		if(indom) {
+			sprintf(&buff[strlen(buff)],"%s",guff);
+		}
+		if(strstr(guff,"}")!=NULL) { indom=0; break; }
+	     }
+	}
+		 
+/*	printf("Domain is %s\n",buff);      */
 
 	/* First read the file name */
 
@@ -169,6 +157,7 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	    fprintf(OUTPUT,"file for %s not found, nor was any corrsponding file\n",domain[0].id);
 	    fprintf(OUTPUT,"   found in %s\n",dirfile);
 	    free(buff); free(dirfile); free(descriptor);
+	    free(guff);
 	    return -1; 
 	  } else {
 	    strcpy(&domain[0].filename[0],temp);
@@ -179,11 +168,9 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	}
 	   
 
-/*
-	printf("Updated file and id %s and %s\n",domain[0].filename,domain[0].id); 
+/*	printf("Updated file and id %s and %s\n",domain[0].filename,domain[0].id); 
 	printf("Buff is %s\n",buff); 
-	printf("Length is %d\n",strlen(buff)); 
-*/
+	printf("Length is %d\n",strlen(buff)); */
 
 	if((pt=skiptononspace(buff,pt))==-1) getdomain_error(buff);
 	/* copy the bit between the braces into the string called descriptor */
@@ -307,6 +294,7 @@ int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FIL
 	   free(dirfile);
 	   free(descriptor);
 	   free(buff);
+	   free(guff);
 	   return 0;
 }
 
@@ -318,7 +306,7 @@ int skiptononspace(char *string, int pointer) {
 	return pointer;
 }
 
-int getdomain_error(char *buff) {
+void getdomain_error(char *buff) {
 	fprintf(stderr,"error in domain descriptors\n");
 	fprintf(stderr,"Last domain read:\n%s\n",buff);
 	exit(-1);

@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Preface to Version 4.2</TITLE>
+<META NAME="description" CONTENT="Preface to Version 4.2">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html162"
+ HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html159"
+ HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html153"
+ HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html161"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html163"
+ HREF="node4.html">Overview</A>
+<B> Up:</B> <A NAME="tex2html160"
+ HREF="node2.html">Introduction and Overview</A>
+<B> Previous:</B> <A NAME="tex2html154"
+ HREF="node2.html">Introduction and Overview</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00210000000000000000">
+Preface to Version 4.2</A>
+</H1>
+
+<P>
+First, a big acknowledgement to Steve Searle (European Bioinformatics Institute)
+for getting STAMP to run (finally) under OSF and 64 bit machines generally.
+Also thanks to Andrew Torda 
+(Australian National University, Canberra), Dave Schuller (University of California-Irvine),
+Mike Tennant (SmithKline Beecham Pharmaceuticals, Harlow, UK),
+Asim Siddiqui (LMB, Oxford) G.P.S. Raghava (LMB, Oxford), and James Cuff (EBI)
+for their help and various painstaking trawls through my spaghetti code.
+<BR>
+<BR>
+Apart from bugs, etc., the noticable changes are:
+<BR>
+<BR>
+1. STAMP now reads compressed PDB and DSSP files.  It will also look for files that
+are stored in a brookhaven style directory structure (e.g. distr/mb/pdb4mbn.ent).
+<BR>
+<BR>
+2. Output is now flushed (fflush) during scanning.  Purely a cosmetic thing for those who
+want up to the minute output when the program is running.
+<BR>
+<BR>
+3. AVESTRUC now has an option to calculate an average for all aligned positions.  It also
+now outputs values to the temperature factor fields in the PDB output to denote those
+averaged positions corresponding to structurally equivalent regions (blue in RASMOL 
+colour by temperature) and those equivalenced fortuitously (red).  It will also highlight
+positions showing identical or conserved residue character.
+<BR>
+<BR>
+4. PDBSEQ has some new options, including the ability to output <EM>separate</EM> files
+for each domain, and now outputs a sensible description of the protein by
+considering the TITLE, COMPND and SOURCE entries in each PDB file.  Note that the
+default format is now FASTA.
+<BR>
+<BR>
+5. DSTAMP has been changed drammatically, and is now (I think) much more useful.  The
+input files for ALSCRIPT are now much prettier, including cylinders/arrows for helices/strands 
+and colouring/fonting according to residue property conservation within the sequence alignment.
+It can also be used on alignments not derived using STAMP (i.e. from GCG, AMPS etc.).
+<BR>
+<BR>
+6. STAMP now appears to run smoothly under OSF.  Once again thanks to Steve Searle.  Versions
+have also been compiled and tested on IRIX, Solaris and Linux.
+<BR>
+<BR>
+7. CLUS2BLC and SMSF2BLC have been replaced by a general alignment conversion program written
+in PERL (ACONVERT).  More details are given below.  Note that this is a general alignment
+conversion utility that might be useful in other contexts apart from STAMP.
+<BR>
+<BR>
+8. The significance of sequence identity following structural alignment is now estimated 
+according to Murzin (1993), JMB, 230, 689-694.
+<BR>
+<BR>
+9. Three new programs have been added to the package (see specific instructions below):
+<BR>
+<BR>
+MERGETRANS allows one to combine transformations from a variety of different 
+sources (i.e. ALIGNFIT and STAMP).  It either uses a user-specified identifier to link the 
+two files (i.e. one found in both files) or the first common identifier if none is specified.
+<BR>
+<BR>
+MERGESTAMP.  Like MERGETRANS this program permits one to merge
+various kinds of STAMP data.  However, it considers more than merely
+the transformations, and attempts to combine the alignments as well.
+It can be used in exactly the same way as MERGETRANS (i.e. to combine
+files that contain only transformations), but will also attempt to merge
+alignments in the file, if they are present.  The alignments must be
+in BLOCK format (see the depths of the manual for details, and for how
+to convert things like Clustal or MSF into BLOCK format).  MERGESTAMP
+can combine files that do not contain transformations as well (i.e. those
+that contain only alignments), and can thus be used for sequence data
+handling as well.
+<BR>
+<BR>
+EXTRANS allows one to select and extract particular domains from a transformation file. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html162"
+ HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html159"
+ HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html153"
+ HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html161"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html163"
+ HREF="node4.html">Overview</A>
+<B> Up:</B> <A NAME="tex2html160"
+ HREF="node2.html">Introduction and Overview</A>
+<B> Previous:</B> <A NAME="tex2html154"
+ HREF="node2.html">Introduction and Overview</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

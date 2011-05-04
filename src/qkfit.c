@@ -9,18 +9,17 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current addresses:
+ Of current contact addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Bioinformatics                      EMBL-European Bioinformatics Institute
+ SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
+ New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
+ Harlow, Essex, CM19 5AW, U.K.       
+ Tel: +44 1279 622 884               Tel: +44 1223 494 414
+ FAX: +44 1279 622 200               FAX: +44 1223 494 468
+ e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
+                                     WWW: http://barton.ebi.ac.uk/
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -67,17 +66,12 @@
 */
 
 #include <stdio.h>
-#include <math.h>
-#include "f2c.h"
+#include <f2c.h>
 
 /* Table of constant values */
 
 static integer c__3 = 3;
 static integer c__0 = 0;
-
-/* SMJS Added prototypes */
-int eigen_(doublereal *a, doublereal *r, integer *n, integer *mv);
-int esort_(doublereal *a, doublereal *r, integer *n, integer *mv);
 
 /* Subroutine */ 
 int qkfit(doublereal *umat, doublereal *rtsum, doublereal *r, integer *entry_) {
@@ -98,7 +92,7 @@ int qkfit(doublereal *umat, doublereal *rtsum, doublereal *r, integer *entry_) {
 	doublereal fill_3[2];
 	doublereal e_4;
 	doublereal fill_5[3];
-	} equiv_6 = { {0.}, {0.}, {0.}, 0., {0.} };
+	} equiv_6 = { {0}, 0., 0., {0}, 0. };
 
 
     /* System generated locals */
@@ -106,7 +100,7 @@ int qkfit(doublereal *umat, doublereal *rtsum, doublereal *r, integer *entry_) {
     static doublereal equiv_7[9];
 
     /* Builtin functions */
-/* SMJS   double sqrt(), d_sign(), atan(), cos();*/
+    double sqrt(), d_sign(), atan(), cos();
 
     /* Local variables */
     static doublereal diff;
@@ -116,13 +110,9 @@ int qkfit(doublereal *umat, doublereal *rtsum, doublereal *r, integer *entry_) {
 #define b (equiv_7)
     static integer i, j, k;
     static doublereal s, t;
-/* SMJS
-    extern int eigen_();
-*/
+    extern /* Subroutine */ int eigen_();
     static doublereal digav, theta, argsq, b1, b2;
-/* SMJS
-    extern int esort_();
-*/
+    extern /* Subroutine */ int esort_();
     static doublereal cos3th, cc, b13, dd, b23;
     static integer ia;
     static doublereal b33, qq, rt;
@@ -198,8 +188,7 @@ int qkfit(doublereal *umat, doublereal *rtsum, doublereal *r, integer *entry_) {
     }
     qq = sqrt(forthr * cc);
     cos3th = three * dd / (cc * qq);
-/* SMJS changed abs to dabs */
-    if (dabs(cos3th) > one) {
+    if (abs(cos3th) > one) {
 /*	cos3th = d_sign(&one, &cos3th);  */
 /*      Change suggested by Andrew Torda with many thanks, etc. eliminates the need for the FORTRAN libraries */
 	cos3th = (cos3th > 0 ? one:-one); 
@@ -212,22 +201,17 @@ int qkfit(doublereal *umat, doublereal *rtsum, doublereal *r, integer *entry_) {
 	goto L1200;
     }
 /* L1100: */
-    theta = (double)1.570796327;
+    theta = (float)1.570796327;
     goto L1400;
 L1200:
     argsq = cos3th * cos3th;
-    theta = atan(sqrt((double)1. - argsq) / cos3th);
+    theta = atan(sqrt((float)1. - argsq) / cos3th);
     if (cos3th < 0.) {
 	theta = pi - theta;
     }
 L1400:
 
 /*     ROOTS IN ORDER OF SIZE GO 1,2,3 1 LARGEST */
-
-/* SMJS Added root initialisation */
-    root[0] = (double)0.;
-    root[1] = (double)0.;
-    root[2] = (double)0.;
 
     theta *= third;
     root[0] = qq * cos(theta);
@@ -239,15 +223,15 @@ L115:
 
 /*     SPECIAL FOR TRIPLY DEGENERATE */
 
-    root[0] = (double)0.;
-    root[1] = (double)0.;
-    root[2] = (double)0.;
+    root[0] = (float)0.;
+    root[1] = (float)0.;
+    root[2] = (float)0.;
 L120:
 /*     ADD ON DIGAV AND TAKE SQRT */
     for (j = 1; j <= 3; ++j) {
 	rt = root[j - 1] + digav;
 	if (rt < eps) {
-	    rt = (double)0.;
+	    rt = (float)0.;
 	}
 	root[j - 1] = sqrt(rt);
 /* L125: */
@@ -362,7 +346,7 @@ L200:
 
     for (i = 1; i <= 3; ++i) {
 	if (root[i - 1] < 0.) {
-	    root[i - 1] = (double)0.;
+	    root[i - 1] = (float)0.;
 	}
 	root[i - 1] = sqrt(root[i - 1]);
 /* L280: */
@@ -399,19 +383,16 @@ L200:
 /* ---- ORDER AS EIGENVALUES. */
 /* ---- N - ORDER OF MATRICES A & R. */
 /* ---- MV = 0 TO COMPUTE EIGENVALUES & EIGENVECTORS. */
-int eigen_(doublereal *a, doublereal *r, integer *n, integer *mv)
-/* SMJS
-int eigen_(a, r, n, mv)
+/* Subroutine */ int eigen_(a, r, n, mv)
 doublereal *a, *r;
 integer *n, *mv;
-*/
 {
     /* System generated locals */
     integer i_1, i_2;
     doublereal d_1;
 
     /* Builtin functions */
-/*    double sqrt(); */
+    double sqrt();
 
     /* Local variables */
     static doublereal cosx, sinx, cosx2, sinx2;
@@ -432,8 +413,7 @@ integer *n, *mv;
 
     /* Function Body */
 /* L5: */
-/* SMJS Comment above says should be 1.D-12. It was 1.E-6 */
-    range = (double)1e-12;
+    range = (float)1e-6;
     if (*mv - 1 != 0) {
 	goto L10;
     } else {
@@ -447,21 +427,21 @@ L10:
 	i_2 = *n;
 	for (i = 1; i <= i_2; ++i) {
 	    ij = iq + i;
-	    r[ij] = (double)0.;
+	    r[ij] = (float)0.;
 	    if (i - j != 0) {
 		goto L20;
 	    } else {
 		goto L15;
 	    }
 L15:
-	    r[ij] = (double)1.;
+	    r[ij] = (float)1.;
 L20:
 	    ;
 	}
     }
 /* ---- INITIAL AND FINAL NORMS (ANORM & ANRMX) */
 L25:
-    anorm = (double)0.;
+    anorm = (float)0.;
     i_2 = *n;
     for (i = 1; i <= i_2; ++i) {
 	i_1 = *n;
@@ -486,7 +466,7 @@ L35:
 	goto L40;
     }
 L40:
-    anorm = sqrt(anorm * (double)2.);
+    anorm = sqrt(anorm * (float)2.);
     anrmx = anorm * range / *n;
 /* ---- INITIALIZE INDICATORS AND COMPUTE THRESHOLD */
     ind = 0;
@@ -503,8 +483,7 @@ L60:
     lq = (l * l - l) / 2;
     lm = l + mq;
 /* L62: */
-/* SMJS changed abs to dabs */
-    if ((d_1 = a[lm], dabs(d_1)) - thr >= 0.) {
+    if ((d_1 = a[lm], abs(d_1)) - thr >= 0.) {
 	goto L65;
     } else {
 	goto L130;
@@ -513,7 +492,7 @@ L65:
     ind = 1;
     ll = l + lq;
     mm = m + mq;
-    x = (a[ll] - a[mm]) * (double).5;
+    x = (a[ll] - a[mm]) * (float).5;
 /* L68: */
 /* Computing 2nd power */
     d_1 = a[lm];
@@ -526,12 +505,12 @@ L65:
 L70:
     y = -y;
 L75:
-    sinx = y / sqrt((sqrt((double)1. - y * y) + (double)1.) * (double)2.);
+    sinx = y / sqrt((sqrt((float)1. - y * y) + (float)1.) * (float)2.);
 /* Computing 2nd power */
     d_1 = sinx;
     sinx2 = d_1 * d_1;
 /* L78: */
-    cosx = sqrt((double)1. - sinx2);
+    cosx = sqrt((float)1. - sinx2);
 /* Computing 2nd power */
     d_1 = cosx;
     cosx2 = d_1 * d_1;
@@ -590,7 +569,7 @@ L120:
 L125:
 	;
     }
-    x = a[lm] * (double)2. * sincs;
+    x = a[lm] * (float)2. * sincs;
     y = a[ll] * cosx2 + a[mm] * sinx2 - x;
     x = a[ll] * sinx2 + a[mm] * cosx2 + x;
     a[lm] = (a[ll] - a[mm]) * sincs + a[lm] * (cosx2 - sinx2);
@@ -639,12 +618,9 @@ L165:
 S*/
 } /* eigen_ */
 
-int esort_(doublereal *a, doublereal *r, integer *n, integer *mv)
-/* SMJS
-int esort_(a, r, n, mv)
+/* Subroutine */ int esort_(a, r, n, mv)
 doublereal *a, *r;
 integer *n, *mv;
-*/
 {
     /* System generated locals */
     integer i_1, i_2, i_3;

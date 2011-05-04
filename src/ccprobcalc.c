@@ -9,18 +9,17 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current addresses:
+ Of current contact addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Bioinformatics                      EMBL-European Bioinformatics Institute
+ SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
+ New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
+ Harlow, Essex, CM19 5AW, U.K.       
+ Tel: +44 1279 622 884               Tel: +44 1223 494 414
+ FAX: +44 1279 622 200               FAX: +44 1223 494 468
+ e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
+                                     WWW: http://barton.ebi.ac.uk/
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -36,7 +35,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "stamp.h"
+#include <stamp.h>
 
 int ccprobcalc(int **atoms1, int **atoms2, int **prob, int lena, int lenb, 
 	struct parameters *parms)
@@ -55,13 +54,9 @@ int ccprobcalc(int **atoms1, int **atoms2, int **prob, int lena, int lenb,
 	float sum,sumsq;
         float Dij,Cij,mean,sd,const1,const2;
 	float fcut,fm,fn,jt,fk1;
-/* SMJS Added inverse precision squared constant */
-        float prec2i;
 
-/* SMJS Use inverse constants in rossmann */
-        prec2i=1.0/(float)(parms[0].PRECISION*parms[0].PRECISION);
-	const1=(1.0/parms[0].const1)*prec2i;
-	const2=(1.0/parms[0].const2)*prec2i;
+	const1=parms[0].const1;
+	const2=parms[0].const2;
 
 	mean=((float)parms[0].PRECISION*parms[0].NMEAN); 
 	sd=((float)parms[0].PRECISION*parms[0].NSD); 
@@ -103,19 +98,15 @@ int ccprobcalc(int **atoms1, int **atoms2, int **prob, int lena, int lenb,
 	      }
 	    }
 	    if(!parms[0].BOOLEAN) {
-/* Use prec2i instead of parms[0].PRECISION */
-/* Now incorporate prec2i into const1 and const2 */
                prob[jj][ii]=(int)((float)parms[0].PRECISION*rossmann(&atoms1[j],&atoms2[i],
 			   (i==0 || j==0),(j==lena-1 || i==lenb-1),
-			   const1,const2,&Dij,&Cij)); 
+			   const1,const2,&Dij,&Cij,parms[0].PRECISION)); 
                prob[jj][ii]=(int)( (float)parms[0].PRECISION*((float)((float)prob[jj][ii]-mean)/(float)(sd)));
 	       sum+=(float)prob[jj][ii]; sumsq+=(float)(prob[jj][ii]*prob[jj][ii]); 
 /*		prob[jj][ii]=10*parms[0].PRECISION; */
 	    } else {
-/* Use prec2i instead of parms[0].PRECISION */
-/* Now incorporate prec2i into const1 and const2 */
 	       prob[jj][ii]=(rossmann(&atoms1[j],&atoms2[i], (i==0 || j==0),(j==lena-1 || i==lenb-1),
-			       const1,const2,&Dij,&Cij)>=parms[0].BOOLCUT);
+			       const1,const2,&Dij,&Cij,parms[0].PRECISION)>=parms[0].BOOLCUT);
 	    }
 	    l2:; /* jump to here if corner cutting */
          }  /* for (i=... */

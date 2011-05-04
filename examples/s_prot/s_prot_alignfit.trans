@@ -7,34 +7,34 @@
 % You can also get a refined StAMP alignment by
 %  typing stamp -l s_prot_alignfit.trans [ other parameters]
 %
-%Domain   1 /db/pdb//pdb4cha.ent 4chaa
+%Domain   1 /disk3/pdb/pdb4cha.ent 4chaa
 % chain A (239 CAs) 
 %  239 CAs in total
-%Domain   2 /db/pdb//pdb3est.ent 3est
+%Domain   2 /disk3/pdb/pdb3est.ent 3est
 % all residues (240 CAs) 
 %  240 CAs in total
-%Domain   3 /db/pdb//pdb2ptn.ent 2ptn
+%Domain   3 /disk3/pdb/pdb2ptn.ent 2ptn
 % all residues (223 CAs) 
 %  223 CAs in total
-%Domain   4 /db/pdb//pdb1ton.ent 1ton
+%Domain   4 /disk3/pdb/pdb1ton.ent 1ton
 % all residues (227 CAs) 
 %  227 CAs in total
-%Domain   5 /db/pdb//pdb3rp2.ent 3rp2a
+%Domain   5 /disk3/pdb/pdb3rp2.ent 3rp2a
 % chain A (224 CAs) 
 %  224 CAs in total
-%Domain   6 /db/pdb//pdb2pka.ent 2pkaab
+%Domain   6 /disk3/pdb/pdb2pka.ent 2pkaab
 % chain A ( 80 CAs) chain B (152 CAs) 
 %  232 CAs in total
-%Domain   7 /db/pdb//pdb1sgt.ent 1sgt
+%Domain   7 /disk3/pdb/pdb1sgt.ent 1sgt
 % all residues (223 CAs) 
 %  223 CAs in total
-%Domain   8 /db/pdb//pdb2sga.ent 2sga
+%Domain   8 /disk3/pdb/pdb2sga.ent 2sga
 % all residues (181 CAs) 
 %  181 CAs in total
-%Domain   9 /db/pdb//pdb3sgb.ent 3sgbe
+%Domain   9 /disk3/pdb/pdb3sgb.ent 3sgbe
 % chain E (185 CAs) 
 %  185 CAs in total
-%Domain  10 /db/pdb//pdb2alp.ent 2alp
+%Domain  10 /disk3/pdb/pdb2alp.ent 2alp
 % all residues (198 CAs) 
 %  198 CAs in total
 % There are  157 non-gapped positions in block file
@@ -147,43 +147,43 @@
 % CAs to fit:  200,  RMS between ave atoms:    3.26625.
 %Cluster:    9 (2alp 2sga 3sgbe ) and (1sgt 3rp2a 1ton 4chaa 3est 2ptn 2pkaab )
 % CAs to fit:  157,  RMS between ave atoms:   12.17634.
-/db/pdb//pdb4cha.ent 4chaa { CHAIN A 
+/disk3/pdb/pdb4cha.ent 4chaa { CHAIN A 
    0.03700   -0.30431    0.95185       -22.28074 
-   0.89474   -0.41412   -0.16718        30.39040 
+   0.89474   -0.41412   -0.16718        30.39039 
    0.44506    0.85785    0.25695         3.08989  }
-/db/pdb//pdb3est.ent 3est { ALL 
+/disk3/pdb/pdb3est.ent 3est { ALL 
    0.12564    0.47669    0.87005       -27.26115 
   -0.99177    0.08214    0.09821        15.30657 
   -0.02465   -0.87523    0.48309        19.77422  }
-/db/pdb//pdb2ptn.ent 2ptn { ALL 
-   0.43649   -0.86748   -0.23864        34.37846 
+/disk3/pdb/pdb2ptn.ent 2ptn { ALL 
+   0.43649   -0.86748   -0.23864        34.37847 
   -0.21006    0.15965   -0.96457        48.59360 
    0.87485    0.47115   -0.11253        12.90788  }
-/db/pdb//pdb1ton.ent 1ton { ALL 
+/disk3/pdb/pdb1ton.ent 1ton { ALL 
    0.40509    0.32800   -0.85342        51.97192 
-   0.79592   -0.58584    0.15264        49.82927 
+   0.79592   -0.58584    0.15264        49.82926 
   -0.44990   -0.74109   -0.49838        44.52839  }
-/db/pdb//pdb3rp2.ent 3rp2a { CHAIN A 
+/disk3/pdb/pdb3rp2.ent 3rp2a { CHAIN A 
   -0.37322    0.76277    0.52810        -1.18093 
    0.64663   -0.19431    0.73764       -17.49160 
    0.66526    0.61679   -0.42071         6.61483  }
-/db/pdb//pdb2pka.ent 2pkaab { CHAIN A  CHAIN B 
-   0.91048    0.27221    0.31134       -64.34634 
-  -0.26620   -0.19039    0.94493       -29.74743 
-   0.31649   -0.94321   -0.10089        89.00766  }
-/db/pdb//pdb1sgt.ent 1sgt { ALL 
+/disk3/pdb/pdb2pka.ent 2pkaab { CHAIN A  CHAIN B 
+   0.91048    0.27221    0.31134       -64.34635 
+  -0.26620   -0.19039    0.94493       -29.74742 
+   0.31649   -0.94321   -0.10089        89.00764  }
+/disk3/pdb/pdb1sgt.ent 1sgt { ALL 
   -0.17083    0.92320    0.34427        -7.82574 
    0.46692    0.38353   -0.79680        42.02510 
-  -0.86764    0.02463   -0.49658        51.92015  }
-/db/pdb//pdb2sga.ent 2sga { ALL 
+  -0.86764    0.02463   -0.49658        51.92014  }
+/disk3/pdb/pdb2sga.ent 2sga { ALL 
    0.25530   -0.55933   -0.78865        50.64307 
   -0.81385    0.31605   -0.48760        25.99883 
    0.52198    0.76634   -0.37452        15.92336  }
-/db/pdb//pdb3sgb.ent 3sgbe { CHAIN E 
+/disk3/pdb/pdb3sgb.ent 3sgbe { CHAIN E 
   -0.61204    0.79046    0.02419         0.22758 
    0.40065    0.28355    0.87125        -5.35468 
    0.68183    0.54293   -0.49024        10.09377  }
-/db/pdb//pdb2alp.ent 2alp { ALL 
+/disk3/pdb/pdb2alp.ent 2alp { ALL 
    1.00000    0.00000    0.00000         0.00000 
    0.00000    1.00000    0.00000         0.00000 
    0.00000    0.00000    1.00000         0.00000  }

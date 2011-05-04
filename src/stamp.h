@@ -57,7 +57,6 @@ struct parameters {
 	float SCORETOL;			
 	float THRESH;
         float CPUtime;			
-        float murzin_est;
 	int PRECISION;			
 	int MAX_SEQ_LEN;		
 	float PAIRPEN; 
@@ -293,10 +292,6 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
         struct brookn start, struct brookn end, int type, int MAXats,
         int REVERSE, int PRECISION, FILE *OUTPUT);
 
-int igetp_nt(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
-        struct brookn start, struct brookn end, int type, int MAXats,
-        int REVERSE, int PRECISION, FILE *OUTPUT);
-
 int igetcadssp(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
         struct brookn start, struct brookn end, int type, int MAXats, 
         int REVERSE, int PRECISION, FILE *OUTPUT);
@@ -324,7 +319,7 @@ float matfit(int **atoms1, int **atoms2, float **R, float *V,
         int nats, int entry, int PRECISION);
 
 
-void matinv(float **a, float **y, float d, int *indx);
+void matinv(float **a, float **y, float *d, int *indx);
 
 void lubksb(float **A, int n, int *indx, float b[]);
 
@@ -377,11 +372,8 @@ int revmatmult(float **r, float *v, int **coord, int n, int PRECISION);
 
 void rmsp(char *c);
 
-/* SMJS Changed to use precalculated inverse squared precision (float PREC2I) */
-/*      instead of int PRECISION */
-/* SMJS Removed precision argument (incorporated into constants) */
 float rossmann(int **atoms1, int **atoms2, int start, int end,
-        float const1, float const2, float *Dij, float *Cij);
+        float const1, float const2, float *Dij, float *Cij, int PRECISION);
 
 int roughfit(struct domain_loc *domain, int ndomain, struct parameters *parms);
 
@@ -398,7 +390,7 @@ int smoothsec(char *sec, int minhelixlen, int minstrandlen);
 
 int domdefine(struct domain_loc *domain, int *gottrans, char *env, int DSSP, FILE *INPUT, FILE *OUTPUT);
 int skiptononspace(char *string, int pointer);
-int getdomain_error(char *buff); 
+void getdomain_error(char *buff); 
 
 int getpars(FILE *fp, struct parameters *var);
 
@@ -406,13 +398,8 @@ int sw7ccs(int  lena, int lenb, int **prob, int pen, struct olist *result,
         int *total, unsigned char **patha, int min_score, 
         int auto_corner, float fk);
 
-/*
 int swstruc(int  lena, int lenb, int pen, int **prob, struct olist *result,
         int *total, unsigned char **patha, int min_score);
-*/
-int swstruc(const int  lena, const int lenb, const int pen, int ** prob, struct olist * const result,
-        int * total, unsigned char ** patha, const int min_score);
-
 
 int testfile(char *file);
 
@@ -451,17 +438,13 @@ float *RBR_vector_set_dist(float *V1, float R);
 char **RBR_c_split(char *str, int *n,  char delimiter);
 
 FILE *openfile(char *filename, char *type);
-int closefile(FILE *handle,char *filename);
+void closefile(FILE *handle,char *filename);
 
 /* SMJS Added */
 int present(struct path *new, struct olist *result);
 
-/* SMJS Changed to void */
-void addsco(struct path *new,struct olist *result,int *total);
+int addsco(struct path *new,struct olist *result,int *total);
 
 int transcompare(float **R1, float *V1, float **R2, float *V2, int dim);
 
 double murzin_P(int n, int m, double p);
-
-/* SMJS Added CopyPath */
-void CopyPath(struct path *to, struct path *from);

@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Alignment using an initial rough superimposition</TITLE>
+<META NAME="description" CONTENT="Alignment using an initial rough superimposition">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html319"
+ HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html316"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html310"
+ HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html318"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html320"
+ HREF="node17.html">Database Scanning</A>
+<B> Up:</B> <A NAME="tex2html317"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html311"
+ HREF="node15.html">Multiple alignment (PAIRWISE and</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00320000000000000000">
+Alignment using an initial rough superimposition</A>
+</H1>
+
+<P>
+This method avoids having to create an initial sequence alignment, and 
+tends to work for homologous proteins, or those having very similar 
+lengths despite no sequence similarity.
+<BR>
+<BR>
+<B>Globins</B>
+<BR>
+<BR>
+Since the globin sequences are of similar length an initial
+superimposition accurate enough to proceed with STAMP can be
+obtained by merely aligning the N-terminal ends of the sequences
+and using whatever equivalences result to obtain an initial 
+superimposition.  The command ROUGH (ROUGHFIT procedure) is used.  In addition,
+an initial conformation based fit is performed 
+in order that any inaccuracies in this initial superimposition may be corrected.  
+See the directory examples/globins.
+
+<P>
+To run STAMP in this example, type:
+
+<P><PRE>
+stamp -l globin.domains -rough -n 2 -prefix globin
+</PRE>
+<P>
+should produce the following on the standard output (ignoring the header):
+<BR>
+
+<P><PRE>
+Running roughfit.
+
+    Sc = STAMP score, RMS = RMS deviation, Align = alignment length
+    Len1, Len2 = length of domain, Nfit = residues fitted
+    Secs = no. equivalent sec. strucs. Eq = no. equivalent residues
+    %I = seq. identity, %S = sec. str. identity
+    P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
+
+     No.  Domain1  Domain2  Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S    P(m)
+Pair   1  2hhbb    2hhba    6.59  10.63    146  141   147  125 125    7  39.04  72.60 1.45e-24 
+Pair   2  2hhbb    2lhb     5.72  10.08    146  149   151  120 120    7  20.13  68.46 1.29e-06 
+Pair   3  2hhbb    4mbn     6.03   9.93    146  153   155  122 114    7  18.95  66.01 1.32e-06 
+Pair   4  2hhbb    1ecd     6.61  10.37    146  136   143  115 109    7  15.07  65.07 6.37e-04 
+Pair   5  2hhbb    1lh1     5.62  10.89    146  153   155  106  92    5   9.80  49.02 1.96e-02 
+                                     &lt;etc.&gt;
+Pair  14  4mbn     1lh1     4.73  10.30    153  153   159   91  77    6  10.46  45.75 2.21e-03 
+Pair  15  1ecd     1lh1     5.84  11.38    136  153   149  110 101    6  11.76  57.52 5.94e-03 
+Reading in matrix file globin.mat...
+Doing cluster analysis...
+Cluster: 1 (  2hhba &amp;   4mbn ) Sc 7.65 RMS 10.25 Len 148 nfit 134 
+                                     &lt;etc.&gt;
+Cluster: 5 (  1lh1 &amp;   2lhb  2hhba   4mbn  2hhbb   1ecd ) Sc 7.63 RMS 10.11 Len 158 nfit 112 
+ See file globin.5 for the alignment and transformations
+</PRE>
+<P>
+where the output and files are as described for the serine proteinase example above,
+with `s_prot' replaced with `globin'.
+<BR>
+
+<P>
+-rough performs the initial superimpositions (ROUGHFIT) and -n 2 means that the conformation 
+biased fit will be performed before the final fit.  This conformation biased fit is
+usually necessary when the initial superimpositions are approximate.
+<BR>
+<BR>
+ROUGHFIT will not always work.  Note that in this example all the pairwise
+<I>S</I><SUB><I>c</I></SUB> values are above 5.6, suggesting strong structural similarity.  If
+when using the ROUGHFIT option you find low <I>S</I><SUB><I>c</I></SUB> values (the program will
+cry out `LOW SCORE'), this usually means that ROUGHFIT hasn't
+managed to generate a good enough starting superimposition, and you should
+try something else, such as is described in the next section.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html319"
+ HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html316"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html310"
+ HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html318"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html320"
+ HREF="node17.html">Database Scanning</A>
+<B> Up:</B> <A NAME="tex2html317"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html311"
+ HREF="node15.html">Multiple alignment (PAIRWISE and</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

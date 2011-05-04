@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>POSTSTAMP</TITLE>
+<META NAME="description" CONTENT="POSTSTAMP">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node24.html">
+<LINK REL="previous" HREF="node22.html">
+<LINK REL="up" HREF="node22.html">
+<LINK REL="next" HREF="node24.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html399"
+ HREF="node24.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html396"
+ HREF="node22.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html390"
+ HREF="node22.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html398"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html400"
+ HREF="node24.html">STAMP_CLEAN</A>
+<B> Up:</B> <A NAME="tex2html397"
+ HREF="node22.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html391"
+ HREF="node22.html">Displaying/processing the output</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00381000000000000000">
+POSTSTAMP</A>
+</H2>
+
+<P>
+There is something inherrently wrong with the way STAMP assigns 
+equivalences within multiple alignments.  It considers an average set of 
+
+<!-- MATH: ${\rm C}_{\alpha}$ -->
+<IMG
+ WIDTH="28" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="${\rm C}_{\alpha}$">
+coordinates and uses an average set of probabilities to derive 
+equivalences when more than two structures are involved, and as a 
+consequence, it appears to go wrong (sometimes only) during this process.  
+Usually this is only when very distantly related proteins are being 
+considered.  A fix to this problem is to consider each pair of structures 
+within the alignment separately, and to re-calculate the <EM>raw</EM> 
+Rossmann and Argos probabilities.  One need then define positions as 
+structurally equivalent when <EM>all</EM> pairs of structures have a 
+<I>P</I><SUB><I>ij</I></SUB> value larger than a cutoff at a particular residue position.
+<BR>
+<BR>
+For example, for ten structures, there are (
+<!-- MATH: $10 \times 9/2) = 45$ -->
+<IMG
+ WIDTH="126" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.gif"
+ ALT="$10 \times 9/2) = 45$">
+pairs.  
+For a position to be structurally equivalent across all members of the 
+family, <I>P</I><SUB><I>ij</I></SUB> should be <IMG
+ WIDTH="49" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.gif"
+ ALT="$ \geq 0.5$">
+for all 45 pairs.  <BR>
+<BR>
+POSTSTAMP does just this.  It adds two new STAMP format fields to a STAMP
+alignment file: one tells 
+whether the above is true (1) or false (0) for each position (i.e. is 
+each position structurally equivalent across all members of the family); 
+the second tells how many pairwise comparison have <I>P</I><SUB><I>ij</I></SUB> greater than 
+or equal to the cutoff (e.g. 0.5).
+<BR>
+<BR>
+For example, <BR>
+
+<P><PRE>
+poststamp -f globin.5 -min 0.5
+</PRE>
+<P>
+Creates a file globin.5.post, containing the above data for a <I>P</I><SUB><I>ij</I></SUB> 
+value of 0.5.
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html399"
+ HREF="node24.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html396"
+ HREF="node22.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html390"
+ HREF="node22.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html398"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html400"
+ HREF="node24.html">STAMP_CLEAN</A>
+<B> Up:</B> <A NAME="tex2html397"
+ HREF="node22.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html391"
+ HREF="node22.html">Displaying/processing the output</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

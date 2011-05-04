@@ -1,0 +1,56 @@
+\contentsline {chapter}{\numberline {1}Introduction and Overview}{3}
+\contentsline {section}{\numberline {1.1}Preface to Version 4.2}{3}
+\contentsline {section}{\numberline {1.2}Overview}{5}
+\contentsline {section}{\numberline {1.3}Background}{6}
+\contentsline {section}{\numberline {1.4}A brief description of the package}{8}
+\contentsline {subsection}{\numberline {1.4.1}Initial superimposition}{8}
+\contentsline {subsection}{\numberline {1.4.2}Pairwise comparisons and alignments (PAIRWISE)}{9}
+\contentsline {subsection}{\numberline {1.4.3}Multiple alignment (TREEWISE)}{10}
+\contentsline {subsection}{\numberline {1.4.4}Structure database scanning (SCAN)}{10}
+\contentsline {subsection}{\numberline {1.4.5}Displaying STAMP output (VER2HOR, DSTAMP, GSTAMP)}{14}
+\contentsline {section}{\numberline {1.5}Some comments on interperetting structural similarities}{15}
+\contentsline {section}{\numberline {1.6}The programs contained within the package}{16}
+\contentsline {chapter}{\numberline {2}Worked examples}{18}
+\contentsline {section}{\numberline {2.1}Multiple alignment (PAIRWISE and TREEWISE)}{19}
+\contentsline {section}{\numberline {2.2}Alignment using an initial rough superimposition}{22}
+\contentsline {section}{\numberline {2.3}Database Scanning}{23}
+\contentsline {section}{\numberline {2.4}Using scans as a starting point for multiple alignment}{26}
+\contentsline {section}{\numberline {2.5}Protein domain databases}{28}
+\contentsline {section}{\numberline {2.6}Generating transformed coordinates}{29}
+\contentsline {section}{\numberline {2.7}Generating averaged coordinates}{31}
+\contentsline {section}{\numberline {2.8}Displaying/processing the output}{32}
+\contentsline {subsection}{\numberline {2.8.1}POSTSTAMP}{32}
+\contentsline {subsection}{\numberline {2.8.2}STAMP\_CLEAN}{33}
+\contentsline {subsection}{\numberline {2.8.3}Displaying text alignments}{34}
+\contentsline {subsection}{\numberline {2.8.4}Pretty Alignments via ALSCRIPT}{35}
+\contentsline {subsection}{\numberline {2.8.5}Pretty Structures via MOLSCRIPT}{36}
+\contentsline {chapter}{\numberline {3}Input and Output format for all programs}{39}
+\contentsline {section}{\numberline {3.1}Describing domain structures}{39}
+\contentsline {section}{\numberline {3.2}Transformations}{41}
+\contentsline {section}{\numberline {3.3}Sequence format}{42}
+\contentsline {section}{\numberline {3.4}Multiple alignment format}{43}
+\contentsline {section}{\numberline {3.5}Output from SCANS}{45}
+\contentsline {section}{\numberline {3.6}Output to standard output or log file}{46}
+\contentsline {chapter}{\numberline {4}Summary of STAMP parameters}{47}
+\contentsline {section}{\numberline {4.1}Main program (STAMP)}{47}
+\contentsline {section}{\numberline {4.2}Summary of parameters for other programs}{57}
+\contentsline {subsection}{\numberline {4.2.1}PDB checker (PDBC)}{57}
+\contentsline {subsection}{\numberline {4.2.2}PDBSEQ}{58}
+\contentsline {subsection}{\numberline {4.2.3}ALIGNFIT}{59}
+\contentsline {subsection}{\numberline {4.2.4}VER2HOR}{60}
+\contentsline {subsection}{\numberline {4.2.5}DSTAMP}{60}
+\contentsline {subsection}{\numberline {4.2.6}SORTTRANS}{61}
+\contentsline {subsection}{\numberline {4.2.7}TRANSFORM}{62}
+\contentsline {subsection}{\numberline {4.2.8}PICKFRAME}{63}
+\contentsline {subsection}{\numberline {4.2.9}MERGETRANS \& EXTRANS}{64}
+\contentsline {subsection}{\numberline {4.2.10}MERGESTAMP}{65}
+\contentsline {subsection}{\numberline {4.2.11}AVESTRUC}{65}
+\contentsline {subsection}{\numberline {4.2.12}GSTAMP}{66}
+\contentsline {subsection}{\numberline {4.2.13}STAMP\_CLEAN}{67}
+\contentsline {subsection}{\numberline {4.2.14}Converting alignment formats ACONVERT}{68}
+\contentsline {chapter}{\numberline {5}Installation}{69}
+\contentsline {section}{\numberline {5.1}Compiling/running}{69}
+\contentsline {section}{\numberline {5.2}Setting up STAMP files}{70}
+\contentsline {section}{\numberline {5.3}Getting other programs}{72}
+\contentsline {chapter}{\numberline {6}Some of our studies involving STAMP}{73}
+\contentsline {chapter}{\numberline {7}Appendix - STAMP Academic License}{74}

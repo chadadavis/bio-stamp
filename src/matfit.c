@@ -9,18 +9,17 @@
  The WORK was developed by: 
 	Robert B. Russell and Geoffrey J. Barton
 
- Of current addresses:
+ Of current contact addresses:
 
- Robert B. Russell (RBR)	            Prof. Geoffrey J. Barton (GJB)
- EMBL Heidelberg                            School of Life Sciences
- Meyerhofstrasse 1                          University of Dundee
- D-69117 Heidelberg                         Dow Street
- Germany                                    Dundee, DD1 5EH
-                                          
- Tel: +49 6221 387 473                      Tel: +44 1382 345860
- FAX: +44 6221 387 517                      FAX: +44 1382 345764
- E-mail: russell@embl-heidelberg.de         E-mail geoff@compbio.dundee.ac.uk
- WWW: http://www.russell.emb-heidelberg.de  WWW: http://www.compbio.dundee.ac.uk
+ Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
+ Bioinformatics                      EMBL-European Bioinformatics Institute
+ SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
+ New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
+ Harlow, Essex, CM19 5AW, U.K.       
+ Tel: +44 1279 622 884               Tel: +44 1223 494 414
+ FAX: +44 1279 622 200               FAX: +44 1223 494 468
+ e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
+                                     WWW: http://barton.ebi.ac.uk/
 
    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
 	
@@ -75,7 +74,7 @@
 /* float idist(); */
 
 /* SMJS Added */
-#include "stamp.h"
+#include <stamp.h>
 
 float matfit(int **atoms1, int **atoms2, float **R, float *V,
 	int nats, int entry, int PRECISION) {
@@ -151,11 +150,10 @@ float matfit(int **atoms1, int **atoms2, float **R, float *V,
 	for(i=0; i<=2; ++i) {
 	   xasq-=cma[i]*cma[i]*xni;
 	   xbsq-=cmb[i]*cmb[i]*xni;
-	   for(j=0; j<=2; ++j) 
-           {
+	   for(j=0; j<=2; ++j) {
 	       umat[j][i]=(umat[j][i]-cma[i]*cmb[j]*xni)*xni;
 	       r[i][j] = 0.0;
-           }
+	   }
 	} 
 
 /* Fit it */
@@ -182,10 +180,7 @@ float matfit(int **atoms1, int **atoms2, float **R, float *V,
 /*	   printf("\n");  */
 	}
 
-/*
- printf("IN MATFIT RMSE = %f, xasq = %f, xbsq = %f xni = %f, rtsum = %f\n",
-        rmse,xasq,xbsq,xni,rtsum);  
-*/
+/* printf("IN MATFIT RMSE = %f\n",rmse);  */
 
 
 /* Calculate offset if entry=1 */

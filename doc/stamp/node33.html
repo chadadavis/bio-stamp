@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Output from SCANS</TITLE>
+<META NAME="description" CONTENT="Output from SCANS">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node34.html">
+<LINK REL="previous" HREF="node32.html">
+<LINK REL="up" HREF="node28.html">
+<LINK REL="next" HREF="node34.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html513"
+ HREF="node34.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html510"
+ HREF="node28.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html504"
+ HREF="node32.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html512"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html514"
+ HREF="node34.html">Output to standard output</A>
+<B> Up:</B> <A NAME="tex2html511"
+ HREF="node28.html">Input and Output format</A>
+<B> Previous:</B> <A NAME="tex2html505"
+ HREF="node32.html">Multiple alignment format</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00450000000000000000">
+Output from SCANS</A>
+</H1>
+
+<P>
+Output from STAMP scans consists of a list of domains and a 
+corresponding set of scores, lengths and other numbers that can be 
+used to sort and understand the output.
+<BR>
+<BR>
+The format is as follows (see examples/1cmsN_stamp_scan.trans):
+<BR>
+
+<P><PRE>
+% Output from STAMP scanning routine
+%
+% Domain 1cmsN was used to scan the domain database:
+%  ac_prot.domains
+% 2 fits were performed
+% Fit 1 E1= 20.000, E2=  3.800, CUT=  1.000
+% Fit 2 E1=  3.800, E2=  3.800, CUT=  4.500
+% Approximate fits (alignment from N-termini) were performed
+%   at every 5 residue of the database sequences 
+% Transformations were output for Sc=  2.000
+% 
+% Domain used to scan 
+# Sc= 10.000 RMS=  0.01  Len= 999 nfit= 999 Seqid= 100.00 Secid= 100.00 q_len=  175 d_len=  175 
+          n_sec= 100 n_equiv 999 fit_pos= _  0 _ 
+/disk3/pdb/pdb1cms.ent 1cmsN { _ 1 _ to _ 175 _  }
+# Sc=   9.744 RMS=   0.000 len=  174 nfit=  174 seq_id= 99.43 sec_id= 94.86 q_len=  175 d_len=  175 
+         n_sec=   18 n_equiv=  173 fit_pos= _   1 _ 
+/disk3/pdb/pdb1cms.ent 1cmsN_1 {  _ 1 _ to _ 175 _  
+   1.00000    0.00000    0.00000         0.00000 
+   0.00000    1.00000    0.00000         0.00000 
+   0.00000    0.00000    1.00000         0.00000  }
+# Sc=   2.749 RMS=   2.352 len=  204 nfit=   63 seq_id=  8.00 sec_id= 41.14 q_len=  175 d_len=  148 
+        n_sec=   13 n_equiv=   58 fit_pos= _ 176 _ 
+/disk3/pdb/pdb1cms.ent 1cmsC_1 {  _ 176 _ to _ 323 _  
+  -0.98340   -0.10624   -0.14708        36.75176 
+			&lt;etc.&gt;
+</PRE>
+<P>
+(note that the lines begining by `#' symbols have been wrapped here)
+`%` denotes a comment, and `#' denotes numbers corresponding to the
+domain description described below (both will be ignored by all
+programs except for SORTTRANS, which uses the `#' fields to sort
+and interpret the data. <BR>
+
+<P>
+`Sc' is the STAMP Score for the comparison of the query to each 
+database sequence. `RMS' is the RMS difference between equivalenced
+atoms, `len' is the alignment length, `nfit' is the number of atoms
+used during the final fit of the two domains, `seq_id' and `sec_id' are the
+sequence and secondary structure identities, `q_len' and `d_len' are
+the lengths of the query and database structure (in residues), `n_sec'
+is the number of equivalenced secondary structures, and `n_equiv' are
+the number of residues found within stretches of 3 or more having 
+
+<!-- MATH: $P_{ij}^{\prime} \geq 6$ -->
+<IMG
+ WIDTH="63" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$P_{ij}^{\prime} \geq 6$">.
+These fields are used during any
+run of SORTTRANS to sort and remove redundant/poor superimpositions.
+`fit_pos' is the 
+brookhaven numbering of the position in the database sequence to 
+which the query's N-terminal end was aligned for the initial fit.
+The transformation supplied is that for the superimposition of the 
+database structures onto the query. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html513"
+ HREF="node34.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html510"
+ HREF="node28.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html504"
+ HREF="node32.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html512"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html514"
+ HREF="node34.html">Output to standard output</A>
+<B> Up:</B> <A NAME="tex2html511"
+ HREF="node28.html">Input and Output format</A>
+<B> Previous:</B> <A NAME="tex2html505"
+ HREF="node32.html">Multiple alignment format</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

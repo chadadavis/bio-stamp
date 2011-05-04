@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>TRANSFORM</TITLE>
+<META NAME="description" CONTENT="TRANSFORM">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node45.html">
+<LINK REL="previous" HREF="node43.html">
+<LINK REL="up" HREF="node37.html">
+<LINK REL="next" HREF="node45.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html660"
+ HREF="node45.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html657"
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html651"
+ HREF="node43.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html659"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html661"
+ HREF="node45.html">PICKFRAME</A>
+<B> Up:</B> <A NAME="tex2html658"
+ HREF="node37.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html652"
+ HREF="node43.html">SORTTRANS</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00527000000000000000">
+TRANSFORM</A>
+</H2>
+
+<P>
+This program takes a transformation file, either from ALIGNFIT,
+STAMP, or SORTRANS and outputs a series of PDB format files
+containing the specified coordinates transformed as specified in
+the given file.
+<BR>
+<BR>
+The format is:
+<BR>
+
+<P><PRE>
+transform -f &lt;transformation file&gt; [ -g -het -hoh -o &lt;output file&gt; ]
+</PRE>
+<P>
+options:
+<BR>
+<BR>
+`-het' Include hetero atoms.  Hetero atoms are normally not included
+in the output.
+<BR>
+`-hoh' Include waters.
+<BR>
+<BR>
+`-g' Graphics output.  This mode puts all transformed coordinates
+into a single PDB file, and labels the chains for domains
+sequentially (after their order in the transformation file) with A,
+B, C.. etc.  This allows fast analysis of the structures
+graphically (i.e. using Rasmol) since one need only colour each
+chain a different colour to see the superimposition.  The default
+file for writing the coordinates using this mode is `all.pdb', but
+this can be changed (see below).
+<BR>
+<BR>
+`-o &lt;output file&gt;'  When using `-g', this option allows the
+specification of a file to contain the transformed coordinates.
+The default is `all.pdb'
+<BR>
+<BR>
+The PDB files will be named &lt;identifier&gt;.pdb (except when running using the `-g'
+option).
+
+<P>
+<BR><HR>
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

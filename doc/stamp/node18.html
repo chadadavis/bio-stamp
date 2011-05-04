@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Using scans as a starting point for multiple alignment</TITLE>
+<META NAME="description" CONTENT="Using scans as a starting point for multiple alignment">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node19.html">
+<LINK REL="previous" HREF="node17.html">
+<LINK REL="up" HREF="node14.html">
+<LINK REL="next" HREF="node19.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html341"
+ HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html338"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html332"
+ HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html340"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html342"
+ HREF="node19.html">Protein domain databases</A>
+<B> Up:</B> <A NAME="tex2html339"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html333"
+ HREF="node17.html">Database Scanning</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00340000000000000000">
+Using scans as a starting point for multiple alignment</A>
+</H1>
+
+<P>
+In certain instances initial fits based on multiple sequence
+alignment will be far from accurate, such that even an initial
+conformation based fit will not be able to correct the poor
+initial superposition, and even genuine structural homology will
+be missed.  In these instances it is possible to make use of the
+SCAN option to provide a more accurate initial superimposition.
+<BR>
+<BR>
+To do this one need only select one representative of the
+domains to be superimposed and use this domain in a sensiitve
+scan <EM>of the other domains</EM>.  By applying the same techinques as
+used for the scan with the Ig  light variable domain (above) one
+can arrive at a set of initial transformations consisting of the
+transformations of all other domains onto the domain which was
+used as a query for the scan.
+<BR>
+<BR>
+<B>Aspartic Proteinase Domains</B>
+<BR>
+<BR>
+An example of how such an initial superimposition might be
+obtained is shown by the alignment of the aspartly proteinase N
+and C terminal lobes (see directory examples/ac_prot):
+<BR>
+<BR>
+The N-terminal domain of 1CMS (in the file 1cmsN.domain) can be
+used to scan a list of all aspartyl proteinase
+N- and C- terminal domains (ac_prot.domains):
+
+<P><PRE>
+stamp -l 1cmsN.domain -n 2 -s -slide 5 -d ac_prot.domains -prefix ac_prot
+</PRE>
+<P>
+Should produce:
+
+<P><PRE>
+     Domain1  Domain2   Fits  Sc      RMS   Len1 Len2 Align Fit   Eq. Secs    %I    %S     P(m)
+Scan 1cmsN    1cmsN       1   9.800  10.091  175  175  175  175  174   18  99.43  94.29 0.00e+00 
+Scan 1cmsN    1cmsC       2   3.211   7.858  175  148  204   64   57   13   7.43  25.14 2.37e-03 
+Scan 1cmsN    4apeN       1   8.195   9.708  175  178  182  155  151   15  26.97  72.47 1.36e-13 
+Scan 1cmsN    4apeC       1   3.434   7.939  175  152  210   69   68   14   5.14  30.29 1.00e+00 
+Scan 1cmsN    3appN       1   7.967   9.830  175  174  183  149  148   18  26.86  74.86 2.51e-13 
+Scan 1cmsN    3appC       1   3.260   8.137  175  149  206   63   54   13   5.71  24.57 2.32e-02 
+Scan 1cmsN    2aprN       1   8.386  10.130  175  178  178  158  154   15  30.34  76.40 3.81e-17 
+Scan 1cmsN    2aprC       1   3.335   7.787  175  147  202   68   62   14   6.86  27.43 1.11e-02 
+Scan 1cmsN    4pepN       1   8.880  10.162  175  174  174  170  169   15  56.00  87.43 3.00e-53 
+Scan 1cmsN    4pepC       1   3.227   8.315  175  152  206   63   51   11   6.86  24.00 2.61e-03 
+See the file ac_prot.scan
+</PRE>
+<P>
+The file ac_prot.scan will contain all 10 domains superimposed onto 1cmsN.  Note that
+we haven't run the program with the `-cut' option, since the file ac_prot.domains contains
+an assignment of domains (done by me using molecular graphics).  Running
+SORTTRANS removes any redundancies:
+
+<P><PRE>
+sorttrans -f ac_prot.scan -s Sc 2.5 &gt; ac_prot.sorted
+</PRE>
+<P>
+and running stamp will generate the multiple alignment as described for the serine proteinase
+and globin examples above.
+
+<P><PRE>
+stamp -l ac_prot.sorted -prefix ac_prot
+</PRE>
+<P>
+The output files from running all of these programs appear in the directory examples/ac_prot.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html341"
+ HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<A NAME="tex2html338"
+ HREF="node14.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif.gif"></A> 
+<A NAME="tex2html332"
+ HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif.gif"></A> 
+<A NAME="tex2html340"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html342"
+ HREF="node19.html">Protein domain databases</A>
+<B> Up:</B> <A NAME="tex2html339"
+ HREF="node14.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html333"
+ HREF="node17.html">Database Scanning</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>

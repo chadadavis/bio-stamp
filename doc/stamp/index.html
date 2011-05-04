@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="stamp.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif_gr.gif"> 
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html3"
+ HREF="node1.html">Contents</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<P>
+<DIV ALIGN="CENTER"><B><FONT SIZE="+4">S T A M P
+<BR>
+</FONT></B><B><FONT SIZE="+2">Structural Alignment of Multiple Proteins <BR>
+Version 4.2
+<BR>
+User Guide
+<BR>
+</FONT></B><P>
+<EM>By Robert B. Russell</EM>
+<BR>
+</DIV><P>
+When using this program please cite R. B. Russell &amp; G. J.  Barton, 
+Multiple protein sequence alignment from tertiary structure 
+comparison, <EM>PROTEINS: Struct. Funct. Genet.</EM>,<B>14</B>, 
+309-323, 1992, and this manual.
+<BR>
+
+<P>
+<P>
+The STAMP authors contact addresses (23 March 1999) are:
+
+<P>
+<P>
+<TABLE CELLPADDING=3>
+<TR><TD ALIGN="LEFT">Robert B. Russell (RBR)</TD>
+<TD ALIGN="LEFT">Geoffrey J. Barton (GJB)</TD>
+</TR>
+<TR><TD ALIGN="LEFT">SmithKline Beecham Pharmaceuticals</TD>
+<TD ALIGN="LEFT">EMBL - European Bioinformatics Institute</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Bioinformatics</TD>
+<TD ALIGN="LEFT">Wellcome Trust Genome Campus</TD>
+</TR>
+<TR><TD ALIGN="LEFT">New Frontiers Science Park</TD>
+<TD ALIGN="LEFT">Hinxton, Cambridge, CB10 1SD U.K.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Third Avenue</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Harlow, Essex, CM19 5AW</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Tel: +44 1279 622 884</TD>
+<TD ALIGN="LEFT">Tel: +44 1223 494414</TD>
+</TR>
+<TR><TD ALIGN="LEFT">FAX: +44 1279 622 200</TD>
+<TD ALIGN="LEFT">FAX: +44 1223 494468</TD>
+</TR>
+<TR><TD ALIGN="LEFT">e-mail: russelr1@mh.uk.sbphrd.com</TD>
+<TD ALIGN="LEFT">e-mail geoff@ebi.ac.uk</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">WWW: http://barton.ebi.ac.uk//</TD>
+</TR>
+</TABLE>
+<DIV ALIGN="CENTER">
+Copyright (1997, 1998, 1999) Robert B. Russell &amp; Geoffrey J. Barton.
+<BR>
+Redistribution without permission is forbidden.  Please see the LICENSE
+<BR>
+at the end of this document.
+
+<P>
+<P>
+Note that this work was originally developed in the Laboratory of Molecular
+Biophysics, University of Oxford.
+
+<P>
+</DIV>
+<P>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html4"
+ HREF="node1.html">Contents</A>
+<LI><A NAME="tex2html5"
+ HREF="node2.html">Introduction and Overview</A>
+<UL>
+<LI><A NAME="tex2html6"
+ HREF="node3.html">Preface to Version 4.2</A>
+<LI><A NAME="tex2html7"
+ HREF="node4.html">Overview</A>
+<LI><A NAME="tex2html8"
+ HREF="node5.html">Background</A>
+<LI><A NAME="tex2html9"
+ HREF="node6.html">A brief description of the package</A>
+<UL>
+<LI><A NAME="tex2html10"
+ HREF="node7.html">Initial superimposition</A>
+<LI><A NAME="tex2html11"
+ HREF="node8.html">Pairwise comparisons and alignments (PAIRWISE)</A>
+<LI><A NAME="tex2html12"
+ HREF="node9.html">Multiple alignment (TREEWISE)</A>
+<LI><A NAME="tex2html13"
+ HREF="node10.html">Structure database scanning (SCAN)</A>
+<LI><A NAME="tex2html14"
+ HREF="node11.html">Displaying STAMP output (VER2HOR, DSTAMP, GSTAMP)</A>
+</UL>
+<LI><A NAME="tex2html15"
+ HREF="node12.html">Some comments on interperetting structural similarities</A>
+<LI><A NAME="tex2html16"
+ HREF="node13.html">The programs contained within the package</A>
+</UL>
+<LI><A NAME="tex2html17"
+ HREF="node14.html">Worked examples</A>
+<UL>
+<LI><A NAME="tex2html18"
+ HREF="node15.html">Multiple alignment (PAIRWISE and TREEWISE)</A>
+<LI><A NAME="tex2html19"
+ HREF="node16.html">Alignment using an initial rough superimposition</A>
+<LI><A NAME="tex2html20"
+ HREF="node17.html">Database Scanning</A>
+<LI><A NAME="tex2html21"
+ HREF="node18.html">Using scans as a starting point for multiple alignment</A>
+<LI><A NAME="tex2html22"
+ HREF="node19.html">Protein domain databases</A>
+<LI><A NAME="tex2html23"
+ HREF="node20.html">Generating transformed coordinates</A>
+<LI><A NAME="tex2html24"
+ HREF="node21.html">Generating averaged coordinates</A>
+<LI><A NAME="tex2html25"
+ HREF="node22.html">Displaying/processing the output</A>
+<UL>
+<LI><A NAME="tex2html26"
+ HREF="node23.html">POSTSTAMP</A>
+<LI><A NAME="tex2html27"
+ HREF="node24.html">STAMP_CLEAN</A>
+<LI><A NAME="tex2html28"
+ HREF="node25.html">Displaying text alignments</A>
+<LI><A NAME="tex2html29"
+ HREF="node26.html">Pretty Alignments via ALSCRIPT</A>
+<LI><A NAME="tex2html30"
+ HREF="node27.html">Pretty Structures via MOLSCRIPT</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html31"
+ HREF="node28.html">Input and Output format for all programs</A>
+<UL>
+<LI><A NAME="tex2html32"
+ HREF="node29.html">Describing domain structures</A>
+<LI><A NAME="tex2html33"
+ HREF="node30.html">Transformations</A>
+<LI><A NAME="tex2html34"
+ HREF="node31.html">Sequence format</A>
+<LI><A NAME="tex2html35"
+ HREF="node32.html">Multiple alignment format</A>
+<LI><A NAME="tex2html36"
+ HREF="node33.html">Output from SCANS</A>
+<LI><A NAME="tex2html37"
+ HREF="node34.html">Output to standard output or log file</A>
+</UL>
+<LI><A NAME="tex2html38"
+ HREF="node35.html">Summary of STAMP parameters</A>
+<UL>
+<LI><A NAME="tex2html39"
+ HREF="node36.html">Main program (STAMP)</A>
+<LI><A NAME="tex2html40"
+ HREF="node37.html">Summary of parameters for other programs</A>
+<UL>
+<LI><A NAME="tex2html41"
+ HREF="node38.html">PDB checker (PDBC)</A>
+<LI><A NAME="tex2html42"
+ HREF="node39.html">PDBSEQ</A>
+<LI><A NAME="tex2html43"
+ HREF="node40.html">ALIGNFIT</A>
+<LI><A NAME="tex2html44"
+ HREF="node41.html">VER2HOR</A>
+<LI><A NAME="tex2html45"
+ HREF="node42.html">DSTAMP</A>
+<LI><A NAME="tex2html46"
+ HREF="node43.html">SORTTRANS</A>
+<LI><A NAME="tex2html47"
+ HREF="node44.html">TRANSFORM</A>
+<LI><A NAME="tex2html48"
+ HREF="node45.html">PICKFRAME</A>
+<LI><A NAME="tex2html49"
+ HREF="node46.html">MERGETRANS &amp; EXTRANS</A>
+<LI><A NAME="tex2html50"
+ HREF="node47.html">MERGESTAMP</A>
+<LI><A NAME="tex2html51"
+ HREF="node48.html">AVESTRUC</A>
+<LI><A NAME="tex2html52"
+ HREF="node49.html">GSTAMP</A>
+<LI><A NAME="tex2html53"
+ HREF="node50.html">STAMP_CLEAN</A>
+<LI><A NAME="tex2html54"
+ HREF="node51.html">Converting alignment formats ACONVERT</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html55"
+ HREF="node52.html">Installation</A>
+<UL>
+<LI><A NAME="tex2html56"
+ HREF="node53.html">Compiling/running</A>
+<LI><A NAME="tex2html57"
+ HREF="node54.html">Setting up STAMP files</A>
+<LI><A NAME="tex2html58"
+ HREF="node55.html">Getting other programs</A>
+</UL>
+<LI><A NAME="tex2html59"
+ HREF="node56.html">Some of our studies involving STAMP</A>
+<LI><A NAME="tex2html60"
+ HREF="node57.html">Appendix - STAMP Academic License</A>
+<LI><A NAME="tex2html61"
+ HREF="node58.html">Bibliography</A>
+<LI><A NAME="tex2html62"
+ HREF="node59.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/previous_motif_gr.gif"> 
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/ebi/barton/delly/src/latex2html/icons.gif/contents_motif.gif"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html3"
+ HREF="node1.html">Contents</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Geoff Barton</I>
+<BR><I>1999-04-16</I>
+</ADDRESS>
+</BODY>
+</HTML>
