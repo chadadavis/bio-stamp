@@ -1,0 +1,206 @@
+This is a blockfile for use in conjuction with the program
+ DSTAMP.  There ought to be a corresponding ALScript file
+ in this directory.
+
+    1 >1lh1  
+      (cluster A) sequence
+
+    2 >2lhb  
+      (cluster B) sequence
+
+    3 >1ecd  
+      (cluster B) sequence
+
+    4 >4mbn  
+      (cluster B) sequence
+
+    5 >2hhbb  
+      (cluster B) sequence
+
+    6 >2hhba  
+      (cluster B) sequence
+
+      > 
+    1 >1lh1_dssp  
+    (cluster A) secondary structure from DSSP
+
+    2 >2lhb_dssp  
+     (cluster B) secondary structure from DSSP
+
+    3 >1ecd_dssp  
+     (cluster B) secondary structure from DSSP
+
+    4 >4mbn_dssp  
+     (cluster B) secondary structure from DSSP
+
+    5 >2hhbb_dssp  
+     (cluster B) secondary structure from DSSP
+
+    6 >2hhba_dssp  
+     (cluster B) secondary structure from DSSP
+
+*
+ p      -    
+ i      -    
+ v      -    
+ d      s    
+ t      s    
+ g      s    
+ s      -    
+ v      -    
+ga  v  --  - 
+ap vhv -- ---
+LLLLLL ------
+TSSSTS ---H--
+EAAEPP HHHHHH
+SADGEA HHHHHH
+QEQEED HHHHHH
+AKIWKK HHHHHH
+ATSQST HHHHHH
+LKTLAN HHHHHH
+VIVVVV HHHHHH
+KRQLTK HHHHHH
+SSAHAA HHHHHH
+SASVLA HHHHHH
+WWFWWW HHHHHH
+EADAGG HHHHTH
+EPKKKK HHTGTH
+fvvvvv hhtg-h
+ny eng hh --g
+as a a th - g
+nt d h tt h g
+iy vva hh hhh
+pekadg hhthhh
+KTGGEE HHTHHH
+HSDHVY HH-HHH
+TGPGGG HHHHHH
+HVVQGA HHHHHH
+RDGDEE HHHHHH
+FIIIAA HHHHHH
+FLLLLL HHHHHH
+IVYIGE HHHHHH
+LKARRR HHHHHH
+VFVLLM HHHHHH
+LFFFLF HHHHHH
+ETKKVL HHHHHH
+ISASVS HHHHHH
+ATDHYF ---HS-
+PPPPPP GGHHGG
+AASEWT GGHHGG
+AAITTT GGHHGG
+KQMLQK GGHGGG
+DEAERT GGTGGG
+LFKKFY GGTGGG
+FFFFFF ---G--
+SPTDEP TGT-GT
+FKQRSH TGT-GT
+LFFFFF TGT-GS
+kkakg  ttt-- 
+ggghd  ttts- 
+ lkll   -ss- 
+ t ks   - ss 
+ttdtt  -s-hs 
+salep  shhhh 
+edeadd shhhh-
+veseal -hhhh-
+plimvs -hhhhs
+qkkkmh shthht
+nkgagg stthht
+NSTSNS --SH--
+PAAEPA HHHHHH
+EDPDKQ HHHHHH
+LVFLVV HHHHHH
+QREKKK HHHHHH
+AWTKAG HHHHHH
+HHHHHH HHHHHH
+AAAGGG HHHHHH
+GENVKK HHHHHH
+KRRTKK HHHHHH
+VIIVVV HHHHHH
+FIVLLA HHHHHH
+KNGTGD HHHHHH
+LAFAAA HHHHHH
+VVFLFL HHHHHH
+YDSGST HHHHHH
+EDKADN HHHHHH
+AAIIGA HHHHHH
+AVILLV HHHHHH
+iagkaa hhhhth
+qsekhh httgtt
+lmlklv httggg
+ed     ht    
+v      h     
+td     h-    
+gt     sh    
+vepgdd sht-gg
+vknhnd -h--gg
+vmihlm -h-hhh
+tseekp -hhhhh
+d      -     
+amaagn hhhhhh
+tkdeta hhhhhh
+LLVLFL HHHHHT
+KRNKAS HHHHHH
+NNTPTA HHHHHH
+LLFLLL HHHHHH
+GSVASS HHHHHH
+SGAQED HHHHHH
+VKSSLL HHHHHH
+ h hhh  h hhh
+hahaca hhhhhh
+vkktdh hhghhh
+SSPKKK HTG-TT
+KFRHLL TSG-TT
+GQGKHR T-T---
+VVVIVV ------
+ADTPDD ---H--
+DPHIPP GGHHTT
+AEDKEV GGHHHH
+HYQYNN GGHHHH
+FFLLFF HHHHHH
+PKNERK HHHHHH
+VVNFLL HHHHHH
+VLFILL HHHHHH
+KARSGS HHHHHH
+EAAENH HHHHHH
+AVGAVC HHHHHH
+IIFILL HHHHHH
+LAVIVL HHHHHH
+KDSHCV HHHHHH
+TTYVVT HHHHHH
+IVMLLL HHHHHH
+kakhaa hhhhhh
+e asha h hhhh
+v hrhh h hhhh
+v thfl h shh-
+g  pgp g  hgt
+a  gka g  -gt
+k  dee g  -gt
+w dfff - --s-
+s fgtt - gh--
+e aapp h ghhh
+eagdpa htghhh
+lgaavv htghhh
+NDEQQH H-HHHH
+SAAGAA HHHHHH
+AGAAAS HHHHHH
+WFWMYL HHHHHH
+TEGNQD HHHHHH
+IKAKKK HHHHHH
+ALTAVF HHHHHH
+YMLLVL HHHHHH
+DSDEAA HHHHHH
+EMTLGS HHHHHH
+LIFFVV HHHHHH
+ACFRAS HHHHHH
+IIGKNT HHHHHH
+VLMDAV HHHHHH
+ILIILL HHHHHH
+KRFAAT HHHHHT
+KSSAHS HTHHTT
+EAKKKK HTHHTT
+m  y   h  h  
+d  k   h  h  
+d  e   h  h  
+a  l   h  h  
+*

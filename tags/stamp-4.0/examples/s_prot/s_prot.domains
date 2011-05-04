@@ -1,0 +1,24 @@
+%
+% This is the list of serine proteinases which are 
+%  aligned in Russell and Barton, Proteins, 14, 318, 1992
+%
+% Bovine alpha chymotrypsin
+/data/newpdb/pdb/pdb4cha.ent 4chaa { CHAIN A }
+% Porcine elastase
+/data/newpdb/pdb/pdb3est.ent 3est { ALL }
+% Bovine trypsin
+/data/newpdb/pdb/pdb2ptn.ent 2ptn { ALL }
+% Rat tonin
+/data/newpdb/pdb/pdb1ton.ent 1ton { ALL }
+% Rat mast cell proteinase
+/data/newpdb/pdb/pdb3rp2.ent 3rp2a { CHAIN A }
+% Porcine kallikrein
+/data/newpdb/pdb/pdb2pka.ent 2pkaab { CHAIN A CHAIN B }
+% S. griseus trypsin
+/data/newpdb/pdb/pdb1sgt.ent 1sgt { ALL }
+% S. griseus proteinase A
+/data/newpdb/pdb/pdb2sga.ent 2sga { ALL }
+% S. griseus proteinase B
+/data/newpdb/pdb/pdb3sgb.ent 3sgbe { CHAIN E }
+% L. enzymogenes alpha lytic proteinase
+/data/newpdb/pdb/pdb2alp.ent 2alp { ALL }

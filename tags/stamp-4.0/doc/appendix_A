@@ -1,0 +1,142 @@
+Appendix A Contents of STAMP package (version 4.0)
+
+README	  	         Basic instructions and details
+BUILD                    Shell script to compile the package
+
+src/
+  a3to1.c                Converts three state AA to one state
+  agetbloc.c             Reads in AMPS style block alignment format
+  align_clean.c          Cleans AMPS style block alignment format
+  alignfit.c             Takes AMPS style block alignment and uses it to generate an initial superimposition
+  alignfit.h             Include file for the above 
+  alignfitgetpars.c      Gets parameters for the above
+  aliseq.c               Takes path data from GJBs dynammic programming routine and gives alignments
+  array.h                Include file for GJBs alignment routines
+  avestruc.c             Generate averaged structures from STAMP output (main program)
+  ccprobcalc.c           Corner cutting probability matrix generation
+  check.c                PDB checker (PDBC) main program
+  clean_block.c          Cleans block files
+  clus2blc.c             Converts CLUSTAL NBRF-PIR format to BLOC format
+  cluster.h              Cluster analysis include file
+  count_domain.c         Counts number of domain entries in a file
+  defaults.h             AMPS defaults file
+  disp.c                 Displays data
+  display_align.c        Displays alignments
+  domain.h               Domain include file
+  dosort.c               Sorts SW alignments according to score
+  dstamp.c               Convert STAMP alignments to ALSCRIPT format (main program)
+  dstamp.h               Include file for the above
+  dstampgetpars.c        Get parameters for the above
+  dstampreadcom.c        Read command line for the above
+  extract_dssp.c         Get a particular fraction of a DSSP file
+  extract_pdb.c          Get a particular fraction of a PDB file
+  f2c.h                  FORTRAN 2 C include file
+  fmatfit.c              MATRIX fitting using floating point coordinates
+  fmatinv.c              MATRIX  inversion using floating point coordinates
+  fmatmult.c             MATRIX  multiplication using floating point coordinates
+  general.h              General include file
+  get_clust.c            Gets clusters using GJB's OC routines
+  getca.c                Read in Calpha atoms
+  getdomain.c            Read in domain entries
+  getdsspsum.c           Read in DSSP summaries from DSSP file
+  getfile.c              Get PDB/DSSP file for a PDB code
+  getks.c                Get Kabsch and Sander summaries
+  getrksum.c             Get DEFINE summaries
+  getsec.c               Read in secondary structure assignments for a file
+  getstampdat.c          Read in STAMP data from a file
+  getstamprel.c          Get STAMP reliability data given STAMP data
+  gjnoc.c                GJB's cluster analysis routines
+  gjnoc.h                Include file for the above
+  gjutil.c               GJB's utilities
+  gjutil.h               Include file for the above
+  gstamp.c               Make intput for MOLSCRIPT from STAMP output (main program)
+  header.c               Copyright header
+  idist.c                Get distance between two integer coordinates
+  igetca.c               Get coordinates in integer format (Calpha)
+  igetcadssp.c           Get coordinates in integer format (Calpha) from DSSP file
+  igetcb.c               Get/generate Cbeta coordinates
+  igetcb.h               Include file for the above
+  igetgen.c              Get general atom type from a file
+  include.h              General include file
+  ltou.c                 Change lower to upper case
+  makeafile.c            Make a stamp output file (alignment)
+  makefile.osf           DEC alpha make file
+  makefile.sgi           Silicon graphics make file
+  makefile.sun           Sun make file
+  matfit.c               Matrix fitting (integer coordinates)
+  matinv.c               Matrix inversion (integer coordinates)
+  matmult.c              Matrix multiplication (integer coordinates)
+  matprod.c              Matrix product (integer coordinates)
+  matvecprod.c           Matrix and vector product (integer coordinates)
+  msf2blc.c              Change MSF alignment format to AMPS style block format (main program)
+  newoutput.c            Output STAMP format
+  overlay.c              SLOW/SCAN fitting
+  pairfit.c              Pairwise fitting routine
+  pairpath.c             Pairwise path tracing
+  pairwise.c             Pairwise mode main sub-routine
+  pdbseq.c               Generate sequence files from coordinate data (main program)
+  pickframe.c            Select a reference frame from a transformation file (main program)
+  poststamp.c            POSTSTAMP main program
+  poststamp.h            POSTSTAMP include file
+  printdomain.c          Display a domain identifier
+  printmat.c             Display a transformation
+  probcalc.c             Calculate a STAMP probability matrix
+  probplot.c             Plot a STAMP probability matrix
+  qkfit.c                Matrix fitting routine
+  readtree.c             Read in a tree
+  reval.c                Reverse an alignment
+  revmatmult.c           Reverse a matrix multiplication
+  rmsp.c                 Remove all spaces from a string
+  rossmann.c             Get Rossman and Argos probability
+  roughfit.c             Do an initial rough superimposition
+  scan.c                 SCAN main sub-routine
+  sec_content.c          Calculate secondary structure content
+  seq_identity.c         Calculate sequence identity
+  slow_scan.c            SLOW_SCAN main sub-routine
+  smoothsec.c            Smooth out a secondary structure assignment (ignore short elements)
+  sorttrans.c            Sort SCAN output (main program)
+  stamp.c                STAMP main program
+  stamp_clean_block.c    Clean  STAMP style block file
+  stampgetpars.c         Get stamp parameters
+  stamprel.h             STAMP reliability information include file
+  sw7ccs.c               Corner cutting Smith-Waterman routine
+  swstruct.c             Normal Smith-Waterman routine
+  testfile.c             Test whether a file exists
+  threestate.c           Change a secondary structure assignment to three-state
+  transform.c            Transform coordinates (main program)
+  treefit.c              Treewise fitting
+  treepath.c             Treewise path tracing
+  treewise.c             Treewise main sub-routine
+  update.c               Combine two transformations
+  utol.c                 Upper-to-lower case
+  vector.c               Vector operations routines
+  ver2hor.c              VER2HOR main program
+  ver2hor.h              Include file for the above
+
+
+
+examples/
+  ac_prot/		 aspartic proteinase example files
+  ig/			 immunoglobulin example files
+  globin/		 globin example files
+  s_prot/		 serine proteinase example files
+
+
+doc/
+  stamp.tex		 LaTeX version of STAMP manual
+  stamp.bbl              BiBTeX entries for STAMP manaul
+  stamp_a4.ps            PostScript version of STAMP manual (A4 paper)
+  stamp_us.ps            PostScript version of STAMP manual (US letter)
+  license                Copy of license agreement
+  appendix_A             This list of files
+
+defs/			 Various data/defaults files used by the package
+  stamp.defaults
+  pdb.directories
+  dssp.directories
+  brookhaven_subset.domains
+
+bin/			 Pre-compiled binaries
+  sun/			   for Sun SunOS 4.1.3
+  sgi/                     for SGI IRIX 5.2
+  osf/                     for DEC alpha OSF1/V3.0
