@@ -1,24 +1,29 @@
 
+STAMP is a suite of programs for the comparison and alignment of protein three dimensional structures.  The suite will multiply align structures and produce a corresponding sequence alignment with confidence values associated with each aligned position.  The software will also search a database of protein structures to identify structurally similar proteins.  The suite includes a number of utility programs for the manipulation of protein structures.
+
 
 HOME
-    https://code.google.com/p/bio-stamp/
+    http://code.google.com/p/bio-stamp/
 
 DOWNLOAD
-    https://code.google.com/p/bio-stamp/downloads/list    
+    https://code.google.com/p/bio-stamp/downloads/list
 
 INSTALL
     ./BUILD && cp bin/* /usr/local/bin/
+    See INSTALL.txt
 
 CITE
-    The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-    All use of the WORK must cite: 
+    All use of the WORK must cite:
 
   R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
   Structure Comparison: Assignment of Global and Residue Confidence Levels",
   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
 
-GUIDE
-    http://www.compbio.dundee.ac.uk/manuals/stamp.4.4/stamp.html    
+LICENSE
+    See LICENSE.txt
+
+MANUAL
+    http://www.compbio.dundee.ac.uk/manuals/stamp.4.4/stamp.html
 
 BUGS
     https://code.google.com/p/bio-stamp/issues/list
@@ -29,5 +34,5 @@ SOURCE
 CONTACT
     mailto:stamp@russelllab.org
     http://russelllab.org
-    http://www.compbio.dundee.ac.uk
+    http://www.compbio.dundee.ac.uk/
 
