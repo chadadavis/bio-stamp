@@ -14,7 +14,7 @@ struct brookn { /* structure to represent brookhaven residue numbers */
    };
 
 struct domain_loc {		/* This structure allows rather complex domains to be described */
-   char filename[100];
+   char filename[4096];
    char id[100];
    int nobj;			/* The number of objects considered within the named file */
    int *type;			/* The type that each object is:
@@ -41,19 +41,19 @@ struct domain_loc {		/* This structure allows rather complex domains to be descr
    };
 
 struct parameters {
-   char bloc_file[200];
-   char dom_file[200];
-   char parm_file[200];
-   char prefix[200];
+   char bloc_file[4096];
+   char dom_file[4096];
+   char parm_file[4096];
+   char prefix[4096];
    int MAX_SEQ_LEN;
    int PAIRWISE;
    int TREEWISE;
    int OLDFORMAT;
-   char MATFILE[100];
-   char TREEFILE[100];
-   char ORDFILE[100];
-   char TRANSFILE[100];
-   char STAMPDIR[200];
+   char MATFILE[4096];
+   char TREEFILE[4096];
+   char ORDFILE[4096];
+   char TRANSFILE[4096];
+   char STAMPDIR[4096];
    };
 /* Standard structure for storing protein sequence data */
 

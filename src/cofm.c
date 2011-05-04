@@ -10,7 +10,8 @@ int exit_error() {
         fprintf(stderr,"format: cofm -f <dom file> [-v -file]\n");
         exit(-1);
 } 
-main(int argc, char *argv[]) {
+
+int main(int argc, char *argv[]) {
 
 	int i,j;
 	int ndomain;
@@ -103,18 +104,20 @@ main(int argc, char *argv[]) {
 		    fprintf(stderr,"Error in domain %s object %d \n",domain[i].id,j+1);
                     exit(-1);
 	       }
-               if(verbose==1) {
-  	          switch(domain[i].type[j]) {
-	 	     case 1: fprintf(stdout," all residues"); break;
-		     case 2: fprintf(stdout," chain %c",domain[i].start[j].cid); break;
-		     case 3: fprintf(stdout," from %c %4d %c to %c %4d %c",
-			 domain[i].start[j].cid,domain[i].start[j].n,domain[i].start[j].in,
-			 domain[i].end[j].cid,domain[i].end[j].n,domain[i].end[j].in); break;
-	   	   }
-		   fprintf(stdout,"%4d CAs ",add);
-                }
-	        total+=add;
-		closefile(PDB,domain[i].filename); PDB=openfile(domain[i].filename,"r");
+           if(verbose==1) {
+        	   if (domain[i].start[j].in == ' ') { domain[i].start[j].in = '_'; }
+        	   if (domain[i].end[j].in == ' ')   { domain[i].end[j].in   = '_'; }
+        	   switch(domain[i].type[j]) {
+        	   case 1: fprintf(stdout," all residues"); break;
+        	   case 2: fprintf(stdout," chain %c",domain[i].start[j].cid); break;
+        	   case 3: fprintf(stdout," from %c %4d %c to %c %4d %c",
+        			   domain[i].start[j].cid,domain[i].start[j].n,domain[i].start[j].in,
+        			   domain[i].end[j].cid,domain[i].end[j].n,domain[i].end[j].in); break;
+	   	     }
+		     fprintf(stdout,"%4d CAs ",add);
+           }
+	       total+=add;
+		   closefile(PDB,domain[i].filename); PDB=openfile(domain[i].filename,"r");
 	    }
 	    domain[i].ncoords=total;
             if(verbose==1) {
@@ -132,45 +135,58 @@ main(int argc, char *argv[]) {
 	Ro=(int**)malloc(ndomain*sizeof(int));
 	Rg=(float*)malloc(ndomain*sizeof(float));
 	Rm=(float*)malloc(ndomain*sizeof(float));
-	for(i=0; i<ndomain; ++i) { 
+	for(i=0; i<ndomain; ++i) {
+		/* Chain ID, or rather the chain of the first segment, when multiple */
+		char chainid = domain[i].start[0].cid;
+		/* Increment temperature factor, to distinguish orientations visually */
+		float temp = 0;
+
+		/* Memory leak? */
 	   Ro[i]=(int*)malloc(3*sizeof(int));
 	   Ro[i] = RBR_c_of_m_pep(domain[i].coords,domain[i].ncoords,domain[i].aa,1,&total_mass);
            Rg[i] = RBR_r_of_gyration_pep(Ro[i],domain[i].coords,domain[i].ncoords,domain[i].aa,1,PRECIS,2);
            Rm[i] = RBR_r_max_pep(Ro[i],domain[i].coords,domain[i].ncoords,domain[i].aa,PRECIS,2);
            printf("REMARK Domain %3d Id %10s N = %d Rg = %7.3f Rmax = %7.3f Ro   = ", 
                i+1,domain[i].id,domain[i].ncoords,Rg[i],Rm[i]);
-	   printf("%8.3f %8.3f %8.3f",(float)Ro[i][0]/(float)PRECIS,(float)Ro[i][1]/(float)PRECIS,(float)Ro[i][2]/(float)PRECIS);
+           printf("%8.3f %8.3f %8.3f",(float)Ro[i][0]/(float)PRECIS,(float)Ro[i][1]/(float)PRECIS,(float)Ro[i][2]/(float)PRECIS);
            if(add_file_name==1) {
                printf(" %s",domain[i].filename);
            } 
            printf("\n");
 
                 /* ATOM      2  CA  ALA A   7      25.400  -4.374  40.370  1.00 74.92           C          */
-           printf("ATOM      0  CA  ALA Z   0    %8.3f%8.3f%8.3f  1.00 10.00\n",
-	        ((float)Ro[i][0]/(float)PRECIS),
+           printf("ATOM      0  CA  ALA %c   0    %8.3f%8.3f%8.3f  1.00  0.00\n",
+        		  chainid,
+        		((float)Ro[i][0]/(float)PRECIS),
                 ((float)Ro[i][1]/(float)PRECIS),
                 ((float)Ro[i][2]/(float)PRECIS));
-           printf("ATOM      1  CA  ALA Z   1    %8.3f%8.3f%8.3f  1.00 10.00\n",
+           printf("ATOM      1  CA  ALA %c   1    %8.3f%8.3f%8.3f  1.00  4.00\n",
+         		  chainid,
 	        ((float)Ro[i][0]/(float)PRECIS)+diameter,
                 ((float)Ro[i][1]/(float)PRECIS),
                 ((float)Ro[i][2]/(float)PRECIS));
-           printf("ATOM      1  CA  ALA Z   1    %8.3f%8.3f%8.3f  1.00 10.00\n",
+           printf("ATOM      1  CA  ALA %c   1    %8.3f%8.3f%8.3f  1.00  0.00\n",
+         		  chainid,
 	        ((float)Ro[i][0]/(float)PRECIS)-diameter,
                 ((float)Ro[i][1]/(float)PRECIS),
                 ((float)Ro[i][2]/(float)PRECIS));
-           printf("ATOM      2  CA  ALA Z   2    %8.3f%8.3f%8.3f  1.00 10.00\n",
+           printf("ATOM      2  CA  ALA %c   2    %8.3f%8.3f%8.3f  1.00 12.00\n",
+         		  chainid,
 	        ((float)Ro[i][0]/(float)PRECIS),
                 ((float)Ro[i][1]/(float)PRECIS)+diameter,
                 ((float)Ro[i][2]/(float)PRECIS));
-           printf("ATOM      2  CA  ALA Z   2    %8.3f%8.3f%8.3f  1.00 10.00\n",
+           printf("ATOM      2  CA  ALA %c   2    %8.3f%8.3f%8.3f  1.00  0.00\n",
+         		  chainid,
 	        ((float)Ro[i][0]/(float)PRECIS),
                 ((float)Ro[i][1]/(float)PRECIS)-diameter,
                 ((float)Ro[i][2]/(float)PRECIS));
-           printf("ATOM      3  CA  ALA Z   3    %8.3f%8.3f%8.3f  1.00 10.00\n",
+           printf("ATOM      3  CA  ALA %c   3    %8.3f%8.3f%8.3f  1.00 20.00\n",
+         		  chainid,
 	        ((float)Ro[i][0]/(float)PRECIS),
                 ((float)Ro[i][1]/(float)PRECIS),
                 ((float)Ro[i][2]/(float)PRECIS)+diameter);
-           printf("ATOM      3  CA  ALA Z   3    %8.3f%8.3f%8.3f  1.00 10.00\n",
+           printf("ATOM      3  CA  ALA %c   3    %8.3f%8.3f%8.3f  1.00  0.00\n",
+         		  chainid,
 	        ((float)Ro[i][0]/(float)PRECIS),
                 ((float)Ro[i][1]/(float)PRECIS),
                 ((float)Ro[i][2]/(float)PRECIS)-diameter);
@@ -197,4 +213,5 @@ main(int argc, char *argv[]) {
 	   free(domain[i].numb);
 	}
 	free(domain);
+    return 0;
 }
