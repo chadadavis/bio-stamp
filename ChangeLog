@@ -4,3 +4,17 @@
 	* New ChangeLog to celebrate moving to Google Project Hosting
 	* Merged 4.4 tag to trunk and verifying tests in preparation for 4.5 release
 
+1999-04-26  
+	* New features to Version 4.2 include:
+	1. Programs for merging sequence/structure alignments/superimpositions
+	from multiple sources.
+	2. Assignment of probability values after Murzin (1993, JMB, 689-694)
+	to assess whether an observed structural similarity implies a common
+	superfamily (and thus a common ancestor, and usually a common
+	molecular function).  Note that these probability values can reveal
+	homology when sequence identities are insignificant.
+	3. The ability to read compressed PDB and DSSP files, and to read
+	distr/xx formatted PDB directories.
+	4. Programs for converting STAMP alignments (or indeed any alignment)
+	to various standard formats such as CLUSTAL and MSF.
+
