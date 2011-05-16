@@ -12,7 +12,7 @@
 void exit_error();
 
 /* avestruc: reads in a stamp output file and generates an average structure file */
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	int i,j,k,l,test;
 	int ndomain,total,add,nbloc;

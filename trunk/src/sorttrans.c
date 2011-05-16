@@ -36,7 +36,7 @@ void comparei_rms_hsort(int n,struct info_struc* info);
 
 void exit_error();
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	char c;
 	char *buff;

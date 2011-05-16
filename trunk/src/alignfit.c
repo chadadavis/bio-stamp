@@ -5,7 +5,7 @@
 /* Reads an AMPS format block file containing structurally derived sequences and a
  *  file containing a description as to where the coordinates may be found */
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	char c;
 	char ins,cid;

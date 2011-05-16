@@ -12,7 +12,7 @@
 void exit_error();
 void help_exit_error();
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	int i,j,k,test;
 	int ndomain,total,add;

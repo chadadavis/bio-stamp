@@ -13,7 +13,7 @@
 
 int numseq(FILE *fp);
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	
 	int i,j,k;
 	int n1, n2, n2new, which, which1, which2, nn, found, len;

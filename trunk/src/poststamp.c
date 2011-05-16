@@ -14,7 +14,7 @@
  * Also will now provide STAMP like equivalences from normal
  *  alignments (you have to give a domain/transformation file using -d)
  */
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	int i,j,k,l,test;
 	int ndomain,total,add,nbloc;

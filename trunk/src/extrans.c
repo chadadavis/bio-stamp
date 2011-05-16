@@ -11,7 +11,7 @@
 
 void exit_error();
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	
 	
 	int i,j,k;
