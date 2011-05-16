@@ -21,7 +21,6 @@ int getks(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 	count=0;
 	retval=0;
 
-
 	for(i=0; i<ndomain; ++i) {
 	   fprintf(parms[0].LOG,"%s -- ",domain[i].id);
 	   /* first check to see if there is a DSSP file that uses the whole ID name */
@@ -32,6 +31,7 @@ int getks(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 		filename=getfile(domain[i].id,parms[0].dsspfile,4,parms[0].LOG);
 	   }
 	   if(filename[0]=='\0') {
+	       free(filename);
 	      fprintf(parms[0].LOG," no DSSP file found for %s\n",domain[i].id);
 	      for(j=0; j<domain[i].ncoords; ++j) domain[i].sec[j]='?';
 	      domain[i].sec[j]='\0';

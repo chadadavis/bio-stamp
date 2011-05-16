@@ -1,10 +1,17 @@
 #!/bin/bash
 
+platform=$1
 tmp=/tmp/stamp_
 cwd=`pwd`
 total=0
 passed=0
 
+if [ -z $platform ]
+then
+    bindir="../bin/";
+else
+    bindir="../bin/$platform/";
+fi
 
 cd t
 for file in `ls *.t | sort -n`
