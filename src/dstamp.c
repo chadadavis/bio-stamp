@@ -7,7 +7,7 @@
  * (c) R.B. Russell 1996
  */
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	int i,j;
 	int nbloc,minlen,bloclen;

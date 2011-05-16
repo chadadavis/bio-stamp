@@ -5,7 +5,7 @@
 
 /* This was just a little piddly routine I wrote to figure something out
  *  for STAMP */
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	int M,N,Step;
 	int P,count;

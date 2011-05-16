@@ -5,7 +5,7 @@
  *
  * RBR September 1995 */
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	int i,j,k,n;
 	int nbloc,nseq;

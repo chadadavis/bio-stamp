@@ -7,7 +7,7 @@
 /* Clean up a block file by attaching lone isolated
  *  residues to the nearest continuous segment */
 
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
 	int i,j;
 	int nbloc,minlen,bloclen;
