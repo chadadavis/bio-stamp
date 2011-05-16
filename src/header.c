@@ -1,33 +1,37 @@
-/******************************************************************************
- The computer software and associated documentation called STAMP hereinafter
- referred to as the WORK which is more particularly identified and described in 
- the LICENSE.  Conditions and restrictions for use of
- this package are also in the LICENSE.
+/*
+Copyright (1997,1998,1999,2010) Robert B Russell & Geoffrey J Barton
 
- The WORK is only available to licensed institutions.
+This file is part of STAMP
 
- The WORK was developed by: 
-	Robert B. Russell and Geoffrey J. Barton
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version
 
- Of current contact addresses:
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE  See the
+GNU General Public License for more details A copy of the license
+can be found in the LICENSE file in the STAMP installation directory
 
- Robert B. Russell (RBR)             Geoffrey J. Barton (GJB)
- Bioinformatics                      EMBL-European Bioinformatics Institute
- SmithKline Beecham Pharmaceuticals  Wellcome Trust Genome Campus
- New Frontiers Science Park (North)  Hinxton, Cambridge, CB10 1SD U.K.
- Harlow, Essex, CM19 5AW, U.K.       
- Tel: +44 1279 622 884               Tel: +44 1223 494 414
- FAX: +44 1279 622 200               FAX: +44 1223 494 468
- e-mail: russelr1@mh.uk.sbphrd.com   e-mail geoff@ebi.ac.uk
-                                     WWW: http://barton.ebi.ac.uk/
+STAMP was developed by Robert B Russell and Geoffrey J Barton of
+current addresses:
 
-   The WORK is Copyright (1997,1998,1999) Robert B. Russell & Geoffrey J. Barton
-	
-	
-	
+ Prof Robert B Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
 
- All use of the WORK must cite: 
- R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+ All use of STAMP must cite: 
+
+ RB Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
   Structure Comparison: Assignment of Global and Residue Confidence Levels",
-  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
-*****************************************************************************/
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992)
+*/

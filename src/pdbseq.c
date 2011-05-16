@@ -1,6 +1,43 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdio.h>
 #include <stdlib.h>
-#include <stamp.h>
+#include "stamp.h"
 #define MAX_SEQ_LEN 3000
 
 /* Reads a list of domains from the standard input (or a file),
@@ -79,8 +116,6 @@ main(int argc, char *argv[]) {
 		  ftype=0;
 	      } else if(strcmp(format,"FASTA")==0) {
 		   ftype=1;
-	      } else if(strcmp(format,"BLC")==0) {
-		   ftype=2;
 	      } else {
 		fprintf(stderr,"error: format %s not recognised\n",format);
 	      }
@@ -161,10 +196,8 @@ main(int argc, char *argv[]) {
 	     }
 	     domain[i].ncoords=0;
 	     domain[i].aa=(char*)malloc((MAX_SEQ_LEN+1)*sizeof(char)); 
-             domain[i].numb=(struct brookn*)malloc(MAX_SEQ_LEN*sizeof(struct brookn));
-             domain[i].coords=(int**)malloc(MAX_SEQ_LEN*sizeof(int*)); 
-/*             domain[i].coords=NULL; */
 	     total=0;
+             domain[i].coords=NULL;
 	     for(j=0; j<domain[i].nobj; ++j) {
 	      if(igetca(PDB,domain[i].coords,&domain[i].aa[total],&domain[i].numb[total],
 	                &add,domain[i].start[j],domain[i].end[j],
@@ -217,11 +250,8 @@ main(int argc, char *argv[]) {
 	  } else {
 		OUT=stdout;
 	  }
-	  if(ftype==0) {
-                fprintf(OUT,">P1;%s ",domain[i].id);
-          } else {       
-                fprintf(OUT,">%s ",domain[i].id);
-          }
+	  if(ftype==0) fprintf(OUT,">P1;%s ",domain[i].id);
+          else         fprintf(OUT,">%s ",domain[i].id);
 	  if(ftype==0) fprintf(OUT,"\n");
 	  fprintf(OUT,"%s : ",domain[i].align);
 	  for(j=0; j<domain[i].nobj; ++j) { 
@@ -235,24 +265,13 @@ main(int argc, char *argv[]) {
 	     }
 	  }
 	  fprintf(OUT,"\n");
-          if(ftype==2) { 
-            fprintf(OUT,"*\n");
-          }
 	  for(j=0; j<strlen(domain[i].aa); ++j) {
 	     fprintf(OUT,"%c",domain[i].aa[j]);
-             if(ftype==2) {
-                fprintf(OUT," %c %4d %c\n",domain[i].numb[j].cid, domain[i].numb[j].n, domain[i].numb[j].in);
-             } else if(((j+1)%80)==0) {
-                   fprintf(OUT,"\n");
-             }
+	     if(((j+1)%80)==0) fprintf(OUT,"\n");
 	  }
-	  if(ftype==0 || ftype==2) {
-                 fprintf(OUT,"*");
-          }
+	  if(ftype==0) fprintf(OUT,"*");
 	  fprintf(OUT,"\n");
-	  if(sepfiles==1) {
-               fclose(OUT);
-          }
+	  if(sepfiles==1) fclose(OUT);
 	}
 	exit(0);
 }

@@ -1,6 +1,43 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdlib.h>
 #include <stdio.h>
-#include <stamp.h>
+#include "stamp.h"
 
 int getpars(FILE *fp, struct parameters *var) {
 
@@ -18,7 +55,6 @@ int getpars(FILE *fp, struct parameters *var) {
     parm = (char*)malloc(200*sizeof(char));
     dim  = (char*)malloc(200*sizeof(char));
 
-    var[0].FITCUT=30;
     while(fscanf(fp,"%s%s",parm,dim) != (int)EOF) {
 	for(i=0; i<strlen(parm); ++i) parm[i]=ltou(parm[i]); /* change to upper case */
 	T_FLAG=(dim[0]=='Y' || dim[0]=='y' || dim[0]=='1' || dim[0]=='T' || dim[0]=='t' || dim[0]=='o' || dim[0]=='O');
@@ -136,18 +172,12 @@ int getpars(FILE *fp, struct parameters *var) {
 		if(var[0].SCANMODE==1) var[0].PAIRALIGN=1; 
 	} else if(strcmp(parm,"SCANCUT")==0) 
 		sscanf(dim,"%f",&var[0].SCANCUT);
-	else if(strcmp(parm,"FITCUT")==0) 
-		sscanf(dim,"%d",&var[0].FITCUT);
 	else if(strcmp(parm,"SECSCREEN")==0)
 		var[0].SECSCREEN=T_FLAG;
 	else if(strcmp(parm,"CO")==0)
 		var[0].CO=T_FLAG;
 	else if(strcmp(parm,"SECSCREENMAX")==0)
 		sscanf(dim,"%f",&var[0].SECSCREENMAX);
-	else if(strcmp(parm,"PAIROUTPUT_TO_LOG")==0)
-		var[0].pairoutput_to_log=T_FLAG;
-	else if(strcmp(parm,"UD_SECTION")==0)
-		sscanf(dim,"%d",&var[0].ud_section);
 	else if(strcmp(parm,"SCANTRUNC")==0)
 		var[0].SCANTRUNC=T_FLAG;
 	else if(strcmp(parm,"SCANTRUNCFACTOR")==0)
@@ -218,11 +248,7 @@ int getpars(FILE *fp, struct parameters *var) {
        fprintf(stderr,"error: cannot specify SCAN and either PAIRWISE or TREEWISE\n");
        return -1;
     }
-    
-    if((var[0].SCAN) && (var[0].SCANMODE==1)) { 
-		var[0].SCANALIGN=1;
-		var[0].PAIRALIGN=1;
-    }
+    if(var[0].SCAN) var[0].SCANALIGN=var[0].PAIRALIGN=(var[0].SCANMODE==1);
     if(var[0].SW==1 && var[0].STATS && (var[0].SCAN || var[0].PAIRWISE) ) {
       fprintf(stderr,"error: corner cutting cannot be used in conjunction with STATS ==1\n");
       return -1;

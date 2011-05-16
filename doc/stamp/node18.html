@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Database Scanning</TITLE>
+<META NAME="description" CONTENT="Database Scanning">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node19.html">
+<LINK REL="previous" HREF="node17.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node19.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html365"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html361"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html355"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html363"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html366"
+  HREF="node19.html">Using SCAN mode as</A>
+<B> Up:</B> <A NAME="tex2html362"
+  HREF="node15.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html356"
+  HREF="node17.html">Multiple alignment using an</A>
+ &nbsp; <B>  <A NAME="tex2html364"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00330000000000000000">
+Database Scanning</A>
+</H1>
+
+<P>
+Database scanning within STAMP is unpublished, apart from a brief description in a figure 
+legend [<A
+ HREF="node60.html#matthews94">16</A>], but it has been fairly well tested
+since version 2.0.  Indeed, two novel similarities have resulted
+in publications [<A
+ HREF="node60.html#rb93b">9</A>,<A
+ HREF="node60.html#matthews94">16</A>].
+<BR>
+<BR><B>Immunglobulin domain</B>
+<BR>
+<BR>
+One example of a scan is given.  The light chain variable domain
+of the immunoglobulin 2FB4 is used to scan a small database of
+other protein domains containing both a diverse collection of
+related folds (greek key folds, including azurin, superoxide
+dismutase, CD4, etc.), and completely unrelated folds (such as
+globins).  See the directory examples/ig for this example.
+<BR>
+<BR>
+The 2FB4 domain is described in 2fb4lv.domain.  To scan this 
+against the database type:
+<BR>
+<P>
+<PRE>
+stamp -l 2fb4lv.domain -s -n 2 -slide 5 -prefix 2fb4lv_stamp -d some.domains  -cut
+</PRE>
+
+<P>
+`-s' specifies the SCAN mode `-slide' describes how many residues to slide the
+query sequence (2fb4lv) along each sequence in the file some.domains to provide
+each initial fit (i.e. the sequence of 2fb4lv is layed on top of each database
+sequence at postions 1, 6, 11, etc.). `-cut' tells the program to cut down each
+domain read in from some.domains according to where the similarity is found.  
+If it is not specified, the output will contain domain descriptors identical to
+those found in `some.domains'.  When one is comparing a single-domain query to
+a database structure having multiple domains, it is desirable to do this.   Try running
+it both ways (with and without -cut) and look at the output to see the difference.
+(e.g. CHAIN A is converted to A 1 _ to A 60 _  in one descriptor in the SCAN
+output and A 120 _ to A 175 _ in another, since there are two repeats of the
+query domain in the database structure).
+<BR>
+<BR>
+The above run should write the following to the
+standard output (again, ignoring the header):
+
+<P>
+<PRE>
+STAMP Structural Alignment of Multiple Proteins
+
+Version 4.4 (May 2010)
+
+ by Robert B. Russell &amp; Geoffrey J. Barton 
+ Please cite PROTEINS, v14, 309-323, 1992
+
+Results of scan will be written to file 2fb4lv_stamp.scan
+Fits  = no. of fits performed, Sc = STAMP score, RMS = RMS deviation
+Align = alignment length, Nfit = residues fitted, Eq. = equivalent residues
+Secs  = no. equiv. secondary structures, %I = seq. identity, %S = sec. str. identity
+P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
+        (NC = P value not calculated - potential FP overflow)
+
+     Domain1         Domain2          Fits  Sc      RMS   Len1 Len2 Align Fit   Eq. Secs    %I    %S     P(m)
+Scan 2fb4lv          2fb4lc             1   4.317   2.120  111  105  127   55   46    8  10.87  78.26 1.00e+00
+Scan 2fb4lv          2fb4l              1   9.799   0.001  111  166  111  111  111   11 100.00  97.30 0.00e+00
+Scan 2fb4lv          1mcplv             1   7.848   1.165  111  113  116   96   95    0  49.47  40.00 2.05e-22
+Scan 2fb4lv          1mcphv             1   6.921   1.500  111  122  126   85   81    0  30.86  34.57 1.44e-07
+Scan 2fb4lv          1cmsC              1   2.507   1.639  111  148  157   28   24    4   4.17  62.50 1.00e+00
+Scan 2fb4lv          3cd4               1   5.939   1.334  111  166  114   78   75   12  20.00  76.00 4.10e-03
+Scan 2fb4lv          2hhbb              0   0.000 100.000  111  146    0    0   75    0   0.00   0.00 1.00e+00
+Scan 2fb4lv          3dpa               0   0.000 100.000  111  166    0    0   75    0   0.00   0.00 1.00e+00
+Scan 2fb4lv          3sgbe              0   1.940   2.313  111  166  204   25   17    3   5.88  88.24 1.00e+00
+Scan 2fb4lv          1acx               1   4.152   2.454  111  108  133   57   43    4  16.28  72.09 7.26e-02
+Scan 2fb4lv          2abxa              0   0.000 100.000  111   74    0    0   43    0   0.00   0.00 1.00e+00
+Scan 2fb4lv          1l01               0   0.000 100.000  111  164    0    0   43    0   0.00   0.00 1.00e+00
+Scan 2fb4lv          2azaa              1   4.063   2.463  111  129  134   49   35    5  14.29  82.86 1.00e+00
+Scan 2fb4lv          1rnt               0   1.503   2.545  111  104  148   17   13    3  15.38  69.23 1.00e+00
+Scan 2fb4lv          2sodo              1   3.611   2.365  111  151  158   42   32    8   9.38  71.88 1.00e+00
+Scan 2fb4lv          2pcy               1   3.788   2.052  111   99  125   47   39    6  30.77  79.49 2.27e-04
+Scan 2fb4lv          8atca              0   0.000 100.000  111  166    0    0   39    0   0.00   0.00 1.00e+00
+See the file 2fb4lv_stamp.scan
+</PRE>
+
+<P>
+where all of the fields are as for the PAIRWISE mode, save for Fits, which indicates the 
+number of fits that were saved to the file `2fb4lv_stamp.scan'.  Note that for domain descriptors 
+(see some.domains) containing two Ig type folds (e.g. 2fb4l, 1cd4, etc.) that more than
+one fit has been saved, since the search found both of the Ig type folds in each of
+these two proteins.  Not also that `Fits' is zero for several of the examples,
+indicating that the no similarity was found within these proteins.  Where more than one
+Fit is output for a domain in the database, the best <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$S_{c}$">, RMS etc. are reported.
+<BR>
+<BR>
+2fbjlv_stamp.scan will contain all the transformations output during
+the scan.  Several of these will be redundant, since it is possible for a 
+particular match to be found twice.  To remove repeated 
+transformations, or those not considered interesting, run
+the program SORTTRANS on the output.
+<BR>
+<P>
+<PRE>
+sorttrans -f 2fb4lv_stamp.scan -s Sc 2.0 &gt; 2fb4lv_stamp.sorted
+</PRE>
+
+<P>
+This sorts the input file by <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$S_{c}$"> values, and leaves only those non-redundent 
+domain descriptions having an <!-- MATH
+ $S_{c} \geq 2.0$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$S_{c} \geq 2.0$">.  A cutoff of <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$2.0$"> is generally
+a good choice pairwise comparisons with a score lower than this tend to produce
+poor quality alignments.
+<BR>
+<P>
+<PRE>
+sorttrans -f 2fb4lv_stamp.scan -s rms 1.5  &gt; 2fb4lv_stamp.sorted
+</PRE>
+
+<P>
+sorts the input file by RMSD values, and leaves only those domain
+descriptions having an RMSD <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$\leq 1.5$"> &#197;.  Despite its predominance in
+the literature, RMSD is not a very good means of measuring structural 
+similarity, since low RMSDs can usually be obtained for any two structures
+if one considers a small enough set of residues.
+<BR>
+<P>
+<PRE>
+sorttrans -f 2fb4lv_stamp.scan -s nfit 40 &gt; 2fb4l_stamp.sorted
+</PRE>
+
+<P>
+sorts the input file by the number of atoms used in the final
+fitting, and leaves only those domain descriptions where nfit <IMG
+ WIDTH="43" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$\geq 40$">.
+<BR>
+<P>
+<PRE>
+sorttrans -f 2fb4lv.scan -s n_sec 6 &gt; 2fb4lv_stamp.sorted
+</PRE>
+
+<P>
+sorts the input file by the number of equivalent secondary 
+structures, and leaves only those having <IMG
+ WIDTH="14" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.png"
+ ALT="$6$"> or more secondary
+structures equivalent.
+<BR>
+<P>
+Combinations of these can be used to select out interesting domains
+from a scan output.  Probably the best combination involves Sc and
+nfit (ie. score and nfit), since large structures can give
+fortuitously large <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$S_{c}$"> values with very few fitted atoms.
+<BR>
+<BR>
+The final output is in the file 2fb4lv_stamp.sorted.  This is
+the result of the first example (i.e. -s Sc 2.0).
+Note that several structures similar to the Ig type domain have
+been detected, and appear (according to <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$S_{c}$">) in the order one 
+might expect from knowledge of the 3D structures, sequences and
+functions of these proteins.    
+<BR>
+<BR>
+The output from scanning can be used as input for other modes of
+the program  Once you have performed a scan, and have sorted the 
+`hits' down to an interesting set, you can then use the output from 
+scan as the input for a multiple alignment. This is discussed in the next section.  
+
+<BR>
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html365"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html361"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html355"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html363"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html366"
+  HREF="node19.html">Using SCAN mode as</A>
+<B> Up:</B> <A NAME="tex2html362"
+  HREF="node15.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html356"
+  HREF="node17.html">Multiple alignment using an</A>
+ &nbsp; <B>  <A NAME="tex2html364"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

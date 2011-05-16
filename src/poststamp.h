@@ -1,3 +1,40 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,7 +47,7 @@ struct brookn { /* structure to represent brookhaven residue numbers */
 };
 
 struct domain_loc{		/* This structure allows rather complex domains to be described */
-   char filename[4096];
+   char filename[100];
    char id[100];
    int nobj;			/* The number of objects considered within the named file */
    int *type;			/* The type that each object is:
@@ -65,8 +102,9 @@ int getstampdat(struct stampdat *stamp, FILE *IN, int *nstamp, int *nseq, int *n
 
 int *getstamprel(struct stampdat *stamp, int nval, int npos, char type, float cutoff, int window);
 
+/* SMJS Removed PRECISION */
 float rossmann(int **atoms1, int **atoms2, int start, int end,
-        float const1, float const2, float *Dij, float *Cij, int PRECISION);
+        float const1, float const2, float *Dij, float *Cij);
 
 
 int count_domain(FILE *IN);
@@ -80,5 +118,5 @@ int igetca(FILE *IN, int **coords, char *aa, struct brookn *numb, int *ncoord,
         struct brookn start, struct brookn end, int type, int MAXats,
         int REVERSE, int PRECISION, FILE *OUTPUT);
 
-void closefile(FILE *handle,char *filename);
+int closefile(FILE *handle,char *filename);
 FILE *openfile(char *filename, char *type);

@@ -3,37 +3,36 @@
 %  and several non-IG like domains
 %
 % Various constant and variable domains (light and heavy chain)
-/data/newpdb/pdb/pdb2fb4.ent 2fb4lc { L 110 _ to L 214 _ }
+/data/newpdb/pdb/pdb2fb4 2fb4lc { L 110 _ to L 214 _ }
 % Both variable and constant domain (ie. should find both)
-/db/pdb/pdb/pdb2fb4.ent 2fb4l { CHAIN L } 
-/db/pdb/pdb/pdb1mcp.ent 1mcplv { L   1 _ to L 113 _ }
-/db/pdb/pdb/pdb1mcp.ent 1mcphv { H   1 _ to H 122 _ }
-%
+2fb4 2fb4l { CHAIN L } 
+1mcp 1mcplv { L   1 _ to L 113 _ }
+1mcp 1mcphv { H   1 _ to H 122 _ }
 % aspartic proteinase C terminal lobe
-/db/pdb/pdb1cms.ent 1cmsC { _ 176 _ to _ 323 _ }
+1cms 1cmsC { _ 176 _ to _ 323 _ }
 % CD4
-/db/pdb/pdb/pdb3cd4.ent 3cd4 { ALL }
+3cd4 3cd4 { ALL }
 % Human hemoglobin beta chain
-/db/pdb/pdb2hhb.ent 2hhbb { CHAIN B }
+2hhb 2hhbb { CHAIN B }
 % Chaperonin
-/db/pdb/pdb/pdb3dpa.ent 3dpa { ALL }
+3dpa 3dpa { ALL }
 % S. griseus proteinase B
-/db/pdb/pdb/pdb3sgb.ent 3sgbe { CHAIN E }
+3sgb 3sgbe { CHAIN E }
 % Actinoxanthin
-/db/pdb/pdb/pdb1acx.ent 1acx { ALL }
+1acx 1acx { ALL }
 % Snke toxin
-/db/pdb/pdb//pdb2abx.ent 2abxa { CHAIN A }
+2abx 2abxa { CHAIN A }
 % T4 lysozyme
-/db/pdb/pdb/pdb1l01.ent 1l01 { ALL }
+1l01 1l01 { ALL }
 % Azurin
-/db/pdb/pdb/pdb2aza.ent 2azaa { CHAIN A }
+2aza 2azaa { CHAIN A }
 % Rionuclease
-/db/pdb/pdb/pdb1rnt.ent 1rnt { ALL }
+1rnt 1rnt { ALL }
 % Superoxide dismutase
-/db/pdb/pdb/pdb2sod.ent 2sodo { CHAIN O }
+2sod 2sodo { CHAIN O }
 % Rubico small subunit
-%/db/pdb/pdb/pdb8rub.ent 8rubs { CHAIN S }
+%8rub 8rubs { CHAIN S }
 % Plastocyanin
-/db/pdb/pdb/pdb2pcy.ent 2pcy { ALL } 
+2pcy 2pcy { ALL } 
 % Aspartate transcarbamylase
-/db/pdb/pdb//pdb8atc.ent 8atca { CHAIN A }
+8atc 8atca { CHAIN A }

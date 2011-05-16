@@ -1,0 +1,334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Background</TITLE>
+<META NAME="description" CONTENT="Background">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html205"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html201"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html195"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html203"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html206"
+  HREF="node7.html">A brief description of</A>
+<B> Up:</B> <A NAME="tex2html202"
+  HREF="node2.html">Introduction and Overview</A>
+<B> Previous:</B> <A NAME="tex2html196"
+  HREF="node5.html">Overview</A>
+ &nbsp; <B>  <A NAME="tex2html204"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00240000000000000000">
+Background</A>
+</H1>
+
+<P>
+The aim of this work was to provide a set of multiple sequence
+alignments derived from structure alone.  These alignments have 
+obvious uses which have been described elsewhere [<A
+ HREF="node60.html#rb92b">1</A>,<A
+ HREF="node60.html#sali90">2</A>].  
+Numerous other means of deriving such alignments have been 
+presented, but, at the time of the development of STAMP, only one had
+been applied to alignments of more than two sequences, and no 
+systematic method for assessing the quality of the alignments had 
+been provided.  These, then, were the goals of this work.
+<BR>
+<BR>
+At the heart of the method is the Argos &amp; Rossmann [<A
+ HREF="node60.html#argos76">3</A>]
+equation for expressing the probability of equivalence of
+residue structural equivalence:
+<BR>
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+P_{ij} = exp \frac{d_{ij}^{2}}{-2 \times E_{1}^{2}} 
+exp \frac{s_{ij}^{2}}{-2 \times E_{2}^{2}}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="251" HEIGHT="53" BORDER="0"
+ SRC="img1.png"
+ ALT="\begin{displaymath}
+P_{ij} = exp \frac{d_{ij}^{2}}{-2 \times E_{1}^{2}}
+exp \frac{s_{ij}^{2}}{-2 \times E_{2}^{2}}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+where <IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$d_{ij}$"> is the distance between <!-- MATH
+ ${\rm C}_{\alpha}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="${\rm C}_{\alpha}$"> atoms for residues <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$i$">
+and <IMG
+ WIDTH="13" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$j$">, and <IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$s_{ij}$"> is a measure of the local main chain conformation.
+A detailed description of this equation, and how it has been
+applied to multiple structures is given in [<A
+ HREF="node60.html#rb92b">1</A>]. 
+<BR>
+<BR>
+STAMP makes extensive use of the Smith-Waterman (SW) algorithm 
+[<A
+ HREF="node60.html#smith81">4</A>,<A
+ HREF="node60.html#barton93b">5</A>,<A
+ HREF="node60.html#timewarps">6</A>].  This is a widely used algorithm 
+which allows fast determination of the best path through a matrix 
+containing a numerical measure of the pairwise similarity of each 
+position in one sequence to each position in another sequence.  Within 
+STAMP, these similarity values correspond to modified <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$P_{ij}$"> 
+values (above).
+<BR>
+<BR>
+The result of the SW algorithm applied to a matrix of modified <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$P_{ij}$">
+values is a list of residue equivalences.  From this list
+we may obtain a set of equivalenced <!-- MATH
+ ${\rm C}_{\alpha}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="${\rm C}_{\alpha}$"> positions.  These are
+used to obtain a best fit transformation and RMS deviation by a
+least squares method [<A
+ HREF="node60.html#kabsch78">7</A>,<A
+ HREF="node60.html#mclachlan79">8</A>].  This
+transformation can be applied in the relevant way to yield two
+new sets of coordinates for which calculation (and correction) of
+<IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$P_{ij}$"> values, the SW path finding and the least squares fitting can
+be repeated in an iterative fashion until the two sets of
+coordinates, and the corresponding alignment, converge on a
+single solution.
+<BR>
+<BR>
+This strategy has proved successful in the generation of tertiary
+structure-based multiple protein sequence alignment for a wide
+variety of diverse protein structural families 
+[<A
+ HREF="node60.html#rb92b">1</A>,<A
+ HREF="node60.html#rb93b">9</A>,<A
+ HREF="node60.html#rb93c">10</A>,<A
+ HREF="node60.html#rb94">11</A>,<A
+ HREF="node60.html#russell94">12</A>].  
+The method can accurately superimpose and obtain alignments for families 
+of proteins as structurally diverse as the greek key <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$\beta$"> sandwich 
+folds (e.g. immunoglobulin domains, CD4, PapD chaperonin, 
+azurin, superoxide dismutase, actinotaxin, prealbumin, etc.), the
+aspartic proteinase N- and C-terminal lobes, the Rossmann
+fold domains, the globin folds (including phycocyanins and
+colicins), and many others.
+<BR>
+<BR>
+It is important to remember that this method assumes overall
+topological similarity, and will not, without explicit
+intervention,  be able to superimpose/align structures with common
+secondary structures in similar orientations, but different
+connectivity or topologies (such as the different types of four helix bundle
+proteins: up-down-up-down with up-up-down-down).  
+<BR>
+<BR>
+Two measures of alignment confidence are provided [<A
+ HREF="node60.html#rb92b">1</A>]
+<BR>
+<BR>
+1. A structural similarity Score (<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$S_{c}$">) is defined in order that
+overall alignment quality and structural similarity can be compared
+across a wide range of protein structural families.  These are defined below.
+<BR>
+<BR>
+2. A measure of individual residue accuracy <!-- MATH
+ $P_{ij}^{\prime}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$P_{ij}^{\prime}$"> is 
+defined in order that residue equivalences can be normalised with 
+respect to both the number of structures in an alignment and the 
+length of the structures being aligned.
+<BR>
+<BR>
+Alignments having a structural similarity Score <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$S_{c}$"> between <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="$5.5$"> and
+<IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$9.8$"> imply a high degree of structural similarity and almost always
+suggest a functional and/or evolutionary relationship.
+Values between <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$2.5$"> and <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="$5.5$"> correspond to more distantly related
+structures, and do not always imply a functional or evolutionary relationship.
+Values less than <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$2.0$"> generally indicate little overall structural similarity.
+<BR>
+<BR>
+Stretches of three or more aligned positions with <!-- MATH
+ $P_{ij}^{\prime}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$P_{ij}^{\prime}$"> 
+values greater than <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img15.png"
+ ALT="$6.0$"> generally correspond to genuine topological 
+equivalences, values between <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$4.0$"> and <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img15.png"
+ ALT="$6.0$"> are equivalent <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$&gt; 50 \%$"> of 
+the time, and values less than <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$4.0$"> are generally not equivalent.  
+Stretches of residues having <!-- MATH
+ $P_{ij}^{\prime} > 6.0$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$P_{ij}^{\prime} &gt; 6.0$"> generally correspond to regions of 
+conserved secondary structure within a family of structures being 
+compared.  For multiple alignments, an alternative and more effective
+way of assessing residue-by-residue equivalence is provided in POSTSTAMP (see below).
+<BR>
+<BR>
+Both of these measures are referred to repeatedly below.  For a more
+detailed description of their derivation please refer to [<A
+ HREF="node60.html#rb92b">1</A>].  
+In addition, RMSD is used to refer to the root mean square 
+deviation between atoms selected for a fit.  The CUTOFF refers the 
+lowest allowable <!-- MATH
+ $P_{ij}^{\prime}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$P_{ij}^{\prime}$"> for the program to use a particular 
+pair of residues in a fit (called `C` in [<A
+ HREF="node60.html#rb92b">1</A>]).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html205"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html201"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html195"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html203"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html206"
+  HREF="node7.html">A brief description of</A>
+<B> Up:</B> <A NAME="tex2html202"
+  HREF="node2.html">Introduction and Overview</A>
+<B> Previous:</B> <A NAME="tex2html196"
+  HREF="node5.html">Overview</A>
+ &nbsp; <B>  <A NAME="tex2html204"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

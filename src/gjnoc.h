@@ -1,18 +1,55 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B Russell & Geoffrey J Barton
+
+This file is part of STAMP
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE  See the
+GNU General Public License for more details A copy of the license
+can be found in the LICENSE file in the STAMP installation directory
+
+STAMP was developed by Robert B Russell and Geoffrey J Barton of
+current addresses:
+
+ Prof Robert B Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ RB Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992)
+*/
 #ifndef GJ_NOC_H
 #define GJ_NOC_H
-/* Include file of definitions for program oc (o.c). */
+/* Include file of definitions for program oc (oc) */
 
 #define val_A_B(arr,n,i,j) arr[i][j-i-1]
 
 /* structure to hold cluster details
 Note:  	Normally, parentA and parentB point to pre-existing
-	clusters stored above them in the array of clusters.
+	clusters stored above them in the array of clusters
 	However, 
        	If the cluster is a single entity, then parentA and parentB
-       	are set to NULL.
+       	are set to NULL
        	If one or more of the parents are single entites, then
        	the storage for the entites is malloc'd independently
-       	of the master cluster array.
+       	of the master cluster array
 */
 
 struct sc{
@@ -21,7 +58,7 @@ struct sc{
 	int *members;	/* entities - this is redundant but speeds code */
 	struct sc *parentA; /* one parent of this cluster */
 	struct sc *parentB; /* the other parent */
-	char lab;           /* label set this to 1 normally.  0 if the cluster has been processed */
+	char lab;           /* label set this to 1 normally  0 if the cluster has been processed */
 };
 
 double **read_up_diag(FILE *infile, int n);

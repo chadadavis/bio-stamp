@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Alignment without an initial multiple alignment using ROUGHFIT</TITLE>
+<META NAME="description" CONTENT="Alignment without an initial multiple alignment using ROUGHFIT">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node22.html">
+<LINK REL="previous" HREF="node20.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node22.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html401"
+  HREF="node22.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html397"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html391"
+  HREF="node20.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html399"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html402"
+  HREF="node22.html">Protein domain databases</A>
+<B> Up:</B> <A NAME="tex2html398"
+  HREF="node15.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html392"
+  HREF="node20.html">Generating a set of</A>
+ &nbsp; <B>  <A NAME="tex2html400"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00360000000000000000">
+Alignment without an initial multiple alignment using ROUGHFIT</A>
+</H1>
+
+<P>
+This method described in this section, where the ROUGHFIT mode is used to
+create an initial alignment, was the one originally used in STAMP for cases where an initial
+multiple sequence alignment was not available. The SCAN mode (see the aligning
+section on aligning protease domains) now makes it possible to create
+a reasonable starting alignment even for cases where an accurate alignment based on sequence 
+is impossible. Apart from cases where the structures are homologous or of
+very similar length, using the SCAN mode generally produces better results than
+using ROUGHFIT. Accordingly, ROUGHFIT is deprecated in favour of using SCAN mode
+as a starting point. It documented here for the sake of completeness. 
+
+<P>
+This method avoids having to create an initial multiple sequence alignment and 
+tends to work for homologous proteins, or those having very similar 
+lengths despite no sequence similarity.
+<BR>
+<BR><B>Globins</B>
+<BR>
+<BR>
+Since the globin sequences are of similar length an initial
+superimposition accurate enough to proceed with STAMP can be
+obtained by merely aligning the N-terminal ends of the sequences
+and using whatever equivalences result to obtain an initial 
+superimposition.  The command ROUGH (ROUGHFIT procedure) is used.  In addition,
+an initial conformation based fit is performed 
+in order that any inaccuracies in this initial superimposition may be corrected.  
+See the directory examples/globins.
+
+<P>
+To run STAMP in this example, type:
+
+<P>
+<PRE>
+stamp -l globin.domains -rough -n 2 -prefix globin
+</PRE>
+
+<P>
+This should produce the following on the standard output (ignoring the header):
+<BR>
+<P>
+<PRE>
+STAMP Structural Alignment of Multiple Proteins
+
+Version 4.4 (May 2010)
+
+ by Robert B. Russell &amp; Geoffrey J. Barton 
+ Please cite PROTEINS, v14, 309-323, 1992
+
+Running roughfit.
+
+    Sc = STAMP score, RMS = RMS deviation, Align = alignment length
+    Len1, Len2 = length of domain, Nfit = residues fitted
+    Secs = no. equivalent sec. strucs. Eq = no. equivalent residues
+    %I = seq. identity, %S = sec. str. identity
+    P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
+            (NC = P value not calculated - potential FP overflow)
+
+     No.  Domain1         Domain2         Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S   P(m)
+Pair   1  2hhbb           2hhba           8.19   1.38    146  141   147  136 135    7  44.44  82.96 4.82e-25 
+Pair   2  2hhbb           2lhb            7.11   1.39    146  149   151  127 127    7  26.77  86.61 4.90e-08 
+Pair   3  2hhbb           4mbn            8.06   1.38    146  153   151  141 139    8  25.18  87.05 1.57e-07 
+Pair   4  2hhbb           1ecd            6.89   2.04    146  136   144  127 119    7  20.17  86.55 3.91e-04 
+Pair   5  2hhbb           1lh1            5.89   2.39    146  153   155  120 110    6  17.27  80.91 6.62e-03 
+Pair   6  2hhba           2lhb            6.54   1.66    141  149   150  122 119    7  34.45  88.24 3.97e-13 
+Pair   7  2hhba           4mbn            7.78   1.39    141  153   148  136 133    8  27.07  87.97 1.51e-08 
+Pair   8  2hhba           1ecd            6.61   2.18    141  136   145  124 118    8  17.80  87.29 3.47e-03 
+Pair   9  2hhba           1lh1            5.95   2.20    141  153   153  117 106    6  14.15  82.08 4.45e-02 
+Pair  10  2lhb            4mbn            7.13   1.23    149  153   149  131 130    8  25.38  90.77 2.82e-07 
+Pair  11  2lhb            1ecd            6.42   1.93    149  136   145  124 123    8  18.70  87.80 1.34e-03 
+Pair  12  2lhb            1lh1            5.74   2.11    149  153   155  117 105    6  19.05  85.71 2.04e-03 
+Pair  13  4mbn            1ecd            7.46   1.64    153  136   145  134 132    8  21.21  87.88 6.21e-05 
+Pair  14  4mbn            1lh1            6.76   2.35    153  153   155  135 133    6  17.29  84.21 3.35e-03 
+Pair  15  1ecd            1lh1            5.96   2.59    136  153   149  121 114    6  15.79  87.72 1.62e-02 
+Reading in matrix file globin.mat...
+Doing cluster analysis...
+Cluster:  1 (   2hhbb  &amp;    2hhba ) Sc  8.19 RMS   1.38 Len 147 nfit 136 
+ See file globin.1 for the alignment and transformations
+Cluster:  2 (    4mbn  &amp;    2hhbb    2hhba ) Sc  8.96 RMS   1.31 Len 151 nfit 138 
+ See file globin.2 for the alignment and transformations
+Cluster:  3 (    1ecd  &amp;     4mbn    2hhbb    2hhba ) Sc  8.35 RMS   1.81 Len 146 nfit 128 
+ See file globin.3 for the alignment and transformations
+Cluster:  4 (    2lhb  &amp;     1ecd     4mbn    2hhbb    2hhba ) Sc  8.24 RMS   1.23 Len 152 nfit 120 
+ See file globin.4 for the alignment and transformations
+Cluster:  5 (    1lh1  &amp;     2lhb     1ecd     4mbn    2hhbb    2hhba ) Sc  7.70 RMS   2.46 Len 160 nfit 121 
+ See file globin.5 for the alignment and transformations
+</PRE>
+
+<P>
+where the output and files are as described for the serine proteinase example above,
+with `s_prot' replaced with `globin'.
+<BR>
+<P>
+-rough performs the initial superimpositions (ROUGHFIT) and -n 2 means that the conformation 
+biased fit will be performed before the final fit.  This conformation biased fit is
+usually necessary when the initial superimpositions are approximate.
+<BR>
+<BR>
+ROUGHFIT will not always work.  Note that in this example all the pairwise
+<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$S_{c}$"> values are above <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img41.png"
+ ALT="$5.6$">, suggesting strong structural similarity.  If
+when using the ROUGHFIT option you find low <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$S_{c}$"> values (the program will
+flag the values with the message `LOW SCORE'), this usually means that ROUGHFIT hasn't
+managed to generate a good enough starting superimposition, and you should
+try using SCAN mode to generate an initial alignment, as described in the previous section. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html401"
+  HREF="node22.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html397"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html391"
+  HREF="node20.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html399"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html402"
+  HREF="node22.html">Protein domain databases</A>
+<B> Up:</B> <A NAME="tex2html398"
+  HREF="node15.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html392"
+  HREF="node20.html">Generating a set of</A>
+ &nbsp; <B>  <A NAME="tex2html400"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

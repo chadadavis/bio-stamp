@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Using SCAN mode as the starting point for multiple alignment</TITLE>
+<META NAME="description" CONTENT="Using SCAN mode as the starting point for multiple alignment">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node20.html">
+<LINK REL="previous" HREF="node18.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node20.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html377"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html373"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html367"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html375"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html378"
+  HREF="node20.html">Generating a set of</A>
+<B> Up:</B> <A NAME="tex2html374"
+  HREF="node15.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html368"
+  HREF="node18.html">Database Scanning</A>
+ &nbsp; <B>  <A NAME="tex2html376"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00340000000000000000"></A>
+<A NAME="scan_example"></A>
+<BR>
+Using SCAN mode as the starting point for multiple alignment
+</H1>
+In certain instances initial fits based on multiple sequence
+alignment will be far from accurate, such that even an initial
+conformation based fit will not be able to correct the poor
+initial superposition, and even genuine structural homology will
+be missed.  In these instances it is possible to make use of the
+SCAN mode to provide a more accurate initial superimposition.
+<BR>
+<BR>
+To do this one need only select one representative of the
+domains to be superimposed and use this domain in a sensiitve
+scan <EM>of the other domains</EM>.  By applying the same techinques as
+used for the scan with the Ig light variable domain (see the previous section) one
+can create a set of transformations of the searched domains onto the query domain. 
+This set of transformations constitutes a rough multiple structure alignment which
+can be used by STAMP as the starting point for an accurate alignment.
+<BR>
+<BR><B>Aspartic Proteinase Domains</B>
+<BR>
+<BR>
+<P>
+The output files for this example are in the directory examples/ac_prot.
+
+<P>
+In this example the aspartyl proteinase N-
+and C-terminal lobes are aligned.
+
+<BR>
+The N-terminal domain of 1CMS (in the file 1cmsN.domain) is used as the query domain
+to scan a list of aspartyl proteinase N- and C- terminal domains (ac_prot.domains). Running:
+
+<P>
+<PRE>
+stamp -l 1cmsN.domain -n 2 -s -slide 5 -d ac_prot.domains -prefix ac_prot
+</PRE>
+
+<P>
+should produce:
+
+<P>
+<PRE>
+STAMP Structural Alignment of Multiple Proteins
+
+Version 4.4 (May 2010)
+
+ by Robert B. Russell &amp; Geoffrey J. Barton 
+ Please cite PROTEINS, v14, 309-323, 1992
+
+Results of scan will be written to file ac_prot.scan
+Fits  = no. of fits performed, Sc = STAMP score, RMS = RMS deviation
+Align = alignment length, Nfit = residues fitted, Eq. = equivalent residues
+Secs  = no. equiv. secondary structures, %I = seq. identity, %S = sec. str. identity
+P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
+        (NC = P value not calculated - potential FP overflow)
+
+     Domain1         Domain2          Fits  Sc      RMS   Len1 Len2 Align Fit   Eq. Secs    %I    %S     P(m)
+Scan 1cmsN           1cmsN              1   9.800   0.000  175  175  175  175  175   18 100.00  94.86 0.00e+00
+Scan 1cmsN           1cmsC              1   3.214   2.065  175  148  204   68   62   11  19.35  83.87 1.11e-02
+Scan 1cmsN           4apeN              1   8.209   1.300  175  178  182  162  159   15  30.82  87.42 2.82e-13
+Scan 1cmsN           4apeC              1   3.420   1.948  175  152  205   70   67   13  14.93  79.10 6.11e-02
+Scan 1cmsN           3appN              1   7.976   1.280  175  174  183  157  157   19  29.30  90.45 1.01e-11
+Scan 1cmsN           3appC              1   3.269   2.068  175  149  205   68   59   12  13.56  81.36 1.00e+00
+Scan 1cmsN           2aprN              1   8.435   1.075  175  178  178  164  162   15  33.33  85.80 4.60e-16
+Scan 1cmsN           2aprC              1   3.304   1.973  175  147  200   67   64   13  18.75  76.56 1.37e-02
+Scan 1cmsN           4pepN              1   8.836   0.930  175  173  174  169  169   15  57.99  83.43 3.00e-53
+Scan 1cmsN           4pepC              1   3.223   2.105  175  152  206   68   57   10  21.05  85.96 6.17e-03
+See the file ac_prot.scan
+</PRE>
+
+<P>
+The file ac_prot.scan will contain all 10 domains superimposed onto 1cmsN.  Note that
+we haven't run the program with the `-cut' option, since the file ac_prot.domains contains
+an assignment of domains. Running SORTTRANS removes any redundancies:
+
+<P>
+<PRE>
+sorttrans -f ac_prot.scan -s Sc 2.5 &gt; ac_prot.sorted
+</PRE>
+
+<P>
+and running STAMP will generate the multiple alignment as described for the examples above.
+
+<P>
+<PRE>
+stamp -l ac_prot.sorted -prefix ac_prot
+</PRE>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html377"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html373"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html367"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html375"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html378"
+  HREF="node20.html">Generating a set of</A>
+<B> Up:</B> <A NAME="tex2html374"
+  HREF="node15.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html368"
+  HREF="node18.html">Database Scanning</A>
+ &nbsp; <B>  <A NAME="tex2html376"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

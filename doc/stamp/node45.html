@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>DSTAMP</TITLE>
+<META NAME="description" CONTENT="DSTAMP">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node46.html">
+<LINK REL="previous" HREF="node44.html">
+<LINK REL="up" HREF="node40.html">
+<LINK REL="next" HREF="node46.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html722"
+  HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html718"
+  HREF="node40.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html712"
+  HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html720"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html723"
+  HREF="node46.html">SORTTRANS</A>
+<B> Up:</B> <A NAME="tex2html719"
+  HREF="node40.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html713"
+  HREF="node44.html">VER2HOR</A>
+ &nbsp; <B>  <A NAME="tex2html721"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00525000000000000000">
+DSTAMP</A>
+</H2>
+
+<P>
+This program provides input for ALSCRIPT [<A
+ HREF="node60.html#barton93a">20</A>], GJB's program
+    for the display of multiple sequence alignments.  To get a copy of
+    this program, contact GJB at the address at the front this manual.  
+<BR>    
+<BR>
+The format is:
+<BR>
+<P>
+<PRE>
+    dstamp -f &lt;STAMP alignment file&gt; -prefix &lt;output prefix&gt; 
+    (-&lt;parameter&gt; [&lt;value&gt;])
+</PRE>
+
+<P>
+where <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">parameter<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$"> is one of the many parameters described below.
+    The new command line argument -P reads in parameter files, so if 
+    you have old DSTAMP files, they can still be read in this way. 
+<BR>    
+<BR>
+The parameters for DSTAMP, and their defaults, are (parameter names
+    are case insensitive):
+<BR>    
+<BR>
+prefix <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">string<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$"> 
+<BR>
+Prefix specifying the name of the alscript (.als) and postscript files (.ps)
+    to be generated.
+<BR>
+Default prefix = `alscript'
+<BR>    
+<BR>
+t  <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">character<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">
+<BR>
+The type of STAMP data to be used (ie. the first letter that 
+    occurs after the `#' characters in STAMP multiple alignment
+    output).
+    Default t = `G'
+<BR>    
+<BR>
+c  <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">float<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$"> 
+<BR>
+The minimum (or maximum in the case of RMS deviation) value to make
+    a position considered as reliably aligned.
+<BR>
+Default c = 6.0
+<BR>    
+<BR>
+w     <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">integer<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$"> 
+<BR>
+The minimum length of a stetch of reliable regions to be allowed.
+<BR>
+Default w = 3
+<BR>    
+<BR>
+ignore <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">integer<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">
+<BR>
+This is the number of sequences that can be ignored during the calculation
+    of residue or residue-property conservation (i.e. if ignore = 1 you allow
+    one `error' in one sequence during the calculation of conserved positions).
+<BR>    
+<BR>
+colour
+<BR>
+Boolean parameter.  If specified, the output will be in colour (via alscript).
+<BR>    
+<BR>
+motif
+<BR>
+Boolean parameter.  If specified, then a motif is written in the space between
+    the sequence alignment and the aligned secondary structures.
+<BR>    
+<BR>
+The output is an ALSCRIPT command file.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html722"
+  HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html718"
+  HREF="node40.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html712"
+  HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html720"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html723"
+  HREF="node46.html">SORTTRANS</A>
+<B> Up:</B> <A NAME="tex2html719"
+  HREF="node40.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html713"
+  HREF="node44.html">VER2HOR</A>
+ &nbsp; <B>  <A NAME="tex2html721"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

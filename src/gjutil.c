@@ -1,6 +1,71 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 /****************************************************************************
 gjutil.c:  Various utility routines - error checking malloc and
 free, string functions etc...
+
+TERMS OF USE:
+
+The computer software and associated documentation called STAMP hereinafter
+referred to as the WORK is more particularly identified and described in 
+the LICENSE.
+
+The WORK was written and developed by: Geoffrey J. Barton
+
+EMBL-European Bioinformatics Institute
+Wellcome Genome Campus
+Hinxton, Cambridge, CB10 1SD U.K.
+
+The WORK is Copyright (1992) Geoffrey J. Barton.
+
+
+CONDITIONS:
+
+The WORK is made available for educational and non-commercial research 
+purposes.
+
+For commercial use, a commercial licence is required - contact the author
+at the above address for details.
+
+The WORK may be modified, however this text, all copyright notices and
+the authors' address must be left unchanged on every copy, and all
+changes must be documented after this notice.  A copy of the
+modified WORK must be supplied to the author.
 
 ******************************************************************************/
 #include <stdio.h>
@@ -9,7 +74,7 @@ free, string functions etc...
 #include <string.h>
 #include <ctype.h>
 #include <errno.h>
-#include <gjutil.h>
+#include "gjutil.h"
 
 /* define pointers for standard streams to allow redefinition to files */
 
@@ -670,7 +735,8 @@ struct tokens *GJgettokens(const char *delims, char *buff)
   return tok;
 }
 
-void *GJfreetokens(struct tokens *tok)
+/* SMJS changed from void * to void */
+void GJfreetokens(struct tokens *tok)
 /* frees a tokens structure */
 
 {

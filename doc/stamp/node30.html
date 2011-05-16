@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pretty Structures via MOLSCRIPT</TITLE>
+<META NAME="description" CONTENT="Pretty Structures via MOLSCRIPT">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="previous" HREF="node29.html">
+<LINK REL="up" HREF="node25.html">
+<LINK REL="next" HREF="node31.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html510"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html506"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html502"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html508"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html511"
+  HREF="node31.html">Input and Output format</A>
+<B> Up:</B> <A NAME="tex2html507"
+  HREF="node25.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html503"
+  HREF="node29.html">Pretty Alignments via ALSCRIPT</A>
+ &nbsp; <B>  <A NAME="tex2html509"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION003105000000000000000">
+Pretty Structures via MOLSCRIPT</A>
+</H2>
+
+<P>
+GSTAMP can be used to display the structurally equivalences found by 
+STAMP.  It works by creating an input file for MOLSCRIPT [<A
+ HREF="node60.html#molscript">18</A>] 
+(contact Per Kraulis to obtain a copy).
+<BR>
+<BR>
+As for DSTAMP, a detailed description of parameters is given later. Here 
+is a quick example, using the first globin alignment (i.e. containing only
+two structures).
+<BR>
+<BR>
+First one needs to generate transformed PDB coordinates using the program 
+TRANSFORM:
+
+<P>
+<PRE>
+transform -f globin.5.clean
+</PRE>
+
+<P>
+This will create 2 PDB files with coordinates superimposed: 2hhbb.pdb and 2hhba.pdb.
+<BR>
+<P>
+<PRE>
+gstamp -f globin.5.clean
+</PRE>
+
+<P>
+This reads in the six structures and the alignment and outputs six
+molscript files called (domain identifier).molscript.
+<BR>
+<BR>
+One must then run molscript on each of these files that one wants to display.  For illustration,
+we will run two very distantly related globins:
+
+<P>
+<PRE>
+molscript &lt; 1lh1.molscript &gt; 1lh1.ps
+molscript &lt; 2hhba.molscript &gt; 2hhba.ps
+</PRE>
+
+<P>
+To give the two postscript files are shown in Figure 2.
+<BR>
+<P>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<FONT SIZE="-2"><B>Figure 2</B> Superimpositions of globin 1lh1 (left) and 2hhba (right).
+<BR></FONT>
+
+<P>
+By default, GSTAMP will show equivalent helix, strand and coil residues
+as MOLSCRIPT <IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img48.png"
+ ALT="$\alpha$">&nbsp;helix, <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$\beta$">&nbsp;strand and coil, with un-equivalent regions 
+being shown as <!-- MATH
+ ${\rm C}_{\alpha}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="${\rm C}_{\alpha}$"> trace.
+<BR>
+<BR>
+At best, GSTAMP will give only a starting point for further refinement.  
+Invariably, one will need to modify the orientation of the image for the 
+best view, and probably need to tweak the assignments of helix and strand 
+to look clear; MOLSCRIPT will not work, for example, if one has very 
+short <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$\beta$">&nbsp;strands.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html510"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html506"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html502"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html508"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html511"
+  HREF="node31.html">Input and Output format</A>
+<B> Up:</B> <A NAME="tex2html507"
+  HREF="node25.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html503"
+  HREF="node29.html">Pretty Alignments via ALSCRIPT</A>
+ &nbsp; <B>  <A NAME="tex2html509"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,8 +1,45 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <stamp.h>
-#include <stamprel.h>
+#include "stamp.h"
+#include "stamprel.h"
 
 /* cleans up a bloc file.
  * Given an existing blocfile and a minimum length of continuous non-spaces,
@@ -89,10 +126,8 @@ int clean_block(struct seqdat *bloc, int nbloc, int window) {
 	start[nstart+1]=bloclen;
 	end[nend++]=bloclen;
 /*	printf("nstart: %d, nend: %d\n",nstart,nend);
-	for(i=0; i<nstart; ++i) {
-           printf("i=%d, start[i]=%d, end[i]=%d\n",i,start[i],end[i]);  
-        }
-*/
+	for(i=0; i<nstart; ++i) 
+           printf("i=%d, start[i]=%d, end[i]=%d\n",i,start[i],end[i]);  */
 	/* now find the maximum and minimum length of each gap */
 	for(i=1; i<nstart; ++i) {
 	   max[i]=0; min[i]=(start[i]-end[i-1]-1);
@@ -103,7 +138,7 @@ int clean_block(struct seqdat *bloc, int nbloc, int window) {
 	      if(l<min[i]) min[i]=l;
 	      if(l>max[i]) max[i]=l;
 	   }
-/*	   printf("i=%d, end[i-1]=%d, start[i]=%d, min[i]=%d, max[i]=%d\n",i,end[i-1],start[i],min[i],max[i]);  */
+/*	   printf("i=%d, end[i-1]=%d, start[i]=%d, min[i]=%d, max[i]=%d\n",i,end[i-1],start[i],min[i],max[i]); */
 	}
 
 	/* now go through each gap for each sequence  and compress it to fit into the maximum in
@@ -172,15 +207,13 @@ int clean_block(struct seqdat *bloc, int nbloc, int window) {
 	}
 	for(j=0; j<nbloc; ++j) bloc[j+1].seq[bloclen+1]='\0';
 	/* output the results */
-/*
-	printf("after cleaning \n"); 
+/*	printf("after cleaning \n"); 
 	for(i=0; i<bloclen; ++i) {
 	  printf("%3d: ",i);
 	  for(j=0; j<nbloc; ++j) printf("%c",bloc[j+1].seq[i+1]);
 	  printf("  %1d\n",keep[i]);
 	}
 */
-
 	free(keep); free(start); free(end); free(min); free(max); free(temp); free(skip);
 	return 0;
 }

@@ -1,6 +1,43 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdio.h>
 #include <math.h>
-#include <stamp.h>
+#include "stamp.h"
 
 
 int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score, float *rms,
@@ -38,6 +75,10 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 
      struct cluster *cl;
      struct domain_loc *dcl;
+/* SMJS Added not_endali */
+     int not_endali;
+/* SMJS Added for speedup */
+     int dom1seclen,dom2seclen;
 
 /* SMJS Changed malloc(3*sizeof(float*) to malloc(3*sizeof(float) */
      v=(float*)malloc(3*sizeof(float));
@@ -59,9 +100,10 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
      /* these will be used if pairwise output is required */
 
      /* allocating the probability matrix */
-     prob=(int**)malloc((domain1[0].ncoords+2)*sizeof(int*));
+/* SMJS Changed malloc to calloc */
+     prob=(int**)calloc((domain1[0].ncoords+2),sizeof(int*));
      for(i=0; i<(domain1[0].ncoords+2); ++i)
-        prob[i]=(int*)malloc((domain2[0].ncoords+2)*sizeof(int));
+        prob[i]=(int*)calloc((domain2[0].ncoords+2),sizeof(int));
 
      touse = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
      puse = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
@@ -69,9 +111,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
      psec1 = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
      psec2 = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
      domain1[0].align = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
-     domain1[0].align[0]='\0';
      domain2[0].align = (char*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(char));
-     domain2[0].align[0]='\0';
 
 
      /* The matrix rt/vt must be set to the previous transformation 
@@ -87,7 +127,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	   if(i==j) r[i][j]=rt[i][j]=1.0;
 	   else r[i][j]=rt[i][j]=0.0;
 	}
-     } 
+     } /* End of for(i=0... */
      rmsold=0.0;
      *score=0.0;
      scorediff=parms[0].SCORETOL+1;
@@ -146,7 +186,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 
      /* output the alignment if required */
      if((parms[0].PAIRWISE && parms[0].PAIROUTPUT && count>=0) ||
-        (ALIGN && ((*rms)>0.0) && (!parms[0].SCAN || (parms[0].SCANMODE==1 && (*score)>=parms[0].SCANCUT && (*nfit)>=parms[0].FITCUT)) ) ) {
+        (ALIGN && ((*rms)>0.0) && (!parms[0].SCAN || (parms[0].SCANMODE==1 && (*score)>parms[0].SCANCUT)))) {
 	/* calculate puse */
 	temp_len=strlen(domain1[0].align);
 	sec_len1=strlen(domain1[0].sec);
@@ -196,19 +236,19 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
         if(makefile(dcl,0,cl[0],count,(*score),(*rms),(*length),(*nfit),fpuse,fpuse,fpuse,fpuse,1,parms)==-1) return -1;
      }
      /* calculate pairwise sequence and secondary structure identity */
-     seqcount=0; seccount=0;
-     align_len=0;
-     c1=0; c2=0; 
-     n_sec_equiv=0; 
-     in_sec1=0; in_sec2=0;
+     seqcount=seccount=align_len=c1=c2=0; n_sec_equiv=0; in_sec1=in_sec2=0;
      n_pos_equiv=0;
-     (*nequiv) = 0;
      nsec1=nsec2=0; last_matched1=last_matched2=-1;
      slen=strlen(domain1[0].align);
-/*     printf("align1: %s\n",domain1[0].align); */
      for(i=0; i<3; ++i) {
 	for(j=0; j<3; ++j) hbcmat[i][j]=0;
      }
+/* SMJS Added not_endali and sec_len1 and 2*/
+#ifndef USESTRLEN
+     dom1seclen = strlen(domain1[0].sec);
+     dom2seclen = strlen(domain2[0].sec);
+#endif
+     not_endali=1;
      for(i=0; i<slen; ++i) {
 	not_gap=0;
 	if(domain1[0].align[i]!=' ' && domain2[0].align[i]!=' ') not_gap=1;
@@ -224,20 +264,18 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
         }
 
 	neighbors=0;
-	for(j=i+1; j<slen && j<(i+5); ++j) {
+	for(j=i+1; j<slen && j<i+5; ++j) {
 	  if(fpuse[j]>=parms[0].second_CUTOFF) neighbors++;
 	  else break;
 	}
-	for(j=i-1; j>0 && j>(i-5); --j) {
+	for(j=i-1; j>0 && j>i-5; --j) {
 	   if(fpuse[j]>=parms[0].second_CUTOFF) neighbors++;
           else break;
         }
 	if(fpuse[i]>parms[0].second_CUTOFF && neighbors>=2) {
 
 	    /* identities are only in structural equivalences */
-	    if(not_gap && domain1[0].align[i]==domain2[0].align[i]) {
-			seqcount++; 
-	    } 
+	    if(not_gap && domain1[0].align[i]==domain2[0].align[i]) seqcount++; 
 	    if(not_gap && ss1==ss2) seccount++;
 
             n_pos_equiv++;
@@ -251,7 +289,9 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
             if(xpos!=ypos) hbcmat[ypos][xpos]++;
 	}
 
-/*	printf("%c %c %c(%c) %c(%c) %7.5f %4d ",domain1[0].align[i],domain2[0].align[i],ss1,domain1[0].sec[c1],ss2,domain2[0].sec[c2],fpuse[i],touse[i]);*/
+#ifdef DBGSTEVE
+	printf("%c %c %c(%c) %c(%c) %7.5f %4d\n",domain1[0].align[i],domain2[0].align[i],ss1,domain1[0].sec[c1],ss2,domain2[0].sec[c2],fpuse[i],touse[i]);
+#endif
 	if(ss1=='c') {
           in_sec1=0;
  	}  else {
@@ -273,7 +313,33 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	}
 	if(domain1[0].align[i]!=' ') c1++;
 	if(domain2[0].align[i]!=' ') c2++;
-	if(c1>0 && c1<=(strlen(domain1[0].sec)-1) && c2>0 && c2<=(strlen(domain2[0].sec)-1)) align_len++;
+/* SMJS I don't think these should be strlen(domain1[0].sec)-1 and */
+/*      strlen(domain2[0].sec)-1. c1 and c2 are incremented before */
+/*      this condition and so will reach strlen(domain1[0].sec) */
+/*      and strlen(domain2[0].sec) respectively for the last residue. */
+/* SMJS However the corrected condition fails because c1 and c2 do not */
+/*      get incremented past strlen(domain1[0].sec) and strlen(domain2[0].sec) */
+/* SMJS Added bodge to fix this */
+/* SMJS Replaced strlen(domain1[0].sec) with sec_len1. Same for strlen(domain2[0].sec) */
+#ifdef USESTRLEN
+	if(c1>0 && c1<=(strlen(domain1[0].sec)/* SMJS-1*/) && c2>0 && c2<=(strlen(domain2[0].sec)/* SMJS-1*/) && not_endali)
+#else
+	if(c1>0 && c1<=dom1seclen && c2>0 && c2<=dom2seclen && not_endali)
+#endif
+        {
+#ifdef DBGSTEVE
+           printf("Align_len incremented. c1=%d c2=%d strlen(domain1[0].sec)=%d strlen(domain2[0].sec)=%d\n",c1,c2,
+                  strlen(domain1[0].sec),strlen(domain1[0].sec));
+#endif
+           align_len++; 
+/* SMJS Replaced strlen(domain1[0].sec) with sec_len1. Same for strlen(domain2[0].sec) */
+#ifdef USESTRLEN
+           if (c1==strlen(domain1[0].sec) || c2==strlen(domain2[0].sec)) not_endali=0;
+#else
+           if (c1==dom1seclen || c2==dom2seclen) not_endali=0;
+#endif
+        }
+            
      }
      /* Determine the approximate number of equivalent secondary structures Pij'>=4.5 & len>=2 */
 
@@ -310,7 +376,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	for(i=0; i<temp_len-1; ++i) {
 	   if( (domain1[0].align[i]!=' ' && domain1[0].align[i+1]!=' ' && 
 		domain2[0].align[i]!=' ' && domain2[0].align[i+1]!=' ')  && /* not a gap */
-	       (fpuse[i]>=parms[0].second_CUTOFF && fpuse[i+1]>=parms[0].second_CUTOFF) && /* equivalent */
+	       (fpuse[i]>=parms[0].SCANCUT && fpuse[i+1]>=parms[0].SCANCUT) && /* equivalent */
 		c1>=(*start1) && c2>=(*start2) ) { /* further along than we were already */
 		  (*start1)=c1; (*start2)=c2;
 		  break;
@@ -324,7 +390,7 @@ int pairfit(struct domain_loc *domain1, struct domain_loc *domain2, float *score
 	 for(i=(temp_len-1); i>0; --i) {
 	   if( (domain1[0].align[i]!=' ' && domain1[0].align[i-1]!=' ' &&
                 domain2[0].align[i]!=' ' && domain2[0].align[i-1]!=' ')  && /* not a gap */
-               (fpuse[i]>=parms[0].second_CUTOFF && fpuse[i-1]>=parms[0].second_CUTOFF) && /* equivalent */
+               (fpuse[i]>=parms[0].SCANCUT && fpuse[i-1]>=parms[0].SCANCUT) && /* equivalent */
                 c1<=(*end1) && c2<=(*end2) ) { /* further along than we were already */
                   (*end1)=c1; (*end2)=c2;
                   break;

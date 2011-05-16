@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>ALIGNFIT</TITLE>
+<META NAME="description" CONTENT="ALIGNFIT">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node44.html">
+<LINK REL="previous" HREF="node42.html">
+<LINK REL="up" HREF="node40.html">
+<LINK REL="next" HREF="node44.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html698"
+  HREF="node44.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html694"
+  HREF="node40.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html688"
+  HREF="node42.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html696"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html699"
+  HREF="node44.html">VER2HOR</A>
+<B> Up:</B> <A NAME="tex2html695"
+  HREF="node40.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html689"
+  HREF="node42.html">PDBSEQ</A>
+ &nbsp; <B>  <A NAME="tex2html697"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00523000000000000000">
+ALIGNFIT</A>
+</H2>
+
+<P>
+ALIGNFIT takes a multiple sequence alignment of proteins of known 3D structures
+    and uses it to superimpose them. It requires two files: an 
+    AMPS multiple sequence alignment (block format), and a domain 
+    description file.  An optional parameter file may be supplied; if 
+    none is given the program simply uses default parameters.
+<BR>    
+<BR>
+The format is:
+<BR>
+<P>
+<PRE>
+    alignfit -a &lt;AMPS file&gt; -d &lt;domain file&gt; 
+    (-P &lt;optional parm file&gt; -&lt;parameter&gt; &lt;value&gt;)
+</PRE>
+
+<P>
+-P can be used to read in an old ALIGNFIT parameter file (version 3.0 and earlier)
+    The possible parameters, and their defaults are (names are case 
+    insensitive):
+<BR>    
+<BR>
+PAIRWISE <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">boolean<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">
+<BR>
+If TRUE, then pairwise comparisons will be performed to derive a
+    matrix (MATFILE).
+<BR>
+Default PAIRWISE = TRUE
+<BR>    
+<BR>
+TREEWISE <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">boolean<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">
+<BR>
+If TRUE, then treewise comparisons will be performed to derive a
+    final transformation.
+<BR>
+Default TREEWISE = TRUE
+<BR>    
+<BR>
+MATFILE <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">string<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">
+<BR>
+The file into which the results of PAIRWISE are output.
+<BR>
+Default MATFILE = alignfit.mat
+<BR>    
+<BR>
+MAX_SEQ_LEN <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">integer<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">
+<BR>
+The maximum length of alignment to be tolerated.
+<BR>
+Default is 3000
+<BR>    
+<BR>
+For most purposes, the default parameters should suffice.  Note that one can
+    use ACONVERT to convert CLUSTAL and MSF formats to block format, so that one can use alignments created
+    using other programs (e.g. PILEUP, CLUSTAL, etc.) as a starting point for superimposition.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html698"
+  HREF="node44.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html694"
+  HREF="node40.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html688"
+  HREF="node42.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html696"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html699"
+  HREF="node44.html">VER2HOR</A>
+<B> Up:</B> <A NAME="tex2html695"
+  HREF="node40.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html689"
+  HREF="node42.html">PDBSEQ</A>
+ &nbsp; <B>  <A NAME="tex2html697"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

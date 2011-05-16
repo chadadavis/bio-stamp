@@ -1,10 +1,48 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
-#define MAXslen  10000
-#define MAXnbloc 10000
-#define MAXtlen  200
+#define MAXslen 10000
+#define MAXnbloc 1000
+/* SMJS Increased MAXtlen from 200 */
+#define MAXtlen 1000
 
 struct brookn { /* structure to represent brookhaven residue numbers */
     int n;      /* numerical part of number */
@@ -13,7 +51,7 @@ struct brookn { /* structure to represent brookhaven residue numbers */
    };
 
 struct domain_loc {		/* This structure allows rather complex domains to be described */
-   char filename[4096];
+   char filename[100];
    char id[100];
    int nobj;			/* The number of objects considered within the named file */
    int *type;			/* The type that each object is:
@@ -40,19 +78,19 @@ struct domain_loc {		/* This structure allows rather complex domains to be descr
    };
 
 struct parameters {
-   char bloc_file[4096];
-   char dom_file[4096];
-   char parm_file[4096];
-   char prefix[4096];
+   char bloc_file[200];
+   char dom_file[200];
+   char parm_file[200];
+   char prefix[200];
    int MAX_SEQ_LEN;
    int PAIRWISE;
    int TREEWISE;
    int OLDFORMAT;
-   char MATFILE[4096];
-   char TREEFILE[4096];
-   char ORDFILE[4096];
-   char TRANSFILE[4096];
-   char STAMPDIR[4096];
+   char MATFILE[100];
+   char TREEFILE[100];
+   char ORDFILE[100];
+   char TRANSFILE[100];
+   char STAMPDIR[200];
    };
 /* Standard structure for storing protein sequence data */
 
@@ -77,12 +115,12 @@ struct cluster {
 	};
 #define CLUST_STRUCT
 #endif
-#include <gjutil.h>
+#include "gjutil.h"
 
 struct cluster *readtree(char *tordfile, char *treefile, int *number, int method, FILE *OUT);
 float fmatfit(float **atoms1, float **atoms2, float **R, float *V, int nats, int entry);
 struct cluster *get_clust(double **matrix, char **ids, int ndomain, char *noc_parms);
-void closefile(FILE *handle,char *filename);
+int closefile(FILE *handle,char *filename);
 FILE *openfile(char *filename, char *type);
 char ltou(char c);
 char utol(char c);

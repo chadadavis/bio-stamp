@@ -1,11 +1,46 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdio.h>
-#include <stamp.h>
+#include "stamp.h"
 
 /* This is igetca converted back to getca - there were some changes not introduced
  *  into wonky old getca that is only used in alignfit
- * Coordinates are multiplied by 1000 and converted to integers 
- *
- * 25/10/2001 - change to permit DNA/RNA structures */
+ * Coordinates are multiplied by 1000 and converted to integers */
 
 int getca(FILE *IN, float **coords, char *aa, struct brookn *numb, int *ncoord,
 	struct brookn start, struct brookn end, int type, int MAXats,
@@ -40,24 +75,21 @@ int getca(FILE *IN, float **coords, char *aa, struct brookn *numb, int *ncoord,
 /*	printf("SEQONLY is %d\n",seq_only); */
 
 	while((buff=fgets(buff,99,IN))!=NULL) {
-	 if((strncmp(buff,"ENDMDL",6)==0 || strncmp(buff,"END   ",6)==0) && begin==1) {
+	   if((strncmp(buff,"ENDMDL",6)==0 || strncmp(buff,"END   ",6)==0) && begin==1) {
                 break;
-         }
-         if((strncmp(buff,"ATOM  ",6)==0) || (strncmp(buff,"HETATM",6)==0)) {
-          /* look at non-CA to see if we are in/out of range */
-          /* get chain, number and insertion code */
-          cid=ltou(buff[21]);
-          sscanf(&buff[22],"%d",&number);
-          in=buff[26];
-          alt=buff[16]; /* alternate position indicator */
-          if(!begin &&
-            ((start.cid==cid && start.n==number && start.in==in) ||
-             (start.cid==cid && type==2) ||
-             (type==1) )) {
-             begin=1;
-          }
-          if(begin && type==2 && start.cid!=cid) break;
-          if(strncmp(&buff[12]," CA ",4)==0) {
+           }
+	   if(strncmp(buff,"ATOM  ",6)==0 && strncmp(&buff[12]," CA ",4)==0) {
+	      /* get chain, number and insertion code */
+	      cid=buff[21];
+	      sscanf(&buff[22],"%d",&number);
+	      in=buff[26];
+	      alt=buff[16]; /* alternate position indicator */
+	      if(!begin && 
+		 ((start.cid==cid && start.n==number && start.in==in) ||
+		  (start.cid==cid && type==2) ||
+		  (type==1) )) begin=1;
+	      if(begin && type==2 && start.cid!=cid) break;
+/* SMJS Changed to be like Robs version */
 	      if(begin && (alt==' ' || alt=='A' || alt=='1' || alt=='L' || alt=='O') && 
 		  !(cid==last_cid && number==last_number && in==last_in)) { 
 		 /* only reads in the first position if more than one are given */
@@ -82,7 +114,7 @@ int getca(FILE *IN, float **coords, char *aa, struct brookn *numb, int *ncoord,
 		(*ncoord)++;
 
 		if((*ncoord)>MAXats) {
-		    fprintf(stderr,"error: number of coordinates read surpasses memory limit %d\n",MAXats);
+		    fprintf(stderr,"error: number of coordinates read surpasses memory limit [getca]\n");
 		    return -1;
 		 }
 		 aa[(*ncoord)]=' ';
@@ -91,15 +123,12 @@ int getca(FILE *IN, float **coords, char *aa, struct brookn *numb, int *ncoord,
 	      if(begin && end.cid==cid && end.n==number && end.in==in && type==3) 
 		 break;
 	      /* this residing after the last "if" makes the set of atoms inclusive */
-	  } 
-          /* in case of missing CA in the last residue */
-          if(begin && cid==end.cid && number>end.n && type==3) break;
-	 } 
+	   } 
 	} 
 	aa[(*ncoord)]='\0';
 	free(add_buff);
 	if(!begin) {
-	   fprintf(stderr,"error: begin of sequence not found in PDB file\n");
+	   fprintf(stderr,"error: begin of sequence not found in PDB file [getca]\n");
 	   (*ncoord)=0;
 	   free(ccoord);
 	   return -1;

@@ -1,0 +1,6 @@
+==== Secondary Structure Definition by the program DSSP, updated CMBI version by ElmK / April 1,2000 ==== DATE=6-MAY-2010      .
+REFERENCE W. KABSCH AND C.SANDER, BIOPOLYMERS 22 (1983) 2577-2637                                                              .
+HEADER    CHAPERONE PROTEIN                       09-OCT-91   3DPA                                                             .
+COMPND    PAP*D                                                                                                                .
+SOURCE    (ESCHERICHIA $COLI) STRAIN CONTAINING A CLONED PAP*D                                                                 .
+AUTHOR    A.HOLMGREN,C.-*I.BRANDEN                                                                                             .

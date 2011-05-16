@@ -1,0 +1,168 @@
+\begin{thebibliography}{10}
+
+\bibitem{rb92b}
+R.~B. Russell and G.~J. Barton.
+\newblock Multiple protein sequence alignment from tertiary structure
+  comparison: assignment of global and residue confidence levels.
+\newblock {\em Proteins}, 14:309--323, 1992.
+
+\bibitem{sali90}
+A.~Sali and T.~L. Blundell.
+\newblock Definition of general topological equivalence in protein structures,
+  a procedure involving comparison of properties and relationships thorugh
+  simulated annealing and dynamic programming.
+\newblock {\em J. Mol. Biol.}, 212:403--428, 1990.
+
+\bibitem{argos76}
+P.~Argos and M.~Rossmann.
+\newblock Exploring structural homology of proteins.
+\newblock {\em J. Mol. Biol.}, 105:75--95, 1976.
+
+\bibitem{smith81}
+T.~F. Smith and M.~S. Waterman.
+\newblock Identification of common molecular subsequences.
+\newblock {\em J. Mol. Biol.}, 147:195--197, 1981.
+
+\bibitem{barton93b}
+G.~J. Barton.
+\newblock An efficient algorithm to locate all locally optimal alignments.
+\newblock {\em Comp. App. Biosci.}, 9:729--734, 1993.
+
+\bibitem{timewarps}
+D.~Sankoff and J.~B. Kruskal, editors.
+\newblock {\em Time warps, string edits, and macromolecules: The theory and
+  practice of sequence comparison}.
+\newblock Addison-Wesley, Inc., Reading, Mass., USA, 1983.
+
+\bibitem{kabsch78}
+W.~Kabsch.
+\newblock {\em Acta crystallographica}, A34:827, 1978.
+
+\bibitem{mclachlan79}
+A.D. McLachlan.
+\newblock Gene duplication in the structural evolution of chymotrypsin.
+\newblock {\em J. Mol. Biol.}, 128:49--79, 1979.
+
+\bibitem{rb93b}
+R.~B. Russell and G.~J. Barton.
+\newblock An {SH2}--{SH3} domain hybrid.
+\newblock {\em Nature}, 364:765, 1993.
+
+\bibitem{rb93c}
+R.~B. Russell and G.~J. Barton.
+\newblock The limits of protein secondary structure prediction accuracy from
+  multiple sequence alignment.
+\newblock {\em J. Mol. Biol.}, 234:951--957, 1993.
+
+\bibitem{rb94}
+R.~B. Russell and G.~J. Barton.
+\newblock Structural features can be unconserved in proteins with similar
+  folds: {A}n analysis of side--chain to side--chain contacts, secondary
+  structure and accessibilty.
+\newblock {\em J. Mol. Biol.}, 244:332--350, 1994.
+
+\bibitem{russell94}
+R.~B. Russell.
+\newblock Domain insertion.
+\newblock {\em Prot. Eng.}, 7:1407--1410, 1994.
+
+\bibitem{russell97b}
+R.~B. Russell, M.~A. Saqi, R.~A. Sayle, P.~A. Bates, and M.~J.~E. Sternberg.
+\newblock Recognition of analogous and homologous protein folds: Analysis of
+  sequence and structure conservation.
+\newblock {\em J. Mol. Biol.}, 269:423--439, 1997.
+
+\bibitem{russell98a}
+R.~B. Russell, M.~A.~S. Saqi, P.~A. Bates, R.~A. Sayle, and M.~J.~E. Sternberg.
+\newblock Recognition of homologous and analogous protein folds: assessment of
+  prediction success and associated alignment accuracy using empirical
+  substitution matrices.
+\newblock {\em Prot. Eng.}, 11:1--9, 1998.
+
+\bibitem{murzin93}
+A.~G. Murzin.
+\newblock Sweet-tasting protein monellin is related to the cystatin family of
+  thiol proteinase inhibitors.
+\newblock {\em J. Mol. Biol.}, 230:689--694, 1993.
+
+\bibitem{matthews94}
+S.~Matthews, P.~Barlow, J.~Boyd, G.~Barton, R.~Russell, H.~Mills,
+  M.~Cunningham, N.~Meyers, N.~Burns, N.~Clark, S.~Kingsman, A.~Kingsman, and
+  I.~Campbell.
+\newblock Structural similarity between the p17 matrix protein of {HIV}--1 and
+  interferon--{$\gamma$}.
+\newblock {\em Nature}, 370:666--668, 1994.
+
+\bibitem{taylor86a}
+W.~R. Taylor.
+\newblock Classification of amino acid conservation.
+\newblock {\em J. Theor. Biol.}, 119:205--218, 1986.
+
+\bibitem{molscript}
+P.~J. Kraulis.
+\newblock Molscript: a program to produce both detailed and schematic plots of
+  protein structures.
+\newblock {\em J. App. Cryst.}, 24:964--950, 1991.
+
+\bibitem{dssp}
+W.~Kabsch and C.~Sander.
+\newblock A dictionary of protein secondary structure.
+\newblock {\em Biopolymers}, 22:2577--2637, 1983.
+
+\bibitem{barton93a}
+G.~J. Barton.
+\newblock Alscript: A tool to format multiple sequence alignments.
+\newblock {\em Prot. Eng.}, 6:37--40, 1993.
+
+\bibitem{russell96}
+R.~B. Russell and M.~J.~E. Sternberg.
+\newblock A novel binding site in catalase is suggested by similarity to the
+  calycin superfamily.
+\newblock {\em Prot. Eng.}, 9:107--111, 1996.
+
+\bibitem{russell97a}
+R.~B. Russell and M.~J.~E. Sternberg.
+\newblock Two new examples of protein structural similarities within the
+  structure-function twighlight zone.
+\newblock {\em Prot. Eng.}, 10:333--338, 1997.
+
+\bibitem{sternberg95}
+M.~J.~E. Sternberg, H.~Hegyi, S.~A. Islam, J.~Luo, and R.~B. Russell.
+\newblock Towards and intelligent system for the automatic assignment of
+  domains in globular proteins.
+\newblock {\em Proceedings of the 3rd Annual Conference on Intelligent Systems
+  for Molecular Biology}, pages 376--383, 1995.
+
+\bibitem{siddiqui95}
+A.~S. Siddiqui and G.~J. Barton.
+\newblock Continuous and discontinuous domains: an algorithm for the automatic
+  generation of reliable protein domain definitions.
+\newblock {\em Prot. Sci.}, 4:872--874, 1995.
+
+\bibitem{rcb95a}
+R.~B. Russell, R.~R. Copley, and G.~J. Barton.
+\newblock Protein fold recognition from secondary structure assignments.
+\newblock {\em Proc. 28th Hawaii. Int. Conf. Sys. Sci. IEEE Press}, 5:302--311,
+  1995.
+
+\bibitem{rcb96}
+R.~B. Russell, R.~R. Copley, and G.~J. Barton.
+\newblock Protein fold recognition by mapping predicted secondary structures.
+\newblock {\em J. Mol. Biol.}, 259:349--365, 1996.
+
+\bibitem{russell98b}
+R.~B. Russell, P.~D. Sasieni, and M.~J.~E. Sternberg.
+\newblock Supersites within superfolds. binding site similarity in the absence
+  of homology.
+\newblock {\em J. Mol. Biol.}, 282:903--918, 1998.
+
+\bibitem{saqi98}
+M.~A.~S. Saqi, R.~B. Russell, and M.~J.~E. Sternberg.
+\newblock Misleading local sequence alignments: implications for comparative
+  protein modelling.
+\newblock {\em Prot. Eng.}, 11:627--630, 1998.
+
+\bibitem{TitlesOn}
+Anonymous.
+
+\end{thebibliography}

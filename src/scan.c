@@ -1,5 +1,45 @@
-#include <stdio.h>
-#include <stamp.h>
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
+#include <math.h>
+/* TPW : added */
+#include <time.h>
+
+#include "stamp.h"
 
 /* Scan's a database of domain descriptors using the following protocol:
  *  
@@ -14,7 +54,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
 
    char endsec,endaa;
 
-   int i,j,k,l;
+   int i,j,k;
    int n,m;
    int total,add,error,error2;
    int end,len_d;
@@ -22,24 +62,22 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    int qstart,qend;
    int length;
    int first;
-   int best_score_start;
    int qcount,count,dcount,ndomain;
    int nfit,ntrans,ntries;
    int nequiv;
    int best_nfit,best_len;
    int best_nsec,best_nequiv;
-   int a,b,c;
    int gotsec,secskip;
    int tbegin,tend;
    int pera,perb,perc;
    int qpera,qperb,qperc;
-   int savetype,savenobj;
    int nsec;
 
    int **atoms1,**atoms2;
    int **hbcmat,**best_hbcmat;
 
-   float score,rms,irms;
+/* SMJS Initialised score to be like pairwise */
+   float score=0.0,rms,irms;
    float best_score,best_rms;
    float best_seqid,best_secid;
    float t_sec_diff,ratio;
@@ -52,7 +90,6 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    FILE *IN,*PDB,*TRANS;
 
    struct domain_loc ddomain,ddomainall;
-   struct brookn savebegin,saveend;
 
    ddomain.coords=(int**)malloc(parms[0].MAX_SEQ_LEN*sizeof(int*));
    ddomainall.coords=ddomain.coords;
@@ -105,7 +142,6 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    fprintf(TRANS,"%% Approximate fits (alignment from N-termini) were performed\n");
    fprintf(TRANS,"%%   at every %d residue of the database sequences \n",parms[0].SCANSLIDE);
    fprintf(TRANS,"%% Transformations were output for Sc= %6.3f\n",parms[0].SCANCUT);
-   fprintf(TRANS,"%%  and Nfit >= %4d\n",parms[0].FITCUT);
    fprintf(TRANS,"%% \n");
    fprintf(TRANS,"%% Domain used to scan \n");
    fprintf(TRANS,"# Sc= 10.000 RMS=  0.01  Len= 999 nfit= 999 Seqid= 100.00 Secid= 100.00 q_len= %4d d_len= %4d n_sec= 100 n_equiv 999 fit_pos= _  0 _ \n",
@@ -126,7 +162,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
    dcount=0;
    while(end!=1 && dcount<ndomain) {
       best_score=0.0; best_rms=100.0; best_len=0; best_nfit=0; seqid=0.0; secid=0.0; 
-      best_secid=0.0; best_seqid=0.0; best_nsec=0; best_nequiv=0;
+      best_secid=0.0; best_seqid=0.0; best_nsec=0;
       secskip=0;
       error=0; error2=0;
       end=domdefine(&ddomain,&i,parms[0].stampdir,parms[0].DSSP,IN,parms[0].LOG);
@@ -377,7 +413,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
 	    best_nequiv=nequiv;
 	    for(j=0; j<3; ++j) for(k=0; k<3; ++k) best_hbcmat[j][k]=hbcmat[j][k];
 	 }
-	 if((score>=parms[0].SCANCUT) && (nfit>=parms[0].FITCUT) ) {
+	 if(score>=parms[0].SCANCUT) { 
 	    /* outputing the transformation if required */
 	    fprintf(TRANS,"# Sc= %7.3f RMS= %7.3f len= %4d nfit= %4d ", 
                 score,rms,length,nfit);
@@ -429,7 +465,7 @@ int scan(struct domain_loc domain, struct parameters *parms) {
 	 } else {
 		fprintf(parms[0].LOG,"No transformation output.\n");
 	 }
-	 if(score>=parms[0].SCANCUT && nfit>=parms[0].FITCUT && parms[0].SKIPAHEAD) { /* skip over the similar region to avoid repetition */
+	 if(score>parms[0].SCANCUT && parms[0].SKIPAHEAD) { /* skip over the similar region to avoid repetition */
 	    if((dend-parms[0].SCANSLIDE)>qcount) {
 	       qcount=dend-parms[0].SCANSLIDE;
 	       fprintf(parms[0].LOG,"skipping over this region...\n");
@@ -460,10 +496,15 @@ int scan(struct domain_loc domain, struct parameters *parms) {
          fprintf(parms[0].LOG,"\n");
        } else {
         printf("Scan %-15s %-15s %4d ",domain.id,ddomain.id,ntrans);
-        printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f ",
-               best_score,best_rms,domain.ncoords,ddomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid);
-	if(Pm<1e-4) { printf("%7.2e",Pm); }
-	else { printf("%7.5f",Pm); }
+/* SMJS Added Pm condition */
+        if (Pm > -0.99)
+        {
+           printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f %7.2e",
+                  best_score,best_rms,domain.ncoords,ddomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid,Pm);
+        } else { 
+           printf("%7.3f %7.3f %4d %4d %4d %4d %4d %4d %6.2f %6.2f   NC   ",
+                  best_score,best_rms,domain.ncoords,ddomain.ncoords,best_len,best_nfit,best_nequiv,best_nsec,best_seqid,best_secid);
+        }
         printf("\n");
 	fflush(stdout);
       } 
@@ -494,6 +535,8 @@ int scan(struct domain_loc domain, struct parameters *parms) {
         ddomain.aa=ddomainall.aa;
         ddomain.numb=ddomainall.numb;
       }
+      k=clock();
+      parms[0].CPUtime+=(float)k/(60000000);
       dcount++;
       fflush(TRANS);
    } 

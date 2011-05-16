@@ -1,0 +1,3883 @@
+% ./scop2stamp --release 1.75 --scop-level=family
+% SCOP release: 1.75
+% Number of domains to be processed: 3879
+2hh8 2hh8a1 { A 7 _ TO A 133 _ }
+1lam 1lama2 { A 1 _ TO A 159 _ }
+1xv2 1xv2a_ { CHAIN A }
+1z0j 1z0jb1 { B 734 _ TO B 784 _ }
+2dpw 2dpwa1 { A 1 _ TO A 231 _ }
+2vgn 2vgna2 { A 136 _ TO A 277 _ }
+1pi1 1pi1a_ { CHAIN A }
+1bif 1bifa2 { A 250 _ TO A 468 _ }
+3bex 3bexa1 { A 1 _ TO A 118 _ }
+1dmu 1dmua_ { CHAIN A }
+1q0r 1q0ra_ { CHAIN A }
+1nxj 1nxja_ { CHAIN A }
+1jz8 1jz8a1 { A 220 _ TO A 333 _ }
+1bl0 1bl0a1 { A 9 _ TO A 62 _ }
+1v8c 1v8ca2 { A 88 _ TO A 165 _ }
+2ot9 2ot9a1 { A 2 _ TO A 180 _ }
+2ouf 2oufa1 { A 13 _ TO A 92 _ }
+2h80 2h80a1 { A 11 _ TO A 81 _ }
+2omz 2omzb1 { B -2 _ TO B 101 _ }
+2tps 2tpsa_ { CHAIN A }
+1xhb 1xhba2 { A 95 _ TO A 422 _ }
+1oi0 1oi0a_ { CHAIN A }
+1vp8 1vp8a_ { CHAIN A }
+1ltq 1ltqa1 { A 153 _ TO A 301 _ }
+2hqv 2hqva1 { A 11 _ TO A 186 _ }
+1ua4 1ua4a_ { CHAIN A }
+1v8d 1v8da_ { CHAIN A }
+1k75 1k75a_ { CHAIN A }
+1zgk 1zgka1 { A 322 _ TO A 609 _ }
+1i2t 1i2ta_ { CHAIN A }
+2axt 2axto1 { O 30 _ TO O 271 _ }
+1v54 1v54i_ { CHAIN I }
+1nfp 1nfpa_ { CHAIN A }
+2r1j 2r1jl1 { L 3 _ TO L 68 _ }
+1wi9 1wi9a_ { CHAIN A }
+1m4u 1m4ua_ { CHAIN A }
+1x9b 1x9ba_ { CHAIN A }
+1sur 1sura_ { CHAIN A }
+2gno 2gnoa1 { A 209 _ TO A 306 _ }
+1fx2 1fx2a_ { CHAIN A }
+2nn8 2nn8a1 { A 114 _ TO A 250 _ }
+1hw1 1hw1a2 { A 79 _ TO A 230 _ }
+2gf4 2gf4a1 { A 1 _ TO A 89 _ }
+1nh2 1nh2c_ { CHAIN C }
+1mw9 1mw9x_ { CHAIN X }
+2fhz 2fhza1 { A 27 _ TO A 109 _ }
+2rde 2rdea2 { A 24 _ TO A 137 _ }
+2p9b 2p9ba2 { A 71 _ TO A 394 _ }
+2gc6 2gc6a1 { A 297 _ TO A 425 _ }
+1ja1 1ja1a2 { A 63 _ TO A 239 _ }
+2f23 2f23a1 { A 3 _ TO A 77 _ }
+1r44 1r44a_ { CHAIN A }
+1hyw 1hywa_ { CHAIN A }
+1xzp 1xzpa1 { A 118 _ TO A 211 _ A 372 _ TO A 450 _ }
+1tm0 1tm0a_ { CHAIN A }
+1ku3 1ku3a_ { CHAIN A }
+1ldj 1ldja3 { A 411 _ TO A 686 _ }
+2a9u 2a9ua1 { A 6 _ TO A 139 _ }
+2exn 2exna1 { A 1 _ TO A 128 _ }
+1vi6 1vi6a_ { CHAIN A }
+2vmh 2vmha1 { A 906 _ TO A 1050 _ }
+1kw4 1kw4a_ { CHAIN A }
+1nw1 1nw1a_ { CHAIN A }
+2r2z 2r2za1 { A 5 _ TO A 88 _ }
+1fkm 1fkma1 { A 249 _ TO A 442 _ }
+1pgs 1pgsa1 { A 4 _ TO A 140 _ }
+1o4y 1o4ya_ { CHAIN A }
+1v74 1v74a_ { CHAIN A }
+1u04 1u04a1 { A 2 _ TO A 323 _ }
+1obr 1obra_ { CHAIN A }
+1vbv 1vbva1 { A 3 _ TO A 97 _ }
+2axt 2axtl1 { L 1 _ TO L 37 _ }
+1g5h 1g5ha1 { A 343 _ TO A 469 _ }
+1wr0 1wr0a1 { A 5 _ TO A 81 _ }
+1n4w 1n4wa2 { A 319 _ TO A 450 _ }
+1dmh 1dmha_ { CHAIN A }
+1n1u 1n1ua_ { CHAIN A }
+1uty 1utya_ { CHAIN A }
+1tg7 1tg7a4 { A 395 _ TO A 569 _ }
+1nei 1neia_ { CHAIN A }
+1ijq 1ijqa1 { A 377 _ TO A 642 _ }
+2nrk 2nrka1 { A 4 _ TO A 170 _ }
+1pmh 1pmhx_ { CHAIN X }
+1cbh 1cbha_ { CHAIN A }
+2v94 2v94a1 { A 1 _ TO A 93 _ }
+1pmi 1pmia_ { CHAIN A }
+1h6w 1h6wa1 { A 246 _ TO A 327 _ }
+1wp5 1wp5a_ { CHAIN A }
+1vio 1vioa2 { A 0 _ TO A 57 _ }
+1g60 1g60a_ { CHAIN A }
+2es9 2es9a1 { A 11 _ TO A 107 _ }
+1fpo 1fpoa2 { A 77 _ TO A 171 _ }
+1qxf 1qxfa_ { CHAIN A }
+2bky 2bkya1 { A 9 _ TO A 97 _ }
+1iib 1iiba_ { CHAIN A }
+2ebs 2ebsa1 { A 4 _ TO A 430 _ }
+2bba 2bbaa1 { A 17 _ TO A 196 _ }
+1gsa 1gsaa2 { A 123 _ TO A 314 _ }
+1lc0 1lc0a1 { A 2 _ TO A 128 _ A 247 _ TO A 291 _ }
+1nkd 1nkda_ { CHAIN A }
+2iuw 2iuwa1 { A 70 _ TO A 279 _ }
+1nu0 1nu0a_ { CHAIN A }
+1fye 1fyea_ { CHAIN A }
+1r30 1r30a_ { CHAIN A }
+1puc 1puca_ { CHAIN A }
+1p9y 1p9ya_ { CHAIN A }
+1vz0 1vz0a2 { A 23 _ TO A 115 _ }
+2did 2dida1 { A 8 _ TO A 47 _ }
+2hkj 2hkja3 { A 10 _ TO A 228 _ }
+2bhu 2bhua3 { A 111 _ TO A 530 _ }
+2c0g 2c0ga1 { A 1146 _ TO A 1251 _ }
+2fea 2feaa1 { A 2 _ TO A 227 _ }
+1ei5 1ei5a1 { A 336 _ TO A 417 _ }
+1s3a 1s3aa1 { A 15 _ TO A 99 _ }
+1vzy 1vzya2 { A 234 _ TO A 290 _ }
+1yll 1ylla1 { A 2 _ TO A 196 _ }
+1wub 1wuba_ { CHAIN A }
+1c4k 1c4ka3 { A 570 _ TO A 730 _ }
+2vbu 2vbua1 { A 2 _ TO A 132 _ }
+1yzh 1yzha1 { A 8 _ TO A 211 _ }
+1zar 1zara2 { A 91 _ TO A 281 _ }
+2dvt 2dvta1 { A 1 _ TO A 325 _ }
+2bgc 2bgca2 { A 7 _ TO A 137 _ }
+1vpd 1vpda2 { A 3 _ TO A 163 _ }
+1twf 1twfc2 { C 42 _ TO C 172 _ }
+1gcc 1gcca_ { CHAIN A }
+2et1 2et1a1 { A 1 _ TO A 201 _ }
+2h9f 2h9fa1 { A 1 _ TO A 182 _ }
+2awi 2awia2 { A 71 _ TO A 301 _ }
+1g7s 1g7sa3 { A 329 _ TO A 459 _ }
+1epu 1epua_ { CHAIN A }
+3cla 3claa_ { CHAIN A }
+3c8y 3c8ya3 { A 127 _ TO A 209 _ }
+2d0o 2d0ob1 { B 5 _ TO B 112 _ }
+2doa 2doaa1 { A 8 _ TO A 98 _ }
+1e7u 1e7ua1 { A 525 _ TO A 725 _ }
+1of9 1of9a_ { CHAIN A }
+1fm4 1fm4a_ { CHAIN A }
+7req 7reqa1 { A 4 _ TO A 560 _ }
+1wpg 1wpga3 { A 361 _ TO A 599 _ }
+2oa5 2oa5a1 { A 7 _ TO A 102 _ }
+2p90 2p90a1 { A 6 _ TO A 274 _ }
+1rwh 1rwha3 { A 373 _ TO A 644 _ }
+2ib0 2ib0a1 { A 17 _ TO A 158 _ }
+1vqq 1vqqa2 { A 139 _ TO A 327 _ }
+1vqo 1vqob1 { B 1 _ TO B 337 _ }
+1b9m 1b9ma1 { A -1 _ TO A 126 _ }
+1uwv 1uwva1 { A 15 _ TO A 74 _ }
+1to6 1to6a_ { CHAIN A }
+2e9x 2e9xc1 { C 1088 _ TO C 1192 _ }
+2ntk 2ntka1 { A 1 _ TO A 202 _ }
+1f60 1f60b_ { CHAIN B }
+1upt 1uptb_ { CHAIN B }
+1ux6 1ux6a2 { A 813 _ TO A 936 _ }
+1ju3 1ju3a1 { A 352 _ TO A 574 _ }
+1ye8 1ye8a1 { A 1 _ TO A 178 _ }
+1jbe 1jbea_ { CHAIN A }
+1jr8 1jr8a_ { CHAIN A }
+1g2r 1g2ra_ { CHAIN A }
+1n67 1n67a1 { A 229 _ TO A 369 _ }
+1k4t 1k4ta1 { A 641 _ TO A 712 _ }
+1umg 1umga_ { CHAIN A }
+1q5y 1q5ya_ { CHAIN A }
+1koh 1koha2 { A 105 _ TO A 200 _ }
+2bjq 2bjqa1 { A 175 _ TO A 344 _ }
+3bne 3bnea1 { A 150 _ TO A 839 _ }
+1c3d 1c3da_ { CHAIN A }
+1dj8 1dj8a_ { CHAIN A }
+1df0 1df0a2 { A 356 _ TO A 514 _ }
+2bw4 2bw4a1 { A 8 _ TO A 164 _ }
+1r5l 1r5la2 { A 91 _ TO A 275 _ }
+1o26 1o26a_ { CHAIN A }
+2o70 2o70a1 { A 2 _ TO A 166 _ }
+2v4j 2v4jc1 { C 3 _ TO C 105 _ }
+1qw2 1qw2a_ { CHAIN A }
+2ewh 2ewha1 { A 6 _ TO A 98 _ }
+1r0m 1r0ma2 { A 6 _ TO A 132 _ }
+1i6p 1i6pa_ { CHAIN A }
+1js8 1js8a2 { A 2792 _ TO A 2892 _ }
+1bg6 1bg6a1 { A 188 _ TO A 359 _ }
+1sfx 1sfxa_ { CHAIN A }
+2iqh 2iqha1 { A 21 _ TO A 489 _ }
+2ia1 2ia1a1 { A 1 _ TO A 166 _ }
+2zkm 2zkmx4 { X 312 _ TO X 660 _ }
+1nc7 1nc7a_ { CHAIN A }
+1gyv 1gyva_ { CHAIN A }
+1lsh 1lshb_ { CHAIN B }
+2yvx 2yvxa3 { A 276 _ TO A 448 _ }
+1ots 1otsa_ { CHAIN A }
+2pzz 2pzza1 { A 2 _ TO A 134 _ }
+2vy4 2vy4a1 { A 53 _ TO A 87 _ }
+2gnr 2gnra1 { A 8 _ TO A 144 _ }
+1wpi 1wpia1 { A 1 _ TO A 133 _ }
+2f2e 2f2ea1 { A 5 _ TO A 146 _ }
+2oar 2oara1 { A 10 _ TO A 118 _ }
+1tqh 1tqha_ { CHAIN A }
+1w0u 1w0ua_ { CHAIN A }
+1lm8 1lm8v_ { CHAIN V }
+3d9r 3d9ra1 { A 3 _ TO A 134 _ }
+2i9w 2i9wa2 { A 1 _ TO A 39 _ }
+1ok0 1ok0a_ { CHAIN A }
+1k5c 1k5ca_ { CHAIN A }
+1x38 1x38a2 { A 389 _ TO A 602 _ }
+1tg7 1tg7a5 { A 41 _ TO A 394 _ }
+1vqo 1vqov1 { V 1 _ TO V 65 _ }
+1tj1 1tj1a1 { A 89 _ TO A 261 _ }
+1em2 1em2a_ { CHAIN A }
+2i3d 2i3da1 { A 2 _ TO A 219 _ }
+2gmq 2gmqa1 { A 12 _ TO A 113 _ }
+1ueh 1ueha_ { CHAIN A }
+1v4a 1v4aa2 { A 2 _ TO A 286 _ }
+2c78 2c78a1 { A 213 _ TO A 312 _ }
+1ozj 1ozja_ { CHAIN A }
+2q22 2q22a1 { A 8 _ TO A 138 _ }
+1pav 1pava_ { CHAIN A }
+2o0m 2o0ma1 { A 95 _ TO A 341 _ }
+1twf 1twfb_ { CHAIN B }
+2i6g 2i6ga1 { A 1 _ TO A 198 _ }
+1ihm 1ihma_ { CHAIN A }
+1vk6 1vk6a4 { A 97 _ TO A 125 _ }
+1iwl 1iwla_ { CHAIN A }
+1o82 1o82a_ { CHAIN A }
+1ppj 1ppjj_ { CHAIN J }
+1h8l 1h8la1 { A 305 _ TO A 383 _ }
+1svb 1svba2 { A 1 _ TO A 302 _ }
+2jbw 2jbwa1 { A 8 _ TO A 367 _ }
+2c2a 2c2aa1 { A 232 _ TO A 320 _ }
+1t9i 1t9ia_ { CHAIN A }
+1vme 1vmea2 { A 1 _ TO A 250 _ }
+1v33 1v33a_ { CHAIN A }
+1vkw 1vkwa_ { CHAIN A }
+1q1v 1q1va_ { CHAIN A }
+1fj2 1fj2a_ { CHAIN A }
+2imr 2imra1 { A 34 _ TO A 90 _ A 399 _ TO A 418 _ }
+1nkg 1nkga3 { A 1 _ TO A 250 _ }
+2ot3 2ot3a1 { A 139 _ TO A 387 _ }
+2r6g 2r6gg1 { G 7 _ TO G 296 _ }
+1gw5 1gw5m2 { M 1 _ TO M 141 _ }
+2chc 2chca1 { A 1 _ TO A 167 _ }
+1tuk 1tuka1 { A 1 _ TO A 67 _ }
+2fug 2fug11 { 1 334 _ TO 1 438 _ }
+1c3p 1c3pa_ { CHAIN A }
+1ewf 1ewfa1 { A 1 _ TO A 217 _ }
+2phc 2phcb2 { B 2 _ TO B 85 _ }
+1iwg 1iwga5 { A 182 _ TO A 273 _ }
+1ib8 1ib8a1 { A 91 _ TO A 164 _ }
+1jsd 1jsda_ { CHAIN A }
+2elc 2elca1 { A 1 _ TO A 52 _ }
+2axt 2axti1 { I 1 _ TO I 35 _ }
+1qaz 1qaza_ { CHAIN A }
+1vke 1vkea_ { CHAIN A }
+1oa8 1oa8a_ { CHAIN A }
+1nm8 1nm8a1 { A 9 _ TO A 385 _ }
+3bec 3beca1 { A 263 _ TO A 355 _ }
+1d2z 1d2za_ { CHAIN A }
+1egv 1egvg_ { CHAIN G }
+1j6q 1j6qa_ { CHAIN A }
+2vea 2veaa2 { A 327 _ TO A 514 _ }
+1h9m 1h9ma1 { A 1 _ TO A 73 _ }
+1bm9 1bm9a_ { CHAIN A }
+1pby 1pbya5 { A 166 _ TO A 273 _ }
+2z3v 2z3va1 { A 2 _ TO A 136 _ }
+1vqo 1vqot1 { T 1 _ TO T 119 _ }
+1ef1 1ef1c_ { CHAIN C }
+2gmh 2gmha3 { A 483 _ TO A 584 _ }
+1z1b 1z1ba1 { A 11 _ TO A 59 _ }
+1dcf 1dcfa_ { CHAIN A }
+1n1j 1n1ja_ { CHAIN A }
+1k28 1k28a2 { A 362 _ TO A 584 _ }
+1rxw 1rxwa2 { A 3 _ TO A 219 _ }
+1v77 1v77a_ { CHAIN A }
+1ezf 1ezfa_ { CHAIN A }
+1vqs 1vqsa_ { CHAIN A }
+1t8k 1t8ka_ { CHAIN A }
+2q66 2q66a1 { A 202 _ TO A 351 _ }
+1o75 1o75a3 { A 7 _ TO A 206 _ }
+2dex 2dexx2 { X 4 _ TO X 112 _ }
+1qdm 1qdma1 { A 1 S TO A 104 S }
+1uv7 1uv7a_ { CHAIN A }
+1jb0 1jb0e_ { CHAIN E }
+1h6f 1h6fa_ { CHAIN A }
+1xou 1xoub_ { CHAIN B }
+2zdp 2zdpa1 { A 0 _ TO A 108 _ }
+2g03 2g03a1 { A 11 _ TO A 187 _ }
+1sg5 1sg5a1 { A 1 _ TO A 86 _ }
+1xn8 1xn8a_ { CHAIN A }
+2j9u 2j9ua1 { A 148 _ TO A 241 _ }
+1qhd 1qhda2 { A 149 _ TO A 332 _ }
+1ptm 1ptma_ { CHAIN A }
+1uj8 1uj8a1 { A 13 _ TO A 76 _ }
+1isp 1ispa_ { CHAIN A }
+1w66 1w66a1 { A 1 _ TO A 216 _ }
+1sj7 1sj7a1 { A 488 _ TO A 654 _ }
+1vly 1vlya1 { A 244 _ TO A 325 _ }
+1oyw 1oywa1 { A 407 _ TO A 516 _ }
+1o7f 1o7fa1 { A 180 _ TO A 321 _ }
+1lv7 1lv7a_ { CHAIN A }
+1izn 1iznb_ { CHAIN B }
+2pw4 2pw4a1 { A 1 _ TO A 184 _ }
+1lr7 1lr7a1 { A 64 _ TO A 88 _ }
+2h6f 2h6fb1 { B 521 _ TO B 921 _ }
+1z70 1z70x1 { X 1086 _ TO X 1371 _ }
+1thf 1thfd_ { CHAIN D }
+1tx9 1tx9a1 { A 7 _ TO A 144 _ }
+2bu1 2bu1a1 { A 1 _ TO A 129 _ }
+1jjc 1jjcb4 { B 682 _ TO B 785 _ }
+2qfa 2qfaa1 { A 5 _ TO A 141 _ }
+1qmy 1qmya_ { CHAIN A }
+1ufa 1ufaa1 { A 413 _ TO A 517 _ }
+1sqr 1sqra_ { CHAIN A }
+1kqf 1kqfc_ { CHAIN C }
+2c7n 2c7na1 { A 18 _ TO A 73 _ }
+1tjl 1tjla1 { A 7 _ TO A 110 _ }
+1zin 1zina2 { A 126 _ TO A 160 _ }
+1exr 1exra_ { CHAIN A }
+2je6 2je6i2 { I 7 _ TO I 65 _ }
+1n3k 1n3ka_ { CHAIN A }
+2c1i 2c1ia2 { A 46 _ TO A 267 _ }
+1qme 1qmea1 { A 632 _ TO A 692 _ }
+1hbn 1hbna1 { A 270 _ TO A 549 _ }
+1qyn 1qyna_ { CHAIN A }
+1xrs 1xrsa_ { CHAIN A }
+1lqt 1lqta2 { A 2 _ TO A 108 _ A 325 _ TO A 456 _ }
+1uuj 1uuja_ { CHAIN A }
+2oc5 2oc5a1 { A 20 _ TO A 241 _ }
+2py5 2py5a2 { A 188 _ TO A 575 _ }
+1ez3 1ez3a_ { CHAIN A }
+1o8b 1o8ba1 { A 23 _ TO A 126 _ A 199 _ TO A 218 _ }
+1rlh 1rlha_ { CHAIN A }
+1ng7 1ng7a_ { CHAIN A }
+1w6s 1w6sb_ { CHAIN B }
+2e9x 2e9xa1 { A 1 _ TO A 144 _ }
+2fug 2fug41 { 4 35 _ TO 4 409 _ }
+2gy9 2gy9d1 { D 2 _ TO D 205 _ }
+1igq 1igqa_ { CHAIN A }
+1qd1 1qd1a1 { A 2 _ TO A 180 _ }
+1gsa 1gsaa1 { A 1 _ TO A 122 _ }
+1zu1 1zu1a1 { A 2 _ TO A 73 _ }
+2gx9 2gx9a1 { A 79 _ TO A 205 _ }
+2b7o 2b7oa1 { A 1 _ TO A 462 _ }
+1itu 1itua_ { CHAIN A }
+1okg 1okga3 { A 302 _ TO A 373 _ }
+3d32 3d32a1 { A 1 _ TO A 118 _ }
+1jl5 1jl5a_ { CHAIN A }
+1tuw 1tuwa_ { CHAIN A }
+1l2h 1l2ha_ { CHAIN A }
+2f69 2f69a2 { A 194 _ TO A 364 _ }
+1xkp 1xkpc1 { C 2 _ TO C 127 _ }
+1tig 1tiga_ { CHAIN A }
+1jb0 1jb0d_ { CHAIN D }
+1gmx 1gmxa_ { CHAIN A }
+1ixm 1ixma_ { CHAIN A }
+1imj 1imja_ { CHAIN A }
+1f7l 1f7la_ { CHAIN A }
+1wpg 1wpga2 { A 344 _ TO A 360 _ A 600 _ TO A 750 _ }
+1zso 1zsoa1 { A 1 _ TO A 156 _ }
+1tyx 1tyxa_ { CHAIN A }
+1zkd 1zkda1 { A 2 _ TO A 366 _ }
+2p06 2p06a1 { A 1 _ TO A 84 _ }
+1iuh 1iuha_ { CHAIN A }
+2qmm 2qmma1 { A 95 _ TO A 288 _ }
+1lsh 1lsha1 { A 285 _ TO A 620 _ }
+1jiw 1jiwi_ { CHAIN I }
+1g2y 1g2ya_ { CHAIN A }
+2aal 2aala1 { A 1 _ TO A 129 _ }
+1bhu 1bhua_ { CHAIN A }
+1lfw 1lfwa2 { A 187 _ TO A 382 _ }
+3ejn 3ejna1 { A 32 _ TO A 490 _ }
+2c0s 2c0sa1 { A 1 _ TO A 57 _ }
+2ivy 2ivya1 { A 2 _ TO A 89 _ }
+2ffm 2ffma1 { A 1 _ TO A 83 _ }
+1im3 1im3d_ { CHAIN D }
+1i5p 1i5pa1 { A 473 _ TO A 633 _ }
+2gti 2gtia2 { A 217 _ TO A 369 _ }
+2fmp 2fmpa1 { A 10 _ TO A 91 _ }
+2cly 2clyc1 { C 5 _ TO C 70 _ }
+1f9v 1f9va_ { CHAIN A }
+1qw9 1qw9a1 { A 5 _ TO A 17 _ A 385 _ TO A 501 _ }
+1t5j 1t5ja_ { CHAIN A }
+2p6r 2p6ra2 { A 489 _ TO A 686 _ }
+1dvo 1dvoa_ { CHAIN A }
+1y0y 1y0ya1 { A 73 _ TO A 163 _ }
+1ng6 1ng6a_ { CHAIN A }
+1h4x 1h4xa_ { CHAIN A }
+1ejg 1ejga_ { CHAIN A }
+1uyl 1uyla_ { CHAIN A }
+1s4c 1s4ca1 { A 1 _ TO A 143 _ }
+1sdo 1sdoa_ { CHAIN A }
+1mxi 1mxia_ { CHAIN A }
+1mv8 1mv8a3 { A 301 _ TO A 436 _ }
+1njq 1njqa_ { CHAIN A }
+1xm3 1xm3a_ { CHAIN A }
+2qed 2qeda1 { A 1 _ TO A 251 _ }
+2oq0 2oq0a1 { A 115 _ TO A 202 _ }
+2h5n 2h5na1 { A 1 _ TO A 132 _ }
+2pp6 2pp6a1 { A 1 _ TO A 93 _ }
+1o57 1o57a1 { A 2 _ TO A 74 _ }
+1k5n 1k5nb_ { CHAIN B }
+2j8w 2j8wa1 { A 1 _ TO A 128 _ }
+1fui 1fuia2 { A 1 _ TO A 355 _ }
+1mmc 1mmca_ { CHAIN A }
+1s6l 1s6la1 { A 21 _ TO A 80 _ }
+1w36 1w36c3 { C 818 _ TO C 1121 _ }
+1xpa 1xpaa2 { A 98 _ TO A 133 _ }
+1vq3 1vq3a_ { CHAIN A }
+1xqb 1xqba_ { CHAIN A }
+1ro0 1ro0a_ { CHAIN A }
+1yb3 1yb3a1 { A 2 _ TO A 167 _ }
+2j9u 2j9ub1 { B 115 _ TO B 161 _ }
+1f1m 1f1ma_ { CHAIN A }
+1icf 1icfi_ { CHAIN I }
+1xsz 1xsza1 { A 1 _ TO A 197 _ }
+2chh 2chha1 { A 1 _ TO A 113 _ }
+1y88 1y88a2 { A 3 _ TO A 127 _ }
+1r5y 1r5ya_ { CHAIN A }
+1a8o 1a8oa_ { CHAIN A }
+2gum 2guma1 { A 111 _ TO A 725 _ }
+1jhf 1jhfb_ { CHAIN B }
+1y5o 1y5oa1 { A 2 _ TO A 115 _ }
+2fsq 2fsqa1 { A 6 _ TO A 237 _ }
+2zdr 2zdra2 { A 2 _ TO A 281 _ }
+1uz3 1uz3a1 { A 13 _ TO A 102 _ }
+2jn6 2jn6a1 { A 1 _ TO A 89 _ }
+1iwm 1iwma_ { CHAIN A }
+1tqg 1tqga_ { CHAIN A }
+2ppq 2ppqa1 { A 5 _ TO A 320 _ }
+2fcj 2fcja1 { A 1 _ TO A 114 _ }
+1rp0 1rp0a1 { A 7 _ TO A 284 _ }
+3cls 3clsd2 { D 196 _ TO D 318 _ }
+1s7i 1s7ia_ { CHAIN A }
+1cxq 1cxqa_ { CHAIN A }
+1k3x 1k3xa2 { A 1 _ TO A 124 _ }
+1sac 1saca_ { CHAIN A }
+1t77 1t77a1 { A 2186 _ TO A 2489 _ }
+2fnj 2fnja1 { A 35 _ TO A 251 _ }
+1f0k 1f0ka_ { CHAIN A }
+1jhd 1jhda2 { A 174 _ TO A 396 _ }
+1k6k 1k6ka_ { CHAIN A }
+1ne9 1ne9a1 { A 1 _ TO A 164 _ }
+2hly 2hlya1 { A 5 _ TO A 206 _ }
+1v54 1v54g_ { CHAIN G }
+1ylx 1ylxa1 { A 1 _ TO A 100 _ }
+1sg4 1sg4a1 { A 2 _ TO A 250 _ }
+2hq4 2hq4a1 { A 1 _ TO A 152 _ }
+1m0w 1m0wa1 { A 216 _ TO A 323 _ }
+1wfh 1wfha_ { CHAIN A }
+1j27 1j27a_ { CHAIN A }
+1uzx 1uzxa_ { CHAIN A }
+1tlj 1tlja_ { CHAIN A }
+2cay 2caya1 { A 1 _ TO A 99 _ A 252 _ TO A 282 _ }
+3bon 3bona1 { A 3 _ TO A 419 _ }
+2bl8 2bl8a1 { A 4 _ TO A 103 _ }
+3c9u 3c9ua1 { A 1 _ TO A 137 _ }
+1g8q 1g8qa_ { CHAIN A }
+1mj4 1mj4a_ { CHAIN A }
+2fcl 2fcla1 { A 1 _ TO A 157 _ }
+1rut 1rutx1 { X 19 _ TO X 48 _ }
+1smb 1smba_ { CHAIN A }
+2fup 2fupa1 { A 1 _ TO A 130 _ }
+1vfy 1vfya_ { CHAIN A }
+1tz9 1tz9a_ { CHAIN A }
+1l1d 1l1da_ { CHAIN A }
+2cs3 2cs3a1 { A 8 _ TO A 87 _ }
+1rku 1rkua_ { CHAIN A }
+1mo9 1mo9a3 { A 384 _ TO A 523 _ }
+2cxf 2cxfa1 { A 83 _ TO A 249 _ }
+1knm 1knma_ { CHAIN A }
+1ni5 1ni5a3 { A 315 _ TO A 432 _ }
+1xpn 1xpna_ { CHAIN A }
+2bas 2basa1 { A 2 _ TO A 262 _ }
+2io8 2io8a3 { A 201 _ TO A 378 _ A 497 _ TO A 615 _ }
+1nnv 1nnva_ { CHAIN A }
+5csm 5csma_ { CHAIN A }
+1lr0 1lr0a_ { CHAIN A }
+1xdn 1xdna_ { CHAIN A }
+1vlp 1vlpa2 { A 150 _ TO A 415 _ }
+1xe7 1xe7a_ { CHAIN A }
+1mp1 1mp1a_ { CHAIN A }
+2fhp 2fhpa1 { A 1 _ TO A 182 _ }
+2hi7 2hi7b1 { B 14 _ TO B 162 _ }
+3sil 3sila_ { CHAIN A }
+1ydl 1ydla1 { A 6 _ TO A 71 _ }
+2ogq 2ogqa1 { A 371 _ TO A 494 _ }
+1xg0 1xg0c_ { CHAIN C }
+2vap 2vapa2 { A 232 _ TO A 354 _ }
+2gfq 2gfqa1 { A 1 _ TO A 274 _ }
+1klx 1klxa_ { CHAIN A }
+1xl3 1xl3c1 { C 2 _ TO C 92 _ }
+1i2a 1i2aa_ { CHAIN A }
+1o2d 1o2da_ { CHAIN A }
+1kuf 1kufa_ { CHAIN A }
+1j26 1j26a_ { CHAIN A }
+2oh3 2oh3a1 { A 3 _ TO A 154 _ }
+2gom 2goma1 { A 105 _ TO A 165 _ }
+1a9x 1a9xa2 { A 936 _ TO A 1073 _ }
+1nxu 1nxua_ { CHAIN A }
+1pd0 1pd0a3 { A 301 _ TO A 552 _ }
+1l8w 1l8wa_ { CHAIN A }
+2ae8 2ae8a1 { A 1 _ TO A 84 _ }
+1r6j 1r6ja_ { CHAIN A }
+2i09 2i09a1 { A 2 _ TO A 107 _ A 227 _ TO A 403 _ }
+1sr2 1sr2a_ { CHAIN A }
+1lb6 1lb6a_ { CHAIN A }
+3cr3 3cr3a1 { A 1 _ TO A 192 _ }
+2axt 2axte1 { E 3 _ TO E 84 _ }
+1kkh 1kkha2 { A 181 _ TO A 317 _ }
+1qna 1qnaa1 { A 17 _ TO A 115 _ }
+1sqh 1sqha_ { CHAIN A }
+1oqj 1oqja_ { CHAIN A }
+2hk6 2hk6a1 { A 2 _ TO A 310 _ }
+1nzi 1nzia1 { A 1 _ TO A 117 _ }
+1eit 1eita_ { CHAIN A }
+1q88 1q88a_ { CHAIN A }
+1n62 1n62c2 { C 1 _ TO C 177 _ }
+1ugi 1ugia_ { CHAIN A }
+1vqo 1vqou1 { U 4 _ TO U 56 _ }
+1gvf 1gvfa_ { CHAIN A }
+1hyk 1hyka_ { CHAIN A }
+1u2c 1u2ca2 { A 179 _ TO A 303 _ }
+3elg 3elga1 { A 20 _ TO A 146 _ }
+2fgg 2fgga1 { A 4 _ TO A 87 _ }
+1nog 1noga_ { CHAIN A }
+1rh5 1rh5c_ { CHAIN C }
+2nxy 2nxyb2 { B 1098 _ TO B 1181 _ }
+1ou8 1ou8a_ { CHAIN A }
+2p3y 2p3ya1 { A 22 _ TO A 482 _ }
+2r4q 2r4qa1 { A 171 _ TO A 273 _ }
+1ra0 1ra0a1 { A 4 _ TO A 55 _ A 376 _ TO A 426 _ }
+1zx8 1zx8a1 { A 1 _ TO A 124 _ }
+1xru 1xrua1 { A 1 _ TO A 277 _ }
+1oks 1oksa_ { CHAIN A }
+1z3e 1z3eb1 { B 245 _ TO B 311 _ }
+2irf 2irfg_ { CHAIN G }
+1pu1 1pu1a_ { CHAIN A }
+1qo7 1qo7a_ { CHAIN A }
+1he1 1he1a_ { CHAIN A }
+1uw0 1uw0a_ { CHAIN A }
+1m65 1m65a_ { CHAIN A }
+1r0r 1r0ri_ { CHAIN I }
+1pmm 1pmma_ { CHAIN A }
+2ns0 2ns0a1 { A 1 _ TO A 85 _ }
+2o8s 2o8sa1 { A 54 _ TO A 278 _ }
+1e58 1e58a_ { CHAIN A }
+1nxh 1nxha_ { CHAIN A }
+1efa 1efaa1 { A 2 _ TO A 60 _ }
+1nlt 1nlta3 { A 139 _ TO A 212 _ }
+1u2m 1u2ma_ { CHAIN A }
+2fsj 2fsja1 { A 165 _ TO A 325 _ }
+1ulv 1ulva3 { A 776 _ TO A 1020 _ }
+1h80 1h80a_ { CHAIN A }
+1c0p 1c0pa2 { A 1194 _ TO A 1288 _ }
+1ew4 1ew4a_ { CHAIN A }
+1brw 1brwa3 { A 331 _ TO A 433 _ }
+2olr 2olra2 { A 6 _ TO A 227 _ }
+2dkt 2dkta2 { A 82 _ TO A 137 _ }
+1g4y 1g4yb_ { CHAIN B }
+2efv 2efva1 { A 6 _ TO A 87 _ }
+2v89 2v89a1 { A 1414 _ TO A 1487 _ }
+1pd0 1pd0a5 { A 216 _ TO A 300 _ }
+1i40 1i40a_ { CHAIN A }
+1k6y 1k6ya1 { A 1 _ TO A 46 _ }
+1ppj 1ppje2 { E 1 _ TO E 69 _ }
+1byr 1byra_ { CHAIN A }
+1wij 1wija_ { CHAIN A }
+2j8c 2j8cl1 { L 1 _ TO L 281 _ }
+1lcy 1lcya1 { A 226 _ TO A 325 _ }
+1o8r 1o8ra_ { CHAIN A }
+2olr 2olra1 { A 228 _ TO A 540 _ }
+1jzt 1jzta_ { CHAIN A }
+2b8n 2b8na1 { A 4 _ TO A 417 _ }
+1vkp 1vkpa_ { CHAIN A }
+2f23 2f23a2 { A 78 _ TO A 156 _ }
+2d9r 2d9ra1 { A 20 _ TO A 104 _ }
+1ozn 1ozna_ { CHAIN A }
+1tx4 1tx4a_ { CHAIN A }
+2bde 2bdea1 { A 2 _ TO A 459 _ }
+1kmv 1kmva_ { CHAIN A }
+2avu 2avue1 { E 5 _ TO E 160 _ }
+1zps 1zpsa1 { A 8 _ TO A 131 _ }
+1tke 1tkea1 { A 1 _ TO A 62 _ }
+4ubp 4ubpa_ { CHAIN A }
+1esc 1esca_ { CHAIN A }
+2imj 2imja1 { A 5 _ TO A 159 _ }
+1h0z 1h0za_ { CHAIN A }
+1y7m 1y7ma1 { A 49 _ TO A 164 _ }
+1vpr 1vpra1 { A 868 _ TO A 1218 _ }
+2dk5 2dk5a1 { A 8 _ TO A 85 _ }
+2idl 2idla1 { A 1 _ TO A 112 _ }
+1qhv 1qhva_ { CHAIN A }
+1lrz 1lrza1 { A 245 _ TO A 309 _ }
+2cyy 2cyya2 { A 65 _ TO A 150 _ }
+1slu 1slua_ { CHAIN A }
+1fi4 1fi4a2 { A 191 _ TO A 393 _ }
+1rl2 1rl2a1 { A 126 _ TO A 195 _ }
+1ftr 1ftra1 { A 1 _ TO A 148 _ }
+1t0t 1t0tv_ { CHAIN V }
+2h1q 2h1qa1 { A 1 _ TO A 251 _ }
+1w23 1w23a_ { CHAIN A }
+1sqg 1sqga1 { A 5 _ TO A 144 _ }
+2fef 2fefa2 { A 135 _ TO A 293 _ }
+3bvu 3bvua3 { A 31 _ TO A 411 _ }
+1tu1 1tu1a_ { CHAIN A }
+2o4a 2o4aa1 { A 370 _ TO A 452 _ }
+1zup 1zupa1 { A 1 _ TO A 301 _ }
+1hyo 1hyoa1 { A 1 _ TO A 118 _ }
+1at0 1at0a_ { CHAIN A }
+1ks9 1ks9a1 { A 168 _ TO A 291 _ }
+1ldd 1ldda_ { CHAIN A }
+1yel 1yela1 { A 1 _ TO A 102 _ }
+1dp7 1dp7p_ { CHAIN P }
+1dkz 1dkza2 { A 389 _ TO A 506 _ }
+2gtv 2gtvx1 { X 1 _ TO X 93 _ }
+2pju 2pjua1 { A 11 _ TO A 196 _ }
+2psb 2psba1 { A 13 _ TO A 308 _ }
+2fuf 2fufa1 { A 131 _ TO A 256 _ }
+1itx 1itxa2 { A 338 _ TO A 409 _ }
+2b1y 2b1ya1 { A 4 _ TO A 104 _ }
+1qjp 1qjpa_ { CHAIN A }
+1el6 1el6a_ { CHAIN A }
+1vqo 1vqoh1 { H 1 _ TO H 163 _ }
+1u7p 1u7pa_ { CHAIN A }
+2fzc 2fzcb1 { B 2 _ TO B 100 _ }
+2e29 2e29a1 { A 8 _ TO A 92 _ }
+1zel 1zela1 { A 1 _ TO A 82 _ }
+2rl8 2rl8a1 { A 4 _ TO A 154 _ }
+1fvi 1fvia1 { A 190 _ TO A 293 _ }
+2o9c 2o9ca1 { A 135 _ TO A 321 _ }
+1ezw 1ezwa_ { CHAIN A }
+1ji7 1ji7a_ { CHAIN A }
+1muw 1muwa_ { CHAIN A }
+1bdo 1bdoa_ { CHAIN A }
+2dek 2deka1 { A 1 _ TO A 265 _ }
+2o9c 2o9ca2 { A 4 _ TO A 130 _ }
+2p0v 2p0va1 { A 39 _ TO A 481 _ }
+1kr7 1kr7a_ { CHAIN A }
+2es7 2es7a1 { A 7 _ TO A 125 _ }
+1rp3 1rp3b_ { CHAIN B }
+1ud9 1ud9a1 { A 1 _ TO A 119 _ }
+1lv3 1lv3a_ { CHAIN A }
+1hbn 1hbnc_ { CHAIN C }
+2pu9 2pu9b1 { B 1 _ TO B 73 _ }
+2fyx 2fyxa1 { A 1 _ TO A 130 _ }
+1jl0 1jl0a_ { CHAIN A }
+2axt 2axtu1 { U 37 _ TO U 134 _ }
+1uf2 1uf2c1 { C 1 _ TO C 147 _ C 301 _ TO C 421 _ }
+1a12 1a12a_ { CHAIN A }
+1k8t 1k8ta_ { CHAIN A }
+3byq 3byqa1 { A 2 _ TO A 192 _ }
+1wdd 1wdda2 { A 11 _ TO A 150 _ }
+2cxh 2cxha1 { A 13 _ TO A 192 _ }
+2bmw 2bmwa1 { A 9 _ TO A 141 _ }
+1q8c 1q8ca_ { CHAIN A }
+1yfu 1yfua1 { A 1 _ TO A 174 _ }
+1u0s 1u0sa_ { CHAIN A }
+1tx2 1tx2a_ { CHAIN A }
+3bb6 3bb6a1 { A 1 _ TO A 109 _ }
+1bg1 1bg1a2 { A 322 _ TO A 575 _ }
+1ylf 1ylfa1 { A 5 _ TO A 142 _ }
+1gtf 1gtfa_ { CHAIN A }
+1k77 1k77a_ { CHAIN A }
+2uub 2uubr1 { R 19 _ TO R 88 _ }
+1i4m 1i4ma_ { CHAIN A }
+1omz 1omza_ { CHAIN A }
+1zym 1zyma2 { A 3 _ TO A 21 _ A 145 _ TO A 249 _ }
+2b59 2b59b2 { B 8 _ TO B 103 _ }
+2erl 2erla_ { CHAIN A }
+1kke 1kkea1 { A 250 _ TO A 312 _ }
+1eu1 1eu1a2 { A 4 _ TO A 625 _ }
+1k3r 1k3ra1 { A 93 _ TO A 163 _ }
+1nbj 1nbja_ { CHAIN A }
+1ytl 1ytla1 { A 17 _ TO A 174 _ }
+2huj 2huja1 { A 1 _ TO A 120 _ }
+1q90 1q90n_ { CHAIN N }
+1r89 1r89a3 { A 258 _ TO A 437 _ }
+1yu5 1yu5x1 { X 10 _ TO X 76 _ }
+1qo0 1qo0d_ { CHAIN D }
+1gzs 1gzsb_ { CHAIN B }
+3bid 3bida1 { A 1 _ TO A 56 _ }
+1vqo 1vqoy1 { Y 95 _ TO Y 236 _ }
+3lkf 3lkfa_ { CHAIN A }
+2afw 2afwa1 { A 33 _ TO A 361 _ }
+2jak 2jaka1 { A 30 _ TO A 372 _ }
+1rxq 1rxqa_ { CHAIN A }
+2c42 2c42a3 { A 259 _ TO A 415 _ }
+1uxy 1uxya1 { A 3 _ TO A 200 _ }
+1in0 1in0a1 { A 2 _ TO A 89 _ }
+1uly 1ulya_ { CHAIN A }
+1s21 1s21a_ { CHAIN A }
+1j3w 1j3wa_ { CHAIN A }
+2q0z 2q0zx2 { X 209 _ TO X 322 _ }
+2jxc 2jxca1 { A 121 _ TO A 215 _ }
+1j0t 1j0ta_ { CHAIN A }
+4ubp 4ubpb_ { CHAIN B }
+1ogm 1ogmx2 { X 202 _ TO X 574 _ }
+1olz 1olza3 { A 481 _ TO A 536 _ }
+1a1x 1a1xa_ { CHAIN A }
+2vut 2vuti1 { I 671 _ TO I 712 _ }
+2ebf 2ebfx3 { X 1094 _ TO X 1285 _ }
+2cu6 2cu6a1 { A 6 _ TO A 96 _ }
+1tjn 1tjna_ { CHAIN A }
+1l0w 1l0wa2 { A 295 _ TO A 414 _ }
+1iqz 1iqza_ { CHAIN A }
+1jos 1josa_ { CHAIN A }
+1lni 1lnia_ { CHAIN A }
+1vjj 1vjja1 { A 1 _ TO A 140 _ }
+2uub 2uubn1 { N 2 _ TO N 61 _ }
+2jng 2jnga1 { A 5 _ TO A 80 _ }
+1lpb 1lpba1 { A 6 _ TO A 44 _ }
+3boe 3boea1 { A 224 _ TO A 432 _ }
+1vjv 1vjva_ { CHAIN A }
+1i60 1i60a_ { CHAIN A }
+1c9o 1c9oa_ { CHAIN A }
+2q03 2q03a1 { A 5 _ TO A 137 _ }
+1nep 1nepa_ { CHAIN A }
+1r5s 1r5sa_ { CHAIN A }
+1wmi 1wmib1 { B 7 _ TO B 67 _ }
+1rlj 1rlja_ { CHAIN A }
+1nc5 1nc5a_ { CHAIN A }
+2bw3 2bw3b1 { B 79 _ TO B 158 _ }
+1twf 1twff_ { CHAIN F }
+2hxv 2hxva1 { A 148 _ TO A 345 _ }
+1l3a 1l3aa_ { CHAIN A }
+1l1c 1l1ca_ { CHAIN A }
+2pmr 2pmra1 { A 3 _ TO A 77 _ }
+2oqm 2oqma1 { A 1 _ TO A 171 _ }
+1jfl 1jfla1 { A 1 _ TO A 115 _ }
+1ll2 1ll2a_ { CHAIN A }
+2bnm 2bnma2 { A 77 _ TO A 198 _ }
+1wy6 1wy6a1 { A 7 _ TO A 167 _ }
+1pzr 1pzra_ { CHAIN A }
+4ubp 4ubpc2 { C 132 _ TO C 434 _ C 484 _ TO C 570 _ }
+1v65 1v65a_ { CHAIN A }
+1tzp 1tzpa_ { CHAIN A }
+1xhj 1xhja_ { CHAIN A }
+1yc6 1yc611 { 1 36 _ TO 1 189 _ }
+2hje 2hjea1 { A 52 _ TO A 270 _ }
+1qsa 1qsaa2 { A 451 _ TO A 618 _ }
+2pih 2piha1 { A 2 _ TO A 124 _ }
+2c4n 2c4na1 { A 1 _ TO A 250 _ }
+2iim 2iima1 { A 58 _ TO A 119 _ }
+1ppj 1ppjd1 { D 1 _ TO D 195 _ }
+2ddr 2ddra1 { A 7 _ TO A 305 _ }
+1td6 1td6a_ { CHAIN A }
+1gs5 1gs5a_ { CHAIN A }
+1nln 1nlna_ { CHAIN A }
+2fml 2fmla1 { A 205 _ TO A 268 _ }
+1vhw 1vhwa_ { CHAIN A }
+1m7g 1m7ga_ { CHAIN A }
+1tjl 1tjla2 { A 111 _ TO A 151 _ }
+2d9i 2d9ia1 { A 8 _ TO A 90 _ }
+1k8k 1k8kg_ { CHAIN G }
+1pda 1pdaa2 { A 220 _ TO A 307 _ }
+1q3j 1q3ja_ { CHAIN A }
+2uui 2uuia1 { A 2 _ TO A 147 _ }
+1p7i 1p7ia_ { CHAIN A }
+2fk4 2fk4a1 { A 4 _ TO A 67 _ }
+1c1d 1c1da1 { A 149 _ TO A 349 _ }
+1twf 1twfj_ { CHAIN J }
+2vgn 2vgna3 { A 278 _ TO A 381 _ }
+1eb6 1eb6a_ { CHAIN A }
+2v1p 2v1pa1 { A 5 _ TO A 471 _ }
+1n0e 1n0ea_ { CHAIN A }
+1q7e 1q7ea_ { CHAIN A }
+2opl 2opla1 { A 4 _ TO A 185 _ }
+1bjt 1bjta_ { CHAIN A }
+2fok 2foka4 { A 387 _ TO A 579 _ }
+2hqs 2hqsc1 { C 68 _ TO C 173 _ }
+1zsq 1zsqa1 { A 74 _ TO A 198 _ }
+1xer 1xera_ { CHAIN A }
+1e19 1e19a_ { CHAIN A }
+1p80 1p80a1 { A 598 _ TO A 753 _ }
+1euc 1eucb2 { B 0 _ TO B 245 _ }
+1v9v 1v9va1 { A 8 _ TO A 108 _ }
+1n81 1n81a_ { CHAIN A }
+1ual 1uala_ { CHAIN A }
+1ush 1usha2 { A 26 _ TO A 362 _ }
+1mgp 1mgpa_ { CHAIN A }
+1af7 1af7a2 { A 92 _ TO A 284 _ }
+1wq8 1wq8a_ { CHAIN A }
+1pz4 1pz4a_ { CHAIN A }
+2ako 2akoa1 { A 2 _ TO A 251 _ }
+1pby 1pbya1 { A 1 _ TO A 85 _ }
+1klo 1kloa1 { A 11 _ TO A 65 _ }
+1jhj 1jhja_ { CHAIN A }
+1rhs 1rhsa1 { A 1 _ TO A 149 _ }
+2hp8 2hp8a_ { CHAIN A }
+2a26 2a26a1 { A 1 _ TO A 47 _ }
+1ogq 1ogqa_ { CHAIN A }
+1nku 1nkua_ { CHAIN A }
+1j5u 1j5ua_ { CHAIN A }
+1jfb 1jfba_ { CHAIN A }
+1vns 1vnsa_ { CHAIN A }
+2coh 2coha1 { A 118 _ TO A 199 _ }
+2fwh 2fwha1 { A 428 _ TO A 544 _ }
+2gov 2gova1 { A 7 _ TO A 190 _ }
+1qfm 1qfma2 { A 431 _ TO A 710 _ }
+1t92 1t92a_ { CHAIN A }
+1y0n 1y0na_ { CHAIN A }
+1jak 1jaka1 { A 151 _ TO A 506 _ }
+1v4p 1v4pa_ { CHAIN A }
+1wkc 1wkca_ { CHAIN A }
+1u7i 1u7ia_ { CHAIN A }
+1cjy 1cjya2 { A 142 _ TO A 721 _ }
+1q67 1q67a_ { CHAIN A }
+1qba 1qbaa2 { A 28 _ TO A 200 _ }
+1cmc 1cmca_ { CHAIN A }
+1k7c 1k7ca_ { CHAIN A }
+1kny 1knya2 { A 1 _ TO A 125 _ }
+1lla 1llaa3 { A 380 _ TO A 628 _ }
+1ukf 1ukfa_ { CHAIN A }
+1z84 1z84a1 { A 23 _ TO A 195 _ }
+2pu9 2pu9a1 { A 8 _ TO A 115 _ }
+1zke 1zkea1 { A 1 _ TO A 79 _ }
+1r3d 1r3da_ { CHAIN A }
+1w25 1w25a3 { A 294 _ TO A 455 _ }
+1p32 1p32a_ { CHAIN A }
+1xoy 1xoya_ { CHAIN A }
+1wsp 1wspa1 { A 750 _ TO A 832 _ }
+2cr5 2cr5a1 { A 8 _ TO A 103 _ }
+256b 256ba_ { CHAIN A }
+1xbi 1xbia1 { A 2 _ TO A 116 _ }
+1ymk 1ymka1 { A 377 _ TO A 550 _ }
+1qop 1qopb_ { CHAIN B }
+2bgr 2bgra2 { A 509 _ TO A 766 _ }
+1q2h 1q2ha_ { CHAIN A }
+1nnh 1nnha_ { CHAIN A }
+1ipa 1ipaa2 { A 1 _ TO A 105 _ }
+1e8c 1e8ca1 { A 3 _ TO A 103 _ }
+2bi7 2bi7a1 { A 2 _ TO A 247 _ A 317 _ TO A 384 _ }
+2dir 2dira1 { A 8 _ TO A 92 _ }
+1r5p 1r5pa_ { CHAIN A }
+2lis 2lisa_ { CHAIN A }
+1xva 1xvaa_ { CHAIN A }
+2ghr 2ghra1 { A 17 _ TO A 297 _ }
+2hwn 2hwna1 { A 5 _ TO A 43 _ }
+1r8j 1r8ja2 { A 1 _ TO A 135 _ }
+1efy 1efya1 { A 662 _ TO A 796 _ }
+1jw2 1jw2a_ { CHAIN A }
+1q0q 1q0qa1 { A 301 _ TO A 398 _ }
+2hts 2htsa_ { CHAIN A }
+1adt 1adta1 { A 176 _ TO A 265 _ }
+1udx 1udxa3 { A 341 _ TO A 416 _ }
+1rtq 1rtqa_ { CHAIN A }
+2evr 2evra1 { A 13 _ TO A 86 _ }
+1q6z 1q6za2 { A 2 _ TO A 181 _ }
+2f2h 2f2ha2 { A 1 _ TO A 247 _ }
+1gku 1gkub1 { B 1 _ TO B 250 _ }
+1k5d 1k5db_ { CHAIN B }
+1gmu 1gmua1 { A 1 _ TO A 70 _ }
+2idb 2idba2 { A 326 _ TO A 491 _ }
+1r9w 1r9wa_ { CHAIN A }
+1gpq 1gpqa_ { CHAIN A }
+2cs7 2cs7a1 { A 0 _ TO A 54 _ }
+1zl0 1zl0a1 { A 170 _ TO A 307 _ }
+1t4b 1t4ba2 { A 134 _ TO A 354 _ }
+1m1n 1m1na_ { CHAIN A }
+2o0q 2o0qa1 { A 2 _ TO A 114 _ }
+1t62 1t62a_ { CHAIN A }
+1cuk 1cuka3 { A 1 _ TO A 64 _ }
+3ck2 3ck2a1 { A 1 _ TO A 173 _ }
+1wdy 1wdya_ { CHAIN A }
+1abv 1abva_ { CHAIN A }
+1z8u 1z8ua1 { A 2 _ TO A 91 _ }
+1k0r 1k0ra4 { A -4 _ TO A 99 _ }
+1cq3 1cq3a_ { CHAIN A }
+1yx1 1yx1a1 { A 3 _ TO A 252 _ }
+1miw 1miwa1 { A 140 _ TO A 404 _ }
+3bi1 3bi1a1 { A 594 _ TO A 750 _ }
+1k91 1k91a_ { CHAIN A }
+1xmx 1xmxa_ { CHAIN A }
+1ydu 1ydua1 { A 2 _ TO A 170 _ }
+2b97 2b97a1 { A 1 _ TO A 70 _ }
+1z3x 1z3xa1 { A 1 _ TO A 87 _ }
+1vpu 1vpua_ { CHAIN A }
+1v74 1v74b_ { CHAIN B }
+1brt 1brta_ { CHAIN A }
+1wb9 1wb9a3 { A 117 _ TO A 269 _ }
+1kjq 1kjqa1 { A 319 _ TO A 392 _ }
+2gia 2giab1 { B 28 _ TO B 173 _ }
+1p5f 1p5fa_ { CHAIN A }
+1tqj 1tqja_ { CHAIN A }
+1kf6 1kf6c_ { CHAIN C }
+2b4v 2b4va2 { A 30 _ TO A 288 _ }
+1c8u 1c8ua1 { A 2 _ TO A 115 _ }
+1k3y 1k3ya2 { A 2 _ TO A 80 _ }
+1r7j 1r7ja_ { CHAIN A }
+1i78 1i78a_ { CHAIN A }
+2bsq 2bsqe1 { E 2 _ TO E 70 _ }
+2g64 2g64a1 { A 1 _ TO A 139 _ }
+2fiq 2fiqa1 { A 1 _ TO A 420 _ }
+2hal 2hala1 { A 1 _ TO A 212 _ }
+2auw 2auwa1 { A 88 _ TO A 154 _ }
+2gj4 2gj4a1 { A 12 _ TO A 835 _ }
+1zq1 1zq1a1 { A 2 _ TO A 75 _ }
+1kyf 1kyfa1 { A 692 _ TO A 824 _ }
+1sqw 1sqwa2 { A 1 _ TO A 94 _ }
+2d0o 2d0oa1 { A 93 _ TO A 254 _ }
+2h2j 2h2ja2 { A 50 _ TO A 310 _ }
+2bay 2baya1 { A 1 _ TO A 56 _ }
+1luc 1luca_ { CHAIN A }
+2ox6 2ox6a1 { A 5 _ TO A 166 _ }
+2p0m 2p0ma1 { A 113 _ TO A 663 _ }
+1j5y 1j5ya2 { A 68 _ TO A 174 _ }
+2ddz 2ddza1 { A 3 _ TO A 190 _ }
+2peq 2peqa1 { A 2 _ TO A 109 _ }
+2gp4 2gp4a1 { A 419 _ TO A 608 _ }
+1v1h 1v1ha1 { A 319 _ TO A 392 _ }
+1kaf 1kafa_ { CHAIN A }
+1y7p 1y7pa1 { A 79 _ TO A 217 _ }
+1h4r 1h4ra3 { A 20 _ TO A 103 _ }
+1c8d 1c8da_ { CHAIN A }
+1ddl 1ddla_ { CHAIN A }
+1y44 1y44a1 { A 1 _ TO A 307 _ }
+1ha8 1ha8a_ { CHAIN A }
+1ej0 1ej0a_ { CHAIN A }
+1gzg 1gzga_ { CHAIN A }
+2pbe 2pbea2 { A 1 _ TO A 135 _ }
+2uyo 2uyoa1 { A 14 _ TO A 310 _ }
+1m5y 1m5ya1 { A 25 _ TO A 164 _ A 395 _ TO A 427 _ }
+2fct 2fcta1 { A 3 _ TO A 310 _ }
+1ss3 1ss3a_ { CHAIN A }
+1dnv 1dnva_ { CHAIN A }
+3d3r 3d3ra1 { A 1 _ TO A 76 _ }
+2cve 2cvea1 { A 2 _ TO A 124 _ }
+2ux9 2ux9a1 { A 2 _ TO A 67 _ }
+1bm8 1bm8a_ { CHAIN A }
+2q7w 2q7wa1 { A 1 _ TO A 396 _ }
+1v0e 1v0ea2 { A 761 _ TO A 910 _ }
+1iyr 1iyra_ { CHAIN A }
+2gc9 2gc9a1 { A 1 _ TO A 178 _ }
+2bvc 2bvca2 { A 105 _ TO A 478 _ }
+2dsm 2dsma1 { A 1 _ TO A 64 _ }
+1r0m 1r0ma1 { A 133 _ TO A 375 _ }
+2oyr 2oyra1 { A 1 _ TO A 250 _ }
+2hfq 2hfqa1 { A 1 _ TO A 85 _ }
+2dbs 2dbsa1 { A 7 _ TO A 86 _ }
+1j7n 1j7na1 { A 27 _ TO A 263 _ }
+1vpd 1vpda1 { A 164 _ TO A 296 _ }
+2nxf 2nxfa1 { A 3 _ TO A 322 _ }
+1d8w 1d8wa_ { CHAIN A }
+2bhu 2bhua2 { A 531 _ TO A 602 _ }
+1k47 1k47a2 { A 195 _ TO A 329 _ }
+2f6m 2f6mb1 { B 15 _ TO B 118 _ }
+2hgc 2hgca1 { A 5 _ TO A 82 _ }
+1gvj 1gvja_ { CHAIN A }
+1mjn 1mjna_ { CHAIN A }
+2i5e 2i5ea1 { A 1 _ TO A 208 _ }
+1r6t 1r6ta1 { A 7 _ TO A 60 _ }
+1ufz 1ufza_ { CHAIN A }
+2owp 2owpa1 { A 1 _ TO A 128 _ }
+1z1s 1z1sa1 { A 1 _ TO A 129 _ }
+1r75 1r75a_ { CHAIN A }
+2jdi 2jdia2 { A 24 _ TO A 94 _ }
+1v6z 1v6za1 { A 4 _ TO A 66 _ }
+1uoz 1uoza_ { CHAIN A }
+2i0z 2i0za2 { A 193 _ TO A 361 _ }
+2vo9 2vo9a1 { A 1 _ TO A 148 _ }
+1e5b 1e5ba_ { CHAIN A }
+1u94 1u94a2 { A 269 _ TO A 328 _ }
+1wc2 1wc2a1 { A 1 _ TO A 180 _ }
+1pq1 1pq1a_ { CHAIN A }
+2zkd 2zkda1 { A 405 _ TO A 613 _ }
+2p5k 2p5ka1 { A 2 _ TO A 64 _ }
+1l2p 1l2pa_ { CHAIN A }
+2o5h 2o5ha1 { A 1 _ TO A 131 _ }
+1vyi 1vyia_ { CHAIN A }
+3enb 3enba1 { A 1771 _ TO A 1989 _ }
+1jk4 1jk4a_ { CHAIN A }
+1rlr 1rlra2 { A 222 _ TO A 748 _ }
+1gm5 1gm5a1 { A 7 _ TO A 105 _ }
+1rjd 1rjda_ { CHAIN A }
+1oa0 1oa0a_ { CHAIN A }
+2gts 2gtsa1 { A 4 _ TO A 80 _ }
+1knz 1knza_ { CHAIN A }
+3bne 3bnea2 { A 7 _ TO A 149 _ }
+1ux6 1ux6a1 { A 937 _ TO A 1152 _ }
+1rli 1rlia_ { CHAIN A }
+1hk8 1hk8a_ { CHAIN A }
+1of8 1of8a_ { CHAIN A }
+1mzb 1mzba_ { CHAIN A }
+2vb1 2vb1a1 { A 1 _ TO A 129 _ }
+1hb6 1hb6a_ { CHAIN A }
+1oxw 1oxwa_ { CHAIN A }
+1ugj 1ugja_ { CHAIN A }
+1hc7 1hc7a3 { A 404 _ TO A 477 _ }
+1k81 1k81a_ { CHAIN A }
+1ib8 1ib8a2 { A 1 _ TO A 90 _ }
+1hi9 1hi9a_ { CHAIN A }
+1f86 1f86a_ { CHAIN A }
+1dcq 1dcqa2 { A 247 _ TO A 368 _ }
+1v7l 1v7la_ { CHAIN A }
+1qks 1qksa1 { A 9 _ TO A 135 _ }
+1ydx 1ydxa1 { A 1 _ TO A 193 _ }
+2a9s 2a9sa1 { A 1 _ TO A 167 _ }
+1mkm 1mkma1 { A 1 _ TO A 75 _ }
+1x99 1x99a_ { CHAIN A }
+1ais 1aisb1 { B 1108 _ TO B 1205 _ }
+1jdh 1jdha_ { CHAIN A }
+1yqg 1yqga1 { A 153 _ TO A 263 _ }
+1mla 1mlaa2 { A 128 _ TO A 197 _ }
+1xg8 1xg8a_ { CHAIN A }
+1q08 1q08a_ { CHAIN A }
+2vxf 2vxfa1 { A 6 _ TO A 85 _ }
+1tfe 1tfea_ { CHAIN A }
+1iqc 1iqca1 { A 1 _ TO A 150 _ }
+1uwk 1uwka_ { CHAIN A }
+1vqo 1vqoz1 { Z 10 _ TO Z 82 _ }
+1ptf 1ptfa_ { CHAIN A }
+2cwy 2cwya1 { A 1 _ TO A 94 _ }
+1uw4 1uw4a_ { CHAIN A }
+1utc 1utca2 { A 4 _ TO A 330 _ }
+2bai 2baia1 { A 1 _ TO A 32 _ }
+2axt 2axtk1 { K 10 _ TO K 46 _ }
+2fvy 2fvya1 { A 2 _ TO A 306 _ }
+1zhv 1zhva1 { A 2 _ TO A 61 _ }
+2iml 2imla1 { A 1 _ TO A 189 _ }
+1gny 1gnya_ { CHAIN A }
+1rr7 1rr7a_ { CHAIN A }
+2fa8 2fa8a1 { A 4 _ TO A 89 _ }
+1aa7 1aa7a_ { CHAIN A }
+1v05 1v05a_ { CHAIN A }
+1d3y 1d3ya_ { CHAIN A }
+3vub 3vuba_ { CHAIN A }
+1gxm 1gxma_ { CHAIN A }
+1otv 1otva_ { CHAIN A }
+1jqe 1jqea_ { CHAIN A }
+1ems 1emsa2 { A 10 _ TO A 280 _ }
+1uyj 1uyja_ { CHAIN A }
+2a5y 2a5yb1 { B 386 _ TO B 543 _ }
+2dk3 2dk3a1 { A 8 _ TO A 80 _ }
+1yu0 1yu0a1 { A 5 _ TO A 170 _ }
+1d6g 1d6ga_ { CHAIN A }
+2abs 2absa1 { A 10 _ TO A 359 _ }
+1m9z 1m9za_ { CHAIN A }
+1y60 1y60a_ { CHAIN A }
+1xm9 1xm9a1 { A 244 _ TO A 700 _ }
+1ail 1aila_ { CHAIN A }
+2nwt 2nwta1 { A 1 _ TO A 61 _ }
+1ri6 1ri6a_ { CHAIN A }
+1ztp 1ztpa1 { A 17 _ TO A 250 _ }
+3ci0 3ci0k3 { K 29 _ TO K 93 _ K 275 _ TO K 315 _ }
+1nv8 1nv8a_ { CHAIN A }
+2b4w 2b4wa1 { A 2 _ TO A 311 _ }
+2fo1 2fo1d1 { D 52 _ TO D 114 _ }
+2gdw 2gdwa1 { A 8 _ TO A 83 _ }
+1x2i 1x2ia1 { A 2 _ TO A 69 _ }
+1m22 1m22a_ { CHAIN A }
+1m6y 1m6ya2 { A 2 _ TO A 114 _ A 216 _ TO A 294 _ }
+3dcx 3dcxa1 { A 9 _ TO A 124 _ }
+1wba 1wbaa_ { CHAIN A }
+1l3p 1l3pa_ { CHAIN A }
+2nys 2nysa1 { A 3 _ TO A 119 _ }
+1b6a 1b6aa1 { A 375 _ TO A 448 _ }
+1t50 1t50a_ { CHAIN A }
+1xo3 1xo3a_ { CHAIN A }
+1oxd 1oxda_ { CHAIN A }
+1h6y 1h6ya_ { CHAIN A }
+2b8u 2b8ua1 { A 1 _ TO A 129 _ }
+1fl0 1fl0a_ { CHAIN A }
+1pg4 1pg4a_ { CHAIN A }
+2vap 2vapa1 { A 23 _ TO A 231 _ }
+1s5q 1s5qb_ { CHAIN B }
+2i5h 2i5ha1 { A 16 _ TO A 195 _ }
+1aoc 1aoca_ { CHAIN A }
+2oo3 2oo3a1 { A 9 _ TO A 279 _ }
+2vgn 2vgna1 { A 1 _ TO A 135 _ }
+1ca1 1ca1a2 { A 250 _ TO A 370 _ }
+1m9l 1m9la_ { CHAIN A }
+1rju 1rjuv_ { CHAIN V }
+1qcx 1qcxa_ { CHAIN A }
+1ik9 1ik9a1 { A 1 _ TO A 117 _ }
+1sz2 1sz2a1 { A 3 _ TO A 321 _ }
+1euw 1euwa_ { CHAIN A }
+1b8a 1b8aa1 { A 1 _ TO A 103 _ }
+2c9w 2c9wa1 { A 149 _ TO A 198 _ }
+1din 1dina_ { CHAIN A }
+1ju3 1ju3a2 { A 5 _ TO A 351 _ }
+1n4k 1n4ka1 { A 436 _ TO A 602 _ }
+1wix 1wixa_ { CHAIN A }
+3bqo 3bqoa1 { A 62 _ TO A 265 _ }
+1owl 1owla2 { A 3 _ TO A 204 _ }
+1v54 1v54k_ { CHAIN K }
+2d5r 2d5ra1 { A 11 _ TO A 262 _ }
+2imh 2imha1 { A 1 _ TO A 229 _ }
+1t95 1t95a1 { A 87 _ TO A 161 _ }
+1thq 1thqa_ { CHAIN A }
+1ryq 1ryqa_ { CHAIN A }
+3cdd 3cdda1 { A 181 _ TO A 348 _ }
+2jg0 2jg0a1 { A 37 _ TO A 547 _ }
+1pby 1pbya3 { A 274 _ TO A 351 _ }
+2ayj 2ayja1 { A 1 _ TO A 56 _ }
+1gpj 1gpja1 { A 303 _ TO A 404 _ }
+1ro7 1ro7a_ { CHAIN A }
+1flc 1flca1 { A 151 _ TO A 306 _ }
+2f2a 2f2ac1 { C 3 _ TO C 94 _ }
+1m4l 1m4la_ { CHAIN A }
+1xou 1xoua_ { CHAIN A }
+1o70 1o70a1 { A 328 _ TO A 467 _ }
+1y2i 1y2ia_ { CHAIN A }
+2dii 2diia1 { A 8 _ TO A 55 _ }
+2rhw 2rhwa1 { A 4 _ TO A 286 _ }
+1kp8 1kp8a1 { A 2 _ TO A 136 _ A 410 _ TO A 526 _ }
+1vlf 1vlfn1 { N 196 _ TO N 274 _ }
+2lig 2liga_ { CHAIN A }
+1jhs 1jhsa_ { CHAIN A }
+1ufi 1ufia_ { CHAIN A }
+1poc 1poca_ { CHAIN A }
+1c75 1c75a_ { CHAIN A }
+1r5l 1r5la1 { A 25 _ TO A 90 _ }
+2ct7 2ct7a1 { A 8 _ TO A 80 _ }
+2j5y 2j5ya1 { A 1 _ TO A 53 _ }
+1o3u 1o3ua_ { CHAIN A }
+1ppj 1ppjc2 { C 15 _ TO C 260 _ }
+1ctf 1ctfa_ { CHAIN A }
+1u5k 1u5ka1 { A 2 _ TO A 80 _ }
+2cly 2clyb1 { B 4 _ TO B 123 _ }
+2ey4 2ey4c1 { C 1 _ TO C 73 _ }
+2i53 2i53a1 { A 14 _ TO A 157 _ }
+1zsq 1zsqa2 { A 199 _ TO A 585 _ }
+1w0p 1w0pa1 { A 25 _ TO A 216 _ }
+1wqg 1wqga1 { A 2 _ TO A 184 _ }
+1bu8 1bu8a2 { A 1 _ TO A 336 _ }
+1ah7 1ah7a_ { CHAIN A }
+1reg 1regx_ { CHAIN X }
+2o02 2o02a1 { A 1 _ TO A 230 _ }
+1l0q 1l0qa2 { A 1 _ TO A 301 _ }
+2vpa 2vpaa1 { A 2 _ TO A 195 _ }
+2a6z 2a6za1 { A 7 _ TO A 227 _ }
+1hq0 1hq0a_ { CHAIN A }
+1bkr 1bkra_ { CHAIN A }
+2fdn 2fdna_ { CHAIN A }
+1kb0 1kb0a1 { A 579 _ TO A 675 _ }
+1s1d 1s1da_ { CHAIN A }
+1b79 1b79a_ { CHAIN A }
+2tgi 2tgia_ { CHAIN A }
+1wzn 1wzna1 { A 1 _ TO A 251 _ }
+1vla 1vlaa_ { CHAIN A }
+1tj1 1tj1a2 { A 262 _ TO A 610 _ }
+2p8t 2p8ta1 { A 14 _ TO A 82 _ }
+2jdi 2jdig1 { G 1 _ TO G 272 _ }
+1k18 1k18a_ { CHAIN A }
+2nac 2naca2 { A 1 _ TO A 147 _ A 336 _ TO A 374 _ }
+1y6d 1y6da_ { CHAIN A }
+2pbe 2pbea1 { A 138 _ TO A 282 _ }
+1vio 1vioa1 { A 58 _ TO A 231 _ }
+2p7i 2p7ia1 { A 22 _ TO A 246 _ }
+1qgt 1qgta_ { CHAIN A }
+2es4 2es4d1 { D 53 _ TO D 332 _ }
+1bif 1bifa1 { A 37 _ TO A 249 _ }
+1r6f 1r6fa_ { CHAIN A }
+1azo 1azoa_ { CHAIN A }
+2guf 2gufa1 { A 4 _ TO A 594 _ }
+1rya 1ryaa_ { CHAIN A }
+1ldj 1ldja2 { A 17 _ TO A 410 _ }
+1m0d 1m0da_ { CHAIN A }
+1p4p 1p4pa_ { CHAIN A }
+1elk 1elka_ { CHAIN A }
+3seb 3seba1 { A 1 _ TO A 121 _ }
+1hw1 1hw1a1 { A 5 _ TO A 78 _ }
+1l5a 1l5aa1 { A 1 _ TO A 174 _ }
+3b8o 3b8oa1 { A 55 _ TO A 319 _ }
+2mpr 2mpra_ { CHAIN A }
+1b8z 1b8za_ { CHAIN A }
+1hf2 1hf2a2 { A 1 _ TO A 99 _ }
+1gq8 1gq8a_ { CHAIN A }
+2ca6 2ca6a1 { A 2 _ TO A 345 _ }
+1v9y 1v9ya_ { CHAIN A }
+1y88 1y88a1 { A 128 _ TO A 186 _ }
+2hkj 2hkja2 { A 307 _ TO A 470 _ }
+2d32 2d32a1 { A 1 _ TO A 518 _ }
+1c4k 1c4ka2 { A 108 _ TO A 569 _ }
+1r9f 1r9fa_ { CHAIN A }
+1kmt 1kmta_ { CHAIN A }
+1krh 1krha2 { A 206 _ TO A 338 _ }
+1w2f 1w2fa_ { CHAIN A }
+1qhd 1qhda1 { A 1 _ TO A 148 _ A 333 _ TO A 397 _ }
+2pbk 2pbka1 { A 3 _ TO A 230 _ }
+1d7p 1d7pm_ { CHAIN M }
+2nr7 2nr7a1 { A 1 _ TO A 192 _ }
+2f7f 2f7fa1 { A 141 _ TO A 485 _ }
+2f1l 2f1la2 { A 7 _ TO A 95 _ }
+1mk0 1mk0a_ { CHAIN A }
+2gc6 2gc6a2 { A 1 _ TO A 296 _ }
+1jid 1jida_ { CHAIN A }
+1oi7 1oi7a1 { A 1 _ TO A 121 _ }
+2icy 2icya2 { A 6 _ TO A 383 _ }
+2ftx 2ftxa1 { A 133 _ TO A 221 _ }
+1g5g 1g5ga1 { A 33 _ TO A 66 _ A 224 _ TO A 454 _ }
+1uc8 1uc8a1 { A 1 _ TO A 88 _ }
+2bmo 2bmoa2 { A 153 _ TO A 439 _ }
+1p5d 1p5dx1 { X 9 _ TO X 154 _ }
+1lpv 1lpva_ { CHAIN A }
+2gmn 2gmna1 { A 29 _ TO A 292 _ }
+1oi2 1oi2a_ { CHAIN A }
+1vqo 1vqoe1 { E 1 _ TO E 79 _ }
+1lyv 1lyva_ { CHAIN A }
+2aeb 2aeba1 { A 5 _ TO A 313 _ }
+2j01 2j0141 { 4 1 _ TO 4 50 _ }
+2bgr 2bgra1 { A 39 _ TO A 508 _ }
+2f1k 2f1ka1 { A 166 _ TO A 279 _ }
+2hiq 2hiqa1 { A 9 _ TO A 104 _ }
+1jb0 1jb0k_ { CHAIN K }
+1osy 1osya_ { CHAIN A }
+1i52 1i52a_ { CHAIN A }
+1o6a 1o6aa_ { CHAIN A }
+1b3u 1b3ua_ { CHAIN A }
+1hst 1hsta_ { CHAIN A }
+1t3w 1t3wa_ { CHAIN A }
+1l7v 1l7va_ { CHAIN A }
+1syx 1syxb1 { B 25 _ TO B 86 _ }
+1twf 1twfc1 { C 3 _ TO C 41 _ C 173 _ TO C 268 _ }
+1ex2 1ex2a_ { CHAIN A }
+1wpg 1wpga4 { A 1 _ TO A 124 _ A 240 _ TO A 343 _ A 751 _ TO A 994 _ }
+1nwa 1nwaa_ { CHAIN A }
+2oy9 2oy9a1 { A 6 _ TO A 90 _ }
+1n8i 1n8ia_ { CHAIN A }
+1cuk 1cuka2 { A 65 _ TO A 142 _ }
+3byp 3bypa1 { A 6 _ TO A 87 _ }
+1w07 1w07a1 { A 273 _ TO A 461 _ }
+1u02 1u02a_ { CHAIN A }
+1y4w 1y4wa2 { A 20 _ TO A 372 _ }
+1elv 1elva2 { A 342 _ TO A 409 _ }
+1f53 1f53a_ { CHAIN A }
+1yrr 1yrra1 { A 1 _ TO A 53 _ A 351 _ TO A 382 _ }
+2do3 2do3a1 { A 462 _ TO A 523 _ }
+2hx5 2hx5a1 { A 1 _ TO A 144 _ }
+1t0f 1t0fa1 { A 169 _ TO A 268 _ }
+2pif 2pifa1 { A 7 _ TO A 262 _ }
+1jal 1jala2 { A 279 _ TO A 363 _ }
+3cip 3cipg1 { G 2 _ TO G 125 _ }
+2i9w 2i9wa1 { A 46 _ TO A 158 _ }
+1ycy 1ycya1 { A 5 _ TO A 70 _ }
+1wpb 1wpba_ { CHAIN A }
+1gxj 1gxja_ { CHAIN A }
+1ekq 1ekqa_ { CHAIN A }
+1xn7 1xn7a_ { CHAIN A }
+1vrm 1vrma1 { A 44 _ TO A 352 _ }
+2i7n 2i7na1 { A 236 _ TO A 381 _ }
+1ga6 1ga6a_ { CHAIN A }
+1qcs 1qcsa1 { A 0 _ TO A 85 _ }
+2eut 2euta1 { A 4 _ TO A 294 _ }
+1ds1 1ds1a_ { CHAIN A }
+1wy5 1wy5a2 { A 217 _ TO A 311 _ }
+1pn0 1pn0a3 { A 241 _ TO A 341 _ }
+2dst 2dsta1 { A 2 _ TO A 123 _ }
+2bbh 2bbha1 { A 13 _ TO A 244 _ }
+3bdu 3bdua1 { A 2 _ TO A 54 _ }
+1p9g 1p9ga_ { CHAIN A }
+2qgm 2qgma1 { A 33 _ TO A 445 _ }
+2k4x 2k4xa1 { A 1 _ TO A 55 _ }
+2fa1 2fa1a1 { A 84 _ TO A 241 _ }
+1h4a 1h4ax1 { X 1 _ TO X 85 _ }
+1dt9 1dt9a3 { A 5 _ TO A 142 _ }
+2gti 2gtia1 { A 1 _ TO A 194 _ }
+3cls 3clsd1 { D 1 _ TO D 192 _ }
+1lkt 1lkta_ { CHAIN A }
+2djf 2djfa1 { A 1 _ TO A 118 _ }
+2gk3 2gk3a1 { A 8 _ TO A 253 _ }
+2j0n 2j0na1 { A 144 _ TO A 314 _ }
+2inw 2inwa1 { A 4 _ TO A 120 _ }
+2p5z 2p5zx1 { X 378 _ TO X 468 _ }
+3blz 3blza1 { A 3 _ TO A 126 _ }
+2f1f 2f1fa1 { A 2 _ TO A 77 _ }
+1k1x 1k1xa1 { A 311 _ TO A 384 _ }
+2i15 2i15a1 { A 1 _ TO A 129 _ }
+2nsf 2nsfa2 { A 161 _ TO A 240 _ }
+1v4a 1v4aa1 { A 287 _ TO A 437 _ }
+1t1j 1t1ja_ { CHAIN A }
+2bby 2bbya_ { CHAIN A }
+1z21 1z21a1 { A 42 _ TO A 145 _ }
+2v7q 2v7qi1 { I 1 _ TO I 47 _ }
+2i52 2i52a1 { A 1 _ TO A 120 _ }
+1gl4 1gl4a1 { A 399 _ TO A 631 _ }
+1cza 1czan1 { N 16 _ TO N 222 _ }
+2i0z 2i0za1 { A 1 _ TO A 192 _ A 362 _ TO A 420 _ }
+1nd9 1nd9a_ { CHAIN A }
+7fd1 7fd1a_ { CHAIN A }
+2hu7 2hu7a1 { A 9 _ TO A 321 _ }
+1hf8 1hf8a1 { A 150 _ TO A 281 _ }
+1vf7 1vf7a_ { CHAIN A }
+1z60 1z60a1 { A 328 _ TO A 386 _ }
+2bdu 2bdua1 { A 7 _ TO A 297 _ }
+1ay7 1ay7b_ { CHAIN B }
+1wky 1wkya1 { A 340 _ TO A 490 _ }
+2fba 2fbaa1 { A 1 _ TO A 492 _ }
+1e7l 1e7la2 { A 1 _ TO A 103 _ }
+3bp8 3bp8c1 { C 13 _ TO C 87 _ }
+1hxn 1hxna_ { CHAIN A }
+1ox0 1ox0a1 { A -5 _ TO A 251 _ }
+1oao 1oaoc_ { CHAIN C }
+1fn9 1fn9a_ { CHAIN A }
+1u4g 1u4ga_ { CHAIN A }
+1oew 1oewa_ { CHAIN A }
+1sef 1sefa_ { CHAIN A }
+1zav 1zavu1 { U 1 _ TO U 30 _ }
+2a7y 2a7ya1 { A 1 _ TO A 80 _ }
+1nqj 1nqja_ { CHAIN A }
+1qz8 1qz8a_ { CHAIN A }
+1fc6 1fc6a3 { A 157 _ TO A 248 _ }
+1who 1whoa_ { CHAIN A }
+1k3x 1k3xa3 { A 223 _ TO A 262 _ }
+1hf8 1hf8a2 { A 19 _ TO A 149 _ }
+2jn4 2jn4a1 { A 1 _ TO A 66 _ }
+2oyo 2oyoa1 { A 10 _ TO A 195 _ }
+2oux 2ouxa1 { A 6 _ TO A 135 _ }
+2g50 2g50a2 { A 12 _ TO A 115 _ A 218 _ TO A 395 _ }
+1jb0 1jb0f_ { CHAIN F }
+1p9k 1p9ka_ { CHAIN A }
+1egv 1egvb_ { CHAIN B }
+2bfd 2bfda1 { A 6 _ TO A 400 _ }
+2nsf 2nsfa1 { A 1 _ TO A 160 _ }
+1pm3 1pm3a_ { CHAIN A }
+1xkr 1xkra_ { CHAIN A }
+2imq 2imqx1 { X 3 _ TO X 282 _ }
+1v93 1v93a_ { CHAIN A }
+1a6q 1a6qa1 { A 297 _ TO A 368 _ }
+2qsb 2qsba1 { A 2 _ TO A 86 _ }
+1pv1 1pv1a_ { CHAIN A }
+1yc5 1yc5a1 { A 1 _ TO A 245 _ }
+2fug 2fug61 { 6 15 _ TO 6 175 _ }
+2b82 2b82a1 { A 4 _ TO A 212 _ }
+1jkz 1jkza_ { CHAIN A }
+3c9u 3c9ua2 { A 138 _ TO A 300 _ }
+1yfq 1yfqa_ { CHAIN A }
+2jhf 2jhfa1 { A 1 _ TO A 163 _ A 340 _ TO A 374 _ }
+1jc4 1jc4a_ { CHAIN A }
+3bzw 3bzwa1 { A 38 _ TO A 285 _ }
+1y0u 1y0ua_ { CHAIN A }
+1w53 1w53a_ { CHAIN A }
+1lrv 1lrva_ { CHAIN A }
+1b9w 1b9wa1 { A 1 _ TO A 45 _ }
+1rk8 1rk8b_ { CHAIN B }
+1tvl 1tvla_ { CHAIN A }
+1e50 1e50b_ { CHAIN B }
+1nlt 1nlta1 { A 110 _ TO A 138 _ A 213 _ TO A 257 _ }
+1pd3 1pd3a_ { CHAIN A }
+1sdi 1sdia_ { CHAIN A }
+2ohw 2ohwa1 { A 3 _ TO A 130 _ }
+2fcw 2fcwb1 { B 86 _ TO B 124 _ }
+1ixb 1ixba2 { A 91 _ TO A 205 _ }
+2e9x 2e9xd2 { D 166 _ TO D 223 _ }
+1u5p 1u5pa1 { A 1662 _ TO A 1771 _ }
+2g7s 2g7sa1 { A 3 _ TO A 76 _ }
+2htj 2htja1 { A 1 _ TO A 73 _ }
+1g61 1g61a_ { CHAIN A }
+1a8d 1a8da1 { A 1 _ TO A 247 _ }
+2a1v 2a1va1 { A 4 _ TO A 134 _ }
+1ofc 1ofcx3 { X 697 _ TO X 798 _ }
+1l7b 1l7ba_ { CHAIN A }
+2f5t 2f5tx1 { X 247 _ TO X 338 _ }
+1ij5 1ij5a_ { CHAIN A }
+2cob 2coba1 { A 8 _ TO A 70 _ }
+1wj0 1wj0a_ { CHAIN A }
+1gx5 1gx5a_ { CHAIN A }
+1ev0 1ev0a_ { CHAIN A }
+1e5q 1e5qa2 { A 125 _ TO A 391 _ }
+2dlx 2dlxa1 { A 1 _ TO A 147 _ }
+2r7d 2r7da2 { A 3 _ TO A 403 _ }
+1zk4 1zk4a1 { A 1 _ TO A 251 _ }
+3tdt 3tdta_ { CHAIN A }
+2gwf 2gwfa1 { A 181 _ TO A 315 _ }
+2gsv 2gsva1 { A 3 _ TO A 69 _ }
+1x6z 1x6za1 { A 25 _ TO A 144 _ }
+2crb 2crba1 { A 8 _ TO A 90 _ }
+1vju 1vjua_ { CHAIN A }
+2v3z 2v3za1 { A 1 _ TO A 176 _ }
+2g5g 2g5gx1 { X 9 _ TO X 263 _ }
+2o14 2o14a2 { A 160 _ TO A 367 _ }
+1kbl 1kbla3 { A 2 _ TO A 376 _ }
+1kwg 1kwga3 { A 394 _ TO A 590 _ }
+2dex 2dexx3 { X 294 _ TO X 663 _ }
+2ota 2otaa1 { A 7 _ TO A 68 _ }
+1b65 1b65a_ { CHAIN A }
+2pyt 2pyta1 { A 100 _ TO A 227 _ }
+1aol 1aola_ { CHAIN A }
+1sbx 1sbxa_ { CHAIN A }
+2brf 2brfa1 { A 8 _ TO A 108 _ }
+1nr3 1nr3a_ { CHAIN A }
+2nzc 2nzca1 { A 2 _ TO A 81 _ }
+1v6p 1v6pa_ { CHAIN A }
+1ufa 1ufaa2 { A 1 _ TO A 412 _ }
+2ebf 2ebfx1 { X 575 _ TO X 874 _ }
+1dkg 1dkga1 { A 139 _ TO A 197 _ }
+1usm 1usma_ { CHAIN A }
+1z6m 1z6ma1 { A 1 _ TO A 172 _ }
+1qyi 1qyia_ { CHAIN A }
+2duy 2duya1 { A 11 _ TO A 75 _ }
+1i8a 1i8aa_ { CHAIN A }
+2hf1 2hf1a1 { A 2 _ TO A 60 _ }
+1odh 1odha_ { CHAIN A }
+2hj1 2hj1a1 { A 11 _ TO A 87 _ }
+1r0u 1r0ua_ { CHAIN A }
+1m3u 1m3ua_ { CHAIN A }
+1a6s 1a6sa_ { CHAIN A }
+1rf8 1rf8b_ { CHAIN B }
+2a13 2a13a1 { A 14 _ TO A 166 _ }
+1xdp 1xdpa3 { A 315 _ TO A 501 _ }
+1ut7 1ut7a_ { CHAIN A }
+2c42 2c42a4 { A 416 _ TO A 668 _ }
+1sr9 1sr9a3 { A 492 _ TO A 643 _ }
+2dt5 2dt5a1 { A 4 _ TO A 77 _ }
+2g0d 2g0da1 { A 7 _ TO A 415 _ }
+1orj 1orja_ { CHAIN A }
+1wc9 1wc9a_ { CHAIN A }
+2q66 2q66a2 { A 5 _ TO A 201 _ }
+1c1y 1c1yb_ { CHAIN B }
+2o35 2o35a1 { A 2 _ TO A 80 _ }
+2gmh 2gmha2 { A 237 _ TO A 335 _ }
+1v54 1v54d_ { CHAIN D }
+1xto 1xtoa_ { CHAIN A }
+1r12 1r12a_ { CHAIN A }
+2fft 2ffta1 { A 2 _ TO A 84 _ }
+1rwt 1rwta_ { CHAIN A }
+2yvt 2yvta1 { A 4 _ TO A 260 _ }
+1h9a 1h9aa2 { A 182 _ TO A 412 _ A 427 _ TO A 485 _ }
+1zsw 1zswa1 { A 1 _ TO A 144 _ }
+1m7j 1m7ja3 { A 62 _ TO A 419 _ }
+2ccl 2cclb1 { B 1 _ TO B 59 _ }
+2axt 2axth1 { H 2 _ TO H 65 _ }
+2pnw 2pnwa1 { A 5 _ TO A 369 _ }
+1x7d 1x7da_ { CHAIN A }
+2f69 2f69a1 { A 116 _ TO A 193 _ }
+2ho2 2ho2a1 { A 253 _ TO A 285 _ }
+1a8d 1a8da2 { A 248 _ TO A 452 _ }
+1c0m 1c0ma1 { A 217 _ TO A 269 _ }
+1nlq 1nlqa_ { CHAIN A }
+1n93 1n93x_ { CHAIN X }
+2ov0 2ov0a1 { A 1 _ TO A 105 _ }
+1o8b 1o8ba2 { A 127 _ TO A 198 _ }
+1oih 1oiha_ { CHAIN A }
+1fxo 1fxoa_ { CHAIN A }
+1xak 1xaka_ { CHAIN A }
+1ui0 1ui0a_ { CHAIN A }
+1m15 1m15a2 { A 96 _ TO A 357 _ }
+1o08 1o08a_ { CHAIN A }
+2o3a 2o3aa1 { A 1 _ TO A 167 _ }
+2hw4 2hw4a1 { A 5 _ TO A 122 _ }
+2oqo 2oqoa1 { A 57 _ TO A 243 _ }
+2v33 2v33a1 { A 293 _ TO A 382 _ }
+1f00 1f00i3 { I 842 _ TO I 939 _ }
+1s4n 1s4na_ { CHAIN A }
+1u7l 1u7la_ { CHAIN A }
+1zcz 1zcza2 { A 158 _ TO A 452 _ }
+1uj2 1uj2a_ { CHAIN A }
+1uv4 1uv4a1 { A 3 _ TO A 293 _ }
+3bul 3bula1 { A 651 _ TO A 740 _ }
+1bg1 1bg1a1 { A 136 _ TO A 321 _ }
+1lqt 1lqta1 { A 109 _ TO A 324 _ }
+1hyo 1hyoa2 { A 119 _ TO A 416 _ }
+1hfe 1hfes_ { CHAIN S }
+1tff 1tffa_ { CHAIN A }
+1dku 1dkua1 { A 8 _ TO A 166 _ }
+2inc 2incc1 { C 3 _ TO C 85 _ }
+1rh5 1rh5a_ { CHAIN A }
+1hx1 1hx1b_ { CHAIN B }
+3ct6 3ct6a1 { A 1 _ TO A 123 _ }
+1tv8 1tv8a_ { CHAIN A }
+2erf 2erfa1 { A 10 _ TO A 215 _ }
+2hr2 2hr2a1 { A 2 _ TO A 157 _ }
+1yar 1yaro1 { O 4 _ TO O 231 _ }
+2nmz 2nmza1 { A 1 _ TO A 99 _ }
+1z3x 1z3xa2 { A 88 _ TO A 235 _ }
+3e9v 3e9va1 { A 9 _ TO A 128 _ }
+1wy5 1wy5a1 { A 1 _ TO A 216 _ }
+1ufo 1ufoa_ { CHAIN A }
+3bof 3bofa2 { A 1 _ TO A 300 _ }
+1col 1cola_ { CHAIN A }
+1iat 1iata_ { CHAIN A }
+3bux 3buxb2 { B 48 _ TO B 177 _ }
+2frn 2frna1 { A 19 _ TO A 278 _ }
+1vjj 1vjja2 { A 479 _ TO A 593 _ }
+2fdo 2fdoa1 { A 1 _ TO A 92 _ }
+1cqx 1cqxa3 { A 262 _ TO A 403 _ }
+1tl2 1tl2a_ { CHAIN A }
+1daa 1daaa_ { CHAIN A }
+1ru4 1ru4a_ { CHAIN A }
+1ztd 1ztda1 { A 2 _ TO A 125 _ }
+1ast 1asta_ { CHAIN A }
+1hyn 1hynp_ { CHAIN P }
+2cyj 2cyja1 { A 1 _ TO A 118 _ }
+1m1e 1m1eb_ { CHAIN B }
+1yoz 1yoza1 { A 11 _ TO A 124 _ }
+1ux5 1ux5a_ { CHAIN A }
+1kjq 1kjqa2 { A 2 _ TO A 112 _ }
+2gvi 2gvia2 { A 169 _ TO A 201 _ }
+1v2b 1v2ba_ { CHAIN A }
+2afa 2afaa1 { A 4 _ TO A 415 _ }
+2bo4 2bo4a1 { A 2 _ TO A 382 _ }
+1ep3 1ep3b2 { B 103 _ TO B 262 _ }
+1wm3 1wm3a_ { CHAIN A }
+1iu4 1iu4a_ { CHAIN A }
+1fs1 1fs1a1 { A 109 _ TO A 149 _ }
+1jyo 1jyoe_ { CHAIN E }
+1p5d 1p5dx4 { X 368 _ TO X 463 _ }
+2nzw 2nzwa1 { A 1 _ TO A 349 _ }
+2bz1 2bz1a1 { A 1 _ TO A 174 _ }
+2f62 2f62a1 { A 9 _ TO A 160 _ }
+2vqc 2vqca1 { A 4 _ TO A 73 _ }
+2sqc 2sqca1 { A 8 _ TO A 36 _ A 308 _ TO A 630 _ }
+1vkd 1vkda_ { CHAIN A }
+1q90 1q90g_ { CHAIN G }
+1eyq 1eyqa_ { CHAIN A }
+1l5i 1l5ia_ { CHAIN A }
+1yle 1ylea1 { A 1 _ TO A 338 _ }
+2phc 2phcb1 { B 86 _ TO B 217 _ }
+1ans 1ansa_ { CHAIN A }
+1gmu 1gmua2 { A 71 _ TO A 138 _ }
+2qv7 2qv7a1 { A 1 _ TO A 312 _ }
+1oru 1orua_ { CHAIN A }
+1szi 1szia_ { CHAIN A }
+2bi6 2bi6h1 { H 8 _ TO H 31 _ }
+1r8g 1r8ga_ { CHAIN A }
+1ii7 1ii7a_ { CHAIN A }
+1dkz 1dkza1 { A 507 _ TO A 603 _ }
+1r89 1r89a1 { A 143 _ TO A 257 _ }
+1dm9 1dm9a_ { CHAIN A }
+1mr1 1mr1c_ { CHAIN C }
+2ac0 2ac0a1 { A 96 _ TO A 289 _ }
+1lj9 1lj9a_ { CHAIN A }
+1ir6 1ir6a_ { CHAIN A }
+1ov9 1ov9a_ { CHAIN A }
+3c0n 3c0na1 { A 2 _ TO A 84 _ }
+1hl9 1hl9a1 { A 357 _ TO A 448 _ }
+1knq 1knqa_ { CHAIN A }
+1eyb 1eyba_ { CHAIN A }
+1pc6 1pc6a_ { CHAIN A }
+1ush 1usha1 { A 363 _ TO A 550 _ }
+1eu1 1eu1a1 { A 626 _ TO A 780 _ }
+1kke 1kkea2 { A 313 _ TO A 455 _ }
+1a6m 1a6ma_ { CHAIN A }
+1wjv 1wjva1 { A 1 _ TO A 35 _ }
+2ca5 2ca5a1 { A 20 _ TO A 78 _ }
+1lfp 1lfpa_ { CHAIN A }
+1h41 1h41a2 { A 5 _ TO A 151 _ }
+2co5 2co5a1 { A 5 _ TO A 93 _ }
+1msz 1msza_ { CHAIN A }
+1ooy 1ooya1 { A 261 _ TO A 481 _ }
+2g46 2g46a1 { A 1 _ TO A 119 _ }
+1fxk 1fxkc_ { CHAIN C }
+1p1x 1p1xa_ { CHAIN A }
+1gl1 1gl1i_ { CHAIN I }
+1bx7 1bx7a_ { CHAIN A }
+1cfz 1cfza_ { CHAIN A }
+1t2d 1t2da2 { A 151 _ TO A 315 _ }
+1wkt 1wkta_ { CHAIN A }
+1pfo 1pfoa_ { CHAIN A }
+2gu3 2gu3a1 { A 99 _ TO A 161 _ }
+1dfu 1dfup_ { CHAIN P }
+1rw6 1rw6a_ { CHAIN A }
+1c1d 1c1da2 { A 1 _ TO A 148 _ }
+1x4s 1x4sa1 { A 8 _ TO A 53 _ }
+2exd 2exda1 { A 72 _ TO A 143 _ }
+2igd 2igda_ { CHAIN A }
+2z98 2z98a1 { A 1 _ TO A 200 _ }
+2f1l 2f1la1 { A 101 _ TO A 175 _ }
+1hek 1heka_ { CHAIN A }
+1qq5 1qq5a_ { CHAIN A }
+1qmh 1qmha2 { A 5 _ TO A 184 _ A 280 _ TO A 338 _ }
+3eln 3elna1 { A 5 _ TO A 190 _ }
+1bf4 1bf4a_ { CHAIN A }
+1jf8 1jf8a_ { CHAIN A }
+2nww 2nwwa1 { A 12 _ TO A 416 _ }
+1tlh 1tlha_ { CHAIN A }
+2r31 2r31a1 { A 6 _ TO A 238 _ }
+1i7n 1i7na1 { A 113 _ TO A 214 _ }
+1jof 1jofa_ { CHAIN A }
+2p8t 2p8ta2 { A 83 _ TO A 199 _ }
+1x6d 1x6da1 { A 8 _ TO A 114 _ }
+1w1o 1w1oa1 { A 246 _ TO A 534 _ }
+2c7p 2c7pa1 { A 1 _ TO A 327 _ }
+1ppr 1pprm1 { M 1 _ TO M 156 _ }
+1rz4 1rz4a2 { A 2 _ TO A 131 _ }
+2b0c 2b0ca1 { A 8 _ TO A 204 _ }
+1n9p 1n9pa_ { CHAIN A }
+1mby 1mbya_ { CHAIN A }
+2ixm 2ixma1 { A 23 _ TO A 322 _ }
+2con 2cona1 { A 8 _ TO A 73 _ }
+1sei 1seia_ { CHAIN A }
+2fml 2fmla2 { A 3 _ TO A 204 _ }
+1kwm 1kwma2 { A 1 A TO A 95 A }
+1u9p 1u9pa1 { A 72 _ TO A 107 _ }
+1vzy 1vzya1 { A 1 _ TO A 233 _ }
+3d03 3d03a1 { A 1 _ TO A 271 _ }
+1l8b 1l8ba_ { CHAIN A }
+2bop 2bopa_ { CHAIN A }
+1qwt 1qwta_ { CHAIN A }
+2dsx 2dsxa1 { A 1 _ TO A 52 _ }
+1li4 1li4a2 { A 3 _ TO A 189 _ A 353 _ TO A 432 _ }
+1zo0 1zo0a1 { A 94 _ TO A 219 _ }
+1n62 1n62c1 { C 178 _ TO C 286 _ }
+1uf2 1uf2a_ { CHAIN A }
+1oxx 1oxxk1 { K 243 _ TO K 352 _ }
+1r0d 1r0da_ { CHAIN A }
+2g45 2g45a1 { A 173 _ TO A 285 _ }
+2qj2 2qj2a1 { A 36 _ TO A 126 _ }
+1y9q 1y9qa1 { A 4 _ TO A 82 _ }
+1xb2 1xb2b1 { B 56 _ TO B 111 _ }
+1h7c 1h7ca_ { CHAIN A }
+1mr7 1mr7a_ { CHAIN A }
+1tye 1tyea_ { CHAIN A }
+2gr8 2gr8a1 { A 1022 _ TO A 1098 _ }
+1l3k 1l3ka1 { A 8 _ TO A 91 _ }
+1ivs 1ivsa1 { A 797 _ TO A 862 _ }
+2omz 2omza2 { A 33 _ TO A 416 _ }
+2d81 2d81a1 { A 21 _ TO A 338 _ }
+1rif 1rifa_ { CHAIN A }
+1dqc 1dqca_ { CHAIN A }
+1q8d 1q8da_ { CHAIN A }
+2ijr 2ijra1 { A 3 _ TO A 282 _ }
+1rrz 1rrza_ { CHAIN A }
+1aop 1aopa1 { A 81 _ TO A 145 _ }
+2cc3 2cc3a1 { A 92 _ TO A 231 _ }
+1ucr 1ucra_ { CHAIN A }
+1im8 1im8a_ { CHAIN A }
+1uad 1uadc_ { CHAIN C }
+2gkp 2gkpa1 { A 1 _ TO A 164 _ }
+1by2 1by2a_ { CHAIN A }
+1m70 1m70a1 { A 1 _ TO A 92 _ }
+1rp4 1rp4a_ { CHAIN A }
+1hx2 1hx2a_ { CHAIN A }
+1dab 1daba_ { CHAIN A }
+1wa8 1wa8a1 { A 1 _ TO A 99 _ }
+2itb 2itba1 { A 3 _ TO A 201 _ }
+1k2v 1k2vn_ { CHAIN N }
+1fcq 1fcqa_ { CHAIN A }
+1uek 1ueka2 { A 149 _ TO A 268 _ }
+1pd0 1pd0a4 { A 754 _ TO A 926 _ }
+1ckm 1ckma2 { A 11 _ TO A 238 _ }
+3bwu 3bwud1 { D 2 _ TO D 122 _ }
+1ri5 1ri5a_ { CHAIN A }
+1vct 1vcta1 { A 9 _ TO A 107 _ }
+1wgv 1wgva_ { CHAIN A }
+1drs 1drsa_ { CHAIN A }
+1hbn 1hbna2 { A 2 _ TO A 269 _ }
+1xcr 1xcra1 { A 3 _ TO A 315 _ }
+1qip 1qipa_ { CHAIN A }
+1ls1 1ls1a1 { A 1 _ TO A 88 _ }
+1o51 1o51a_ { CHAIN A }
+2gyq 2gyqa1 { A 1 _ TO A 160 _ }
+2cg7 2cg7a1 { A 109 _ TO A 151 _ }
+2cwz 2cwza1 { A 1 _ TO A 138 _ }
+1u2c 1u2ca1 { A 58 _ TO A 160 _ }
+1m1h 1m1ha1 { A 51 _ TO A 131 _ }
+1amx 1amxa_ { CHAIN A }
+1ryk 1ryka_ { CHAIN A }
+1a3a 1a3aa_ { CHAIN A }
+1bvp 1bvp11 { 1 1 _ TO 1 120 _ 1 255 _ TO 1 349 _ }
+1r6o 1r6oc1 { C 20 _ TO C 106 _ }
+1kid 1kida_ { CHAIN A }
+1pby 1pbyc_ { CHAIN C }
+1ppj 1ppjd2 { D 196 _ TO D 241 _ }
+1gme 1gmea_ { CHAIN A }
+2oku 2okua1 { A 443 _ TO A 564 _ }
+2rh3 2rh3a1 { A 82 _ TO A 202 _ }
+3bwu 3bwuc2 { C 122 _ TO C 205 _ }
+1d5y 1d5ya3 { A 122 _ TO A 294 _ }
+1vpq 1vpqa_ { CHAIN A }
+1g6e 1g6ea_ { CHAIN A }
+1lla 1llaa2 { A 110 _ TO A 379 _ }
+1ayo 1ayoa_ { CHAIN A }
+2f0c 2f0ca1 { A 63 _ TO A 163 _ }
+1orn 1orna_ { CHAIN A }
+1q90 1q90m_ { CHAIN M }
+1d02 1d02a_ { CHAIN A }
+1xsv 1xsva_ { CHAIN A }
+1w7b 1w7ba_ { CHAIN A }
+2b3w 2b3wa1 { A 1 _ TO A 160 _ }
+1qfm 1qfma1 { A 1 _ TO A 430 _ }
+2qfr 2qfra1 { A 9 _ TO A 120 _ }
+2ih2 2ih2a2 { A 244 _ TO A 413 _ }
+1bi5 1bi5a1 { A 1 _ TO A 235 _ }
+1q6z 1q6za3 { A 342 _ TO A 524 _ }
+2h1t 2h1ta1 { A 2 _ TO A 187 _ }
+1ywf 1ywfa1 { A 4 _ TO A 275 _ }
+1yxy 1yxya1 { A 4 _ TO A 233 _ }
+1v8q 1v8qa_ { CHAIN A }
+1f35 1f35a_ { CHAIN A }
+2akl 2akla1 { A 41 _ TO A 114 _ }
+1vzi 1vzia2 { A 1 _ TO A 37 _ }
+1t6a 1t6aa_ { CHAIN A }
+1xnt 1xnta_ { CHAIN A }
+2e9x 2e9xd1 { D 21 _ TO D 165 _ }
+2dy1 2dy1a3 { A 455 _ TO A 569 _ }
+2ahm 2ahma1 { A 6 _ TO A 78 _ }
+1d8j 1d8ja_ { CHAIN A }
+1qtw 1qtwa_ { CHAIN A }
+1zt2 1zt2b1 { B 3 _ TO B 209 _ }
+1x0h 1x0ha1 { A 8 _ TO A 107 _ }
+1vk8 1vk8a_ { CHAIN A }
+2fc7 2fc7a1 { A 8 _ TO A 76 _ }
+1pv0 1pv0a_ { CHAIN A }
+2bnx 2bnxa1 { A 133 _ TO A 475 _ }
+1wfx 1wfxa_ { CHAIN A }
+1jov 1jova_ { CHAIN A }
+1so9 1so9a_ { CHAIN A }
+1f32 1f32a_ { CHAIN A }
+1l7y 1l7ya_ { CHAIN A }
+1qwg 1qwga_ { CHAIN A }
+1uqt 1uqta_ { CHAIN A }
+1yg2 1yg2a_ { CHAIN A }
+1q9u 1q9ua_ { CHAIN A }
+1wd7 1wd7a_ { CHAIN A }
+1xme 1xmec1 { C 2 _ TO C 34 _ }
+1rwu 1rwua_ { CHAIN A }
+1j09 1j09a1 { A 306 _ TO A 468 _ }
+1hn0 1hn0a2 { A 25 _ TO A 234 _ }
+1nxi 1nxia_ { CHAIN A }
+2ayy 2ayya1 { A 700 _ TO A 816 _ }
+2hjq 2hjqa2 { A 1 _ TO A 49 _ }
+1v5r 1v5ra1 { A 7 _ TO A 91 _ }
+1gy7 1gy7a_ { CHAIN A }
+1fsg 1fsga_ { CHAIN A }
+1sa3 1sa3a_ { CHAIN A }
+1pfv 1pfva3 { A 141 _ TO A 175 _ }
+1miw 1miwa2 { A 1 _ TO A 139 _ }
+1n62 1n62b1 { B 6 _ TO B 146 _ }
+1nnx 1nnxa_ { CHAIN A }
+2it9 2it9a1 { A 1 _ TO A 122 _ }
+1mky 1mkya3 { A 359 _ TO A 439 _ }
+1vjj 1vjja4 { A 141 _ TO A 461 _ }
+2ce7 2ce7a1 { A 411 _ TO A 603 _ }
+2vdf 2vdfa1 { A 7 _ TO A 253 _ }
+1k4z 1k4za_ { CHAIN A }
+3bed 3beda1 { A 1 _ TO A 132 _ }
+1jjc 1jjcb1 { B 1 _ TO B 38 _ B 152 _ TO B 190 _ }
+2a65 2a65a1 { A 5 _ TO A 513 _ }
+2o5a 2o5aa1 { A 2 _ TO A 114 _ }
+1aie 1aiea_ { CHAIN A }
+1q5z 1q5za_ { CHAIN A }
+2phn 2phna1 { A 2 _ TO A 249 _ }
+2hq2 2hq2a1 { A 1 _ TO A 337 _ }
+2f2h 2f2ha1 { A 666 _ TO A 773 _ }
+1n8v 1n8va_ { CHAIN A }
+2bh1 2bh1a1 { A 146 _ TO A 239 _ }
+3eeq 3eeqa2 { A 8 _ TO A 214 _ }
+1fyx 1fyxa_ { CHAIN A }
+2pbd 2pbdp1 { P 1 _ TO P 139 _ }
+1or7 1or7c_ { CHAIN C }
+2db7 2db7a1 { A 3 _ TO A 57 _ }
+1chd 1chda_ { CHAIN A }
+2i6v 2i6va1 { A 219 _ TO A 305 _ }
+1r2q 1r2qa_ { CHAIN A }
+1oyz 1oyza_ { CHAIN A }
+1olm 1olma2 { A 275 _ TO A 393 _ }
+1w9c 1w9ca_ { CHAIN A }
+1k46 1k46a_ { CHAIN A }
+1v6z 1v6za2 { A 67 _ TO A 228 _ }
+1dwk 1dwka1 { A 1 _ TO A 86 _ }
+2gdg 2gdga1 { A 1 _ TO A 114 _ }
+2igs 2igsa1 { A 4 _ TO A 215 _ }
+2ga1 2ga1a1 { A 1 _ TO A 102 _ }
+2bze 2bzea1 { A 345 _ TO A 476 _ }
+1khc 1khca_ { CHAIN A }
+1z8g 1z8ga2 { A 50 _ TO A 159 _ }
+2hga 2hgaa1 { A 23 _ TO A 125 _ }
+1rh5 1rh5b_ { CHAIN B }
+2f9h 2f9ha1 { A 3 _ TO A 123 _ }
+2d0o 2d0oa2 { A 1 _ TO A 92 _ A 255 _ TO A 403 _ }
+1y12 1y12a1 { A 2 _ TO A 162 _ }
+2dpm 2dpma_ { CHAIN A }
+1bgf 1bgfa_ { CHAIN A }
+1t3t 1t3ta1 { A 153 _ TO A 220 _ }
+1w1w 1w1we_ { CHAIN E }
+1aco 1acoa2 { A 2 _ TO A 528 _ }
+1f0l 1f0la3 { A 201 _ TO A 380 _ }
+1kqp 1kqpa_ { CHAIN A }
+1wl8 1wl8a1 { A 1 _ TO A 188 _ }
+1wwi 1wwia1 { A 1 _ TO A 148 _ }
+2be3 2be3a1 { A 1 _ TO A 203 _ }
+2dul 2dula1 { A 3 _ TO A 377 _ }
+2oa4 2oa4a1 { A 1 _ TO A 93 _ }
+1wyu 1wyua1 { A 1 _ TO A 437 _ }
+1j8b 1j8ba_ { CHAIN A }
+2i5n 2i5nc1 { C 1 _ TO C 332 _ }
+2hu7 2hu7a2 { A 322 _ TO A 581 _ }
+1h2c 1h2ca_ { CHAIN A }
+2od6 2od6a1 { A 1 _ TO A 109 _ }
+2jfg 2jfga3 { A 94 _ TO A 297 _ }
+2f06 2f06a1 { A 71 _ TO A 141 _ }
+1dp3 1dp3a_ { CHAIN A }
+1mzg 1mzga_ { CHAIN A }
+1fm0 1fm0e_ { CHAIN E }
+2bvc 2bvca1 { A 5 _ TO A 104 _ }
+2b4v 2b4va1 { A 289 _ TO A 471 _ }
+1p2z 1p2za1 { A 5 _ TO A 650 _ }
+1kl9 1kl9a1 { A 89 _ TO A 182 _ }
+2cho 2choa3 { A 5 _ TO A 126 _ }
+1c1k 1c1ka_ { CHAIN A }
+1dfm 1dfma_ { CHAIN A }
+1gkm 1gkma_ { CHAIN A }
+1r0v 1r0va3 { A 140 _ TO A 214 _ }
+2ux0 2ux0a1 { A 387 _ TO A 521 _ }
+1d5t 1d5ta1 { A -2 _ TO A 291 _ A 389 _ TO A 431 _ }
+1o13 1o13a_ { CHAIN A }
+2oee 2oeea1 { A 3 _ TO A 112 _ }
+2nr5 2nr5a1 { A 1 _ TO A 64 _ }
+2r7g 2r7ga1 { A 380 _ TO A 578 _ }
+2b9e 2b9ea1 { A 133 _ TO A 425 _ }
+1vpz 1vpza_ { CHAIN A }
+1l5o 1l5oa_ { CHAIN A }
+1p9e 1p9ea_ { CHAIN A }
+1r8e 1r8ea2 { A 121 _ TO A 277 _ }
+1fjj 1fjja_ { CHAIN A }
+1ute 1utea_ { CHAIN A }
+2hy5 2hy5a1 { A 1 _ TO A 130 _ }
+1jey 1jeyb1 { B 242 _ TO B 545 _ }
+1nvu 1nvus_ { CHAIN S }
+1j97 1j97a_ { CHAIN A }
+1v54 1v54h_ { CHAIN H }
+1v54 1v54c_ { CHAIN C }
+2d28 2d28c1 { C 1 _ TO C 149 _ }
+1oyg 1oyga_ { CHAIN A }
+2i09 2i09a2 { A 108 _ TO A 226 _ }
+1tvf 1tvfa1 { A 316 _ TO A 383 _ }
+1iwg 1iwga7 { A 7 _ TO A 37 _ A 331 _ TO A 498 _ }
+1wri 1wria_ { CHAIN A }
+1e8r 1e8ra_ { CHAIN A }
+1di1 1di1a_ { CHAIN A }
+1dce 1dcea2 { A 242 _ TO A 350 _ }
+1ig4 1ig4a_ { CHAIN A }
+1dce 1dcea3 { A 444 _ TO A 567 _ }
+1uwv 1uwva2 { A 75 _ TO A 432 _ }
+1gxy 1gxya_ { CHAIN A }
+1p9h 1p9ha_ { CHAIN A }
+1j83 1j83a_ { CHAIN A }
+2p12 2p12a1 { A 8 _ TO A 172 _ }
+1oig 1oiga_ { CHAIN A }
+1uxy 1uxya2 { A 201 _ TO A 342 _ }
+1gdn 1gdna_ { CHAIN A }
+1q8b 1q8ba_ { CHAIN A }
+2p3r 2p3ra1 { A 2 _ TO A 253 _ }
+1am7 1am7a_ { CHAIN A }
+3bzk 3bzka3 { A 1 _ TO A 324 _ }
+2eyq 2eyqa1 { A 466 _ TO A 545 _ }
+2cl5 2cl5a1 { A 3 _ TO A 216 _ }
+2ywq 2ywqa1 { A 1 _ TO A 95 _ }
+1bja 1bjaa_ { CHAIN A }
+1u7n 1u7na_ { CHAIN A }
+1t16 1t16a_ { CHAIN A }
+2qee 2qeec1 { C 2 _ TO C 416 _ }
+1d4b 1d4ba_ { CHAIN A }
+1r3s 1r3sa_ { CHAIN A }
+1yrr 1yrra2 { A 54 _ TO A 350 _ }
+1sg7 1sg7a1 { A 22 _ TO A 96 _ }
+1xm7 1xm7a_ { CHAIN A }
+3bvu 3bvua1 { A 412 _ TO A 522 _ }
+2qs8 2qs8a1 { A 7 _ TO A 63 _ A 374 _ TO A 412 _ }
+2ffs 2ffsa1 { A 1 _ TO A 151 _ }
+1k4n 1k4na_ { CHAIN A }
+2nnu 2nnua1 { A 1 _ TO A 200 _ }
+1j2n 1j2na_ { CHAIN A }
+2fxu 2fxua1 { A 7 _ TO A 146 _ }
+1sra 1sraa_ { CHAIN A }
+1ifr 1ifra_ { CHAIN A }
+2a9d 2a9da2 { A 95 _ TO A 343 _ }
+2e9x 2e9xc2 { C 1001 _ TO C 1087 _ }
+1kft 1kfta_ { CHAIN A }
+2hyd 2hyda2 { A 1 _ TO A 323 _ }
+1zym 1zyma1 { A 22 _ TO A 144 _ }
+1qcs 1qcsa2 { A 86 _ TO A 201 _ }
+2i9c 2i9ca1 { A 3 _ TO A 123 _ }
+1efy 1efya2 { A 797 _ TO A 1011 _ }
+1dzf 1dzfa2 { A 144 _ TO A 215 _ }
+2trc 2trcp_ { CHAIN P }
+1ek9 1ek9a_ { CHAIN A }
+1v0d 1v0da_ { CHAIN A }
+2cpg 2cpga_ { CHAIN A }
+1jak 1jaka2 { A 8 _ TO A 150 _ }
+2i5i 2i5ia1 { A 2 _ TO A 262 _ }
+2dsy 2dsya1 { A 3 _ TO A 82 _ }
+2o9u 2o9ux1 { X 1001 _ TO X 1096 _ }
+1iby 1ibya_ { CHAIN A }
+1oqv 1oqva_ { CHAIN A }
+1unq 1unqa_ { CHAIN A }
+1ehs 1ehsa_ { CHAIN A }
+1n4w 1n4wa1 { A 9 _ TO A 318 _ A 451 _ TO A 507 _ }
+1k8w 1k8wa5 { A 9 _ TO A 250 _ }
+3bi1 3bi1a2 { A 118 _ TO A 350 _ }
+2pv4 2pv4a1 { A 1 _ TO A 144 _ }
+1my7 1my7a_ { CHAIN A }
+1wo8 1wo8a1 { A 1 _ TO A 126 _ }
+2f4m 2f4mb1 { B 275 _ TO B 332 _ }
+1pfb 1pfba_ { CHAIN A }
+1tf5 1tf5a2 { A 571 _ TO A 780 _ }
+1jfr 1jfra_ { CHAIN A }
+3bzk 3bzka5 { A 325 _ TO A 473 _ }
+1lu0 1lu0a_ { CHAIN A }
+1uxo 1uxoa_ { CHAIN A }
+1rv9 1rv9a_ { CHAIN A }
+2fcw 2fcwa1 { A 216 _ TO A 320 _ }
+2b7m 2b7ma1 { A 73 _ TO A 623 _ }
+1zhx 1zhxa1 { A 2 _ TO A 434 _ }
+1pv7 1pv7a_ { CHAIN A }
+1ys5 1ys5a1 { A 2 _ TO A 156 _ }
+2zgw 2zgwa2 { A 1 _ TO A 188 _ }
+2sak 2saka_ { CHAIN A }
+1yfb 1yfba1 { A 3 _ TO A 53 _ }
+2in5 2in5a1 { A 3 _ TO A 200 _ }
+1xrs 1xrsb2 { B 33 _ TO B 84 _ }
+1roo 1rooa_ { CHAIN A }
+1bo1 1bo1a_ { CHAIN A }
+1vd6 1vd6a1 { A 8 _ TO A 224 _ }
+1rqp 1rqpa1 { A 193 _ TO A 298 _ }
+1x9d 1x9da1 { A 245 _ TO A 697 _ }
+1n1b 1n1ba1 { A 64 _ TO A 270 _ }
+1q3q 1q3qa1 { A 9 _ TO A 145 _ A 406 _ TO A 526 _ }
+1zav 1zava1 { A 1 _ TO A 177 _ }
+1dl5 1dl5a2 { A 214 _ TO A 317 _ }
+1m4z 1m4za_ { CHAIN A }
+1v4v 1v4va_ { CHAIN A }
+1swx 1swxa_ { CHAIN A }
+1h72 1h72c1 { C 5 _ TO C 167 _ }
+1toa 1toaa_ { CHAIN A }
+1yks 1yksa1 { A 185 _ TO A 324 _ }
+1w7c 1w7ca1 { A 316 _ TO A 775 _ }
+2hgk 2hgka1 { A 1 _ TO A 109 _ }
+1ppj 1ppjc1 { C 261 _ TO C 379 _ }
+1kap 1kapp1 { P 247 _ TO P 470 _ }
+1q92 1q92a_ { CHAIN A }
+1iwg 1iwga1 { A 38 _ TO A 134 _ }
+1cxz 1cxzb_ { CHAIN B }
+1pzq 1pzqa_ { CHAIN A }
+1m8n 1m8na_ { CHAIN A }
+3en8 3en8a1 { A 1 _ TO A 127 _ }
+2h2j 2h2ja1 { A 311 _ TO A 486 _ }
+1ifq 1ifqa_ { CHAIN A }
+3ecf 3ecfa1 { A 2 _ TO A 129 _ }
+1pl3 1pl3a_ { CHAIN A }
+2f01 2f01a1 { A 14 _ TO A 134 _ }
+1dus 1dusa_ { CHAIN A }
+1fjn 1fjna_ { CHAIN A }
+2e9x 2e9xb1 { B 62 _ TO B 173 _ }
+1wmd 1wmda1 { A 319 _ TO A 434 _ }
+1ccw 1ccwb_ { CHAIN B }
+2byo 2byoa1 { A 20 _ TO A 207 _ }
+1u1j 1u1ja1 { A 2 _ TO A 395 _ }
+2cyy 2cyya1 { A 5 _ TO A 64 _ }
+1jjc 1jjcb6 { B 191 _ TO B 399 _ }
+2ebf 2ebfx2 { X 875 _ TO X 1093 _ }
+1enw 1enwa_ { CHAIN A }
+1qe3 1qe3a_ { CHAIN A }
+1afp 1afpa_ { CHAIN A }
+1jey 1jeyb2 { B 6 _ TO B 241 _ }
+1iow 1iowa1 { A 1 _ TO A 96 _ }
+1gw5 1gw5a_ { CHAIN A }
+2okq 2okqa1 { A 1 _ TO A 117 _ }
+2cdq 2cdqa2 { A 329 _ TO A 419 _ }
+1kw3 1kw3b1 { B 1 _ TO B 132 _ }
+2p0s 2p0sa1 { A 48 _ TO A 183 _ }
+4sgb 4sgbi_ { CHAIN I }
+1rqp 1rqpa2 { A 8 _ TO A 192 _ }
+1jrl 1jrla_ { CHAIN A }
+2z6w 2z6wa1 { A 2 _ TO A 165 _ }
+2cme 2cmeb1 { B 9 _ TO B 98 _ }
+2q66 2q66a3 { A 352 _ TO A 529 _ }
+2fug 2fug13 { 1 250 _ TO 1 333 _ }
+1t06 1t06a_ { CHAIN A }
+2apl 2apla1 { A 2 _ TO A 150 _ }
+1wir 1wira_ { CHAIN A }
+2o3f 2o3fa1 { A 1 _ TO A 83 _ }
+1pu6 1pu6a_ { CHAIN A }
+1dq3 1dq3a2 { A 336 _ TO A 414 _ }
+2bdr 2bdra1 { A 1 _ TO A 166 _ }
+2arc 2arca_ { CHAIN A }
+1g4m 1g4ma1 { A 5 _ TO A 175 _ }
+1y0p 1y0pa3 { A 362 _ TO A 504 _ }
+2jqa 2jqaa1 { A 1 _ TO A 149 _ }
+1twf 1twfl_ { CHAIN L }
+1i5p 1i5pa3 { A 1 _ TO A 263 _ }
+1wpu 1wpua1 { A 5 _ TO A 148 _ }
+1pjx 1pjxa_ { CHAIN A }
+1wj9 1wj9a1 { A 1 _ TO A 87 _ }
+1v9j 1v9ja_ { CHAIN A }
+3cjs 3cjsb1 { B 1 _ TO B 70 _ }
+2p4w 2p4wa1 { A 1 _ TO A 194 _ }
+1xne 1xnea_ { CHAIN A }
+3ci0 3ci0k1 { K 204 _ TO K 274 _ }
+1ho8 1ho8a_ { CHAIN A }
+2hiy 2hiya1 { A 1 _ TO A 180 _ }
+1udx 1udxa1 { A 1 _ TO A 156 _ }
+2iw1 2iw1a1 { A 2 _ TO A 371 _ }
+1yua 1yuaa1 { A 1 _ TO A 65 _ }
+2ozg 2ozga1 { A 291 _ TO A 395 _ }
+1p1m 1p1ma2 { A 50 _ TO A 330 _ }
+1iyc 1iyca_ { CHAIN A }
+1yfs 1yfsa1 { A 237 _ TO A 457 _ }
+3eip 3eipa_ { CHAIN A }
+1v54 1v54b1 { B 91 _ TO B 227 _ }
+1d5t 1d5ta2 { A 292 _ TO A 388 _ }
+2ga9 2ga9d1 { D 12 _ TO D 479 _ }
+1sop 1sopa_ { CHAIN A }
+1jg1 1jg1a_ { CHAIN A }
+2b0a 2b0aa1 { A 1 _ TO A 186 _ }
+1h05 1h05a_ { CHAIN A }
+2jek 2jeka1 { A 6 _ TO A 145 _ }
+1gui 1guia_ { CHAIN A }
+2i74 2i74a1 { A 472 _ TO A 651 _ }
+4bcl 4bcla_ { CHAIN A }
+1uoy 1uoya_ { CHAIN A }
+1m8z 1m8za_ { CHAIN A }
+3bbb 3bbba1 { A 2 _ TO A 151 _ }
+1fp2 1fp2a2 { A 109 _ TO A 352 _ }
+1d0q 1d0qa_ { CHAIN A }
+1ewn 1ewna_ { CHAIN A }
+1vrb 1vrba1 { A 8 _ TO A 326 _ }
+1kjn 1kjna_ { CHAIN A }
+2axt 2axtb1 { B 2 _ TO B 489 _ }
+2hzb 2hzba1 { A 2 _ TO A 312 _ }
+2r25 2r25a1 { A 2 _ TO A 167 _ }
+2jfg 2jfga1 { A 1 _ TO A 93 _ }
+1bou 1boua_ { CHAIN A }
+1v0e 1v0ea1 { A 245 _ TO A 760 _ }
+1zcz 1zcza1 { A 1 _ TO A 157 _ }
+2h00 2h00a1 { A 5 _ TO A 254 _ }
+1q7h 1q7ha2 { A 3 _ TO A 68 _ }
+2fs6 2fs6a1 { A 2 _ TO A 137 _ }
+1ynh 1ynha1 { A 3 _ TO A 441 _ }
+2ftx 2ftxb1 { B 155 _ TO B 213 _ }
+1whu 1whua_ { CHAIN A }
+1y0k 1y0ka1 { A 1 _ TO A 209 _ }
+2f4l 2f4la1 { A 1 _ TO A 283 _ }
+2pw9 2pw9a1 { A 7 _ TO A 257 _ }
+2ciw 2ciwa1 { A 0 _ TO A 119 _ }
+2nw8 2nw8a1 { A 23 _ TO A 284 _ }
+1ofu 1ofux_ { CHAIN X }
+1mli 1mlia_ { CHAIN A }
+1rq6 1rq6a_ { CHAIN A }
+1gtr 1gtra1 { A 339 _ TO A 547 _ }
+1gxr 1gxra_ { CHAIN A }
+2uuy 2uuyb1 { B 24 _ TO B 74 _ }
+1m56 1m56d_ { CHAIN D }
+2nml 2nmla1 { A 2 _ TO A 101 _ }
+1px5 1px5a1 { A 201 _ TO A 346 _ }
+1wjt 1wjta_ { CHAIN A }
+1qks 1qksa2 { A 136 _ TO A 567 _ }
+1xpp 1xppa_ { CHAIN A }
+2gtl 2gtlm1 { M 102 _ TO M 225 _ }
+2io8 2io8a1 { A 379 _ TO A 496 _ }
+1h72 1h72c2 { C 168 _ TO C 300 _ }
+1o98 1o98a1 { A 77 _ TO A 310 _ }
+1s99 1s99a_ { CHAIN A }
+1mkf 1mkfa_ { CHAIN A }
+2ap1 2ap1a1 { A 118 _ TO A 303 _ }
+1sr8 1sr8a_ { CHAIN A }
+1vcc 1vcca_ { CHAIN A }
+1fiu 1fiua_ { CHAIN A }
+1rqb 1rqba1 { A 307 _ TO A 474 _ }
+2fzp 2fzpa1 { A 193 _ TO A 317 _ }
+1wka 1wkaa1 { A 195 _ TO A 337 _ }
+1vcl 1vcla3 { A 284 _ TO A 432 _ }
+1t95 1t95a2 { A 11 _ TO A 86 _ }
+1y08 1y08a_ { CHAIN A }
+1zru 1zrua3 { A 2 _ TO A 140 _ }
+1ofl 1ofla_ { CHAIN A }
+1zdy 1zdya1 { A 3 _ TO A 303 _ }
+1j3a 1j3aa_ { CHAIN A }
+1ehx 1ehxa_ { CHAIN A }
+1vr3 1vr3a1 { A 1 _ TO A 179 _ }
+2ess 2essa1 { A 1 _ TO A 149 _ }
+1fcy 1fcya_ { CHAIN A }
+2i1s 2i1sa1 { A 4 _ TO A 188 _ }
+1mo9 1mo9a1 { A 2 _ TO A 192 _ A 314 _ TO A 383 _ }
+1tr0 1tr0a_ { CHAIN A }
+1nkv 1nkva_ { CHAIN A }
+1z2u 1z2ua1 { A 1 _ TO A 147 _ }
+1z7a 1z7aa1 { A 4 _ TO A 304 _ }
+2ia7 2ia7a1 { A 23 _ TO A 133 _ }
+1tke 1tkea2 { A 63 _ TO A 224 _ }
+2b7e 2b7ea1 { A 4 _ TO A 59 _ }
+2o14 2o14a1 { A 14 _ TO A 159 _ }
+1omh 1omha_ { CHAIN A }
+1wlg 1wlga_ { CHAIN A }
+2v8q 2v8qb1 { B 190 _ TO B 272 _ }
+1s7m 1s7ma_ { CHAIN A }
+1p91 1p91a_ { CHAIN A }
+3brd 3brda3 { A 381 _ TO A 541 _ }
+2je6 2je6a1 { A 1 _ TO A 191 _ }
+1rqj 1rqja_ { CHAIN A }
+1lsl 1lsla1 { A 416 _ TO A 469 _ }
+2axt 2axtm1 { M 1 _ TO M 36 _ }
+1t0g 1t0ga_ { CHAIN A }
+1gm5 1gm5a2 { A 106 _ TO A 285 _ }
+1vkf 1vkfa_ { CHAIN A }
+1kn0 1kn0a_ { CHAIN A }
+1vqr 1vqra_ { CHAIN A }
+1irx 1irxa1 { A 320 _ TO A 523 _ }
+2g50 2g50a1 { A 116 _ TO A 217 _ }
+1kbl 1kbla2 { A 377 _ TO A 509 _ }
+1l1l 1l1la_ { CHAIN A }
+1u7z 1u7za_ { CHAIN A }
+1jpy 1jpya_ { CHAIN A }
+1k1x 1k1xa2 { A 385 _ TO A 659 _ }
+2ajt 2ajta2 { A 1 _ TO A 328 _ }
+1jqn 1jqna_ { CHAIN A }
+3seb 3seba2 { A 122 _ TO A 238 _ }
+1hcd 1hcda_ { CHAIN A }
+1dlw 1dlwa_ { CHAIN A }
+1r1g 1r1ga_ { CHAIN A }
+2fhz 2fhzb1 { B 12 _ TO B 104 _ }
+1kwi 1kwia_ { CHAIN A }
+2dfb 2dfba1 { A 1 _ TO A 190 _ }
+2a6c 2a6ca1 { A 1 _ TO A 69 _ }
+1nz0 1nz0a_ { CHAIN A }
+1rki 1rkia1 { A 1 _ TO A 98 _ }
+1pie 1piea2 { A 214 _ TO A 396 _ }
+1dmt 1dmta_ { CHAIN A }
+1ow1 1ow1a_ { CHAIN A }
+1dhs 1dhsa_ { CHAIN A }
+1wlq 1wlqc_ { CHAIN C }
+2q0i 2q0ia1 { A 1 _ TO A 298 _ }
+1kic 1kica_ { CHAIN A }
+1pb5 1pb5a_ { CHAIN A }
+2f5t 2f5tx2 { X 110 _ TO X 246 _ }
+2ond 2onda1 { A 242 _ TO A 549 _ }
+2fiy 2fiya1 { A 19 _ TO A 308 _ }
+2zjr 2zjr41 { 4 1 _ TO 4 37 _ }
+2nwi 2nwia1 { A 1 _ TO A 160 _ }
+1tt8 1tt8a_ { CHAIN A }
+1hlv 1hlva1 { A 1 _ TO A 66 _ }
+1wu9 1wu9a1 { A 191 _ TO A 249 _ }
+1lwb 1lwba_ { CHAIN A }
+1xmk 1xmka1 { A 294 _ TO A 366 _ }
+1zpy 1zpya1 { A 4 _ TO A 94 _ }
+1txl 1txla_ { CHAIN A }
+1k3x 1k3xa1 { A 125 _ TO A 213 _ }
+1y2o 1y2oa1 { A 1 _ TO A 248 _ }
+1rl0 1rl0a_ { CHAIN A }
+1ouo 1ouoa_ { CHAIN A }
+1z8h 1z8ha1 { A 5 _ TO A 205 _ }
+1mv8 1mv8a1 { A 203 _ TO A 300 _ }
+2e1f 2e1fa1 { A 1142 _ TO A 1235 _ }
+1cru 1crua_ { CHAIN A }
+1e2w 1e2wa2 { A 169 _ TO A 232 _ }
+1v96 1v96a1 { A 2 _ TO A 149 _ }
+2a0b 2a0ba_ { CHAIN A }
+2b4j 2b4jc1 { C 346 _ TO C 426 _ }
+1m6e 1m6ex_ { CHAIN X }
+1wte 1wtea_ { CHAIN A }
+1go3 1go3f_ { CHAIN F }
+1oh0 1oh0a_ { CHAIN A }
+2gyc 2gyck1 { K 3 _ TO K 133 _ }
+1xu6 1xu6a_ { CHAIN A }
+1ej5 1ej5a_ { CHAIN A }
+1zfo 1zfoa_ { CHAIN A }
+1x6m 1x6ma_ { CHAIN A }
+2uub 2uubj1 { J 3 _ TO J 100 _ }
+2fsu 2fsua1 { A 12 _ TO A 194 _ }
+2cr9 2cr9a1 { A 8 _ TO A 133 _ }
+2odg 2odgc1 { C 2 _ TO C 47 _ }
+1tg7 1tg7a2 { A 667 _ TO A 848 _ }
+3bpd 3bpda1 { A 1 _ TO A 91 _ }
+1fm0 1fm0d_ { CHAIN D }
+1pcf 1pcfa_ { CHAIN A }
+1k94 1k94a_ { CHAIN A }
+2o6p 2o6pa1 { A 29 _ TO A 150 _ }
+2bln 2blna2 { A 1 _ TO A 203 _ }
+2dex 2dexx1 { X 113 _ TO X 293 _ }
+1vbk 1vbka1 { A 176 _ TO A 307 _ }
+1m55 1m55a_ { CHAIN A }
+1jix 1jixa_ { CHAIN A }
+1zbx 1zbxb1 { B 485 _ TO B 613 _ }
+2e50 2e50a1 { A 1 _ TO A 222 _ }
+1uz5 1uz5a3 { A 181 _ TO A 328 _ }
+1ztc 1ztca1 { A 1 _ TO A 207 _ }
+1a1i 1a1ia1 { A 103 _ TO A 131 _ }
+2ah2 2ah2a1 { A 409 _ TO A 633 _ }
+1kyh 1kyha_ { CHAIN A }
+1ixb 1ixba1 { A 1 _ TO A 90 _ }
+1upk 1upka_ { CHAIN A }
+1txj 1txja_ { CHAIN A }
+1vjo 1vjoa_ { CHAIN A }
+1gyx 1gyxa_ { CHAIN A }
+1l3l 1l3la1 { A 170 _ TO A 234 _ }
+1zkp 1zkpa1 { A 1 _ TO A 244 _ }
+1na6 1na6a2 { A 179 _ TO A 398 _ }
+2fzt 2fzta1 { A 1 _ TO A 78 _ }
+2c1w 2c1wa1 { A 6 _ TO A 289 _ }
+2f76 2f76x1 { X 1 _ TO X 94 _ }
+1vmo 1vmoa_ { CHAIN A }
+1j0p 1j0pa_ { CHAIN A }
+3c8d 3c8da1 { A 6 _ TO A 150 _ }
+1acc 1acca_ { CHAIN A }
+1ttk 1ttka_ { CHAIN A }
+2j8g 2j8ga1 { A 191 _ TO A 339 _ }
+1a62 1a62a1 { A 1 _ TO A 47 _ }
+1wdj 1wdja_ { CHAIN A }
+1hq1 1hq1a_ { CHAIN A }
+2dk4 2dk4a1 { A 8 _ TO A 70 _ }
+2dp9 2dp9a1 { A 1 _ TO A 120 _ }
+1flc 1flca2 { A 1 _ TO A 150 _ A 307 _ TO A 427 _ }
+2aib 2aiba1 { A 1 _ TO A 98 _ }
+1g3m 1g3ma_ { CHAIN A }
+1wvk 1wvka_ { CHAIN A }
+1hkq 1hkqa_ { CHAIN A }
+1vlr 1vlra2 { A 39 _ TO A 145 _ }
+1psr 1psra_ { CHAIN A }
+1ojr 1ojra_ { CHAIN A }
+1vaj 1vaja1 { A 3 _ TO A 205 _ }
+2omz 2omza1 { A 417 _ TO A 495 _ }
+1f0x 1f0xa1 { A 274 _ TO A 567 _ }
+2huh 2huha1 { A 81 _ TO A 227 _ }
+1i0d 1i0da_ { CHAIN A }
+1x57 1x57a1 { A 8 _ TO A 85 _ }
+1pj5 1pj5a3 { A 220 _ TO A 338 _ }
+1m15 1m15a1 { A 2 _ TO A 95 _ }
+1wxx 1wxxa2 { A 65 _ TO A 382 _ }
+1ogm 1ogmx1 { X 3 _ TO X 201 _ }
+1dhn 1dhna_ { CHAIN A }
+2vlq 2vlqa1 { A 4 _ TO A 84 _ }
+2v3k 2v3ka1 { A 25 _ TO A 251 _ }
+1zjc 1zjca1 { A 3 _ TO A 415 _ }
+1pg6 1pg6a_ { CHAIN A }
+1u5u 1u5ua_ { CHAIN A }
+2r85 2r85a2 { A 100 _ TO A 334 _ }
+1vkm 1vkma_ { CHAIN A }
+1kzl 1kzla1 { A 1 _ TO A 92 _ }
+1m1x 1m1xb3 { B 606 _ TO B 690 _ }
+2hkj 2hkja1 { A 229 _ TO A 306 _ }
+2d8d 2d8da1 { A 3 _ TO A 82 _ }
+2jn9 2jn9a1 { A 2 _ TO A 97 _ }
+1h41 1h41a1 { A 152 _ TO A 712 _ }
+2ane 2anea1 { A 8 _ TO A 117 _ }
+1q90 1q90l_ { CHAIN L }
+1ct5 1ct5a_ { CHAIN A }
+3fap 3fapb_ { CHAIN B }
+1hy9 1hy9a_ { CHAIN A }
+1f44 1f44a1 { A 20 _ TO A 129 _ }
+2ifx 2ifxa1 { A 1 _ TO A 108 _ }
+2aze 2azea1 { A 199 _ TO A 346 _ }
+1b2p 1b2pa_ { CHAIN A }
+2d00 2d00a1 { A 6 _ TO A 109 _ }
+1rfx 1rfxa_ { CHAIN A }
+2p7j 2p7ja1 { A 181 _ TO A 273 _ }
+1ig3 1ig3a1 { A 179 _ TO A 263 _ }
+1dk0 1dk0a_ { CHAIN A }
+1utg 1utga_ { CHAIN A }
+1c4e 1c4ea_ { CHAIN A }
+2idb 2idba1 { A 6 _ TO A 325 _ }
+1u8v 1u8va2 { A 1 _ TO A 275 _ }
+2dpk 2dpka1 { A 370 _ TO A 502 _ }
+1i1w 1i1wa_ { CHAIN A }
+2h4o 2h4oa1 { A 2 _ TO A 63 _ }
+1xwe 1xwea_ { CHAIN A }
+2pth 2ptha_ { CHAIN A }
+2f2a 2f2ab2 { B 4 _ TO B 293 _ }
+1tht 1thta_ { CHAIN A }
+1rw2 1rw2a_ { CHAIN A }
+1v58 1v58a1 { A 62 _ TO A 230 _ }
+1oi7 1oi7a2 { A 122 _ TO A 288 _ }
+2ghv 2ghvc1 { C 320 _ TO C 502 _ }
+1xw3 1xw3a1 { A 28 _ TO A 137 _ }
+1ae9 1ae9a_ { CHAIN A }
+1dxj 1dxja_ { CHAIN A }
+2dlb 2dlba1 { A 2002 _ TO A 2071 _ }
+1gh9 1gh9a_ { CHAIN A }
+1te7 1te7a_ { CHAIN A }
+2p0t 2p0ta1 { A 22 _ TO A 169 _ }
+1yu0 1yu0a2 { A 171 _ TO A 380 _ }
+1zs9 1zs9a1 { A 4 _ TO A 256 _ }
+16vp 16vpa_ { CHAIN A }
+1u9l 1u9la_ { CHAIN A }
+1w7j 1w7ja1 { A 5 _ TO A 62 _ }
+1inl 1inla_ { CHAIN A }
+1mty 1mtyg_ { CHAIN G }
+1bb8 1bb8a_ { CHAIN A }
+2php 2phpa1 { A 241 _ TO A 420 _ }
+1x8d 1x8da1 { A 1 _ TO A 104 _ }
+2f9c 2f9ca1 { A 3 _ TO A 322 _ }
+1qc7 1qc7a_ { CHAIN A }
+2g6t 2g6ta1 { A 1 _ TO A 305 _ }
+2rsl 2rsla_ { CHAIN A }
+2ccq 2ccqa1 { A 11 _ TO A 109 _ }
+1q60 1q60a_ { CHAIN A }
+1xb4 1xb4a1 { A 2 _ TO A 125 _ }
+1vdk 1vdka_ { CHAIN A }
+1vm0 1vm0a_ { CHAIN A }
+2aeu 2aeua1 { A 9 _ TO A 374 _ }
+1o9g 1o9ga_ { CHAIN A }
+1nki 1nkia_ { CHAIN A }
+1v54 1v54j_ { CHAIN J }
+3cjr 3cjrb1 { B 71 _ TO B 137 _ }
+1u6k 1u6ka1 { A 2 _ TO A 283 _ }
+1rh6 1rh6a_ { CHAIN A }
+1n9l 1n9la_ { CHAIN A }
+1kg2 1kg2a_ { CHAIN A }
+1h5w 1h5wa_ { CHAIN A }
+2v8q 2v8qa1 { A 396 _ TO A 548 _ }
+1vct 1vcta2 { A 108 _ TO A 201 _ }
+2a9d 2a9da1 { A 344 _ TO A 466 _ }
+1m3y 1m3ya1 { A 25 _ TO A 221 _ }
+1uzk 1uzka3 { A 1529 _ TO A 1604 _ }
+2vv5 2vv5a3 { A 27 _ TO A 112 _ }
+1wzd 1wzda1 { A 7 _ TO A 213 _ }
+2rer 2rera1 { A 1 _ TO A 155 _ }
+2ozb 2ozbb1 { B 85 _ TO B 333 _ }
+2d5j 2d5ja1 { A 1 _ TO A 377 _ }
+1uow 1uowa_ { CHAIN A }
+1vib 1viba_ { CHAIN A }
+1ijp 1ijpa_ { CHAIN A }
+1vqo 1vqop1 { P 1 _ TO P 143 _ }
+1i8n 1i8na_ { CHAIN A }
+1vr0 1vr0a1 { A 1 _ TO A 235 _ }
+1h16 1h16a_ { CHAIN A }
+1fx7 1fx7a3 { A 145 _ TO A 230 _ }
+1e8q 1e8qa_ { CHAIN A }
+1z6b 1z6ba1 { A 84 _ TO A 229 _ }
+1i71 1i71a_ { CHAIN A }
+1ykh 1ykha1 { A 111 _ TO A 205 _ }
+1n5u 1n5ua1 { A 2 _ TO A 196 _ }
+1f9y 1f9ya_ { CHAIN A }
+2c5r 2c5ra1 { A 66 _ TO A 129 _ }
+2sli 2slia1 { A 81 _ TO A 276 _ }
+1jhf 1jhfa1 { A 2 _ TO A 72 _ }
+2f7f 2f7fa2 { A 4 _ TO A 140 _ }
+1vfi 1vfia1 { A 4 _ TO A 95 _ }
+2gy9 2gy9s1 { S 2 _ TO S 80 _ }
+2qs8 2qs8a2 { A 64 _ TO A 373 _ }
+1mc2 1mc2a_ { CHAIN A }
+1rmd 1rmda2 { A 1 _ TO A 86 _ }
+2bs2 2bs2c1 { C 1 _ TO C 254 _ }
+1nui 1nuia1 { A 64 _ TO A 255 _ }
+1dd9 1dd9a_ { CHAIN A }
+1di6 1di6a_ { CHAIN A }
+3er7 3er7a1 { A 5 _ TO A 122 _ }
+2b0l 2b0la1 { A 167 _ TO A 257 _ }
+2f5k 2f5ka1 { A 6 _ TO A 88 _ }
+1kzf 1kzfa_ { CHAIN A }
+1s2x 1s2xa_ { CHAIN A }
+1xy7 1xy7a_ { CHAIN A }
+2py6 2py6a1 { A 14 _ TO A 408 _ }
+1r7l 1r7la_ { CHAIN A }
+1pd0 1pd0a1 { A 647 _ TO A 753 _ }
+2ics 2icsa1 { A 4 _ TO A 54 _ A 322 _ TO A 371 _ }
+1rp3 1rp3a1 { A 87 _ TO A 163 _ }
+1k78 1k78a1 { A 19 _ TO A 81 _ }
+2i0k 2i0ka1 { A 274 _ TO A 613 _ }
+1k3i 1k3ia3 { A 151 _ TO A 537 _ }
+2gyc 2gyc11 { 1 1 _ TO 1 52 _ }
+1ny9 1ny9a_ { CHAIN A }
+1qmh 1qmha1 { A 185 _ TO A 279 _ }
+1xhv 1xhva_ { CHAIN A }
+2guj 2guja1 { A 5 _ TO A 143 _ }
+2r4i 2r4ia1 { A 1 _ TO A 122 _ }
+1mgt 1mgta1 { A 89 _ TO A 169 _ }
+1s9u 1s9ua_ { CHAIN A }
+1hyu 1hyua3 { A 1 _ TO A 102 _ }
+1ssq 1ssqa_ { CHAIN A }
+1g31 1g31a_ { CHAIN A }
+2cb2 2cb2a1 { A 2 _ TO A 308 _ }
+2g40 2g40a1 { A 38 _ TO A 212 _ }
+1zv9 1zv9a1 { A 3 _ TO A 173 _ }
+2if6 2if6a1 { A 19 _ TO A 200 _ }
+1jb0 1jb0j_ { CHAIN J }
+2a8e 2a8ea1 { A 2 _ TO A 211 _ }
+1z67 1z67a1 { A 3 _ TO A 131 _ }
+1weh 1weha_ { CHAIN A }
+1b12 1b12a_ { CHAIN A }
+1q6z 1q6za1 { A 182 _ TO A 341 _ }
+2b9d 2b9da1 { A 42 _ TO A 93 _ }
+1th7 1th7a1 { A 3 _ TO A 78 _ }
+1v54 1v54l_ { CHAIN L }
+1ryl 1ryla_ { CHAIN A }
+1qrv 1qrva_ { CHAIN A }
+1gvp 1gvpa_ { CHAIN A }
+2w6k 2w6ka1 { A 1 _ TO A 139 _ }
+2i5u 2i5ua1 { A 2 _ TO A 75 _ }
+1ppj 1ppji_ { CHAIN I }
+1kq6 1kq6a_ { CHAIN A }
+1xub 1xuba1 { A 1 _ TO A 128 _ }
+2i5n 2i5nh2 { H 1 _ TO H 36 _ }
+1xov 1xova1 { A 181 _ TO A 314 _ }
+1no7 1no7a_ { CHAIN A }
+1y9q 1y9qa2 { A 83 _ TO A 181 _ }
+1t71 1t71a_ { CHAIN A }
+1wdd 1wdds_ { CHAIN S }
+1n6z 1n6za_ { CHAIN A }
+1y6x 1y6xa1 { A 7 _ TO A 93 _ }
+1o98 1o98a2 { A 2 _ TO A 76 _ A 311 _ TO A 510 _ }
+1jvr 1jvra_ { CHAIN A }
+2fm9 2fm9a1 { A 49 _ TO A 263 _ }
+1j3e 1j3ea_ { CHAIN A }
+2v9v 2v9va1 { A 377 _ TO A 437 _ }
+1pbj 1pbja3 { A 2 _ TO A 121 _ }
+1o7i 1o7ia_ { CHAIN A }
+1vqo 1vqo31 { 3 1 _ TO 3 92 _ }
+1gvd 1gvda_ { CHAIN A }
+1lmi 1lmia_ { CHAIN A }
+3bwu 3bwuc1 { C 1 _ TO C 121 _ }
+2ilx 2ilxa1 { A 1 _ TO A 219 _ }
+1b33 1b33n_ { CHAIN N }
+2a84 2a84a1 { A 3 _ TO A 288 _ }
+1koe 1koea_ { CHAIN A }
+2isb 2isba1 { A 2 _ TO A 179 _ }
+1v54 1v54a_ { CHAIN A }
+1zbp 1zbpa1 { A 2 _ TO A 265 _ }
+1iu8 1iu8a_ { CHAIN A }
+1twf 1twfi1 { I 1 _ TO I 49 _ }
+2hjj 2hjja1 { A 10 _ TO A 75 _ }
+2a14 2a14a1 { A 5 _ TO A 261 _ }
+1j9j 1j9ja_ { CHAIN A }
+1z0n 1z0na1 { A 77 _ TO A 163 _ }
+2car 2cara1 { A 1 _ TO A 194 _ }
+2fp1 2fp1a1 { A 35 _ TO A 199 _ }
+1jb3 1jb3a_ { CHAIN A }
+1onw 1onwa1 { A 1 _ TO A 62 _ A 347 _ TO A 389 _ }
+1qmg 1qmga1 { A 308 _ TO A 595 _ }
+1dwk 1dwka2 { A 87 _ TO A 156 _ }
+1pkp 1pkpa2 { A 4 _ TO A 77 _ }
+2psp 2pspa1 { A 1 _ TO A 53 _ }
+1mxr 1mxra_ { CHAIN A }
+1bw3 1bw3a_ { CHAIN A }
+2r8o 2r8oa3 { A 528 _ TO A 663 _ }
+1tq5 1tq5a1 { A 1 _ TO A 231 _ }
+1gml 1gmla_ { CHAIN A }
+1e5r 1e5ra_ { CHAIN A }
+1y5i 1y5ic1 { C 1 _ TO C 225 _ }
+1mn3 1mn3a_ { CHAIN A }
+1vps 1vpsa_ { CHAIN A }
+2aua 2auaa1 { A 2 _ TO A 195 _ }
+1u07 1u07a_ { CHAIN A }
+1g8a 1g8aa_ { CHAIN A }
+2a5z 2a5za1 { A 24 _ TO A 262 _ }
+2hx0 2hx0a1 { A 6 _ TO A 141 _ }
+3dxo 3dxoa1 { A 1 _ TO A 117 _ }
+2gdt 2gdta1 { A 2 _ TO A 116 _ }
+2cfu 2cfua2 { A 20 _ TO A 524 _ }
+2pma 2pmaa1 { A 26 _ TO A 166 _ }
+2a90 2a90a1 { A 43 _ TO A 131 _ }
+1z0p 1z0pa1 { A 1 _ TO A 77 _ }
+1ckq 1ckqa_ { CHAIN A }
+2v7f 2v7fa1 { A 2 _ TO A 150 _ }
+1y8a 1y8aa1 { A 1 _ TO A 308 _ }
+1t1e 1t1ea2 { A 12 _ TO A 190 _ }
+1j1v 1j1va_ { CHAIN A }
+1od3 1od3a_ { CHAIN A }
+2dy1 2dy1a4 { A 378 _ TO A 454 _ }
+2nly 2nlya1 { A 31 _ TO A 254 _ }
+1v54 1v54e_ { CHAIN E }
+2ob5 2ob5a1 { A 1 _ TO A 147 _ }
+1j23 1j23a_ { CHAIN A }
+2fyu 2fyuk1 { K 1 _ TO K 53 _ }
+1lla 1llaa1 { A 2 _ TO A 109 _ }
+1ocy 1ocya_ { CHAIN A }
+1v9m 1v9ma_ { CHAIN A }
+2odf 2odfa1 { A 6 _ TO A 257 _ }
+1u6z 1u6za1 { A 313 _ TO A 509 _ }
+1dzf 1dzfa1 { A 5 _ TO A 143 _ }
+1lj8 1lj8a3 { A 287 _ TO A 492 _ }
+1stz 1stza2 { A 101 _ TO A 336 _ }
+1okj 1okja1 { A 1 _ TO A 106 _ }
+2e1b 2e1ba1 { A 1 _ TO A 87 _ }
+1pv5 1pv5a_ { CHAIN A }
+2ev0 2ev0a2 { A 63 _ TO A 136 _ }
+2ooc 2ooca1 { A 8 _ TO A 111 _ }
+2jw6 2jw6a1 { A 503 _ TO A 540 _ }
+2bf5 2bf5a1 { A 11 _ TO A 102 _ }
+1mg4 1mg4a_ { CHAIN A }
+1mju 1mjul1 { L 1 _ TO L 107 _ }
+2pww 2pwwa1 { A 1 _ TO A 114 _ }
+3bi1 3bi1a3 { A 57 _ TO A 117 _ A 351 _ TO A 593 _ }
+1cc8 1cc8a_ { CHAIN A }
+3b7s 3b7sa1 { A 461 _ TO A 610 _ }
+1tdj 1tdja2 { A 336 _ TO A 423 _ }
+1sx5 1sx5a_ { CHAIN A }
+1iom 1ioma_ { CHAIN A }
+3d4u 3d4ub1 { B 1 _ TO B 37 _ }
+2au5 2au5a1 { A 1 _ TO A 132 _ }
+1c5a 1c5aa_ { CHAIN A }
+1uww 1uwwa_ { CHAIN A }
+2hng 2hnga1 { A 5 _ TO A 128 _ }
+1oxx 1oxxk2 { K 1 _ TO K 242 _ }
+2bbk 2bbkh_ { CHAIN H }
+1qi9 1qi9a_ { CHAIN A }
+1ghh 1ghha_ { CHAIN A }
+1eci 1ecia_ { CHAIN A }
+1sc6 1sc6a3 { A 327 _ TO A 410 _ }
+1tye 1tyeb1 { B 58 _ TO B 106 _ B 355 _ TO B 440 _ }
+1wpg 1wpga1 { A 125 _ TO A 239 _ }
+2b0j 2b0ja1 { A 243 _ TO A 344 _ }
+1jr7 1jr7a_ { CHAIN A }
+1fwx 1fwxa2 { A 8 _ TO A 451 _ }
+1g73 1g73a_ { CHAIN A }
+2bbk 2bbkl_ { CHAIN L }
+1q1h 1q1ha_ { CHAIN A }
+1jhn 1jhna4 { A 61 _ TO A 262 _ A 412 _ TO A 458 _ }
+1r45 1r45a_ { CHAIN A }
+1qg8 1qg8a_ { CHAIN A }
+2nxc 2nxca1 { A 1 _ TO A 254 _ }
+1cvr 1cvra1 { A 351 _ TO A 432 _ }
+1nyc 1nyca_ { CHAIN A }
+1jb0 1jb0l_ { CHAIN L }
+1oai 1oaia_ { CHAIN A }
+1w6v 1w6va1 { A 1 _ TO A 120 _ }
+1dqa 1dqaa4 { A 462 _ TO A 586 _ A 704 _ TO A 870 _ }
+2f09 2f09a1 { A 1 _ TO A 82 _ }
+1urj 1urja_ { CHAIN A }
+1uc8 1uc8a2 { A 89 _ TO A 280 _ }
+2im9 2im9a1 { A 49 _ TO A 352 _ }
+2hjq 2hjqa1 { A 50 _ TO A 103 _ }
+1hx6 1hx6a1 { A 15 _ TO A 244 _ }
+2c71 2c71a1 { A 480 _ TO A 683 _ }
+1j8r 1j8ra_ { CHAIN A }
+1dqg 1dqga_ { CHAIN A }
+1hky 1hkya_ { CHAIN A }
+1nls 1nlsa_ { CHAIN A }
+2gnx 2gnxa1 { A 123 _ TO A 294 _ }
+1usu 1usub_ { CHAIN B }
+1c8z 1c8za_ { CHAIN A }
+1nww 1nwwa_ { CHAIN A }
+1n62 1n62a2 { A 3 _ TO A 81 _ }
+1v6s 1v6sa_ { CHAIN A }
+1ijv 1ijva_ { CHAIN A }
+2bfd 2bfdb2 { B 205 _ TO B 342 _ }
+1j77 1j77a_ { CHAIN A }
+2bm8 2bm8a1 { A 2 _ TO A 233 _ }
+2fom 2fomb1 { B 18 _ TO B 167 _ }
+2qn6 2qn6b1 { B 176 _ TO B 264 _ }
+1x9z 1x9za_ { CHAIN A }
+2icy 2icya1 { A 384 _ TO A 466 _ }
+1u97 1u97a_ { CHAIN A }
+2od0 2od0a1 { A 3 _ TO A 105 _ }
+1y1o 1y1oa_ { CHAIN A }
+1v70 1v70a_ { CHAIN A }
+2czr 2czra1 { A 1 _ TO A 218 _ }
+1xff 1xffa_ { CHAIN A }
+1nrj 1nrja_ { CHAIN A }
+2gib 2giba1 { A 270 _ TO A 366 _ }
+1dpu 1dpua_ { CHAIN A }
+1hzt 1hzta_ { CHAIN A }
+1g6s 1g6sa_ { CHAIN A }
+1l0q 1l0qa1 { A 302 _ TO A 391 _ }
+1wb9 1wb9a1 { A 270 _ TO A 566 _ }
+2grg 2grga1 { A 1 _ TO A 98 _ }
+2hbk 2hbka1 { A 421 _ TO A 516 _ }
+1fs1 1fs1b1 { B 86 _ TO B 140 _ }
+2nug 2nuga1 { A 3 _ TO A 150 _ }
+1ix2 1ix2a_ { CHAIN A }
+2f4i 2f4ia1 { A 39 _ TO A 214 _ }
+2hg6 2hg6a1 { A 1 _ TO A 106 _ }
+1o04 1o04a_ { CHAIN A }
+1kp6 1kp6a_ { CHAIN A }
+1xpa 1xpaa1 { A 134 _ TO A 210 _ }
+1w7c 1w7ca2 { A 43 _ TO A 169 _ }
+1bam 1bama_ { CHAIN A }
+1rwh 1rwha1 { A 4 _ TO A 372 _ }
+1y71 1y71a1 { A 4 _ TO A 127 _ }
+1xdp 1xdpa2 { A 107 _ TO A 314 _ }
+1ll8 1ll8a_ { CHAIN A }
+2ozg 2ozga2 { A 8 _ TO A 290 _ }
+2gzs 2gzsa1 { A 41 _ TO A 305 _ }
+1xpj 1xpja_ { CHAIN A }
+1g6x 1g6xa_ { CHAIN A }
+1r3j 1r3jc_ { CHAIN C }
+1noa 1noaa_ { CHAIN A }
+1tp6 1tp6a_ { CHAIN A }
+1u2z 1u2za_ { CHAIN A }
+1slq 1slqa_ { CHAIN A }
+1ign 1igna1 { A 360 _ TO A 445 _ }
+1hhs 1hhsa_ { CHAIN A }
+2pt0 2pt0a1 { A 34 _ TO A 346 _ }
+1hz4 1hz4a_ { CHAIN A }
+2jdi 2jdih2 { H 17 _ TO H 101 _ }
+1w5r 1w5ra1 { A 3 _ TO A 275 _ }
+2gy9 2gy9t1 { T 4 _ TO T 86 _ }
+1sb0 1sb0a_ { CHAIN A }
+2gy9 2gy9m1 { M 1 _ TO M 114 _ }
+1w36 1w36b3 { B 899 _ TO B 1174 _ }
+2fvv 2fvva1 { A 8 _ TO A 142 _ }
+1u5k 1u5ka2 { A 81 _ TO A 237 _ }
+1yws 1ywsa1 { A 1 _ TO A 82 _ }
+1ni9 1ni9a_ { CHAIN A }
+1h4r 1h4ra1 { A 104 _ TO A 214 _ }
+2cx1 2cx1a2 { A 1 _ TO A 90 _ }
+1irq 1irqa_ { CHAIN A }
+1nxm 1nxma_ { CHAIN A }
+2cul 2cula1 { A 2 _ TO A 231 _ }
+1fc6 1fc6a4 { A 78 _ TO A 156 _ A 249 _ TO A 463 _ }
+1f81 1f81a_ { CHAIN A }
+1su0 1su0b_ { CHAIN B }
+1ucs 1ucsa_ { CHAIN A }
+3erj 3erja1 { A 2 _ TO A 117 _ }
+2qdy 2qdya1 { A 10 _ TO A 206 _ }
+2rde 2rdea1 { A 138 _ TO A 247 _ }
+2j7q 2j7qa1 { A 1 _ TO A 232 _ }
+1ko7 1ko7a2 { A 130 _ TO A 298 _ }
+2jhf 2jhfa2 { A 164 _ TO A 339 _ }
+2ch5 2ch5a1 { A 118 _ TO A 344 _ }
+2csg 2csga1 { A 3 _ TO A 419 _ }
+2ioj 2ioja1 { A 206 _ TO A 325 _ }
+1whz 1whza_ { CHAIN A }
+1mgt 1mgta2 { A 1 _ TO A 88 _ }
+1ug7 1ug7a_ { CHAIN A }
+2f48 2f48a1 { A 4 _ TO A 553 _ }
+1qu9 1qu9a_ { CHAIN A }
+3cnx 3cnxa1 { A 5 _ TO A 157 _ }
+2f22 2f22a1 { A 1 _ TO A 141 _ }
+1vr7 1vr7a1 { A 2 _ TO A 118 _ }
+2f2h 2f2ha4 { A 248 _ TO A 585 _ }
+2od4 2od4a1 { A 1 _ TO A 100 _ }
+2k5w 2k5wa1 { A 2 _ TO A 109 _ }
+1es9 1es9a_ { CHAIN A }
+1w9h 1w9ha1 { A 93 _ TO A 408 _ }
+2grr 2grrb1 { B 431 _ TO B 587 _ }
+2bmo 2bmoa1 { A 3 _ TO A 152 _ }
+1ppj 1ppjh_ { CHAIN H }
+1t1d 1t1da_ { CHAIN A }
+1a44 1a44a_ { CHAIN A }
+1cip 1cipa1 { A 61 _ TO A 181 _ }
+2zgw 2zgwa1 { A 189 _ TO A 235 _ }
+1n7v 1n7va_ { CHAIN A }
+2arh 2arha1 { A 1 _ TO A 196 _ }
+1qhx 1qhxa_ { CHAIN A }
+1tul 1tula_ { CHAIN A }
+1obb 1obba2 { A 173 _ TO A 480 _ }
+1u8v 1u8va1 { A 276 _ TO A 490 _ }
+1kng 1knga_ { CHAIN A }
+1e6i 1e6ia_ { CHAIN A }
+1vqz 1vqza1 { A 242 _ TO A 329 _ }
+2akl 2akla2 { A 3 _ TO A 40 _ }
+1vsr 1vsra_ { CHAIN A }
+1o22 1o22a_ { CHAIN A }
+2r9f 2r9fa1 { A 33 _ TO A 354 _ }
+1lf6 1lf6a2 { A 11 _ TO A 287 _ }
+1lug 1luga_ { CHAIN A }
+1c7k 1c7ka_ { CHAIN A }
+1f3v 1f3va_ { CHAIN A }
+2d40 2d40a1 { A 35 _ TO A 342 _ }
+1pbu 1pbua_ { CHAIN A }
+1jmt 1jmta_ { CHAIN A }
+1v54 1v54m_ { CHAIN M }
+1rcq 1rcqa1 { A 1 _ TO A 7 _ A 234 _ TO A 357 _ }
+1kyq 1kyqa1 { A 1 _ TO A 150 _ }
+1ryo 1ryoa_ { CHAIN A }
+1row 1rowa_ { CHAIN A }
+1xeo 1xeoa1 { A 1 _ TO A 164 _ }
+2btv 2btva_ { CHAIN A }
+1t95 1t95a3 { A 162 _ TO A 234 _ }
+2imr 2imra2 { A 91 _ TO A 398 _ }
+1f1e 1f1ea_ { CHAIN A }
+1us0 1us0a_ { CHAIN A }
+2okf 2okfa1 { A 4 _ TO A 139 _ }
+1iio 1iioa_ { CHAIN A }
+2c9a 2c9aa2 { A 21 _ TO A 183 _ }
+1ohf 1ohfa_ { CHAIN A }
+1ofz 1ofza_ { CHAIN A }
+1cja 1cjaa_ { CHAIN A }
+1i27 1i27a_ { CHAIN A }
+2g3r 2g3ra1 { A 1485 _ TO A 1537 _ }
+1j31 1j31a_ { CHAIN A }
+2gyc 2gycf1 { F 59 _ TO F 149 _ }
+3b45 3b45a1 { A 91 _ TO A 270 _ }
+1vzi 1vzia1 { A 38 _ TO A 125 _ }
+2das 2dasa1 { A 8 _ TO A 56 _ }
+1hjr 1hjra_ { CHAIN A }
+4htc 4htci_ { CHAIN I }
+1gkp 1gkpa2 { A 55 _ TO A 389 _ }
+1b3a 1b3aa_ { CHAIN A }
+1ejf 1ejfa_ { CHAIN A }
+2oez 2oeza1 { A 1 _ TO A 245 _ }
+2pgc 2pgca1 { A 1 _ TO A 206 _ }
+2uub 2uubc2 { C 107 _ TO C 207 _ }
+1ga8 1ga8a_ { CHAIN A }
+2ha9 2ha9a1 { A 1 _ TO A 440 _ }
+2o34 2o34a1 { A 1 _ TO A 248 _ }
+1mvl 1mvla_ { CHAIN A }
+2iyv 2iyva1 { A 2 _ TO A 166 _ }
+1nkz 1nkza_ { CHAIN A }
+1ijw 1ijwc_ { CHAIN C }
+1o5h 1o5ha_ { CHAIN A }
+3bge 3bgea1 { A 251 _ TO A 434 _ }
+2nyg 2nyga1 { A 2 _ TO A 271 _ }
+2mhr 2mhra_ { CHAIN A }
+1nze 1nzea_ { CHAIN A }
+1j2r 1j2ra_ { CHAIN A }
+2akz 2akza1 { A 140 _ TO A 433 _ }
+1zn6 1zn6a1 { A 2 _ TO A 219 _ }
+1whi 1whia_ { CHAIN A }
+1r29 1r29a_ { CHAIN A }
+1ofd 1ofda1 { A 1240 _ TO A 1507 _ }
+1szq 1szqa_ { CHAIN A }
+1ekr 1ekra_ { CHAIN A }
+1xo8 1xo8a_ { CHAIN A }
+1ppj 1ppjf_ { CHAIN F }
+1nkp 1nkpb_ { CHAIN B }
+1o54 1o54a_ { CHAIN A }
+1m98 1m98a1 { A 2 _ TO A 175 _ }
+2eg6 2eg6a1 { A 4 _ TO A 346 _ }
+2oqz 2oqza1 { A 35 _ TO A 253 _ }
+1dg6 1dg6a_ { CHAIN A }
+1qf8 1qf8a_ { CHAIN A }
+2bs2 2bs2b1 { B 107 _ TO B 239 _ }
+1a73 1a73a_ { CHAIN A }
+1zzk 1zzka1 { A 11 _ TO A 85 _ }
+1rc9 1rc9a2 { A 165 _ TO A 221 _ }
+1vp7 1vp7a_ { CHAIN A }
+1cy5 1cy5a_ { CHAIN A }
+1e44 1e44b_ { CHAIN B }
+1mkc 1mkca_ { CHAIN A }
+1ufy 1ufya_ { CHAIN A }
+1u84 1u84a_ { CHAIN A }
+2i8g 2i8ga1 { A 2 _ TO A 148 _ }
+1knv 1knva_ { CHAIN A }
+1y7m 1y7ma2 { A 1 _ TO A 48 _ }
+1gkz 1gkza1 { A 38 _ TO A 185 _ }
+1sfk 1sfka_ { CHAIN A }
+1k7j 1k7ja_ { CHAIN A }
+1nig 1niga_ { CHAIN A }
+2pxr 2pxrc1 { C 1 _ TO C 145 _ }
+1w6s 1w6sa_ { CHAIN A }
+1wui 1wuil1 { L 19 _ TO L 552 _ }
+1uta 1utaa_ { CHAIN A }
+3pvi 3pvia_ { CHAIN A }
+1p8b 1p8ba_ { CHAIN A }
+2r7c 2r7ca2 { A 2 _ TO A 143 _ }
+2g38 2g38a1 { A 8 _ TO A 84 _ }
+1i0v 1i0va_ { CHAIN A }
+2f0c 2f0ca2 { A 17 _ TO A 62 _ }
+1s95 1s95a_ { CHAIN A }
+3pro 3proc1 { C 6 _ TO C 85 _ }
+2bzg 2bzga1 { A 17 _ TO A 245 _ }
+1q8r 1q8ra_ { CHAIN A }
+1itw 1itwa_ { CHAIN A }
+1mwv 1mwva1 { A 35 _ TO A 440 _ }
+1mus 1musa_ { CHAIN A }
+1cf7 1cf7a_ { CHAIN A }
+1n4k 1n4ka2 { A 236 _ TO A 435 _ }
+3bof 3bofa1 { A 301 _ TO A 560 _ }
+1txk 1txka2 { A 23 _ TO A 396 _ }
+3chb 3chbd_ { CHAIN D }
+2df7 2df7a1 { A 11 _ TO A 429 _ }
+1ci4 1ci4a_ { CHAIN A }
+1p35 1p35a_ { CHAIN A }
+1utc 1utca1 { A 331 _ TO A 355 _ }
+1x82 1x82a_ { CHAIN A }
+1u5m 1u5ma_ { CHAIN A }
+1k1e 1k1ea_ { CHAIN A }
+2j8k 2j8ka1 { A 1 _ TO A 175 _ }
+2dm9 2dm9a1 { A 81 _ TO A 198 _ }
+1ojh 1ojha_ { CHAIN A }
+2hue 2huec1 { C 20 _ TO C 101 _ }
+1t6c 1t6ca1 { A 7 _ TO A 132 _ }
+1jey 1jeya1 { A 254 _ TO A 534 _ }
+3c0n 3c0na2 { A 85 _ TO A 468 _ }
+1f46 1f46a_ { CHAIN A }
+1kn6 1kn6a_ { CHAIN A }
+1r89 1r89a2 { A 1 _ TO A 142 _ }
+3dby 3dbya1 { A 5 _ TO A 125 _ }
+2ilk 2ilka_ { CHAIN A }
+1uz5 1uz5a1 { A 329 _ TO A 402 _ }
+1hl9 1hl9a2 { A 7 _ TO A 356 _ }
+2plc 2plca_ { CHAIN A }
+2cru 2crua1 { A 8 _ TO A 112 _ }
+1f5n 1f5na1 { A 284 _ TO A 583 _ }
+7odc 7odca1 { A 2 _ TO A 43 _ A 284 _ TO A 418 _ }
+1kzy 1kzyc1 { C 1714 _ TO C 1866 _ }
+2c42 2c42a1 { A 2 _ TO A 258 _ }
+1fc3 1fc3a_ { CHAIN A }
+2ih2 2ih2a1 { A 21 _ TO A 243 _ }
+1wty 1wtya_ { CHAIN A }
+1co4 1co4a_ { CHAIN A }
+2f8l 2f8la1 { A 2 _ TO A 329 _ }
+1e3o 1e3oc2 { C 1 _ TO C 75 _ }
+1ooy 1ooya2 { A 1 _ TO A 242 _ }
+1ts9 1ts9a_ { CHAIN A }
+2nac 2naca1 { A 148 _ TO A 335 _ }
+1n8y 1n8yc1 { C 1 _ TO C 165 _ }
+2cly 2clya1 { A 79 _ TO A 183 _ }
+1n62 1n62b2 { B 147 _ TO B 809 _ }
+1od6 1od6a_ { CHAIN A }
+1bxy 1bxya_ { CHAIN A }
+1yov 1yovb1 { B 12 _ TO B 437 _ }
+1r4x 1r4xa1 { A 600 _ TO A 762 _ }
+1jbi 1jbia_ { CHAIN A }
+1x7f 1x7fa1 { A 245 _ TO A 361 _ }
+1iyj 1iyjb1 { B 2403 _ TO B 2598 _ }
+1z0s 1z0sa1 { A 1 _ TO A 249 _ }
+1t61 1t61a1 { A 6 _ TO A 114 _ }
+1ako 1akoa_ { CHAIN A }
+1wz3 1wz3a1 { A 10 _ TO A 93 _ }
+2ff4 2ff4a2 { A 105 _ TO A 283 _ }
+1k32 1k32a3 { A 320 _ TO A 679 _ }
+1nkg 1nkga2 { A 338 _ TO A 508 _ }
+1z05 1z05a1 { A 10 _ TO A 80 _ }
+2jne 2jnea1 { A 1 _ TO A 71 _ }
+1a9x 1a9xb1 { B 1502 _ TO B 1652 _ }
+2cxa 2cxaa1 { A 1 _ TO A 232 _ }
+2ay0 2ay0a1 { A 3 _ TO A 45 _ }
+1m1c 1m1ca_ { CHAIN A }
+1sxr 1sxra_ { CHAIN A }
+2i9f 2i9fa1 { A 50 _ TO A 105 _ }
+1mg7 1mg7a1 { A 14 _ TO A 187 _ }
+1set 1seta1 { A 1 _ TO A 110 _ }
+1fp2 1fp2a1 { A 8 _ TO A 108 _ }
+1mpg 1mpga2 { A 1 _ TO A 99 _ }
+1iqo 1iqoa_ { CHAIN A }
+1i7n 1i7na2 { A 215 _ TO A 420 _ }
+1eyh 1eyha_ { CHAIN A }
+1wil 1wila_ { CHAIN A }
+1rdq 1rdqe_ { CHAIN E }
+2d4c 2d4ca1 { A 11 _ TO A 247 _ }
+2rh2 2rh2a1 { A 21 _ TO A 78 _ }
+1xks 1xksa_ { CHAIN A }
+1lg7 1lg7a_ { CHAIN A }
+1nnw 1nnwa_ { CHAIN A }
+1f4p 1f4pa_ { CHAIN A }
+1pxe 1pxea_ { CHAIN A }
+1t11 1t11a1 { A 248 _ TO A 376 _ }
+1kzq 1kzqa1 { A 3 _ TO A 131 _ }
+1t23 1t23a_ { CHAIN A }
+1vmi 1vmia_ { CHAIN A }
+1z72 1z72a1 { A 4 _ TO A 220 _ }
+1npp 1nppa2 { A 191 _ TO A 248 _ }
+3bux 3buxb1 { B 178 _ TO B 263 _ }
+1s6d 1s6da_ { CHAIN A }
+2pq7 2pq7a1 { A 1 _ TO A 217 _ }
+2pr9 2pr9a1 { A 159 _ TO A 435 _ }
+1xzp 1xzpa3 { A 1 _ TO A 117 _ }
+2bo9 2bo9b1 { B 1 _ TO B 98 _ }
+1ns5 1ns5a_ { CHAIN A }
+1z1z 1z1za1 { A 2 _ TO A 130 _ }
+1ka1 1ka1a_ { CHAIN A }
+2j73 2j73a1 { A 6 _ TO A 107 _ }
+1h99 1h99a1 { A 54 _ TO A 168 _ }
+1ppj 1ppja1 { A 2 _ TO A 233 _ }
+1tbg 1tbge_ { CHAIN E }
+1ug6 1ug6a_ { CHAIN A }
+1vmh 1vmha_ { CHAIN A }
+1nvm 1nvma1 { A 291 _ TO A 341 _ }
+2ccv 2ccva1 { A 1 _ TO A 99 _ }
+2r8o 2r8oa1 { A 333 _ TO A 527 _ }
+2ew0 2ew0a1 { A 5 _ TO A 179 _ }
+1rz4 1rz4a1 { A 132 _ TO A 216 _ }
+1i3j 1i3ja_ { CHAIN A }
+1t2d 1t2da1 { A 1 _ TO A 150 _ }
+2atz 2atza1 { A 3 _ TO A 178 _ }
+1om2 1om2a_ { CHAIN A }
+2bsk 2bska1 { A 13 _ TO A 85 _ }
+2hfv 2hfva1 { A 23 _ TO A 97 _ }
+2e3h 2e3ha1 { A 212 _ TO A 282 _ }
+1ikp 1ikpa3 { A 252 _ TO A 394 _ }
+1y9i 1y9ia_ { CHAIN A }
+1wmx 1wmxa_ { CHAIN A }
+1psw 1pswa_ { CHAIN A }
+2end 2enda_ { CHAIN A }
+1u14 1u14a_ { CHAIN A }
+2jfg 2jfga2 { A 298 _ TO A 437 _ }
+2bdt 2bdta1 { A 1 _ TO A 176 _ }
+1o0s 1o0sa2 { A 2 _ TO A 295 _ }
+1x9n 1x9na1 { A 262 _ TO A 533 _ }
+2j01 2j01v1 { V 1 _ TO V 101 _ }
+1wvf 1wvfa2 { A 7 _ TO A 242 _ }
+1dsz 1dszb_ { CHAIN B }
+2p8i 2p8ia1 { A 1 _ TO A 115 _ }
+1n55 1n55a_ { CHAIN A }
+1gbs 1gbsa_ { CHAIN A }
+2vch 2vcha1 { A 6 _ TO A 476 _ }
+1v7z 1v7za_ { CHAIN A }
+2p3p 2p3pa1 { A 66 _ TO A 262 _ }
+2qsw 2qswa1 { A 256 _ TO A 345 _ }
+1vim 1vima_ { CHAIN A }
+2o57 2o57a1 { A 16 _ TO A 297 _ }
+1v7w 1v7wa1 { A 271 _ TO A 801 _ }
+1wb9 1wb9a4 { A 2 _ TO A 116 _ }
+1wv8 1wv8a1 { A 2 _ TO A 72 _ }
+1lhp 1lhpa_ { CHAIN A }
+1ft9 1ft9a2 { A 2 _ TO A 133 _ }
+1msk 1mska_ { CHAIN A }
+1k3y 1k3ya1 { A 81 _ TO A 222 _ }
+1n9b 1n9ba_ { CHAIN A }
+1ok7 1ok7a1 { A 1 _ TO A 122 _ }
+1ext 1exta1 { A 13 _ TO A 71 _ }
+1vki 1vkia_ { CHAIN A }
+1zzm 1zzma1 { A 1 _ TO A 259 _ }
+2fmp 2fmpa2 { A 92 _ TO A 148 _ }
+1r4p 1r4pa_ { CHAIN A }
+1k4i 1k4ia_ { CHAIN A }
+1h70 1h70a_ { CHAIN A }
+1bco 1bcoa2 { A 258 _ TO A 480 _ }
+1f3u 1f3ua_ { CHAIN A }
+1wou 1woua_ { CHAIN A }
+1lm5 1lm5a_ { CHAIN A }
+2p4o 2p4oa1 { A 4 _ TO A 305 _ }
+1pvm 1pvma3 { A 143 _ TO A 178 _ }
+2bfd 2bfdb1 { B 2 _ TO B 204 _ }
+1gkz 1gkza2 { A 186 _ TO A 378 _ }
+1qlw 1qlwa_ { CHAIN A }
+3brd 3brda2 { A 197 _ TO A 380 _ }
+1cvr 1cvra2 { A 1 _ TO A 350 _ }
+1jb0 1jb0x_ { CHAIN X }
+1vqo 1vqol1 { L 1 _ TO L 150 _ }
+1fui 1fuia1 { A 356 _ TO A 591 _ }
+2vv5 2vv5a2 { A 180 _ TO A 280 _ }
+2q4m 2q4ma1 { A 24 _ TO A 212 _ }
+2hh6 2hh6a1 { A 1 _ TO A 112 _ }
+2efk 2efka1 { A 10 _ TO A 288 _ }
+1f20 1f20a2 { A 1233 _ TO A 1397 _ }
+2gri 2gria1 { A 1 _ TO A 112 _ }
+1tm9 1tm9a_ { CHAIN A }
+1in4 1in4a1 { A 255 _ TO A 329 _ }
+1gkp 1gkpa1 { A 2 _ TO A 54 _ A 390 _ TO A 459 _ }
+1b89 1b89a_ { CHAIN A }
+1tdp 1tdpa_ { CHAIN A }
+1h5o 1h5oa_ { CHAIN A }
+2qkl 2qklb1 { B 2 _ TO B 91 _ }
+1xsz 1xsza2 { A 198 _ TO A 354 _ }
+1yki 1ykia1 { A 2 _ TO A 217 _ }
+1ygy 1ygya4 { A 317 _ TO A 451 _ }
+1mww 1mwwa_ { CHAIN A }
+1gs9 1gs9a_ { CHAIN A }
+2cu2 2cu2a2 { A 1 _ TO A 268 _ }
+1kbl 1kbla1 { A 510 _ TO A 873 _ }
+1wur 1wura1 { A 32 _ TO A 216 _ }
+2o1q 2o1qa1 { A 1 _ TO A 144 _ }
+1t6s 1t6sa1 { A 1 _ TO A 85 _ }
+1h8p 1h8pa1 { A 22 _ TO A 67 _ }
+2bvl 2bvla1 { A 1 _ TO A 542 _ }
+2o6k 2o6ka1 { A 4 _ TO A 73 _ }
+1ia9 1ia9a_ { CHAIN A }
+1v0w 1v0wa1 { A 6 _ TO A 263 _ }
+1g8e 1g8ea_ { CHAIN A }
+1v6t 1v6ta_ { CHAIN A }
+1yi9 1yi9a1 { A 47 _ TO A 198 _ }
+1olt 1olta_ { CHAIN A }
+1zme 1zmec1 { C 31 _ TO C 66 _ }
+1iq4 1iq4a_ { CHAIN A }
+1vlr 1vlra1 { A 146 _ TO A 337 _ }
+1owl 1owla1 { A 205 _ TO A 475 _ }
+1pp7 1pp7u_ { CHAIN U }
+2cqa 2cqaa1 { A 8 _ TO A 89 _ }
+2ajt 2ajta1 { A 329 _ TO A 498 _ }
+1lns 1lnsa1 { A 1 _ TO A 145 _ }
+2j01 2j0111 { 1 8 _ TO 1 96 _ }
+1s6l 1s6la2 { A 81 _ TO A 212 _ }
+2fq3 2fq3a1 { A 311 _ TO A 395 _ }
+1pd0 1pd0a2 { A 133 _ TO A 215 _ A 553 _ TO A 646 _ }
+1vyr 1vyra_ { CHAIN A }
+2hqs 2hqsa2 { A 29 _ TO A 162 _ }
+1q2o 1q2oa_ { CHAIN A }
+1sza 1szaa_ { CHAIN A }
+1xod 1xoda1 { A 10 _ TO A 123 _ }
+1k4t 1k4ta2 { A 431 _ TO A 640 _ A 713 _ TO A 765 _ }
+2cwq 2cwqa1 { A 1 _ TO A 117 _ }
+1tbf 1tbfa_ { CHAIN A }
+1h2k 1h2ka_ { CHAIN A }
+1byi 1byia_ { CHAIN A }
+1wmi 1wmia1 { A 1 _ TO A 88 _ }
+1vmb 1vmba_ { CHAIN A }
+1a8y 1a8ya1 { A 3 _ TO A 126 _ }
+1p97 1p97a_ { CHAIN A }
+2h5c 2h5ca1 { A 15 A TO A 245 _ }
+1zx0 1zx0a1 { A 8 _ TO A 236 _ }
+1rxw 1rxwa1 { A 220 _ TO A 324 _ }
+1m0w 1m0wa2 { A 6 _ TO A 210 _ A 324 _ TO A 491 _ }
+1nyn 1nyna_ { CHAIN A }
+1a9x 1a9xa1 { A 403 _ TO A 555 _ }
+2b8t 2b8ta2 { A 150 _ TO A 216 _ }
+2f9z 2f9zc1 { C 1 _ TO C 157 _ }
+3bzk 3bzka1 { A 474 _ TO A 563 _ }
+1aop 1aopa3 { A 149 _ TO A 345 _ }
+1jhd 1jhda1 { A 1 _ TO A 173 _ }
+2i8d 2i8da1 { A 2 _ TO A 122 _ }
+1qhk 1qhka_ { CHAIN A }
+1vlp 1vlpa1 { A 1 _ TO A 149 _ }
+2p9b 2p9ba1 { A 9 _ TO A 70 _ A 395 _ TO A 450 _ }
+1juh 1juha_ { CHAIN A }
+1wf6 1wf6a_ { CHAIN A }
+1jx4 1jx4a2 { A 1 _ TO A 240 _ }
+2p97 2p97a1 { A 1 _ TO A 200 _ }
+2eyq 2eyqa6 { A 990 _ TO A 1147 _ }
+1skn 1sknp_ { CHAIN P }
+1jhg 1jhga_ { CHAIN A }
+2qdy 2qdyb1 { B 1 _ TO B 211 _ }
+1rgo 1rgoa1 { A 151 _ TO A 186 _ }
+2euc 2euca1 { A 1 _ TO A 113 _ }
+1j34 1j34c_ { CHAIN C }
+1ppj 1ppjg_ { CHAIN G }
+2gjv 2gjva1 { A 1 _ TO A 134 _ }
+1vly 1vlya2 { A 3 _ TO A 243 _ }
+1ei7 1ei7a_ { CHAIN A }
+2ich 2icha1 { A 24 _ TO A 351 _ }
+1fle 1flei_ { CHAIN I }
+1t3u 1t3ua_ { CHAIN A }
+1y93 1y93a1 { A 106 _ TO A 263 _ }
+2i5n 2i5nh1 { H 37 _ TO H 258 _ }
+1nqu 1nqua_ { CHAIN A }
+1egw 1egwa_ { CHAIN A }
+3ebt 3ebta1 { A 1 _ TO A 131 _ }
+2hxm 2hxma1 { A 82 _ TO A 304 _ }
+2bbg 2bbga_ { CHAIN A }
+1dy5 1dy5a_ { CHAIN A }
+1dpj 1dpjb_ { CHAIN B }
+2pyq 2pyqa1 { A 1 _ TO A 113 _ }
+2ppn 2ppna1 { A 1 _ TO A 107 _ }
+1wui 1wuis1 { S 1 _ TO S 267 _ }
+1uw6 1uw6a_ { CHAIN A }
+2g7j 2g7ja1 { A 1 _ TO A 112 _ }
+1bh4 1bh4a_ { CHAIN A }
+1nsz 1nsza_ { CHAIN A }
+1a9n 1a9na_ { CHAIN A }
+1yg6 1yg6a1 { A 11 _ TO A 193 _ }
+1q3q 1q3qa3 { A 146 _ TO A 216 _ A 370 _ TO A 405 _ }
+2e1z 2e1za1 { A 4 _ TO A 192 _ }
+1l6p 1l6pa_ { CHAIN A }
+1s0p 1s0pa_ { CHAIN A }
+1lf6 1lf6a1 { A 288 _ TO A 684 _ }
+2etv 2etva1 { A 25 _ TO A 358 _ }
+1v54 1v54b2 { B 1 _ TO B 90 _ }
+3b7s 3b7sa2 { A 1 _ TO A 208 _ }
+1id0 1id0a_ { CHAIN A }
+1mnn 1mnna_ { CHAIN A }
+1duv 1duvg1 { G 1 _ TO G 150 _ }
+1jl1 1jl1a_ { CHAIN A }
+1w0n 1w0na_ { CHAIN A }
+1qwo 1qwoa_ { CHAIN A }
+2od5 2od5a1 { A 6 _ TO A 96 _ }
+1k1x 1k1xa3 { A 1 _ TO A 310 _ }
+2fug 2fug12 { 1 7 _ TO 1 249 _ }
+2hba 2hbaa1 { A 1 _ TO A 52 _ }
+1qgo 1qgoa_ { CHAIN A }
+1qxo 1qxoa_ { CHAIN A }
+1mkn 1mkna_ { CHAIN A }
+1qgv 1qgva_ { CHAIN A }
+3b7c 3b7ca1 { A 1 _ TO A 121 _ }
+2ou3 2ou3a1 { A 1 _ TO A 160 _ }
+2gic 2gica1 { A 2 _ TO A 422 _ }
+1vky 1vkya_ { CHAIN A }
+1y02 1y02a1 { A 71 _ TO A 114 _ }
+1yt3 1yt3a1 { A 194 _ TO A 294 _ }
+1gqe 1gqea_ { CHAIN A }
+1h3f 1h3fa2 { A 352 _ TO A 432 _ }
+1kcf 1kcfa2 { A 39 _ TO A 256 _ }
+1mka 1mkaa_ { CHAIN A }
+2e2a 2e2aa_ { CHAIN A }
+1u60 1u60a_ { CHAIN A }
+2i06 2i06a1 { A 5 _ TO A 309 _ }
+1roc 1roca_ { CHAIN A }
+1v54 1v54f_ { CHAIN F }
+2bu3 2bu3a1 { A 29 _ TO A 238 _ }
+1t0b 1t0ba_ { CHAIN A }
+1lkk 1lkka_ { CHAIN A }
+2f6m 2f6ma1 { A 322 _ TO A 385 _ }
+1c0p 1c0pa1 { A 999 _ TO A 1193 _ A 1289 _ TO A 1361 _ }
+1w07 1w07a3 { A 2 _ TO A 272 _ }
+2q07 2q07a3 { A 394 _ TO A 459 _ }
+2cmz 2cmza1 { A 1 _ TO A 409 _ }
+1twd 1twda_ { CHAIN A }
+1izc 1izca_ { CHAIN A }
+1iyk 1iyka1 { A 60 _ TO A 224 _ }
+2pst 2pstx1 { X 8 _ TO X 68 _ }
+1sf8 1sf8a_ { CHAIN A }
+1gpm 1gpma3 { A 405 _ TO A 525 _ }
+1nh8 1nh8a2 { A 211 _ TO A 284 _ }
+1c5e 1c5ea_ { CHAIN A }
+1t07 1t07a_ { CHAIN A }
+1lc0 1lc0a2 { A 129 _ TO A 246 _ }
+2bhu 2bhua1 { A 14 _ TO A 110 _ }
+1ecw 1ecwa_ { CHAIN A }
+1x4t 1x4ta1 { A 7 _ TO A 86 _ }
+1efn 1efnb_ { CHAIN B }
+1zfj 1zfja1 { A 2 _ TO A 94 _ A 221 _ TO A 492 _ }
+1odm 1odma_ { CHAIN A }
+2r85 2r85a1 { A 1 _ TO A 99 _ }
+1vh5 1vh5a_ { CHAIN A }
+2g8o 2g8oa1 { A 1 _ TO A 264 _ }
+2gke 2gkea1 { A 1 _ TO A 130 _ }
+1bt3 1bt3a_ { CHAIN A }
+2ft1 2ft1a1 { A 104 _ TO A 383 _ }
+1xdp 1xdpa1 { A 2 _ TO A 106 _ }
+1e5k 1e5ka_ { CHAIN A }
+1s7z 1s7za_ { CHAIN A }
+2awi 2awia1 { A 2 _ TO A 66 _ }
+2qpv 2qpva1 { A 1 _ TO A 133 _ }
+1oxj 1oxja2 { A 656 _ TO A 763 _ }
+1dv5 1dv5a_ { CHAIN A }
+1sg6 1sg6a_ { CHAIN A }
+1gwm 1gwma_ { CHAIN A }
+1k2f 1k2fa_ { CHAIN A }
+2iaf 2iafa1 { A 4 _ TO A 148 _ }
+2gmg 2gmga1 { A 1 _ TO A 105 _ }
+2pvb 2pvba_ { CHAIN A }
+1p1m 1p1ma1 { A 1 _ TO A 49 _ A 331 _ TO A 404 _ }
+1rrq 1rrqa2 { A 234 _ TO A 360 _ }
+1ei6 1ei6a_ { CHAIN A }
+1x6o 1x6oa1 { A 19 _ TO A 86 _ }
+1yzy 1yzya1 { A 1 _ TO A 412 _ }
+1i36 1i36a1 { A 153 _ TO A 264 _ }
+2bmo 2bmob1 { B 1 _ TO B 194 _ }
+2e9x 2e9xb2 { B 1 _ TO B 61 _ }
+2gvk 2gvka1 { A 8 _ TO A 316 _ }
+1twf 1twfh_ { CHAIN H }
+1hxr 1hxra_ { CHAIN A }
+1mvf 1mvfd_ { CHAIN D }
+1k8q 1k8qa_ { CHAIN A }
+1rss 1rssa_ { CHAIN A }
+1y0p 1y0pa2 { A 111 _ TO A 361 _ A 512 _ TO A 568 _ }
+2gud 2guda1 { A 1 _ TO A 121 _ }
+2ns9 2ns9a1 { A 10 _ TO A 156 _ }
+1idp 1idpa_ { CHAIN A }
+1elw 1elwa_ { CHAIN A }
+2c78 2c78a2 { A 313 _ TO A 405 _ }
+2axw 2axwa1 { A 1 _ TO A 121 _ }
+2p6v 2p6va1 { A 582 _ TO A 678 _ }
+1kap 1kapp2 { P 1 _ TO P 246 _ }
+2cve 2cvea2 { A 125 _ TO A 191 _ }
+1mtz 1mtza_ { CHAIN A }
+1dfc 1dfca1 { A 1008 _ TO A 1140 _ }
+1i8y 1i8ya_ { CHAIN A }
+1ukx 1ukxa_ { CHAIN A }
+2csb 2csba1 { A 351 _ TO A 409 _ }
+2ibn 2ibna1 { A 37 _ TO A 285 _ }
+1wer 1wera_ { CHAIN A }
+1v30 1v30a_ { CHAIN A }
+2fkl 2fkla1 { A 126 _ TO A 189 _ }
+1gl4 1gl4a2 { A 359 _ TO A 398 _ }
+1o7q 1o7qa_ { CHAIN A }
+2a6t 2a6ta2 { A 95 _ TO A 245 _ }
+1pzw 1pzwa_ { CHAIN A }
+3c8y 3c8ya1 { A 210 _ TO A 574 _ }
+1zed 1zeda1 { A 1 _ TO A 479 _ }
+1n1b 1n1ba2 { A 271 _ TO A 598 _ }
+2rbk 2rbka1 { A 2 _ TO A 261 _ }
+3c70 3c70a1 { A 2 _ TO A 257 _ }
+2hrk 2hrkb1 { B 4 _ TO B 121 _ }
+2vvp 2vvpa1 { A 3 _ TO A 158 _ }
+2fi2 2fi2a1 { A 37 _ TO A 128 _ }
+1pul 1pula1 { A 18 _ TO A 120 _ }
+1f0y 1f0ya1 { A 204 _ TO A 302 _ }
+1h32 1h32a1 { A 1 _ TO A 150 _ }
+2nqd 2nqda1 { A 3 _ TO A 110 _ }
+2czv 2czvc1 { C 3 _ TO C 120 _ }
+2i71 2i71a1 { A 1 _ TO A 377 _ }
+2gpi 2gpia1 { A 1 _ TO A 90 _ }
+1d0d 1d0da_ { CHAIN A }
+2p5m 2p5ma1 { A 79 _ TO A 149 _ }
+1px5 1px5a2 { A 1 _ TO A 200 _ }
+2az0 2az0a1 { A 2 _ TO A 71 _ }
+1gte 1gtea1 { A 2 _ TO A 183 _ }
+1tf5 1tf5a1 { A 227 _ TO A 348 _ }
+2fj8 2fj8a1 { A 64 _ TO A 122 _ }
+2prv 2prva1 { A 1 _ TO A 152 _ }
+1twf 1twfa_ { CHAIN A }
+2az4 2az4a1 { A 56 _ TO A 238 _ }
+2fg1 2fg1a1 { A 2 _ TO A 155 _ }
+1avg 1avgi_ { CHAIN I }
+2exf 2exfa1 { A 12 _ TO A 53 _ }
+1wdd 1wdda1 { A 151 _ TO A 475 _ }
+2aam 2aama1 { A 28 _ TO A 312 _ }
+1cdz 1cdza_ { CHAIN A }
+2p41 2p41a1 { A 8 _ TO A 264 _ }
+2nxp 2nxpa1 { A 195 _ TO A 343 _ }
+2b5a 2b5aa1 { A 1 _ TO A 77 _ }
+2g7s 2g7sa2 { A 77 _ TO A 192 _ }
+1k3i 1k3ia2 { A -12 _ TO A 150 _ }
+1j8u 1j8ua_ { CHAIN A }
+1v04 1v04a_ { CHAIN A }
+2j6b 2j6ba1 { A 1 _ TO A 109 _ }
+1n08 1n08a_ { CHAIN A }
+1wpn 1wpna_ { CHAIN A }
+1puz 1puza_ { CHAIN A }
+1vqq 1vqqa1 { A 27 _ TO A 138 _ }
+1zvp 1zvpa1 { A 2 _ TO A 67 _ }
+2q0z 2q0zx1 { X 33 _ TO X 208 _ }
+2ex4 2ex4a1 { A 2 _ TO A 224 _ }
+1su3 1su3a1 { A 32 _ TO A 98 _ }
+1t98 1t98a1 { A 8 _ TO A 118 _ }
+1bco 1bcoa1 { A 481 _ TO A 560 _ }
+1xj1 1xj1a_ { CHAIN A }
+2fiu 2fiua1 { A 1 _ TO A 95 _ }
+1kwf 1kwfa_ { CHAIN A }
+1u9d 1u9da_ { CHAIN A }
+2fqm 2fqma1 { A 107 _ TO A 171 _ }
+1k8k 1k8kf_ { CHAIN F }
+1e2w 1e2wa1 { A 1 _ TO A 168 _ A 233 _ TO A 251 _ }
+1x7v 1x7va_ { CHAIN A }
+1aep 1aepa_ { CHAIN A }
+2ds5 2ds5a1 { A 11 _ TO A 48 _ }
+2pf5 2pf5a1 { A 1 _ TO A 95 _ }
+1u1s 1u1sa1 { A 6 _ TO A 71 _ }
+1ucp 1ucpa_ { CHAIN A }
+1p0z 1p0za_ { CHAIN A }
+1y0z 1y0za_ { CHAIN A }
+2cu2 2cu2a1 { A 269 _ TO A 335 _ }
+1coz 1coza_ { CHAIN A }
+2fyg 2fyga1 { A 6 _ TO A 128 _ }
+2z06 2z06a1 { A 1 _ TO A 252 _ }
+1ykh 1ykhb1 { B 2 _ TO B 130 _ }
+1pby 1pbyb_ { CHAIN B }
+2axi 2axia1 { A 25 _ TO A 109 _ }
+1zat 1zata2 { A 217 _ TO A 338 _ }
+1mwp 1mwpa_ { CHAIN A }
+1xsf 1xsfa1 { A 23 _ TO A 108 _ }
+1jb0 1jb0i_ { CHAIN I }
+2aj7 2aj7a1 { A 1 _ TO A 148 _ }
+1lml 1lmla_ { CHAIN A }
+2iy5 2iy5a1 { A 15 _ TO A 84 _ }
+2e2d 2e2dc1 { C 1001 _ TO C 1180 _ }
+1yvr 1yvra1 { A 5 _ TO A 363 _ }
+1jo0 1jo0a_ { CHAIN A }
+1wb4 1wb4a1 { A 803 _ TO A 1075 _ }
+2iba 2ibaa1 { A 1 _ TO A 136 _ }
+2obp 2obpa1 { A 12 _ TO A 92 _ }
+2heq 2heqa1 { A 1 _ TO A 71 _ }
+1kiy 1kiya_ { CHAIN A }
+1gxu 1gxua_ { CHAIN A }
+2rld 2rlda1 { A 1 _ TO A 115 _ }
+1iq8 1iq8a4 { A 361 _ TO A 505 _ }
+1kpf 1kpfa_ { CHAIN A }
+1t3y 1t3ya1 { A 2 _ TO A 131 _ }
+2gyc 2gycn1 { N 1 _ TO N 114 _ }
+2qfi 2qfia2 { A 5 _ TO A 208 _ }
+2glz 2glza1 { A 3 _ TO A 151 _ }
+1xdz 1xdza_ { CHAIN A }
+1g66 1g66a_ { CHAIN A }
+1nij 1nija2 { A 224 _ TO A 318 _ }
+3e11 3e11a1 { A 1 _ TO A 113 _ }
+1u7g 1u7ga_ { CHAIN A }
+1a34 1a34a_ { CHAIN A }
+2bpa 2bpa1_ { CHAIN 1 }
+1vqo 1vqon1 { N 1 _ TO N 186 _ }
+1avq 1avqa_ { CHAIN A }
+1rtt 1rtta_ { CHAIN A }
+1kqf 1kqfb2 { B 246 _ TO B 290 _ }
+1vr8 1vr8a1 { A 25 _ TO A 154 _ }
+1dq3 1dq3a3 { A 129 _ TO A 226 _ }
+1vbk 1vbka2 { A 1 _ TO A 175 _ }
+1g8f 1g8fa3 { A 390 _ TO A 511 _ }
+1y9b 1y9ba1 { A 3 _ TO A 83 _ }
+2o62 2o62a1 { A 133 _ TO A 269 _ }
+2elc 2elca2 { A 66 _ TO A 329 _ }
+1id1 1id1a_ { CHAIN A }
+1wxx 1wxxa1 { A 1 _ TO A 64 _ }
+1oc0 1oc0b_ { CHAIN B }
+1su8 1su8a_ { CHAIN A }
+1us7 1us7b_ { CHAIN B }
+2nlv 2nlva1 { A 1 _ TO A 111 _ }
+1u8s 1u8sa1 { A 2 _ TO A 87 _ }
+2b0h 2b0ha1 { A 1838 _ TO A 1973 _ }
+1m2d 1m2da_ { CHAIN A }
+1usu 1usua_ { CHAIN A }
+1mjs 1mjsa_ { CHAIN A }
+1gpj 1gpja3 { A 1 _ TO A 143 _ }
+1uz5 1uz5a2 { A 5 _ TO A 180 _ }
+1jz8 1jz8a4 { A 731 _ TO A 1023 _ }
+1nth 1ntha_ { CHAIN A }
+1mwq 1mwqa_ { CHAIN A }
+1nty 1ntya1 { A 1231 _ TO A 1414 _ }
+1l3l 1l3la2 { A 2 _ TO A 169 _ }
+1nu9 1nu9c1 { C 1 _ TO C 145 _ }
+1xkp 1xkpa1 { A 73 _ TO A 269 _ }
+1u34 1u34a_ { CHAIN A }
+1yh5 1yh5a1 { A 1 _ TO A 100 _ }
+1qgi 1qgia_ { CHAIN A }
+2fi0 2fi0a1 { A 3 _ TO A 81 _ }
+1pp0 1pp0a_ { CHAIN A }
+2b61 2b61a1 { A 2 _ TO A 358 _ }
+2etd 2etda1 { A 35 _ TO A 183 _ }
+1olz 1olza2 { A 3 _ TO A 480 _ }
+1cse 1csei_ { CHAIN I }
+1umh 1umha_ { CHAIN A }
+1fvi 1fvia2 { A 2 _ TO A 189 _ }
+1dk8 1dk8a_ { CHAIN A }
+1twu 1twua_ { CHAIN A }
+1ut1 1ut1a_ { CHAIN A }
+1htw 1htwa_ { CHAIN A }
+3bsw 3bswa1 { A 3 _ TO A 195 _ }
+1uyn 1uynx_ { CHAIN X }
+1tg7 1tg7a1 { A 570 _ TO A 666 _ }
+1gvn 1gvnb_ { CHAIN B }
+2o3i 2o3ia1 { A 2 _ TO A 390 _ }
+2ve8 2ve8a1 { A 745 _ TO A 811 _ }
+1vqo 1vqos1 { S 1 _ TO S 81 _ }
+2p62 2p62a1 { A 1 _ TO A 241 _ }
+1jb0 1jb0m_ { CHAIN M }
+2gcl 2gcla1 { A 237 _ TO A 474 _ }
+1f2v 1f2va_ { CHAIN A }
+2fyt 2fyta1 { A 238 _ TO A 548 _ }
+2vgh 2vgha_ { CHAIN A }
+2nn4 2nn4a1 { A 1 _ TO A 62 _ }
+1ql0 1ql0a_ { CHAIN A }
+2ido 2idob1 { B 2 _ TO B 76 _ }
+1y7b 1y7ba1 { A 325 _ TO A 534 _ }
+1txo 1txoa_ { CHAIN A }
+2c3f 2c3fa1 { A 7 _ TO A 336 _ }
+1okc 1okca_ { CHAIN A }
+1b25 1b25a2 { A 1 _ TO A 210 _ }
+1na6 1na6a1 { A 4 _ TO A 178 _ }
+1uun 1uuna_ { CHAIN A }
+1jg5 1jg5a_ { CHAIN A }
+1pzt 1pzta_ { CHAIN A }
+2nwa 2nwaa1 { A 1 _ TO A 80 _ }
+4ubp 4ubpc1 { C 1 _ TO C 131 _ C 435 _ TO C 483 _ }
+2hep 2hepa1 { A 1 _ TO A 42 _ }
+1jm1 1jm1a_ { CHAIN A }
+2bgx 2bgxa1 { A 180 _ TO A 260 _ }
+1ig3 1ig3a2 { A 10 _ TO A 178 _ }
+1m1x 1m1xb4 { B 532 _ TO B 562 _ }
+2gyk 2gykb1 { B 4 _ TO B 133 _ }
+1xvs 1xvsa_ { CHAIN A }
+1fpo 1fpoa1 { A 1 _ TO A 76 _ }
+1rwh 1rwha2 { A 645 _ TO A 757 _ }
+1eaq 1eaqa_ { CHAIN A }
+1gvn 1gvna_ { CHAIN A }
+1ntv 1ntva_ { CHAIN A }
+2fef 2fefa1 { A 6 _ TO A 129 _ }
+1msw 1mswd_ { CHAIN D }
+2ny2 2ny2a1 { A 83 _ TO A 491 _ }
+1qre 1qrea_ { CHAIN A }
+1h6l 1h6la_ { CHAIN A }
+1rk8 1rk8c_ { CHAIN C }
+2hwj 2hwja1 { A 4 _ TO A 204 _ }
+2g5f 2g5fa1 { A 15 _ TO A 449 _ }
+1v82 1v82a_ { CHAIN A }
+1lbu 1lbua2 { A 84 _ TO A 213 _ }
+1kp8 1kp8a3 { A 137 _ TO A 190 _ A 367 _ TO A 409 _ }
+2a5l 2a5la1 { A 3 _ TO A 198 _ }
+2c0g 2c0ga2 { A 1024 _ TO A 1145 _ }
+1dj0 1dj0a_ { CHAIN A }
+1dmg 1dmga_ { CHAIN A }
+2icw 2icwg1 { G 1 _ TO G 213 _ }
+1c17 1c17m_ { CHAIN M }
+1l7a 1l7aa_ { CHAIN A }
+1r71 1r71a_ { CHAIN A }
+1otg 1otga_ { CHAIN A }
+1vqo 1vqox1 { X 7 _ TO X 88 _ }
+2iho 2ihoa2 { A 156 _ TO A 293 _ }
+1g3p 1g3pa1 { A 1 _ TO A 65 _ }
+1em8 1em8b_ { CHAIN B }
+1v58 1v58a2 { A 2 _ TO A 61 _ }
+1hf2 1hf2a1 { A 100 _ TO A 206 _ }
+2b79 2b79a1 { A 1 _ TO A 137 _ }
+1ko7 1ko7a1 { A 1 _ TO A 129 _ }
+1j2l 1j2la_ { CHAIN A }
+3ci0 3ci0i1 { I 31 _ TO I 114 _ }
+1szh 1szha_ { CHAIN A }
+1wj2 1wj2a_ { CHAIN A }
+1l7l 1l7la_ { CHAIN A }
+1t1v 1t1va_ { CHAIN A }
+1iua 1iuaa_ { CHAIN A }
+1l9l 1l9la_ { CHAIN A }
+1p90 1p90a_ { CHAIN A }
+1w85 1w85i_ { CHAIN I }
+1no1 1no1a_ { CHAIN A }
+2joy 2joya1 { A 1 _ TO A 96 _ }
+2h9e 2h9ec1 { C 6 _ TO C 83 _ }
+1xmt 1xmta_ { CHAIN A }
+1i4d 1i4da_ { CHAIN A }
+1eiw 1eiwa_ { CHAIN A }
+2cx1 2cx1a1 { A 91 _ TO A 183 _ }
+1qx2 1qx2a_ { CHAIN A }
+1dtd 1dtdb_ { CHAIN B }
+1lua 1luaa2 { A 2 _ TO A 97 _ }
+1lmr 1lmra_ { CHAIN A }
+1m1h 1m1ha2 { A 5 _ TO A 50 _ A 132 _ TO A 186 _ }
+1ofc 1ofcx2 { X 851 _ TO X 978 _ }
+2bmw 2bmwa2 { A 142 _ TO A 303 _ }
+2gyc 2gyco1 { O 2 _ TO O 116 _ }
+1wd3 1wd3a2 { A 338 _ TO A 499 _ }
+2ap3 2ap3a1 { A 12 _ TO A 196 _ }
+2fpn 2fpna1 { A 1 _ TO A 214 _ }
+2j01 2j0181 { 8 2 _ TO 8 65 _ }
+1s9r 1s9ra_ { CHAIN A }
+2esn 2esna1 { A 3 _ TO A 91 _ }
+1m98 1m98a2 { A 176 _ TO A 317 _ }
+1rqw 1rqwa_ { CHAIN A }
+1gpp 1gppa_ { CHAIN A }
+2ev0 2ev0a1 { A 2 _ TO A 62 _ }
+1sf9 1sf9a_ { CHAIN A }
+1vh4 1vh4a_ { CHAIN A }
+1t3t 1t3ta3 { A 1 _ TO A 152 _ }
+1ivz 1ivza_ { CHAIN A }
+2h7a 2h7aa1 { A 2 _ TO A 110 _ }
+1ixh 1ixha_ { CHAIN A }
+1znn 1znna1 { A 18 _ TO A 271 _ }
+1vmg 1vmga_ { CHAIN A }
+1j1j 1j1ja_ { CHAIN A }
+1qdd 1qdda_ { CHAIN A }
+1jmk 1jmkc_ { CHAIN C }
+1jw9 1jw9b_ { CHAIN B }
+1vqo 1vqo21 { 2 1 _ TO 2 49 _ }
+2d8r 2d8ra1 { A 8 _ TO A 93 _ }
+1jey 1jeya2 { A 34 _ TO A 253 _ }
+2axo 2axoa1 { A 38 _ TO A 262 _ }
+1u19 1u19a_ { CHAIN A }
+3c0d 3c0da1 { A 4 _ TO A 111 _ }
+1qop 1qopa_ { CHAIN A }
+1phz 1phza1 { A 19 _ TO A 115 _ }
+1wv3 1wv3a1 { A 1 _ TO A 78 _ }
+1t77 1t77a2 { A 2076 _ TO A 2185 _ }
+1xfi 1xfia_ { CHAIN A }
+2jov 2jova1 { A 1 _ TO A 77 _ }
+2asb 2asba2 { A 184 _ TO A 262 _ }
+1a3q 1a3qa2 { A 37 _ TO A 226 _ }
+2rcf 2rcfa1 { A 1 _ TO A 82 _ }
+1s29 1s29a_ { CHAIN A }
+1t15 1t15a1 { A 1649 _ TO A 1757 _ }
+1wzu 1wzua1 { A 1 _ TO A 298 _ }
+1f00 1f00i1 { I 658 _ TO I 752 _ }
+1x8q 1x8qa_ { CHAIN A }
+2q0t 2q0ta1 { A 1 _ TO A 257 _ }
+1pfv 1pfva1 { A 389 _ TO A 550 _ }
+2brj 2brja1 { A 15 _ TO A 188 _ }
+2jdi 2jdih1 { H 102 _ TO H 145 _ }
+1t98 1t98a2 { A 119 _ TO A 281 _ }
+1c4o 1c4oa1 { A 2 _ TO A 409 _ }
+1h4r 1h4ra2 { A 215 _ TO A 313 _ }
+1xqr 1xqra1 { A 87 _ TO A 350 _ }
+2je6 2je6b2 { B 156 _ TO B 241 _ }
+1vfj 1vfja_ { CHAIN A }
+2i1q 2i1qa1 { A 5 _ TO A 64 _ }
+1t6u 1t6ua_ { CHAIN A }
+1oq1 1oq1a_ { CHAIN A }
+2fug 2fug21 { 2 3 _ TO 2 180 _ }
+1iie 1iiea_ { CHAIN A }
+1tba 1tbaa_ { CHAIN A }
+2iqi 2iqia1 { A 32 _ TO A 209 _ }
+2bsc 2bsca1 { A 1 _ TO A 176 _ }
+1tly 1tlya_ { CHAIN A }
+1tzv 1tzva_ { CHAIN A }
+1j98 1j98a_ { CHAIN A }
+1wd3 1wd3a1 { A 19 _ TO A 337 _ }
+1mla 1mlaa1 { A 3 _ TO A 127 _ A 198 _ TO A 307 _ }
+1e7u 1e7ua4 { A 726 _ TO A 1094 _ }
+1me4 1me4a_ { CHAIN A }
+2fug 2fug71 { 7 3 _ TO 7 129 _ }
+1vf6 1vf6a_ { CHAIN A }
+2fgq 2fgqx1 { X 3 _ TO X 332 _ }
+1zoq 1zoqc1 { C 2065 _ TO C 2111 _ }
+1jtd 1jtdb_ { CHAIN B }
+2pva 2pvaa_ { CHAIN A }
+2cho 2choa1 { A 437 _ TO A 590 _ }
+1zpv 1zpva1 { A 1 _ TO A 83 _ }
+1fo8 1fo8a_ { CHAIN A }
+2pkg 2pkgc1 { C 91 _ TO C 170 _ }
+1ak0 1ak0a_ { CHAIN A }
+1b25 1b25a1 { A 211 _ TO A 619 _ }
+1ijy 1ijya_ { CHAIN A }
+2ffg 2ffga1 { A 2 _ TO A 79 _ }
+1xrx 1xrxa1 { A 1 _ TO A 35 _ }
+3e2b 3e2ba1 { A 3 _ TO A 89 _ }
+1gwy 1gwya_ { CHAIN A }
+2f2h 2f2ha3 { A 586 _ TO A 665 _ }
+1rw1 1rw1a_ { CHAIN A }
+1jc9 1jc9a_ { CHAIN A }
+1m0k 1m0ka_ { CHAIN A }
+1cuk 1cuka1 { A 156 _ TO A 203 _ }
+1z96 1z96a1 { A 295 _ TO A 332 _ }
+2i6h 2i6ha1 { A 1 _ TO A 179 _ }
+2p61 2p61a1 { A 34 _ TO A 152 _ }
+1ta8 1ta8a_ { CHAIN A }
+1k8b 1k8ba_ { CHAIN A }
+1fx8 1fx8a_ { CHAIN A }
+2aze 2azeb1 { B 201 _ TO B 301 _ }
+1nwz 1nwza_ { CHAIN A }
+2jdi 2jdia1 { A 380 _ TO A 510 _ }
+2bln 2blna1 { A 204 _ TO A 304 _ }
+1y7p 1y7pa2 { A 2 _ TO A 78 _ }
+1hss 1hssa_ { CHAIN A }
+2nx2 2nx2a1 { A 1 _ TO A 177 _ }
+2pof 2pofa1 { A 31 _ TO A 250 _ }
+1b3q 1b3qa2 { A 540 _ TO A 671 _ }
+1g3k 1g3ka_ { CHAIN A }
+1j5y 1j5ya1 { A 3 _ TO A 67 _ }
+1bgc 1bgca_ { CHAIN A }
+1sty 1stya_ { CHAIN A }
+1zce 1zcea1 { A 2 _ TO A 147 _ }
+1c4k 1c4ka1 { A 1 _ TO A 107 _ }
+1y4w 1y4wa1 { A 373 _ TO A 536 _ }
+2c60 2c60a1 { A 43 _ TO A 122 _ }
+1v8h 1v8ha1 { A 2 _ TO A 107 _ }
+1f7u 1f7ua3 { A 2 _ TO A 135 _ }
+2ic2 2ic2a1 { A 466 _ TO A 572 _ }
+2bz6 2bz6l1 { L 90 _ TO L 142 _ }
+1bou 1boub_ { CHAIN B }
+2sic 2sici_ { CHAIN I }
+1tuh 1tuha_ { CHAIN A }
+2obb 2obba1 { A 1 _ TO A 122 _ }
+1wna 1wnaa1 { A 1 _ TO A 127 _ }
+1mw5 1mw5a_ { CHAIN A }
+1c8n 1c8na_ { CHAIN A }
+1ywy 1ywya1 { A 23 _ TO A 96 _ }
+1ltl 1ltla_ { CHAIN A }
+3bn0 3bn0a1 { A 2 _ TO A 102 _ }
+1ois 1oisa_ { CHAIN A }
+1s2e 1s2ea_ { CHAIN A }
+1m7j 1m7ja1 { A 7 _ TO A 61 _ }
+2q07 2q07a2 { A 244 _ TO A 393 _ }
+3d1m 3d1ma1 { A 41 _ TO A 188 _ }
+1qsa 1qsaa1 { A 1 _ TO A 450 _ }
+1rg8 1rg8a_ { CHAIN A }
+2pk8 2pk8a1 { A 2 _ TO A 95 _ }
+2f66 2f66c1 { C 142 _ TO C 206 _ }
+1v2z 1v2za_ { CHAIN A }
+1ptq 1ptqa_ { CHAIN A }
+3cmn 3cmna1 { A 43 _ TO A 391 _ }
+1yvr 1yvra2 { A 364 _ TO A 537 _ }
+1r0v 1r0va1 { A 62 _ TO A 139 _ }
+2fi1 2fi1a1 { A 4 _ TO A 190 _ }
+2a2l 2a2la1 { A 4 _ TO A 145 _ }
+1qcz 1qcza_ { CHAIN A }
+1vqo 1vqo11 { 1 1 _ TO 1 56 _ }
+1or7 1or7a2 { A -1 _ TO A 111 _ }
+1i5p 1i5pa2 { A 264 _ TO A 472 _ }
+2j3w 2j3wa1 { A 1 _ TO A 140 _ }
+2cfu 2cfua1 { A 530 _ TO A 655 _ }
+1zs4 1zs4a1 { A 4 _ TO A 81 _ }
+1gpr 1gpra_ { CHAIN A }
+2asx 2asxa1 { A 278 _ TO A 331 _ }
+1xu1 1xu1r_ { CHAIN R }
+1gd8 1gd8a_ { CHAIN A }
+2bw3 2bw3a2 { A 163 _ TO A 609 _ }
+1cs6 1cs6a1 { A 7 _ TO A 103 _ }
+3c7b 3c7ba2 { A 1 _ TO A 166 _ }
+2plg 2plga1 { A 3 _ TO A 154 _ }
+2ao9 2ao9a1 { A 13 _ TO A 132 _ }
+1stz 1stza1 { A 14 _ TO A 100 _ }
+3bz6 3bz6a1 { A 13 _ TO A 96 _ }
+1x0p 1x0pa1 { A 102 _ TO A 243 _ }
+1ss4 1ss4a_ { CHAIN A }
+1iyj 1iyjb2 { B 2761 _ TO B 2897 _ }
+1k92 1k92a2 { A 189 _ TO A 444 _ }
+1szw 1szwa_ { CHAIN A }
+2g9w 2g9wa1 { A 3 _ TO A 124 _ }
+1qlm 1qlma_ { CHAIN A }
+1dvk 1dvka_ { CHAIN A }
+1jb0 1jb0a_ { CHAIN A }
+2axt 2axtt1 { T 1 _ TO T 30 _ }
+1p42 1p42a1 { A 2 _ TO A 127 _ }
+3bc8 3bc8a1 { A 23 _ TO A 467 _ }
+1s2w 1s2wa_ { CHAIN A }
+1rkl 1rkla_ { CHAIN A }
+1i4j 1i4ja_ { CHAIN A }
+1pgl 1pgl21 { 2 1 _ TO 2 182 _ }
+1sa0 1sa0e_ { CHAIN E }
+1uwc 1uwca_ { CHAIN A }
+2odk 2odka1 { A 1 _ TO A 51 _ }
+1ozz 1ozza_ { CHAIN A }
+2p10 2p10a1 { A 8 _ TO A 204 _ }
+2dt5 2dt5a2 { A 78 _ TO A 203 _ }
+1l5j 1l5ja1 { A 1 _ TO A 160 _ }
+2j4w 2j4wd1 { D 421 _ TO D 454 _ }
+1jke 1jkea_ { CHAIN A }
+1ztw 1ztwa1 { A 24 _ TO A 278 _ }
+2evr 2evra2 { A 87 _ TO A 234 _ }
+1zl0 1zl0a2 { A 3 _ TO A 169 _ }
+1vdd 1vdda_ { CHAIN A }
+2gnx 2gnxa2 { A 295 _ TO A 440 _ }
+2ed6 2ed6a1 { A 32 _ TO A 201 _ }
+2r8o 2r8oa2 { A 2 _ TO A 332 _ }
+1iuq 1iuqa_ { CHAIN A }
+1k04 1k04a_ { CHAIN A }
+2axt 2axtz1 { Z 1 _ TO Z 62 _ }
+1w2y 1w2ya_ { CHAIN A }
+1a4i 1a4ia2 { A 2 _ TO A 126 _ }
+1x9y 1x9ya2 { A 41 _ TO A 211 _ }
+2fr5 2fr5a1 { A 11 _ TO A 146 _ }
+1t27 1t27a_ { CHAIN A }
+1vk1 1vk1a_ { CHAIN A }
+1tif 1tifa_ { CHAIN A }
+1qkr 1qkra_ { CHAIN A }
+1hqs 1hqsa_ { CHAIN A }
+1gci 1gcia_ { CHAIN A }
+1c20 1c20a_ { CHAIN A }
+1fjr 1fjra_ { CHAIN A }
+1kg1 1kg1a_ { CHAIN A }
+1izm 1izma_ { CHAIN A }
+1vz6 1vz6a_ { CHAIN A }
+1v5n 1v5na_ { CHAIN A }
+1vpb 1vpba_ { CHAIN A }
+1ups 1upsa2 { A 290 _ TO A 420 _ }
+1xqo 1xqoa_ { CHAIN A }
+1k12 1k12a_ { CHAIN A }
+1adt 1adta2 { A 266 _ TO A 385 _ }
+1roa 1roaa_ { CHAIN A }
+1o59 1o59a1 { A 0 _ TO A 187 _ }
+1kqr 1kqra_ { CHAIN A }
+2auw 2auwa2 { A 4 _ TO A 87 _ }
+2aja 2ajaa1 { A 3 _ TO A 348 _ }
+1rwr 1rwra_ { CHAIN A }
+1o75 1o75a1 { A 207 _ TO A 332 _ }
+1kyq 1kyqa2 { A 151 _ TO A 273 _ }
+2h6f 2h6fa1 { A 55 _ TO A 369 _ }
+2fzc 2fzcb2 { B 101 _ TO B 153 _ }
+1win 1wina_ { CHAIN A }
+1kny 1knya1 { A 126 _ TO A 253 _ }
+2vv5 2vv5a1 { A 113 _ TO A 179 _ }
+2g2u 2g2ub1 { B 1 _ TO B 165 _ }
+1wvf 1wvfa1 { A 243 _ TO A 521 _ }
+1d8i 1d8ia_ { CHAIN A }
+1pw4 1pw4a_ { CHAIN A }
+2oyz 2oyza1 { A 2 _ TO A 94 _ }
+1vkh 1vkha_ { CHAIN A }
+1n7z 1n7za_ { CHAIN A }
+2p02 2p02a1 { A 38 _ TO A 147 _ }
+2hc5 2hc5a1 { A 1 _ TO A 109 _ }
+1skv 1skva_ { CHAIN A }
+2amx 2amxa1 { A 20 _ TO A 376 _ }
+1oz9 1oz9a_ { CHAIN A }
+1d1r 1d1ra_ { CHAIN A }
+2bi7 2bi7a2 { A 248 _ TO A 316 _ }
+1sx7 1sx7a_ { CHAIN A }
+1gwe 1gwea_ { CHAIN A }
+1qr0 1qr0a1 { A 1 _ TO A 101 _ }
+1t0a 1t0aa_ { CHAIN A }
+1vk5 1vk5a_ { CHAIN A }
+3c8w 3c8wa1 { A 5 _ TO A 254 _ }
+3b7s 3b7sa3 { A 209 _ TO A 460 _ }
+2rfr 2rfra1 { A 1 _ TO A 153 _ }
+2apj 2apja1 { A 17 _ TO A 260 _ }
+1e7l 1e7la1 { A 104 _ TO A 157 _ }
+2a6s 2a6sa1 { A 1 _ TO A 83 _ }
+1nkg 1nkga1 { A 251 _ TO A 337 _ }
+1zd0 1zd0a1 { A 9 _ TO A 144 _ }
+1nvm 1nvma2 { A 2 _ TO A 290 _ }
+2z0d 2z0da1 { A 5 _ TO A 354 _ }
+1dc1 1dc1a_ { CHAIN A }
+2o3b 2o3bb1 { B 1 _ TO B 135 _ }
+1uai 1uaia_ { CHAIN A }
+2nn5 2nn5a1 { A 1 _ TO A 160 _ }
+1mg7 1mg7a2 { A 188 _ TO A 380 _ }
+1nyt 1nyta2 { A 1 _ TO A 101 _ }
+2o9a 2o9aa1 { A 1 _ TO A 180 _ }
+2ex0 2ex0a1 { A 26 _ TO A 412 _ }
+1914 1914a1 { A 4004 _ TO A 4081 _ }
+1uhu 1uhua_ { CHAIN A }
+2gxf 2gxfa1 { A 1 _ TO A 128 _ }
+2io8 2io8a2 { A 10 _ TO A 200 _ }
+2ics 2icsa2 { A 55 _ TO A 321 _ }
+1wqj 1wqjb1 { B 3 _ TO B 82 _ }
+2jna 2jnaa1 { A 1 _ TO A 96 _ }
+1nrz 1nrza_ { CHAIN A }
+1p6o 1p6oa_ { CHAIN A }
+2csb 2csba5 { A 3 _ TO A 293 _ }
+1k32 1k32a2 { A 39 _ TO A 319 _ }
+1n62 1n62a1 { A 82 _ TO A 163 _ }
+2cj4 2cj4a1 { A 4 _ TO A 150 _ }
+1b0n 1b0na1 { A 74 _ TO A 108 _ }
+2i47 2i47a1 { A 220 _ TO A 473 _ }
+1o5u 1o5ua_ { CHAIN A }
+1wjx 1wjxa_ { CHAIN A }
+2nug 2nuga2 { A 151 _ TO A 218 _ }
+2g7o 2g7oa1 { A 60 _ TO A 127 _ }
+2gec 2geca1 { A 23 _ TO A 160 _ }
+1m5w 1m5wa_ { CHAIN A }
+1m33 1m33a_ { CHAIN A }
+1x7f 1x7fa2 { A 1 _ TO A 244 _ }
+1egv 1egva_ { CHAIN A }
+1jyh 1jyha_ { CHAIN A }
+1go4 1go4a_ { CHAIN A }
+2joe 2joea1 { A 2 _ TO A 131 _ }
+2r7c 2r7ca1 { A 144 _ TO A 313 _ }
+2nsz 2nsza1 { A 322 _ TO A 450 _ }
+1m1q 1m1qa_ { CHAIN A }
+1rfy 1rfya_ { CHAIN A }
+1oj5 1oj5a_ { CHAIN A }
+2ct5 2ct5a1 { A 8 _ TO A 67 _ }
+1uc2 1uc2a_ { CHAIN A }
+2guk 2guka1 { A 4 _ TO A 114 _ }
+1bu8 1bu8a1 { A 337 _ TO A 449 _ }
+1m1l 1m1la_ { CHAIN A }
+1ucd 1ucda_ { CHAIN A }
+1c01 1c01a_ { CHAIN A }
+1r1f 1r1fa_ { CHAIN A }
+2i9i 2i9ia1 { A 51 _ TO A 271 _ }
+2gbo 2gboa1 { A 1 _ TO A 82 _ }
+1u55 1u55a_ { CHAIN A }
+1n3l 1n3la_ { CHAIN A }
+1vl1 1vl1a_ { CHAIN A }
+1kyf 1kyfa2 { A 825 _ TO A 938 _ }
+2f2a 2f2ab1 { B 294 _ TO B 400 _ }
+2gqb 2gqba1 { A 1 _ TO A 130 _ }
+1lq9 1lq9a_ { CHAIN A }
+1ev7 1ev7a_ { CHAIN A }
+1wj5 1wj5a_ { CHAIN A }
+2c9v 2c9va1 { A 1 _ TO A 153 _ }
+1zq9 1zq9a1 { A 36 _ TO A 313 _ }
+1jmm 1jmma_ { CHAIN A }
+1mj5 1mj5a_ { CHAIN A }
+2v3i 2v3ia1 { A 1 _ TO A 434 _ }
+1x38 1x38a1 { A 1 _ TO A 388 _ }
+2ook 2ooka1 { A 2 _ TO A 126 _ }
+1r4x 1r4xa2 { A 763 _ TO A 873 _ }
+1iir 1iira_ { CHAIN A }
+1a32 1a32a_ { CHAIN A }
+2iub 2iuba2 { A 286 _ TO A 349 _ }
+1vjn 1vjna_ { CHAIN A }
+1mpg 1mpga1 { A 100 _ TO A 282 _ }
+1k3r 1k3ra2 { A 1 _ TO A 92 _ A 164 _ TO A 262 _ }
+1smy 1smye_ { CHAIN E }
+1f6v 1f6va_ { CHAIN A }
+1xov 1xova2 { A 1 _ TO A 180 _ }
+1qoj 1qoja_ { CHAIN A }
+2hi6 2hi6a1 { A 1 _ TO A 132 _ }
+1koh 1kohb_ { CHAIN B }
+2k54 2k54a1 { A 1 _ TO A 123 _ }
+1ikp 1ikpa1 { A 2 _ TO A 251 _ }
+1pe9 1pe9a_ { CHAIN A }
+1ss6 1ss6a_ { CHAIN A }
+1sfs 1sfsa_ { CHAIN A }
+1n69 1n69a_ { CHAIN A }
+2ftr 2ftra1 { A 4 _ TO A 106 _ }
+1jh6 1jh6a_ { CHAIN A }
+1i9s 1i9sa_ { CHAIN A }
+1oz2 1oz2a1 { A 204 _ TO A 313 _ }
+1vk6 1vk6a3 { A 0 _ TO A 96 _ }
+2fb5 2fb5a1 { A 5 _ TO A 205 _ }
+1hcn 1hcna_ { CHAIN A }
+1s7b 1s7ba_ { CHAIN A }
+2fbl 2fbla1 { A 2 _ TO A 151 _ }
+2joq 2joqa1 { A 4 _ TO A 89 _ }
+3ezm 3ezma_ { CHAIN A }
+1k5n 1k5na2 { A 1 _ TO A 181 _ }
+1ra0 1ra0a2 { A 56 _ TO A 375 _ }
+1oe4 1oe4a_ { CHAIN A }
+1jy1 1jy1a1 { A 145 _ TO A 350 _ }
+1p1j 1p1ja2 { A 323 _ TO A 437 _ }
+1vk9 1vk9a_ { CHAIN A }
+2fok 2foka1 { A 5 _ TO A 143 _ }
+1iko 1ikop_ { CHAIN P }
+1l3i 1l3ia_ { CHAIN A }
+1irz 1irza_ { CHAIN A }
+2b8t 2b8ta1 { A 11 _ TO A 149 _ }
+1ku9 1ku9a_ { CHAIN A }
+2cmy 2cmyb1 { B 7 _ TO B 29 _ }
+1eyf 1eyfa_ { CHAIN A }
+1xd3 1xd3a_ { CHAIN A }
+1v0a 1v0aa1 { A 4 _ TO A 170 _ }
+2opo 2opoa1 { A 6 _ TO A 86 _ }
+2ex3 2ex3j1 { J 71 _ TO J 259 _ }
+1pm4 1pm4a_ { CHAIN A }
+2gh1 2gh1a1 { A 13 _ TO A 293 _ }
+1rwi 1rwia_ { CHAIN A }
+2j01 2j0151 { 5 2 _ TO 5 60 _ }
+1usc 1usca_ { CHAIN A }
+1io1 1io1a_ { CHAIN A }
+2gu2 2gu2a1 { A 4 _ TO A 310 _ }
+1dgs 1dgsa1 { A 401 _ TO A 581 _ }
+2g38 2g38b1 { B 2 _ TO B 174 _ }
+2ast 2astb2 { B 2136 _ TO B 2419 _ }
+1on3 1on3a1 { A 8 _ TO A 260 _ }
+1ccw 1ccwa_ { CHAIN A }
+1jbs 1jbsa_ { CHAIN A }
+1xhk 1xhka_ { CHAIN A }
+1ne2 1ne2a_ { CHAIN A }
+1go3 1go3e2 { E 1 _ TO E 78 _ }
+2gp4 2gp4a2 { A 1 _ TO A 418 _ }
+2iay 2iaya1 { A 1 _ TO A 113 _ }
+1dqz 1dqza_ { CHAIN A }
+1lam 1lama1 { A 160 _ TO A 484 _ }
+1n10 1n10a2 { A 1003 _ TO A 1145 _ }
+1rlr 1rlra1 { A 10 _ TO A 221 _ }
+2c42 2c42a2 { A 786 _ TO A 1232 _ }
+2b3n 2b3na1 { A 6 _ TO A 159 _ }
+1sed 1seda_ { CHAIN A }
+1qwy 1qwya_ { CHAIN A }
+2jdq 2jdqd1 { D 688 _ TO D 756 _ }
+1j9i 1j9ia_ { CHAIN A }
+1nh1 1nh1a_ { CHAIN A }
+2hg7 2hg7a1 { A 1 _ TO A 60 _ }
+1f20 1f20a1 { A 963 _ TO A 1232 _ }
+2oeb 2oeba1 { A 2 _ TO A 153 _ }
+2g50 2g50a3 { A 396 _ TO A 530 _ }
+1t0f 1t0fa2 { A 7 _ TO A 168 _ }
+2cnq 2cnqa1 { A 2 _ TO A 305 _ }
+1kgd 1kgda_ { CHAIN A }
+2cjt 2cjta1 { A 1 _ TO A 128 _ }
+1ul7 1ul7a_ { CHAIN A }
+3es6 3es6b1 { B 1 _ TO B 118 _ }
+1itx 1itxa1 { A 33 _ TO A 337 _ A 410 _ TO A 451 _ }
+1c8b 1c8ba_ { CHAIN A }
+2hy5 2hy5c1 { C 402 _ TO C 502 _ }
+1izn 1izna_ { CHAIN A }
+2cu3 2cu3a1 { A 1 _ TO A 63 _ }
+3c8g 3c8gb1 { B 3 _ TO B 168 _ }
+1k8k 1k8ke_ { CHAIN E }
+2o2x 2o2xa1 { A 8 _ TO A 216 _ }
+1x9i 1x9ia_ { CHAIN A }
+2ox7 2ox7a1 { A 3 _ TO A 145 _ }
+1jlx 1jlxa1 { A 1 _ TO A 153 _ }
+1k1f 1k1fa_ { CHAIN A }
+1ooh 1ooha_ { CHAIN A }
+1sqs 1sqsa_ { CHAIN A }
+1zx3 1zx3a1 { A 10 _ TO A 95 _ }
+2ggc 2ggca1 { A 3 _ TO A 264 _ }
+1f0l 1f0la1 { A 381 _ TO A 535 _ }
+1onw 1onwa2 { A 63 _ TO A 346 _ }
+1srq 1srqa_ { CHAIN A }
+1rl1 1rl1a_ { CHAIN A }
+2cka 2ckaa1 { A 2028 _ TO A 2085 _ }
+1njh 1njha_ { CHAIN A }
+1d2t 1d2ta_ { CHAIN A }
+1jnr 1jnra1 { A 503 _ TO A 643 _ }
+1rcq 1rcqa2 { A 8 _ TO A 233 _ }
+1q90 1q90a3 { A 248 _ TO A 292 _ }
+1af7 1af7a1 { A 11 _ TO A 91 _ }
+2qkw 2qkwa1 { A 29 _ TO A 129 _ }
+1d6z 1d6za4 { A 7 _ TO A 90 _ }
+2i9x 2i9xa1 { A 1 _ TO A 84 _ }
+1q74 1q74a_ { CHAIN A }
+1s98 1s98a_ { CHAIN A }
+1kjq 1kjqa3 { A 113 _ TO A 318 _ }
+2dkt 2dkta1 { A 8 _ TO A 81 _ }
+1kpt 1kpta_ { CHAIN A }
+1o7j 1o7ja_ { CHAIN A }
+2j5h 2j5ha1 { A 1 _ TO A 39 _ }
+2gx8 2gx8a1 { A 4 _ TO A 373 _ }
+1oed 1oeda_ { CHAIN A }
+1v7w 1v7wa2 { A 1 _ TO A 270 _ }
+1m1f 1m1fa_ { CHAIN A }
+2b8m 2b8ma1 { A 1 _ TO A 108 _ }
+1h2s 1h2sb_ { CHAIN B }
+2jf2 2jf2a1 { A 1 _ TO A 262 _ }
+2ag4 2ag4a1 { A 2 _ TO A 164 _ }
+1vjl 1vjla_ { CHAIN A }
+1xg0 1xg0a_ { CHAIN A }
+3bpy 3bpya1 { A 93 _ TO A 177 _ }
+2ex2 2ex2a1 { A 22 _ TO A 477 _ }
+2r6g 2r6gf1 { F 13 _ TO F 260 _ }
+3bmv 3bmva2 { A 579 _ TO A 683 _ }
+1jx4 1jx4a1 { A 241 _ TO A 341 _ }
+1vqo 1vqom1 { M 1 _ TO M 194 _ }
+1hdh 1hdha_ { CHAIN A }
+1bnd 1bnda_ { CHAIN A }
+2fmp 2fmpa3 { A 149 _ TO A 335 _ }
+2gui 2guia1 { A 7 _ TO A 180 _ }
+1m6y 1m6ya1 { A 115 _ TO A 215 _ }
+2hqs 2hqsa1 { A 163 _ TO A 431 _ }
+1wii 1wiia_ { CHAIN A }
+1goi 1goia1 { A 447 _ TO A 498 _ }
+2jxt 2jxta1 { A 1 _ TO A 78 _ }
+2ipq 2ipqx1 { X 396 _ TO X 528 _ }
+1etx 1etxa_ { CHAIN A }
+2apo 2apob1 { B 403 _ TO B 457 _ }
+1o9i 1o9ia_ { CHAIN A }
+1io0 1io0a_ { CHAIN A }
+3bvu 3bvua2 { A 523 _ TO A 1044 _ }
+1uku 1ukua_ { CHAIN A }
+1lp1 1lp1a_ { CHAIN A }
+1nh2 1nh2b_ { CHAIN B }
+1tqz 1tqza1 { A 1 _ TO A 133 _ }
+1sgo 1sgoa_ { CHAIN A }
+2hpu 2hpua1 { A 35 _ TO A 160 _ }
+2axt 2axtj1 { J 7 _ TO J 40 _ }
+1q6o 1q6oa_ { CHAIN A }
+1kgs 1kgsa1 { A 124 _ TO A 225 _ }
+1gut 1guta_ { CHAIN A }
+1l7d 1l7da2 { A 1 _ TO A 143 _ A 327 _ TO A 377 _ }
+1nd7 1nd7a_ { CHAIN A }
+2dt6 2dt6a1 { A 48 _ TO A 110 _ }
+1m9s 1m9sa2 { A 391 _ TO A 465 _ }
+2b5u 2b5ua2 { A 84 _ TO A 315 _ }
+2coh 2coha2 { A 6 _ TO A 117 _ }
+1d4o 1d4oa_ { CHAIN A }
+1jz8 1jz8a3 { A 13 _ TO A 219 _ }
+1uze 1uzea_ { CHAIN A }
+1r8i 1r8ia_ { CHAIN A }
+1zel 1zela2 { A 83 _ TO A 294 _ }
+2oso 2osoa1 { A 5 _ TO A 156 _ }
+1dqa 1dqaa1 { A 587 _ TO A 703 _ }
+1zro 1zroa1 { A 8 _ TO A 282 _ }
+1xly 1xlya_ { CHAIN A }
+1em8 1em8a_ { CHAIN A }
+1ezg 1ezga_ { CHAIN A }
+1j2j 1j2jb_ { CHAIN B }
+2bib 2biba2 { A 1 _ TO A 308 _ }
+1txg 1txga1 { A 181 _ TO A 335 _ }
+2fug 2fug51 { 5 1 _ TO 5 196 _ }
+2in1 2in1a1 { A 3 _ TO A 164 _ }
+1lb3 1lb3a_ { CHAIN A }
+1jdw 1jdwa_ { CHAIN A }
+2d0t 2d0ta1 { A 12 _ TO A 403 _ }
+3ci0 3ci0j1 { J 39 _ TO J 192 _ }
+2cw9 2cw9a1 { A 270 _ TO A 451 _ }
+1zar 1zara1 { A 2 _ TO A 90 _ }
+1ob8 1ob8a_ { CHAIN A }
+1ta0 1ta0a_ { CHAIN A }
+1aho 1ahoa_ { CHAIN A }
+1j6r 1j6ra_ { CHAIN A }
+2ahm 2ahme1 { E 43 _ TO E 197 _ }
+1no5 1no5a_ { CHAIN A }
+% Done.

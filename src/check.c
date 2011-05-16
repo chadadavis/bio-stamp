@@ -1,15 +1,54 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdio.h>
 #include <stdlib.h>
-#include <stamp.h>
+#include "stamp.h"
 
 #define RES "REMARK   2 RESOLUTION."
 #define REF "REMARK   3"
+/* TPW: added */
+#define REFTEXT_CHUNK_SIZE 4000
 
 /* This program checks pdb files for inconsitencies, and
  *  other stuff */
 int main(int argc, char *argv[]) {
 
-	int i,j,k,l,mode,yes,n_main_miss,total_main_miss;
+	int i,j,mode,yes,n_main_miss,total_main_miss;
 	int ftype;
 	int year;
 	int found;
@@ -18,12 +57,10 @@ int main(int argc, char *argv[]) {
 	FILE *pdb,*in;
 	char keyword[7],atnum[6],atname[5],
 	     resname[4],resnum[7],rest[15],
-	     buff[100],oldresnum[7],code[200],
-	     reftext[100000];
+	     buff[100],oldresnum[7],code[200];
 	char *pdbfile,*dsspfile;
 	char *stampdir, *dirfile;
 	int nlines;
-	int reflen;
 	int nchains,nres,natoms,nchainres,nchainatoms;
 	char curchain;
 	char *chs;
@@ -33,9 +70,14 @@ int main(int argc, char *argv[]) {
 
 	int N,C,CA,O,ACE,FOR,HET;
 	int new,n_ref_type,n_r_val;
+        /* TPW - String for holding contents of REMARK 3 records */
+	char *reftext = NULL;
+        /* TPW - Initial size of reftext */
+        int reftext_size = REFTEXT_CHUNK_SIZE;
+	int reflen = 0;
 	
 	static char *ref_type[]={ 
-	   "XPLOR",
+	   "XPL:R",
 	   "PROLSQ",
 	   "EREF",
 	   "FRODO",
@@ -68,6 +110,11 @@ int main(int argc, char *argv[]) {
 	   "R FACTOR IS",
 	   "R FACTOR IS APPROXIMATELY"
  	};
+
+        if ((reftext = (char *) calloc(sizeof(char),REFTEXT_CHUNK_SIZE)) == NULL){
+            fprintf(stderr,"Out of memory\n");
+            exit(-1);
+        }
 
 	n_ref_type=15;
 	n_r_val=14;
@@ -118,7 +165,7 @@ int main(int argc, char *argv[]) {
 	   free(pdbfile);
 	   /* now just try the first four characters */
 	   strncpy(&code[0],argv[2],4); code[4]='\0';
-	   for(j=0; j<strlen(code); ++j) code[j]=code[j];
+	   for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
 	   pdbfile=getfile(code,dirfile,4,stdout);
 	   ftype=0;
 	}
@@ -134,7 +181,7 @@ int main(int argc, char *argv[]) {
               free(dsspfile);
               /* now just try the first four characters */
               strncpy(&code[0],argv[2],4); code[4]='\0';
-              for(j=0; j<strlen(code); ++j) code[j]=code[j];
+              for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
               dsspfile=getfile(code,dirfile,4,stdout);
 	   }
 	   if(dsspfile[0]=='\0') {
@@ -152,7 +199,7 @@ int main(int argc, char *argv[]) {
     if(mode==1) printf("searching file: %s ",pdbfile);
     if(ftype==0) {
        strncpy(&code[0],argv[2],4);  code[4]='\0';
-       for(j=0; j<strlen(code); ++j) code[j]=code[j];
+       for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
     } else {
        end=strlen(argv[2])-1; start=0;
        for(j=0; j<strlen(argv[2]); ++j) {
@@ -161,7 +208,7 @@ int main(int argc, char *argv[]) {
        }
        strncpy(&code[0],&argv[2][start],(end-start+1));
        code[end-start+1]='\0';
-       for(j=0; j<strlen(code); ++j) code[j]=code[j];
+       for(j=0; j<strlen(code); ++j) code[j]=utol(code[j]);
     }
 	
 
@@ -243,7 +290,7 @@ int main(int argc, char *argv[]) {
 		   if(mode==2 || mode==3) {
 		      yes=(nspecchains==0);
 		      for(i=0; i<nspecchains; ++i) 
-			 if(curchain==chs[i]) printf("%% chain %c missing main chain atoms for %d residues\n",curchain,n_main_miss+1);
+			 if(curchain==utol(chs[i])) printf("%% chain %c missing main chain atoms for %d residues\n",curchain,n_main_miss+1);
 	           }
 	      }
 	      total_main_miss+=n_main_miss;
@@ -255,15 +302,15 @@ int main(int argc, char *argv[]) {
 	   if(mode==2 || mode==3) {
 	      if(nspecchains>0) {
 		 yes=0;
-		 for(i=0; i<nspecchains; ++i) if(chs[i]==buff[21]) yes=1;
+		 for(i=0; i<nspecchains; ++i) if(utol(chs[i])==utol(buff[21])) yes=1;
 	      } else yes=1;
 	      if(yes) {
 	       if(mode==2) {
 	        if(buff[21]==' ') printf("%s %s { ALL }\n",pdbfile,code);
-	        else printf("%s %s%c { CHAIN %c }\n",pdbfile,code,(char)buff[21],(char)buff[21]);
+	        else printf("%s %s%c { CHAIN %c }\n",pdbfile,code,(char)utol(buff[21]),(char)ltou(buff[21]));
 	       } else {
                 if(buff[21]==' ') printf("%s %s %s { ALL }\n",pdbfile,dsspfile,code);
-                else printf("%s %s %s%c { CHAIN %c }\n",pdbfile,dsspfile,code,(char)buff[21],(char)buff[21]);
+                else printf("%s %s %s%c { CHAIN %c }\n",pdbfile,dsspfile,code,(char)utol(buff[21]),(char)ltou(buff[21]));
 	       }
 	      }
 	    }
@@ -347,10 +394,7 @@ int main(int argc, char *argv[]) {
 	if(NMR) resolution=-1;
 	else resolution=-2;	
      }
-
-    /* davis: trying to flush before whatever is causing the next crash */   
-    fflush(stdout);
- 
+    
     /* get the refinement details */
     closefile(pdb,pdbfile); 
     pdb=openfile(pdbfile,"r");
@@ -362,8 +406,17 @@ int main(int argc, char *argv[]) {
        /* copy all REMARK  3 lines into a string */
        if(strncmp(REF,buff,10)==0) {
 	  buff[72]='\0';
-	  sprintf(&reftext[strlen(reftext)],"%s",&buff[10]);
 	  reflen+=strlen(&buff[10]);
+          /* TPW: added code to resize reftext */
+          if (reflen >= reftext_size){
+              reftext_size += REFTEXT_CHUNK_SIZE;
+              if ((reftext = realloc((void *) reftext, sizeof(char) * reftext_size)) == NULL){
+                  fprintf(stderr,"Out of memory\n");
+                  exit(-1);
+              }
+          }
+          /* TPW: end addition */
+	  sprintf(&reftext[strlen(reftext)],"%s",&buff[10]);
 	  found=1;
        }
     }
@@ -394,11 +447,14 @@ int main(int argc, char *argv[]) {
        for(i=0; i<strlen(reftext); ++i) {
          for(j=0; j<n_r_val; ++j) {
    	   if(strncmp(&reftext[i],r_val[j],strlen(r_val[j]))==0) {
-	      sscanf(&reftext[i+strlen(r_val[j])],"%f",&R_factor);
-	      if(mode>=1 && mode<=3) printf("%8.5f",R_factor);
-	      found=1;
-	      REFINED=1;
-	      break;
+/* SMJS Added if */
+	     if (sscanf(&reftext[i+strlen(r_val[j])],"%f",&R_factor))
+             {
+	       if(mode>=1 && mode<=3) printf("%8.5f",R_factor);
+	       found=1;
+	       REFINED=1;
+	       break;
+             }
 	   }
          }
        }

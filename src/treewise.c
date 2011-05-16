@@ -1,10 +1,47 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 
-#include <stamp.h>
-#include <gjutil.h>
-#include <gjnoc.h>
+#include "stamp.h"
+#include "gjutil.h"
+#include "gjnoc.h"
 #define NOC_PARMS "noc sim single"
 
 /* Takes an upper diagonal matrix either derived from
@@ -21,23 +58,18 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	char noc_parms[200];
 	char **ids;
 
-	int i,j,k,l,m,n,nn,st;
-	int ijunk,iter;
-	int pysize, pxsize;
-	int length,indx,indy;
+	int i,j,k,l,m;
+	int length;
 	int nfit,testnum;
 	int nclust;
-	int **prob;
 
 	float fjunk;
-	float diff;
-	float D,C,P;
 	float *Dij,*Pij,*dist,*Pijp;
-	float rms,score,oldscore;
-	float R2[3][3],V2[3];
+/* SMJS Initialised score to be like pairwise */
+	float rms,score=0.0;
 	double **matrix;
 
-	FILE *IN,*OUT,*MAT;
+	FILE *MAT;
 
 	struct cluster *cl;
 
@@ -70,7 +102,7 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	fscanf(MAT,"%d",&testnum);
 	if(testnum!=ndomain) {
 	  fprintf(stderr,"error: matrix file %s contains %d elements\n",parms[0].matfile,testnum);
-	  fprintf(stderr,"  domain file contains %d elements\n",ndomain);
+	  fprintf(stderr,"  domain file contains %ld elements\n",ndomain);
 	  exit(-1);
 	}
 
@@ -212,5 +244,6 @@ int treewise(struct domain_loc *domain, long int ndomain,
 	   free(domain[i].oldalign);
 	}
 	free(ids);
-	return 0;
+        /* TPW : added */
+        return 1;
 }

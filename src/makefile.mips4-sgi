@@ -1,3 +1,40 @@
+# 
+# Copyright (1997,1998,1999,2010) Robert B Russell & Geoffrey J Barton
+# 
+# This file is part of STAMP
+# 
+# STAMP is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE  See the
+# GNU General Public License for more details A copy of the license
+# can be found in the LICENSE file in the STAMP installation directory
+# 
+# STAMP was developed by Robert B Russell and Geoffrey J Barton of
+# current addresses:
+# 
+##### Prof Robert B Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+##### Cell Networks, University of Heidelberg            College of Life Sciences
+##### Room 564, Bioquant                                 University of Dundee
+##### Im Neuenheimer Feld 267                            Dow Street
+##### 69120 Heidelberg                                   Dundee DD1 5EH
+##### Germany                                            UK
+#####                                                
+##### Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+##### Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+##### Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+##### WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+# 
+#  All use of STAMP must cite: 
+# 
+#  RB Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+#   Structure Comparison: Assignment of Global and Residue Confidence Levels",
+#   PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992)
+# 
 # Makefile for the STAMP program package
 # Last modified March 1999
 #
@@ -7,62 +44,61 @@
 CC = cc
 #
 # compiler options
-#CFLAGS = -g -I.
-#CFLAGS = -n32 -mips4 -O3 -I.
-CFLAGS = -O3 -I.
+#CFLAGS = -g -I
+CFLAGS = -n32 -mips4 -O3 -I
 #
 #
 # Object files needed for each main program
 #
 STAMPOBJS = a3to1.o aliseq.o dosort.o igetca.o getdomain.o getfile.o getdsspsum.o \
-            getks.o stampgetpars.o getsec.o idist.o ltou.o  \
-            makeafile.o matfit.o matinv.o matmult.o newoutput.o pairfit.o \
-            pairpath.o pairwise.o printmat.o probcalc.o ccprobcalc.o probplot.o \
-            readtree.o reval.o revmatmult.o rossmann.o roughfit.o slow_scan.o \
-            scan.o stamp.o sw7ccs.o swstruc.o testfile.o treefit.o treepath.o \
-            treewise.o  update.o utol.o qkfit.o display_align.o get_clust.o \
-            count_domain.o sec_content.o igetcadssp.o  gjnoc.o gjutil.o openfile.o closefile.o murzin_P.o
-ALIGNFITOBJS=alignfit.o getdomain.o getca.o alignfitgetpars.o newoutput.o agetbloc.o \
-            a3to1.o fmatmult.o fmatfit.o update.o ltou.o readtree.o  \
-            qkfit.o count_domain.o rmsp.o getfile.o utol.o testfile.o gjnoc.o gjutil.o \
-	    get_clust.o openfile.o closefile.o
-TRANSFORMOBJS= transform.o extract_pdb.o fmatmult.o getdomain.o count_domain.o \
-            ltou.o extract_dssp.o getfile.o utol.o  testfile.o openfile.o closefile.o
-PDBCOBJS= check.o utol.o ltou.o getfile.o testfile.o openfile.o closefile.o
-PDBSEQOBJS= pdbseq.o a3to1.o getdomain.o igetca.o count_domain.o ltou.o \
-            testfile.o  getfile.o utol.o openfile.o closefile.o
-DSTAMPOBJS= dstamp.o getstampdat.o getstamprel.o agetbloc.o \
-            ltou.o utol.o gjutil.o threestate.o
-SORTTRANSOBJS= sorttrans.o getdomain.o printdomain.o count_domain.o ltou.o \
-            getfile.o testfile.o utol.o
-POSTSTAMPOBJS= poststamp.o matmult.o igetca.o agetbloc.o printmat.o count_domain.o \
-            getdomain.o rossmann.o a3to1.o printdomain.o getstampdat.o ltou.o \
-            disp.o getfile.o testfile.o utol.o gjutil.o openfile.o closefile.o
-PICKFRAMEOBJS= pickframe.o matprod.o matinv.o getdomain.o printdomain.o \
-            count_domain.o matvecprod.o ltou.o \
-            printmat.o getfile.o testfile.o utol.o openfile.o closefile.o
-EXTRANSOBJS= extrans.o matprod.o matinv.o getdomain.o printdomain.o \
-            count_domain.o matvecprod.o ltou.o \
-            printmat.o getfile.o testfile.o utol.o  openfile.o closefile.o
-MERGETRANSOBJS= mergetrans.o matprod.o matinv.o getdomain.o printdomain.o \
-            count_domain.o matvecprod.o ltou.o \
-            printmat.o getfile.o testfile.o utol.o  openfile.o closefile.o
-MERGESTAMPOBJS= mergestamp.o matprod.o matinv.o getdomain.o printdomain.o \
-            count_domain.o matvecprod.o ltou.o \
-            printmat.o getfile.o testfile.o utol.o \
-            agetbloc.o rmsp.o getstampdat.o getstamprel.o gjutil.o
-AVESTRUCOBJS= avestruc.o matmult.o igetca.o agetbloc.o printmat.o count_domain.o \
-            getdomain.o rossmann.o a3to1.o printdomain.o getstampdat.o ltou.o \
-            disp.o testfile.o getfile.o utol.o getstamprel.o igetcb.o vector.o \
-            igetgen.o gjutil.o igetside.o openfile.o closefile.o
-GSTAMPOBJS= gstamp.o matmult.o igetca.o agetbloc.o printmat.o count_domain.o \
-            getdomain.o rossmann.o a3to1.o printdomain.o getstampdat.o ltou.o \
-            disp.o testfile.o getfile.o utol.o getstamprel.o igetcb.o vector.o \
-            igetgen.o smoothsec.o threestate.o gjutil.o openfile.o closefile.o
-VER2HOROBJS = ver2hor.o agetbloc.o getstampdat.o getstamprel.o utol.o ltou.o gjutil.o 
-CLEANOBJS = align_clean.o stamp_clean_block.o clean_block.o count_domain.o getdomain.o \
-	    agetbloc.o printdomain.o getstampdat.o rmsp.o gjutil.o ltou.o getfile.o utol.o \
-	    testfile.o 
+            getkso stampgetparso getsec.o idist.o ltou.o  \
+            makeafileo matfito matinv.o matmult.o newoutput.o pairfit.o \
+            pairpatho pairwiseo printmat.o probcalc.o ccprobcalc.o probplot.o \
+            readtreeo revalo revmatmult.o rossmann.o roughfit.o slow_scan.o \
+            scano stampo sw7ccs.o swstruc.o testfile.o treefit.o treepath.o \
+            treewiseo  updateo utol.o qkfit.o display_align.o get_clust.o \
+            count_domaino sec_contento igetcadssp.o  gjnoc.o gjutil.o openfile.o closefile.o murzin_P.o
+ALIGNFITOBJS=alignfito getdomaino getca.o alignfitgetpars.o newoutput.o agetbloc.o \
+            a3to1.o fmatmulto fmatfit.o update.o ltou.o readtree.o  \
+            qkfito count_domaino rmsp.o getfile.o utol.o testfile.o gjnoc.o gjutil.o \
+	    get_clusto openfileo closefile.o
+TRANSFORMOBJS= transformo extract_pdbo fmatmult.o getdomain.o count_domain.o \
+            ltouo extract_dsspo getfile.o utol.o  testfile.o openfile.o closefile.o
+PDBCOBJS= checko utolo ltou.o getfile.o testfile.o openfile.o closefile.o
+PDBSEQOBJS= pdbseqo a3to1.o getdomain.o igetca.o count_domain.o ltou.o \
+            testfileo  getfileo utol.o openfile.o closefile.o
+DSTAMPOBJS= dstampo getstampdato getstamprel.o agetbloc.o \
+            ltouo utolo gjutil.o threestate.o
+SORTTRANSOBJS= sorttranso getdomaino printdomain.o count_domain.o ltou.o \
+            getfileo testfileo utol.o
+POSTSTAMPOBJS= poststampo matmulto igetca.o agetbloc.o printmat.o count_domain.o \
+            getdomaino rossmanno a3to1.o printdomain.o getstampdat.o ltou.o \
+            dispo getfileo testfile.o utol.o gjutil.o openfile.o closefile.o
+PICKFRAMEOBJS= pickframeo matprodo matinv.o getdomain.o printdomain.o \
+            count_domaino matvecprodo ltou.o \
+            printmato getfileo testfile.o utol.o openfile.o closefile.o
+EXTRANSOBJS= extranso matprodo matinv.o getdomain.o printdomain.o \
+            count_domaino matvecprodo ltou.o \
+            printmato getfileo testfile.o utol.o  openfile.o closefile.o
+MERGETRANSOBJS= mergetranso matprodo matinv.o getdomain.o printdomain.o \
+            count_domaino matvecprodo ltou.o \
+            printmato getfileo testfile.o utol.o  openfile.o closefile.o
+MERGESTAMPOBJS= mergestampo matprodo matinv.o getdomain.o printdomain.o \
+            count_domaino matvecprodo ltou.o \
+            printmato getfileo testfile.o utol.o \
+            agetbloco rmspo getstampdat.o getstamprel.o gjutil.o
+AVESTRUCOBJS= avestruco matmulto igetca.o agetbloc.o printmat.o count_domain.o \
+            getdomaino rossmanno a3to1.o printdomain.o getstampdat.o ltou.o \
+            dispo testfileo getfile.o utol.o getstamprel.o igetcb.o vector.o \
+            igetgeno gjutilo igetside.o openfile.o closefile.o
+GSTAMPOBJS= gstampo matmulto igetca.o agetbloc.o printmat.o count_domain.o \
+            getdomaino rossmanno a3to1.o printdomain.o getstampdat.o ltou.o \
+            dispo testfileo getfile.o utol.o getstamprel.o igetcb.o vector.o \
+            igetgeno smoothseco threestate.o gjutil.o openfile.o closefile.o
+VER2HOROBJS = ver2horo agetbloco getstampdat.o getstamprel.o utol.o ltou.o gjutil.o 
+CLEANOBJS = align_cleano stamp_clean_blocko clean_block.o count_domain.o getdomain.o \
+	    agetbloco printdomaino getstampdat.o rmsp.o gjutil.o ltou.o getfile.o utol.o \
+	    testfileo 
 #
 PROGS = stamp alignfit transform pdbc pdbseq dstamp sorttrans \
             poststamp pickframe avestruc gstamp \
@@ -106,183 +142,183 @@ ver2hor: $(VER2HOROBJS)
 #
 # Object files
 #
-stamp.o: stamp.c stamp.h
+stampo: stamp.c stamp.h
 	$(CC) -c $(CFLAGS) stamp.c  
-pairwise.o: pairwise.c stamp.h
-	$(CC) -c $(CFLAGS) pairwise.c 
-pairfit.o: pairfit.c stamp.h
-	$(CC) -c $(CFLAGS) pairfit.c 
-probcalc.o: probcalc.c stamp.h
-	$(CC) -c $(CFLAGS) probcalc.c 
-ccprobcalc.o: ccprobcalc.c
-	$(CC) -c $(CFLAGS) ccprobcalc.c 
-rossmann.o: rossmann.c
-	$(CC) -c $(CFLAGS) rossmann.c 
-pairpath.o: pairpath.c stamp.h 
-	$(CC) -c $(CFLAGS) pairpath.c   
-swstruc.o: swstruc.c 
-	$(CC) -c $(CFLAGS) swstruc.c 
-sw7ccs.o: sw7ccs.c
-	$(CC) -c $(CFLAGS) sw7ccs.c 
-dosort.o: dosort.c
-	$(CC) -c $(CFLAGS) dosort.c 
+pairwiseo: pairwisec stamp.h
+	$(CC) -c $(CFLAGS) pairwisec 
+pairfito: pairfitc stamp.h
+	$(CC) -c $(CFLAGS) pairfitc 
+probcalco: probcalcc stamp.h
+	$(CC) -c $(CFLAGS) probcalcc 
+ccprobcalco: ccprobcalcc
+	$(CC) -c $(CFLAGS) ccprobcalcc 
+rossmanno: rossmannc
+	$(CC) -c $(CFLAGS) rossmannc 
+pairpatho: pairpathc stamp.h 
+	$(CC) -c $(CFLAGS) pairpathc   
+swstruco: swstrucc 
+	$(CC) -c $(CFLAGS) swstrucc 
+sw7ccso: sw7ccsc
+	$(CC) -c $(CFLAGS) sw7ccsc 
+dosorto: dosortc
+	$(CC) -c $(CFLAGS) dosortc 
 aliseq.o: aliseq.c 
 	$(CC) -c $(CFLAGS) aliseq.c 
-reval.o: reval.c
-	$(CC) -c $(CFLAGS) reval.c 
-igetca.o: igetca.c
-	$(CC) -c $(CFLAGS) igetca.c
-igetcb.o: igetcb.c
-	$(CC) -c $(CFLAGS) igetcb.c
-igetgen.o: igetgen.c
-	$(CC) -c $(CFLAGS) igetgen.c
-vector.o: vector.c
-	$(CC) -c $(CFLAGS) vector.c
-igetcadssp.o: igetcadssp.c
-	$(CC) -c $(CFLAGS) igetcadssp.c
-getdomain.o: getdomain.c stamp.h
-	$(CC) -c $(CFLAGS) getdomain.c
-probplot.o: probplot.c
-	$(CC) -c $(CFLAGS) probplot.c
-newoutput.o: newoutput.c stamp.h
-	$(CC) -c $(CFLAGS) newoutput.c
-roughfit.o: roughfit.c stamp.h
-	$(CC) -c $(CFLAGS) roughfit.c
-slow_scan.o: slow_scan.c stamp.h
-	$(CC) -c $(CFLAGS) slow_scan.c 
-scan.o: scan.c stamp.h
-	$(CC) -c $(CFLAGS) scan.c 
-treewise.o: treewise.c stamp.h
-	$(CC) -c $(CFLAGS) treewise.c
-treefit.o: treefit.c stamp.h
-	$(CC) -c $(CFLAGS) treefit.c 
-treepath.o: treepath.c stamp.h
-	$(CC) -c $(CFLAGS) treepath.c 
-getks.o: getks.c stamp.h
-	$(CC) -c $(CFLAGS) getks.c
-getdsspsum.o: getdsspsum.c
-	$(CC) -c $(CFLAGS) getdsspsum.c
-getsec.o: getsec.c stamp.h
-	$(CC) -c $(CFLAGS) getsec.c
-makeafile.o: makeafile.c stamp.h
-	$(CC) -c $(CFLAGS) makeafile.c
-ludcmp.o: ludcmp.c
-	$(CC) -c $(CFLAGS) ludcmp.c 
-matfit.o: matfit.c
-	$(CC) -c $(CFLAGS) matfit.c
-matmult.o: matmult.c
-	$(CC) -c $(CFLAGS) matmult.c
-matinv.o: matinv.c
-	$(CC) -c $(CFLAGS) matinv.c
-printmat.o: printmat.c
-	$(CC) -c $(CFLAGS) printmat.c
-readtree.o: readtree.c stamp.h
-	$(CC) -c $(CFLAGS) readtree.c
-revmatmult.o: revmatmult.c
-	$(CC) -c $(CFLAGS) revmatmult.c
-testfile.o: testfile.c
-	$(CC) -c $(CFLAGS) testfile.c
-update.o: update.c
-	$(CC) -c $(CFLAGS) update.c
-utol.o: utol.c
-	$(CC) -c $(CFLAGS) utol.c
+revalo: revalc
+	$(CC) -c $(CFLAGS) revalc 
+igetcao: igetcac
+	$(CC) -c $(CFLAGS) igetcac
+igetcbo: igetcbc
+	$(CC) -c $(CFLAGS) igetcbc
+igetgeno: igetgenc
+	$(CC) -c $(CFLAGS) igetgenc
+vectoro: vectorc
+	$(CC) -c $(CFLAGS) vectorc
+igetcadsspo: igetcadsspc
+	$(CC) -c $(CFLAGS) igetcadsspc
+getdomaino: getdomainc stamp.h
+	$(CC) -c $(CFLAGS) getdomainc
+probploto: probplotc
+	$(CC) -c $(CFLAGS) probplotc
+newoutputo: newoutputc stamp.h
+	$(CC) -c $(CFLAGS) newoutputc
+roughfito: roughfitc stamp.h
+	$(CC) -c $(CFLAGS) roughfitc
+slow_scano: slow_scanc stamp.h
+	$(CC) -c $(CFLAGS) slow_scanc 
+scano: scanc stamp.h
+	$(CC) -c $(CFLAGS) scanc 
+treewiseo: treewisec stamp.h
+	$(CC) -c $(CFLAGS) treewisec
+treefito: treefitc stamp.h
+	$(CC) -c $(CFLAGS) treefitc 
+treepatho: treepathc stamp.h
+	$(CC) -c $(CFLAGS) treepathc 
+getkso: getksc stamp.h
+	$(CC) -c $(CFLAGS) getksc
+getdsspsumo: getdsspsumc
+	$(CC) -c $(CFLAGS) getdsspsumc
+getseco: getsecc stamp.h
+	$(CC) -c $(CFLAGS) getsecc
+makeafileo: makeafilec stamp.h
+	$(CC) -c $(CFLAGS) makeafilec
+ludcmpo: ludcmpc
+	$(CC) -c $(CFLAGS) ludcmpc 
+matfito: matfitc
+	$(CC) -c $(CFLAGS) matfitc
+matmulto: matmultc
+	$(CC) -c $(CFLAGS) matmultc
+matinvo: matinvc
+	$(CC) -c $(CFLAGS) matinvc
+printmato: printmatc
+	$(CC) -c $(CFLAGS) printmatc
+readtreeo: readtreec stamp.h
+	$(CC) -c $(CFLAGS) readtreec
+revmatmulto: revmatmultc
+	$(CC) -c $(CFLAGS) revmatmultc
+testfileo: testfilec
+	$(CC) -c $(CFLAGS) testfilec
+updateo: updatec
+	$(CC) -c $(CFLAGS) updatec
+utolo: utolc
+	$(CC) -c $(CFLAGS) utolc
 a3to1.o: a3to1.c
 	$(CC) -c $(CFLAGS) a3to1.c
-idist.o: idist.c
-	$(CC) -c $(CFLAGS) idist.c 
-ltou.o: ltou.c
-	$(CC) -c $(CFLAGS) ltou.c
-getfile.o: getfile.c
-	$(CC) -c $(CFLAGS) getfile.c
-get_clust.o: get_clust.c
-	$(CC) -c $(CFLAGS) get_clust.c
-stampgetpars.o: stampgetpars.c stamp.h
-	$(CC) -c $(CFLAGS) stampgetpars.c 
-alignfitgetpars.o: alignfitgetpars.c alignfit.h
-	$(CC) -c $(CFLAGS) alignfitgetpars.c
-alignfit.o: alignfit.c alignfit.h
-	$(CC) -c $(CFLAGS) alignfit.c
-agetbloc.o: agetbloc.c alignfit.h
-	$(CC) -c $(CFLAGS) agetbloc.c
-getca.o: getca.c alignfit.h
-	$(CC) -c $(CFLAGS) getca.c
-fmatfit.o: fmatfit.c
-	$(CC) -c $(CFLAGS) fmatfit.c
-fmatmult.o: fmatmult.c
-	$(CC) -c $(CFLAGS) fmatmult.c
-display_align.o: display_align.c
-	$(CC) -c $(CFLAGS) display_align.c
-transform.o: transform.c
-	$(CC) -c $(CFLAGS) transform.c
-extract_pdb.o: extract_pdb.c
-	$(CC) -c $(CFLAGS) extract_pdb.c
-extract_dssp.o: extract_dssp.c
-	$(CC) -c $(CFLAGS) extract_dssp.c
-check.o: check.c
-	$(CC) -c $(CFLAGS) check.c
-pdbseq.o: pdbseq.c
-	$(CC) -c $(CFLAGS) pdbseq.c
-dstamp.o: dstamp.c
+idisto: idistc
+	$(CC) -c $(CFLAGS) idistc 
+ltouo: ltouc
+	$(CC) -c $(CFLAGS) ltouc
+getfileo: getfilec
+	$(CC) -c $(CFLAGS) getfilec
+get_clusto: get_clustc
+	$(CC) -c $(CFLAGS) get_clustc
+stampgetparso: stampgetparsc stamp.h
+	$(CC) -c $(CFLAGS) stampgetparsc 
+alignfitgetparso: alignfitgetparsc alignfit.h
+	$(CC) -c $(CFLAGS) alignfitgetparsc
+alignfito: alignfitc alignfit.h
+	$(CC) -c $(CFLAGS) alignfitc
+agetbloco: agetblocc alignfit.h
+	$(CC) -c $(CFLAGS) agetblocc
+getcao: getcac alignfit.h
+	$(CC) -c $(CFLAGS) getcac
+fmatfito: fmatfitc
+	$(CC) -c $(CFLAGS) fmatfitc
+fmatmulto: fmatmultc
+	$(CC) -c $(CFLAGS) fmatmultc
+display_aligno: display_alignc
+	$(CC) -c $(CFLAGS) display_alignc
+transformo: transformc
+	$(CC) -c $(CFLAGS) transformc
+extract_pdbo: extract_pdbc
+	$(CC) -c $(CFLAGS) extract_pdbc
+extract_dsspo: extract_dsspc
+	$(CC) -c $(CFLAGS) extract_dsspc
+checko: checkc
+	$(CC) -c $(CFLAGS) checkc
+pdbseqo: pdbseqc
+	$(CC) -c $(CFLAGS) pdbseqc
+dstampo: dstamp.c
 	$(CC) -c $(CFLAGS) dstamp.c 
-gstamp.o: gstamp.c
+gstampo: gstamp.c
 	$(CC) -c $(CFLAGS) gstamp.c
-getstampdat.o: getstampdat.c
-	$(CC) -c $(CFLAGS) getstampdat.c
-getstamprel.o: getstamprel.c
-	$(CC) -c $(CFLAGS) getstamprel.c
-sorttrans.o: sorttrans.c
-	$(CC) -c $(CFLAGS) sorttrans.c 
-printdomain.o: printdomain.c
-	$(CC) -c $(CFLAGS) printdomain.c
-count_domain.o: count_domain.c
-	$(CC) -c $(CFLAGS) count_domain.c
-sec_content.o: sec_content.c
-	$(CC) -c $(CFLAGS) sec_content.c
-poststamp.o: poststamp.c
+getstampdato: getstampdatc
+	$(CC) -c $(CFLAGS) getstampdatc
+getstamprelo: getstamprelc
+	$(CC) -c $(CFLAGS) getstamprelc
+sorttranso: sorttransc
+	$(CC) -c $(CFLAGS) sorttransc 
+printdomaino: printdomainc
+	$(CC) -c $(CFLAGS) printdomainc
+count_domaino: count_domainc
+	$(CC) -c $(CFLAGS) count_domainc
+sec_contento: sec_contentc
+	$(CC) -c $(CFLAGS) sec_contentc
+poststampo: poststamp.c
 	$(CC) -c $(CFLAGS) poststamp.c
-rmsp.o: rmsp.c
-	$(CC) -c $(CFLAGS) rmsp.c
-disp.o: disp.c
-	$(CC) -c $(CFLAGS) disp.c
-pickframe.o: pickframe.c
-	$(CC) -c $(CFLAGS) pickframe.c
-mergetrans.o: mergetrans.c
-	$(CC) -c $(CFLAGS) mergetrans.c
-mergestamp.o: mergestamp.c
+rmspo: rmspc
+	$(CC) -c $(CFLAGS) rmspc
+dispo: dispc
+	$(CC) -c $(CFLAGS) dispc
+pickframeo: pickframec
+	$(CC) -c $(CFLAGS) pickframec
+mergetranso: mergetransc
+	$(CC) -c $(CFLAGS) mergetransc
+mergestampo: mergestamp.c
 	$(CC) -c $(CFLAGS) mergestamp.c
-extrans.o: extrans.c
-	$(CC) -c $(CFLAGS) extrans.c
-matprod.o: matprod.c
-	$(CC) -c $(CFLAGS) matprod.c
-matvecprod.o: matvecprod.c
-	$(CC) -c $(CFLAGS) matvecprod.c
-avestruc.o: avestruc.c
-	 $(CC) -c $(CFLAGS) avestruc.c
-murzin_P.o: murzin_P.c
-	$(CC) -c $(CFLAGS) murzin_P.c
-threestate.o: threestate.c
-	$(CC) -c $(CFLAGS) threestate.c
-smoothsec.o: smoothsec.c
-	$(CC) -c $(CFLAGS) smoothsec.c
-gjnoc.o: gjnoc.c
-	$(CC) -c $(CFLAGS) gjnoc.c
-gjutil.o: gjutil.c
-	$(CC) -c $(CFLAGS) gjutil.c
-qkfit.o: qkfit.c
-	$(CC) -c $(CFLAGS) qkfit.c 
-ver2hor.o: ver2hor.c
-	$(CC) -c $(CFLAGS) ver2hor.c
-align_clean.o: align_clean.c
-	$(CC) -c $(CFLAGS) align_clean.c
-clean_block.o: clean_block.c
-	$(CC) -c $(CFLAGS) clean_block.c
-stamp_clean_block.o: stamp_clean_block.c
-	$(CC) -c $(CFLAGS) stamp_clean_block.c
-igetside.o: igetside.c
-	$(CC) -c $(CFLAGS) igetside.c
-c_split.o: c_split.c
-	$(CC) -c $(CFLAGS) c_split.c
-openfile.o: openfile.c
-	$(CC) -c $(CFLAGS) openfile.c
-closefile.o: closefile.c
-	$(CC) -c $(CFLAGS) closefile.c
+extranso: extransc
+	$(CC) -c $(CFLAGS) extransc
+matprodo: matprodc
+	$(CC) -c $(CFLAGS) matprodc
+matvecprodo: matvecprodc
+	$(CC) -c $(CFLAGS) matvecprodc
+avestruco: avestrucc
+	 $(CC) -c $(CFLAGS) avestrucc
+murzin_Po: murzin_Pc
+	$(CC) -c $(CFLAGS) murzin_Pc
+threestateo: threestatec
+	$(CC) -c $(CFLAGS) threestatec
+smoothseco: smoothsecc
+	$(CC) -c $(CFLAGS) smoothsecc
+gjnoco: gjnocc
+	$(CC) -c $(CFLAGS) gjnocc
+gjutilo: gjutilc
+	$(CC) -c $(CFLAGS) gjutilc
+qkfito: qkfitc
+	$(CC) -c $(CFLAGS) qkfitc 
+ver2horo: ver2horc
+	$(CC) -c $(CFLAGS) ver2horc
+align_cleano: align_cleanc
+	$(CC) -c $(CFLAGS) align_cleanc
+clean_blocko: clean_blockc
+	$(CC) -c $(CFLAGS) clean_blockc
+stamp_clean_blocko: stamp_clean_blockc
+	$(CC) -c $(CFLAGS) stamp_clean_blockc
+igetsideo: igetsidec
+	$(CC) -c $(CFLAGS) igetsidec
+c_splito: c_splitc
+	$(CC) -c $(CFLAGS) c_splitc
+openfileo: openfilec
+	$(CC) -c $(CFLAGS) openfilec
+closefileo: closefilec
+	$(CC) -c $(CFLAGS) closefilec

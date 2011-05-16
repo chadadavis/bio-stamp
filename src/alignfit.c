@@ -1,6 +1,43 @@
-#include <alignfit.h>
-#include <gjutil.h>
-#include <gjnoc.h>
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
+#include "alignfit.h"
+#include "gjutil.h"
+#include "gjnoc.h"
 
 /* Reads an AMPS format block file containing structurally derived sequences and a
  *  file containing a description as to where the coordinates may be found */
@@ -49,12 +86,13 @@ main(int argc, char *argv[]) {
 	struct parameters *parms;
 
 	strcpy(noc_parms,"noc sim single");
-	parms=(struct parameters*)malloc(sizeof(struct parameters));
+/* SMJS Changed malloc to calloc to zero struct */
+	parms=(struct parameters*)calloc(1,sizeof(struct parameters));
 	
 	if(argc<3) exit_error(); 
 
 	/* define/get parameters etc. */
-	parms[0].MAX_SEQ_LEN=20000;
+	parms[0].MAX_SEQ_LEN=1000;
 	parms[0].PAIRWISE=1;
 	parms[0].TREEWISE=1;
 	parms[0].OLDFORMAT=0;
@@ -149,20 +187,17 @@ main(int argc, char *argv[]) {
 	bloc=(struct seqdat*)malloc((nbloc+1)*sizeof(struct seqdat));
 	rewind(BLOC);
 	printf(" ");
-	if(Agetbloc(BLOC,bloc,&nbloc)==-1) exit(-1);
+	if(Agetbloc(BLOC,bloc,&nbloc)==-1) 
+	    exit(-1);
 	/* Ok, hack to take out "P1;" if it is in the IDs */
 	for(i=0; i<nbloc; ++i) {
+	    printf("\nid:%s|\n",bloc[i+1].id);
 		if(strncmp(bloc[i+1].id,"P1;",3)==0) {
 		     printf(" Warning: changing ID %s in alignment file to ",bloc[i+1].id);
 		     sprintf(&tmpstring[0],"%s",&bloc[i+1].id[3]);
 		     strcpy(&bloc[i+1].id[0],&tmpstring[0]);
 		     printf("%s\n",bloc[i+1].id);
 		}
-                for(j=0; j<strlen(bloc[i+1].id); ++j) {
-                    if(bloc[i+1].id[j]=='\n') { 
-                       bloc[i+1].id[j]='\0'; 
-                    }
-                }
 	}
 	    
 	counter=(int*)malloc(nbloc*sizeof(int));
@@ -195,16 +230,11 @@ main(int argc, char *argv[]) {
 	   for(j=0; j<nbloc; ++j) {
 	      /* finds which id in the blocfile corresponds to the id in
 	       *  the domain file */
-	      if(strcmp(domain[i].id,bloc[j+1].id)==0)  {
+	      if(strcmp(domain[i].id,bloc[j+1].id)==0) 
 		 pointers[i]=j;
-              }
 	   }
 	   if(pointers[i]==-1) {
 	      fprintf(stderr,"error: id %s not found in block file\n",domain[i].id);
-              fprintf(stderr,"       possible ids in block file are:\n");
-	      for(j=0; j<nbloc; ++j) {
-                  fprintf(stderr,"       --- |%s|\n",bloc[j+1].id);
-              }
 	      exit(-1);
 	   }
 	   fprintf(TRANS,"%%Domain %3d %s %s\n",i+1,domain[i].filename,domain[i].id);

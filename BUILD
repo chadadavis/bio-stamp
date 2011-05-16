@@ -36,8 +36,12 @@ if(-e stamp.o) then
 	echo "Deleting old object files"
 	/bin/rm *.o
 endif
-echo "Copying Makefile"
-/bin/cp makefile.$1 makefile
+if (-e makefile.$1) then
+    echo "Copying Makefile"
+    /bin/cp makefile.$1 makefile
+else 
+    /bin/cp makefile.linux makefile
+endif
 echo "Attempting make"
 make
 echo ""
@@ -59,9 +63,13 @@ echo ""
 /bin/mv stamp_clean ../bin/$1
 /bin/mv transform ../bin/$1
 /bin/mv ver2hor ../bin/$1
-/bin/mv cofm ../bin/$1
 
 echo "Deleting object files"
 /bin/rm  *.o
+
+echo "Trying to put PERL programs in the right place "
+which perl | awk '{ printf("#\!%s\n",$1); }' >  ../bin/$1/aconvert
+tail -n +2 ../perl/aconvert >> ../bin/$1/aconvert
+chmod ugo+x ../bin/$1/aconvert
 
 echo "All should be complete."

@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Configuring STAMP</TITLE>
+<META NAME="description" CONTENT="Configuring STAMP">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node58.html">
+<LINK REL="previous" HREF="node56.html">
+<LINK REL="up" HREF="node55.html">
+<LINK REL="next" HREF="node58.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html867"
+  HREF="node58.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html863"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html857"
+  HREF="node56.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html865"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html868"
+  HREF="node58.html">Getting other programs</A>
+<B> Up:</B> <A NAME="tex2html864"
+  HREF="node55.html">Installation</A>
+<B> Previous:</B> <A NAME="tex2html858"
+  HREF="node56.html">Compiling/running</A>
+ &nbsp; <B>  <A NAME="tex2html866"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00620000000000000000">
+Configuring STAMP</A>
+</H1>
+
+<P>
+To use STAMP, the user must set the environment variable
+    STAMPDIR to the full path of the subdirectory `/defs' in which 
+    the installation was made.  The directory containing the STAMP binaries,
+    which is STAMPDIR/bin should also be included in the user's PATH
+    environment variable.
+<BR>    
+<BR>    
+<BR>
+STAMP reads PDB coordinate information and DSSP secondary structure assignments. 
+    Thus, you should have copies of the PDB
+    and DSSP files for the structures in which you are interested
+    (although DSSP files are not strictly required).
+<BR>    
+<BR>
+STAMP input files do not require that the full paths of the PDB / DSSP files being loaded
+    should be specified. As an alternative to a full path, STAMP can find PDB and DSSP files for a domain by
+    using only the domain identifier and sets of patterns defined in the files `STAMPDIR/pdb.directories' and `STAMPDIR/dssp.directories'. The format of each line in these files is:
+<BR>
+<P>
+<PRE>
+    &lt;directory&gt;  &lt;prefix&gt;  &lt;suffix&gt; [RETURN]
+</PRE>
+
+<P>
+For example, the default pdb.directories file looks like this:
+<BR>
+<P>
+<PRE>
+    _ _ _
+    ./ _ _
+    ./ _ .pdb
+    ./ _ .pdb.Z
+    ./ _ .pdb.gz
+    ./ pdb .ent
+</PRE>
+
+<P>
+STAMP searches for the PDB/DSSP files corresponding to a domain
+    by taking the first four characters of the domain identifier
+    as a PDB code and combining the code with each of patterns in turn
+    to construct a test file name. If the test file exists, then that
+    is used as the source of PDB coordinates or DSSP records. The fields in the pattern on
+    each line are:
+    
+<BR>
+1. Directory path
+    
+<BR>
+2. File prefix
+    
+<BR>
+3. File suffix
+    
+<BR>
+If a field has the value `_',  then it is ignored when creating a test filename. 
+    For example, suppose STAMP is searching for the PDB file for 
+    a domain with the identifier 4chaa. Using the default pdb.directories file,
+    STAMP will attempt to open the following sequence of files:
+    
+<BR>
+4cha
+    ./4cha
+    ./4cha.pdb.Z
+    ./4cha.pdb.gz
+    ./pdb4cha.ent
+    
+<BR>
+The first file which it finds will be loaded to find coordinates for the
+    domain.
+    
+<BR>
+If you specify the full path to the PDB files in a STAMP input file, or the PDB  
+    files are in the directory in which you run STAMP, then the default pdb.directories
+    file will be sufficient and you need not modify it.
+    
+<BR>
+A recent modification (version 4.2) is to look
+    in each of the `distr' type sub-directories for filenames.  Some people
+    store PDB files in a format, e.g.
+<BR>
+<P>
+<PRE>
+    &lt;directory&gt;/ab/pdb1abc.ent
+</PRE>
+
+<P>
+Where the two letter sub-directory name corresponds to the second two characters
+    in the four letter PDB code (i.e. ignoring the leading number).  STAMP now
+    handles these file types.  If you just specify the top directory, the program
+    will explore suitable two-letter sub-directories corresponding to each file it
+    is looking for.
+<BR>    
+<BR>
+dssp.directories contains a description as to where possible DSSP files
+    may be found.  The format is as for pdb.directories, e.g.
+<BR>
+<P>
+<PRE>
+    _ _ _
+    ./  _ .dssp
+    ./  _ .dssp.Z
+</PRE>
+
+<P>
+For example, the DSSP file for 4mbn might be found in the file 
+    ./4mbn.dssp
+<BR>    
+<BR>
+STAMP now reads compressed files (.Z or .gz suffixes).  In order for this
+    to work properly, you must have the programs zcat (.Z) and gunzip (.gz) installed
+    on your system.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html867"
+  HREF="node58.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html863"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html857"
+  HREF="node56.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html865"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html868"
+  HREF="node58.html">Getting other programs</A>
+<B> Up:</B> <A NAME="tex2html864"
+  HREF="node55.html">Installation</A>
+<B> Previous:</B> <A NAME="tex2html858"
+  HREF="node56.html">Compiling/running</A>
+ &nbsp; <B>  <A NAME="tex2html866"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

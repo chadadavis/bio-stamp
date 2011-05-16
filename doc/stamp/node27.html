@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>STAMP_CLEAN</TITLE>
+<META NAME="description" CONTENT="STAMP_CLEAN">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node28.html">
+<LINK REL="previous" HREF="node26.html">
+<LINK REL="up" HREF="node25.html">
+<LINK REL="next" HREF="node28.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html476"
+  HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html472"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html466"
+  HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html474"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html477"
+  HREF="node28.html">Displaying text alignments</A>
+<B> Up:</B> <A NAME="tex2html473"
+  HREF="node25.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html467"
+  HREF="node26.html">POSTSTAMP</A>
+ &nbsp; <B>  <A NAME="tex2html475"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION003102000000000000000">
+STAMP_CLEAN</A>
+</H2>
+
+<P>
+When aligning more than one structure, STAMP will usually create 
+alignments that are fairly meaningless within regions that are not 
+structurally equivalent across all structures.  Such regions may have 
+meaning for particular sub-families of structures, but for the purposes 
+of display, are nonsensical.  STAMP_CLEAN is a useful program that 
+takes a STAMP alignment file and `cleans up' such gaps.  To run the
+program, for example (using the POSTSTAMP output file generated above):
+<BR>
+<P>
+<PRE>
+stamp_clean globin.5.post 3 &gt; globin.5.clean
+</PRE>
+
+<P>
+will create a file globin.5.clean where all gaps not lying within 
+structurally equivalent regions, and having fewer than 3 aligned residues 
+in a row (i.e blocks where all sequences are not aligned with gap) are 
+shortened to their minimum length.
+
+<P>
+<BR><HR>
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

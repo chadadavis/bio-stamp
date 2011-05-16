@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>TRANSFORM</TITLE>
+<META NAME="description" CONTENT="TRANSFORM">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node48.html">
+<LINK REL="previous" HREF="node46.html">
+<LINK REL="up" HREF="node40.html">
+<LINK REL="next" HREF="node48.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html746"
+  HREF="node48.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html742"
+  HREF="node40.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html736"
+  HREF="node46.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html744"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html747"
+  HREF="node48.html">PICKFRAME</A>
+<B> Up:</B> <A NAME="tex2html743"
+  HREF="node40.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html737"
+  HREF="node46.html">SORTTRANS</A>
+ &nbsp; <B>  <A NAME="tex2html745"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00527000000000000000">
+TRANSFORM</A>
+</H2>
+
+<P>
+This program takes a transformation file, either from ALIGNFIT,
+    STAMP, or SORTRANS and outputs a series of PDB format files
+    containing the specified coordinates transformed as specified in
+    the given file.
+<BR>    
+<BR>
+The format is:
+<BR>
+<P>
+<PRE>
+    transform -f &lt;transformation file&gt; [ -g -het -hoh -o &lt;output file&gt; ]
+</PRE>
+
+<P>
+options:
+<BR>    
+<BR>    `-het' Include hetero atoms.  Hetero atoms are normally not included
+    in the output.
+<BR>    `-hoh' Include waters.
+<BR>    
+<BR>    `-g' Graphics output.  This mode puts all transformed coordinates
+    into a single PDB file, and labels the chains for domains
+    sequentially (after their order in the transformation file) with A,
+    B, C.. etc.  This allows fast analysis of the structures
+    graphically (i.e. using Rasmol) since one need only colour each
+    chain a different colour to see the superimposition.  The default
+    file for writing the coordinates using this mode is `all.pdb', but
+    this can be changed (see below).
+<BR>    
+<BR>    `-o <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">output file<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">'  When using `-g', this option allows the
+    specification of a file to contain the transformed coordinates.
+    The default is `all.pdb'
+<BR>    
+<BR>
+The PDB files will be named <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">identifier<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">.pdb (except when running using the `-g'
+    option).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html746"
+  HREF="node48.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html742"
+  HREF="node40.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html736"
+  HREF="node46.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html744"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html747"
+  HREF="node48.html">PICKFRAME</A>
+<B> Up:</B> <A NAME="tex2html743"
+  HREF="node40.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html737"
+  HREF="node46.html">SORTTRANS</A>
+ &nbsp; <B>  <A NAME="tex2html745"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

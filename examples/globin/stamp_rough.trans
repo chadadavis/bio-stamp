@@ -2,32 +2,32 @@
 %  The sequences from the file globin.domains have been aligned from their
 %  N-terminal ends, andthe resulting equivalences were be used 
 % to generate the superpositions given below.
-% Domains 2hhbb onto 2hhba RMS of 7.244617 on 141 atoms
-% Domains 2hhbb onto 2lhb RMS of 14.029346 on 146 atoms
-% Domains 2hhbb onto 4mbn RMS of 3.767503 on 146 atoms
-% Domains 2hhbb onto 1ecd RMS of 8.955582 on 136 atoms
-% Domains 2hhbb onto 1lh1 RMS of 5.419217 on 146 atoms
+% Domains 2hhbb onto 2hhba RMS of 7.244972 on 141 atoms
+% Domains 2hhbb onto 2lhb RMS of 14.029878 on 146 atoms
+% Domains 2hhbb onto 4mbn RMS of 3.767602 on 146 atoms
+% Domains 2hhbb onto 1ecd RMS of 8.955831 on 136 atoms
+% Domains 2hhbb onto 1lh1 RMS of 5.419220 on 146 atoms
 ./pdb2hhb.ent 2hhbb { CHAIN B 
     1.0000     0.0000     0.0000       0.0000 
     0.0000     1.0000     0.0000       0.0000 
     0.0000     0.0000     1.0000       0.0000  } 
 ./pdb2hhb.ent 2hhba { CHAIN A 
-    0.9633     0.2643    -0.0480      -0.6654 
-    0.2647    -0.9643     0.0028      -3.9368 
-   -0.0456    -0.0154    -0.9988       2.3139  } 
+    0.9633     0.2643    -0.0480      -0.6655 
+    0.2647    -0.9643     0.0028      -3.9369 
+   -0.0456    -0.0154    -0.9988       2.3141  } 
 ./pdb2lhb.ent 2lhb { ALL 
-   -0.0394     0.5157    -0.8559     -11.3812 
-   -0.9365    -0.3177    -0.1484      15.3019 
-   -0.3484     0.7957     0.4955      -8.2330  } 
+   -0.0394     0.5157    -0.8558     -11.3820 
+   -0.9365    -0.3177    -0.1484      15.3018 
+   -0.3484     0.7957     0.4955      -8.2323  } 
 ./pdb4mbn.ent 4mbn { ALL 
-    0.8511    -0.2798     0.4442       4.0860 
-    0.3168    -0.4010    -0.8596      -1.4994 
-    0.4186     0.8723    -0.2526     -13.3382  } 
+    0.8511    -0.2798     0.4442       4.0857 
+    0.3168    -0.4010    -0.8596      -1.4997 
+    0.4186     0.8723    -0.2526     -13.3385  } 
 ./pdb1ecd.ent 1ecd { ALL 
-   -0.0834    -0.7709    -0.6314      40.5477 
-    0.2507     0.5970    -0.7620      -2.2241 
-    0.9645    -0.2218     0.1435       7.9708  } 
+   -0.0834    -0.7709    -0.6314      40.5493 
+    0.2507     0.5970    -0.7620      -2.2243 
+    0.9645    -0.2218     0.1435       7.9709  } 
 ./pdb1lh1.ent 1lh1 { ALL 
-    0.7721    -0.5648    -0.2914      19.4633 
-   -0.1283    -0.5876     0.7989     -10.5959 
-   -0.6224    -0.5794    -0.5261      60.5731  } 
+    0.7721    -0.5648    -0.2914      19.4644 
+   -0.1283    -0.5876     0.7989     -10.5961 
+   -0.6224    -0.5794    -0.5261      60.5749  } 

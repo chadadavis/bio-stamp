@@ -1,9 +1,46 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
 
-#include <stamp.h>
+#include "stamp.h"
 
 #define min_R_diff 1.50
 #define min_V_diff 60.0
@@ -34,7 +71,7 @@ void comparei_rms_hsort(int n,struct info_struc* info);
 
 
 
-void exit_error();
+int exit_error();
 
 main(int argc, char *argv[]) {
 
@@ -287,12 +324,12 @@ main(int argc, char *argv[]) {
 	for(i=0; i<ndomain; ++i) {
 	  if(!info[i].ignore) {
 	     if(oldout==0) {
-	      printf("# Sc= %7.3f RMS= %7.3f len= %4d nfit= %4d seq_id= %5.2f sec_id= %5.2f q_len= %4d d_len= %4d n_sec=%4d fit_pos= %c %3d %c\n",
+	      printf("# Sc= %7.3f RMS= %7.3f len= %4d nfit= %4d seq_id= %5.2f sec_id= %5.2f q_len= %4d d_len= %4d n_sec=%4d fit_pos= %c %3d %c \n",
 	       info[i].Sc,info[i].RMS,info[i].len,info[i].nfit,
 	       info[i].seq_id,info[i].sec_id,info[i].q_len,info[i].d_len,info[i].n_sec,
 	      info[i].fitpos.cid,info[i].fitpos.n,info[i].fitpos.in);
 	     } else {
-	      printf("# Sc= %7.3f RMS= %7.3f len= %4d nfit= %4d fit_pos= %c %3d %c\n",
+	      printf("# Sc= %7.3f RMS= %7.3f len= %4d nfit= %4d fit_pos= %c %3d %c \n",
 		info[i].Sc,info[i].RMS,info[i].len,info[i].nfit,
 		info[i].fitpos.cid,info[i].fitpos.n,info[i].fitpos.in);
 	     }
@@ -333,7 +370,7 @@ int transcompare(float **R1, float *V1, float **R2, float *V2, int dim )
 
 	return (Rdiff<=min_R_diff && Vdiff<min_V_diff);
 }
-void exit_error()
+int exit_error()
 {
 	  fprintf(stderr,"format: sorttrans -f <filename> [-s <sort method> <value> -i -n] \n");
 	  fprintf(stderr,"  sort (-s) keywords: \n");

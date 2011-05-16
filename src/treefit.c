@@ -1,8 +1,45 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 
-#include <stamp.h>
+#include "stamp.h"
 
 int treefit(struct domain_loc *domain, int ndomain, struct cluster cl, 
 	float *score, float *rms, int *length, int *nfit,
@@ -29,6 +66,8 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 	float D,P,C;
 	float Rossmann;
 	float **R2,*V2,**dR2,*dV2;
+/* SMJS Added variables for inverse consts in rossmann */
+        float const1,const2,prec2i;
 
 	FILE *IN;
 
@@ -71,6 +110,11 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 	   no_matrix=(pxsize-1)*(pysize-1);
 	   no_comparisons=cl.a.number*cl.b.number;
 
+/* SMJS Added const1 and const2 and prec2i */
+          prec2i=1.0/(float)(parms[0].PRECISION*parms[0].PRECISION);
+          const1=(1.0/parms[0].const1)*prec2i;
+          const2=(1.0/parms[0].const2)*prec2i;
+
 	  for(j=0; j<cl.a.number; ++j) xcount[j]=0;
           for(l=0; l<strlen(domain[cl.a.member[0]].align); ++l) {
 	    for(k=0; k<cl.b.number; ++k) ycount[k]=0;
@@ -82,10 +126,16 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 		     indy=cl.b.member[k];
 	             if(j==0 && k==0) prob[l+1][m+1]=(parms[0].BOOLEAN);
 	             if(domain[indx].align[l]!=' ' && domain[indy].align[m]!=' ') {
+/* SMJS Changed to use inverse constants (its faster)
 	 	          Rossmann=rossmann(&domain[indx].coords[xcount[j]],&domain[indy].coords[ycount[k]],
 		  	       (xcount[j]==0 || ycount[k]==0),
 			       (xcount[j]==(domain[indx].ncoords-1) || ycount[k]==(domain[indy].ncoords-1)),
 				parms[0].const1,parms[0].const2,&D,&C,parms[0].PRECISION);
+*/
+	 	          Rossmann=rossmann(&domain[indx].coords[xcount[j]],&domain[indy].coords[ycount[k]],
+		  	       (xcount[j]==0 || ycount[k]==0),
+			       (xcount[j]==(domain[indx].ncoords-1) || ycount[k]==(domain[indy].ncoords-1)),
+				const1,const2,&D,&C);
 			  if(!parms[0].BOOLEAN) P+=Rossmann;
 			  else prob[l+1][m+1]*=(Rossmann>=parms[0].BOOLCUT);
 			  if(P>(1.0*(float)no_comparisons)) {
@@ -216,5 +266,4 @@ int treefit(struct domain_loc *domain, int ndomain, struct cluster cl,
 	free(touse);
 	free(xcount); free(ycount);
 	free(pseq1); free(pseq2); free(psec1); free(psec2);
-	return 0;
 }

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Some comments on interpreting structural similarities</TITLE>
+<META NAME="description" CONTENT="Some comments on interpreting structural similarities">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html292"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html288"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html282"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html290"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html293"
+  HREF="node14.html">The programs contained within</A>
+<B> Up:</B> <A NAME="tex2html289"
+  HREF="node2.html">Introduction and Overview</A>
+<B> Previous:</B> <A NAME="tex2html283"
+  HREF="node12.html">Displaying STAMP output (VER2HOR,</A>
+ &nbsp; <B>  <A NAME="tex2html291"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00260000000000000000">
+Some comments on interpreting structural similarities</A>
+</H1>
+
+<P>
+There is a wealth of literature on the nature of protein structural similarities, 
+and this manual is not the place to review them.  If you want to look into
+the subject, then I would refer you to some of my papers [<A
+ HREF="node60.html#rb94">11</A>,<A
+ HREF="node60.html#russell97b">13</A>,<A
+ HREF="node60.html#russell98a">14</A>]
+and references therein.
+<BR>
+<BR>
+An important aspect of assessing the meaning of structural similarity is discerning whether
+a similarity between proteins in the absence of obvious sequence identity implies a common
+evolutionary acestor, and usually an associated similarity in molecular function.  Some studies
+have found that it is possible to discern homology by the analysis of the sequence identity
+calculated following protein structure alignment.  Note that this is a very different 
+identity than that quoted during typical sequence comparison (e.g. BLAST, FASTA, SSEARCH, etc).
+During sequence comparison, the reported % identity is the result of optimising the alignment of
+two sequences, thus numbers as high as % 20-30 are possible for proteins that are definitely
+not homologous (i.e. those having different tertiary folds).  However, if an alignment has been
+derived without consideration of the amino acid sequence, then lower % identities can still
+be significant.  See Russell <EM>et al. </EM>, 1997, and Murzin, 1993 for examples, and more details.
+<BR>
+<BR>
+STAMP reports both the % identity from structure comparison, defined as the precentage 
+residue identities (<IMG
+ WIDTH="21" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img31.png"
+ ALT="$m$">) within structurally equivalent residues (<IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="$n$">), and an estimate of the statistical
+significance (reported as <IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$P(m)$">) of a given a particular combination of <IMG
+ WIDTH="21" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img31.png"
+ ALT="$m$"> and <IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img32.png"
+ ALT="$n$">.  The latter is
+described in Murzin (1993).  Values of <IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$P(m)$"> smaller than about <IMG
+ WIDTH="41" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img34.png"
+ ALT="$10^{-3}$"> very often indicate that
+the pair of proteins belong to the same protein superfamily, which implies a common
+ancestor, and more importantly very often indicates a similarity in molecular function.  Specifically,
+the <IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$P(m)$"> is calculated for a <IMG
+ WIDTH="63" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.png"
+ ALT="$p = 0.1$">; please see Murzin (1993) for a more thorough explanation
+of this calculation.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html292"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html288"
+  HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html282"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html290"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html293"
+  HREF="node14.html">The programs contained within</A>
+<B> Up:</B> <A NAME="tex2html289"
+  HREF="node2.html">Introduction and Overview</A>
+<B> Previous:</B> <A NAME="tex2html283"
+  HREF="node12.html">Displaying STAMP output (VER2HOR,</A>
+ &nbsp; <B>  <A NAME="tex2html291"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

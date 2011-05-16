@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Initial superimposition</TITLE>
+<META NAME="description" CONTENT="Initial superimposition">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="node7.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html234"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html230"
+  HREF="node7.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html224"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html232"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html235"
+  HREF="node9.html">Pairwise comparisons and alignments</A>
+<B> Up:</B> <A NAME="tex2html231"
+  HREF="node7.html">A brief description of</A>
+<B> Previous:</B> <A NAME="tex2html225"
+  HREF="node7.html">A brief description of</A>
+ &nbsp; <B>  <A NAME="tex2html233"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00251000000000000000">
+Initial superimposition</A>
+</H2>
+
+<P>
+The structure comparison algorithm of Argos &amp; Rossmann
+[<A
+ HREF="node60.html#argos76">3</A>], which is the method used by STAMP, requires that the 
+protein structures being compared are approximately superimposed 
+initially.  If not then structural similarity may be undetected, and 
+reliable superimpositions and alignments unattainable.  This is a very important
+thing to remember about STAMP.  If initial superimpositions do not yield high
+enough scores (i.e. <IMG
+ WIDTH="72" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$S_{c} &lt; 2.0$">) or if the structures are generally different, 
+STAMP will warn you by printing `LOW SCORE' warnings in its output.
+<BR>
+<BR>
+The STAMP package provides three methods of arriving at an initial 
+superimposition.  The first of these is to make use of an alignment
+derived on the basis of sequence.  The program ALIGNFIT requires
+that the sequences extracted from the PDB files (using the program
+PDBSEQ) are aligned vertically in AMPS block format (see format and
+examples below); one can use AMPS or another method of aligning sequences.
+The ACONVERT program is included in the distribution to faciliate converting
+alignments to AMPS format from other formats; it also possible to use
+Jalview (www.jalview.org) to perform the conversion.
+STAMP compares all possible pairs of
+structures by performing a least squares fit on all equivalenced 
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$C_{\alpha}$"> atoms.  Once all pairwise comparisons are compared, the
+program makes use of a tree to superimpose  multiply all
+coordinates following the tree.  Thus the final superimposition
+output is the best possible fit of the structure given the
+alignment.  For an example where ALIGNFIT is used to provide an
+initial superimposition, refer to the alignment of the serine
+proteinases in Chapter 2.
+<BR>
+<BR>
+In instances where multiple sequence alignment is inaccurate,
+ALIGNFIT may still be used, though the initial superimpositions may
+not be accurate enough for STAMP to find structural similarity. 
+In such cases,  the best way to arrive at initial superimpositions is to use
+the SCAN option within STAMP. This option compares a query domain
+against a database of target domains and generates a set of
+superimpositions of the target domains onto the query domain.  
+This set of superimpositons constitutes a multiple aligment
+that can be used by STAMP as an initial alignmnent.  This works particularly well when structures are very diverse.  For an
+example, see the alignment of the aspartyl proteinase N- and C-
+terminal lobes in Chapter 2.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html234"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html230"
+  HREF="node7.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html224"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html232"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html235"
+  HREF="node9.html">Pairwise comparisons and alignments</A>
+<B> Up:</B> <A NAME="tex2html231"
+  HREF="node7.html">A brief description of</A>
+<B> Previous:</B> <A NAME="tex2html225"
+  HREF="node7.html">A brief description of</A>
+ &nbsp; <B>  <A NAME="tex2html233"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>
