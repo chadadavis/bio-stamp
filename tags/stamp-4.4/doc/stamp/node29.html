@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pretty Alignments via ALSCRIPT</TITLE>
+<META NAME="description" CONTENT="Pretty Alignments via ALSCRIPT">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node30.html">
+<LINK REL="previous" HREF="node28.html">
+<LINK REL="up" HREF="node25.html">
+<LINK REL="next" HREF="node30.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html500"
+  HREF="node30.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html496"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html490"
+  HREF="node28.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html498"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html501"
+  HREF="node30.html">Pretty Structures via MOLSCRIPT</A>
+<B> Up:</B> <A NAME="tex2html497"
+  HREF="node25.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html491"
+  HREF="node28.html">Displaying text alignments</A>
+ &nbsp; <B>  <A NAME="tex2html499"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION003104000000000000000">
+Pretty Alignments via ALSCRIPT</A>
+</H2>
+
+<P>
+DSTAMP generates input files for GJBs ALSCRIPT program.  Given a STAMP 
+alignment file, DSTAMP can be run to create a fairly pretty alignment.
+Detailed descriptions of the parameters are given below.  As a quick 
+example, using the globin example,
+<BR>
+<P>
+<PRE>
+dstamp -f globin.5.clean -prefix globin_align
+</PRE>
+
+<P>
+will create a file called:
+
+<P>
+<PRE>
+globin_align.als
+</PRE>
+
+<P>
+Which contains a set of ALSCRIPT commands.  To get a pretty Postscript alignment, one needs to
+run alscript:
+<BR>
+<P>
+<PRE>
+alscript globin_align.als
+</PRE>
+
+<P>
+The file globin_align.ps will be created, and is previewable or 
+printable on a Postscript printer.  And is shown in Figure 1.
+<BR>
+<BR>
+By default, residues occuring within
+structurally equivalent regions will be boxed in the sequence alignment.
+Helices and strands will appear as cylinders and arrows (coil/turn regions
+are not shown).  Conserved residues will be in inverse text, positions
+showing a conservation of polar character will be in bold, those showing
+conservation of hydrophobic character will be shaded and those showing
+a conservation of small size will be shown in a smaller font.
+It is possible to modify the output format (paramaters are described in a Chapter 4).
+I would also recommend only using the DSTAMP output as a starting point, and
+refine the ALSCRIPT file yourself to give the best alignment.  The automated
+procedure can give some ugly results.
+
+<P>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<FONT SIZE="-2"><B>Figure 1</B> Globin alignment as discussed in the text.
+</FONT>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html500"
+  HREF="node30.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html496"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html490"
+  HREF="node28.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html498"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html501"
+  HREF="node30.html">Pretty Structures via MOLSCRIPT</A>
+<B> Up:</B> <A NAME="tex2html497"
+  HREF="node25.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html491"
+  HREF="node28.html">Displaying text alignments</A>
+ &nbsp; <B>  <A NAME="tex2html499"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,60 @@
+% Sorted output from STAMP scan routine
+% The file ac_prot.scan was sorted according to 
+% Sc values
+% Repeated transformations were ignored
+% Out of an initial 11 domains,
+% a total of 1 repeated domains were found
+% and 0 domains were found to have 
+%  Sc values less than   2.500
+% All of these were removed
+% Leaving 10 domains in this file
+# Sc=  10.000 RMS=   0.010 len=  999 nfit=  999 seq_id= 100.00 sec_id= 100.00 q_len=  175 d_len=  175 n_sec= 100 fit_pos= _   0 _ 
+./pdb1cms.ent 1cmsN { A 1 _ to A 175 _ 
+   1.00000    0.00000    0.00000         0.00000  
+   0.00000    1.00000    0.00000         0.00000  
+   0.00000    0.00000    1.00000         0.00000  }
+# Sc=   8.836 RMS=   0.930 len=  174 nfit=  169 seq_id= 57.99 sec_id= 83.43 q_len=  175 d_len=  173 n_sec=  15 fit_pos= A   1 _ 
+./pdb4pep.ent 4pepN_1 { A 1 _ to A 174 _ 
+  -0.74432   -0.66766    0.01468        36.68626  
+   0.52611   -0.57270    0.62867        22.27034  
+  -0.41133    0.47566    0.77754         6.54410  }
+# Sc=   8.435 RMS=   1.075 len=  178 nfit=  164 seq_id= 33.33 sec_id= 85.80 q_len=  175 d_len=  178 n_sec=  15 fit_pos= A   1 _ 
+./pdb2apr.ent 2aprN_1 { A 1 _ to A 178 _ 
+  -0.71575    0.47736    0.50974       -34.95956  
+  -0.59875   -0.79515   -0.09608       107.26762  
+   0.35945   -0.37397    0.85495       -53.71497  }
+# Sc=   8.209 RMS=   1.300 len=  182 nfit=  162 seq_id= 30.82 sec_id= 87.42 q_len=  175 d_len=  178 n_sec=  15 fit_pos= A  -2 _ 
+./pdb4ape.ent 4apeN_1 { A -2 _ to A 174 _ 
+   0.02441    0.76534   -0.64316        24.52518  
+  -0.60161    0.52506    0.60197        44.77887  
+   0.79841    0.37224    0.47326        -0.73163  }
+# Sc=   7.976 RMS=   1.280 len=  183 nfit=  157 seq_id= 29.30 sec_id= 90.45 q_len=  175 d_len=  174 n_sec=  19 fit_pos= A   1 _ 
+./pdb3app.ent 3appN_1 { A 1 _ to A 174 _ 
+  -0.15242   -0.69168   -0.70594        42.24520  
+   0.03047    0.71066   -0.70288        27.45758  
+   0.98785   -0.12864   -0.08724         6.59217  }
+# Sc=   3.420 RMS=   1.948 len=  205 nfit=   70 seq_id= 14.93 sec_id= 79.10 q_len=  175 d_len=  152 n_sec=  13 fit_pos= A 175 _ 
+./pdb4ape.ent 4apeC_1 { A 175 _ to A 326 _ 
+  -0.05745   -0.86711    0.49479         7.71947  
+  -0.73413    0.37256    0.56767        47.64011  
+  -0.67657   -0.33063   -0.65798        50.66681  }
+# Sc=   3.304 RMS=   1.973 len=  200 nfit=   67 seq_id= 18.75 sec_id= 76.56 q_len=  175 d_len=  147 n_sec=  13 fit_pos= A 179 _ 
+./pdb2apr.ent 2aprC_1 { A 179 _ to A 325 _ 
+   0.73338   -0.32702   -0.59600        64.82500  
+  -0.58905   -0.74334   -0.31696       125.56071  
+  -0.33938    0.58352   -0.73778        80.63829  }
+# Sc=   3.269 RMS=   2.068 len=  205 nfit=   68 seq_id= 13.56 sec_id= 81.36 q_len=  175 d_len=  149 n_sec=  12 fit_pos= A 175 _ 
+./pdb3app.ent 3appC_1 { A 175 _ to A 323 _ 
+  -0.01424    0.62398    0.78131        -8.07789  
+  -0.20646    0.76272   -0.61289        29.87563  
+  -0.97835   -0.17004    0.11797        49.98874  }
+# Sc=   3.223 RMS=   2.105 len=  206 nfit=   68 seq_id= 21.05 sec_id= 85.96 q_len=  175 d_len=  152 n_sec=  10 fit_pos= A 175 _ 
+./pdb4pep.ent 4pepC_1 { A 175 _ to A 326 _ 
+   0.69239    0.68546   -0.22524        -2.19199  
+   0.70841   -0.58662    0.39247        24.25802  
+   0.13690   -0.43130   -0.89176        49.33031  }
+# Sc=   3.214 RMS=   2.065 len=  204 nfit=   68 seq_id= 19.35 sec_id= 83.87 q_len=  175 d_len=  148 n_sec=  11 fit_pos= A 176 _ 
+./pdb1cms.ent 1cmsC_1 { A 176 _ to A 323 _ 
+  -0.98339   -0.10971   -0.14456        36.68317  
+  -0.06431    0.95555   -0.28774         8.86312  
+   0.16971   -0.27366   -0.94674        55.62877  }

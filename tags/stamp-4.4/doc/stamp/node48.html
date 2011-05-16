@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>PICKFRAME</TITLE>
+<META NAME="description" CONTENT="PICKFRAME">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node49.html">
+<LINK REL="previous" HREF="node47.html">
+<LINK REL="up" HREF="node40.html">
+<LINK REL="next" HREF="node49.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html758"
+  HREF="node49.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html754"
+  HREF="node40.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html748"
+  HREF="node47.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html756"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html759"
+  HREF="node49.html">MERGETRANS &amp; EXTRANS</A>
+<B> Up:</B> <A NAME="tex2html755"
+  HREF="node40.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html749"
+  HREF="node47.html">TRANSFORM</A>
+ &nbsp; <B>  <A NAME="tex2html757"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00528000000000000000">
+PICKFRAME</A>
+</H2>
+
+<P>
+It is often the case that one wishes a particular protein structure
+    to be the `parent' of the superimposition, i.e. the structure that
+    is un-transformed.  Accordingly, the program PICKFRAME allows
+    one to select a particular reference frame for a particular domain
+    identifier.  Given a transformation file and an identifier, the
+    program will set the selected identifier's transformation to the
+    unit matrix and zero vector, and transform the other structures
+    accordingly.  This is useful if one wishes to combine different
+    transformation files (i.e. if a multidomain protein has
+    two domains, with each being similar to a separate domain).
+<BR>    
+<BR>
+The format is:
+<BR>
+<P>
+<PRE>
+    pickframe -f &lt;transformation file&gt; -i &lt;domain identifier&gt;
+</PRE>
+
+<P>
+The output will be to the standard output (i.e. one need just
+    pipe the results into a file).  
+<BR>    
+<BR>
+This program is very useful if one wishes to superimpose STAMP results
+    for two different domains from the same protein.  Since one can just
+    make all transformations relative to the PDB file containing the two domains,
+    and then combine the output into one transformation file.
+
+<P>
+<BR><HR>
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

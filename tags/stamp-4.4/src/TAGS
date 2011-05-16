@@ -1,0 +1,465 @@
+
+a3to1c,68
+#define acids3 39,1611
+#define acids1 40,1724
+char a3to1(46,1902
+
+agetblocc,22
+int Agetbloc(60,2280
+
+align_cleanc,14
+main(44,1736
+
+alignfitc,41
+main(42,1775
+void exit_error(521,16049
+
+alignfitgetparsc,21
+int getpars(49,1839
+
+aliseq.c,20
+int aliseq(44,1916
+
+avestrucc,97
+#define MAX_SEQ_LEN 43,1676
+#define PRECISION 44,1702
+main(49,1831
+void exit_error(756,21651
+
+c_splitc,28
+char **RBR_c_split(40,1619
+
+ccprobcalcc,24
+int ccprobcalc(41,1636
+
+checkc,56
+#define RES 39,1617
+#define REF 40,1654
+main(44,1756
+
+clean_blockc,25
+int clean_block(45,1870
+
+closefilec,23
+int closefile(42,1647
+
+count_domainc,26
+int count_domain(40,1673
+
+dispc,18
+int disp(37,1578
+
+display_alignc,49
+int display_align(47,1836
+int dispone(102,3194
+
+dosortc,47
+struct path *dosort(48,2083
+int comp(85,3044
+
+dstamp.c,41
+main(45,1812
+void exit_error(617,20101
+
+extract_dsspc,26
+int extract_dssp(41,1796
+
+extract_pdbc,25
+int extract_pdb(42,1794
+
+extransc,40
+main(48,1872
+void exit_error(208,5740
+
+fmatfitc,23
+float fmatfit(48,1959
+
+fmatmultc,23
+void fmatmult(38,1596
+
+get_clustc,35
+struct cluster *get_clust(43,1733
+
+getcac,19
+int getca(42,1803
+
+getdomainc,108
+int getdomain(47,1931
+int domdefine(100,3156
+int skiptononspace(376,12407
+int getdomain_error(391,12778
+
+getdsspsumc,48
+#define MAXL 37,1596
+int get_dssp_sum(42,1727
+
+getfilec,48
+#define MAXLINE 41,1636
+char *getfile(53,2064
+
+getksc,19
+int getks(43,1749
+
+getrksumc,24
+char *getrksum(37,1578
+
+getsecc,20
+int getsec(40,1641
+
+getstampdatc,25
+int getstampdat(45,1875
+
+getstamprelc,26
+int *getstamprel(55,2381
+
+gjnocc,1277
+#define VERY_SMALL 45,1743
+#define VERY_BIG 46,1771
+#define MAX_ID_LEN 47,1796
+#define POINT 50,1855
+#define X_OFFSET 51,1872
+#define Y_OFFSET 52,1892
+float MAXside 54,1914
+float MINside 55,1974
+float WTreeFraction 56,2003
+float HTreeFraction 57,2069
+float TreeExtendFac 58,2141
+double base_val 59,2221
+float IdOffsetFactor 60,2247
+float NumberOffsetFactor 61,2276
+float NumberFontSize 62,2309
+float IdFontSize 63,2336
+float TitleFontSize 64,2359
+struct gjnoc *GJnoc(99,3851
+double **read_up_diag(703,22532
+void up_diag_log(723,23087
+char **read_idents(740,23497
+void write_up_diag(764,24126
+void show_entity(783,24636
+void show_id_entity(807,25261
+void show_inx_entity(832,25903
+void print_amps_cluster(865,26770
+struct sc *make_entity(897,27575
+double val_Grp_B(949,29092
+double val_Grp_Grp(1010,30592
+void remove_unclust(1074,32184
+void iprintarr(1096,32490
+int no_share(1110,32883
+void sub_notparent(1126,33276
+void remove_notparent(1141,33653
+void add_notparent(1150,33949
+double **GJDudarr(1163,34310
+void draw_dendrogram(1185,34810
+double get_mean(1330,39042
+void draw_arch(1341,39218
+double trans_x(1351,39528
+double trans_y(1362,39821
+void PSPutText(1369,40001
+void mark_parents(1381,40464
+void write_unclustered(1401,41079
+
+gjutilc,1065
+FILE *std_err;78,2861
+FILE *std_in;79,2876
+FILE *std_out;80,2890
+void *GJmalloc(82,2906
+void *GJrealloc(95,3129
+void *GJmallocNQ(107,3350
+void *GJreallocNQ(120,3590
+void GJfree(131,3850
+void GJerror(142,4026
+void error(159,4347
+char *GJstoupper(167,4433
+char *GJstolower(181,4682
+char *GJstoup(195,4931
+char *GJstolo(207,5109
+char *GJstrdup(220,5288
+FILE *GJfopen(230,5516
+int GJfclose(250,6095
+struct file *GJfilemake(269,6498
+struct file *GJfilerename(286,7091
+int GJfileclose(303,7581
+int GJfileclean(319,7898
+void GJinitfile(337,8304
+char *GJfnonnull(345,8427
+char *GJstrappend(355,8663
+char *GJremovechar(372,9210
+char *GJsubchar(407,9846
+char *GJstrcreate(427,10237
+char *GJstrlocate(445,10664
+char *GJstrtok(474,11227
+unsigned char **uchararr(521,12317
+signed char **chararr(544,12936
+void mcheck(569,13473
+char *GJstrblank(578,13638
+void GJUCinit(591,13845
+void GJCinit(604,14062
+void GJIinit(616,14266
+char *GJcat(630,14649
+char *GJGetToken(686,16151
+struct tokens *GJgettokens(711,16613
+void GJfreetokens(742,17415
+
+gstamp.c,97
+#define MAX_SEQ_LEN 43,1676
+#define PRECISION 44,1701
+main(51,1862
+void exit_error(595,16754
+
+headerc,0
+
+hsortc,20
+void hsort(37,1634
+
+idistc,21
+float idist(40,1658
+
+igetcac,20
+int igetca(41,1704
+
+igetcadsspc,24
+int igetcadssp(43,1784
+
+igetcbc,70
+#define PI 39,1634
+int igetcb(52,1959
+float *RBR_build_cb(263,8139
+
+igetgenc,21
+int igetgen(42,1762
+
+igetsidec,96
+#define PI 38,1614
+#define MAX_NATS 39,1643
+int igetside(53,1919
+int res_name_comp(243,7239
+
+ltouc,19
+char ltou(39,1633
+
+makeafilec,46
+#define VSMALL 38,1597
+int makefile(40,1622
+
+matfitc,22
+float matfit(80,3041
+
+matinvc,136
+#define TINY 38,1615
+void matinv(52,2099
+void lubksb(85,2660
+int ludcmp(112,3084
+float *vector(170,4231
+void free_vector(184,4444
+
+matmultc,21
+int matmult(39,1642
+
+matprodc,21
+int matprod(41,1660
+
+matvecprodc,24
+int matvecprod(40,1665
+
+mergestamp.c,63
+main(50,2052
+int numseq(746,20080
+void exit_error(758,20300
+
+mergetransc,40
+main(52,2021
+void exit_error(346,9530
+
+murzin_Pc,146
+double Fct(57,2206
+double murzin_P(73,2400
+double bico(116,3245
+#define LN_MAXDOUBLE 119,3294
+double factln(132,3573
+double gammln(145,3899
+
+newoutputc,48
+int newoutput(38,1597
+int printdomain(50,1837
+
+openfilec,24
+FILE *openfile(42,1694
+
+overlayc,91
+#define max(max36,1577
+#define leq(leq37,1618
+#define max4(max438,1660
+main(42,1887
+
+pairfitc,21
+int pairfit(40,1616
+
+pairpathc,24
+float pairpath(45,1767
+
+pairwisec,45
+int pairwise(44,1702
+void handler(273,9372
+
+pdbseqc,70
+#define MAX_SEQ_LEN 38,1616
+main(55,2352
+void exit_error(357,11264
+
+pickframec,40
+main(46,1847
+void exit_error(257,7181
+
+poststamp.c,137
+#define MAX_SEQ_LEN 38,1583
+#define PRECISION 39,1609
+#define E1 40,1632
+#define E2 41,1647
+main(51,2025
+void exit_error(354,10999
+
+printdomainc,25
+int printdomain(38,1597
+
+printmatc,22
+int printmat(37,1578
+
+probcalcc,22
+int probcalc(50,2089
+
+probplotc,23
+void probplot(37,1578
+
+qkfitc,340
+static integer c__3 75,2898
+static integer c__0 76,2923
+int qkfit(83,3137
+#define a 121,4028
+#define b 122,4063
+#define usqmat 135,4368
+#define aam 136,4408
+#define bam 137,4445
+#define cam 138,4486
+#define fam 139,4527
+#define gam 140,4568
+#define ham 141,4609
+#define utr 143,4690
+int eigen_(410,10867
+int esort_(651,15397
+
+readtreec,59
+#define MAXLINE 41,1636
+struct cluster *readtree(94,3240
+
+revalc,19
+int reval(35,1558
+
+revmatmultc,24
+int revmatmult(59,2065
+
+rmspc,19
+void rmsp(41,1691
+
+rossmannc,122
+#define ABS(ABS45,1870
+#define fexp 46,1903
+float rossmann(51,2067
+#define DBGPREC122,4102
+float rossmanni(123,4118
+
+roughfitc,22
+int roughfit(49,2122
+
+scanc,18
+int scan(48,2041
+
+sec_contentc,25
+int sec_content(40,1668
+
+seq_identityc,28
+float seq_identity(47,1894
+
+slow_scanc,44
+int slow_scan(108,4682
+int disp(951,32967
+
+smoothsecc,23
+int smoothsec(41,1772
+
+sorttransc,332
+#define min_R_diff 42,1656
+#define min_V_diff 43,1680
+#define max_start_diff 44,1704
+struct info_struc info_struc49,1840
+main(73,2324
+int transcompare(463,13829
+int exit_error(482,14292
+void compared_sc_hsort(506,15380
+void comparei_sc_hsort(539,15936
+void compared_rms_hsort(571,16467
+void comparei_rms_hsort(604,17024
+
+stamp.c,98
+#define lastmod 39,1597
+main(48,1746
+void help_exit_error(934,32076
+void exit_error(962,33293
+
+stamp_clean_blockc,31
+int stamp_clean_block(42,1693
+
+stampgetparsc,21
+int getpars(39,1617
+
+sw7ccsc,20
+int sw7ccs(54,2238
+
+swstrucc,168
+#define MAX3(MAX341,1636
+int swstruc(56,2251
+int present(317,8658
+void CopyPath(336,9032
+void addsco(349,9425
+ppath(368,9996
+ppath2(391,10578
+ppath3(411,11050
+
+testfilec,22
+int testfile(37,1578
+
+threestatec,24
+int threestate(54,2147
+
+transformc,69
+#define chainstring 39,1617
+main(48,1866
+void exit_error(285,8150
+
+treefitc,21
+int treefit(41,1636
+
+treepathc,22
+int treepath(44,1787
+
+treewisec,45
+#define NOC_PARMS 42,1674
+treewise(52,2004
+
+updatec,21
+void update(41,1754
+
+utolc,19
+char utol(38,1632
+
+vectorc,213
+#define PI 38,1615
+int RBR_print_vector(40,1645
+int RBR_vector_unify(53,1899
+float *RBR_vector_diff(66,2117
+float *RBR_vector_ave(80,2317
+float *RBR_vector_cross(94,2532
+float *RBR_vector_set_dist(110,2828
+
+ver2horc,41
+main(42,1730
+void exit_error(455,12352

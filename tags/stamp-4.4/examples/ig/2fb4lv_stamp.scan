@@ -1,0 +1,64 @@
+% Output from STAMP scanning routine
+%
+% Domain 2fb4lv was used to scan the domain database:
+%  some.domains
+% 2 fits were performed
+% Fit 1 E1= 20.000, E2=  3.800, CUT=  1.000
+% Fit 2 E1=  3.800, E2=  3.800, CUT=  4.500
+% Approximate fits (alignment from N-termini) were performed
+%   at every 5 residue of the database sequences 
+% Transformations were output for Sc=  2.000
+% 
+% Domain used to scan 
+# Sc= 10.000 RMS=  0.01  Len= 999 nfit= 999 Seqid= 100.00 Secid= 100.00 q_len=  111 d_len=  111 n_sec= 100 n_equiv 999 fit_pos= _  0 _ 
+./pdb2fb4.ent 2fb4lv { L 1 _ to L 109 _  }
+# Sc=   4.317 RMS=   2.120 len=  127 nfit=   55 seq_id= 10.87 sec_id= 78.26 q_len=  111 d_len=  105 n_sec=    8 n_equiv=   46 fit_pos= L 110 _ 
+.//pdb2fb4.ent 2fb4lc_1 { L 115 _ to L 209 _ 
+  -0.61976   -0.78316   -0.05057       148.03421 
+  -0.53337    0.46761   -0.70488        60.90963 
+   0.57568   -0.40989   -0.70752        84.10628  }
+# Sc=   9.799 RMS=   0.001 len=  111 nfit=  111 seq_id= 100.00 sec_id= 97.30 q_len=  111 d_len=  216 n_sec=   11 n_equiv=  111 fit_pos= L   1 _ 
+.//pdb2fb4.ent 2fb4l_1 { L 2 _ to L 109 _ 
+   1.00000    0.00004   -0.00002         0.00073 
+  -0.00004    1.00000    0.00002         0.00415 
+   0.00002   -0.00002    1.00000         0.00201  }
+# Sc=   7.848 RMS=   1.165 len=  116 nfit=   96 seq_id= 49.47 sec_id= 40.00 q_len=  111 d_len=  113 n_sec=    0 n_equiv=   95 fit_pos= L   1 _ 
+.//pdb1mcp.ent 1mcplv_1 { L 3 _ to L 113 _ 
+  -0.54007    0.77796    0.32109        37.76241 
+   0.80042    0.35689    0.48162         0.59833 
+   0.26009    0.51712   -0.81544       -33.22099  }
+# Sc=   6.921 RMS=   1.500 len=  126 nfit=   85 seq_id= 30.86 sec_id= 34.57 q_len=  111 d_len=  122 n_sec=    0 n_equiv=   81 fit_pos= H   1 _ 
+.//pdb1mcp.ent 1mcphv_1 { H 2 _ to H 122 _ 
+   0.13279   -0.68145   -0.71971        62.58310 
+   0.77880   -0.37740    0.50104        48.04721 
+  -0.61306   -0.62705    0.48060       120.64075  }
+# Sc=   2.507 RMS=   1.639 len=  157 nfit=   28 seq_id=  4.17 sec_id= 62.50 q_len=  111 d_len=  148 n_sec=    4 n_equiv=   24 fit_pos= _ 216 _ 
+.//pdb1cms.ent 1cmsC_9 { _ 193 _ to _ 272 _ 
+  -0.17976   -0.98036    0.08109        80.11081 
+   0.94689   -0.19478   -0.25584        57.56364 
+   0.26661    0.03080    0.96331        31.17130  }
+# Sc=   5.939 RMS=   1.334 len=  114 nfit=   78 seq_id= 20.00 sec_id= 76.00 q_len=  111 d_len=  178 n_sec=   12 n_equiv=   75 fit_pos= _   1 _ 
+.//pdb3cd4.ent 3cd4_1 { _ 4 _ to _ 98 _ 
+  -0.02747   -0.97449   -0.22275        92.47626 
+  -0.43475   -0.18901    0.88049        44.44993 
+  -0.90013    0.12103   -0.41847        84.95518  }
+# Sc=   4.152 RMS=   2.454 len=  133 nfit=   57 seq_id= 16.28 sec_id= 72.09 q_len=  111 d_len=  108 n_sec=    4 n_equiv=   43 fit_pos= _   1 _ 
+.//pdb1acx.ent 1acx_1 { _ 2 _ to _ 106 _ 
+  -0.95568    0.29350    0.02305        50.77098 
+   0.20895    0.62106    0.75539        58.68015 
+   0.20740    0.72673   -0.65487        60.32239  }
+# Sc=   4.063 RMS=   2.463 len=  134 nfit=   49 seq_id= 14.29 sec_id= 82.86 q_len=  111 d_len=  129 n_sec=    5 n_equiv=   35 fit_pos= A  11 _ 
+.//pdb2aza.ent 2azaa_3 { A 12 _ to A 129 _ 
+  -0.26562    0.96408    0.00079        35.11699 
+  -0.64190   -0.17624   -0.74626        69.66450 
+  -0.71931   -0.19873    0.66565        38.99258  }
+# Sc=   3.611 RMS=   2.365 len=  158 nfit=   42 seq_id=  9.38 sec_id= 71.88 q_len=  111 d_len=  151 n_sec=    8 n_equiv=   32 fit_pos= O   6 _ 
+.//pdb2sod.ent 2sodo_2 { O 14 _ to O 150 _ 
+   0.76970    0.09416   -0.63142        58.66448 
+  -0.25372    0.95271   -0.16721        48.98117 
+   0.58582    0.28891    0.75720        58.39476  }
+# Sc=   3.788 RMS=   2.052 len=  125 nfit=   47 seq_id= 30.77 sec_id= 79.49 q_len=  111 d_len=   99 n_sec=    6 n_equiv=   39 fit_pos= _   1 _ 
+.//pdb2pcy.ent 2pcy_1 { _ 12 _ to _ 99 _ 
+  -0.50126   -0.72397   -0.47392        85.55534 
+   0.02117   -0.55779    0.82971        62.53976 
+  -0.86504    0.40587    0.29492        31.24785  }

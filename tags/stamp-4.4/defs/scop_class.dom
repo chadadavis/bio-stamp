@@ -1,0 +1,11 @@
+% ./scop2stamp --release 1.75 --scop-level=class
+% SCOP release: 1.75
+% Number of domains to be processed: 7
+2vb1 2vb1a1 { A 1 _ TO A 129 _ }
+1ejg 1ejga_ { CHAIN A }
+1us0 1us0a_ { CHAIN A }
+1gwe 1gwea_ { CHAIN A }
+1u7g 1u7ga_ { CHAIN A }
+1ucs 1ucsa_ { CHAIN A }
+1mc2 1mc2a_ { CHAIN A }
+% Done.

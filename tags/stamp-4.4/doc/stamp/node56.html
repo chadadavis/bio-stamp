@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Compiling/running</TITLE>
+<META NAME="description" CONTENT="Compiling/running">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node57.html">
+<LINK REL="previous" HREF="node55.html">
+<LINK REL="up" HREF="node55.html">
+<LINK REL="next" HREF="node57.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html855"
+  HREF="node57.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html851"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html845"
+  HREF="node55.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html853"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html856"
+  HREF="node57.html">Configuring STAMP</A>
+<B> Up:</B> <A NAME="tex2html852"
+  HREF="node55.html">Installation</A>
+<B> Previous:</B> <A NAME="tex2html846"
+  HREF="node55.html">Installation</A>
+ &nbsp; <B>  <A NAME="tex2html854"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00610000000000000000">
+Compiling/running</A>
+</H1>
+
+<P>
+STAMP requires an ANSI C compiler (e.g. GCC) for installation. 
+<BR>    
+<BR>
+STAMP is distributed as a gzipped tar file, which must be 
+    uncompressed and untarred to create the installation directory.
+<BR>    
+<BR>
+On most Unix and Unix-like systems, one can install STAMP with:
+<BR>
+<P>
+<PRE>
+    gunzip STAMP.tarfile.gz
+    tar -xvf STAMP.tarfile
+    cd stamp
+    ./BUILD &lt;system type&gt; (e.g. BUILD sgi)
+</PRE>
+
+<P>
+should work.
+<BR>    
+<BR>
+<P>
+The systems that are available are:
+<BR>    
+<BR>
+linux (should also work on Cygwin and MinGW)
+<BR>
+osx (Mac OS X)
+    sgi (IRIX64 version 6.2)
+<BR>
+mips4-sgi (IRIX64 R10K version 6.2)
+<BR>
+dec (OSF1 version 4.0)
+<BR>
+sun (SunOS sol4 5.5.1)
+<BR>    
+<BR>
+All of these are specified by a makefile in the src/ sub-directory.  If your system
+    isn't one of the above, then you can probably just use the one that is nearest, and edit
+    the makefile accordingly.
+<BR>    
+<BR>
+Note that there are several precompiled executables in the distribution.  Files
+    found in the directories bin/linux, bin/osx, bin/sgi, bin/sun and bin/dec.  You will
+    overwrite these if you attempt a `BUILD' as discussed above. Only the Linux and OS X
+    binaries are current.
+    
+<BR>    
+<BR>
+The built executables are 
+    copied into the directory bin/<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">system-type<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">, which should be added to 
+    your to your PATH environment variable, or linked/copied to some central 
+    directory, such as /usr/local/bin.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html855"
+  HREF="node57.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html851"
+  HREF="node55.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html845"
+  HREF="node55.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html853"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html856"
+  HREF="node57.html">Configuring STAMP</A>
+<B> Up:</B> <A NAME="tex2html852"
+  HREF="node55.html">Installation</A>
+<B> Previous:</B> <A NAME="tex2html846"
+  HREF="node55.html">Installation</A>
+ &nbsp; <B>  <A NAME="tex2html854"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

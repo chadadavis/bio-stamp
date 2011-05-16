@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Multiple alignment format</TITLE>
+<META NAME="description" CONTENT="Multiple alignment format">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node36.html">
+<LINK REL="previous" HREF="node34.html">
+<LINK REL="up" HREF="node31.html">
+<LINK REL="next" HREF="node36.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html576"
+  HREF="node36.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html572"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html566"
+  HREF="node34.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html574"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html577"
+  HREF="node36.html">Output from STAMP database</A>
+<B> Up:</B> <A NAME="tex2html573"
+  HREF="node31.html">Input and Output format</A>
+<B> Previous:</B> <A NAME="tex2html567"
+  HREF="node34.html">Sequence format</A>
+ &nbsp; <B>  <A NAME="tex2html575"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00440000000000000000">
+Multiple alignment format</A>
+</H1>
+
+<P>
+STAMP alignment output consists first of a list of domain descriptions and 
+    relevant transformations.  After this an alignment may or may not
+    be output. 
+<BR>    
+<BR>
+Multiple alignments are displayed as follows (see 
+    STAMPDIR/examples/globin_stamp_trans.6):
+<BR>
+<P>
+<PRE>
+    /data/newpdb/pdb/pdb1lh1.ent 1lh1 { ALL 
+    1.00000    0.00000    0.00000         0.00000 
+    0.00000    1.00000    0.00000         0.00000 
+    0.00000    0.00000    1.00000         0.00000  }
+    /data/newpdb/pdb/pdb2hhb.ent 2hhba { CHAIN A 
+    0.71639    0.34414    0.60691        19.45435 
+    &lt;Etc.&gt;
+    -0.31092   -0.94263    0.12159        68.85890  }
+
+
+    Alignment Score  Sc = 7.665619
+    Alignment length Lp = 156
+    RMS deviation after fitting on 116 atoms =  2.434597
+    Secondary structures are from DSSP
+
+    &gt;1lh1    (cluster A) sequence
+    &gt;2hhba   (cluster B) sequence
+    &gt;2hhbb   (cluster B) sequence
+    &gt;4mbn    (cluster B) sequence
+    &gt;1ecd    (cluster B) sequence
+    &gt;2lhb    (cluster B) sequence
+    &gt;space 
+    &gt;1lh1_dssp  (cluster A) secondary structure from DSSP
+    &gt;2hhba_dssp  (cluster B) secondary structure from DSSP
+    &gt;2hhbb_dssp  (cluster B) secondary structure from DSSP
+    &gt;4mbn_dssp   (cluster B) secondary structure from DSSP
+    &gt;1ecd_dssp   (cluster B) secondary structure from DSSP
+    &gt;2lhb_dssp   (cluster B) secondary structure from DSSP
+    #T -- '1' = used in the final fit
+    #P -- averaged Pij
+    #A -- distance between averaged CA atoms in angtroms
+    #G -- $P_{ij}{\prime}$ value
+    ABBBBB ABBBBB use  Pij      Distance $P_{ij}{\prime}$
+    * iteration 1
+    P
+    I
+    V
+    D
+    T
+    G
+    S
+    V
+    G V  A - -  - 
+    AVHV P ---- - 
+    LLLLLL ------ 1  0.50337  1.90006   6.98400 
+    TSTSSS ------ 1  0.49631  2.00483   6.88900 
+    EPPEAA HHHHHH 1  0.55533  1.89926   7.68300 
+    SAEGDA HHHHHH 1  0.60834  1.80863   8.39600 
+    QDEEQE HHHHHH 1  0.70134  1.64212   9.64700 
+    AKKWIK HHHHHH 1  0.75434  1.52204  10.36000 
+    ATSQST HHHHHH 1  0.75137  1.51092  10.32000 
+    LNALTK HHHHHH 1  0.80831  1.36142  11.08600 
+    VVVVVI HHHHHH 1  0.85737  1.21626  11.74600 
+    KKTLQR HHHHHH 1  0.83537  1.27448  11.45000 
+
+    &lt;Etc.&gt;
+
+    ITNKGI HHHHHH 1  0.85737  1.04393  11.74600 
+    VVADML HHHHHH 1  0.84332  1.11847  11.55700 
+    ILLIIL HHHHHH 1  0.81232  1.20349  11.14000 
+    KTAAFR HTHHHH 1  0.80035  1.22529  10.97900 
+    KSHASS HTTHHT 1  0.73137  1.29476  10.05100 
+    EKKKKA HTTHHT 1  0.60031  1.66495   8.28800 
+    M  Y   H  H   
+    D  K   H  H   
+    D  E   H  H   
+    A  L   H  H   
+    *
+</PRE>
+
+<P>
+The `<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">' and `#' characters tell the routines that read alignments
+    what is to be contained in each field.  A `<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">' character denotes a
+    character string which is to be displayed vertically, and a `#'
+    character denotes a string of numbers to be displayed separated by
+    spaces.  Thus in the above example we have 13 character strings
+    vertically (6 amino acid sequences, 1 string of spaces and 6 DSSP
+    assignments) and 6 numeric fields (corresponding to various details
+    from STAMP) specified.  The actual alignment will be contained
+    within `*' characters as shown.  Accordingly, no occurrence of `<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">',
+    `#' and `*' characters should occur outside of these contexts.
+<BR>    
+<BR>
+The As and Bs just above the `*' symbol  
+    refer to the members of the two cluster (branches) 
+    which are brought together during this alignment.
+<BR>    
+<BR>
+Briefly, the numeric fields are:
+<BR>    
+<BR>    #T  1 or 0, 1 shows those residues used to 
+    determine the fit of the two sets of structures.
+<BR>    
+<BR>    #P  averaged Rossmann and Argos Pij value
+<BR>    
+<BR>    #A  distance between averaged <!-- MATH
+ ${\rm C}_{\alpha}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="${\rm C}_{\alpha}$"> atoms
+<BR>    
+<BR>    #G  corrected Pij value (<!-- MATH
+ $P_{ij}{\prime}$
+ -->
+<IMG
+ WIDTH="33" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.png"
+ ALT="$P_{ij}{\prime}$">)
+<BR>    
+<BR>
+Note that the program POSTSTAMP adds two new fields:
+<BR>    
+<BR>    #B  <IMG
+ WIDTH="14" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.png"
+ ALT="$1$"> if all pairiwse <IMG
+ WIDTH="48" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$P_{ij} \geq$"> the user defined minimum, <IMG
+ WIDTH="14" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img53.png"
+ ALT="$0$"> otherwise
+<BR>    
+<BR>    #R  the total number of pairwise comparisons having <IMG
+ WIDTH="48" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$P_{ij} \geq$"> the cutoff out of <!-- MATH
+ $N\times(N-1)/2$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$N \times (N-1)/2$">
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html576"
+  HREF="node36.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html572"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html566"
+  HREF="node34.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html574"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html577"
+  HREF="node36.html">Output from STAMP database</A>
+<B> Up:</B> <A NAME="tex2html573"
+  HREF="node31.html">Input and Output format</A>
+<B> Previous:</B> <A NAME="tex2html567"
+  HREF="node34.html">Sequence format</A>
+ &nbsp; <B>  <A NAME="tex2html575"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

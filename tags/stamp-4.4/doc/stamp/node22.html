@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Protein domain databases</TITLE>
+<META NAME="description" CONTENT="Protein domain databases">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node23.html">
+<LINK REL="previous" HREF="node21.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node23.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html413"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html409"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html403"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html411"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html414"
+  HREF="node23.html">Generating transformed coordinates using</A>
+<B> Up:</B> <A NAME="tex2html410"
+  HREF="node15.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html404"
+  HREF="node21.html">Alignment without an initial</A>
+ &nbsp; <B>  <A NAME="tex2html412"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00370000000000000000">
+Protein domain databases</A>
+</H1>
+
+<P>
+The program PDBC may be used to output a set of STAMP readable
+domain descriptions.  Given a list of four letter brookhaven
+codes and an optional set of chains.  This will only work if you have
+a suitable `pdb.directories' file.  See the chapter on installation for details
+on how to do this.
+
+<P>
+<PRE>
+pdbc -d 2hhba &gt;! globin_fold.domains
+pdbc -d 2hhbb &gt;&gt; globin_fold.domains
+pdbc -d 4mbn  &gt;&gt; globin_fold.domains
+pdbc -d 1lh1  &gt;&gt; globin_fold.domains
+pdbc -d 1cola &gt;&gt; globin_fold.domains
+pdbc -d 1cpca &gt;&gt; globin_fold.domains
+</PRE>
+
+<P>
+will produce the following output (ignoring comments, which are specified by a `%`
+in column 0):
+
+<P>
+<PRE>
+/(PDB PATH)/pdb2hhb.ent 2hhba { CHAIN A }
+/(PDB PATH)/pdb2hhb.ent 2hhbb { CHAIN B }
+/(PDB PATH)/pdb4mbn.ent 4mbn { ALL }
+/(PDB PATH)/pdb1lh1.ent 1lh1 { ALL }
+/(PDB PATH)/pdb1col.ent 1cola { CHAIN A }
+</PRE>
+
+<P>
+Where (PDB PATH) denotes the location of the relevant PDB file on your 
+system.   Note that your PDB files may be called (code).pdb instead, or
+may follow some other convention.  This is OK, see Chapter 5 (installation) for
+details as to setting this up.
+<BR>
+<BR>
+Note that there doesn't need to be a filename in the domain file.  One 
+can merely leave it as `Unknown` or some other string (i.e. not empty 
+spaces), and the programs will try and find where the file corresonding 
+to the four letter code is one your system.  In other words, the files 
+given in this distribution should work on your system, provided that
+you have all the PDB files.
+<BR>
+<BR>
+Note that PDBC can be used to probe information about a PDB entry by
+using the `-q' option.  Try it and see.   This is a good test of whether 
+STAMP has been set up properly on your system.  If you just want to test
+where STAMP is looking for PDB and DSSP files, then use the `-m' (minimal)
+options.  This just reports PDB/DSSP files if found and exits.
+<BR>
+<BR>
+STAMP database comparisons are computationally intensive, so it is prudent
+to avoid comparisons that are redundant (e.g. multiple mutants or binding studies
+of the same protein, T4 lysozyme for example).
+<BR>
+<P>
+The STAMP distribution
+contains a series of non-redundant databases derived by a parsing of the
+SCOP database.  These are located in the `STAMPDIR' directory. The files are
+derived from SCOP release 1.75. The files were created using the scop2stamp
+program, which can be found in the `bin/' directory of the STAMP installation.
+Running `scop2stamp' without arguments will list the options that this program accepts.
+<BR>
+<BR><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT">Domain database</TD>
+<TD ALIGN="CENTER">N</TD>
+<TD ALIGN="LEFT">Description</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop.dom</TD>
+<TD ALIGN="CENTER">109747</TD>
+<TD ALIGN="LEFT">All PDB domains classified in SCOP</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_species.dom</TD>
+<TD ALIGN="CENTER">13816</TD>
+<TD ALIGN="LEFT">One representative per species of each SCOP protein.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_prot.dom</TD>
+<TD ALIGN="CENTER">9621</TD>
+<TD ALIGN="LEFT">One representative of each SCOP protein</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_fam.dom</TD>
+<TD ALIGN="CENTER">3883</TD>
+<TD ALIGN="LEFT">One representative of each SCOP family</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_supf.dom</TD>
+<TD ALIGN="CENTER">1950</TD>
+<TD ALIGN="LEFT">One representative of each SCOP superfamily</TD>
+</TR>
+<TR><TD ALIGN="LEFT">scop_fold.dom</TD>
+<TD ALIGN="CENTER">1190</TD>
+<TD ALIGN="LEFT">One representative of each SCOP fold</TD>
+</TR>
+</TABLE>
+
+<BR>
+The complete set of SCOP domains contains a high degree of redundancy. The amount
+of time required to search it will depend on your particular system but you should
+expect it to take on the order of 20 hours of CPU time on the current generation
+of processors. If you have access to multiple CPUs, it is possible to divide
+the database into subsets, search the individual subsets in parallel on multiple
+CPUs, and then aggregate the search outputs into a single results file which
+can be filtered using SORTTRANS in the usual way.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html413"
+  HREF="node23.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html409"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html403"
+  HREF="node21.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html411"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html414"
+  HREF="node23.html">Generating transformed coordinates using</A>
+<B> Up:</B> <A NAME="tex2html410"
+  HREF="node15.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html404"
+  HREF="node21.html">Alignment without an initial</A>
+ &nbsp; <B>  <A NAME="tex2html412"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

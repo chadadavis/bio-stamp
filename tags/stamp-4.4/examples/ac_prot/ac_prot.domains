@@ -1,0 +1,10 @@
+./pdb1cms.ent 1cmsN { A   1 _ to A 175 _ }
+./pdb1cms.ent 1cmsC { A 176 _ to A 323 _ }
+./pdb4ape.ent 4apeN { A  -2 _ to A 174 _ }
+./pdb4ape.ent 4apeC { A 175 _ to A 326 _ }
+./pdb3app.ent 3appN { A   1 _ to A 174 _ }
+./pdb3app.ent 3appC { A 175 _ to A 323 _ }
+./pdb2apr.ent 2aprN { A   1 _ to A 178 _ }
+./pdb2apr.ent 2aprC { A 179 _ to A 325 _ }
+./pdb4pep.ent 4pepN { A   1 _ to A 174 _ }
+./pdb4pep.ent 4pepC { A 175 _ to A 326 _ }

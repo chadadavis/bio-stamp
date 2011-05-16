@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Generating a set of superimposed structues</TITLE>
+<META NAME="description" CONTENT="Generating a set of superimposed structues">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node21.html">
+<LINK REL="previous" HREF="node19.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node21.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html389"
+  HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html385"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html379"
+  HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html387"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html390"
+  HREF="node21.html">Alignment without an initial</A>
+<B> Up:</B> <A NAME="tex2html386"
+  HREF="node15.html">Worked examples</A>
+<B> Previous:</B> <A NAME="tex2html380"
+  HREF="node19.html">Using SCAN mode as</A>
+ &nbsp; <B>  <A NAME="tex2html388"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00350000000000000000">
+Generating a set of superimposed structues</A>
+</H1>
+
+<P>
+The TRANSFORM program included in the STAMP package can be used to generate
+sets of superimposed structures from the output of a STAMP multiple alignment run.
+For example, the output from the multiple alignment in the previous section can
+be fed into TRANSFORM as follows:
+
+<P>
+<PRE>
+transform -f ac_prot.9 -g -o ac_prot.pdb
+</PRE>
+
+<P>
+This will read in the files, transform the coordinates and save them to
+the file ac_prot.pdb (with each chain labelled starting with a different
+letter). 
+
+<P>
+<BR><HR>
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

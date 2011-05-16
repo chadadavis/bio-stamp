@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Sequence format</TITLE>
+<META NAME="description" CONTENT="Sequence format">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node35.html">
+<LINK REL="previous" HREF="node33.html">
+<LINK REL="up" HREF="node31.html">
+<LINK REL="next" HREF="node35.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html564"
+  HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html560"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html554"
+  HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html562"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html565"
+  HREF="node35.html">Multiple alignment format</A>
+<B> Up:</B> <A NAME="tex2html561"
+  HREF="node31.html">Input and Output format</A>
+<B> Previous:</B> <A NAME="tex2html555"
+  HREF="node33.html">Transformations</A>
+ &nbsp; <B>  <A NAME="tex2html563"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00430000000000000000">
+Sequence format</A>
+</H1>
+
+<P>
+When necessary, STAMP programs read sequence information in  NBRF (PIR) 
+    format.  For example, user defined secondary structure assignment 
+    might be supplied in a file that looks like:
+<BR>
+<P>
+<PRE>
+    &gt;Tonin
+    Tonin secondary structure  Author's assignments
+    ----EEEEE-----EEEEEE-- &lt;etc.&gt; --HHHH---*
+    &gt;Kallikrien
+    Kallikrien secondary structure -- visual inspection
+    ----EEEEEEEE---E-EEEEE--- &lt;etc.&gt; --GGHHHH---*
+    &gt;SGprotease
+    S. Griseus protease secondary structure.
+    ----EEEEE---EEEE-EEEEEEEE--- &lt;etc.&gt; --GGHGHG---*
+</PRE>
+
+<P>
+This is essentially NBRF (PIR) format.  Note the position of the asterix.  
+    Comments must be limited to the single line between the <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">identifier and 
+    the start of the sequence string.
+
+<P>
+<BR><HR>
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

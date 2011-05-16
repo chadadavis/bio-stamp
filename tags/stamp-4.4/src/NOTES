@@ -1,0 +1,19 @@
+cl = get_clust(matrix, ids, ndomain, noc_parms);
+
+matrix: input pairwise Sc score matrix
+
+treefit
+
+(domain, ndomain, cl[i], &score, &rms, &length, &nfit, Pij,
+		 Dij, dist, Pijp, 1, 0, parms)
+
+cl[i]: cluster i
+score: ? (scalar)
+rms: 
+length 
+nfit
+These are all scalars:
+Pij
+Dij
+dist
+Pijp

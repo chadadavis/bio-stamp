@@ -1,0 +1,459 @@
+#!/usr/bin/perl
+
+# Copyright 2010 Tom Walsh
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 1, or (at your option) any
+# later version.
+#
+# The libraries HTTP::Lite, Log::Log4perl and Object::Tiny are bundled with 
+# this script for convenience. These libraries are copyright of their respective 
+# authors, are free software and are redistributed under the same terms as Perl 
+# itself. 
+
+
+use strict;
+use warnings;
+use Carp;
+use FileHandle;
+use FindBin qw($Bin);
+use Getopt::Long;
+use Getopt::Std;
+use Pod::Usage;
+
+use lib "$Bin/../perl/lib";
+use DSSP::File;
+use HTTP::Lite;
+use Log::Log4perl qw(:easy);
+use PDB::Entry;
+use SCOP::Lite::Database;
+use STAMP::FileFinder;
+use STAMP::Tools;
+
+Log::Log4perl->easy_init(
+    {
+        level  => $INFO,
+        layout => "%% %c %m\n",
+        file => 'STDOUT',
+    }
+);
+my $log = Log::Log4perl->get_logger("");
+
+# Hash of domain descriptors, key by domain length.
+my %descriptor;
+
+my $check_pdb = 0;
+my $debug     = 0;
+my $opt_domain_list;
+my $help;
+my $domain_file;
+my $omit_nodes;
+my $use_scop_level;
+my $test       = 0;
+my $require_ss = 0;
+my $verbose    = 0;
+my $release;
+
+if ( @ARGV == 0 ) {
+    pod2usage( -verbose => 1 );
+}
+
+print "% $0 ".join(q{ },@ARGV),"\n";
+GetOptions(
+    'debug!'     => \$debug,
+    'pdb-check!' => \$check_pdb,
+    'domains=s'  => \$opt_domain_list,  # Specify domain_file of domains
+    'help'       => \$help,             # Print help
+    'file=s'     => \$domain_file,      # Read domain_file of domains from file.
+    'omit-nodes=s' => \$omit_nodes
+    ,    # Omit specified SCOP nodes -oi will omit low resolution structures
+    'scop-level=s' => \$use_scop_level
+    ,    # Output representative domains for the specified level in SCOP.
+    'test'      => \$test,
+    'release=s' => \$release,
+    'require-ss' =>
+      \$require_ss,   # Require presence of secondary structure in the DSSP file
+    'verbose' => \$verbose,
+);
+
+if ($debug) {
+    $log->level($TRACE);
+}
+if ($help) {
+    pod2usage( -verbose => 1 );
+}
+
+# STAMP::FileFinder
+if ( !$ENV{STAMPDIR} ) {
+    die <<"ERR";
+The STAMPDIR environment variable is not defined. It should point to the defs
+subdirectory of the STAMP installation directory
+ERR
+}
+
+# STAMP::FileFinder objects for finding PDB/DSSP files using the STAMP
+# .directories files
+my %finder;
+for my $type (qw(pdb dssp)) {
+    my $dirfile = "$ENV{STAMPDIR}/$type.directories";
+    if (
+        !(
+            $finder{ uc $type } =
+            eval { STAMP::FileFinder->new( dirfile => $dirfile ) }
+        )
+      )
+    {
+       die "Error reading directories file $dirfile\n";
+    }
+}
+
+my $SCOPDatabase;
+
+# Map of acceptable arguments for the --scop-level option.
+my %subset_map = (
+    class       => 'cl',
+    fold        => 'cf',
+    superfamily => 'sf',
+    family      => 'fa',
+    protein => 'dm',
+    species => 'sp',
+);
+my %subsets = reverse %subset_map;
+
+if ( !caller ) {
+    main(@ARGV);
+}
+
+sub main {
+    if ( !$release ) {
+        die "No SCOP release specified (use --release NUMBER)\n";
+    }
+
+    # Get the SCOP classification file from the SCOP website.
+    get_scop($release);
+
+    # Make a list of the SCOP domains for which we want to create descriptors.
+    my $domains = make_domain_list();
+    print '% SCOP release: '.$SCOPDatabase->release,"\n";
+    print '% Number of domains to be processed: '.scalar( @{$domains} ),"\n";
+
+    # Make a list of SCOP nodes to be omitted from the database.
+    my $omit = q{};
+    if ($omit_nodes) {
+        $omit = join q{|}, split /,/, $omit_nodes;
+        $omit =~ s/\./\\./g;
+        print "% Omitting structures from node(s): $omit_nodes\n";
+    }
+    for my $domain ( @{$domains} ) {
+
+        # If a list of domains hasn't been defined using --domains,
+        #  then we're going to make descriptors for the whole of SCOP.
+        #  Check that the domain isn't in one of the nodes to be
+        #  omitted, or is a non-PDB structure, or is a multichain
+        #  domain.
+        if ( !$opt_domain_list ) {
+            my $domid = $domain->domid;
+            if ( $omit_nodes && $domain->sccs =~ /^($omit)/ ) {
+                print "% Omitting domains from classes: $omit\n";
+                next;
+            }
+            if ( substr( $domid, 1, 1 ) eq 's' ) {
+                print "% Omitting structure not in PDB: $domid\n";
+                next;
+            }
+            if ( substr( $domid, -2, 1 ) eq q{.} ) {
+                print "% Omitting multichain domain $domid\n";
+                next;
+            }
+        }
+        if ( my ( $domain_desc, $nresidues ) = domain2descriptor($domain) ) {
+
+            # Bin the descriptors by domain size
+            push @{ $descriptor{$nresidues} }, $domain_desc;
+        }
+    }
+
+    # Print the list of descriptors, sorted by domain length.
+    for my $n ( sort { $a <=> $b } keys %descriptor ) {
+        for my $desc ( @{ $descriptor{$n} } ) {
+            print "$desc\n";
+        }
+    }
+    print "% Done.\n";
+    return;
+}
+
+# Read the list of SCOP domains for which we want to create descriptors.
+sub make_domain_list {
+    my $domains;
+    my $domain_list = [];
+    if ($opt_domain_list) {
+        # Get the list of domains from the --domains argument.
+        $domain_list = [ split /,/, $opt_domain_list ];
+    }
+    elsif ($domain_file) {
+        # Read the list of domains from a file
+        open my $LIST, '<', $domain_file
+          or croak("cannot open domain file $domain_file\n");
+        while (<$LIST>) {
+
+            # Skip anything that doesn't look like a SCOP sid.
+            if ( !/^d\d\w{5}/ ) {
+                next;
+            }
+            chomp;
+            push @{$domain_list}, $_;
+        }
+        close $LIST;
+    }
+    elsif ($use_scop_level) {
+        # Create a list of representative domains for the given level of the
+        # SCOP hierarchy.
+        if ( exists $subset_map{$use_scop_level} ) {
+            $domain_list = get_astral_subset( $subset_map{$use_scop_level} );
+        }
+        else {
+            die "unknown subset type: $use_scop_level. possible subsets are: "
+              . join( q{ }, keys %subset_map );
+        }
+    }
+
+    # Now we a list of domains so load them from SCOP.
+    $SCOPDatabase = SCOP::Lite::Database->new(
+        file        => scop_cla_file($release),
+        domain_list => $domain_list,
+    );
+
+    return $SCOPDatabase->domains;
+}
+
+# Turn a SCOP domain into a STAMP descriptor
+# Returns the domain descriptor and the length of the domain if the descriptor
+# has been created. Otherwise it returns an empty list.
+# nresidues = 0 if the descriptor was not checked against a PDB file.
+sub domain2descriptor {
+    my $domain = shift;
+    my $pdbid  = $domain->pdbid;
+    my %file;
+    if ($check_pdb) {
+
+        # Can we find PDB/DSSP files for the domain?
+        for my $type (qw(PDB DSSP)) {
+            $file{$type} = $finder{$type}->find($pdbid);
+            if ( !$file{$type} ) {
+                $log->debug("No $type file found for $pdbid");
+            }
+        }
+    }
+
+    # STAMP coordinate descriptor.
+    my $coord_desc;
+
+    # Number of residues in the domain.
+    my $nresidues = 0;
+    if ( $check_pdb && $file{PDB} ) {
+        my $dssp_entry;
+        if ( $file{DSSP} ) {
+            unless ( $dssp_entry = eval { DSSP::File->new( $file{DSSP} ) } ) {
+                $log->error("Error reading DSSP file $file{DSSP}");
+            }
+
+        }
+        my $pdb_entry = eval { PDB::Entry->new( $file{PDB} ) };
+        if ($pdb_entry) {
+            unless (
+                ( $coord_desc, undef, $nresidues ) = eval {
+                    STAMP::Tools::check_descriptor( $domain, $pdb_entry,
+                        $dssp_entry, { -require_ss => $require_ss } );
+                }
+              )
+            {
+                $log->error(
+                    'ERROR cannot check descriptor for ' . $domain->domid );
+            }
+        }
+        else {
+            $log->error("ERROR reading PDB entry $file{PDB}");
+        }
+    }
+    else {
+
+        # Make a descriptor using only the SCOP domain definition.
+        $coord_desc = STAMP::Tools::make_descriptor($domain);
+    }
+    my $domain_desc;
+    if ($coord_desc) {
+
+        # Make the full domain descriptor.
+
+        # nresidues is only defined if we have used a PDB file.
+        $nresidues = 0 unless defined $nresidues;
+        $domain_desc = sprintf "$pdbid %s %s",
+          substr( $domain->domid, 1 ), $coord_desc;
+        return ( $domain_desc, $nresidues );
+    }
+    else {
+
+        # Cannot make a descriptor for this domain.
+        $log->warn("Cannot create descriptor for:");
+        $log->warn( STAMP::Tools::descriptor($domain) );
+    }
+    return ();
+}
+
+# Returns a domain_file of the domain identifiers for the specified ASTRAL subset.
+sub get_astral_subset {
+    my ($subset) = @_;
+    if ( !exists $subsets{$subset} ) {
+        die "unknown subset type $subset\n";
+    }
+    my $file = "astral-scopdom-seqres-sel-gs-sc-$subset-$release.id";
+    my $url = "http://astral.berkeley.edu/scopseq-$release/$file"; 
+    if (!-e $file || -z $file){
+        print "% fetching ASTRAL file $url\n";
+        open my $ASTRAL_FILE, '>', $file or die "$!: $file";
+# Split the file into individual lines, filtering out any domain id that doesn't match
+# the d\d\w{5} pattern since these will be multichain domains.
+        local $\ = "\n";
+        for my $domain (grep { /^d\d\w{5}$/ } split /\n/, fetch($url)){
+            print { $ASTRAL_FILE } $domain; 
+        }
+        close $ASTRAL_FILE;
+    }
+    open my $ASTRAL_FILE, '<', $file or die "$!: $file";
+    my $astral_list = [ <$ASTRAL_FILE> ];
+    chomp @{ $astral_list };
+    return $astral_list;
+}
+
+# Fetches the required URL.
+sub fetch {
+    my $url  = shift;
+    my $http = HTTP::Lite->new;
+    my $req;
+    if (($req = $http->request($url)) && $req eq '200') { 
+        return $http->body;
+    }
+    else {
+        $log->fatal("Unable to get URL $url");
+        die "\n";
+    } 
+}
+
+# SCOP classification file name.
+sub scop_cla_file {
+    return "dir.cla.scop.txt_$release";
+}
+
+# Download the SCOP classification (.cla) file from the SCOP website.
+sub get_scop {
+    my $file = scop_cla_file();
+    my $url  = "http://scop.mrc-lmb.cam.ac.uk/scop/parse/$file";
+    if ( !( -e $file ) && !$test ) {
+        open my $OUT, '>', $file or croak "$!: $file";
+        print {$OUT} fetch($url);
+        close $OUT;
+    }
+    return $file;
+}
+
+=head1 NAME
+
+scop2stamp - create STAMP domain databases from SCOP releases.
+
+=head1 DESCRIPTION
+
+This program generates STAMP domain descriptors for SCOP domains.
+Descriptors can be generated for all domains in SCOP or for subsets
+specified by domain_files of domains or by excluding specified SCOP nodes.
+See below for more details.
+
+Output is sorted by domain size.
+Output can be to one or more output files (use -n to specify number
+of files).
+
+=head1 USAGE
+
+scop2stamp --release NUMBER  [options]
+
+=head1 SYNOPSIS
+
+ # Generate database of STAMP domain descriptors for every domain in SCOP 
+ # release 1.75.
+ scop2stamp --release 1.75 
+                           
+ # Create STAMP descriptors for domains d2rhe__ and d1fltx_
+ scop2stamp --release 1.75 --domains d2rhe__,d1fltx_ 
+                                      
+
+=head1 OPTIONS
+
+=over 8
+
+=item B<--domains domain1,domain2,..>
+
+Specify domain_file of SCOP domain identifiers. Otherwise descriptors will be
+output for all domains in SCOP.
+
+=item B<--file FILE>
+
+Read domain_file of domains from FILE. One domain identifier per line.
+
+=item B<--pdb-check>
+
+Omit the check of STAMP domain descriptors against the corresponding PDB files. 
+This check ensures that the PDB file contains CA atoms for the residues at the
+start and end of the domain. STAMP will fail to load the domain if these
+atoms are missing. 
+
+This check makes the program much slower.
+
+=item B<--omit-nodes sccs1,sccs2,...>
+
+Omit domains whose SCCSs matches one of the specified SCCSs. For example,
+-o i.12 will omit incomplete structures.
+
+=item B<--scop-level level>
+
+For the specified level of SCOP, output a representative domain for each SCOP node
+at that level, e.g. '--scop-level fold' will output a domain_file containing a domain for each fold
+in SCOP. The representative domains are selected using lists from the ASTRAL database (astral.berkeley.edu).
+Valid levels are: class, fold, superfamily and family.
+
+=item B<--verbose>
+
+Verbose output.
+
+=head1 DEPENDENCIES
+
+DSSP::File;
+HTTP::Lite;
+Log::Log4perl
+Object::Tiny
+PDB::Entry;
+SCOP::Lite
+STAMP::FileFinder
+STAMP::Tools
+
+=head1 AUTHOR
+
+Tom Walsh (walshtp@gmail.com)
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright 2010 Tom Walsh
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 1, or (at your option) any
+later version.
+
+The libraries HTTP::Lite, Log::Log4perl and Object::Tiny are bundled with 
+this script for convenience. These libraries are copyright of their respective 
+authors, are free software and are redistributed under the same terms as Perl 
+itself. 
+
+=back
+
+=cut

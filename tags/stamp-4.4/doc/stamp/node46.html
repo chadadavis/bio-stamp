@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>SORTTRANS</TITLE>
+<META NAME="description" CONTENT="SORTTRANS">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node47.html">
+<LINK REL="previous" HREF="node45.html">
+<LINK REL="up" HREF="node40.html">
+<LINK REL="next" HREF="node47.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html734"
+  HREF="node47.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html730"
+  HREF="node40.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html724"
+  HREF="node45.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html732"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html735"
+  HREF="node47.html">TRANSFORM</A>
+<B> Up:</B> <A NAME="tex2html731"
+  HREF="node40.html">Summary of parameters for</A>
+<B> Previous:</B> <A NAME="tex2html725"
+  HREF="node45.html">DSTAMP</A>
+ &nbsp; <B>  <A NAME="tex2html733"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00526000000000000000">
+SORTTRANS</A>
+</H2>
+
+<P>
+This program takes the output from a scan, and cleans and sorts the
+    output.  It removes repeated transformations by a simple least 
+    squares comparison of the matrices and vectors for those 
+    transformations which have the same identifier.
+<BR>    
+<BR>
+The format is:
+<BR>
+<P>
+<PRE>
+    sorttrans -f &lt;scan output file&gt; -s &lt;keyword&gt; &lt;cutoff&gt; [-t -i]
+</PRE>
+
+<P>
+-f reads output from STAMP scanning, -s tells the program how to 
+    sort the output.  The keyword tells which method to use.  There
+    are 8 possible keywords:
+<BR>
+<P>
+<PRE>
+    Sc              sort by Sc
+    rms             RMS deviaition
+    nfit            number of fitted atoms
+    len             alignment length
+    frac            nfit/len
+    q_frac          nfit/q_len (q_len = length of query structure)
+    d_frac          nfit/d_len (d_len = length of database structure)
+    n_sec           number of equivalent secondary structure elements
+    seq_id          percent  sequence identity
+    sec_id          percent secondary structure identity
+</PRE>
+
+<P>
+sorted transformations are written to the standard output.
+    
+<BR>
+The option -i ==<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$"> identifiers only.  Consider only the best
+    transformation per identifier.
+<BR>    
+<BR>
+The option -n ==<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$"> ignore domain descriptors.  This means
+    that only the filename and the transformations are used.  This is
+    useful if you have different domain names attributed to the same 
+    region of the structure.  
+
+<P>
+<BR><HR>
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

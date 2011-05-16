@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Describing domain structures</TITLE>
+<META NAME="description" CONTENT="Describing domain structures">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node33.html">
+<LINK REL="previous" HREF="node31.html">
+<LINK REL="up" HREF="node31.html">
+<LINK REL="next" HREF="node33.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html540"
+  HREF="node33.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html536"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html530"
+  HREF="node31.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html538"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html541"
+  HREF="node33.html">Transformations</A>
+<B> Up:</B> <A NAME="tex2html537"
+  HREF="node31.html">Input and Output format</A>
+<B> Previous:</B> <A NAME="tex2html531"
+  HREF="node31.html">Input and Output format</A>
+ &nbsp; <B>  <A NAME="tex2html539"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00410000000000000000">
+Describing domain structures</A>
+</H1>
+
+<P>
+Every entry in a STAMP input file is called a `domain'.  This term
+is a bit of a misnomer, since `domains' needn't be single domains
+(though it is usually best to do structure comparisons at the domain level).
+<BR>
+<BR>
+The problem of defining domains such that a wide variety of 
+possibilities may be used (e.g. all the coordinates in a PDB file,
+one  chain, bits of one chain, two chains, one chain and bits of
+another, etc) is solved by defining a domain by: 1) a file, 2) an
+identifier, and 3) a list of `objects', from the file, to be
+included in the domain.  An object is defined as a run of <!-- MATH
+ ${\rm C}_{\alpha}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="${\rm C}_{\alpha}$">
+coordinates, and a domain may contain more than one object.
+<BR>
+<BR>
+Domains are stored in STAMP in files which may contain one or
+more of such domain definitions.
+<BR>
+<BR>
+The format of these files must be as follows:
+<BR>
+<P>
+<PRE>
+&lt;file name&gt; &lt;identifier label&gt; { &lt;objects&gt; }
+</PRE>
+
+<P>
+or,
+<BR>
+<P>
+<PRE>
+&lt;file name&gt; &lt;identifier label&gt; { &lt;objects&gt; [RETURN]
+R11 R12 R13   V1
+R21 R22 R23   V2
+R31 R32 R33   V3 }
+</PRE>
+
+<P>
+<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">file name<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$"> is the full name (including path) of the PDB file in
+which the coordinate information is to be found.  If you don't know the 
+precise location of the file, then just call it UNK or something (i.e. 
+not a blank), and the programs should be able to find the appropriate PDB 
+file using the domain identifier field. Note that finding the PDB file
+using the identifier relies on a set of rules defined in the 
+pdb.directories configuration file (see Chapter 5 for details of
+the location of the file, its format and how STAMP uses it to locate
+PDB files).
+<BR>
+<P>
+<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">identifier label<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$"> is a short name to be used by the program. 
+eg. 4mbn1. The domain identifiers in a STAMP input file must be unique.
+<BR>
+<P>
+DSSP secondary structure files can only be found by STAMP by using
+the domain identifier in a similar fashion as described for PDB files
+above. Again, see Chapter 5 for details of how this works. 
+
+<BR><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">objects<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$"> are coordinate descriptions, and may be one of three types:
+
+<P>
+<PRE>
+1.  ALL
+</PRE>
+all <!-- MATH
+ ${\rm C}_{\alpha}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="${\rm C}_{\alpha}$">'s from the file.
+<BR>
+<P>
+<PRE>
+2. CHAIN X
+</PRE>
+only <!-- MATH
+ ${\rm C}_{\alpha}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="${\rm C}_{\alpha}$">'s labeled as chain X.
+<BR>
+<P>
+<PRE>
+3.  &lt;chain1&gt; &lt;number1&gt; &lt;insert1&gt; to &lt;chain2&gt; &lt;number2&gt; &lt;insert2&gt;
+e.g.  B 20 _ to B 67 P
+</PRE>
+only <!-- MATH
+ ${\rm C}_{\alpha}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="${\rm C}_{\alpha}$">'s between (and including) the two full brookhaven
+<BR>
+residue names (chain, number, insertion code;
+the `_` character denotes a space)
+<BR>
+<BR>
+N.B. THERE MUST BE AT LEAST ONE SPACE BETWEEN THE VARIOUS FIELDS.
+Combinations of these are allowed within one domain, e.g. ` CHAIN A B 1 
+_ to B 65 _ `
+<BR>
+<BR>
+R11 <IMG
+ WIDTH="24" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$\rightarrow$"> R33 and V1 <IMG
+ WIDTH="24" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img49.png"
+ ALT="$\rightarrow$"> V3 are a rotation matrix and translation vector, respectively.
+<BR>
+<BR>
+Thus, a full description of three domains might look something
+like this:
+<BR>
+<P>
+<PRE>
+/data/newpdb/pdb/pdb1ton.ent 1ton { ALL 
+0.9876 0.34 0.543  19.23
+1.0  2.34   0.98473332  1.0
+0.023  0.94 4.345     20.0 }
+/data/newpdb/pdb/pdb2kai.ent 2kai_Kallikrien { CHAIN X CHAIN Y }
+/data/newpdb/pdb/pdb3sgb.ent 3sgbe_SGprotease { E 20 _ to E 160 P 
+1.0 0.0 0.0   0.0
+0.0 1.0 0.0   0.0
+0.0 0.0 1.0   0.0 }
+</PRE>
+
+<P>
+Note the spaces.  There must be spaces separating each keyword or 
+datum to be read, even between the braces.  For example:
+
+<P>
+<PRE>
+    /data/newpdb/pdb/pdb3sgb.ent 3sgb_protease{E 20 _ to E 160P}
+</PRE>
+
+<P>
+would not be allowed.
+<BR>    
+<BR>
+In the second domain (Kallikrein) the transformation will be set equal
+    to the identity matrix with a translation of zero, since none has been 
+    supplied.
+<BR>    
+<BR>
+The domains must be listed at the start of a file (ie. nothing must
+    come before them in a file), but anything may come afterwards, 
+    provided that it contains no braces (ie. { or }) unless they are on lines 
+    containing `%` in the first column.
+<BR>    
+<BR>
+It is possible to <EM>reverse</EM> the direction of an object in a domain
+    description.  For example, if one has two objects,
+    one can reverse the direction of one or more of these by placing the
+    word "REVERSE" in front of the object, e.g.:
+
+<P>
+<PRE>
+    /data/newpdb/pdb/pdb4mbn.ent { REVERSE _ 1 _ to _ 20 _ _ 21 _ to _ 120 _ }
+</PRE>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html540"
+  HREF="node33.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html536"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html530"
+  HREF="node31.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html538"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html541"
+  HREF="node33.html">Transformations</A>
+<B> Up:</B> <A NAME="tex2html537"
+  HREF="node31.html">Input and Output format</A>
+<B> Previous:</B> <A NAME="tex2html531"
+  HREF="node31.html">Input and Output format</A>
+ &nbsp; <B>  <A NAME="tex2html539"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

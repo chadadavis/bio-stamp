@@ -1,0 +1,58 @@
+\contentsline {chapter}{\numberline {1}Introduction and Overview}{4}
+\contentsline {section}{\numberline {1.1}Preface to Version 4.4 - Tom Walsh}{4}
+\contentsline {section}{\numberline {1.2}Preface to Version 4.2 - Rob Russell}{5}
+\contentsline {section}{\numberline {1.3}Overview}{7}
+\contentsline {section}{\numberline {1.4}Background}{7}
+\contentsline {section}{\numberline {1.5}A brief description of the package}{10}
+\contentsline {subsection}{\numberline {1.5.1}Initial superimposition}{10}
+\contentsline {subsection}{\numberline {1.5.2}Pairwise comparisons and alignments (PAIRWISE)}{11}
+\contentsline {subsection}{\numberline {1.5.3}Multiple alignment (TREEWISE)}{11}
+\contentsline {subsection}{\numberline {1.5.4}Structure database scanning (SCAN)}{12}
+\contentsline {subsection}{\numberline {1.5.5}Displaying STAMP output (VER2HOR, DSTAMP, GSTAMP)}{15}
+\contentsline {section}{\numberline {1.6}Some comments on interpreting structural similarities}{16}
+\contentsline {section}{\numberline {1.7}The programs contained within the package}{17}
+\contentsline {chapter}{\numberline {2}Worked examples}{20}
+\contentsline {section}{\numberline {2.1}Setup of examples}{20}
+\contentsline {section}{\numberline {2.2}Multiple alignment using an initial multiple sequence alignment}{21}
+\contentsline {section}{\numberline {2.3}Database Scanning}{25}
+\contentsline {section}{\numberline {2.4}Using SCAN mode as the starting point for multiple alignment}{28}
+\contentsline {section}{\numberline {2.5}Generating a set of superimposed structues}{30}
+\contentsline {section}{\numberline {2.6}Alignment without an initial multiple alignment using ROUGHFIT}{30}
+\contentsline {section}{\numberline {2.7}Protein domain databases}{32}
+\contentsline {section}{\numberline {2.8}Generating transformed coordinates using TRANSFORM}{34}
+\contentsline {section}{\numberline {2.9}Generating averaged coordinates}{35}
+\contentsline {section}{\numberline {2.10}Displaying/processing the output}{37}
+\contentsline {subsection}{\numberline {2.10.1}POSTSTAMP}{37}
+\contentsline {subsection}{\numberline {2.10.2}STAMP\_CLEAN}{38}
+\contentsline {subsection}{\numberline {2.10.3}Displaying text alignments}{38}
+\contentsline {subsection}{\numberline {2.10.4}Pretty Alignments via ALSCRIPT}{40}
+\contentsline {subsection}{\numberline {2.10.5}Pretty Structures via MOLSCRIPT}{41}
+\contentsline {chapter}{\numberline {3}Input and Output format for all programs}{44}
+\contentsline {section}{\numberline {3.1}Describing domain structures}{44}
+\contentsline {section}{\numberline {3.2}Transformations}{47}
+\contentsline {section}{\numberline {3.3}Sequence format}{47}
+\contentsline {section}{\numberline {3.4}Multiple alignment format}{48}
+\contentsline {section}{\numberline {3.5}Output from STAMP database scanning mode}{50}
+\contentsline {section}{\numberline {3.6}Output to standard output or log file}{51}
+\contentsline {chapter}{\numberline {4}Summary of STAMP parameters}{53}
+\contentsline {section}{\numberline {4.1}Main program (STAMP)}{53}
+\contentsline {section}{\numberline {4.2}Summary of parameters for other programs}{63}
+\contentsline {subsection}{\numberline {4.2.1}PDB checker (PDBC)}{63}
+\contentsline {subsection}{\numberline {4.2.2}PDBSEQ}{64}
+\contentsline {subsection}{\numberline {4.2.3}ALIGNFIT}{65}
+\contentsline {subsection}{\numberline {4.2.4}VER2HOR}{66}
+\contentsline {subsection}{\numberline {4.2.5}DSTAMP}{66}
+\contentsline {subsection}{\numberline {4.2.6}SORTTRANS}{68}
+\contentsline {subsection}{\numberline {4.2.7}TRANSFORM}{68}
+\contentsline {subsection}{\numberline {4.2.8}PICKFRAME}{69}
+\contentsline {subsection}{\numberline {4.2.9}MERGETRANS \& EXTRANS}{70}
+\contentsline {subsection}{\numberline {4.2.10}MERGESTAMP}{71}
+\contentsline {subsection}{\numberline {4.2.11}AVESTRUC}{71}
+\contentsline {subsection}{\numberline {4.2.12}GSTAMP}{72}
+\contentsline {subsection}{\numberline {4.2.13}STAMP\_CLEAN}{74}
+\contentsline {subsection}{\numberline {4.2.14}Converting alignment formats using ACONVERT}{74}
+\contentsline {chapter}{\numberline {5}Installation}{75}
+\contentsline {section}{\numberline {5.1}Compiling/running}{75}
+\contentsline {section}{\numberline {5.2}Configuring STAMP}{76}
+\contentsline {section}{\numberline {5.3}Getting other programs}{78}
+\contentsline {chapter}{\numberline {6}Some of our studies involving STAMP}{79}

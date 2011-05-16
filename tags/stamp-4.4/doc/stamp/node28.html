@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Displaying text alignments</TITLE>
+<META NAME="description" CONTENT="Displaying text alignments">
+<META NAME="keywords" CONTENT="stamp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="stamp.css">
+
+<LINK REL="next" HREF="node29.html">
+<LINK REL="previous" HREF="node27.html">
+<LINK REL="up" HREF="node25.html">
+<LINK REL="next" HREF="node29.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html488"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html484"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html478"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html486"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html489"
+  HREF="node29.html">Pretty Alignments via ALSCRIPT</A>
+<B> Up:</B> <A NAME="tex2html485"
+  HREF="node25.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html479"
+  HREF="node27.html">STAMP_CLEAN</A>
+ &nbsp; <B>  <A NAME="tex2html487"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION003103000000000000000">
+Displaying text alignments</A>
+</H2>
+
+<P>
+There are two ways to display STAMP alignments in a horizontal format.
+The first is simply to use ACONVERT to change the STAMP block file format into
+another format such as MSF or Clustal.  The format would be:
+<BR>
+<BR><PRE>
+aconvert -in b -out c &lt; &lt;stamp alignment file&gt;
+</PRE>
+
+<P>
+Where `-out c' denotes Clustal format.
+<BR>
+<BR>
+ACONVERT does not use any of the STAMP specific parts of the alignment (i.e reliable
+structural equivalences, etc.).  There is a program specifically designed for displaying
+these data in a vertical format.  VER2HOR takes a STAMP alignment file and outputs a 
+horizonal text format.  For example, to display the globin alignment, one needs to
+type:
+<BR>
+<P>
+<PRE>
+ver2hor -f globin.5.clean
+</PRE>
+
+<P>
+to give (see examples/globin/globin.5.ver2hor):
+<BR>
+<P>
+<PRE>
+VER2HOR R.B. Russell, 1995
+Prints STAMP alignments in horizontal format
+for quick viewing
+Reading Alignment...
+Blocfile read: Length: 163
+Getting STAMP information...
+6 STAMP fields read in for 163 positions 
+Processing the alignment...
+Output:
+Very reliable =&gt; Pij' &gt;=6 for stretches of &gt;=3
+Less reliable =&gt; Pij' &gt;=4.5 for stretches of &gt;=3
+Post reliable =&gt; All Pij' &gt; stamp_post parameter for stretches &gt;=3
+
+Number               10        20        30        40        50    
+1lh1            gaLTESQAALVKSSWEEfnanipKHTHRFFILVLEIAPAAKDLFSFLkg
+2lhb    pivdtgsvapLSAAEKTKIRSAWAPvystyeTSGVDILVKFFTSTPAAQEFFPKFkg
+1ecd              LSADQISTVQASFDKv    kGDPVGILYAVFKADPSIMAKFTQFag
+4mbn             vLSEGEWQLVLHVWAKveadvaGHGQDILIRLFKSHPETLEKFDRFkh
+2hhbb            vhLTPEEKSAVTALWGKvn  vdEVGGEALGRLLVVYPWTQRFFESFgd
+2hhba             vLSPADKTNVKAAWGKvgahagEYGAEALERMFLSFPTTKTYFPHF  
+
+1lh1_dssp            ----HHHHHHHHHHHHHhhtthhHHHHHHHHHHHHH-GGGGGG-TTTtt
+2lhb_dssp    ---sss------HHHHHHHHHHHHHhhhthhHHHHHHHHHHHHH-GGGGGG-GGGtt
+1ecd_dssp              --HHHHHHHHHHHHTt    tT-HHHHHHHHHHH-HHHHTT-TTTtt
+4mbn_dssp             --HHHHHHHHHHHHHGg--hhhHHHHHHHHHHHHHHHHHGGGG----s
+2hhbb_dssp           ----HHHHHHHHHHHTT--  hhHHHHHHHHHHHHHSGGGGGG-GGG--
+2hhba_dssp            ---HHHHHHHHHHHHHhggghhHHHHHHHHHHHHH-GGGGGG-TTS  
+
+Very similar ----------1111111111111110----0111111111111111111111111--
+Less similar ----------1111111111111110----0111111111111111111111111--
+Post similar ----------1111111111111110----0111111111111111111111111--
+
+&lt;etc.&gt;
+</PRE>
+
+<P>
+The sequences are displayed, as are the DSSP secondary structures and three
+measures of similarity (explained at the top of the output).  
+the display of secondary structures can be suppressed using the option `-sec false';
+a summary of the secondary structures (an average) can be displayed by using the `-secsum true' option. 
+The column width can be modified by using `-columns <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$&lt;$">value<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$&gt;$">'.  The
+remaning parameters are as for DSTAMP (see next section).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html488"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html484"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html478"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html486"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html489"
+  HREF="node29.html">Pretty Alignments via ALSCRIPT</A>
+<B> Up:</B> <A NAME="tex2html485"
+  HREF="node25.html">Displaying/processing the output</A>
+<B> Previous:</B> <A NAME="tex2html479"
+  HREF="node27.html">STAMP_CLEAN</A>
+ &nbsp; <B>  <A NAME="tex2html487"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+gjbarton
+2010-05-10
+</ADDRESS>
+</BODY>
+</HTML>

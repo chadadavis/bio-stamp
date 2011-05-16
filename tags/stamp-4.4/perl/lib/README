@@ -1,0 +1,11 @@
+
+This directory includes copies of the Perl libraries:
+
+HTTP::Lite
+Log::Log4perl
+Object::Tiny. 
+
+These libraries are included for convenience but are NOT copyright of the STAMP authors.
+The libraries are copyright of their respective authors, are free software 
+and are redistributed under the same terms as Perl itself. See the LICENSE file 
+in this directory for the licensing terms for Perl.

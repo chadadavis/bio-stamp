@@ -1,0 +1,149 @@
+/*
+Copyright (1997,1998,1999,2010) Robert B. Russell & Geoffrey J. Barton
+
+This file is part of STAMP.
+
+STAMP is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. A copy of the license
+can be found in the LICENSE file in the STAMP installation directory.
+
+STAMP was developed by Robert B. Russell and Geoffrey J. Barton of
+current addresses:
+
+ Prof. Robert B. Russell (RBR)                      Prof. Geoffrey J. Barton (GJB)
+ Cell Networks, University of Heidelberg            College of Life Sciences
+ Room 564, Bioquant                                 University of Dundee
+ Im Neuenheimer Feld 267                            Dow Street
+ 69120 Heidelberg                                   Dundee DD1 5EH
+ Germany                                            UK
+                                                
+ Tel: +49 6221 54 513 62                            Tel: +44 1382 385860
+ Fax: +49 6221 54 514 86                            FAX: +44 1382 385764
+ Email: robert.russell@bioquant.uni-heidelberg.de   E-mail g.j.barton@dundee.ac.uk
+ WWW: http://www.russell.embl-heidelberg.de         WWW: http://www.compbio.dundee.ac.uk
+
+ All use of STAMP must cite: 
+
+ R.B. Russell and G.J. Barton, "Multiple Protein Sequence Alignment From Tertiary
+  Structure Comparison: Assignment of Global and Residue Confidence Levels",
+  PROTEINS: Structure, Function, and Genetics, 14:309--323 (1992).
+*/
+#include <stdio.h>
+#include "stamp.h"
+
+/* Takes a PDB file, a description of a domain, and a transformation.
+ *  It applies the transformation to the coordinates outputs the 
+ *  corresponding porition of the PDB file in PDB format */
+
+int extract_pdb(FILE *IN, struct brookn start, struct brookn end, int type, 
+	float **R, float *V, int startats, int HETERO, int NUCLEIC, int HOH,
+	char chainlabel, int verbose, char *filename, FILE *OUT) {
+
+	int i,j,k;
+	int begin,ended,endnext;
+	int number;
+	int count;
+	int found;
+
+	char cid,in;
+
+	char *buff;
+	char tmp[10];
+
+	float *coord;
+
+	struct brookn old,this;
+
+	coord=(float*)malloc(3*sizeof(float));
+	buff=(char*)malloc(100*sizeof(char));
+	begin=endnext=count=found=0;
+
+	ended=0; begin=0;
+	while(fgets(buff,99,IN)!=NULL) {
+	   if(strncmp(buff,"ENDMDL",6)==0) ended=1;
+	   buff[strlen(buff)-2]='\0';
+	   if(strncmp(buff,"ATOM  ",6)==0 || strncmp(buff,"HETATM",6)==0) {
+	      /* get chain, number and insertion code */
+	      this.cid=buff[21];
+	      sscanf(&buff[22],"%d",&this.n);
+	      this.in=buff[26];
+	      if(endnext && type==3 && (this.cid!=old.cid || this.in!=old.in || this.n!=old.n)) 
+		 begin=0;
+	      if(!begin && 
+		 ((start.cid==this.cid && start.n==this.n && start.in==this.in && type==3) ||
+		  (start.cid==this.cid && type==2) ||
+		  (type==1) )) {
+		  begin=1; found=1;
+
+	          if(startats) {
+	            fprintf(OUT,"REMARK The following transformation has been applied to the coordinates, taken  \n");
+	            fprintf(OUT,"REMARK  from the orginal PDB file: %40s     \n",filename);
+	            for(i=0; i<3; ++i) {
+		      fprintf(OUT,"REMARK  "); 
+		      for(j=0; j<3; ++j) fprintf(OUT,"%12.5f ",R[i][j]);
+		      fprintf(OUT,"    %12.5f",V[i]); 
+		      for(j=0; j<17; ++j) fprintf(OUT," "); 
+		      fprintf(OUT,"\n");
+	            }
+	            fprintf(OUT,"REMARK"); for(j=0; j<74; ++j) fprintf(OUT," ");
+	            fprintf(OUT,"\n");
+	          }
+	      }
+	      if(type==2 && start.cid!=this.cid && begin) ended=1;
+	      if((!ended && begin && strncmp(buff,"ATOM  ",6)==0) ||
+                 (HETERO && strncmp(buff,"HETATM",6)==0 && 
+		  (strncmp(&buff[17],"HOH",3)!=0 && strncmp(&buff[17],"WAT",3)!=0 && strncmp(&buff[17],"DOD",3)!=0)) ||
+		 (NUCLEIC && strncmp(buff,"ATOM  ",6)==0 &&
+                        (strncmp(&buff[17],"  A",3)==0 || strncmp(&buff[17],"  G",3)==0 ||
+                         strncmp(&buff[17],"  T",3)==0 || strncmp(&buff[17],"  C",3)==0 ||
+                         strncmp(&buff[17],"  U",3)==0)) ||
+		  (HOH==1 && (strncmp(&buff[17],"HOH",3)==0 || strncmp(&buff[17],"WAT",3)==0 || strncmp(&buff[17],"DOD",3)==0))) {
+		 for(i=0; i<3; ++i) {
+		   strncpy(&tmp[0],&buff[30+i*8],8); 
+		   tmp[8]='\0'; 
+		   sscanf(&buff[30+i*8],"%f",&coord[i]);
+		 }
+		 buff[30]='\0';
+		 /* transform coordinates */
+/*		 if(count<10) 
+		    printf("%d: %8.4f %8.4f %8.4f\n",count+1,coord[0],coord[1],coord[2]); */
+		 fmatmult(R,V,&coord,1);
+/*		 if(count<10)
+		    printf("%d: %8.4f %8.4f %8.4f\n",count+1,coord[0],coord[1],coord[2]); */
+		 count++;
+		 if(chainlabel!='\0') buff[21]=chainlabel;
+		 fprintf(OUT,"%s",buff);
+ 		 fprintf(OUT,"%8.3f%8.3f%8.3f",coord[0],coord[1],coord[2]); 
+		 fprintf(OUT,"%s",&buff[54]);
+		 for(i=0; i<(26-strlen(&buff[54])); ++i) fprintf(OUT," ");
+		 fprintf(OUT,"\n");
+	      } 
+	      if(begin && type==3 && end.cid==this.cid && end.n==this.n && end.in==this.in) 
+	          endnext=1;
+	        /* this residing after the last "if" makes the set of type==3 atoms inclusive */
+	      old.cid=this.cid; old.n=this.n; old.in=this.in;
+	   } else if(!ended && verbose==1 && startats==1 && strncmp(buff,"TER   ",6)!=0 && strncmp(buff,"SIGATM",6)!=0) {
+		 fprintf(OUT,"%s",buff);
+		 for(i=0; i<(80-strlen(buff)); ++i) fprintf(OUT," ");
+		 fprintf(OUT,"\n");
+	   } 
+	} 
+	free(buff);
+	if(!found) {
+	   printf("error: begin of sequence not found in PDB file [extract_pdb]\n");
+	   printf("  file %s  region ",filename);	
+	   if(type==1) printf(" all residues\n");
+	   else if(type==2) printf(" chain %c\n",start.cid);
+	   else printf(" %c%d%c to %c%d%c\n",start.cid,start.n,start.in,
+		   end.cid,end.n,end.in);
+	   return -1;
+	} else
+	   return 0;
+}

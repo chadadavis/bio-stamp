@@ -1,0 +1,21 @@
+STAMP - Structural Alignment of Multiple Proteins 
+
+Version 4.4.
+
+Copyright (1997, 1998, 1999, 2010) Robert B. Russell & Geoffrey J. Barton.
+
+Changes in version 4.4.
+
+1. STAMP is now licensed under the GNU General Public License, which differs from
+the license used in previous versions of STAMP. A copy of the license can be found
+in the LICENSE file.
+
+2. The manual has been updated to reflect some minor changes in the STAMP output format.
+
+3. Minor modifications have been made to the source to eliminate the use of obsolete
+header files and allow STAMP to be compiled on Mac OS X. 
+
+4. The bundled SCOP domain databases have been updated to SCOP release 1.75. The program
+(scop2stamp) used to create these databases is included in the distribution.
+
+

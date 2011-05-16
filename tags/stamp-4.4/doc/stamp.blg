@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: stamp.aux
+The style file: unsrt.bst
+Database file #1: stamp.bib
+Warning--empty title in kabsch78
+Warning--empty title in TitlesOn
+Warning--empty journal in TitlesOn
+Warning--empty year in TitlesOn
+You've used 29 entries,
+            1791 wiz_defined-function locations,
+            742 strings with 8962 characters,
+and the built_in function-call counts, 6700 in all, are:
+= -- 629
+> -- 269
+< -- 1
++ -- 102
+- -- 73
+* -- 470
+:= -- 1086
+add.period$ -- 84
+call.type$ -- 29
+change.case$ -- 26
+chr.to.int$ -- 0
+cite$ -- 33
+duplicate$ -- 271
+empty$ -- 647
+format.name$ -- 73
+if$ -- 1452
+int.to.chr$ -- 0
+int.to.str$ -- 29
+missing$ -- 29
+newline$ -- 145
+num.names$ -- 30
+pop$ -- 43
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 109
+stack$ -- 0
+substring$ -- 608
+swap$ -- 37
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 76
+width$ -- 31
+write$ -- 312
+(There were 4 warnings)

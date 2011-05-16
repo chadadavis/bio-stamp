@@ -1,0 +1,26 @@
+
+To install STAMP, run the BUILD script in this directory using:
+
+./BUILD <system-type>
+
+where <system-type> is one of:
+
+linux
+osx 
+dec
+sgi
+sun
+
+The executables will be installed in bin/<system-type>/.
+
+If your system is not one of these, the linux target should
+work on similar systems such as Cygwin, MinGW and FreeBSD,
+although it might require changes to the makefile.linux
+file in the src/ directory.
+
+Version 4.4 (May 2010):  Note that the only operating systems we
+now test are linux and osx.  I'm afraid we can't offer help
+with other operating systems as we don't have the hardware 
+to test on.
+
+
