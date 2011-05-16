@@ -3,22 +3,22 @@
 %  aligned in Russell and Barton, Proteins, 14, 318, 1992
 %
 % Bovine alpha chymotrypsin
-./pdb4cha.ent 4chaa { CHAIN A }
+/data/newpdb/pdb/pdb4cha.ent 4chaa { CHAIN A }
 % Porcine elastase
-./pdb3est.ent 3est { ALL }
+/data/newpdb/pdb/pdb3est.ent 3est { ALL }
 % Bovine trypsin
-./pdb2ptn.ent 2ptn { ALL }
+/data/newpdb/pdb/pdb2ptn.ent 2ptn { ALL }
 % Rat tonin
-./pdb1ton.ent 1ton { ALL }
+/data/newpdb/pdb/pdb1ton.ent 1ton { ALL }
 % Rat mast cell proteinase
-./pdb3rp2.ent 3rp2a { CHAIN A }
+/data/newpdb/pdb/pdb3rp2.ent 3rp2a { CHAIN A }
 % Porcine kallikrein
-./pdb2pka.ent 2pkaab { CHAIN A CHAIN B }
+/data/newpdb/pdb/pdb2pka.ent 2pkaab { CHAIN A CHAIN B }
 % S. griseus trypsin
-./pdb1sgt.ent 1sgt { ALL }
+/data/newpdb/pdb/pdb1sgt.ent 1sgt { ALL }
 % S. griseus proteinase A
-./pdb2sga.ent 2sga { ALL }
+/data/newpdb/pdb/pdb2sga.ent 2sga { ALL }
 % S. griseus proteinase B
-./pdb3sgb.ent 3sgbe { CHAIN E }
+/data/newpdb/pdb/pdb3sgb.ent 3sgbe { CHAIN E }
 % L. enzymogenes alpha lytic proteinase
-./pdb2alp.ent 2alp { ALL }
+/data/newpdb/pdb/pdb2alp.ent 2alp { ALL }

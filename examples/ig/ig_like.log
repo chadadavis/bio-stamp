@@ -7,85 +7,110 @@ STAMP Structural Alignment of Multiple Proteins
     Sc = STAMP score, RMS = RMS deviation, Align = alignment length
     Len1, Len2 = length of domain, Nfit = residues fitted
     Secs = no. equivalent sec. strucs. Eq = no. equivalent residues
-    %I = seq. identity, %S = sec. str. identity
-    P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
-            (NC = P value not calculated - potential FP overflow)
+     %I = seq. identity, %S = sec. str. identity
 
-     No.  Domain1         Domain2         Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S   P(m)
-Pair   1  2fb4lv          2fb4l_1         9.71   0.00    111  110   110  110 110    0 100.00 100.00 0.00e+00 
-Pair   2  2fb4lv          1mcplv_1        7.32   1.17    111  111   116   96  95    0  49.47 100.00 2.05e-22 
-Pair   3  2fb4lv          1mcphv_1        6.07   1.52    111  121   126   85  81    0  30.86 100.00 1.44e-07 
-Pair   4  2fb4lv          3cd4_1          5.75   1.17    111   95   109   75  74    0  20.27 100.00 8.19e-03 
-Pair   5  2fb4lv          3dpa_1          3.82   2.08    111  115   131   59  57    0  10.53 100.00 1.00e+00 
-Pair   6  2fb4lv          2fb4lc_1        3.77   1.90    111   95   122   57  48    0  12.50 100.00 1.00e+00 
-Pair   7  2fb4lv          1acx_1          3.38   2.54    111  106   130   59  45    0  11.11 100.00 1.00e+00 
-Pair   8  2fb4lv          2azaa_3         3.27   2.46    111  118   134   52  40    0  15.00 100.00 1.07e-01 
-Pair   9  2fb4lv          2pcy_1          3.40   2.12    111   88   122   49  43    0  30.23 100.00 1.55e-04 
-Pair  10  2fb4lv          2sodo_2         2.44   2.39    111  137   155   43  32    0   9.38 100.00 1.00e+00 
-Pair  11  2fb4l_1         1mcplv_1        7.39   1.17    110  111   116   96  95    0  49.47 100.00 2.05e-22 
-Pair  12  2fb4l_1         1mcphv_1        6.10   1.51    110  121   125   84  81    0  30.86 100.00 1.44e-07 
-Pair  13  2fb4l_1         3cd4_1          5.80   1.17    110   95   109   75  74    0  20.27 100.00 8.19e-03 
-Pair  14  2fb4l_1         3dpa_1          3.85   2.08    110  115   131   59  57    0  10.53 100.00 1.00e+00 
-Pair  15  2fb4l_1         2fb4lc_1        3.80   1.90    110   95   122   57  48    0  12.50 100.00 1.00e+00 
-Pair  16  2fb4l_1         1acx_1          3.41   2.54    110  106   130   59  45    0  11.11 100.00 1.00e+00 
-Pair  17  2fb4l_1         2azaa_3         3.30   2.46    110  118   134   52  40    0  15.00 100.00 1.07e-01 
-Pair  18  2fb4l_1         2pcy_1          3.43   2.12    110   88   122   49  43    0  30.23 100.00 1.55e-04 
-Pair  19  2fb4l_1         2sodo_2         2.47   2.39    110  137   155   43  32    0   9.38 100.00 1.00e+00 
-Pair  20  1mcplv_1        1mcphv_1        6.22   1.30    111  121   127   90  90    0  27.78 100.00 1.23e-06 
-Pair  21  1mcplv_1        3cd4_1          5.60   1.31    111   95   112   76  71    0  23.94 100.00 3.50e-04 
-Pair  22  1mcplv_1        3dpa_1          3.85   1.87    111  115   137   60  58    0   6.90 100.00 1.00e+00 
-Pair  23  1mcplv_1        2fb4lc_1        3.87   1.89    111   95   124   56  53    0   5.66 100.00 1.00e+00 
-Pair  24  1mcplv_1        1acx_1          3.32   2.19    111  106   133   54  40    0  15.00 100.00 1.07e-01 
-Pair  25  1mcplv_1        2azaa_3         3.22   2.63    111  118   135   52  38    0  21.05 100.00 2.07e-02 
-Pair  26  1mcplv_1        2pcy_1          3.62   2.20    111   88   123   52  45    0  22.22 100.00 2.00e-02 
-Pair  27  1mcplv_1        2sodo_2         2.50   2.26    111  137   158   46  36    0   5.56 100.00 1.00e+00 
-Pair  28  1mcphv_1        3cd4_1          5.81   1.54    121   95   115   81  77    0  22.08 100.00 8.82e-04 
-Pair  29  1mcphv_1        3dpa_1          3.38   2.03    121  115   145   59  54    0   3.70 100.00 1.00e+00 
-Pair  30  1mcphv_1        2fb4lc_1        3.57   2.07    121   95   130   58  51    0   5.88 100.00 1.00e+00 
-Pair  31  1mcphv_1        1acx_1          3.33   2.11    121  106   139   56  47    0  12.77 100.00 1.00e+00 
-Pair  32  1mcphv_1        2azaa_3         3.02   2.41    121  118   140   48  34    0  14.71 100.00 1.00e+00 
-Pair  33  1mcphv_1        2pcy_1          3.07   2.05    121   88   133   47  43    0  27.91 100.00 5.85e-04 
-Pair  34  1mcphv_1        2sodo_2         2.50   2.23    121  137   165   49  39    0   2.56 100.00 1.00e+00 
-Pair  35  3cd4_1          3dpa_1          3.20   1.85     95  115   126   48  42    0   4.76 100.00 1.00e+00 
-Pair  36  3cd4_1          2fb4lc_1        3.75   2.10     95   95   109   54  48    0   6.25 100.00 1.00e+00 
-Pair  37  3cd4_1          1acx_1          2.86   2.36     95  106   120   43  30    0  16.67 100.00 1.00e+00 
-Pair  38  3cd4_1          2azaa_3         2.78   2.20     95  118   120   39  34    0  14.71 100.00 1.00e+00 
-Pair  39  3cd4_1          2pcy_1          3.21   2.09     95   88   109   44  36    0   8.33 100.00 1.00e+00 
-Pair  40  3cd4_1          2sodo_2         2.45   2.28     95  137   147   39  29    0  10.34 100.00 1.00e+00 
-Pair  41  3dpa_1          2fb4lc_1        4.12   1.86    115   95   123   57  46    0   8.70 100.00 1.00e+00 
-Pair  42  3dpa_1          1acx_1          3.38   1.82    115  106   136   52  51    0   7.84 100.00 1.00e+00 
-Pair  43  3dpa_1          2azaa_3         3.79   2.09    115  118   140   64  57    0  17.54 100.00 3.05e-02 
-Pair  44  3dpa_1          2pcy_1          3.63   1.91    115   88   125   54  51    0   3.92 100.00 1.00e+00 
-Pair  45  3dpa_1          2sodo_2         2.62   2.18    115  137   164   48  40    0  10.00 100.00 1.00e+00 
-Pair  46  2fb4lc_1        1acx_1          4.05   2.51     95  106   116   61  51    0  11.76 100.00 1.00e+00 
-Pair  47  2fb4lc_1        2azaa_3         3.24   2.31     95  118   127   49  45    0   6.67 100.00 1.00e+00 
-Pair  48  2fb4lc_1        2pcy_1          3.46   2.37     95   88   109   46  39    0  12.82 100.00 1.00e+00 
-Pair  49  2fb4lc_1        2sodo_2         2.89   2.15     95  137   145   41  33    0  12.12 100.00 1.00e+00 
-Pair  50  1acx_1          2azaa_3         2.52   2.35    106  118   136   37  32    0  15.62 100.00 1.17e-01 
-Pair  51  1acx_1          2pcy_1          3.59   2.33    106   88   117   51  48    0  14.58 100.00 9.79e-02 
-Pair  52  1acx_1          2sodo_2         3.20   1.83    106  137   157   60  56    0  14.29 100.00 9.04e-02 
-Pair  53  2azaa_3         2pcy_1          3.95   2.14    118   88   124   61  54    0  20.37 100.00 1.03e-02 
-Pair  54  2azaa_3         2sodo_2         2.58   2.26    118  137   166   48  39    0  10.26 100.00 1.00e+00 
-Pair  55  2pcy_1          2sodo_2         2.42   2.17     88  137   147   39  28    0   7.14 100.00 1.00e+00 
+     No.  Domain1         Domain2         Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S 
+Pair   1  2fb4lv          2fb4l_1         9.71   0.00    111  110   110  110 109   11  99.10  96.40 
+Pair   2  2fb4lv          1mcplv_1        7.20   1.14    111  109   114   92  89   10  43.24  77.48 
+Pair   3  2fb4lv          1mcphv_1        6.08   1.49    111  121   126   83  79   10  23.14  75.21 
+Pair   4  2fb4lv          3cd4_1          5.68   1.26    111   94   108   71  69   10  13.51  55.86 
+Pair   5  2fb4lv          2fb4l_5         3.99   1.24    111   94   120   49  46    8  13.51  44.14 
+Pair   6  2fb4lv          3dpa_1          3.86   2.13    111  115   130   57  52    0   6.96  34.78 
+Pair   7  2fb4lv          3cd4_2          4.41   2.07    111   81   112   57  55   10  11.71  45.05 
+Pair   8  2fb4lv          2azaa_3         3.25   2.47    111  118   134   49  38    6   9.32  51.69 
+Pair   9  2fb4lv          1acx_1          3.28   2.41    111  106   130   48  38    5  11.71  42.34 
+Pair  10  2fb4lv          2pcy_1          3.25   2.06    111   86   120   41  33    6  12.61  38.74 
+Pair  11  2fb4lv          2sodo_2         2.47   2.29    111  137   156   40  32    7   6.57  45.99 
+Pair  12  2fb4lv          3dpa_3          2.79   2.55    111   85   115   29  20    0   4.50  23.42 
+Pair  13  2fb4l_1         1mcplv_1        7.26   1.14    110  109   114   92  89   10  43.64  78.18 
+Pair  14  2fb4l_1         1mcphv_1        6.11   1.49    110  121   125   83  79   10  23.14  75.21 
+Pair  15  2fb4l_1         3cd4_1          5.74   1.26    110   94   108   71  69   10  13.64  56.36 
+Pair  16  2fb4l_1         2fb4l_5         4.03   1.24    110   94   120   49  46    8  13.64  44.55 
+Pair  17  2fb4l_1         3dpa_1          3.90   2.13    110  115   130   57  52    0   6.96  34.78 
+Pair  18  2fb4l_1         3cd4_2          4.45   2.07    110   81   112   57  55   10  11.82  45.45 
+Pair  19  2fb4l_1         2azaa_3         3.28   2.47    110  118   134   49  38    6   9.32  51.69 
+Pair  20  2fb4l_1         1acx_1          3.31   2.41    110  106   130   48  38    5  11.82  42.73 
+Pair  21  2fb4l_1         2pcy_1          3.28   2.06    110   86   120   41  33    6  12.73  39.09 
+Pair  22  2fb4l_1         2sodo_2         2.49   2.29    110  137   156   40  32    7   6.57  45.99 
+Pair  23  2fb4l_1         3dpa_3          2.76   2.55    110   85   115   29  16    0   5.45  22.73 
+Pair  24  1mcplv_1        1mcphv_1        6.10   1.17    109  121   125   82  77   10  21.49  69.42 
+Pair  25  1mcplv_1        3cd4_1          5.66   1.28    109   94   110   70  65   10  16.51  62.39 
+Pair  26  1mcplv_1        2fb4l_5         3.92   1.53    109   94   126   51  43    6  11.01  42.20 
+Pair  27  1mcplv_1        3dpa_1          3.81   1.87    109  115   136   56  54    0   6.96  34.78 
+Pair  28  1mcplv_1        3cd4_2          4.27   2.07    109   81   114   59  54   11  10.09  49.54 
+Pair  29  1mcplv_1        2azaa_3         3.01   2.60    109  118   135   45  36    6  11.02  50.00 
+Pair  30  1mcplv_1        1acx_1          3.39   2.07    109  106   132   47  36    5  11.93  48.62 
+Pair  31  1mcplv_1        2pcy_1          3.52   2.29    109   86   121   50  42    7   9.17  42.20 
+Pair  32  1mcplv_1        2sodo_2         2.54   2.32    109  137   156   46  36    7   7.30  47.45 
+Pair  33  1mcplv_1        3dpa_3          2.38   2.46    109   85   115   26  21    0   2.75  26.61 
+Pair  34  1mcphv_1        3cd4_1          5.74   1.46    121   94   114   75  71   11  15.70  52.89 
+Pair  35  1mcphv_1        2fb4l_5         3.66   1.45    121   94   129   48  43    7  12.40  47.11 
+Pair  36  1mcphv_1        3dpa_1          3.36   2.04    121  115   145   57  49    0   2.48  26.45 
+Pair  37  1mcphv_1        3cd4_2          4.13   2.04    121   81   123   58  51   10   9.09  43.80 
+Pair  38  1mcphv_1        2azaa_3         2.89   2.49    121  118   142   43  31    6   5.79  49.59 
+Pair  39  1mcphv_1        1acx_1          3.21   2.05    121  106   143   50  43    7   6.61  39.67 
+Pair  40  1mcphv_1        2pcy_1          2.92   1.92    121   86   131   39  34    7  11.57  36.36 
+Pair  41  1mcphv_1        2sodo_2         2.32   2.13    121  137   171   44  39    7   2.92  40.15 
+Pair  42  1mcphv_1        3dpa_3          2.22   2.49    121   85   129   27  15    0   4.96  14.88 
+Pair  43  3cd4_1          2fb4l_5         3.65   1.34     94   94   116   44  39    9  10.64  40.43 
+Pair  44  3cd4_1          3dpa_1          3.15   1.92     94  115   125   46  39    0   6.96  29.57 
+Pair  45  3cd4_1          3cd4_2          4.02   1.97     94   81    99   53  51   11  12.77  47.87 
+Pair  46  3cd4_1          2azaa_3         2.78   2.27     94  118   119   39  33    7   8.47  42.37 
+Pair  47  3cd4_1          1acx_1          2.89   2.50     94  106   119   39  32    4   7.55  35.85 
+Pair  48  3cd4_1          2pcy_1          3.18   2.06     94   86   108   39  31    6   5.32  41.49 
+Pair  49  3cd4_1          2sodo_2         2.34   2.02     94  137   147   33  23    5   5.84  36.50 
+Pair  50  3cd4_1          3dpa_3          1.85   1.61     94   85   111   21  18    0   2.13  21.28  LOW SCORE
+Pair  51  2fb4l_5         3dpa_1          3.48   1.61     94  115   124   44  42    0   7.83  23.48 
+Pair  52  2fb4l_5         3cd4_2          4.32   1.67     94   81    98   45  41    7  13.83  48.94 
+Pair  53  2fb4l_5         2azaa_3         2.87   2.02     94  118   129   39  35    4   4.24  23.73 
+Pair  54  2fb4l_5         1acx_1          3.05   1.85     94  106   127   39  33    5  12.26  40.57 
+Pair  55  2fb4l_5         2pcy_1          2.59   2.01     94   86   114   30  25    5   7.45  27.66 
+Pair  56  2fb4l_5         2sodo_2         2.15   1.78     94  137   158   34  28    6   2.92  28.47 
+Pair  57  2fb4l_5         3dpa_3          2.95   2.36     94   85   102   34  26    0   6.38  25.53 
+Pair  58  3dpa_1          3cd4_2          4.00   1.79    115   81   119   53  47    0   6.96  31.30 
+Pair  59  3dpa_1          2azaa_3         3.72   2.12    115  118   141   63  55    0  11.86  39.83 
+Pair  60  3dpa_1          1acx_1          3.39   1.84    115  106   137   52  49    0   4.35  41.74 
+Pair  61  3dpa_1          2pcy_1          3.51   2.04    115   86   123   52  45    0   2.61  33.91 
+Pair  62  3dpa_1          2sodo_2         2.60   1.98    115  137   166   45  38    0   5.84  22.63 
+Pair  63  3dpa_1          3dpa_3          2.58   2.37    115   85   122   34  30    0   5.22  64.35 
+Pair  64  3cd4_2          2azaa_3         2.74   2.35     81  118   126   37  28    7   4.24  31.36 
+Pair  65  3cd4_2          1acx_1          4.06   1.99     81  106   113   53  49    8   3.77  45.28 
+Pair  66  3cd4_2          2pcy_1          3.83   1.99     81   86   100   43  33    9   9.30  43.02 
+Pair  67  3cd4_2          2sodo_2         2.61   1.98     81  137   147   41  35   10   2.92  30.66 
+Pair  68  3cd4_2          3dpa_3          3.79   2.06     81   85    92   40  37    0   7.06  34.12 
+Pair  69  2azaa_3         1acx_1          2.49   2.38    118  106   137   35  30    4   6.78  39.83 
+Pair  70  2azaa_3         2pcy_1          3.76   2.11    118   86   123   54  45    8  11.02  50.00 
+Pair  71  2azaa_3         2sodo_2         2.33   2.43    118  137   166   40  28    6   3.65  40.15 
+Pair  72  2azaa_3         3dpa_3          2.12   2.28    118   85   127   24  19    0   5.93  24.58 
+Pair  73  1acx_1          2pcy_1          3.56   2.30    106   86   116   47  41    5   7.55  45.28 
+Pair  74  1acx_1          2sodo_2         3.12   1.85    106  137   160   55  54    6   5.11  40.15 
+Pair  75  1acx_1          3dpa_3          2.96   2.23    106   85   117   41  39    0   3.77  34.91 
+Pair  76  2pcy_1          2sodo_2         2.30   2.06     86  137   147   37  27    8   3.65  28.47 
+Pair  77  2pcy_1          3dpa_3          2.31   2.19     86   85   104   24  17    0   5.81  33.72 
+Pair  78  2sodo_2         3dpa_3          2.57   2.21    137   85   144   43  41    0   2.19  15.33 
 Reading in matrix file ig_like.mat...
 Doing cluster analysis...
-Cluster:  1 (  2fb4lv  &  2fb4l_1 ) Sc  9.70 RMS   0.00 Len 110 nfit 110 
+Cluster:  1 (  2fb4lv  &  2fb4l_1 ) Sc  9.70 RMS   0.00 Len 110 nfit 109 
  See file ig_like.1 for the alignment and transformations
-Cluster:  2 (1mcplv_1  &   2fb4lv  2fb4l_1 ) Sc  8.29 RMS   1.17 Len 116 nfit  96 
+Cluster:  2 (1mcplv_1  &   2fb4lv  2fb4l_1 ) Sc  8.17 RMS   1.14 Len 114 nfit  92 
  See file ig_like.2 for the alignment and transformations
-Cluster:  3 (1mcphv_1  & 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  7.42 RMS   1.70 Len 132 nfit  92 
+Cluster:  3 (1mcphv_1  & 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  7.45 RMS   1.53 Len 130 nfit  85 
  See file ig_like.3 for the alignment and transformations
-Cluster:  4 (  3cd4_1  & 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  6.49 RMS   1.28 Len 125 nfit  80 
+Cluster:  4 (  3cd4_1  & 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  6.58 RMS   1.20 Len 121 nfit  73 
  See file ig_like.4 for the alignment and transformations
-Cluster:  5 (  3dpa_1  & 2fb4lc_1 ) Sc  4.11 RMS   1.86 Len 123 nfit  57 
+Cluster:  5 (  3cd4_2  &   3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  5.40 RMS   2.01 Len 132 nfit  54 
  See file ig_like.5 for the alignment and transformations
-Cluster:  6 (  1acx_1  &   3dpa_1 2fb4lc_1 ) Sc  5.30 RMS   2.34 Len 145 nfit  69 
+Cluster:  6 ( 2fb4l_5  &   3cd4_2   3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  5.11 RMS   1.55 Len 140 nfit  44 
  See file ig_like.6 for the alignment and transformations
-Cluster:  7 ( 2azaa_3  &   2pcy_1 ) Sc  3.79 RMS   2.08 Len 125 nfit  59 
+Cluster:  7 (  1acx_1  &  2fb4l_5   3cd4_2   3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  4.65 RMS   2.46 Len 161 nfit  44 
  See file ig_like.7 for the alignment and transformations
-Cluster:  8 (  3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1  &   1acx_1   3dpa_1 2fb4lc_1 ) Sc  4.79 RMS   2.30 Len 181 nfit  64 
+Cluster:  8 (  3dpa_1  &   1acx_1  2fb4l_5   3cd4_2   3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  4.75 RMS   1.89 Len 178 nfit  45 
  See file ig_like.8 for the alignment and transformations
-Cluster:  9 (  3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1   1acx_1   3dpa_1 2fb4lc_1  &  2azaa_3   2pcy_1 ) Sc  4.03 RMS   2.63 Len 207 nfit  52 
+Cluster:  9 (  2pcy_1  &   3dpa_1   1acx_1  2fb4l_5   3cd4_2   3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  3.73 RMS   2.10 Len 184 nfit  38 
  See file ig_like.9 for the alignment and transformations
-Cluster: 10 ( 2sodo_2  &   3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1   1acx_1   3dpa_1 2fb4lc_1  2azaa_3   2pcy_1 ) Sc  3.40 RMS   2.85 Len 248 nfit  54 
+Cluster: 10 (  3dpa_3  &   2pcy_1   3dpa_1   1acx_1  2fb4l_5   3cd4_2   3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  3.42 RMS   3.44 Len 193 nfit  34 
  See file ig_like.10 for the alignment and transformations
+Cluster: 11 ( 2azaa_3  &   3dpa_3   2pcy_1   3dpa_1   1acx_1  2fb4l_5   3cd4_2   3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  3.96 RMS   2.15 Len 207 nfit  31 
+ See file ig_like.11 for the alignment and transformations
+Cluster: 12 ( 2sodo_2  &  2azaa_3   3dpa_3   2pcy_1   3dpa_1   1acx_1  2fb4l_5   3cd4_2   3cd4_1 1mcphv_1 1mcplv_1   2fb4lv  2fb4l_1 ) Sc  3.53 RMS   2.05 Len 240 nfit  31 
+ See file ig_like.12 for the alignment and transformations

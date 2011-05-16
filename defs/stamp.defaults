@@ -35,7 +35,7 @@ NASD 	    -0.4743	#
 NBSD        0.01522	#
 SLOWSCAN    FALSE	#  The new method of scanning is under development
 SCANCUT	        2.0	#  SCANMODE == 1; only output transformations if Sc > SCANCUT
-SCANSLIDE 	 10	#  The fraction of the query sequence length to move along the sequence being scanned
+SCANSLIDE 	 5	#  The fraction of the query sequence length to move along the sequence being scanned
 SCANALIGN	 FALSE	#  Output the alignments after each comparison
 SCANALLALIGN     FALSE	#  Output alignments after each interation
 SECSCREEN       TRUE    #  Ignore comparisons during scanning when the total difference in 
@@ -51,7 +51,7 @@ PAIRALLALIGN     FALSE	#
 TREEALIGN 	 FALSE  #
 TREEALLALIGN     FALSE	#
 PRECISION      1000	#
-MAX_SEQ_LEN    1000	#
+MAX_SEQ_LEN    20000	#
 ROUGHFIT 	 FALSE	#
 ROUGHOUT	 FALSE
 ROUGHOUTFILE     stamp_rough.trans
@@ -68,7 +68,7 @@ MIN_FRAC       0.50 	#  Minimum fractional length allowed for a database sequenc
 SCORERISE	 FALSE  #  If true, the comparisons are ceased if the Sc drops after an iteration
 SKIPAHEAD 	 TRUE	#  Scanning only.  If true, then skip ahead to the end of the last output transformation (SCANMODE=1 only)
 SCANSCORE	  6     #  See doc/stamp.doc
-OPD          	TRUE  #
+OPD          	FALSE  #
 verbose		FALSE
 listfile	domain.list		#
 treefile  	stamp.tree		#
@@ -81,3 +81,5 @@ scanfile  	stamp.scan		#
 logfile   	silent			#
 secfile  	stamp.sec		#
 roughalign	roughfit.align 		#
+UD_SECTION	FALSE
+PAIROUTPUT_TO_LOG	FALSE

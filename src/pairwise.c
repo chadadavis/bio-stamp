@@ -29,31 +29,12 @@ int pairwise(struct domain_loc *domain, int ndomain, struct parameters *parms) {
 	fprintf(parms[0].LOG,"\n\nPAIRWISE comparisons\n");
 
 	pairmat=(float**)malloc(ndomain*sizeof(float*));
-	if(pairmat == NULL) {
-	    fprintf(stderr, "error: pairwise: malloc failed on pairmat\n");
-	    exit(-1);
-	}
-
-	for(i=0; i<ndomain; ++i) {
-	    pairmat[i] = (float*)malloc(ndomain*sizeof(float));
-	    if(pairmat[i] == NULL) {
-		fprintf(stderr, "error: pairwise: malloc failed on pairmat[%d]\n", i);
-		exit(-1);
-	    }
-	}
+	for(i=0; i<ndomain; ++i) 
+	   pairmat[i]=(float*)malloc(ndomain*sizeof(float));
 
 	hbcmat=(int**)malloc(3*sizeof(int*));
-	if(hbcmat == NULL) {
-	    fprintf(stderr, "error: pairwise: malloc failed on hbcmat\n", i);
-	    exit(-1);
-	}
-
 	for(i=0; i<3; ++i) {
 	   hbcmat[i]=(int*)malloc(3*sizeof(int));
-	   if(hbcmat[i] == NULL) {
-	       fprintf(stderr, "error: pairwise: malloc failed on hbcmat[%d]\n", i);
-	       exit(-1);
-	   }
 	}
 	k=0;
 	if(ndomain<2) {

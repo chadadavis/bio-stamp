@@ -1,7 +1,7 @@
 
 #include <stamp.h>
 #include <math.h>
-#include <errno.h>
+
 
 #define lastmod "25 March 1999"
 
@@ -36,23 +36,11 @@ main(int argc, char *argv[]) {
 	  exit(-1);
 	}
 	parms=(struct parameters*)malloc(sizeof(struct parameters));
-	if(parms == NULL) {
-	    fprintf(stderr, "error: malloc(%d) failed for parms with errno=%d\n", sizeof(struct parameters), errno);
-	    exit(-1);
-	}
 
 	strcpy(parms[0].stampdir,env);
 	
 	/* read in default parameters from $STAMPDIR/stamp.defaults */
-
-	/* FIXME - set ud_section default in $STAMPDIR/stamp.defaults too */
-	parms[0].ud_section = 0;
-
 	deffile=(char*)malloc(1000*sizeof(char));
-	if(deffile == NULL) {
-	    fprintf(stderr, "error: malloc(1000 * %d) failed for deffile with errno=%d\n", sizeof(char), errno);
-	    exit(-1);
-	}
 	sprintf(deffile,"%s/stamp.defaults",env);
 	if((PARMS=fopen(deffile,"r"))==NULL) {
 	   fprintf(stderr,"error: default parameter file %s does not exist\n",deffile);
@@ -66,15 +54,7 @@ main(int argc, char *argv[]) {
 
 	/* now search the command line for commands */
 	keyword=(char*)malloc(1000*sizeof(char));
-	if(keyword == NULL) {
-	    fprintf(stderr, "error: malloc(1000 * %d) failed for keyword with errno=%d\n", sizeof(char), errno);
-	    exit(-1);
-	}
 	value=(char*)malloc(1000*sizeof(char));
-	if(value == NULL) {
-	    fprintf(stderr, "error: malloc(1000 * %d) failed for value with errno=%d\n", sizeof(char), errno);
-	    exit(-1);
-	}
         for(i=1; i<argc; ++i) {
            if(argv[i][0]!='-') exit_error();
 	   strcpy(keyword,&argv[i][1]);
@@ -390,11 +370,6 @@ main(int argc, char *argv[]) {
 	/* determine the number of domains specified */
 	ndomain=count_domain(TRANS);
 	domain=(struct domain_loc*)malloc(ndomain*sizeof(struct domain_loc));
-	if(domain == NULL) {
-	    fprintf(stderr, "error: malloc(%d * %d) failed for domain with errno=%d\n", ndomain, sizeof(struct domain_loc), errno);
-	    exit(-1);
-	}
-
 	rewind(TRANS);
 	if(getdomain(TRANS,domain,&ndomain,ndomain,&gottrans,parms[0].stampdir,parms[0].DSSP,parms[0].LOG)==-1) exit(-1);
 	fclose(TRANS);
@@ -542,38 +517,20 @@ main(int argc, char *argv[]) {
 	      fprintf(stderr,"error opening file %s\n",domain[i].filename);
 	      exit(-1);
 	   }
-	   domain[i].coords=(int**)malloc(parms[0].MAX_SEQ_LEN*sizeof(int*));
-	   if(domain[i].coords == NULL) {
-	       fprintf(stderr, "error: malloc(%d * %d) failed for domain[%d].coords with errno=%d\n", parms[0].MAX_SEQ_LEN, sizeof(int*), i, errno);
-	       exit(-1);
-	   }
-	   domain[i].aa=(char*)malloc((parms[0].MAX_SEQ_LEN+1)*sizeof(char)); 
-	   if(domain == NULL) {
-	       fprintf(stderr, "error: malloc failed((%d + 1) * %d) for domain[%d].aa with errno=%d\n", parms[0].MAX_SEQ_LEN, sizeof(char), i, errno);
-	       exit(-1);
-	   }
-	   domain[i].numb=(struct brookn*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(struct brookn));
-	   if(domain == NULL) {
-	       fprintf(stderr, "error: malloc(%d * %d) failed for domain[%d].numb with errno=%d\n", parms[0].MAX_SEQ_LEN, sizeof(struct brookn), i, errno);
-	       exit(-1);
-	   }
-
 	   domain[i].ncoords=0;
+	   domain[i].coords=(int**)malloc(parms[0].MAX_SEQ_LEN*sizeof(int*));
+	   domain[i].aa=(char*)malloc((parms[0].MAX_SEQ_LEN+1)*sizeof(char)); 
+	   domain[i].numb=(struct brookn*)malloc((parms[0].MAX_SEQ_LEN)*sizeof(struct brookn));
 	   total=0;
 	   fprintf(parms[0].LOG,"    ");
 	   for(j=0; j<domain[i].nobj; ++j) {
-	       if(total >= parms[0].MAX_SEQ_LEN) {
-		   fprintf(stderr, "Error: total > MAX_SEQ_LEN at domain %d position %d\n", i, j);
-		   exit(-1);
-	       }
-
 	       if(!parms[0].DSSP) {
-		   if(igetca(PDB,&domain[i].coords[total],&domain[i].aa[total],&domain[i].numb[total],
-			     &add,domain[i].start[j],domain[i].end[j],domain[i].type[j],(parms[0].MAX_SEQ_LEN-total),
-			     domain[i].reverse[j],parms[0].PRECISION,parms[0].LOG)==-1) {
-		       fprintf(stderr,"Error in domain %s object %d \n",domain[i].id,j+1);
-		       exit(-1);
-		   }
+	         if(igetca(PDB,&domain[i].coords[total],&domain[i].aa[total],&domain[i].numb[total],
+		    &add,domain[i].start[j],domain[i].end[j],domain[i].type[j],(parms[0].MAX_SEQ_LEN-total),
+		    domain[i].reverse[j],parms[0].PRECISION,parms[0].LOG)==-1) {
+		    fprintf(stderr,"Error in domain %s object %d \n",domain[i].id,j+1);
+                    exit(-1);
+	         }
 	       } else {
 	         if(igetcadssp(PDB,&domain[i].coords[total],&domain[i].aa[total],&domain[i].numb[total],
 		  &add,domain[i].start[j],domain[i].end[j],domain[i].type[j],(parms[0].MAX_SEQ_LEN-total),
@@ -591,45 +548,17 @@ main(int argc, char *argv[]) {
 		closefile(PDB,domain[i].filename); PDB=openfile(domain[i].filename,"r");
 	    }
 	    domain[i].ncoords=total;
-
-	    /* reallocate arrays to size used */
-	    domain[i].coords = (int **) realloc(domain[i].coords, domain[i].ncoords * sizeof(int *));
-	    if(domain[i].coords == NULL) {
-		fprintf(stderr, "error: realloc failed for domain[%d].coords with errno=%d\n", i, errno);
-		exit(-1);
-	    }
-
-	    domain[i].aa = (char *) realloc(domain[i].aa, (domain[i].ncoords + 1) * sizeof(char));
-	    if(domain[i].aa == NULL) {
-		fprintf(stderr, "error: realloc failed for domain[%d].aa with errno=%d\n", i, errno);
-		exit(-1);
-	    }
-
-	    domain[i].numb = (struct brookn*) realloc(domain[i].numb, domain[i].ncoords * sizeof(struct brookn));
-	    if(domain[i].numb == NULL) {
-		fprintf(stderr, "error: realloc failed for domain[%d].numb with errno=%d\n", i, errno);
-		exit(-1);
-	    }
-	    /***********************************/
-
 	    fprintf(parms[0].LOG,"=> %4d CAs in total\n",domain[i].ncoords);
 	    fprintf(parms[0].LOG,"Applying the transformation... \n");
 	    printmat(domain[i].R,domain[i].V,3,parms[0].LOG);
 	    fprintf(parms[0].LOG,"      ...to these coordinates.\n");
 	    matmult(domain[i].R,domain[i].V,domain[i].coords,domain[i].ncoords,parms[0].PRECISION);
 	    closefile(PDB,domain[i].filename);
-
 	}
 	fprintf(parms[0].LOG,"\n\n");
 	fprintf(parms[0].LOG,"Secondary structure...\n");
-	for(i=0; i<ndomain; ++i) {
-	    //domain[i].sec=(char*)malloc(parms[0].MAX_SEQ_LEN*sizeof(char));
-	    domain[i].sec=(char*)malloc((domain[i].ncoords + 1) * sizeof(char));
-	    if(domain[i].sec == NULL) {
-		fprintf(stderr, "error: malloc(%d * %d) failed for domain[%d].sec with errno=%d\n", domain[i].ncoords + 1, sizeof(char), i, errno);
-		exit(-1);
-	    }
-	}
+	for(i=0; i<ndomain; ++i) 
+	   domain[i].sec=(char*)malloc(parms[0].MAX_SEQ_LEN*sizeof(char));
 
 	switch(parms[0].SECTYPE) {
 	  case 0: {
@@ -654,8 +583,6 @@ main(int argc, char *argv[]) {
 	      exit(-1);
 	  }
 	}
-
-	/* exit(0); */ /* for debugging domain reading */
 
 	fprintf(parms[0].LOG,"\n\n");
 	if(parms[0].SCAN) {

@@ -7,7 +7,7 @@
 CC = gcc
 #
 # compiler options
-#CFLAGS = -g -O0 -I.
+#CFLAGS = -g -I.
 CFLAGS = -O2 -I.
 #
 #
@@ -74,7 +74,7 @@ all: $(PROGS)
 # Man programs in the package
 #
 stamp: $(STAMPOBJS) 
-	 $(CC) $(CFLAGS) $(STAMPOBJS)  -o stamp -lm -lc
+	 $(CC) $(CFLAGS) $(STAMPOBJS)  -o stamp -lm -lc 
 alignfit: $(ALIGNFITOBJS) 
 	$(CC) $(CFLAGS) $(ALIGNFITOBJS)  -o alignfit -lm -lc
 transform: $(TRANSFORMOBJS)
