@@ -1,19 +1,14 @@
 #!/bin/bash
 
-platform=$1
 tmp=/tmp/stamp_
 cwd=`pwd`
 total=0
 passed=0
 
-if [ -z $platform ]
-then
-    bindir="../bin/";
-else
-    bindir="../bin/$platform/";
-fi
+export PATH=../src:$PATH
 
-cd t
+cd `dirname $0`
+
 for file in `ls *.t | sort -n`
 do
     test=${file%\.t}
@@ -28,6 +23,8 @@ do
     let total++
 done
 
+\rm stamp_rough.trans 2>/dev/null
+
 echo "passed $passed/$total."
 
-cd $cwd
+cd -
