@@ -1,9 +1,10 @@
-CFLAGS=-DSTAMPIR='"$(datadir)/stamp"'
+# Add this option so that data dir can be determined
+CFLAGS=-DAM_STAMPDIR='"$(datadir)/stamp"'
 
 LDFLAGS=-lm
 
 # Build targets
-bin_PROGRAMS=test_prefix alignfit avestruc cofm dstamp extrans gstamp mergestamp mergetrans pdbc pdbseq pickframe poststamp sorttrans stamp stamp_clean transform ver2hor
+bin_PROGRAMS=alignfit avestruc cofm dstamp extrans gstamp mergestamp mergetrans pdbc pdbseq pickframe poststamp sorttrans stamp stamp_clean transform ver2hor
 
 # headers dependencies, for all binaries
 noinst_HEADERS=aadat.h alignfit.h array.h cluster.h defaults.h domain.h dstamp.h f2c.h general.h gjnoc.h gjutil.h igetcb.h mergestamp.h poststamp.h rbr_aadat.h rbr_newlib.h rbr_vector.h R.h routines.h stamp.h stamprel.h ver2hor.h
@@ -17,7 +18,7 @@ extrans_SOURCES=extrans.c closefile.c count_domain.c getdomain.c getfile.c ltou.
 gstamp_SOURCES=gstamp.c a3to1.c agetbloc.c closefile.c count_domain.c disp.c getdomain.c getfile.c getstampdat.c getstamprel.c gjutil.c igetca.c igetcb.c igetgen.c ltou.c matmult.c openfile.c printdomain.c printmat.c rossmann.c smoothsec.c testfile.c threestate.c utol.c vector.c
 mergestamp_SOURCES=mergestamp.c agetbloc.c count_domain.c getdomain.c getfile.c getstampdat.c getstamprel.c gjutil.c ltou.c matinv.c matprod.c matvecprod.c printdomain.c printmat.c rmsp.c testfile.c utol.c
 mergetrans_SOURCES=mergetrans.c closefile.c count_domain.c getdomain.c getfile.c ltou.c matinv.c matprod.c matvecprod.c openfile.c printdomain.c printmat.c testfile.c utol.c
-pdbc_SOURCES=pdbc.c check.c closefile.c getfile.c ltou.c openfile.c testfile.c utol.c
+pdbc_SOURCES=pdbc.c closefile.c getfile.c ltou.c openfile.c testfile.c utol.c
 pdbseq_SOURCES=pdbseq.c a3to1.c closefile.c count_domain.c getdomain.c getfile.c igetca.c ltou.c openfile.c testfile.c utol.c
 pickframe_SOURCES=pickframe.c closefile.c count_domain.c getdomain.c getfile.c ltou.c matinv.c matprod.c matvecprod.c openfile.c printdomain.c printmat.c testfile.c utol.c
 poststamp_SOURCES=poststamp.c a3to1.c agetbloc.c closefile.c count_domain.c disp.c getdomain.c getfile.c getstampdat.c gjutil.c igetca.c ltou.c matmult.c openfile.c printdomain.c printmat.c rossmann.c testfile.c utol.c
