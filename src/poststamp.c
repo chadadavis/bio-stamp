@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 	int *all;
 
 	char c,filename[200],filename2[200],outfile[200];
-	char *env;
+    char *stampdir = AM_STAMPDIR;
 
 	float min_Pij,Dij,Cij;
 	float const1,const2;
@@ -43,10 +43,10 @@ int main(int argc, char *argv[]) {
 
 	printf("POSTSTAMP, R.B. Russell 1995\n");
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-           fprintf(stderr,"error: you haven't set the environment parameter STAMPDIR to anything\n");
-           return -1;
-      	}
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 	min_Pij=0.5;
 	aligned=0;
 	filename2[0]='\0';
@@ -116,7 +116,7 @@ int main(int argc, char *argv[]) {
 	}
 	domain=(struct domain_loc*)malloc(ndomain*sizeof(struct domain_loc));
 	rewind(DOM);
-	if(getdomain(DOM,domain,&ndomain,ndomain,&gottrans,env,0,stdout)==-1) exit(-1);
+	if(getdomain(DOM,domain,&ndomain,ndomain,&gottrans,stampdir,0,stdout)==-1) exit(-1);
 	pointer=(int*)malloc(ndomain*sizeof(int));
 	for(i=0; i<ndomain; ++i) {
 	  for(j=0; j<domain[i].nobj; ++j) {

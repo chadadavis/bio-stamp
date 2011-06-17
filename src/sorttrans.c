@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
 	struct domain_loc *domain;
 	struct info_struc *info;
 
-	char *env;
+    char *stampdir = AM_STAMPDIR;
 
 	filename=(char*)malloc(1000*sizeof(char));
 
@@ -98,10 +98,10 @@ int main(int argc, char *argv[]) {
 	}
 
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-           fprintf(stderr,"error: you haven't set the environment parameter STAMPDIR to anything\n");
-           return -1;
-      	}
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 	/* find the number of transformations */
 	ndomain=0;
 	ndomain=count_domain(IN);
@@ -113,7 +113,7 @@ int main(int argc, char *argv[]) {
 	buff=(char*)malloc(400*sizeof(char));
 
 	/* read in domain descriptions */
-	if(getdomain(IN,domain,&i,ndomain,&gottrans,env,0,stdout)==-1) exit(-1);
+	if(getdomain(IN,domain,&i,ndomain,&gottrans,stampdir,0,stdout)==-1) exit(-1);
 	if(i!=ndomain) {
 	  fprintf(stderr,"error in domain descriptors\n");
 	  exit(-1);
