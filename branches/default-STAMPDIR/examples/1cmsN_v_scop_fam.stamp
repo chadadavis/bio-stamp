@@ -1,0 +1,1517 @@
+
+STAMP Structural Alignment of Multiple Proteins
+ by Robert B. Russell & Geoffrey J. Barton 
+ Please cite PROTEINS, v14, 309-323, 1992
+
+Results of scan will be written to file stamp_trans.scan
+Fits  = no. of fits performed, Sc = STAMP score, RMS = RMS deviation
+Align = alignment length, Nfit = residues fitted, Eq. = equivalent residues
+Secs  = no. equiv. secondary structures, %I = seq. identity, %S = sec. str. identity
+P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
+
+     Domain1         Domain2          Fits  Sc      RMS   Len1 Len2 Align Fit   Eq. Secs    %I    %S     P(m)
+Scan 1cmsN           3sdha.1.1.1.1.1    0   0.000 100.000  175  145    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1phna.1.1.1.2.1    0   0.000 100.000  175  162    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1grj.1.2.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1hdj.1.2.2.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1du2a.1.2.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cxzb.1.2.4.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1srya.1.2.5.1.1    0   0.000 100.000  175  110    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1eiya.1.2.5.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1a36a.1.2.6.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1aqt.1.2.7.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1idsa.1.2.8.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1c75a.1.3.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1aoqa.1.3.1.2.1    0   0.000 100.000  175  117    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1etpa.1.3.1.3.1    0   0.000 100.000  175   92    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           s005.1.3.1.4.1      skipped domain - file missing or too short
+Scan 1cmsN           2hdda.1.4.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1hcra.1.4.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           s006.1.4.1.3.1      skipped domain - file missing or too short
+Scan 1cmsN           1ba5.1.4.1.4.1      skipped domain - file missing or too short
+Scan 1cmsN           6paxa.1.4.1.5.1    0   0.000 100.000  175  133    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1igna.1.4.1.6.1     skipped domain - file missing or too short
+Scan 1cmsN           1bw6a.1.4.1.7.1     skipped domain - file missing or too short
+Scan 1cmsN           1bl0a.1.4.1.8.1     skipped domain - file missing or too short
+Scan 1cmsN           1sfe.1.4.2.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1c20a.1.4.3.1.1    0   0.000 100.000  175  128    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1f1za.1.4.4.1.1    0   0.000 100.000  175   99    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bia.1.4.5.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1lea.1.4.5.2.1      skipped domain - file missing or too short
+Scan 1cmsN           1aoy.1.4.5.3.1      skipped domain - file missing or too short
+Scan 1cmsN           2cgpa.1.4.5.4.1     skipped domain - file missing or too short
+Scan 1cmsN           1opc.1.4.5.5.1     0   1.111   1.980  175   99  202   19    6    1  16.67  83.33 1.00000
+Scan 1cmsN           1smta.1.4.5.6.1    0   0.000 100.000  175   98    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bm9a.1.4.5.7.1    0   0.000 100.000  175  120    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b9ma.1.4.5.8.1    0   0.000 100.000  175  120    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bjaa.1.4.5.9.1    0   0.000 100.000  175   95    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1repc.1.4.5.10.1    0   0.000 100.000  175  111    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2foka.1.4.5.11.1    0   0.000 100.000  175  132    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1hsta.1.4.5.12.1     skipped domain - file missing or too short
+Scan 1cmsN           s008.1.4.5.13.1     skipped domain - file missing or too short
+Scan 1cmsN           2hfh.1.4.5.14.1    0   0.000 100.000  175   93    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2bby.1.4.5.15.1     skipped domain - file missing or too short
+Scan 1cmsN           1cf7a.1.4.5.16.1     skipped domain - file missing or too short
+Scan 1cmsN           1d8ja.1.4.5.17.1     skipped domain - file missing or too short
+Scan 1cmsN           1qbja.1.4.5.18.1     skipped domain - file missing or too short
+Scan 1cmsN           1dp7p.1.4.5.19.1     skipped domain - file missing or too short
+Scan 1cmsN           1flia.1.4.5.20.1    0   0.000 100.000  175   98    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1hks.1.4.5.21.1    0   0.000 100.000  175  106    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1if1a.1.4.5.22.2    0   0.000 100.000  175  105    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2dtr.1.4.5.23.1     skipped domain - file missing or too short
+Scan 1cmsN           1xgsa.1.4.5.24.1     skipped domain - file missing or too short
+Scan 1cmsN           1tns.1.4.5.25.1     skipped domain - file missing or too short
+Scan 1cmsN           1qa6a.1.4.6.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1wjaa.1.4.7.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ef4a.1.4.8.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cuk.1.5.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1dv0a.1.5.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1aua.1.5.3.1.1     0   0.000 100.000  175   93    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1enwa.1.5.4.1.1    0   0.000 100.000  175  114    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pysbb.1.6.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1d4ua.1.6.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           2spca.1.7.1.1.1    0   0.000 100.000  175  107    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1e2aa.1.7.2.1.1    0   0.000 100.000  175  102    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1chua.1.7.3.1.1    0   0.000 100.000  175  111    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qsda.1.7.4.1.1    0   0.000 100.000  175  102    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1deeg.1.8.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1gab.1.8.1.2.1      skipped domain - file missing or too short
+Scan 1cmsN           1ebdc.1.9.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2erl.1.10.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2abd.1.11.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ef1a.1.11.2.1.1    0   0.000 100.000  175  110    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1kdxa.1.12.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1lre.1.13.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1vii.1.14.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1tbaa.1.15.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ail.1.16.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1a32.1.16.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1r1ba.1.16.1.3.1     skipped domain - file missing or too short
+Scan 1cmsN           2hp8.1.17.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2end.1.18.1.1.1    0   0.000 100.000  175  137    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2lisa.1.19.1.1.1    0   0.000 100.000  175  131    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bmfg.1.20.1.1.1    0   0.000 100.000  175  122    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lbu.1.21.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ckta.1.22.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1eqza.1.23.1.1.1    0   0.000 100.000  175  125    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b67a.1.23.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1tafa.1.23.1.3.1     skipped domain - file missing or too short
+Scan 1cmsN           1diog.1.24.1.1.1    0   0.000 100.000  175  137    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mtyg.1.24.2.1.1    0   0.000 100.000  175  162    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1om2a.1.24.3.1.1    0   0.000 100.000  175   95    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bz4a.1.25.1.1.1    0   0.000 100.000  175  144    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2asr.1.25.2.1.1    0   0.000 100.000  175  142    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           256ba.1.25.3.1.1    0   0.000 100.000  175  106    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2ccya.1.25.3.2.1    0   0.000 100.000  175  127    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2hmza.1.25.4.1.1    0   0.000 100.000  175  114    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ei7a.1.25.5.1.1    0   0.000 100.000  175  158    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1buca.1.25.6.1.1    0   0.000 100.000  175  151    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1nsgb.1.25.7.1.1    0   0.000 100.000  175   94    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1avoab.1.25.8.1.1    0   0.000 100.000  175  200    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2a0b.1.25.9.1.1    0   0.000 100.000  175  118    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c02a.1.25.9.2.1    0   0.000 100.000  175  166    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ryt.1.26.1.1.1    0   0.000 100.000  175  146    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mtyb.1.26.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rhga.1.27.1.1.1    0   0.000 100.000  175  145    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1eera.1.27.1.2.1    0   0.000 100.000  175  166    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2ilk.1.27.1.3.1    0   0.000 100.000  175  155    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a8h.1.28.1.1.1    0   0.000 100.000  175  152    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1acp.1.29.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dnya.1.29.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1unka.1.29.2.1.1    0   0.000 100.000  175   87    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2eiaa.1.29.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ffh.1.30.1.1.1    0   0.000 100.000  175   87    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b91a.1.30.2.1.1    0   0.000 100.000  175  118    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1nkd.1.31.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1joya.1.31.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1r2aa.1.32.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ytfb.1.33.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ecia.1.34.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1b0na.1.35.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1octc.1.36.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1lmb3.1.36.1.2.1    0   0.000 100.000  175   87    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b0na.1.36.1.3.1     skipped domain - file missing or too short
+Scan 1cmsN           1dw9a.1.36.1.4.1     skipped domain - file missing or too short
+Scan 1cmsN           2puda.1.36.1.5.1     skipped domain - file missing or too short
+Scan 1cmsN           2tct.1.37.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1a04a.1.37.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1dula.1.38.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1sknp.1.39.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1hloa.1.40.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           5icb.1.41.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1a03a.1.41.1.2.1    0   0.000 100.000  175   90    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1sra.1.41.1.3.1    0   0.000 100.000  175  151    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rro.1.41.1.4.1    0   0.000 100.000  175  108    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ncx.1.41.1.5.1    0   0.000 100.000  175  162    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qjta.1.41.1.6.1    0   0.000 100.000  175   99    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qasa.1.41.1.7.1    0   0.000 100.000  175   94    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c3za.1.41.2.1.1    0   0.000 100.000  175  108    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cpo.1.41.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bkra.1.42.1.1.1    0   0.000 100.000  175  108    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a26.1.43.1.1.1    0   0.000 100.000  175  135    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ycqa.1.44.1.1.1    0   0.000 100.000  175   88    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1baza.1.45.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2cpga.1.45.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1fvka.1.46.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pgta.1.47.1.1.1    0   0.000 100.000  175  133    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bmta.1.48.1.1.1    0   0.000 100.000  175   90    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2tpt.1.48.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bf5a.1.49.1.1.1    0   0.000 100.000  175  167    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ez3a.1.49.2.1.1    0   0.000 100.000  175  124    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2cbla.1.50.1.1.1    0   0.000 100.000  175  131    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1de4c.1.50.2.1.1    0   0.000 100.000  175  148    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1eo0a.1.50.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1kjs.1.51.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2occh.1.52.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1hyp.1.53.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1hssa.1.53.1.2.1    0   0.000 100.000  175  111    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pnbab.1.53.1.3.1    0   0.000 100.000  175  106    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1aie.1.54.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1adt.1.55.1.1.1    0   0.000 100.000  175   90    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ihfa.1.56.1.1.1    0   0.000 100.000  175   96    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1alo.1.57.1.1.1    0   0.000 100.000  175  113    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dj8a.1.58.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1af7.1.59.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bqv.1.60.1.1.1    0   0.000 100.000  175  110    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b0xa.1.60.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1cuk.1.60.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1coo.1.60.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1b22a.1.60.4.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2ezya.1.60.5.1.1    0   0.000 100.000  175   89    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bpya.1.60.6.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1tfr.1.60.7.1.1    0   0.000 100.000  175  123    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bmy.1.60.8.1.1    0   0.000 100.000  175  107    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d8ba.1.60.9.1.1     skipped domain - file missing or too short
+Scan 1cmsN           4crxa.1.60.10.1.1    0   0.000 100.000  175  110    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1zyma.1.60.11.1.1    0   0.000 100.000  175  123    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1hiwa.1.61.1.1.1    0   0.000 100.000  175  115    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1jvr.1.61.1.2.1    0   0.000 100.000  175  137    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bax.1.61.1.3.1    0   0.729   1.483  175   94  179   10    7    0  14.29  14.29 1.00000
+Scan 1cmsN           1a6s.1.61.1.4.1    0   0.000 100.000  175   87    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qgta.1.62.1.1.1    0   0.000 100.000  175  142    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1aep.1.63.1.1.1    0   0.000 100.000  175  153    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1nkl.1.64.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qdma.1.64.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1ain.1.65.1.1.1    0   1.309   1.950  175  262  344   17   10    0  10.00  30.00 1.00000
+Scan 1cmsN           1tada.1.66.1.1.1    0   0.000 100.000  175  121    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ezm.1.67.1.1.1    0   0.000 100.000  175  145    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ej5a.1.68.1.1.1    0   0.000 100.000  175  107    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bmfa.1.69.1.1.1    0   0.000 100.000  175  131    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1abv.1.70.1.1.1    0   0.000 100.000  175  105    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dvka.1.71.1.1.1    0   0.000 100.000  175  149    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ak4c.1.72.1.1.1    0   0.000 100.000  175  145    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1jsub.1.73.1.1.1    0   0.000 100.000  175  135    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1vola.1.73.1.2.1    0   0.000 100.000  175   95    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1guxa.1.73.1.3.1    0   0.000 100.000  175  177    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1hus.1.74.1.1.1    0   0.000 100.000  175  133    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2dtr.1.75.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ngr.1.76.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1eyva.1.77.1.1.1    0   0.000 100.000  175  131    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b79a.1.78.1.1.1    0   0.000 100.000  175  102    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qc7a.1.79.1.1.1    0   0.000 100.000  175  101    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1crka.1.80.1.1.1    0   0.000 100.000  175   98    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1al01.1.81.1.1.1    0   0.000 100.000  175  143    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lla.1.82.1.1.1    0   0.000 100.000  175   99    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lla.1.83.1.1.1    0   0.000 100.000  175  260    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bt3a.1.83.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dbha.1.84.1.1.1    0   0.000 100.000  175  204    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1boua.1.85.1.1.1    0   0.000 100.000  175  132    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mroa.1.86.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bgf.1.87.1.1.1    0   0.000 100.000  175  124    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1agre.1.88.1.1.1    0   0.000 100.000  175  128    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a9xa.1.89.1.1.1    0   0.000 100.000  175  153    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1llp.1.90.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cxpac.1.90.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1aa7a.1.91.1.1.1    0   0.000 100.000  175  158    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2abk.1.92.1.1.1    0   0.000 100.000  175  211    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mun.1.92.1.2.1    0   0.000 100.000  175  225    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mpga.1.92.1.3.1    0   0.000 100.000  175  183    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1gln.1.93.1.1.1    0   0.000 100.000  175  163    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rlr.1.94.1.1.1    0   0.000 100.000  175  212    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dnpa.1.95.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2pgd.1.96.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qmga.1.96.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2hdha.1.96.1.3.1    0   0.000 100.000  175   97    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dlja.1.96.1.4.1    0   0.000 100.000  175   98    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bg6.1.96.1.5.1    0   0.000 100.000  175  165    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1utg.1.97.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1gai.1.98.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cem.1.98.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dl2a.1.98.2.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qaza.1.98.3.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cb8a.1.98.3.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           5eau.1.98.4.1.1    0   0.000 100.000  175  200    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2sqcaa.1.98.4.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d8db.1.98.4.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c3d.1.98.4.4.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1csh.1.99.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1phc.1.100.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1fipa.1.101.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1jhga.1.102.1.1.1    0   0.000 100.000  175  101    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1iiea.1.103.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1aora.1.104.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qi9a.1.105.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1vns.1.105.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1sig.1.106.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dg3a.1.107.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bvp11.1.108.1.1.1    0   0.000 100.000  175  215    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1tx4a.1.109.1.1.1    0   0.000 100.000  175  196    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1wer.1.109.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bkds.1.110.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3bct.1.111.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b3ua.1.111.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b89a.1.111.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lrv.1.111.1.4.1    0   0.000 100.000  175  233    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qmma.1.111.1.5.1     skipped domain - file missing or too short
+Scan 1cmsN           1ycsb.1.111.2.1.1    0   0.000 100.000  175  130    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pbv.1.111.3.1.1    0   0.000 100.000  175  195    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           0lpc.1.111.4.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qsaa.1.111.5.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d8da.1.111.6.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           s015.1.111.7.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1a17.1.111.8.1.1    0   0.000 100.000  175  159    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1eyha.1.111.9.1.1    0   0.000 100.000  175  144    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dvpa.1.111.9.2.1    0   0.000 100.000  175  145    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c9la.1.111.10.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2occe.1.111.11.1.1    0   0.000 100.000  175  105    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1yge.1.112.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lox.1.112.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c1ka.1.113.1.1.1    0   0.000 100.000  175  217    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a5t.1.114.1.1.1    0   0.000 100.000  175  158    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2tct.1.115.1.1.1    0   0.000 100.000  175  132    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lbd.1.116.1.1.1    0   0.000 100.000  175  238    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ah7.1.117.1.1.1    0   0.000 100.000  175  245    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ak0.1.117.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bm0a.1.118.1.1.1    0   0.000 100.000  175  192    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1jswa.1.119.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b8fa.1.119.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1uby.1.120.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           5eau.1.120.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ps1a.1.120.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1oelaa.1.121.1.1.1    0   0.000 100.000  175  251    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a6daa.1.121.1.2.1    0   0.000 100.000  175  245    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ecma.1.122.1.1.1    0   0.000 100.000  175   91    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           5csma.1.122.1.2.1    0   0.000 100.000  175  250    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pprm.1.123.1.1.1    0   0.000 100.000  175  156    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qq8a.1.124.1.1.1    0   0.000 100.000  175  214    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1poc.1.125.1.1.1    0   0.789   2.029  175  134  198   15    5    1   0.00  20.00 1.00000
+Scan 1cmsN           1poa.1.125.1.2.1    0   0.000 100.000  175  118    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bxm.1.126.1.1.1    0   0.000 100.000  175   99    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b2nb.1.127.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1gotg.1.127.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1hfes.1.127.3.1.1    0   0.000 100.000  175   88    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ef1c.1.127.4.1.1    0   0.000 100.000  175   87    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2prgc.1.127.5.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dpjb.1.127.6.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2cy3.1.128.1.1.1    0   0.000 100.000  175  118    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           6prcc.1.128.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1fgja.1.128.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1neu.2.1.1.1.1     0   1.092   2.215  175  115  197   19   14    1  14.29  57.14 1.00000
+Scan 1cmsN           3frua.2.1.1.2.1    0   1.008   2.219  175   91  201   17   13    1   0.00  53.85 1.00000
+Scan 1cmsN           1vcaa.2.1.1.3.1    0   1.005   2.613  175  109  193   15   13    1   0.00   7.69 1.00000
+Scan 1cmsN           1vcaa.2.1.1.4.1    0   1.113   2.097  175   90  174   18   12    2   8.33  91.67 1.00000
+Scan 1cmsN           1gof.2.1.1.5.1     0   0.991   2.534  175  102  178   18    6    1   0.00  33.33 1.00000
+Scan 1cmsN           2hft.2.1.2.1.1     0   1.081   2.587  175  102  175   22   14    2   0.00  64.29 1.00000
+Scan 1cmsN           1b4ra.2.1.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bgla.2.1.4.1.1    0   1.141   2.641  175  114  211   20   13    3  15.38  69.23 1.00000
+Scan 1cmsN           1f13a.2.1.5.1.1    0   1.052   2.143  175  112  180   22   16    2   0.00  75.00 1.00000
+Scan 1cmsN           1ncia.2.1.6.1.1    0   0.000 100.000  175  102    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2mcm.2.1.7.1.1     0   1.121   2.013  175  112  207   18   15    3   6.67  80.00 1.00000
+Scan 1cmsN           1cbja.2.1.8.1.1    0   1.259   2.409  175  151  238   25   15    4   0.00  93.33 1.00000
+Scan 1cmsN           1qtsa.2.1.9.1.1    0   1.095   1.921  175  133  185   18   11    1   9.09  45.45 1.00000
+Scan 1cmsN           1qpxa.2.1.10.1.1    0   1.125   2.184  175  115  204   18    5    0   0.00  40.00 1.00000
+Scan 1cmsN           1mspa.2.1.10.2.1    0   1.169   1.903  175  124  211   16    7    2   0.00  85.71 1.00000
+Scan 1cmsN           4kbpa.2.1.11.1.1    0   1.172   2.328  175  112  192   22   17    3   5.88  76.47 1.00000
+Scan 1cmsN           1dqia.2.1.12.1.1    0   1.135   1.594  175  124  221   18   12    3   8.33  91.67 1.00000
+Scan 1cmsN           1e1ba.2.1.13.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ddt.2.2.1.1.1     0   1.470   1.899  175  155  237   20   17    2   5.88  76.47 1.00000
+Scan 1cmsN           1exh.2.2.2.1.1     0   0.961   2.376  175  110  219   18   16    4  25.00  87.50 0.05140
+Scan 1cmsN           1nbca.2.2.2.2.1    0   1.325   2.086  175  155  195   26   18    3   5.56  83.33 1.00000
+Scan 1cmsN           1qba.2.2.2.3.1     0   1.301   2.684  175  173  250   19    7    1  14.29 100.00 1.00000
+Scan 1cmsN           1amx.2.2.3.1.1     0   1.102   2.313  175  150  226   13    8    3   0.00  75.00 1.00000
+Scan 1cmsN           1qunb.2.2.3.2.1    0   0.000 100.000  175  158    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bv8a.2.2.4.1.1    0   1.126   2.427  175  138  234   16    4    0   0.00  75.00 1.00000
+Scan 1cmsN           1ycsa.2.2.5.1.1    0   1.181   2.308  175  191  259   20   13    3   0.00  84.62 1.00000
+Scan 1cmsN           1hcz.2.2.6.1.1     0   1.144   2.717  175  187  251   21    6    1   0.00  16.67 1.00000
+Scan 1cmsN           1bw8a.2.2.7.1.1    0   1.244   2.708  175  256  328   22   13    4   7.69  76.92 1.00000
+Scan 1cmsN           1cgt.2.3.1.1.1     0   0.000 100.000  175  105    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1vcbc.2.3.2.1.1    0   0.921   1.268  175  142  191   15   12    2   0.00  66.67 1.00000
+Scan 1cmsN           1ttba.2.3.3.1.1    0   0.818   1.683  175  127  215   13    9    2  11.11  77.78 1.00000
+Scan 1cmsN           1dmha.2.3.4.1.1    0   1.752   2.488  175  262  261   29   17    2   5.88  64.71 1.00000
+Scan 1cmsN           1hoe.2.4.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1aac.2.5.1.1.1     0   0.910   1.638  175  105  192   20   18    3   5.56  72.22 1.00000
+Scan 1cmsN           1cyx.2.5.1.2.1     0   1.207   2.196  175  158  229   24   18    3  11.11  94.44 1.00000
+Scan 1cmsN           1nif.2.5.1.3.1     0   1.218   2.175  175  159  244   14    8    2  12.50  25.00 1.00000
+Scan 1cmsN           1qasa.2.6.1.1.1    0   1.141   2.268  175  126  183   22   16    6  12.50  81.25 1.00000
+Scan 1cmsN           1rsy.2.6.1.2.1     0   1.226   2.234  175  135  232   17   11    2   0.00  27.27 1.00000
+Scan 1cmsN           1qpxa.2.6.2.1.1    0   1.421   1.895  175   91  196   23   18    3  16.67  61.11 1.00000
+Scan 1cmsN           1who.2.6.3.1.1     0   1.301   2.387  175   94  197   21   17    3  11.76  70.59 1.00000
+Scan 1cmsN           1dcea.2.6.4.1.1    0   1.444   2.169  175  110  207   26   20    4  10.00  70.00 1.00000
+Scan 1cmsN           1czya.2.7.1.1.1    0   1.454   2.273  175  152  225   16    4    1   0.00 100.00 1.00000
+Scan 1cmsN           2bn2a.2.8.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2bpa1.2.9.1.1.1    0   1.513   2.323  175  262  335   24   18    4   5.56  83.33 1.00000
+Scan 1cmsN           1stma.2.9.1.2.1    0   1.199   1.874  175  141  206   25   22    4   9.09  68.18 1.00000
+Scan 1cmsN           2bbva.2.9.1.3.1    0   1.458   1.951  175  262  327   26   21    5   4.76  61.90 1.00000
+Scan 1cmsN           1vpsa.2.9.1.4.1    0   1.542   2.465  175  262  341   24    9    2   0.00  88.89 1.00000
+Scan 1cmsN           1amm.2.10.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1npsa.2.10.1.2.1    0   1.112   2.239  175   88  176   24   14    3   7.14  71.43 1.00000
+Scan 1cmsN           1wkt.2.10.1.3.1    0   0.851   2.077  175   88  149   15    6    1   0.00  33.33 1.00000
+Scan 1cmsN           1bhu.2.10.1.4.1    0   0.756   2.146  175  102  161   16   13    2   7.69  38.46 1.00000
+Scan 1cmsN           1yge.2.11.1.1.1    0   1.425   1.969  175  149  205   25   19    5  15.79  63.16 1.00000
+Scan 1cmsN           1hpla.2.11.1.2.1    0   1.106   2.373  175  112  175   23   23    4  13.04  69.57 1.00000
+Scan 1cmsN           1ca1.2.11.1.3.1    0   1.271   1.939  175  121  193   20   11    2  27.27  81.82 0.07103
+Scan 1cmsN           1pgs.2.12.1.1.1    0   1.149   2.104  175  137  206   22   13    3   0.00  76.92 1.00000
+Scan 1cmsN           1phm.2.12.1.2.1    0   1.280   2.727  175  262  289   22    9    2  11.11  66.67 1.00000
+Scan 1cmsN           1cjda.2.12.2.1.1    0   1.172   2.429  175  262  302   18    7    2  14.29  57.14 1.00000
+Scan 1cmsN           1dhx.2.12.2.2.1    0   1.304   2.360  175  262  331   21   13    2  15.38  46.15 1.00000
+Scan 1cmsN           1dkva.2.13.1.1.1    0   1.079   2.387  175  159  249   20   17    2  11.76  41.18 1.00000
+Scan 1cmsN           1shsa.2.14.1.1.1    0   1.085   2.798  175  115  215   18    6    0   0.00   0.00 1.00000
+Scan 1cmsN           1ejfa.2.14.1.2.1    0   0.925   2.234  175  110  183   10    6    0   0.00  33.33 1.00000
+Scan 1cmsN           1slua.2.15.1.1.1    0   0.965   2.115  175  131  213   14    9    2  11.11  77.78 1.00000
+Scan 1cmsN           1beha.2.16.1.1.1    0   1.441   2.541  175  184  249   22    9    1  11.11  55.56 1.00000
+Scan 1cmsN           1gof.2.17.1.1.1    0   1.107   2.160  175  150  217   15    8    1   0.00  75.00 1.00000
+Scan 1cmsN           1czsa.2.17.1.2.1    0   1.386   1.997  175  160  221   28   26    5   3.85  65.38 1.00000
+Scan 1cmsN           1dlc.2.17.1.3.1    0   1.208   1.165  175  145  239   20   13    2  23.08  69.23 0.09972
+Scan 1cmsN           1nuka.2.17.1.4.1    0   1.145   1.963  175  169  241   20   12    2  16.67  50.00 1.00000
+Scan 1cmsN           1bgla.2.17.1.5.1    0   1.411   2.116  175  217  295   24   17    5   0.00  76.47 1.00000
+Scan 1cmsN           1ulo.2.17.1.6.1    0   1.399   2.052  175  152  248   24   15    3   0.00  33.33 1.00000
+Scan 1cmsN           1xnaa.2.17.1.7.1    0   1.229   2.212  175  151  243   22   14    2  14.29  71.43 1.00000
+Scan 1cmsN           1bvp1.2.18.1.1.1    0   1.275   2.341  175  134  205   23   10    3  10.00  70.00 1.00000
+Scan 1cmsN           2viua.2.18.1.2.1    0   1.398   2.383  175  262  304   25   11    2  45.45  18.18 0.01578
+Scan 1cmsN           1flca.2.18.1.3.1    0   1.114   1.493  175  104  186   19   19    4   5.26  63.16 1.00000
+Scan 1cmsN           1aol.2.19.1.1.1    0   1.361   2.496  175  228  307   19   14    3  14.29  92.86 1.00000
+Scan 1cmsN           1knb.2.20.1.1.1    0   1.373   1.945  175  186  232   28   21    3   0.00  90.48 1.00000
+Scan 1cmsN           1aly.2.21.1.1.1    0   1.086   2.588  175  146  180   18   12    2   8.33  58.33 1.00000
+Scan 1cmsN           1sfp.2.22.1.1.1    0   0.875   2.988  175  111  205   16    9    1  33.33  33.33 0.17219
+Scan 1cmsN           1cb8a.2.23.1.1.1    0   1.006   2.290  175  100  197   17   16    3   0.00  81.25 1.00000
+Scan 1cmsN           1aun.2.24.1.1.1    0   1.401   2.225  175  208  281   19   12    2   8.33  41.67 1.00000
+Scan 1cmsN           1ygs.2.25.1.1.1    0   1.332   2.469  175  190  274   21    9    2  11.11  55.56 1.00000
+Scan 1cmsN           1dmza.2.25.1.2.1    0   1.040   2.557  175  158  199   14    9    1  11.11  22.22 1.00000
+Scan 1cmsN           1cq3a.2.26.1.1.1    0   1.316   1.920  175  224  289   23   16    3   0.00  87.50 1.00000
+Scan 1cmsN           1p35a.2.27.1.1.1    0   1.338   2.420  175  262  312   27   17    4   5.88  76.47 1.00000
+Scan 1cmsN           1nls.2.28.1.1.1    0   1.225   2.201  175  237  306   19   15    2   0.00  80.00 1.00000
+Scan 1cmsN           1gbg.2.28.1.2.1    0   1.440   1.554  175  214  303   23   18    4   5.56  83.33 1.00000
+Scan 1cmsN           1slta.2.28.1.3.1    0   1.249   2.644  175  133  200   21   11    3   9.09  72.73 1.00000
+Scan 1cmsN           1d2sa.2.28.1.4.1    0   1.693   2.276  175  170  237   27   22    3   4.55  68.18 1.00000
+Scan 1cmsN           1saca.2.28.1.5.1    0   1.414   2.482  175  204  260   24   12    2   0.00  75.00 1.00000
+Scan 1cmsN           1a8d.2.28.1.6.1    0   1.283   2.377  175  247  284   18    6    2  16.67 100.00 1.00000
+Scan 1cmsN           0exa.2.28.1.7.1     skipped domain - file missing or too short
+Scan 1cmsN           1kit.2.28.1.8.1    0   1.239   2.156  175  192  281   18    7    0  28.57  28.57 1.00000
+Scan 1cmsN           2sli.2.28.1.9.1    0   1.087   2.573  175  196  276   13    3    1   0.00 100.00 1.00000
+Scan 1cmsN           6cel.2.28.1.10.1    0   1.715   2.247  175  262  285   24   18    5   5.56  61.11 1.00000
+Scan 1cmsN           1xnb.2.28.1.11.1    0   1.840   1.779  175  185  238   35   27    4  11.11  88.89 1.00000
+Scan 1cmsN           1bgla.2.29.1.1.1    0   1.298   2.330  175  262  242   21   13    1   7.69  69.23 1.00000
+Scan 1cmsN           1oaca.2.29.2.1.1    0   1.192   1.931  175  262  269   17   10    1  10.00  80.00 1.00000
+Scan 1cmsN           1cb8a.2.29.3.1.1    0   1.365   2.594  175  262  327   20    7    0  14.29  57.14 1.00000
+Scan 1cmsN           1qexa.2.30.1.1.1    0   1.145   1.930  175  262  161   21   16    2   0.00  81.25 1.00000
+Scan 1cmsN           1rie.2.31.1.1.1    0   1.318   2.375  175  127  226   18   12    3  16.67  91.67 1.00000
+Scan 1cmsN           1eg9a.2.31.1.2.1    0   1.603   2.173  175  154  221   26   21    5  19.05  61.90 1.00000
+Scan 1cmsN           1bia.2.32.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bi1.2.32.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1ckaa.2.32.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2mysa.2.32.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1vie.2.32.4.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1psf.2.32.4.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1dj7b.2.32.4.3.1     skipped domain - file missing or too short
+Scan 1cmsN           2ahjb.2.32.4.4.1    0   0.000 100.000  175  211    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2eifa.2.32.5.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1rl2a.2.32.5.2.1     skipped domain - file missing or too short
+Scan 1cmsN           3vub.2.32.6.1.1    0   0.928   2.636  175  101  185   17   12    2   0.00  91.67 1.00000
+Scan 1cmsN           1ex4a.2.32.7.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1aono.2.33.1.1.1    0   0.000 100.000  175   97    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3btoaa.2.33.1.2.1    0   1.260   1.849  175  224  295   15    9    1   0.00  55.56 1.00000
+Scan 1cmsN           1auua.2.33.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pdr.2.34.1.1.1    0   0.784   2.284  175   96  185   14    7    2   0.00  85.71 1.00000
+Scan 1cmsN           1i16.2.34.1.2.1    0   1.121   2.241  175  130  224   17   12    2   8.33  50.00 1.00000
+Scan 1cmsN           1g3p.2.35.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1b34a.2.36.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1whi.2.37.1.1.1    0   0.880   2.246  175  122  195   12    4    1   0.00  25.00 1.00000
+Scan 1cmsN           1sty.2.38.1.1.1    0   1.071   2.237  175  137  199   11    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1efid.2.38.2.1.1    0   0.999   2.084  175  103  158   18   15    3  20.00  66.67 0.12851
+Scan 1cmsN           1esfa.2.38.2.2.1    0   1.076   2.304  175  116  160   23   21    4   9.52  61.90 1.00000
+Scan 1cmsN           1ueab.2.38.3.1.1    0   1.314   2.198  175  181  253   18   10    1   0.00  90.00 1.00000
+Scan 1cmsN           1asza.2.38.4.1.1    0   1.218   1.572  175  137  243   19   17    2  11.76  52.94 1.00000
+Scan 1cmsN           1cuk.2.38.4.2.1     skipped domain - file missing or too short
+Scan 1cmsN           3ulla.2.38.4.3.1    0   1.438   2.288  175  106  172   31   25    6   8.00  84.00 1.00000
+Scan 1cmsN           1pysb.2.38.4.4.1    0   0.922   2.072  175  113  214   14    6    0   0.00  16.67 1.00000
+Scan 1cmsN           1mjc.2.38.4.5.1     skipped domain - file missing or too short
+Scan 1cmsN           1ckma.2.38.4.6.1    0   1.007   2.266  175   89  195   13    6    2   0.00  66.67 1.00000
+Scan 1cmsN           1rip.2.38.4.7.1     skipped domain - file missing or too short
+Scan 1cmsN           1gvp.2.38.4.8.1    0   1.153   2.268  175   87  159   27   22    4   9.09  81.82 1.00000
+Scan 1cmsN           1a1d.2.38.4.9.1    0   1.196   1.872  175  146  218   20   11    0   9.09  27.27 1.00000
+Scan 1cmsN           8prka.2.38.5.1.1    0   1.500   2.362  175  262  320   24   15    3   6.67  73.33 1.00000
+Scan 1cmsN           1b9ma.2.38.6.1.1    0   1.613   2.126  175  135  216   25   17    3   0.00  82.35 1.00000
+Scan 1cmsN           1b3qa.2.38.7.1.1    0   1.209   2.120  175  132  189   22   21    5  19.05  85.71 1.00000
+Scan 1cmsN           6prch.2.39.1.1.1    0   1.088   2.405  175  222  244   13    3    1   0.00 100.00 1.00000
+Scan 1cmsN           1bfg.2.40.1.1.1    0   1.533   1.563  175  126  203   22   17    3   0.00  70.59 1.00000
+Scan 1cmsN           1i1b.2.40.1.2.1    0   1.188   2.477  175  151  228   16    8    1  12.50  50.00 1.00000
+Scan 1cmsN           2aaib.2.40.2.1.1    0   1.454   2.351  175  135  203   27   17    4   0.00  76.47 1.00000
+Scan 1cmsN           1dqga.2.40.2.2.1    0   1.256   2.309  175  134  218   24   18    6  11.11  55.56 1.00000
+Scan 1cmsN           1jlxa.2.40.3.1.1    0   1.632   2.205  175  153  217   30   20    3  10.00  75.00 1.00000
+Scan 1cmsN           1wba.2.40.4.1.1    0   1.524   1.931  175  171  229   25   22    4  13.64  72.73 1.00000
+Scan 1cmsN           1a8d.2.40.4.2.1    0   1.281   2.171  175  205  276   20   13    3   0.00  69.23 1.00000
+Scan 1cmsN           1hcd.2.40.5.1.1    0   1.598   2.061  175  118  195   28   20    4   5.00  60.00 1.00000
+Scan 1cmsN           1fnd.2.41.1.1.1    0   1.470   2.199  175  136  177   32   26    4   7.69  80.77 1.00000
+Scan 1cmsN           2pia.2.41.1.2.1    0   1.595   2.245  175  103  159   32   27    3  14.81  74.07 1.00000
+Scan 1cmsN           1cqxa.2.41.1.3.1    0   1.447   2.646  175  111  166   31   28    4  10.71  78.57 1.00000
+Scan 1cmsN           1amoa.2.41.1.4.1    0   1.419   1.902  175  262  337   25   20    3  15.00  75.00 1.00000
+Scan 1cmsN           1flma.2.41.1.5.1    0   1.683   1.952  175  122  183   29   27    5  11.11  85.19 1.00000
+Scan 1cmsN           1fuia.2.41.2.1.1    0   1.390   2.022  175  236  263   24   16    3  12.50  81.25 1.00000
+Scan 1cmsN           1efca.2.41.3.1.1    0   0.825   2.342  175   92  133   20   16    2   6.25  87.50 1.00000
+Scan 1cmsN           1efca.2.42.1.1.1    0   1.160   2.137  175   97  201   17   13    2   7.69  76.92 1.00000
+Scan 1cmsN           1fmta.2.43.1.1.1    0   1.186   2.146  175  108  175   21   14    2   0.00 100.00 1.00000
+Scan 1cmsN           1bnka.2.43.1.2.1    0   1.243   2.316  175  200  244   17    9    2   0.00  66.67 1.00000
+Scan 1cmsN           1arb.2.44.1.1.1    0   1.769   2.461  175  262  288   30   18    4   5.56  83.33 1.00000
+Scan 1cmsN           5ptp.2.44.1.2.1    0   1.628   2.508  175  222  276   32   25    3   0.00  68.00 1.00000
+Scan 1cmsN           1kxf.2.44.1.3.1    0   1.109   1.937  175  159  196   23   21    3   4.76  57.14 1.00000
+Scan 1cmsN           1cqqa.2.44.1.4.1    0   1.365   2.208  175  180  234   24   20    3   5.00  90.00 1.00000
+Scan 1cmsN           1bco.2.45.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bmfa.2.46.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bd0aa.2.46.2.1.1    0   1.644   2.292  175  148  213   23   12    2  16.67  91.67 1.00000
+Scan 1cmsN           1dazc.2.47.1.1.1    2   3.367   1.956  175   99  170   66   62    8  24.19  85.48 0.00185
+Scan 1cmsN           2er7e.2.47.1.2.1    2   8.181   1.256  175  262  183  158  156   15  31.41  85.90 0.00e+00
+Scan 1cmsN           1ile.2.48.1.1.1    0   1.937   2.214  175  189  222   37   32    4   6.25  81.25 1.00000
+Scan 1cmsN           2eng.2.49.1.1.1    0   1.454   2.151  175  205  243   23    3    1   0.00  66.67 1.00000
+Scan 1cmsN           1bw3.2.49.1.2.1    0   1.064   1.936  175  125  215   12    5    1  20.00  80.00 1.00000
+Scan 1cmsN           1aw8ab.2.49.2.1.1    0   1.222   1.869  175  114  161   25   17    3   5.88  70.59 1.00000
+Scan 1cmsN           1cxsa.2.49.2.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1qcsa.2.49.2.3.1     skipped domain - file missing or too short
+Scan 1cmsN           1dfup.2.50.1.1.1    0   1.129   1.766  175   94  183   18   12    1  16.67  83.33 1.00000
+Scan 1cmsN           1gtra.2.50.1.2.1    0   1.224   2.223  175  198  247   20    9    1  22.22  33.33 1.00000
+Scan 1cmsN           1cl3a.2.51.1.1.1    0   1.169   2.219  175  138  215   16    3    1   0.00 100.00 1.00000
+Scan 1cmsN           1mai.2.52.1.1.1    0   1.038   2.543  175  119  196   20   13    2   0.00  92.31 1.00000
+Scan 1cmsN           1aqca.2.52.1.2.1    0   1.043   2.592  175  121  230   18   13    2   7.69  46.15 1.00000
+Scan 1cmsN           1rrpb.2.52.1.3.1    0   1.099   2.126  175  134  198   17    9    1   0.00  55.56 1.00000
+Scan 1cmsN           1evha.2.52.1.4.1    0   1.052   2.456  175  111  176   22   13    3   0.00  69.23 1.00000
+Scan 1cmsN           1ef1a.2.52.1.5.1    0   1.253   1.377  175   96  185   19   18    2  16.67  77.78 1.00000
+Scan 1cmsN           1ytfc.2.53.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1wpoa.2.54.1.1.1    0   0.000 100.000  175  204    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a49a.2.55.1.1.1    0   1.079   2.406  175  102  168   20   14    2   0.00  42.86 1.00000
+Scan 1cmsN           1hbq.2.56.1.1.1    0   1.297   2.448  175  176  188   23   20    5  10.00  80.00 1.00000
+Scan 1cmsN           1hms.2.56.1.2.1    0   1.446   1.649  175  131  229   24   18    3  16.67  88.89 1.00000
+Scan 1cmsN           1avgi.2.56.1.3.1    0   1.400   1.378  175  142  207   22   21    2   0.00  85.71 1.00000
+Scan 1cmsN           1swua.2.57.1.1.1    0   1.326   1.844  175  120  219   21   19    3   5.26  68.42 1.00000
+Scan 1cmsN           1smpi.2.57.2.1.1    0   1.316   2.188  175  100  192   24   17    5   0.00  76.47 1.00000
+Scan 1cmsN           2cpl.2.58.1.1.1    0   1.455   2.796  175  164  229   24   19    4   5.26  68.42 1.00000
+Scan 1cmsN           1jsg.2.59.1.1.1    0   1.043   1.893  175  111  182   18   14    3   0.00  85.71 1.00000
+Scan 1cmsN           1c39a.2.60.1.1.1    0   1.370   2.527  175  152  240   26   13    3   0.00  69.23 1.00000
+Scan 1cmsN           1hxn.2.61.1.1.1    0   1.437   2.065  175  210  271   16   10    2   0.00  70.00 1.00000
+Scan 1cmsN           1tl2a.2.62.1.1.1    0   1.327   2.344  175  235  315   17    7    2   0.00  57.14 1.00000
+Scan 1cmsN           3sil.2.63.1.1.1    0   1.349   2.328  175  262  313   23   15    3  13.33  60.00 1.00000
+Scan 1cmsN           1crua.2.63.2.1.1    0   1.740   2.268  175  262  267   29   22    4  13.64  72.73 1.00000
+Scan 1cmsN           1pooa.2.63.3.1.1    0   1.468   2.234  175  262  331   20   10    2   0.00  90.00 1.00000
+Scan 1cmsN           1gof.2.64.1.1.1    0   1.305   2.321  175  262  312   20   14    3  14.29  64.29 1.00000
+Scan 1cmsN           2bbkh.2.64.2.1.1    0   1.439   2.231  175  262  348   21   15    3   0.00  40.00 1.00000
+Scan 1cmsN           1gotb.2.64.3.1.1    0   1.553   2.145  175  262  321   26   18    4   5.56  88.89 1.00000
+Scan 1cmsN           1a12a.2.64.4.1.1    0   1.441   2.357  175  262  338   21   12    2   8.33  58.33 1.00000
+Scan 1cmsN           1c9la.2.64.5.1.1    0   1.392   2.302  175  262  281   28   21    4   4.76  80.95 1.00000
+Scan 1cmsN           1qfma.2.64.6.1.1    0   1.312   2.094  175  262  264   24   16    2   0.00  37.50 1.00000
+Scan 1cmsN           1b2na.2.65.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1aoqa.2.65.2.1.1    0   1.325   2.038  175  262  337   18   12    3   0.00  91.67 1.00000
+Scan 1cmsN           1vjs.2.66.1.1.1    0   0.914   2.067  175   89  174   12    9    2   0.00  55.56 1.00000
+Scan 1cmsN           1pina.2.67.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1aiw.2.67.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dkga.2.68.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1hcb.2.69.1.1.1    0   1.550   2.310  175  258  263   24   15    2  20.00  53.33 0.12851
+Scan 1cmsN           4bcl.2.70.1.1.1    0   1.507   2.293  175  262  280   22   17    3   5.88  88.24 1.00000
+Scan 1cmsN           1ospo.2.71.1.1.1    0   1.470   2.290  175  251  228   32   29    4  17.24  62.07 1.00000
+Scan 1cmsN           1vmoa.2.72.1.1.1    0   1.142   2.160  175  163  247   18    9    2   0.00  66.67 1.00000
+Scan 1cmsN           1dlc.2.72.2.1.1    0   1.308   2.194  175  210  310   23   14    3   0.00  35.71 1.00000
+Scan 1cmsN           1jacab.2.72.3.1.1    0   1.156   2.063  175  148  189   20   15    3   6.67  93.33 1.00000
+Scan 1cmsN           1jpc.2.73.1.1.1    0   1.022   2.289  175  108  213   16    3    0   0.00   0.00 1.00000
+Scan 1cmsN           1kapp.2.74.1.1.1    0   1.209   2.485  175  224  290   21   11    2  18.18  63.64 1.00000
+Scan 1cmsN           1air.2.75.1.1.1    0   1.348   2.794  175  262  316   18    6    2   0.00  33.33 1.00000
+Scan 1cmsN           1idk.2.75.1.2.1    0   1.324   2.181  175  262  291   25   22    4  22.73  50.00 0.10979
+Scan 1cmsN           1tyu.2.75.1.3.1    0   1.162   2.333  175  262  343   17   14    3   7.14  64.29 1.00000
+Scan 1cmsN           1rmg.2.75.1.4.1    0   1.377   2.440  175  262  359   20    6    1  16.67  50.00 1.00000
+Scan 1cmsN           1daba.2.75.1.5.1    0   1.714   2.004  175  262  265   29   25    5  12.00  48.00 1.00000
+Scan 1cmsN           1dbga.2.75.1.6.1    0   1.446   2.390  175  262  311   19   12    2   0.00  41.67 1.00000
+Scan 1cmsN           1lxa.2.76.1.1.1    0   1.187   2.003  175  262  261   17    7    1   0.00  71.43 1.00000
+Scan 1cmsN           3tdt.2.76.1.2.1    0   1.129   2.020  175  262  286   16   13    4   7.69  46.15 1.00000
+Scan 1cmsN           2xat.2.76.1.3.1    0   1.332   2.066  175  208  259   21   10    0  10.00  60.00 1.00000
+Scan 1cmsN           1qrea.2.76.1.4.1    0   1.295   2.349  175  210  270   20    8    2  12.50  75.00 1.00000
+Scan 1cmsN           1dzra.2.77.1.1.1    0   1.329   2.418  175  183  250   25   21    4   4.76  61.90 1.00000
+Scan 1cmsN           2phla.2.77.1.2.1    0   1.171   1.674  175  200  210   18   15    2  13.33 100.00 1.00000
+Scan 1cmsN           1pmi.2.77.2.1.1    0   1.165   1.646  175  262  320   19   16    2   6.25  62.50 1.00000
+Scan 1cmsN           1bk0.2.77.3.1.1    0   1.340   2.311  175  262  327   26   20    4   5.00  80.00 1.00000
+Scan 1cmsN           2cgpa.2.77.4.1.1    0   1.030   2.312  175  130  205   17    9    3  44.44  66.67 0.04464
+Scan 1cmsN           1rgs.2.77.4.2.1    0   1.187   2.471  175  130  198   31   26    3   0.00  50.00 1.00000
+Scan 1cmsN           2arca.2.77.5.1.1    0   1.325   2.425  175  161  236   17   11    3   0.00  54.55 1.00000
+Scan 1cmsN           1wapa.2.77.6.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qiua.2.78.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bdo.2.79.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dv1a.2.79.2.1.1    0   1.048   2.147  175  116  218   19   11    2   9.09  72.73 1.00000
+Scan 1cmsN           1hcz.2.79.2.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1gpr.2.79.3.1.1    0   1.405   2.147  175  158  233   19    7    1  14.29  71.43 1.00000
+Scan 1cmsN           1msi.2.80.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1c5ea.2.80.2.1.1    0   1.040   2.100  175   95  193   14   12    1   8.33  66.67 1.00000
+Scan 1cmsN           1fwfb.2.80.3.1.1    0   0.732   2.721  175  101  167   16    5    1   0.00  80.00 1.00000
+Scan 1cmsN           1euwa.2.80.4.1.1    0   1.335   2.061  175  136  190   25   12    2   0.00  50.00 1.00000
+Scan 1cmsN           1tul.2.80.5.1.1    0   1.172   2.214  175  102  172   21   13    2   7.69  61.54 1.00000
+Scan 1cmsN           1at0.2.81.1.1.1    0   1.075   2.522  175  142  227   21   13    2  15.38  69.23 1.00000
+Scan 1cmsN           1dfaaa.2.81.1.2.1    0   1.312   2.342  175  202  292   25   18    4   0.00  61.11 1.00000
+Scan 1cmsN           1umua.2.82.1.1.1    0   0.970   2.248  175  103  188   17   12    2   0.00  50.00 1.00000
+Scan 1cmsN           1b12a.2.82.1.2.1    0   1.455   2.062  175  239  296   22   20    4   0.00  55.00 1.00000
+Scan 1cmsN           3ezma.2.83.1.1.1    0   0.670   2.327  175  101  187   10    6    1   0.00 100.00 1.00000
+Scan 1cmsN           1lkta.2.84.1.1.1    0   0.928   2.249  175  104  165   21   16    3  12.50  68.75 1.00000
+Scan 1cmsN           1qqha.2.85.1.1.1    0   1.028   2.491  175  144  203   20   11    2   0.00  90.91 1.00000
+Scan 1cmsN           1fwfcc.2.86.1.1.1    0   1.246   2.116  175  181  253   17   11    1  18.18  81.82 1.00000
+Scan 1cmsN           1aqt.2.87.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1tph1.3.1.1.1.1    0   0.000 100.000  175  245    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rpxa.3.1.2.1.1    0   0.000 100.000  175  230    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dbta.3.1.2.2.1    0   0.000 100.000  175  237    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pii.3.1.2.3.1     0   1.279   1.754  175  198  281   12    3    1   0.00  33.33 1.00000
+Scan 1cmsN           2tpsa.3.1.3.1.1    0   0.000 100.000  175  226    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2dora.3.1.4.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1eepa.3.1.5.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bd0a.3.1.6.1.1    0   0.000 100.000  175  233    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ct5a.3.1.6.2.1    0   0.000 100.000  175  225    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1frb.3.1.7.1.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1vjs.3.1.8.1.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1byb.3.1.8.2.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1xyza.3.1.8.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2myr.3.1.8.4.1      skipped domain - file missing or too short
+Scan 1cmsN           2hvm.3.1.8.5.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qba.3.1.8.6.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ex1a.3.1.8.7.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a4ma.3.1.9.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1fwfcc.3.1.9.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1psca.3.1.9.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1nal1.3.1.10.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dosa.3.1.10.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ylva.3.1.10.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qr7a.3.1.10.4.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1onea.3.1.11.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bqg.3.1.11.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pkm.3.1.12.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dik.3.1.12.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1fiy.3.1.12.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d8ca.3.1.13.1.1    0   1.614   2.137  175  262  308   24   16    3  18.75  62.50 0.14234
+Scan 1cmsN           3rubl.3.1.14.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qtwa.3.1.15.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           6xia.3.1.15.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1luca.3.1.16.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1nfp.3.1.16.2.1    0   0.000 100.000  175  228    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qapa.3.1.17.1.1    0   0.000 100.000  175  167    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qasa.3.1.18.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2ptd.3.1.18.2.1    0   1.625   2.172  175  262  311   20   13    2   0.00  84.62 1.00000
+Scan 1cmsN           7reqa.3.1.19.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ccwb.3.1.19.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dioa.3.1.19.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pud.3.1.20.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1aj2.3.1.21.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1uroa.3.1.22.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b5ta.3.1.23.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pyma.3.1.24.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dqua.3.1.24.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3btoa.3.2.1.1.1    0   0.000 100.000  175  150    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ek6a.3.2.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1gadoo.3.2.1.3.1    0   1.061   2.474  175  166  242   16    6    1  16.67  66.67 1.00000
+Scan 1cmsN           2naca.3.2.1.4.1    0   0.000 100.000  175  188    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mlda.3.2.1.5.1    0   0.000 100.000  175  144    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qmga.3.2.1.6.1    0   0.000 100.000  175  226    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bgva.3.2.1.7.1    0   0.000 100.000  175  255    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2scua.3.2.1.8.1    0   0.000 100.000  175  121    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2tmda.3.3.1.1.1    0   1.062   2.287  175  156  231   16   10    1  10.00  40.00 1.00000
+Scan 1cmsN           3cox.3.3.1.2.1     0   1.540   2.137  175  262  334   20   17    3   0.00  82.35 1.00000
+Scan 1cmsN           1gnd.3.3.1.3.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1chuaa.3.3.1.4.1    0   0.000 100.000  175  251    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3grs.3.3.1.5.1     0   0.000 100.000  175  221    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2tmdaa.3.4.1.1.1    0   0.000 100.000  175  233    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1an9aa.3.4.1.2.1    0   1.401   2.308  175  247  288   23   15    2   6.67  60.00 1.00000
+Scan 1cmsN           1tml.3.5.1.1.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cm5a.3.6.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rlr.3.6.1.2.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b8ba.3.6.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dik.3.7.1.1.1     0   1.288   1.826  175  129  201   25   24    4  16.67  95.83 1.00000
+Scan 1cmsN           1zymaa.3.7.1.2.1    0   1.033   2.230  175  124  230   19   17    2   0.00  52.94 1.00000
+Scan 1cmsN           7acn.3.7.2.1.1     0   1.421   2.100  175  226  266   25   16    4   0.00  75.00 1.00000
+Scan 1cmsN           1a9xb.3.7.3.1.1    0   1.246   2.036  175  151  242   17    8    1   0.00  75.00 1.00000
+Scan 1cmsN           1de4c.3.7.4.1.1    0   1.055   2.040  175  193  221   21   10    1   0.00  80.00 1.00000
+Scan 1cmsN           1kid.3.7.5.1.1     0   0.000 100.000  175  193    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ass.3.7.5.2.1     0   1.506   1.346  175  152  249   19   15    3   6.67  80.00 1.00000
+Scan 1cmsN           1brsd.3.8.1.1.1    0   0.000 100.000  175   87    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a4ya.3.9.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1yrga.3.9.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d0ba.3.9.2.1.1    0   0.000 100.000  175  207    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dcea.3.9.2.2.1    0   0.000 100.000  175  124    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a9na.3.9.2.3.1    0   0.000 100.000  175  162    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1igra.3.9.2.4.1    0   0.952   1.880  175  149  210   16    6    1  16.67 100.00 1.00000
+Scan 1cmsN           1aua.3.10.1.1.1    0   0.000 100.000  175  203    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1auz.3.10.2.1.1    0   0.000 100.000  175  116    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1tyfa.3.11.1.1.1    0   0.000 100.000  175  183    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1nzya.3.11.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cdza.3.12.1.1.1    0   0.000 100.000  175   96    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rvva.3.13.1.1.1    0   0.000 100.000  175  154    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cp3a.3.14.1.1.1    0   1.231   2.021  175  232  287   15    7    1   0.00  42.86 1.00000
+Scan 1cmsN           1cvra.3.14.1.2.1    0   0.843   2.286  175  262  286   11    3    0   0.00  33.33 1.00000
+Scan 1cmsN           1akz.3.15.1.1.1    0   0.000 100.000  175  223    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1muga.3.15.1.2.1    0   0.000 100.000  175  165    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mla.3.16.1.1.1    0   0.000 100.000  175  235    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cf9a.3.17.1.1.1    0   0.000 100.000  175  156    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3chy.3.17.2.1.1    0   0.000 100.000  175  128    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dcfa.3.17.2.2.1    0   0.000 100.000  175  133    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qo0d.3.17.2.3.1    0   0.000 100.000  175  189    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2scua.3.17.3.1.1    0   1.077   2.462  175  164  223   15    4    1   0.00   0.00 1.00000
+Scan 1cmsN           2fcr.3.17.4.1.1    0   0.000 100.000  175  173    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1amoa.3.17.4.2.1    0   0.000 100.000  175  172    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qr2a.3.17.4.3.1    0   0.000 100.000  175  230    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bmta.3.17.5.1.1    0   0.000 100.000  175  156    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c4ka.3.17.6.1.1    0   1.153   1.848  175  105  188   21   15    2  13.33  80.00 1.00000
+Scan 1cmsN           1qcza.3.17.7.1.1    0   0.000 100.000  175  158    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cex.3.17.8.1.1    0   0.000 100.000  175  197    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1esc.3.17.9.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1flcaa.3.17.9.2.1    0   1.344   1.849  175  262  330   16   12    2   0.00  75.00 1.00000
+Scan 1cmsN           1es9a.3.17.9.3.1    0   0.000 100.000  175  212    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1deoa.3.17.9.4.1    0   0.000 100.000  175  233    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ex1a.3.17.10.1.1    0   0.000 100.000  175  214    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2nacaa.3.17.11.1.1    0   0.000 100.000  175  186    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pjcaa.3.17.11.2.1    0   0.000 100.000  175  193    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a7aaa.3.17.11.3.1    0   0.000 100.000  175  258    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2dhqa.3.17.12.1.1    0   0.000 100.000  175  136    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a9xa.3.18.1.1.1    0   0.000 100.000  175  138    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b93a.3.18.1.2.1    0   0.000 100.000  175  148    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1fnd.3.19.1.1.1    0   0.000 100.000  175  160    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2pia.3.19.1.2.1    0   1.149   2.294  175  120  206   15    9    2  22.22  55.56 1.00000
+Scan 1cmsN           1amoa.3.19.1.3.1    0   0.000 100.000  175  160    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cqxa.3.19.1.4.1    0   1.055   2.613  175  142  217   12    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2ts1.3.20.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1coza.3.20.1.2.1    0   0.000 100.000  175  126    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b6ta.3.20.1.3.1    0   0.000 100.000  175  157    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1gpma.3.20.2.1.1    0   0.000 100.000  175  175    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1sur.3.20.2.2.1    0   0.000 100.000  175  215    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dlja.3.20.3.1.1    0   0.000 100.000  175  108    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2tpt.3.21.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dnpa.3.22.1.1.1    0   0.000 100.000  175  200    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2uaga.3.23.1.1.1    0   1.013   2.206  175   93  183   19   15    2  20.00  26.67 0.12851
+Scan 1cmsN           1efva.3.24.1.1.1    0   1.376   2.275  175  188  234   20    9    2   0.00  77.78 1.00000
+Scan 1cmsN           1mjha.3.24.1.2.1    0   0.000 100.000  175  143    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ek1a.3.25.1.1.1    0   0.000 100.000  175  171    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dv1a.3.26.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1iow.3.26.1.2.1    0   0.000 100.000  175   96    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1gsa.3.26.1.3.1    0   1.074   2.351  175  122  223   16   10    3   0.00  40.00 1.00000
+Scan 1cmsN           2hgsa.3.26.1.4.1    0   0.000 100.000  175  102    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1auva.3.26.1.5.1    0   1.103   2.171  175  100  199   19   12    2   0.00  83.33 1.00000
+Scan 1cmsN           1dhs.3.27.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1efva.3.27.1.2.1    0   0.000 100.000  175  124    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1poxa.3.27.1.3.1    0   0.000 100.000  175  183    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d4oa.3.27.1.4.1    0   0.000 100.000  175  177    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1fsz.3.28.1.1.1    0   0.000 100.000  175  209    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1nbaa.3.29.1.1.1    0   0.000 100.000  175  253    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1yaca.3.29.1.2.1    0   0.000 100.000  175  204    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1deaa.3.30.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pyda.3.31.1.1.1    0   0.000 100.000  175  172    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1trka.3.31.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dtwa.3.31.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b0pa.3.31.1.4.1    0   0.000 100.000  175  257    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1gky.3.32.1.1.1    0   0.000 100.000  175  186    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1shka.3.32.1.2.1    0   0.000 100.000  175  158    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qhxa.3.32.1.3.1    0   0.000 100.000  175  178    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d6ja.3.32.1.4.1    0   0.000 100.000  175  177    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1aqua.3.32.1.5.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a7j.3.32.1.6.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bif.3.32.1.7.1    0   0.000 100.000  175  213    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ctqa.3.32.1.8.1    0   1.065   2.504  175  166  206   14    3    1  33.33   0.00 1.00000
+Scan 1cmsN           2mysaa.3.32.1.9.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1byi.3.32.1.10.1    0   0.000 100.000  175  224    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2reb.3.32.1.11.1    0   0.000 100.000  175  243    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b0ua.3.32.1.12.1    0   0.000 100.000  175  258    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pjr.3.32.1.13.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1heia.3.32.1.14.1    0   1.343   2.168  175  139  215   21   10    1   0.00  40.00 1.00000
+Scan 1cmsN           1ble.3.33.1.1.1    0   1.222   2.184  175  161  228   19   18    3   0.00  72.22 1.00000
+Scan 1cmsN           1d0va.3.34.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1chd.3.35.1.1.1    0   1.613   2.520  175  198  273   26   19    3   5.26  63.16 1.00000
+Scan 1cmsN           1csee.3.36.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d3va.3.37.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c3pa.3.37.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3cla.3.38.1.1.1    0   1.538   2.096  175  213  246   24   20    5   5.00  65.00 1.00000
+Scan 1cmsN           1phr.3.39.1.1.1    0   0.000 100.000  175  154    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1iiba.3.39.2.1.1    0   0.000 100.000  175  103    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1vhra.3.40.1.1.1    0   0.000 100.000  175  178    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pty.3.40.1.2.1    0   1.556   2.250  175  262  305   21   14    1   0.00  42.86 1.00000
+Scan 1cmsN           1d5ra.3.40.1.3.1    0   0.000 100.000  175  174    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c25.3.41.1.1.1    0   0.000 100.000  175  161    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rhs.3.41.1.2.1    0   0.000 100.000  175  149    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2trxa.3.42.1.1.1    0   0.859   2.352  175  108  172   18    6    2  33.33  83.33 1.00000
+Scan 1cmsN           1bjx.3.42.1.2.1    0   0.000 100.000  175  110    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a8y.3.42.1.3.1    0   0.000 100.000  175  124    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1fvkaa.3.42.1.4.1    0   0.000 100.000  175  124    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pgta.3.42.1.5.1     skipped domain - file missing or too short
+Scan 1cmsN           2trcp.3.42.1.6.1    0   0.000 100.000  175  212    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qgva.3.42.1.7.1    0   0.963   2.324  175  130  189   19   14    2  14.29  57.14 1.00000
+Scan 1cmsN           1gp1a.3.42.1.8.1    0   0.000 100.000  175  183    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1trka.3.43.1.1.1    0   0.000 100.000  175  146    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dtwb.3.43.1.2.1    0   0.000 100.000  175  138    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b0pa.3.43.1.3.1    0   1.128   2.494  175  157  227   13    5    0   0.00   0.00 1.00000
+Scan 1cmsN           1pkm.3.44.1.1.1    0   0.000 100.000  175  135    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lam.3.45.1.1.1    0   0.000 100.000  175  159    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1kmma.3.46.1.1.1    0   0.000 100.000  175   99    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1diob.3.46.2.1.1    0   1.169   2.244  175  179  278   18   11    1   9.09  54.55 1.00000
+Scan 1cmsN           1b78a.3.46.3.1.1    0   1.315   2.373  175  184  277   21   16    4   0.00  75.00 1.00000
+Scan 1cmsN           1ex2a.3.46.3.2.1    0   1.778   2.112  175  185  255   31   21    4   4.76  71.43 1.00000
+Scan 1cmsN           1ckqa.3.47.1.1.1    0   0.000 100.000  175  261    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1eona.3.47.1.2.1    0   1.207   2.043  175  236  272   18   11    1   0.00  63.64 1.00000
+Scan 1cmsN           1bam.3.47.1.3.1    0   0.000 100.000  175  200    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dmua.3.47.1.4.1    0   1.699   2.313  175  262  348   29   19    4   5.26  57.89 1.00000
+Scan 1cmsN           1dfma.3.47.1.5.1    0   1.442   2.292  175  218  259   15    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3pvia.3.47.1.6.1    0   0.000 100.000  175  156    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cfr.3.47.1.7.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d02a.3.47.1.8.1    0   0.000 100.000  175  197    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2foka.3.47.1.9.1    0   0.000 100.000  175  193    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1avqa.3.47.1.10.1    0   0.000 100.000  175  228    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1azo.3.47.1.11.1    0   0.000 100.000  175  212    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1vsra.3.47.1.12.1    0   0.000 100.000  175  134    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1f1za.3.47.1.13.1    0   1.096   2.160  175  161  252   16    3    0   0.00  66.67 1.00000
+Scan 1cmsN           1a79a.3.47.2.1.1    0   0.921   2.129  175   97  167   22   20    3  10.00  70.00 1.00000
+Scan 1cmsN           1dzfa.3.47.3.1.1    0   0.000 100.000  175  139    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2rsla.3.48.1.1.1    0   0.000 100.000  175  115    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1tfr.3.48.1.2.1    0   0.000 100.000  175  160    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ekja.3.48.2.1.1    0   0.000 100.000  175  210    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pdo.3.49.1.1.1    0   0.000 100.000  175  129    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bupa.3.50.1.1.1    0   1.597   2.302  175  185  272   20   13    2   7.69  61.54 1.00000
+Scan 1cmsN           1bdg.3.50.1.2.1    0   0.000 100.000  175  207    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bu6o.3.50.1.3.1    0   1.766   2.565  175  251  263   26   14    3   0.00  57.14 1.00000
+Scan 1cmsN           1chma.3.50.2.1.1    0   0.000 100.000  175  155    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2rn2.3.50.3.1.1    0   1.299   2.129  175  155  230   20   15    3   0.00  86.67 1.00000
+Scan 1cmsN           1cxqa.3.50.3.2.1    0   0.000 100.000  175  143    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bco.3.50.3.3.1    0   0.000 100.000  175  215    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b7ea.3.50.3.4.1    0   1.084   1.975  175  262  269   16    8    1   0.00  87.50 1.00000
+Scan 1cmsN           1kfsa.3.50.3.5.1    0   0.000 100.000  175  195    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1t7pa.3.50.3.6.1    0   0.000 100.000  175  204    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1hjra.3.50.3.7.1    0   0.000 100.000  175  158    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dt9a.3.50.4.1.1    0   1.219   2.119  175  134  231   11    8    2   0.00  62.50 1.00000
+Scan 1cmsN           1sfe.3.50.5.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cfza.3.51.1.1.1    0   0.000 100.000  175  162    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ulb.3.51.2.1.1    0   1.300   2.253  175  262  287   24   18    0   5.56  38.89 1.00000
+Scan 1cmsN           2pth.3.51.3.1.1    0   0.000 100.000  175  193    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a2za.3.51.4.1.1    0   1.747   2.295  175  220  254   29   16    3  12.50  62.50 1.00000
+Scan 1cmsN           2ctc.3.51.5.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1obr.3.51.5.2.1    0   0.942   1.753  175  262  316    9    3    1   0.00  66.67 1.00000
+Scan 1cmsN           1lam.3.51.5.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1amp.3.51.5.4.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1de4cc.3.51.5.5.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1boub.3.51.6.1.1    0   1.402   2.426  175  262  334   21    6    1   0.00  33.33 1.00000
+Scan 1cmsN           1di6a.3.52.1.1.1    0   0.000 100.000  175  183    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bgva.3.53.1.1.1    0   0.000 100.000  175  194    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a4ia.3.53.1.2.1    0   0.000 100.000  175  125    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1do8a.3.53.1.3.1    0   0.000 100.000  175  250    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2uaga.3.54.1.1.1    0   1.199   1.843  175  140  223   13    8    1   0.00  25.00 1.00000
+Scan 1cmsN           1fgs.3.54.1.2.1    0   0.000 100.000  175  111    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qhfa.3.55.1.1.1    0   0.000 100.000  175  240    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rpa.3.55.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ihp.3.55.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bif.3.55.1.4.1    0   0.000 100.000  175  219    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1nula.3.56.1.1.1    0   1.265   2.524  175  142  244   21    6    1   0.00  50.00 1.00000
+Scan 1cmsN           1dkra.3.56.1.2.1    0   0.000 100.000  175  157    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lfaa.3.57.1.1.1    0   0.000 100.000  175  183    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1poia.3.58.1.1.1    0   1.502   2.214  175  262  340   22   10    3   0.00  80.00 1.00000
+Scan 1cmsN           1b0pa.3.59.1.1.1    0   0.000 100.000  175  253    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2gar.3.60.1.1.1    0   1.118   2.327  175  188  277   16    9    1  11.11  33.33 1.00000
+Scan 1cmsN           1vid.3.61.1.1.1    0   0.000 100.000  175  213    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1fbna.3.61.1.2.1    0   1.243   2.251  175  225  253   20   13    1   0.00  23.08 1.00000
+Scan 1cmsN           1xvaa.3.61.1.3.1    0   1.754   2.244  175  262  318   30   27    4   0.00  74.07 1.00000
+Scan 1cmsN           1af7.3.61.1.4.1    0   1.248   2.152  175  193  259   19    8    0   0.00  37.50 1.00000
+Scan 1cmsN           3mag.3.61.1.5.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           6mhta.3.61.1.6.1    0   1.468   2.353  175  262  272   22   14    2  14.29  64.29 1.00000
+Scan 1cmsN           1booa.3.61.1.7.1    0   1.736   2.605  175  262  323   26   15    4   6.67  80.00 1.00000
+Scan 1cmsN           7aata.3.62.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1tpla.3.62.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cl1a.3.62.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2dkb.3.62.1.4.1    0   0.925   1.846  175  262  272   10    4    0   0.00  75.00 1.00000
+Scan 1cmsN           1c4ka.3.62.1.5.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1gpma.3.63.1.1.1    0   1.383   2.352  175  205  297   22   16    3  12.50  75.00 1.00000
+Scan 1cmsN           1qg8a.3.64.1.1.1    0   1.250   1.997  175  238  317   21   15    2   0.00  73.33 1.00000
+Scan 1cmsN           2ack.3.65.1.1.1    0   1.250   2.272  175  262  308   16    3    0   0.00  33.33 1.00000
+Scan 1cmsN           1jkma.3.65.1.2.1    0   0.917   2.197  175  262  314   11    3    0   0.00   0.00 1.00000
+Scan 1cmsN           1qfma.3.65.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1whtab.3.65.1.4.1    0   0.891   2.241  175  262  245   14   12    1   8.33  50.00 1.00000
+Scan 1cmsN           1hlgab.3.65.1.5.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1azwa.3.65.1.6.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b6g.3.65.1.7.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1din.3.65.1.8.1    0   0.000 100.000  175  233    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c4xa.3.65.1.9.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ek1a.3.65.1.10.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1brt.3.65.1.11.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1thta.3.65.1.12.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1auoa.3.65.1.13.1    0   1.564   2.341  175  218  289   20   11    2  18.18  63.64 1.00000
+Scan 1cmsN           1jfra.3.65.1.14.1    0   1.362   2.229  175  260  321   16    4    1   0.00  50.00 1.00000
+Scan 1cmsN           1tca.3.65.1.15.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qgede.3.65.1.16.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1hpla.3.65.1.17.1    0   1.004   2.661  175  262  303   16    7    2  28.57  28.57 1.00000
+Scan 1cmsN           1qj4a.3.65.1.18.1    0   0.000 100.000  175  256    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2masa.3.66.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ra9.3.67.1.1.1    0   1.188   2.524  175  159  252   16    4    1   0.00  25.00 1.00000
+Scan 1cmsN           1rkd.3.68.1.1.1    0   1.666   2.029  175  262  319   24   18    3   0.00  66.67 1.00000
+Scan 1cmsN           1c3qa.3.68.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2uaga.3.68.2.1.1    0   0.000 100.000  175  195    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1fgs.3.68.2.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b7ba.3.69.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dzvp.3.70.1.1.1    0   0.000 100.000  175  206    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cjya.3.71.1.1.1    0   0.853   2.377  175  262  329   12    3    1  33.33 100.00 1.00000
+Scan 1cmsN           1b8ja.3.72.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1auk.3.72.1.2.1    0   1.036   2.073  175  262  243   16    9    2  11.11  77.78 1.00000
+Scan 1cmsN           1xaa.3.73.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ekxa.3.74.1.1.1    0   0.000 100.000  175  150    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b74a.3.74.2.1.1    0   0.000 100.000  175  105    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ttqb.3.75.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1moq.3.76.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dqra.3.76.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cxsa.3.77.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ad3a.3.78.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           7acn.3.79.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3pmga.3.80.1.1.1    0   1.226   1.980  175  190  283   16   11    3   9.09  45.45 1.00000
+Scan 1cmsN           1fuia.3.81.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qpg.3.82.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1c3ja.3.83.1.1.1    0   1.240   2.156  175  262  310   17    9    2  11.11  55.56 1.00000
+Scan 1cmsN           1gpb.3.83.1.2.1    0   1.629   1.862  175  262  315   30   29    5   6.90  86.21 1.00000
+Scan 1cmsN           4ecaa.3.84.1.1.1    0   1.068   2.621  175  262  251   18   13    3   0.00  61.54 1.00000
+Scan 1cmsN           1pfka.3.85.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cbf.3.86.1.1.1    0   1.494   2.311  175  239  282   29   21    4   9.52  80.95 1.00000
+Scan 1cmsN           1ayl.3.87.1.1.1    0   1.442   2.459  175  262  267   14    5    1  20.00  80.00 1.00000
+Scan 1cmsN           1doza.3.88.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qgoa.3.88.1.2.1    0   0.000 100.000  175  257    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1efdn.3.88.2.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1toaa.3.88.2.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mioa.3.88.2.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2dri.3.89.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1jeta.3.90.1.1.1    0   1.686   2.021  175  262  329   23   12    1   0.00  91.67 1.00000
+Scan 1cmsN           1lct.3.90.1.2.1    0   1.369   2.170  175  262  344   21    7    0   0.00  28.57 1.00000
+Scan 1cmsN           1afwa.3.91.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bi5a.3.91.1.2.1    0   0.000 100.000  175  234    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1feha.3.92.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1aln.3.93.1.1.1    0   0.000 100.000  175  150    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rgea.4.1.1.1.1    0   1.048   2.626  175   96  194   15    6    0   0.00   0.00 1.00000
+Scan 1cmsN           1cnsa.4.2.1.1.1    0   0.000 100.000  175  243    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3lzt.4.2.1.2.1     0   0.000 100.000  175  129    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           119l.4.2.1.3.1     0   0.000 100.000  175  162    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1am7a.4.2.1.4.1    0   0.000 100.000  175  150    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           153l.4.2.1.5.1     0   0.000 100.000  175  185    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qsaa.4.2.1.6.1    0   0.000 100.000  175  168    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1chka.4.2.1.7.1    0   0.000 100.000  175  238    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2act.4.3.1.1.1     0   0.000 100.000  175  218    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dkva.4.3.1.2.1    0   1.476   2.646  175  262  326   18    9    2   0.00  77.78 1.00000
+Scan 1cmsN           1f13a.4.3.1.3.1    0   1.471   1.743  175  262  225   27   20    3   0.00  80.00 1.00000
+Scan 1cmsN           1uch.4.3.1.4.1     0   0.000 100.000  175  206    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1avpa.4.3.1.5.1    0   0.000 100.000  175  204    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           7ceib.4.4.1.1.1    0   0.000 100.000  175  127    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ql0a.4.4.1.2.1    0   1.398   2.094  175  241  300   22   13    3  15.38  46.15 1.00000
+Scan 1cmsN           1a73a.4.4.1.3.1    0   1.108   1.628  175  162  235   18   14    3   7.14  71.43 1.00000
+Scan 1cmsN           1en7a.4.4.1.4.1    0   0.000 100.000  175  157    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dy5a.4.5.1.1.1    0   0.924   1.334  175  123  238   17   16    3   6.25  68.75 1.00000
+Scan 1cmsN           1ag2.4.6.1.1.1     0   0.000 100.000  175  103    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1e0ga.4.7.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1fwfa.4.8.1.1.1    0   0.000 100.000  175  100    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3il8.4.9.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1bf4a.4.9.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dz1a.4.9.2.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1bb8.4.10.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1gcca.4.10.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1qk9a.4.10.1.3.1    0   0.000 100.000  175   92    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qmea.4.11.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           4rhn.4.12.1.1.1    0   1.074   2.262  175  115  166   17    7    1   0.00 100.00 1.00000
+Scan 1cmsN           1guqa.4.12.1.2.1    0   1.032   2.407  175  176  191   25   15    2   6.67  73.33 1.00000
+Scan 1cmsN           1dar.4.13.1.1.1    0   1.216   1.705  175  124  205   21   18    3   5.56  83.33 1.00000
+Scan 1cmsN           1a6f.4.13.1.2.1    0   0.000 100.000  175  113    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b63a.4.13.1.3.1    0   1.191   2.269  175  115  212   20   17    2  11.76  58.82 1.00000
+Scan 1cmsN           2igd.4.14.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ubi.4.14.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ef1a.4.14.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1c1yb.4.14.4.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1d4ba.4.14.5.1.1    0   0.927   2.040  175  122  156   20   11    2   9.09  81.82 1.00000
+Scan 1cmsN           2sak.4.14.6.1.1    0   0.936   2.566  175  121  178   12    4    1   0.00  75.00 1.00000
+Scan 1cmsN           1czpa.4.14.7.1.1    0   1.162   2.333  175   98  172   23   19    2   0.00  94.74 1.00000
+Scan 1cmsN           1feha.4.14.7.2.1    0   0.000 100.000  175  126    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1esfa.4.14.8.1.1    0   1.243   2.227  175  113  193   21   15    5   6.67  73.33 1.00000
+Scan 1cmsN           1tif.4.14.9.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1lgr.4.14.10.1.1    0   1.066   1.618  175   94  162   20   18    3  11.11  72.22 1.00000
+Scan 1cmsN           3cox.4.15.1.1.1    0   0.962   2.225  175  130  208   17    8    2   0.00  50.00 1.00000
+Scan 1cmsN           1pbe.4.15.1.2.1    0   0.788   2.386  175  102  218    9    4    1  25.00   0.00 1.00000
+Scan 1cmsN           1an9a.4.15.1.3.1    0   0.900   1.605  175   93  186   16   12    2   8.33  75.00 1.00000
+Scan 1cmsN           1cf3a.4.15.1.4.1    0   0.000 100.000  175  196    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b37a.4.15.1.5.1    0   0.889   2.103  175  112  222   12    4    0   0.00  25.00 1.00000
+Scan 1cmsN           1gnd.4.15.1.6.1    0   0.831   1.994  175   97  213   12    9    1   0.00  44.44 1.00000
+Scan 1cmsN           1mola.4.16.1.1.1    0   0.919   2.271  175   94  156   19   10    3  10.00  90.00 1.00000
+Scan 1cmsN           1cewi.4.16.1.2.1    0   1.066   1.836  175  108  170   21   17    3  11.76  88.24 1.00000
+Scan 1cmsN           1oaca.4.16.2.1.1    0   0.680   1.999  175   95  188   12    7    1   0.00  42.86 1.00000
+Scan 1cmsN           3stda.4.16.3.1.1    0   1.168   1.779  175  162  190   33   31    5   9.68  74.19 1.00000
+Scan 1cmsN           1ouna.4.16.3.2.1    0   1.011   2.156  175  125  160   18   17    3   5.88  94.12 1.00000
+Scan 1cmsN           1qjga.4.16.3.3.1    0   1.072   1.873  175  125  170   24   17    3  11.76  70.59 1.00000
+Scan 1cmsN           1eg9b.4.16.3.4.1    0   1.375   1.959  175  193  237   25   20    3  10.00  90.00 1.00000
+Scan 1cmsN           1udii.4.16.4.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pcfa.4.17.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           3frua.4.18.1.1.1    0   1.129   2.188  175  178  256   13    6    2   0.00  66.67 1.00000
+Scan 1cmsN           2aak.4.19.1.1.1    0   0.000 100.000  175  150    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bwza.4.20.1.1.1    0   1.046   1.775  175  130  212   18   16    2   6.25  75.00 1.00000
+Scan 1cmsN           1ema.4.21.1.1.1    0   1.693   2.332  175  221  292   29   20    3   5.00  55.00 1.00000
+Scan 1cmsN           1c8za.4.22.1.1.1    0   1.720   2.153  175  262  314   32   29    4   3.45  68.97 1.00000
+Scan 1cmsN           2pil.4.23.1.1.1    0   0.000 100.000  175  157    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1p32a.4.24.1.1.1    0   1.189   2.127  175  182  233   14   11    3  27.27  81.82 0.07103
+Scan 1cmsN           1bkf.4.25.1.1.1    0   1.193   1.982  175  107  208   20   18    3  11.11  77.78 1.00000
+Scan 1cmsN           1grj.4.25.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           3eipa.4.25.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1edqa.4.25.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qkfa.4.26.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1b33n.4.27.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qcsa.4.28.1.1.1    0   1.364   1.819  175  106  175   23   16    3   0.00  50.00 1.00000
+Scan 1cmsN           1qipa.4.29.1.1.1    0   1.011   2.756  175  176  232   18   12    3   0.00  58.33 1.00000
+Scan 1cmsN           1qtoa.4.29.1.2.1    0   0.904   2.409  175  122  159   19   12    2   0.00  41.67 1.00000
+Scan 1cmsN           1dhy.4.29.1.3.1    0   1.513   2.015  175  132  211   28   23    4   4.35  78.26 1.00000
+Scan 1cmsN           1bm8.4.30.1.1.1    0   1.317   1.844  175   99  177   23   15    3   6.67  80.00 1.00000
+Scan 1cmsN           1b2va.4.31.1.1.1    0   1.753   2.499  175  173  265   30   21    5   0.00  71.43 1.00000
+Scan 1cmsN           1b3ob.4.32.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bvqa.4.33.1.1.1    0   1.203   2.313  175  139  221   18   16    4   0.00  43.75 1.00000
+Scan 1cmsN           1mkaa.4.33.1.2.1    0   0.000 100.000  175  171    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cmia.4.34.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1csei.4.35.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1alo.4.36.1.1.1    0   0.798   2.237  175  117  215   10    4    1   0.00  50.00 1.00000
+Scan 1cmsN           1qapa.4.36.2.1.1    0   0.000 100.000  175  122    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2tpt.4.36.3.1.1    0   0.980   2.434  175  105  210   11    4    1   0.00  75.00 1.00000
+Scan 1cmsN           1buoa.4.37.1.1.1    0   0.000 100.000  175  121    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1t1da.4.37.1.2.1    0   0.000 100.000  175  100    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1efub.4.38.1.1.1    0   0.000 100.000  175  139    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d5na.4.39.1.1.1    0   0.000 100.000  175  115    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ctf.4.40.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1mmsa.4.41.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2reb.4.42.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           s046.4.42.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1914.4.43.1.1.1    0   0.937   2.378  175  171  211   18   14    4   7.14  78.57 1.00000
+Scan 1cmsN           1di2a.4.44.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pkp.4.44.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1pda.4.44.2.1.1    0   0.000 100.000  175   88    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dt4a.4.45.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           3proc.4.46.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1gpma.4.46.2.1.1    0   1.298   2.013  175  121  225   24   19    4   5.26  84.21 1.00000
+Scan 1cmsN           1egaa.4.46.3.1.1    0   0.000 100.000  175  113    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1onea.4.47.1.1.1    0   0.000 100.000  175  141    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bxea.4.48.1.1.1    0   1.393   1.716  175  108  215   23   16    4  18.75  75.00 0.14234
+Scan 1cmsN           1oelaa.4.49.1.1.1    0   0.000 100.000  175   97    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a6daa.4.49.1.2.1    0   0.000 100.000  175  105    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1f0aa.4.50.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1fxd.4.51.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           6fd1.4.51.1.2.1    0   0.000 100.000  175  106    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1xer.4.51.1.3.1    0   1.059   2.092  175  102  186   18   14    3   0.00  57.14 1.00000
+Scan 1cmsN           1vjw.4.51.1.4.1     skipped domain - file missing or too short
+Scan 1cmsN           1feha.4.51.1.5.1     skipped domain - file missing or too short
+Scan 1cmsN           1d09b.4.51.2.1.1    0   0.893   2.259  175  100  203   12    6    1   0.00  50.00 1.00000
+Scan 1cmsN           1pca.4.51.3.1.1    0   0.000 100.000  175   96    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1spbp.4.51.3.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1mli.4.51.4.1.1    0   0.873   2.190  175   96  200   19   18    0  11.11  38.89 1.00000
+Scan 1cmsN           2pii.4.51.5.1.1    0   0.836   1.500  175  112  205   16   14    2   0.00  92.86 1.00000
+Scan 1cmsN           1nuea.4.51.6.1.1    0   0.000 100.000  175  151    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ha1.4.51.7.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2bopa.4.51.8.1.1     skipped domain - file missing or too short
+Scan 1cmsN           3rubl.4.51.9.1.1    0   1.046   2.365  175  121  231   13    5    1   0.00  40.00 1.00000
+Scan 1cmsN           2acy.4.51.10.1.1    0   1.042   2.524  175   98  181   15    6    3  16.67  83.33 1.00000
+Scan 1cmsN           1dar.4.51.11.1.1    0   0.931   2.064  175   90  205   14   11    1  18.18  72.73 1.00000
+Scan 1cmsN           1b64.4.51.12.1.1    0   0.788   1.991  175   91  199   12    7    2  14.29  71.43 1.00000
+Scan 1cmsN           1pysb.4.51.13.1.1    0   1.056   2.408  175  104  181   12    3    1   0.00  66.67 1.00000
+Scan 1cmsN           1loua.4.51.14.1.1    0   0.958   2.005  175   97  189   17   11    3   0.00  90.91 1.00000
+Scan 1cmsN           1bxya.4.51.15.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1afj.4.51.16.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1psda.4.51.17.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1tdj.4.51.17.2.1    0   1.063   2.264  175   88  178   17   11    1   0.00  72.73 1.00000
+Scan 1cmsN           1phza.4.51.17.3.1    0   1.049   2.288  175   97  199   22   11    3   0.00  45.45 1.00000
+Scan 1cmsN           1cg2a.4.51.18.1.1    0   0.868   1.724  175  113  228    8    5    1   0.00  60.00 1.00000
+Scan 1cmsN           1dqaa.4.51.19.1.1    0   0.000 100.000  175  117    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mla.4.51.20.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1eayc.4.51.21.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1kp6a.4.51.22.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1regx.4.51.23.1.1    0   1.068   2.060  175  122  211   17   10    1   0.00  60.00 1.00000
+Scan 1cmsN           1ab8a.4.51.24.1.1    0   1.344   1.878  175  177  263   23   15    3   0.00  86.67 1.00000
+Scan 1cmsN           1hka.4.51.25.1.1    0   1.389   2.245  175  158  252   23   18    3   5.56  72.22 1.00000
+Scan 1cmsN           1mroc.4.51.26.1.1    0   0.000 100.000  175  247    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mroa.4.51.26.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qlta.4.51.27.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ftra.4.51.28.1.1    0   1.190   2.187  175  148  224   19   12    1   8.33  75.00 1.00000
+Scan 1cmsN           1qd1a.4.51.29.1.1    0   0.000 100.000  175  179    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dj0a.4.51.30.1.1    0   0.985   2.274  175  108  159   19   14    3  21.43  71.43 0.11423
+Scan 1cmsN           1aop.4.51.31.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bowa.4.52.1.1.1    0   1.016   2.348  175  143  246   13    8    2   0.00  87.50 1.00000
+Scan 1cmsN           1d5ya.4.52.1.2.1    0   1.031   2.184  175  169  277   13    6    1  33.33  66.67 1.00000
+Scan 1cmsN           1d8ia.4.53.1.1.1    0   1.354   2.720  175  262  322   27   19    4   0.00  89.47 1.00000
+Scan 1cmsN           2if1.4.54.1.1.1    0   0.000 100.000  175  126    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lbu.4.55.1.1.1    0   0.000 100.000  175  130    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1vhh.4.55.1.2.1    0   1.163   1.877  175  157  246   16    7    0   0.00  14.29 1.00000
+Scan 1cmsN           1qf6a.4.56.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1c06a.4.56.1.2.1    0   0.000 100.000  175  159    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dm9a.4.56.1.3.1    0   0.000 100.000  175  104    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qf6a.4.57.1.1.1    0   0.000 100.000  175  180    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bs2a.4.57.2.1.1    0   0.000 100.000  175  131    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dd5a.4.57.3.1.1    0   0.000 100.000  175  184    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1tig.4.58.1.1.1    0   0.862   1.625  175   88  208   11    4    1   0.00   0.00 1.00000
+Scan 1cmsN           1qmha.4.58.2.1.1    0   1.261   2.477  175  262  296   24   15    2   0.00  73.33 1.00000
+Scan 1cmsN           1uae.4.58.2.2.1    0   1.421   1.908  175  262  266   17   12    1   0.00  50.00 1.00000
+Scan 1cmsN           1tola.4.59.1.1.1    0   0.000 100.000  175   91    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1kpta.4.60.1.1.1    0   1.040   2.295  175  105  206   18   14    1  21.43  50.00 0.11423
+Scan 1cmsN           1kveab.4.60.1.2.1    0   1.109   2.260  175  140  184   18    9    2   0.00  55.56 1.00000
+Scan 1cmsN           1dw9a.4.61.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           3rubs.4.62.1.1.1    0   1.068   2.209  175  123  227   14   10    2  10.00 100.00 1.00000
+Scan 1cmsN           1dcpa.4.63.1.1.1    0   0.000 100.000  175   99    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1xxaa.4.63.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bdfaa.4.63.3.1.1    0   1.184   2.260  175  105  184   19   17    2   5.88  64.71 1.00000
+Scan 1cmsN           1c0aa.4.63.4.1.1    0   0.000 100.000  175  133    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a79a.4.64.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1gyfa.4.65.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1hmja.4.66.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qkla.4.67.1.1.1    0   0.000 100.000  175  127    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qu9a.4.68.1.1.1    0   0.999   2.545  175  126  178   20   11    3   9.09  63.64 1.00000
+Scan 1cmsN           1dbfa.4.68.1.2.1    0   1.176   2.726  175  127  241   17   10    2  10.00  50.00 1.00000
+Scan 1cmsN           1fsz.4.68.2.1.1    0   1.323   2.748  175  125  194   21   16    3  12.50  50.00 1.00000
+Scan 1cmsN           1cn7a.4.68.3.1.1    0   0.000 100.000  175  104    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dt9a.4.68.3.2.1    0   0.000 100.000  175  126    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1clia.4.68.4.1.1    0   1.081   2.460  175  166  222   15    3    1   0.00 100.00 1.00000
+Scan 1cmsN           1otfa.4.69.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1otga.4.69.1.2.1    0   0.739   2.399  175  125  243   14    9    2   0.00  33.33 1.00000
+Scan 1cmsN           1gifa.4.69.1.3.1    0   0.831   2.510  175  115  149   16   11    1   9.09  63.64 1.00000
+Scan 1cmsN           1gado.4.70.1.1.1    0   1.335   1.407  175  164  222   22   19    4   0.00  68.42 1.00000
+Scan 1cmsN           1ebfa.4.70.1.2.1    0   0.000 100.000  175  190    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ofga.4.70.1.3.1    0   1.493   2.006  175  162  233   18   15    4   0.00  80.00 1.00000
+Scan 1cmsN           1oaca.4.71.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dlxa.4.71.2.1.1    0   1.112   2.211  175  120  182   24   21    3   4.76  71.43 1.00000
+Scan 1cmsN           1ewfa.4.72.1.1.1    0   1.344   2.116  175  217  217   23   20    3   5.00  80.00 1.00000
+Scan 1cmsN           3sici.4.73.1.1.1    0   0.920   2.128  175  107  177   22   19    2  10.53  68.42 1.00000
+Scan 1cmsN           1msc.4.74.1.1.1    0   1.070   2.353  175  129  197   23   18    3  16.67  72.22 1.00000
+Scan 1cmsN           1ej1a.4.75.1.1.1    0   1.151   2.245  175  178  224   22   14    3  21.43  64.29 0.11423
+Scan 1cmsN           3grs.4.76.1.1.1    0   0.930   2.098  175  115  209   10    3    1   0.00 100.00 1.00000
+Scan 1cmsN           1qj2c.4.76.2.1.1    0   1.165   1.689  175  108  184   16   12    4   0.00  66.67 1.00000
+Scan 1cmsN           1srsa.4.77.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1tbd.4.78.1.1.1    0   0.969   2.180  175  134  208   14   10    1   0.00  10.00 1.00000
+Scan 1cmsN           1nox.4.79.1.1.1    0   0.000 100.000  175  200    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dt9a.4.80.1.1.1    0   0.000 100.000  175  138    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1kuh.4.81.1.1.1    0   0.000 100.000  175  132    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ezm.4.81.1.2.1    0   1.200   2.427  175  153  222   21   15    4   0.00  73.33 1.00000
+Scan 1cmsN           1lml.4.81.1.3.1    0   1.534   2.077  175  262  272   21    3    0   0.00   0.00 1.00000
+Scan 1cmsN           1kapp.4.81.1.4.1    0   0.000 100.000  175  246    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3btaa.4.81.1.5.1    0   1.020   2.394  175  262  291   13    4    0  25.00  25.00 1.00000
+Scan 1cmsN           1ast.4.81.1.6.1    0   0.000 100.000  175  200    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           4aig.4.81.1.7.1    0   0.000 100.000  175  201    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bkca.4.81.1.8.1    0   0.000 100.000  175  255    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1hfc.4.81.1.9.1    0   0.000 100.000  175  157    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qba.4.81.2.1.1    0   1.069   2.546  175  137  200   13   10    1  10.00  70.00 1.00000
+Scan 1cmsN           1lkka.4.82.1.1.1    0   1.075   2.654  175  105  198   19   11    1   0.00 100.00 1.00000
+Scan 1cmsN           1spha.4.83.1.1.1    0   0.987   1.703  175   87  169   16   15    2   6.67  80.00 1.00000
+Scan 1cmsN           1iba.4.84.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bp7a.4.84.2.1.1    0   0.000 100.000  175  152    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dfaa.4.84.2.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1a8ra.4.85.1.1.1    0   0.000 100.000  175  221    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1b66a.4.85.1.2.1    0   1.174   1.523  175  138  232   16   11    2   9.09  63.64 1.00000
+Scan 1cmsN           1dhn.4.85.1.3.1    0   1.088   2.299  175  121  223   10    4    1   0.00  75.00 1.00000
+Scan 1cmsN           1uox.4.85.1.4.1    0   1.126   2.526  175  136  225   19    5    2   0.00  80.00 1.00000
+Scan 1cmsN           1puc.4.86.1.1.1    0   0.000 100.000  175  101    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           s050.4.87.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1div.4.88.1.1.1    0   1.045   2.197  175   94  201   16   12    2   8.33  41.67 1.00000
+Scan 1cmsN           1div.4.89.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qhka.4.89.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1efnb.4.90.1.1.1    0   0.000 100.000  175  104    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cby.4.91.1.1.1    0   1.331   2.140  175  227  288   20   13    4  15.38  84.62 1.00000
+Scan 1cmsN           1srya.4.92.1.1.1    0   1.559   1.868  175  262  338   20   15    3   6.67  93.33 1.00000
+Scan 1cmsN           1bia.4.92.1.2.1    0   1.441   2.581  175  182  228   22   17    3   5.88  76.47 1.00000
+Scan 1cmsN           1qtsa.4.93.1.1.1    0   1.139   2.025  175  114  182   22   19    3  15.79  73.68 1.00000
+Scan 1cmsN           1eq6a.4.94.1.1.1    0   1.535   2.333  175  189  230   30   22    4   9.09  63.64 1.00000
+Scan 1cmsN           1b87a.4.95.1.1.1    0   0.985   2.420  175  181  241   13    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2nmta.4.95.1.2.1    0   1.206   2.457  175  185  253   18   11    2   9.09  63.64 1.00000
+Scan 1cmsN           2vik.4.96.1.1.1    0   1.102   2.266  175  126  199   17    8    1  12.50  25.00 1.00000
+Scan 1cmsN           1cfya.4.96.1.2.1    0   1.010   2.184  175  133  179   24   17    3   5.88  58.82 1.00000
+Scan 1cmsN           1pne.4.97.1.1.1    0   1.371   1.451  175  139  237   22   20    4   0.00  80.00 1.00000
+Scan 1cmsN           3pyp.4.97.2.1.1    0   0.961   2.257  175  125  205   20    5    1   0.00  80.00 1.00000
+Scan 1cmsN           1ew0a.4.97.2.2.1    0   1.053   2.362  175  130  161   15    7    1   0.00  42.86 1.00000
+Scan 1cmsN           1bywa.4.97.2.3.1    0   1.400   2.224  175  110  207   25   22    4   9.09  54.55 1.00000
+Scan 1cmsN           1cfe.4.98.1.1.1    0   0.000 100.000  175  135    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a6ja.4.99.1.1.1    0   0.000 100.000  175  150    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mut.4.100.1.1.1    0   1.116   2.290  175  129  171   21   14    3   7.14  42.86 1.00000
+Scan 1cmsN           1ush.4.101.1.1.1    0   1.262   1.908  175  188  267   19   15    4   0.00  86.67 1.00000
+Scan 1cmsN           1dbxa.4.102.1.1.1    0   1.204   2.103  175  150  237   20   14    3  21.43  64.29 0.11423
+Scan 1cmsN           1qqqa.4.103.1.1.1    0   1.362   2.167  175  259  303   18   13    2   7.69  46.15 1.00000
+Scan 1cmsN           1lba.4.104.1.1.1    0   0.000 100.000  175  146    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           0lz6.4.105.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cyo.4.106.1.1.1    0   1.094   1.734  175   88  183   14   13    2  15.38  69.23 1.00000
+Scan 1cmsN           1vcc.4.107.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1amw.4.108.1.1.1    0   0.000 100.000  175  213    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ei1a.4.108.1.2.1    0   1.402   2.404  175  219  266   21   12    1   8.33  41.67 1.00000
+Scan 1cmsN           1bxda.4.108.1.3.1    0   1.099   2.264  175  161  226   17    6    1  16.67  66.67 1.00000
+Scan 1cmsN           1ixma.4.109.1.1.1    0   0.000 100.000  175  168    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bola.4.110.1.1.1    0   1.303   1.887  175  222  304   23   16    3   0.00  81.25 1.00000
+Scan 1cmsN           1c4ka.4.111.1.1.1    0   0.000 100.000  175  161    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1jdw.4.112.1.1.1    0   1.391   2.177  175  262  324   18    6    1  16.67  66.67 1.00000
+Scan 1cmsN           1chma.4.113.1.1.1    0   0.000 100.000  175  246    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lgr.4.114.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1crka.4.114.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cdwa.4.115.1.1.1    0   0.846   2.279  175   98  120   26   19    4  21.05  84.21 1.00000
+Scan 1cmsN           1mpga.4.115.1.2.1    0   0.000 100.000  175   99    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3pmga.4.115.2.1.1    0   1.262   2.223  175  141  245   20   13    3   7.69  76.92 1.00000
+Scan 1cmsN           1bv1.4.115.3.1.1    0   1.557   2.226  175  159  222   24   16    3  12.50  87.50 1.00000
+Scan 1cmsN           1em2a.4.115.3.2.1    0   1.584   2.381  175  211  230   24   13    4  23.08  76.92 0.09972
+Scan 1cmsN           1eg9a.4.115.3.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mxa.4.116.1.1.1    0   1.335   2.495  175  262  295   15    3    2   0.00  66.67 1.00000
+Scan 1cmsN           2pola.4.117.1.1.1    0   1.141   2.271  175  122  206   17   11    2   9.09  63.64 1.00000
+Scan 1cmsN           1b77a.4.117.1.2.1    0   1.171   2.336  175  110  179   24   19    4   5.26  68.42 1.00000
+Scan 1cmsN           1be3a.4.118.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1alo.4.119.1.1.1    0   1.136   2.063  175  262  278   13    7    1  14.29  85.71 1.00000
+Scan 1cmsN           1aop.4.120.1.1.1    0   0.000 100.000  175  171    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1duja.4.121.1.1.1    0   1.133   2.240  175  187  267   12    4    0   0.00  50.00 1.00000
+Scan 1cmsN           1byra.4.122.1.1.1    0   1.171   2.260  175  152  209   20   16    4  25.00  62.50 0.05140
+Scan 1cmsN           1ckv.4.123.1.1.1    0   1.066   1.495  175  141  217   13    9    2   0.00  77.78 1.00000
+Scan 1cmsN           1pysb.4.124.1.1.1    0   1.349   2.346  175  209  254   22   15    4  13.33  60.00 1.00000
+Scan 1cmsN           1clia.4.125.1.1.1    0   0.000 100.000  175  175    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1seia.4.126.1.1.1    0   1.097   2.169  175  130  226   18   11    1   9.09  45.45 1.00000
+Scan 1cmsN           1rl6a.4.127.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1gsa.4.128.1.1.1    0   1.241   2.641  175  192  273   18    6    1   0.00  83.33 1.00000
+Scan 1cmsN           1dv1a.4.128.1.2.1    0   1.093   1.934  175  204  280   17   11    2   0.00 100.00 1.00000
+Scan 1cmsN           1auva.4.128.1.3.1    0   1.372   2.531  175  182  279   19   14    3   0.00  50.00 1.00000
+Scan 1cmsN           2scub.4.128.1.4.1    0   1.151   2.274  175  244  325   14    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dik.4.128.1.5.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2hgsa.4.128.1.6.1    0   1.046   2.185  175  171  236   22   21    3  19.05  61.90 1.00000
+Scan 1cmsN           1a0i.4.128.2.1.1    0   1.606   2.238  175  231  302   27   16    4   0.00  62.50 1.00000
+Scan 1cmsN           1b04a.4.128.2.2.1    0   1.449   1.965  175  262  302   22   12    3  16.67  83.33 1.00000
+Scan 1cmsN           1ckma.4.128.2.3.1    0   1.182   2.107  175  228  286   23   12    2  16.67  41.67 1.00000
+Scan 1cmsN           1a48.4.129.1.1.1    0   1.182   2.162  175  262  352   12    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bo1a.4.129.1.2.1    0   1.061   2.337  175  262  303   17   15    3   0.00  73.33 1.00000
+Scan 1cmsN           1hcl.4.130.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qcfa.4.130.1.2.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cjaa.4.130.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qmma.4.130.1.4.1     skipped domain - file missing or too short
+Scan 1cmsN           1qlta.4.131.1.1.1    0   1.150   1.959  175  262  300   14    5    1  20.00  20.00 1.00000
+Scan 1cmsN           1uxy.4.131.1.2.1    0   1.294   1.997  175  198  231   19   13    1   7.69  46.15 1.00000
+Scan 1cmsN           1qj2c.4.131.1.3.1    0   1.357   2.155  175  177  234   20   15    1   6.67  80.00 1.00000
+Scan 1cmsN           1uxy.4.132.1.1.1    0   0.000 100.000  175  142    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qlma.4.133.1.1.1    0   1.371   2.343  175  262  329   16    8    3  12.50  62.50 1.00000
+Scan 1cmsN           1c4za.4.134.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2ahja.4.135.1.1.1    0   0.000 100.000  175  192    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qr0a.4.136.1.1.1    0   0.000 100.000  175  228    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ako.4.137.1.1.1    0   1.826   2.452  175  262  329   28   14    1  14.29  64.29 1.00000
+Scan 1cmsN           1aora.4.138.1.1.1    0   1.511   1.914  175  210  264   25   17    4  17.65  64.71 1.00000
+Scan 1cmsN           1gdoa.4.139.1.1.1    0   1.404   2.197  175  238  327   18    9    2   0.00  66.67 1.00000
+Scan 1cmsN           1pnkab.4.139.1.2.1    0   1.032   1.826  175  262  307   15   14    3   0.00  64.29 1.00000
+Scan 1cmsN           3pvaa.4.139.1.3.1    0   1.504   2.500  175  262  329   17    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1pmab.4.139.1.4.1    0   0.000 100.000  175  203    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1apyab.4.139.1.5.1    0   1.302   2.195  175  262  350   14    7    1  28.57  71.43 1.00000
+Scan 1cmsN           1b65a.4.140.1.1.1    0   1.486   2.446  175  262  289   25   13    2  15.38  38.46 1.00000
+Scan 1cmsN           1pyaab.4.141.1.1.1    0   1.433   2.144  175  262  261   26   13    3   0.00  76.92 1.00000
+Scan 1cmsN           1jenab.4.142.1.1.1    0   1.464   2.300  175  262  336   20   12    2  16.67  83.33 1.00000
+Scan 1cmsN           2bc2a.4.143.1.1.1    0   1.550   2.326  175  217  263   25   14    3   0.00  78.57 1.00000
+Scan 1cmsN           1qh5a.4.143.1.2.1    0   1.884   2.346  175  260  280   31   22    4   4.55  81.82 1.00000
+Scan 1cmsN           1a6q.4.144.1.1.1    0   1.462   2.428  175  262  321   24    8    2  12.50  75.00 1.00000
+Scan 1cmsN           4kbpa.4.145.1.1.1    0   1.678   1.794  175  262  256   25   18    2   0.00  66.67 1.00000
+Scan 1cmsN           1ush.4.145.1.2.1    0   1.563   2.542  175  262  308   23   10    2   0.00  80.00 1.00000
+Scan 1cmsN           1fjma.4.145.1.3.1    0   1.492   2.621  175  262  326   20    5    1   0.00  40.00 1.00000
+Scan 1cmsN           1qdla.4.146.1.1.1    0   1.550   2.336  175  262  289   21   15    4   0.00  60.00 1.00000
+Scan 1cmsN           1mlda.4.147.1.1.1    0   0.000 100.000  175  169    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1aiha.4.148.1.1.1    0   0.000 100.000  175  170    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a31aa.4.148.1.2.1    0   0.000 100.000  175  241    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mhda.4.149.1.1.1    0   0.000 100.000  175  123    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mrj.4.150.1.1.1    0   0.000 100.000  175  247    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dm0a.4.150.1.2.1    0   1.354   2.378  175  262  328   20   15    3   6.67  80.00 1.00000
+Scan 1cmsN           1ltsac.4.151.1.1.1    0   0.000 100.000  175  226    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a26.4.151.1.2.1    0   1.305   2.441  175  216  286   23   12    2   0.00  66.67 1.00000
+Scan 1cmsN           1bsza.4.152.1.1.1    0   0.000 100.000  175  168    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1chua.4.153.1.1.1    0   0.000 100.000  175  116    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qdda.4.154.1.1.1    0   1.054   2.279  175  144  223   17   14    2   7.14  57.14 1.00000
+Scan 1cmsN           1prtb.4.154.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1e1ba.4.154.1.3.1     skipped domain - file missing or too short
+Scan 1cmsN           1tsg.4.154.1.4.1    0   0.000 100.000  175   98    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bnla.4.154.1.5.1    0   1.042   2.357  175  178  247   17    9    1  22.22  33.33 1.00000
+Scan 1cmsN           1by2.4.155.1.1.1    0   0.902   2.098  175  112  210   15    9    2   0.00  77.78 1.00000
+Scan 1cmsN           1mwpa.4.155.2.1.1    0   1.000   1.958  175   96  187   16   11    3   9.09  45.45 1.00000
+Scan 1cmsN           1fid.4.156.1.1.1    0   1.505   2.373  175  259  236   27   23    5   0.00  56.52 1.00000
+Scan 1cmsN           1gc1g.4.157.1.1.1    0   1.538   2.512  175  262  292   23   10    1   0.00  10.00 1.00000
+Scan 1cmsN           1msk.4.158.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1nos.4.159.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qmea.4.160.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1soxa.4.161.1.1.1    0   1.568   2.616  175  250  292   26   20    2   5.00  70.00 1.00000
+Scan 1cmsN           1qqja.4.162.1.1.1    0   1.606   2.397  175  262  316   18    9    3   0.00  55.56 1.00000
+Scan 1cmsN           1toh.4.163.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dqaa.4.164.1.1.1    0   0.000 100.000  175  125    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           16vpa.4.165.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bdfa.4.166.1.1.1    0   1.172   1.824  175  121  223   23   19    3   0.00  63.16 1.00000
+Scan 1cmsN           1el6a.4.167.1.1.1    0   0.944   2.165  175  208  257   12    3    0   0.00   0.00 1.00000
+Scan 1cmsN           1qgwa.4.168.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1hleab.5.1.1.1.1    0   1.290   2.099  175  262  359   18   12    2   0.00 100.00 1.00000
+Scan 1cmsN           1ecra.5.2.1.1.1    0   1.195   1.717  175  262  339   18   16    3  12.50  37.50 1.00000
+Scan 1cmsN           1es5a.5.3.1.1.1    0   0.000 100.000  175  260    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lbea.5.4.1.1.1    0   0.000 100.000  175  250    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           4blca.5.5.1.1.1    0   1.159   2.240  175  262  354   17   13    3   7.69  61.54 1.00000
+Scan 1cmsN           1buca.5.6.1.1.1    0   0.000 100.000  175  232    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           5fbpa.5.7.1.1.1    0   1.410   2.327  175  262  302   25   13    3  23.08  92.31 0.09972
+Scan 1cmsN           2hhma.5.7.1.2.1    0   1.519   2.245  175  262  234   25   18    2   5.56  16.67 1.00000
+Scan 1cmsN           1inp.5.7.1.3.1     0   1.599   1.969  175  262  327   23    8    1  12.50  75.00 1.00000
+Scan 1cmsN           1qgxa.5.7.1.4.1    0   1.637   2.562  175  262  271   29   18    2  11.11  61.11 1.00000
+Scan 1cmsN           1kfsa.5.8.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mml.5.8.1.2.1     0   1.419   2.639  175  251  313   25   15    5   0.00  66.67 1.00000
+Scan 1cmsN           1ceza.5.8.1.3.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rdr.5.8.1.4.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bpya.5.9.1.1.1    0   0.000 100.000  175  244    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1knya.5.9.1.2.1    0   0.000 100.000  175  253    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cy9a.5.10.1.1.1    0   1.147   2.153  175  245  316   16   13    2   0.00  69.23 1.00000
+Scan 1cmsN           1bjt.5.11.1.1.1    0   0.999   2.128  175  262  310   14    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d3ya.5.12.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dd9a.5.13.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a31a.5.14.1.1.1    0   0.000 100.000  175  216    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1daaa.5.15.1.1.1    0   1.145   2.074  175  262  314   20    8    1  12.50  87.50 1.00000
+Scan 1cmsN           2frvl.5.16.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2frvs.5.17.1.1.1    0   0.000 100.000  175  261    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dkza.5.18.1.1.1    0   0.000 100.000  175  215    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1zrn.5.19.1.1.1    0   0.000 100.000  175  220    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dqsa.5.20.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1lci.5.21.1.1.1    0   1.317   2.214  175  262  312   14    4    1   0.00 100.00 1.00000
+Scan 1cmsN           1ad2.5.22.1.1.1    0   1.382   2.488  175  224  308   15    3    1  33.33  66.67 1.00000
+Scan 1cmsN           1dn1a.5.23.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1e1da.5.24.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           2btva.5.25.1.1.1    0   1.121   1.792  175  262  285   17   11    2   0.00  63.64 1.00000
+Scan 1cmsN           1cola.6.1.1.1.1    0   0.000 100.000  175  197    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ddt.6.1.2.1.1     0   0.000 100.000  175  181    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dlc.6.1.3.1.1     0   0.000 100.000  175  229    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1maz.6.1.4.1.1     0   0.000 100.000  175  143    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           0exa.6.1.5.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1bm1.6.2.1.1.1     0   0.000 100.000  175  221    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1kzua.6.3.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bxwa.6.4.1.1.1    0   1.381   1.887  175  172  271   24   23    5   4.35  65.22 1.00000
+Scan 1cmsN           1qd6ac.6.4.2.1.1    0   1.585   2.032  175  253  312   28   23    5  13.04  86.96 1.00000
+Scan 1cmsN           2omf.6.4.3.1.1     0   1.486   2.510  175  262  287   26   14    3   7.14  57.14 1.00000
+Scan 1cmsN           1af6a.6.4.3.2.1    0   1.338   2.078  175  262  303   23   13    2   0.00  61.54 1.00000
+Scan 1cmsN           1by5a.6.4.3.3.1    0   1.246   1.847  175  262  323   17   10    2  20.00 100.00 0.19371
+Scan 1cmsN           1ek9a.6.5.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           7ahla.6.6.1.1.1    0   1.423   2.163  175  262  347   21   16    4   6.25  93.75 1.00000
+Scan 1cmsN           0lpc.6.7.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1prea.6.8.1.1.1    0   1.139   1.615  175  262  363   21   19    3   0.00  89.47 1.00000
+Scan 1cmsN           1pfo.6.9.1.1.1     0   1.299   1.830  175  262  323   21   16    3   6.25  68.75 1.00000
+Scan 1cmsN           1svb.6.10.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1acc.6.11.1.1.1    0   1.454   2.788  175  262  314   23   11    2   9.09  54.55 1.00000
+Scan 1cmsN           1pidba.7.1.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ehs.7.2.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1vib.7.2.2.1.1      skipped domain - file missing or too short
+Scan 1cmsN           9wgaa.7.3.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1mmc.7.3.1.2.1      skipped domain - file missing or too short
+Scan 1cmsN           1mcti.7.3.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1kal.7.3.3.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1df6a.7.3.3.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1bh4.7.3.3.3.1      skipped domain - file missing or too short
+Scan 1cmsN           1c4ea.7.3.4.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1omc.7.3.5.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1agg.7.3.5.2.1      skipped domain - file missing or too short
+Scan 1cmsN           2sn3.7.3.6.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1big.7.3.6.2.1      skipped domain - file missing or too short
+Scan 1cmsN           1myn.7.3.6.3.1      skipped domain - file missing or too short
+Scan 1cmsN           1gpt.7.3.6.4.1      skipped domain - file missing or too short
+Scan 1cmsN           2cbh.7.3.7.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1boea.7.3.8.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1lpba.7.3.9.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1edmb.7.3.10.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1klo.7.3.10.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1nuba.7.3.10.3.1     skipped domain - file missing or too short
+Scan 1cmsN           1b9wa.7.3.10.4.1     skipped domain - file missing or too short
+Scan 1cmsN           2bi6h.7.3.11.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pi2.7.3.12.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1flei.7.3.13.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bx7.7.3.14.1.1     skipped domain - file missing or too short
+Scan 1cmsN           4htci.7.3.14.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1qgma.7.3.15.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pmc.7.4.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1mkna.7.5.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1mkca.7.5.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           2bbg.7.6.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           3ebx.7.7.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1drs.7.7.1.2.1      skipped domain - file missing or too short
+Scan 1cmsN           1erh.7.7.1.3.1      skipped domain - file missing or too short
+Scan 1cmsN           1btea.7.7.1.4.1    0   0.684   1.946  175   92  160   15   11    3   0.00  63.64 1.00000
+Scan 1cmsN           5pti.7.8.1.1.1      skipped domain - file missing or too short
+Scan 1cmsN           1tocr.7.8.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1dfna.7.9.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bhta.7.10.1.1.1    0   0.689   1.407  175   92  214    7    3    1   0.00   0.00 1.00000
+Scan 1cmsN           1ans.7.11.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ajj.7.12.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ejga.7.13.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1krn.7.14.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pdc.7.14.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1sgpi.7.15.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           4sgbi.7.15.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           2pspa.7.16.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pdga.7.17.1.1.1    0   0.915   1.452  175   87  172   19   12    2   8.33  91.67 1.00000
+Scan 1cmsN           1tgj.7.17.1.2.1    0   0.758   2.365  175  112  226    9    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bnda.7.17.1.3.1    0   0.939   1.965  175  109  195   19   14    3  21.43  71.43 0.11423
+Scan 1cmsN           1hcna.7.17.1.4.1     skipped domain - file missing or too short
+Scan 1cmsN           1aoca.7.17.1.5.1    0   1.176   2.036  175  175  226   23   16    3   0.00  62.50 1.00000
+Scan 1cmsN           1hfi.7.18.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bgk.7.19.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2ech.7.20.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2bbkl.7.21.1.1.1    0   1.090   2.274  175  125  166   19   15    3   0.00  53.33 1.00000
+Scan 1cmsN           1atb.7.22.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1apj.7.23.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1exta.7.24.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1vgh.7.25.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1afp.7.26.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1fbr.7.27.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1icfi.7.28.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ct7a.7.29.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qu8a.7.30.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1danl.7.31.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1d6ga.7.32.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1vpu.7.33.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ekcc.7.34.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1isua.7.35.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dj7a.7.36.1.1.1    0   0.000 100.000  175  109    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1a1ia.7.37.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1d66a.7.38.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           6gata.7.39.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2nlla.7.39.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1ctl.7.39.1.3.1     skipped domain - file missing or too short
+Scan 1cmsN           1zfo.7.39.1.4.1     skipped domain - file missing or too short
+Scan 1cmsN           1d4ua.7.39.1.5.1     skipped domain - file missing or too short
+Scan 1cmsN           2znf.7.40.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qqta.7.41.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1zin.7.41.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1tfi.7.41.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1d0qa.7.41.3.2.1    0   0.000 100.000  175  102    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1yua.7.41.3.3.1     skipped domain - file missing or too short
+Scan 1cmsN           1qf8a.7.41.4.1.1    0   0.000 100.000  175  159    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rb9.7.41.5.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dxga.7.41.5.2.1     skipped domain - file missing or too short
+Scan 1cmsN           2occf.7.41.5.3.1    0   0.856   1.542  175   98  161   13    9    2   0.00  66.67 1.00000
+Scan 1cmsN           1d09b.7.41.6.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dfea.7.42.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1fre.7.43.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1rmd.7.44.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dcqa.7.45.1.1.1    0   0.000 100.000  175  122    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1mhu.7.46.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1co4a.7.47.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1adn.7.48.1.1.1    0   0.000 100.000  175   92    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ptq.7.49.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1vfya.7.50.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1adt.7.51.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qbha.7.52.1.1.1    0   0.000 100.000  175  101    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1rtm1.8.1.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1czya.8.1.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1piqa.8.1.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ifj.8.1.4.1.1      skipped domain - file missing or too short
+Scan 1cmsN           2tmaa.8.1.5.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1aq5a.8.1.6.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1vdfa.8.1.7.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1fzca.8.1.8.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dkga.8.1.9.1.1    0   0.000 100.000  175   99    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1d7ma.8.1.10.1.1    0   0.000 100.000  175  101    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1dipa.8.1.11.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1a92a.8.1.12.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1sfca.8.1.13.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1eq7a.8.1.14.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1avya.8.1.15.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qeya.8.2.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qu1a.8.3.1.1.1    0   0.000 100.000  175  133    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1df4a.8.3.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           s064.8.3.3.1.1      skipped domain - file missing or too short
+Scan 1cmsN           2vsga.8.4.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3btaa.8.4.2.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1cii.8.4.3.1.1     0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qoya.8.4.4.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1av1a.8.5.1.1.1    0   0.000 100.000  175  201    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           486da.9.1.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1c04a.9.1.1.2.1    0   1.159   1.988  175  132  208   22   19    4   5.26  84.21 1.00000
+Scan 1cmsN           1qd7a.9.1.1.3.1     skipped domain - file missing or too short
+Scan 1cmsN           2reca.9.2.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1qo1a.9.3.1.1.1    0   1.491   2.562  175  262  323   16    4    0  25.00  25.00 1.00000
+Scan 1cmsN           2pcfa.9.4.1.1.1    0   0.898   2.054  175   99  198   16   15    4  13.33  60.00 1.00000
+Scan 1cmsN           1c51a.9.5.1.1.1    0   0.975   2.484  175  262  271   18    7    0   0.00   0.00 1.00000
+Scan 1cmsN           1d3ei.9.6.1.1.1    0   0.000 100.000  175  185    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ddqa.9.7.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1deqa.9.8.1.1.1    0   0.000 100.000  175  180    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1ekya.9.9.1.1.1    0   0.000 100.000  175  129    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           3ldh.9.10.1.1.1    0   0.000 100.000  175  262    0    0    0    0   0.00   0.00 1.00000
+Scan 1cmsN           1bdwa.10.1.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ee7a.10.1.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1aj1.10.2.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qowa.10.2.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           2leu.10.3.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           8tfva.10.3.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1cz6a.10.3.1.3.1     skipped domain - file missing or too short
+Scan 1cmsN           1pg1.10.3.1.4.1     skipped domain - file missing or too short
+Scan 1cmsN           1lfc.10.3.1.5.1     skipped domain - file missing or too short
+Scan 1cmsN           2mag.10.4.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cw5a.10.4.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1amta.10.5.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bba.10.6.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dtc.10.7.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1b1va.10.8.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1rpv.10.9.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1mnba.10.9.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1a4tb.10.9.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1exyb.10.9.4.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ceua.10.10.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ztn.10.11.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1fac.10.12.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pei.10.13.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bl1.10.14.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           s063.10.15.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1lyp.10.16.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1psm.10.17.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2mlta.10.18.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ter.10.19.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1wfba.10.20.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1a2xb.10.21.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1nim.10.22.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1rpc.10.23.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1anp.10.24.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1a1p.10.25.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1d6xa.10.26.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1edn.10.27.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1etn.10.28.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1tck.10.29.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pen.10.29.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1p1p.10.29.1.3.1     skipped domain - file missing or too short
+Scan 1cmsN           1as5.10.29.1.4.1     skipped domain - file missing or too short
+Scan 1cmsN           1ad7.10.30.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ont.10.30.1.2.1     skipped domain - file missing or too short
+Scan 1cmsN           1qfba.10.31.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1brv.10.32.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bdk.10.33.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bct.10.34.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1fct.10.35.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1vtp.10.35.2.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2mlp.10.35.3.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1plp.10.36.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1smfi.10.37.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ale.10.38.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1tvs.10.39.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1sut.10.40.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qcm.10.41.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1sol.10.42.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1tos.10.43.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1egt.10.44.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1mof.10.45.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bm4a.10.46.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1wbr.10.47.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1b9pa.10.48.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1egs.10.49.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1loi.10.50.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1zec.10.51.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1b03a.10.52.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cwxa.10.53.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1jsuc.10.54.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1aqg.10.55.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cb3a.10.56.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1gp8a.10.57.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cv9a.10.58.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dpqa.10.59.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1dt8a.10.60.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1alg.10.61.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1aft.10.62.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cw8a.10.63.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1devb.10.64.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1eesb.10.65.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cis.11.1.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           3al1a.11.2.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1a3ja.11.3.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1cosa.11.4.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1coi.11.5.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1bb1a.11.6.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           4hb1.11.7.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2a3da.11.8.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1pef.11.9.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1c94a.11.10.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1meyc.11.11.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1zdc.11.12.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1fsv.11.13.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1abz.11.14.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1qp6a.11.15.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1rh4.11.16.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1ebpc.11.17.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           2soc.11.18.1.1.1     skipped domain - file missing or too short
+Scan 1cmsN           1e0ma.11.19.1.1.1     skipped domain - file missing or too short
+See the file stamp_trans.scan
