@@ -106,7 +106,7 @@ char *getfile(char *code_safe, char *dirfile, int code_length, FILE *OUTPUT) {
 	}
 
 	if((DIR=fopen(dirfile,"r"))==NULL) {
-	   fprintf(stderr,"error: no directories file found\n");
+	   fprintf(stderr,"error: no directories file found: %s\n",dirfile);
 	   return temp;
 	}
 	found=0;

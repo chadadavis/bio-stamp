@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
         float minfrac;
 
 	char c;
-	char *env;
+    char *stampdir = AM_STAMPDIR;
 
 	FILE *BLOC;
 
@@ -29,10 +29,10 @@ int main(int argc, char *argv[]) {
 	  exit(-1);
 	}
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-           fprintf(stderr,"error: you haven't set the environment parameter STAMPDIR to anything\n");
-           return -1;
-        }
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 
 
 	sscanf(argv[2],"%d",&minlen);
@@ -48,7 +48,7 @@ int main(int argc, char *argv[]) {
 	rewind(BLOC);
 	if(ndomain!=0) {
 	  domain=(struct domain_loc*)malloc(ndomain*sizeof(struct domain_loc));
-	  if(getdomain(BLOC,domain,&ndomain,ndomain,&gottrans,env,0,stdout)==-1) exit(-1);
+	  if(getdomain(BLOC,domain,&ndomain,ndomain,&gottrans,stampdir,0,stdout)==-1) exit(-1);
 /*	  int getdomain(FILE *IN, struct domain_loc *domains, int *ndomain, int maxdomain, int *gottrans, char *env, int DSSP, FILE *OUTPUT); */
 
 	  printf("%%   %d domain descriptions read in\n",ndomain);

@@ -21,7 +21,7 @@ void exit_error();
 int main(int argc, char *argv[]) {
 
 	char c;
-	char *env;
+    char *stampdir = AM_STAMPDIR;
 
 	char infile[200];
 	char outfilename[200];
@@ -91,10 +91,10 @@ int main(int argc, char *argv[]) {
         }
 
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-           fprintf(stderr,"error: you haven't set the environment parameter STAMPDIR to anything\n");
-           return -1;
-        }
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 
 	if((IN=fopen(infile,"r"))==NULL) {
 	     fprintf(stderr,"error: file %s not found\n",infile);
@@ -112,7 +112,7 @@ int main(int argc, char *argv[]) {
 	rewind(IN);
 	if(verbose==1 && ftype==0) printf("Reading in domain descriptions...\n");
 	domain=(struct domain_loc*)malloc(nbloc*sizeof(struct domain_loc));
-	if(getdomain(IN,domain,&ndomain,nbloc,&i,env,0,stdout)==-1) exit(-1);
+	if(getdomain(IN,domain,&ndomain,nbloc,&i,stampdir,0,stdout)==-1) exit(-1);
 	if(ndomain!=nbloc) {
 	   fprintf(stderr,"error: something wrong with input file %s\n",infile);
 	   exit(-1);

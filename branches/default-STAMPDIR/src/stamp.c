@@ -20,8 +20,8 @@ int main(int argc, char *argv[]) {
 	int T_FLAG;
 
 	char c;
-	char *env;
-	char *deffile,*keyword,*value;
+    char *stampdir = AM_STAMPDIR;
+    char *deffile,*keyword,*value;
 
 	FILE *PARMS,*TRANS,*PDB;
 
@@ -31,17 +31,17 @@ int main(int argc, char *argv[]) {
 	if(argc<2) exit_error();
 
 	/* get environment variable */
-	if((env=getenv("STAMPDIR"))==NULL) {
-	  fprintf(stderr,"error: environment variable STAMPDIR must be set\n");
-	  exit(-1);
-	}
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 	parms=(struct parameters*)malloc(sizeof(struct parameters));
 	if(parms == NULL) {
 	    fprintf(stderr, "error: malloc(%d) failed for parms with errno=%d\n", sizeof(struct parameters), errno);
 	    exit(-1);
 	}
 
-	strcpy(parms[0].stampdir,env);
+	strcpy(parms[0].stampdir,stampdir);
 	
 	/* read in default parameters from $STAMPDIR/stamp.defaults */
 
@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
 	    fprintf(stderr, "error: malloc(1000 * %d) failed for deffile with errno=%d\n", sizeof(char), errno);
 	    exit(-1);
 	}
-	sprintf(deffile,"%s/stamp.defaults",env);
+	sprintf(deffile,"%s/stamp.defaults",stampdir);
 	if((PARMS=fopen(deffile,"r"))==NULL) {
 	   fprintf(stderr,"error: default parameter file %s does not exist\n",deffile);
 	   exit(-1);
@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
 	fclose(PARMS);
 
 	/* define DSSP directory file name */
-	sprintf(&parms[0].dsspfile[0],"%s/dssp.directories",env);
+	sprintf(&parms[0].dsspfile[0],"%s/dssp.directories",stampdir);
 
 	/* now search the command line for commands */
 	keyword=(char*)malloc(1000*sizeof(char));
