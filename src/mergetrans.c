@@ -41,8 +41,8 @@ int main(int argc, char *argv[]) {
 	char *id;
 	char *buff;
 	char infile[200],infile2[200];
-	char *env;
-	
+    char *stampdir = AM_STAMPDIR;
+
 	FILE *IN,*IN2;
 
 	struct domain_loc *domain,*domain2;
@@ -101,15 +101,15 @@ int main(int argc, char *argv[]) {
 	  exit(-1);
 	}
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-           fprintf(stderr,"error: you haven't set the environment parameter STAMPDIR to anything\n");
-           return -1;
-        }
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 
 	ndomain=count_domain(IN);
 	rewind(IN);
 	domain=(struct domain_loc*)malloc(ndomain*sizeof(struct domain_loc));
-	if(getdomain(IN,domain,&ndomain,ndomain,&gottrans,env,0,stdout)==-1) exit(-1);
+	if(getdomain(IN,domain,&ndomain,ndomain,&gottrans,stampdir,0,stdout)==-1) exit(-1);
 /*	if(!gottrans) {
 	  fprintf(stderr,"error: file %s does not contain transformations\n",infile);
 	  exit(-1);
@@ -120,7 +120,7 @@ int main(int argc, char *argv[]) {
 	ndomain2=count_domain(IN2);
         rewind(IN2);
         domain2=(struct domain_loc*)malloc(ndomain2*sizeof(struct domain_loc));
-        if(getdomain(IN2,domain2,&ndomain2,ndomain2,&gottrans2,env,0,stdout)==-1) exit(-1);
+        if(getdomain(IN2,domain2,&ndomain2,ndomain2,&gottrans2,stampdir,0,stdout)==-1) exit(-1);
 /*        if(!gottrans) {
           fprintf(stderr,"error: file %s does not contain transformations\n",infile2);
           exit(-1);

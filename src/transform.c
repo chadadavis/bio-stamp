@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 
 	int i,j,k;
 	char c;
-	char *env;
+    char *stampdir = AM_STAMPDIR;
 	int ndomain;
 	int gottrans;
 	int count;
@@ -70,10 +70,10 @@ int main(int argc, char *argv[]) {
 	}
 	printf("TRANSFORM R.B. Russell, 1995\n");
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-           fprintf(stderr,"error: you haven't set the environment parameter STAMPDIR to anything\n");
-           return -1;
-      	}
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 
 	/* count the number of domains */
 	ndomain=0; 
@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
 	domain=(struct domain_loc*)malloc(ndomain*sizeof(struct domain_loc));
 	
 	/* read in the domains */
-	if(getdomain(IN,domain,&ndomain,ndomain,&gottrans,env,0,stdout)==-1) exit(-1);
+	if(getdomain(IN,domain,&ndomain,ndomain,&gottrans,stampdir,0,stdout)==-1) exit(-1);
 	fclose(IN);
 
 	if(dssp) printf(" Using DSSP files\n");
