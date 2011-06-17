@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 
 	char c;
 	char ins,cid;
-	char *env;
+    char *stampdir = AM_STAMPDIR;
 	char **ids;
 	char cmnd[200];
 
@@ -114,10 +114,10 @@ int main(int argc, char *argv[]) {
 	   fclose(IN);
 	}
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-	   fprintf(stderr,"error: you haven't set STAMPDIR to anything\n");
-	   exit(-1);
-	}
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 
 	/* Output file */
 	if((TRANS=fopen(parms[0].TRANSFILE,"w"))==NULL) {
@@ -133,7 +133,7 @@ int main(int argc, char *argv[]) {
 	fprintf(TRANS,"%% You can also get a refined StAMP alignment by\n");
 	fprintf(TRANS,"%%  typing stamp -l %s [ other parameters]\n",parms[0].TRANSFILE);
 	fprintf(TRANS,"%%\n");
-	strcpy(&parms[0].STAMPDIR[0],env);
+	strcpy(&parms[0].STAMPDIR[0],stampdir);
 /*	printf("STAMPDIR is %s\n",parms[0].STAMPDIR); */
 
 

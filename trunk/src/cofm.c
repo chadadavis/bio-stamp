@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 
 	int **Ro;
 
-	static char *env;
+    char *stampdir = AM_STAMPDIR;
 	char domfile[1000];
 	char dssp_files[1000],pdb_files[1000];
 
@@ -39,12 +39,12 @@ int main(int argc, char *argv[]) {
 
 	verbose=0;
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-          fprintf(stderr,"error: environment variable STAMPDIR must be set\n");
-          exit(-1);
-        }
-	sprintf(pdb_files,"%s/pdb.directories",env);
-	sprintf(dssp_files,"%s/dssp.directories",env);
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
+	sprintf(pdb_files,"%s/pdb.directories",stampdir);
+	sprintf(dssp_files,"%s/dssp.directories",stampdir);
 
         seed = 0;
         ct = 0;
@@ -81,7 +81,7 @@ int main(int argc, char *argv[]) {
 	ndomain=count_domain(DOM);
 	domain=(struct domain_loc*)malloc(ndomain*sizeof(struct domain_loc));
 	rewind(DOM);
-	if(getdomain(DOM,domain,&ndomain,ndomain,&gottrans,env,0,stdout)==-1) exit(-1);
+	if(getdomain(DOM,domain,&ndomain,ndomain,&gottrans,stampdir,0,stdout)==-1) exit(-1);
 	fclose(DOM);
 
 	if(verbose==1) { fprintf(stdout,"Reading coordinates...\n"); }

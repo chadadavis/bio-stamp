@@ -43,8 +43,8 @@ int main(int argc, char *argv[]) {
 	char type;
 	char *summary;
 
-	char *env;
-	char *buff;
+    char *stampdir = AM_STAMPDIR;
+    char *buff;
 	char *aa;
 	char *sec;
 	char *N,*C,*O;
@@ -115,10 +115,10 @@ int main(int argc, char *argv[]) {
 	printf(" You must run `transform' or `avestruc' on the file:\n   %s\n",filename);
 	printf("  in order to run MOLSCRIPT subsequently\n\n");
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-           fprintf(stderr,"error: you haven't set the environment parameter STAMPDIR to anything\n");
-           return -1;
-      	}
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 	/* read in coordinate locations and initial transformations */
 	if((TRANS = fopen(filename,"r")) == NULL) {
 	   fprintf(stderr,"error: file %s does not exist\n",filename);
@@ -130,7 +130,7 @@ int main(int argc, char *argv[]) {
 	ndomain=count_domain(TRANS);
 	domain=(struct domain_loc*)malloc(ndomain*sizeof(struct domain_loc));
 	rewind(TRANS);
-	if(getdomain(TRANS,domain,&ndomain,ndomain,&gottrans,env,0,stdout)==-1) exit(-1);
+	if(getdomain(TRANS,domain,&ndomain,ndomain,&gottrans,stampdir,0,stdout)==-1) exit(-1);
 	for(i=0; i<ndomain; ++i) {
 	  for(j=0; j<domain[i].nobj; ++j) {
 	     if(domain[i].start[j].cid=='_') domain[i].start[j].cid=' ';

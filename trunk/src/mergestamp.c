@@ -47,8 +47,8 @@ int main(int argc, char *argv[]) {
 	char *id;
 	char *buff;
 	char infile[200],infile2[200];
-	char *env;
-	
+    char *stampdir = AM_STAMPDIR;
+
 	FILE *DOM1,*DOM2;
 	FILE *A1,*A2;
 
@@ -119,16 +119,16 @@ int main(int argc, char *argv[]) {
 	  exit(-1);
 	}
 
-	if((env=getenv("STAMPDIR"))==NULL) {
-           fprintf(stderr,"error: you haven't set the environment parameter STAMPDIR to anything\n");
-           return -1;
-        }
+    if(getenv("STAMPDIR")!=NULL) {
+      /* Allow environment variable to override config setting */
+      stampdir=getenv("STAMPDIR");
+    }
 
 	ndomain=count_domain(DOM1);
 	rewind(DOM1);
 	if(ndomain>0) {
 	  domain=(struct domain_loc*)malloc(ndomain*sizeof(struct domain_loc));
-	  if(getdomain(DOM1,domain,&ndomain,ndomain,&gottrans,env,0,stdout)==-1) exit(-1);
+	  if(getdomain(DOM1,domain,&ndomain,ndomain,&gottrans,stampdir,0,stdout)==-1) exit(-1);
 	}
 	fclose(DOM1);
 
@@ -136,7 +136,7 @@ int main(int argc, char *argv[]) {
         rewind(DOM2);
 	if(ndomain2>0) {
           domain2=(struct domain_loc*)malloc(ndomain2*sizeof(struct domain_loc));
-          if(getdomain(DOM2,domain2,&ndomain2,ndomain2,&gottrans2,env,0,stdout)==-1) exit(-1);
+          if(getdomain(DOM2,domain2,&ndomain2,ndomain2,&gottrans2,stampdir,0,stdout)==-1) exit(-1);
 	}
 	fclose(DOM2);
 
