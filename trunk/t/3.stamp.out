@@ -1,6 +1,6 @@
 Keyword f value 3.dom
 Keyword rough value -prefix
-Keyword prefix value /tmp/stamp_3.stamp
+Keyword prefix value tmp_3.stamp
 
 STAMP Structural Alignment of Multiple Proteins
  by Robert B. Russell & Geoffrey J. Barton 
@@ -16,7 +16,7 @@ Running roughfit.
 
      No.  Domain1         Domain2         Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S   P(m)
 Pair   1  1rv8B           1rv8C           9.72   0.34    253  253   253  253 252   18 100.00  95.63 0.00e+00
-Reading in matrix file /tmp/stamp_3.stamp.mat...
+Reading in matrix file tmp_3.stamp.mat...
 Doing cluster analysis...
 Cluster:  1 (   1rv8B  &    1rv8C ) Sc  9.71 RMS   0.34 Len 253 nfit 252 
- See file /tmp/stamp_3.stamp.1 for the alignment and transformations
+ See file tmp_3.stamp.1 for the alignment and transformations
