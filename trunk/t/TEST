@@ -5,9 +5,11 @@ cwd=`pwd`
 total=0
 passed=0
 
-export PATH=../src:$PATH
+dir=`dirname $0`
+tdir=`readlink -f $dir`
+srcdir=$tdir/../src
 
-cd `dirname $0`
+cd $tdir
 
 for file in `ls *.t | sort -n`
 do
