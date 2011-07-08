@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tmp=/tmp/stamp_
+tmp=tmp_
 cwd=`pwd`
 total=0
 passed=0
