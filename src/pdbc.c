@@ -18,13 +18,21 @@ int main(int argc, char *argv[]) {
 	FILE *pdb,*in;
 	char keyword[7],atnum[6],atname[5],
 	     resname[4],resnum[7],rest[15],
-	     buff[100],oldresnum[7],code[200],
-	     reftext[100000];
+         oldresnum[7];
+    char code[200];       /* identifier for PDB ID + chain */
+    char buff[100];       /* a single line in PDB file */
+
+    /* All REMARK  3 lines */
+    char* reftext;
+    int refmax=0;
+	int reflen=0;      
+    
+
 	char *pdbfile,*dsspfile;
 	char *stampdir = AM_STAMPDIR;
     char *dirfile;
 	int nlines;
-	int reflen;
+
 	int nchains,nres,natoms,nchainres,nchainatoms;
 	char curchain;
 	char *chs;
@@ -356,17 +364,28 @@ int main(int argc, char *argv[]) {
     closefile(pdb,pdbfile); 
     pdb=openfile(pdbfile,"r");
 
-    reftext[0]='\0';
     found=0;
 
     while(fgets(buff,99,pdb)!=NULL) {
-       /* copy all REMARK  3 lines into a string */
-       if(strncmp(REF,buff,10)==0) {
-	  buff[72]='\0';
-	  sprintf(&reftext[strlen(reftext)],"%s",&buff[10]);
-	  reflen+=strlen(&buff[10]);
-	  found=1;
-       }
+        /* copy all REMARK  3 lines into a string */
+        if(strncmp(REF,buff,10)==0) {
+            buff[72]='\0';
+            /* Init reftext, if necessary */
+            if (refmax < 1000) { 
+                refmax = 1000;
+                reftext = malloc(refmax * sizeof(char)); 
+                reftext[0]='\0';
+                reflen = 0;
+            }
+            /* If reftext is not large enough, realloc the double size */
+            if(refmax < reflen+strlen(&buff[10])) {
+                reftext = realloc(reftext, 2 * refmax * sizeof(char));
+                refmax *= 2;
+            }
+            sprintf(&reftext[strlen(reftext)],"%s",&buff[10]);
+            reflen+=strlen(&buff[10]);
+            found=1;
+        }
     }
     if(found==1) {
        /* remove the double spaces */
