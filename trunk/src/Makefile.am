@@ -1,7 +1,7 @@
 # Add this option so that data dir can be determined
-CFLAGS=-DAM_STAMPDIR='"$(datadir)/stamp"'
+AM_CFLAGS=-DAM_STAMPDIR='"$(datadir)/stamp"'
 
-LDFLAGS=-lm
+AM_LDFLAGS=-lm
 
 # Build targets
 bin_PROGRAMS=alignfit avestruc cofm dstamp extrans gstamp mergestamp mergetrans pdbc pdbseq pickframe poststamp sorttrans stamp stamp_clean transform ver2hor
