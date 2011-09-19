@@ -9,17 +9,25 @@ DOWNLOAD
     https://code.google.com/p/bio-stamp/downloads/list
 
 INSTALL
-    ./configure && make install
+     Do
+      ./configure && make install
 
     You may need to be root to installed to the default location:
-    ./configure && sudo make install
+      ./configure && sudo make install
 
     Otherwise, specify an alternate directory installation prefix:
-    ./configure --prefix=/usr/local && make install
+      ./configure --prefix=/usr/local && make install
 
     Or, if checked out from the source repository, then first do:
-    autoreconf --install
-    ./configure && make install
+      autoreconf --install
+      ./configure && make install
+
+    Once installed, you will want to edit the file:
+      $prefix/share/stamp/pdb.directories 
+    to set the path and file pattern for your PDB files
+
+    The file format is explained here:
+      http://www.compbio.dundee.ac.uk/manuals/stamp.4.4/node57.html
 
 CITE
     Copyright (1997, 1998, 1999, 2010) Robert B. Russell & Geoffrey J. Barton.
