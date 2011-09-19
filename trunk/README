@@ -11,7 +11,13 @@ DOWNLOAD
 INSTALL
     ./configure && make install
 
-    Or, if checked out from the source repository, then:
+    You may need to be root to installed to the default location:
+    ./configure && sudo make install
+
+    Otherwise, specify an alternate directory installation prefix:
+    ./configure --prefix=/usr/local && make install
+
+    Or, if checked out from the source repository, then first do:
     autoreconf --install
     ./configure && make install
 
