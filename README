@@ -22,6 +22,10 @@ INSTALL
       autoreconf --install
       ./configure && make install
 
+    If installing on Ubuntu and the math library (libm) isn't found do:
+
+      LDADD=-lm make
+
     Once installed, you will want to edit the file:
       $prefix/share/stamp/pdb.directories 
     to set the path and file pattern for your PDB files
