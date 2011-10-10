@@ -44,62 +44,65 @@ This requires that you have L<gzip(1)> and L<zcat(1)> installed.
 
 use strict;
 use warnings;
-my $dh;
-my $fn;
-my $fh;
-my $fn_out;
-my $model;
-my $fh_out;
-my $dn;
-defined($dn = shift @ARGV) or usage();
+use File::Basename;
+use File::Find;
+use File::Stat qw(:stat);
 
-sub usage {
-    my $prog;
+my $base_dir = shift or exit(usage());
 
-    ($prog = __FILE__) =~ s/.*\///;
+find({ wanted => \&_split_file }, $base_dir);
 
-    die "Usage: $prog pdb_bio_units_directory\n";
-}
+exit;
 
-opendir($dh, $dn) or die("Error: cannot open '$dn' directory.");
-
-while($fn = readdir $dh) {
+sub _split_file {
+    return -1 if -l;
     # Don't re-read existing model files
-    next if $fn =~ /-/;
-    # Skip links
-    next if -l $fn;
-    if($fn =~ /\.gz\Z/) {
-	if(!open($fh, "zcat $dn/$fn |")) {
-	    warn "Error: cannot open pipe from 'zcat $dn/$fn'";
-	    next;
-	}
-    my $fnctime = (stat("$dn/$fn"))[10];
+    return -1 if   /-/;
+    return -1 if ! /\.gz\Z/;
+    my $fn   = $_;
+    my $dn   = $File::Find::dir;
+    open(my $fh, , "zcat $fn |");
+    if (! $fh) {
+        warn "Error: cannot open pipe from 'zcat $dn/$fn'";
+        return -1;
+    }
+
+    my $fnctime = stat($fn)->ctime;
     my ($pdbid, $assembly) = $fn =~ /^(....)\.pdb(\d+)/;
-	while(<$fh>) {
-	    if(/^MODEL\s+(\S+)/) {
-		$model = $1;
-        # Use dash separators, because STAMP strips off extension otherwise
-        $fn_out = join('-', $pdbid, $assembly, $model) . '.pdb.gz';
-        # Skip unless downloaded file newer
-        # (check ctime, since mtime will have been fudged by mirroring)
-        my $fn_outctime = (stat("$dn/$fn_out"))[10]; 
-        next if ($fn_outctime && $fnctime <= $fn_outctime);
-		if(!open($fh_out, "| gzip > $dn/$fn_out")) {
-		    warn "Error: cannot open pipe to 'gzip > $dn/$fn_out'";
-		    last;
-		}
-	    }
-	    elsif(/^ENDMDL/) {
-		close($fh_out) if defined $fh_out;
-		$fh_out = undef;
-        # Use same file modification time as original
-        my @stat = stat("$dn/$fn");
-        utime($stat[9], $stat[9], "$dn/$fn_out");
-	    }
-	    elsif(defined($fh_out)) {
-		print $fh_out $_;
-	    }
-	}
+    my $fn_out;
+    my $fh_out;
+    while (<$fh>) {
+        if (/^MODEL\s+(\S+)/) {
+            my $model = $1;
+
+            # Use dash separators, because STAMP strips off extension otherwise
+            $fn_out = join('-', $pdbid, $assembly, $model) . '.pdb.gz';
+
+            # Skip unless downloaded file newer
+            # (check ctime, since mtime will have been fudged by mirroring)
+            my $fn_outctime = stat($fn_out)->ctime;
+            next if ($fn_outctime && $fnctime <= $fn_outctime);
+            if (!open($fh_out, "| gzip > $fn_out")) {
+                warn "Error: cannot open pipe to 'gzip > $dn/$fn_out'";
+                last;
+            }
+        }
+        elsif (/^ENDMDL/) {
+            close($fh_out) if defined $fh_out;
+            $fh_out = undef;
+
+            # Use same file modification time as original
+            my $stat = stat($fn);
+            utime($stat->mtime, $stat->mtime, $fn_out);
+        }
+        elsif (defined($fh_out)) {
+            print $fh_out $_;
+        }
     }
 }
-closedir($dh);
+
+sub usage {
+    my $prog = basename $0;
+    warn "Usage:\n\t$prog /path/to/pdb_biounit\n";
+    return -1;
+}
