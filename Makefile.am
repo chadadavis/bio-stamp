@@ -5,6 +5,8 @@ SUBDIRS=src
 stampdir=$(datadir)/@PACKAGE@
 dist_stamp_DATA=defs/stamp.defaults defs/pdb.directories defs/dssp.directories
 
+dist_bin_SCRIPTS=script/stamp-split-biounit-models.pl
+
 # Also distribute Tests in ./t but don't install them
 EXTRA_DIST = t
 dist-hook:
