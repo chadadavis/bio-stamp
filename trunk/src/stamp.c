@@ -712,6 +712,7 @@ int main(int argc, char *argv[]) {
 }
 
 void help_exit_error() {
+	fprintf(stderr,"STAMP version %s\n", AM_VERSION);
 	fprintf(stderr,"format: stamp -f <starting domain file> [options] \n");
 	fprintf(stderr,"\n");
 	fprintf(stderr,"GENERAL OPTIONS:\n");
@@ -733,6 +734,7 @@ void help_exit_error() {
 	exit(-1);
 }
 void exit_error() {
+	fprintf(stderr,"STAMP version %s\n", AM_VERSION);
 	fprintf(stderr,"format: stamp -f <starting domain file> [options] \n");
 	fprintf(stderr,"        stamp -help  will give a list of options\n");
 	exit(-1);
