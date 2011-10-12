@@ -1,17 +1,18 @@
 # Files in the current directory checked first
-./ _ .pdb
 ./ _ .pdb.gz
-./ _ .ent
+./ _ .pdb
 ./ _ .ent.gz
+./ _ .ent
 # Biological assembly 
 ./ _ .gz
 # File names without prefix
-/usr/local/data/pdb _ .pdb
 /usr/local/data/pdb _ .pdb.gz
+/usr/local/data/pdb _ .pdb
 # Files have 'pdb' prefix before 4-char code
-/usr/local/data/pdb pdb .ent
 /usr/local/data/pdb pdb .ent.gz
+/usr/local/data/pdb pdb .ent
 # Biological assemblies (biounit)
 # Have no prefix, have suffix like .pdb1.gz or pdb2.gz
 # E.g.: pdbd -d 1g3n.pdb1
 /usr/local/data/biounit _ .gz
+/usr/local/data/biounit _ _
