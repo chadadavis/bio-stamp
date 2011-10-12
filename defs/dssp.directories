@@ -1,3 +1,4 @@
-./ _ .dssp
-./ _ .dssp.Z
 ./ _ .dssp.gz
+./ _ .dssp
+/usr/local/data/dssp _ .dssp.gz
+/usr/local/data/dssp _ .dssp
