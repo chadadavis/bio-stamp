@@ -27,7 +27,7 @@ INSTALL
       autoreconf --install
       ./configure && make install
 
-    If installing on Ubuntu and the math library (libm) isn't found do:
+    If installing on Ubuntu, and the math library (libm) isn't found, do:
 
       LDADD=-lm make
 
@@ -44,9 +44,11 @@ PROTEIN DATA BANK (PDB)
     download it:
 
     export epdb=rsync.ebi.ac.uk::pub/databases/rcsb/pdb-remediated/data
-    rsync -v -a $epdb/structures/divided/pdb/ /your/data/dir/pdb        
+    export data=/path/to/your/data/dir
+    rsync -v -a $epdb/structures/divided/pdb/ $data/pdb        
     # Optionally download the biological unit structures as well:
-    rsync -v -a $epdb/biounit/coordinates/divided/ /your/data/dir/pdb-biounit
+    rsync -v -a $epdb/biounit/coordinates/divided/ $data/biounit
+    (in this case, also have a look at the script stamp-split-biounit-models.pl )
 
 CITE
     Copyright (1997, 1998, 1999, 2010) Robert B. Russell & Geoffrey J. Barton.

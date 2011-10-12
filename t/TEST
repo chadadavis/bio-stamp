@@ -9,6 +9,9 @@ dir=`dirname $0`
 tdir=`readlink -f $dir`
 srcdir=$tdir/../src
 
+# use ./t/pdb.directories for tests
+export STAMPDIR=.
+ 
 cd $tdir
 
 for file in `ls *.t | sort -n`
