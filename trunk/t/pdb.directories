@@ -1,1 +1,6 @@
 ./ pdb .ent.gz
+./ pdb .ent
+./ pdb .pdb.gz
+./ pdb .pdb
+./ _ .pdb.gz
+./ _ .pdb
