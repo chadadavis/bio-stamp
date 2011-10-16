@@ -15,4 +15,6 @@
 # Have no prefix, have suffix like .pdb1.gz or pdb2.gz
 # E.g.: pdbd -d 1g3n.pdb1
 /usr/local/data/biounit _ .gz
+# And for the split models: 1tim-1-1.pdb.gz
+/usr/local/data/biounit _ .pdb.gz
 /usr/local/data/biounit _ _
