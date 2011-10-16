@@ -1,0 +1,10 @@
+%     IMMUNOGLOBULIN                          18-APR-89   2FB4      2FB4   3
+%     IMMUNOGLOBULIN FAB                                            2FB4   4
+%     HUMAN (HOMO $SAPIENS) MYELOMA PATIENT KOL SERUM               2FB4   5
+%     M.MARQUART,R.HUBER                                            2FB4   6
+% This is only the light chain variable domain.
+./pdb2fb4.ent 2fb4lv {  L 1 _ to L 109 _  }
+% resolution:  1.900 angstroms
+% refinement:  R =  0.18900
+%
+%
