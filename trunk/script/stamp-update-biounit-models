@@ -110,7 +110,8 @@ sub _split_file {
 sub _newer { 
     my ($parent) = @_;
     my $ctime_parent = stat($parent)->ctime;
-    my $basename = substr($parent, 0, 4);
+    # Get PDB ID and assembly ID
+    my $basename = substr($parent, 0, 4) . '-' . substr($parent, 8, 1);
     my @children = (glob "${basename}-*");
     # Also newer (i.e. needs to be processed) when no children
     return 1 unless @children;
