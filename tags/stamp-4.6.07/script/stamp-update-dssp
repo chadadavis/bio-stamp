@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+data=${1:-/usr/local/data/dssp}
+# DSSP definitions for PDB entries
+rsync -v -a -z rsync://rsync.cmbi.ru.nl/dssp/ $data/
+

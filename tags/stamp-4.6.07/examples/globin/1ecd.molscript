@@ -1,0 +1,39 @@
+! Molscript input file generated from STAMP output file
+! R.B. Russell 1994
+!
+!
+! To use you must run TRANSFORM on the same file
+!  (i.e. to generate the PDB files)
+! A total of 103 equivalent residues were found
+!
+!
+plot
+read mol "1ecd.pdb";
+  transform atom *
+      by centre position atom *
+      by rotation x 90.0
+      by rotation y 170.0
+      by rotation z 0.0
+      ;
+ set shading 0.0;
+coil from  1  to  3 ;
+helix from  3  to  14 ;
+coil from  14  to  16 ;
+trace from  15  to  18 ;
+coil from  18  to  20 ;
+helix from  20  to  30 ;
+coil from  30  to  32 ;
+helix from  32  to  35 ;
+coil from  35  to  42 ;
+trace from  41  to  52 ;
+coil from  52  to  53 ;
+helix from  53  to  70 ;
+trace from  70  to  80 ;
+helix from  80  to  86 ;
+trace from  86  to  89 ;
+helix from  89  to  90 ;
+coil from  90  to  94 ;
+helix from  94  to  108 ;
+trace from  108  to  118 ;
+helix from  118  to  135 ;
+end_plot
