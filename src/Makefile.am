@@ -1,5 +1,5 @@
 # Add this option so that data dir can be determined
-AM_CFLAGS=-DAM_STAMPDIR='"$(datadir)/stamp"' -DAM_VERSION='"4.6.04"'
+AM_CFLAGS=-DAM_STAMPDIR='"$(datadir)/stamp"' -DAM_VERSION='"4.6.05"'
 
 AM_LDFLAGS=-lm
 
