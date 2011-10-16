@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-data=${1:/usr/local/data/pdb}
+data=${1:-/usr/local/data/pdb}
 epdb=rsync.ebi.ac.uk::pub/databases/rcsb/pdb-remediated/data
 rsync -v -a $epdb/structures/divided/pdb/ $data
 
