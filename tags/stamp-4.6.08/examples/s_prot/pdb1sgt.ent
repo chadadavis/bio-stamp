@@ -1,0 +1,2042 @@
+HEADER    HYDROLASE (SERINE PROTEINASE)           13-APR-88   1SGT      1SGT   3
+COMPND    TRYPSIN (/SGT$) (E.C.3.4.21.4)                                1SGT   4
+SOURCE    (STREPTOMYCES $GRISEUS, STRAIN K1)                            1SGT   5
+AUTHOR    R.J.READ,M.N.G.JAMES                                          1SGT   6
+REVDAT   1   16-JUL-88 1SGT    0                                        1SGT   7
+JRNL        AUTH   R.J.READ,M.N.G.JAMES                                 1SGT   8
+JRNL        TITL   REFINED CRYSTAL STRUCTURE OF STREPTOMYCES $GRISEUS   1SGT   9
+JRNL        TITL 2 TRYPSIN AT 1.7 ANGSTROMS RESOLUTION                  1SGT  10
+JRNL        REF    J.MOL.BIOL.                   V. 200   523 1988      1SGT  11
+JRNL        REFN   ASTM JMOBAK  UK ISSN 0022-2836                  070  1SGT  12
+REMARK   1                                                              1SGT  13
+REMARK   1 REFERENCE 1                                                  1SGT  14
+REMARK   1  AUTH   R.J.READ,G.D.BRAYER,L.JURASEK,M.N.G.JAMES            1SGT  15
+REMARK   1  TITL   CRITICAL COMPARISON OF COMPARATIVE MODEL BUILDING    1SGT  16
+REMARK   1  TITL 2 OF STREPTOMYCES $GRISEUS TRYPSIN                     1SGT  17
+REMARK   1  REF    BIOCHEMISTRY                  V.  23  6570 1984      1SGT  18
+REMARK   1  REFN   ASTM BICHAW  US ISSN 0006-2960                  033  1SGT  19
+REMARK   2                                                              1SGT  20
+REMARK   2 RESOLUTION. 1.7 ANGSTROMS.                                   1SGT  21
+REMARK   3                                                              1SGT  22
+REMARK   3 REFINEMENT. BY THE RESTRAINED LEAST SQUARES PROCEDURE OF J.  1SGT  23
+REMARK   3  KONNERT AND W. HENDRICKSON (PROGRAM *PROLSQ*).  THE R       1SGT  24
+REMARK   3  VALUE IS 0.161 FOR 20046 REFLECTIONS IN THE RESOLUTION      1SGT  25
+REMARK   3  RANGE 8.0 TO 1.7 ANGSTROMS WITH I .GT. SIGMA(I), WHICH      1SGT  26
+REMARK   3  CORRESPONDS TO 80.6 PER CENT OF ALL DATA IN THE RESOLUTION  1SGT  27
+REMARK   3  RANGE FROM INFINITY TO 1.7 ANGSTROMS.  THE R VALUE IS       1SGT  28
+REMARK   3  0.230 FOR ALL DATA (WITH ABS(FOBS) SET TO 0.0 FOR           1SGT  29
+REMARK   3  REFLECTIONS WITH NEGATIVE NET INTENSITIES).  THE OVERALL    1SGT  30
+REMARK   3  RMS ERROR IS 0.24 ANGSTROMS, ESTIMATED BY MEANS OF A        1SGT  31
+REMARK   3  SIGMA(SUB)A PLOT (R.J.READ, ACTA CRYSTALLOGR., V. A42, P.   1SGT  32
+REMARK   3  140, 1986).                                                 1SGT  33
+REMARK   3                                                              1SGT  34
+REMARK   3  NUMBER OF PROTEIN ATOMS (INCLUDING CA++)      1621          1SGT  35
+REMARK   3  NUMBER OF SOLVENT ATOMS                        192          1SGT  36
+REMARK   3  NUMBER OF VARIABLE PARAMETERS (POSITIONAL     7442          1SGT  37
+REMARK   3      PARAMETERS FOR THE SOLVENT MOLECULE HOH                 1SGT  38
+REMARK   3      18, WHICH LIES ON A CRYSTALLOGRAPHIC                    1SGT  39
+REMARK   3      TWO-FOLD AXIS, WERE NOT VARIED)                         1SGT  40
+REMARK   3  RMS DEVIATIONS FROM IDEAL VALUES (THE VALUES OF             1SGT  41
+REMARK   3      SIGMA, IN PARENTHESES, ARE THE INPUT ESTIMATED          1SGT  42
+REMARK   3      STANDARD DEVIATIONS THAT DETERMINE THE RELATIVE         1SGT  43
+REMARK   3      WEIGHTS OF THE CORRESPONDING RESTRAINTS)                1SGT  44
+REMARK   3    DISTANCE RESTRAINTS (ANGSTROMS)                           1SGT  45
+REMARK   3      BOND DISTANCE                            0.019(0.014)   1SGT  46
+REMARK   3      ANGLE DISTANCE                           0.038(0.027)   1SGT  47
+REMARK   3      PLANAR 1-4 DISTANCE                      0.041(0.027)   1SGT  48
+REMARK   3    PLANE RESTRAINT (ANGSTROMS)                0.017(0.016)   1SGT  49
+REMARK   3    CHIRAL-CENTER RESTRAINT (ANGSTROMS**3)     0.208(0.130)   1SGT  50
+REMARK   3    NON-BONDED CONTACT RESTRAINTS (ANGSTROMS)                 1SGT  51
+REMARK   3      SINGLE TORSION CONTACT                   0.279(0.350)   1SGT  52
+REMARK   3      MULTIPLE TORSION CONTACT                 0.130(0.350)   1SGT  53
+REMARK   3      POSSIBLE HYDROGEN BOND                   0.177(0.350)   1SGT  54
+REMARK   3    CONFORMATIONAL TORSION ANGLE RESTRAINT (DEGREES)          1SGT  55
+REMARK   3      PLANAR (OMEGA)                             3.1(2.5)     1SGT  56
+REMARK   3    ISOTROPIC THERMAL FACTOR RESTRAINTS (ANGSTROMS**2)        1SGT  57
+REMARK   3      MAIN-CHAIN BOND                          1.816(1.500)   1SGT  58
+REMARK   3      MAIN-CHAIN ANGLE                         2.535(2.000)   1SGT  59
+REMARK   3      SIDE-CHAIN BOND                          5.729(3.500)   1SGT  60
+REMARK   3      SIDE-CHAIN ANGLE                         8.466(5.000)   1SGT  61
+REMARK   4                                                              1SGT  62
+REMARK   4 THE SEQUENCE NUMBERING IS BASED ON THE SEQUENCE ALIGNMENT    1SGT  63
+REMARK   4 WITH CHYMOTRYPSIN.  SEE THE REFERENCE CITED IN THE *JRNL*    1SGT  64
+REMARK   4 RECORDS ABOVE.  THE AMINO ACID SEQUENCE AS DETERMINED BY     1SGT  65
+REMARK   4 R.W.OLAFSON,L.JURASEK,M.R.CARPENTER,L.B.SMILLIE              1SGT  66
+REMARK   4 (BIOCHEMISTRY, V. 14, P. 1168, 1975) HAS BEEN CORRECTED BY   1SGT  67
+REMARK   4 THE INSERTION OF TWO RESIDUES AFTER SER 76.  THESE TWO       1SGT  68
+REMARK   4 RESIDUES ARE CURRENTLY INTERPRETED FROM THE ELECTRON         1SGT  69
+REMARK   4 DENSITY AS GLY-ALA AND ARE NUMBERED 77 AND 79,               1SGT  70
+REMARK   4 RESPECTIVELY.                                                1SGT  71
+REMARK   5                                                              1SGT  72
+REMARK   5 SGT IS PURIFIED FROM PRONASE, A COMMERCIAL PRODUCT OBTAINED  1SGT  73
+REMARK   5 FROM THE EXTRACELLULAR CULTURE FILTRATE OF THE SOIL          1SGT  74
+REMARK   5 BACTERIUM STREPTOMYCES GRISEUS, STRAIN K1.                   1SGT  75
+REMARK   6                                                              1SGT  76
+REMARK   6 A NUMBER OF RESIDUES HAVE POOR ELECTRON DENSITY IN THE       1SGT  77
+REMARK   6 FINAL MAP.  SEE THE *FTNOTE* RECORDS BELOW FOR SPECIFIC      1SGT  78
+REMARK   6 DETAILS.                                                     1SGT  79
+REMARK   7                                                              1SGT  80
+REMARK   7 SITE *CAT* COMPRISES THOSE RESIDUES FORMING THE CATALYTIC    1SGT  81
+REMARK   7 SITE.                                                        1SGT  82
+REMARK   8                                                              1SGT  83
+REMARK   8 SHEETS S1 AND S2 ARE BOTH SIX-STRANDED SHEETS FORMING A      1SGT  84
+REMARK   8 BETA-BARREL.  THIS IS REPRESENTED ON THE SHEET RECORDS       1SGT  85
+REMARK   8 BELOW BY A SEVEN-STRANDED SHEET WITH THE FIRST AND LAST      1SGT  86
+REMARK   8 STRANDS IDENTICAL.                                           1SGT  87
+REMARK   9                                                              1SGT  88
+REMARK   9 THE WATERS ARE NUMBERED IN INCREASING ORDER OF ESTIMATED     1SGT  89
+REMARK   9 POSITIONAL STANDARD DEVIATION, SO THAT THE WATERS WITH THE   1SGT  90
+REMARK   9 LOWEST SEQUENCE NUMBERS SHOULD BE THE MOST RELIABLE.         1SGT  91
+SEQRES   1    223  VAL VAL GLY GLY THR ARG ALA ALA GLN GLY GLU PHE PRO  1SGT  92
+SEQRES   2    223  PHE MET VAL ARG LEU SER MET GLY CYS GLY GLY ALA LEU  1SGT  93
+SEQRES   3    223  TYR ALA GLN ASP ILE VAL LEU THR ALA ALA HIS CYS VAL  1SGT  94
+SEQRES   4    223  SER GLY SER GLY ASN ASN THR SER ILE THR ALA THR GLY  1SGT  95
+SEQRES   5    223  GLY VAL VAL ASP LEU GLN SER GLY ALA ALA VAL LYS VAL  1SGT  96
+SEQRES   6    223  ARG SER THR LYS VAL LEU GLN ALA PRO GLY TYR ASN GLY  1SGT  97
+SEQRES   7    223  THR GLY LYS ASP TRP ALA LEU ILE LYS LEU ALA GLN PRO  1SGT  98
+SEQRES   8    223  ILE ASN GLN PRO THR LEU LYS ILE ALA THR THR THR ALA  1SGT  99
+SEQRES   9    223  TYR ASN GLN GLY THR PHE THR VAL ALA GLY TRP GLY ALA  1SGT 100
+SEQRES  10    223  ASN ARG GLU GLY GLY SER GLN GLN ARG TYR LEU LEU LYS  1SGT 101
+SEQRES  11    223  ALA ASN VAL PRO PHE VAL SER ASP ALA ALA CYS ARG SER  1SGT 102
+SEQRES  12    223  ALA TYR GLY ASN GLU LEU VAL ALA ASN GLU GLU ILE CYS  1SGT 103
+SEQRES  13    223  ALA GLY TYR PRO ASP THR GLY GLY VAL ASP THR CYS GLN  1SGT 104
+SEQRES  14    223  GLY ASP SER GLY GLY PRO MET PHE ARG LYS ASP ASN ALA  1SGT 105
+SEQRES  15    223  ASP GLU TRP ILE GLN VAL GLY ILE VAL SER TRP GLY TYR  1SGT 106
+SEQRES  16    223  GLY CYS ALA ARG PRO GLY TYR PRO GLY VAL TYR THR GLU  1SGT 107
+SEQRES  17    223  VAL SER THR PHE ALA SER ALA ILE ALA SER ALA ALA ARG  1SGT 108
+SEQRES  18    223  THR LEU                                              1SGT 109
+FTNOTE   1                                                              1SGT 110
+FTNOTE   1 THR  20 - POSSIBLE STATIC DISORDER WITH CHI 1 ROTATED BY     1SGT 111
+FTNOTE   1           -120 DEGREES.                                      1SGT 112
+FTNOTE   2                                                              1SGT 113
+FTNOTE   2 ARG  21 - POOR DENSITY FOR GUANIDINIUM GROUP.                1SGT 114
+FTNOTE   3                                                              1SGT 115
+FTNOTE   3 THR  65 - POSSIBLE STATIC DISORDER WITH CHI 1 ROTATED BY     1SGT 116
+FTNOTE   3           +120 DEGREES.                                      1SGT 117
+FTNOTE   4                                                              1SGT 118
+FTNOTE   4 LYS  82 - GOOD DENSITY UP TO NZ WHICH IS NOT VISIBLE.        1SGT 119
+FTNOTE   5                                                              1SGT 120
+FTNOTE   5 ARG  84 - NOISY DENSITY BEYOND CD.                           1SGT 121
+FTNOTE   6                                                              1SGT 122
+FTNOTE   6 LYS  87 - VERY WEAK DENSITY BEYOND CD.                       1SGT 123
+FTNOTE   7                                                              1SGT 124
+FTNOTE   7 THR  98 - POSSIBLE STATIC DISORDER WITH CHI 1 ROTATED BY     1SGT 125
+FTNOTE   7           +120 DEGREES.                                      1SGT 126
+FTNOTE   8                                                              1SGT 127
+FTNOTE   8 GLN 110 - NOISY SIDE CHAIN DENSITY.                          1SGT 128
+FTNOTE   9                                                              1SGT 129
+FTNOTE   9 LYS 122 - WEAK DENSITY BEYOND CG.                            1SGT 130
+FTNOTE  10                                                              1SGT 131
+FTNOTE  10 GLN 133 - CHI 3 ANGLE DIFFICULT TO ESTABLISH FROM DENSITY.   1SGT 132
+FTNOTE  11                                                              1SGT 133
+FTNOTE  11 ARG 145 - NOISY AND AMBIGUOUS SIDE CHAIN DENSITY,            1SGT 134
+FTNOTE  11           PROJECTING INTO SOLVENT.                           1SGT 135
+FTNOTE  12                                                              1SGT 136
+FTNOTE  12 ASN 174 - LITTLE DENSITY FOR OD1 AND ND2.                    1SGT 137
+FTNOTE  13                                                              1SGT 138
+FTNOTE  13 GLN 192 - DENSITY NOISY AND WEAK BEYOND CB.                  1SGT 139
+FTNOTE  14                                                              1SGT 140
+FTNOTE  14 ASN 204 - NOISY DENSITY, POSSIBLY DUE TO STATIC DISORDER     1SGT 141
+FTNOTE  14           AROUND CHI 1.                                      1SGT 142
+FTNOTE  15                                                              1SGT 143
+FTNOTE  15 ASP 205 - VERY WEAK DENSITY FOR CB, NOISY DENSITY FOR        1SGT 144
+FTNOTE  15           CARBOXYL GROUP.                                    1SGT 145
+FTNOTE  16                                                              1SGT 146
+FTNOTE  16 SER 236 - POSSIBLE STATIC DISORDER ABOUT CHI 1.              1SGT 147
+FTNOTE  17                                                              1SGT 148
+FTNOTE  17 ARG 243 - VERY NOISY DENSITY, SIDE CHAIN PAST CG IS          1SGT 149
+FTNOTE  17           ESSENTIALLY ARBITRARY.                             1SGT 150
+HET     CA    246       1     CALCIUM ++ ION                            1SGT 151
+FORMUL   2   CA    CA1 ++                                               1SGT 152
+FORMUL   3  HOH   *192(H2 O1)                                           1SGT 153
+HELIX    1   A ALA     56  CYS     58  5                                1SGT 154
+HELIX    2  B1 ASP    165  TYR    172  1                                1SGT 155
+HELIX    3  B2 GLY    173  GLU    175  5                                1SGT 156
+HELIX    4  C1 VAL    231  ARG    243  1                                1SGT 157
+HELIX    5  C2 ALA    242  THR    244  5                                1SGT 158
+SHEET    1  S1 7 MET    30  LEU    33  0                                1SGT 159
+SHEET    2  S1 7 CYS    42  ALA    48 -1  O  GLY    44   N  VAL    31   1SGT 160
+SHEET    3  S1 7 ILE    51  THR    54 -1  O  LEU    53   N  ALA    45   1SGT 161
+SHEET    4  S1 7 ALA   104  LEU   108 -1  O  ILE   106   N  VAL    52   1SGT 162
+SHEET    5  S1 7 VAL    81  GLN    90 -1  O  LEU    89   N  LEU   105   1SGT 163
+SHEET    6  S1 7 THR    65  GLY    68 -1  O  GLY    68   N  VAL    81   1SGT 164
+SHEET    7  S1 7 MET    30  LEU    33 -1  O  ARG    32   N  THR    67   1SGT 165
+SHEET    1  S2 7 THR   135  GLY   140  0                                1SGT 166
+SHEET    2  S2 7 LEU   156  VAL   163 -1  O  VAL   160   N  PHE   136   1SGT 167
+SHEET    3  S2 7 GLU   180  ALA   183 -1  O  CYS   182   N  VAL   163   1SGT 168
+SHEET    4  S2 7 GLY   226  GLU   230 -1  O  TYR   228   N  ILE   181   1SGT 169
+SHEET    5  S2 7 TRP   207  TRP   215 -1  O  TRP   215   N  VAL   227   1SGT 170
+SHEET    6  S2 7 PRO   198  LYS   202 -1  O  ARG   201   N  ILE   208   1SGT 171
+SHEET    7  S2 7 THR   135  GLY   140 -1  O  THR   137   N  PHE   200   1SGT 172
+TURN     1  T1 ALA    23  GLU    26                                     1SGT 173
+TURN     2  T2 PHE    27  MET    30                                     1SGT 174
+TURN     3  T3 LEU    33  GLY    41                                     1SGT 175
+TURN     4  T4 ALA    48  ILE    51                                     1SGT 176
+TURN     5  T5 ASP    72  SER    76                                     1SGT 177
+TURN     6  T6 SER    76  ALA    80                                     1SGT 178
+TURN     7  T7 ALA    91  TYR    94                                     1SGT 179
+TURN     8  T8 THR   129  ASN   132                                     1SGT 180
+TURN     9  T9 ARG   145  GLY   149                                     1SGT 181
+TURN    10 T10 CYS   168  ALA   171                                     1SGT 182
+TURN    11 T11 VAL   177  GLU   179                                     1SGT 183
+TURN    12 T12 CYS   191  ASP   194                                     1SGT 184
+TURN    13 T13 ASP   194  GLY   197                                     1SGT 185
+TURN    14 T14 ASP   203  ASP   205                                     1SGT 186
+TURN    15 T15 ARG   222  TYR   224                                     1SGT 187
+SSBOND   1 CYS     42    CYS     58                                     1SGT 188
+SSBOND   2 CYS    168    CYS    182                                     1SGT 189
+SSBOND   3 CYS    191    CYS    220                                     1SGT 190
+SITE     1 CAT  3 HIS    57  ASP   102  SER   195                       1SGT 191
+CRYST1   72.290   50.980  120.090  90.00  90.00  90.00 C 2 2 21      8  1SGT 192
+ORIGX1      1.000000  0.000000  0.000000        0.00000                 1SGT 193
+ORIGX2      0.000000  1.000000  0.000000        0.00000                 1SGT 194
+ORIGX3      0.000000  0.000000  1.000000        0.00000                 1SGT 195
+SCALE1      0.013833  0.000000  0.000000        0.00000                 1SGT 196
+SCALE2      0.000000  0.019616  0.000000        0.00000                 1SGT 197
+SCALE3      0.000000  0.000000  0.008327        0.00000                 1SGT 198
+ATOM      1  N   VAL    16      29.582  19.112  38.968  1.00 12.94      1SGT 199
+ATOM      2  CA  VAL    16      30.031  20.461  38.668  1.00 15.43      1SGT 200
+ATOM      3  C   VAL    16      31.426  20.370  38.052  1.00 17.10      1SGT 201
+ATOM      4  O   VAL    16      32.376  19.837  38.651  1.00 15.76      1SGT 202
+ATOM      5  CB  VAL    16      30.007  21.440  39.871  1.00 14.81      1SGT 203
+ATOM      6  CG1 VAL    16      30.564  22.819  39.576  1.00 14.82      1SGT 204
+ATOM      7  CG2 VAL    16      28.627  21.491  40.553  1.00 13.02      1SGT 205
+ATOM      8  N   VAL    17      31.508  20.931  36.824  1.00 15.21      1SGT 206
+ATOM      9  CA  VAL    17      32.801  20.965  36.104  1.00 15.69      1SGT 207
+ATOM     10  C   VAL    17      33.454  22.299  36.439  1.00 16.12      1SGT 208
+ATOM     11  O   VAL    17      32.762  23.324  36.425  1.00 16.39      1SGT 209
+ATOM     12  CB  VAL    17      32.591  20.808  34.548  1.00 17.73      1SGT 210
+ATOM     13  CG1 VAL    17      33.914  20.770  33.791  1.00 12.24      1SGT 211
+ATOM     14  CG2 VAL    17      31.762  19.592  34.230  1.00 18.07      1SGT 212
+ATOM     15  N   GLY    18      34.765  22.266  36.711  1.00 19.41      1SGT 213
+ATOM     16  CA  GLY    18      35.477  23.530  37.004  1.00 19.96      1SGT 214
+ATOM     17  C   GLY    18      35.119  24.032  38.407  1.00 23.65      1SGT 215
+ATOM     18  O   GLY    18      35.325  25.236  38.642  1.00 26.38      1SGT 216
+ATOM     19  N   GLY    19      34.633  23.136  39.252  1.00 23.92      1SGT 217
+ATOM     20  CA  GLY    19      34.201  23.473  40.601  1.00 23.67      1SGT 218
+ATOM     21  C   GLY    19      35.292  23.403  41.652  1.00 25.08      1SGT 219
+ATOM     22  O   GLY    19      36.455  23.021  41.391  1.00 24.90      1SGT 220
+ATOM     23  N   THR    20      34.864  23.812  42.858  1.00 20.95   1  1SGT 221
+ATOM     24  CA  THR    20      35.756  23.784  44.040  1.00 20.09   1  1SGT 222
+ATOM     25  C   THR    20      34.945  23.203  45.195  1.00 20.88   1  1SGT 223
+ATOM     26  O   THR    20      33.712  23.248  45.145  1.00 17.58   1  1SGT 224
+ATOM     27  CB  THR    20      36.298  25.234  44.279  1.00 22.48   1  1SGT 225
+ATOM     28  OG1 THR    20      37.518  24.967  45.030  1.00 43.31   1  1SGT 226
+ATOM     29  CG2 THR    20      35.436  26.223  45.020  1.00 22.07   1  1SGT 227
+ATOM     30  N   ARG    21      35.624  22.670  46.216  1.00 20.40   2  1SGT 228
+ATOM     31  CA  ARG    21      34.870  22.090  47.381  1.00 18.28   2  1SGT 229
+ATOM     32  C   ARG    21      34.161  23.146  48.192  1.00 17.65   2  1SGT 230
+ATOM     33  O   ARG    21      34.726  24.200  48.545  1.00 18.53   2  1SGT 231
+ATOM     34  CB  ARG    21      35.892  21.407  48.320  1.00 19.92   2  1SGT 232
+ATOM     35  CG  ARG    21      36.356  20.088  47.725  1.00 29.41   2  1SGT 233
+ATOM     36  CD  ARG    21      35.542  18.939  48.225  1.00 43.45   2  1SGT 234
+ATOM     37  NE  ARG    21      36.236  18.470  49.418  1.00 57.13   2  1SGT 235
+ATOM     38  CZ  ARG    21      35.901  18.592  50.698  1.00 61.66   2  1SGT 236
+ATOM     39  NH1 ARG    21      34.816  19.056  51.310  1.00 58.72   2  1SGT 237
+ATOM     40  NH2 ARG    21      36.947  18.292  51.497  1.00 68.69   2  1SGT 238
+ATOM     41  N   ALA    22      32.887  22.870  48.467  1.00 18.08      1SGT 239
+ATOM     42  CA  ALA    22      32.076  23.776  49.302  1.00 17.62      1SGT 240
+ATOM     43  C   ALA    22      32.465  23.343  50.771  1.00 18.56      1SGT 241
+ATOM     44  O   ALA    22      32.817  22.157  50.991  1.00 17.70      1SGT 242
+ATOM     45  CB  ALA    22      30.615  23.462  49.036  1.00 16.45      1SGT 243
+ATOM     46  N   ALA    23      32.395  24.299  51.649  1.00 18.13      1SGT 244
+ATOM     47  CA  ALA    23      32.772  23.955  53.074  1.00 19.56      1SGT 245
+ATOM     48  C   ALA    23      31.558  23.399  53.784  1.00 18.77      1SGT 246
+ATOM     49  O   ALA    23      30.414  23.702  53.467  1.00 17.63      1SGT 247
+ATOM     50  CB  ALA    23      33.264  25.240  53.719  1.00 17.68      1SGT 248
+ATOM     51  N   GLN    24      31.810  22.562  54.787  1.00 20.29      1SGT 249
+ATOM     52  CA  GLN    24      30.736  22.025  55.644  1.00 20.42      1SGT 250
+ATOM     53  C   GLN    24      30.021  23.257  56.208  1.00 20.14      1SGT 251
+ATOM     54  O   GLN    24      30.682  24.180  56.741  1.00 22.71      1SGT 252
+ATOM     55  CB  GLN    24      31.342  21.237  56.833  1.00 28.47      1SGT 253
+ATOM     56  CG  GLN    24      30.209  20.919  57.823  1.00 26.77      1SGT 254
+ATOM     57  CD  GLN    24      29.173  20.042  57.157  1.00 31.82      1SGT 255
+ATOM     58  OE1 GLN    24      29.458  19.370  56.163  1.00 35.64      1SGT 256
+ATOM     59  NE2 GLN    24      27.987  20.010  57.721  1.00 28.38      1SGT 257
+ATOM     60  N   GLY    25      28.709  23.343  56.092  1.00 17.95      1SGT 258
+ATOM     61  CA  GLY    25      27.929  24.463  56.566  1.00 15.88      1SGT 259
+ATOM     62  C   GLY    25      27.760  25.644  55.641  1.00 18.17      1SGT 260
+ATOM     63  O   GLY    25      27.006  26.591  56.001  1.00 19.20      1SGT 261
+ATOM     64  N   GLU    26      28.369  25.569  54.450  1.00 16.96      1SGT 262
+ATOM     65  CA  GLU    26      28.245  26.743  53.560  1.00 14.81      1SGT 263
+ATOM     66  C   GLU    26      26.890  26.905  52.917  1.00 14.91      1SGT 264
+ATOM     67  O   GLU    26      26.330  28.041  52.881  1.00 15.84      1SGT 265
+ATOM     68  CB  GLU    26      29.362  26.620  52.543  1.00 20.82      1SGT 266
+ATOM     69  CG  GLU    26      29.565  27.783  51.577  1.00 16.72      1SGT 267
+ATOM     70  CD  GLU    26      30.821  27.627  50.801  1.00 16.04      1SGT 268
+ATOM     71  OE1 GLU    26      31.538  26.673  50.715  1.00 16.10      1SGT 269
+ATOM     72  OE2 GLU    26      31.080  28.660  50.140  1.00 23.39      1SGT 270
+ATOM     73  N   PHE    27      26.386  25.790  52.418  1.00 14.09      1SGT 271
+ATOM     74  CA  PHE    27      25.059  25.754  51.714  1.00 15.16      1SGT 272
+ATOM     75  C   PHE    27      24.266  24.663  52.376  1.00 14.13      1SGT 273
+ATOM     76  O   PHE    27      24.140  23.561  51.791  1.00 14.40      1SGT 274
+ATOM     77  CB  PHE    27      25.325  25.308  50.204  1.00 12.09      1SGT 275
+ATOM     78  CG  PHE    27      26.259  26.253  49.493  1.00 10.94      1SGT 276
+ATOM     79  CD1 PHE    27      27.350  25.706  48.782  1.00 11.69      1SGT 277
+ATOM     80  CD2 PHE    27      26.035  27.622  49.518  1.00 10.94      1SGT 278
+ATOM     81  CE1 PHE    27      28.231  26.585  48.158  1.00 13.18      1SGT 279
+ATOM     82  CE2 PHE    27      26.904  28.500  48.858  1.00 11.17      1SGT 280
+ATOM     83  CZ  PHE    27      28.018  27.955  48.194  1.00 13.00      1SGT 281
+ATOM     84  N   PRO    28      23.824  24.862  53.649  1.00 15.02      1SGT 282
+ATOM     85  CA  PRO    28      23.161  23.822  54.421  1.00 13.57      1SGT 283
+ATOM     86  C   PRO    28      21.813  23.329  53.988  1.00 13.04      1SGT 284
+ATOM     87  O   PRO    28      21.334  22.291  54.456  1.00 13.80      1SGT 285
+ATOM     88  CB  PRO    28      23.128  24.461  55.841  1.00 16.00      1SGT 286
+ATOM     89  CG  PRO    28      22.981  25.935  55.535  1.00 14.97      1SGT 287
+ATOM     90  CD  PRO    28      23.974  26.167  54.359  1.00 15.50      1SGT 288
+ATOM     91  N   PHE    29      21.237  24.056  53.020  1.00 12.32      1SGT 289
+ATOM     92  CA  PHE    29      19.955  23.716  52.391  1.00 10.58      1SGT 290
+ATOM     93  C   PHE    29      20.104  22.613  51.307  1.00  8.99      1SGT 291
+ATOM     94  O   PHE    29      19.025  22.171  50.856  1.00 13.20      1SGT 292
+ATOM     95  CB  PHE    29      19.352  25.018  51.853  1.00 11.19      1SGT 293
+ATOM     96  CG  PHE    29      20.305  25.792  50.993  1.00 13.25      1SGT 294
+ATOM     97  CD1 PHE    29      20.583  25.356  49.674  1.00 15.37      1SGT 295
+ATOM     98  CD2 PHE    29      20.944  26.941  51.465  1.00 16.21      1SGT 296
+ATOM     99  CE1 PHE    29      21.475  26.051  48.890  1.00 11.68      1SGT 297
+ATOM    100  CE2 PHE    29      21.884  27.636  50.682  1.00 19.28      1SGT 298
+ATOM    101  CZ  PHE    29      22.142  27.171  49.364  1.00 15.00      1SGT 299
+ATOM    102  N   MET    30      21.301  22.251  50.947  1.00 10.47      1SGT 300
+ATOM    103  CA  MET    30      21.460  21.221  49.871  1.00  9.24      1SGT 301
+ATOM    104  C   MET    30      21.125  19.812  50.305  1.00 13.78      1SGT 302
+ATOM    105  O   MET    30      21.558  19.423  51.430  1.00 15.66      1SGT 303
+ATOM    106  CB  MET    30      22.918  21.196  49.432  1.00 11.11      1SGT 304
+ATOM    107  CG  MET    30      23.505  22.353  48.698  1.00 16.17      1SGT 305
+ATOM    108  SD  MET    30      22.591  22.542  47.070  1.00 14.90      1SGT 306
+ATOM    109  CE  MET    30      23.037  20.980  46.316  1.00 12.70      1SGT 307
+ATOM    110  N   VAL    31      20.477  18.977  49.478  1.00 10.72      1SGT 308
+ATOM    111  CA  VAL    31      20.286  17.567  49.818  1.00 12.06      1SGT 309
+ATOM    112  C   VAL    31      20.717  16.755  48.553  1.00 14.30      1SGT 310
+ATOM    113  O   VAL    31      20.682  17.332  47.452  1.00 14.88      1SGT 311
+ATOM    114  CB  VAL    31      18.874  17.154  50.233  1.00 15.67      1SGT 312
+ATOM    115  CG1 VAL    31      18.395  18.023  51.422  1.00 15.79      1SGT 313
+ATOM    116  CG2 VAL    31      17.862  17.382  49.176  1.00 18.34      1SGT 314
+ATOM    117  N   ARG    32      21.064  15.555  48.775  1.00 12.53      1SGT 315
+ATOM    118  CA  ARG    32      21.458  14.586  47.743  1.00 11.68      1SGT 316
+ATOM    119  C   ARG    32      20.279  13.606  47.728  1.00 15.49      1SGT 317
+ATOM    120  O   ARG    32      19.772  13.122  48.774  1.00 14.25      1SGT 318
+ATOM    121  CB  ARG    32      22.809  13.967  47.971  1.00 12.64      1SGT 319
+ATOM    122  CG  ARG    32      23.162  12.800  47.042  1.00 16.68      1SGT 320
+ATOM    123  CD  ARG    32      23.242  13.371  45.629  1.00 16.61      1SGT 321
+ATOM    124  NE  ARG    32      24.054  12.388  44.842  1.00 17.22      1SGT 322
+ATOM    125  CZ  ARG    32      24.336  12.594  43.549  1.00 22.05      1SGT 323
+ATOM    126  NH1 ARG    32      23.906  13.706  42.969  1.00 14.61      1SGT 324
+ATOM    127  NH2 ARG    32      24.996  11.697  42.835  1.00 19.70      1SGT 325
+ATOM    128  N   LEU    33      19.778  13.319  46.512  1.00 10.36      1SGT 326
+ATOM    129  CA  LEU    33      18.665  12.380  46.356  1.00 10.98      1SGT 327
+ATOM    130  C   LEU    33      19.218  11.059  45.825  1.00 10.07      1SGT 328
+ATOM    131  O   LEU    33      20.199  11.055  45.043  1.00 12.17      1SGT 329
+ATOM    132  CB  LEU    33      17.535  13.021  45.622  1.00 12.39      1SGT 330
+ATOM    133  CG  LEU    33      17.002  14.350  46.095  1.00 13.35      1SGT 331
+ATOM    134  CD1 LEU    33      16.236  14.949  44.934  1.00 15.07      1SGT 332
+ATOM    135  CD2 LEU    33      16.064  14.137  47.270  1.00 14.00      1SGT 333
+ATOM    136  N   SER    34      18.616   9.982  46.317  1.00 11.76      1SGT 334
+ATOM    137  CA  SER    34      19.062   8.629  45.991  1.00 13.03      1SGT 335
+ATOM    138  C   SER    34      19.123   8.294  44.487  1.00 15.13      1SGT 336
+ATOM    139  O   SER    34      20.041   7.512  44.149  1.00 19.04      1SGT 337
+ATOM    140  CB  SER    34      18.230   7.566  46.711  1.00  7.12      1SGT 338
+ATOM    141  OG  SER    34      16.878   7.876  46.623  1.00 13.02      1SGT 339
+ATOM    142  N   MET    35      18.275   8.862  43.684  1.00 16.51      1SGT 340
+ATOM    143  CA  MET    35      18.328   8.531  42.206  1.00 14.93      1SGT 341
+ATOM    144  C   MET    35      19.464   9.262  41.549  1.00 16.77      1SGT 342
+ATOM    145  O   MET    35      19.622   9.139  40.288  1.00 17.52      1SGT 343
+ATOM    146  CB  MET    35      16.975   8.796  41.604  1.00 12.90      1SGT 344
+ATOM    147  CG  MET    35      16.725  10.241  41.133  1.00 12.15      1SGT 345
+ATOM    148  SD  MET    35      16.480  11.286  42.646  1.00 15.47      1SGT 346
+ATOM    149  CE  MET    35      14.805  10.887  43.004  1.00 14.16      1SGT 347
+ATOM    150  N   GLY    41      20.292  10.012  42.270  1.00 14.19      1SGT 348
+ATOM    151  CA  GLY    41      21.424  10.734  41.686  1.00 12.91      1SGT 349
+ATOM    152  C   GLY    41      21.074  12.140  41.235  1.00 14.42      1SGT 350
+ATOM    153  O   GLY    41      21.415  12.597  40.109  1.00 14.75      1SGT 351
+ATOM    154  N   CYS    42      20.393  12.961  41.994  1.00 12.20      1SGT 352
+ATOM    155  CA  CYS    42      20.026  14.323  41.729  1.00  9.19      1SGT 353
+ATOM    156  C   CYS    42      20.317  15.182  43.009  1.00 11.07      1SGT 354
+ATOM    157  O   CYS    42      20.479  14.526  44.061  1.00 11.73      1SGT 355
+ATOM    158  CB  CYS    42      18.539  14.475  41.530  1.00  6.48      1SGT 356
+ATOM    159  SG  CYS    42      18.062  13.904  39.806  1.00 12.05      1SGT 357
+ATOM    160  N   GLY    43      20.409  16.465  42.759  1.00  8.96      1SGT 358
+ATOM    161  CA  GLY    43      20.577  17.331  44.001  1.00  9.71      1SGT 359
+ATOM    162  C   GLY    43      19.129  17.795  44.240  1.00 10.01      1SGT 360
+ATOM    163  O   GLY    43      18.118  17.612  43.498  1.00 11.69      1SGT 361
+ATOM    164  N   GLY    44      19.036  18.577  45.324  1.00  9.58      1SGT 362
+ATOM    165  CA  GLY    44      17.733  19.178  45.704  1.00  8.54      1SGT 363
+ATOM    166  C   GLY    44      18.061  20.322  46.735  1.00  7.64      1SGT 364
+ATOM    167  O   GLY    44      19.207  20.420  47.175  1.00  9.81      1SGT 365
+ATOM    168  N   ALA    45      17.026  21.072  47.031  1.00 10.18      1SGT 366
+ATOM    169  CA  ALA    45      17.169  22.136  48.060  1.00  9.87      1SGT 367
+ATOM    170  C   ALA    45      15.952  21.964  48.998  1.00 10.24      1SGT 368
+ATOM    171  O   ALA    45      14.857  21.556  48.662  1.00  9.64      1SGT 369
+ATOM    172  CB  ALA    45      17.059  23.537  47.481  1.00 11.39      1SGT 370
+ATOM    173  N   LEU    46      16.280  22.298  50.283  1.00 11.82      1SGT 371
+ATOM    174  CA  LEU    46      15.179  22.281  51.282  1.00 11.14      1SGT 372
+ATOM    175  C   LEU    46      14.363  23.557  51.145  1.00 10.47      1SGT 373
+ATOM    176  O   LEU    46      14.724  24.673  51.558  1.00 12.33      1SGT 374
+ATOM    177  CB  LEU    46      15.843  22.248  52.701  1.00 10.10      1SGT 375
+ATOM    178  CG  LEU    46      16.348  20.881  53.176  1.00 15.92      1SGT 376
+ATOM    179  CD1 LEU    46      16.975  21.114  54.582  1.00 16.87      1SGT 377
+ATOM    180  CD2 LEU    46      15.228  19.876  53.239  1.00 16.12      1SGT 378
+ATOM    181  N   TYR    47      13.196  23.398  50.526  1.00 10.50      1SGT 379
+ATOM    182  CA  TYR    47      12.183  24.399  50.332  1.00 12.40      1SGT 380
+ATOM    183  C   TYR    47      11.495  24.590  51.726  1.00 13.37      1SGT 381
+ATOM    184  O   TYR    47      11.169  25.711  52.100  1.00 12.47      1SGT 382
+ATOM    185  CB  TYR    47      11.214  23.882  49.211  1.00 12.24      1SGT 383
+ATOM    186  CG  TYR    47      10.022  24.820  49.093  1.00 16.27      1SGT 384
+ATOM    187  CD1 TYR    47       8.774  24.481  49.628  1.00 21.21      1SGT 385
+ATOM    188  CD2 TYR    47      10.174  26.073  48.484  1.00 19.84      1SGT 386
+ATOM    189  CE1 TYR    47       7.703  25.380  49.567  1.00 18.78      1SGT 387
+ATOM    190  CE2 TYR    47       9.110  26.953  48.393  1.00 20.69      1SGT 388
+ATOM    191  CZ  TYR    47       7.882  26.613  48.942  1.00 18.41      1SGT 389
+ATOM    192  OH  TYR    47       6.852  27.496  48.828  1.00 25.98      1SGT 390
+ATOM    193  N   ALA    48      11.248  23.461  52.349  1.00 14.61      1SGT 391
+ATOM    194  CA  ALA    48      10.691  23.472  53.749  1.00 13.65      1SGT 392
+ATOM    195  C   ALA    48      11.554  22.399  54.410  1.00 14.95      1SGT 393
+ATOM    196  O   ALA    48      12.248  21.648  53.662  1.00 14.83      1SGT 394
+ATOM    197  CB  ALA    48       9.233  23.222  53.846  1.00  8.73      1SGT 395
+ATOM    198  N   GLN    49      11.534  22.316  55.781  1.00 12.15      1SGT 396
+ATOM    199  CA  GLN    49      12.419  21.295  56.360  1.00 12.07      1SGT 397
+ATOM    200  C   GLN    49      12.095  19.891  55.937  1.00  9.01      1SGT 398
+ATOM    201  O   GLN    49      12.948  18.970  55.993  1.00 12.38      1SGT 399
+ATOM    202  CB  GLN    49      12.604  21.517  57.876  1.00 13.65      1SGT 400
+ATOM    203  CG  GLN    49      13.453  22.788  58.171  1.00 15.40      1SGT 401
+ATOM    204  CD  GLN    49      13.736  22.745  59.695  1.00 26.91      1SGT 402
+ATOM    205  OE1 GLN    49      12.963  22.115  60.418  1.00 25.03      1SGT 403
+ATOM    206  NE2 GLN    49      14.872  23.277  60.116  1.00 17.06      1SGT 404
+ATOM    207  N   ASP    50      10.878  19.619  55.518  1.00 11.95      1SGT 405
+ATOM    208  CA  ASP    50      10.438  18.298  55.066  1.00 14.49      1SGT 406
+ATOM    209  C   ASP    50       9.883  18.330  53.601  1.00 13.61      1SGT 407
+ATOM    210  O   ASP    50       9.066  17.450  53.268  1.00 14.03      1SGT 408
+ATOM    211  CB  ASP    50       9.360  17.732  56.005  1.00 19.07      1SGT 409
+ATOM    212  CG  ASP    50       8.172  18.678  56.028  1.00 19.88      1SGT 410
+ATOM    213  OD1 ASP    50       8.098  19.850  55.597  1.00 25.23      1SGT 411
+ATOM    214  OD2 ASP    50       7.158  18.167  56.583  1.00 35.58      1SGT 412
+ATOM    215  N   ILE    51      10.301  19.336  52.863  1.00 13.65      1SGT 413
+ATOM    216  CA  ILE    51       9.884  19.395  51.441  1.00 12.87      1SGT 414
+ATOM    217  C   ILE    51      11.119  19.783  50.602  1.00 14.27      1SGT 415
+ATOM    218  O   ILE    51      11.644  20.907  50.795  1.00 13.51      1SGT 416
+ATOM    219  CB  ILE    51       8.746  20.388  51.147  1.00 17.15      1SGT 417
+ATOM    220  CG1 ILE    51       7.512  19.959  51.995  1.00 17.19      1SGT 418
+ATOM    221  CG2 ILE    51       8.473  20.389  49.582  1.00 13.20      1SGT 419
+ATOM    222  CD1 ILE    51       6.409  21.034  51.888  1.00 20.40      1SGT 420
+ATOM    223  N   VAL    52      11.458  18.822  49.716  1.00 12.60      1SGT 421
+ATOM    224  CA  VAL    52      12.620  19.073  48.826  1.00 12.21      1SGT 422
+ATOM    225  C   VAL    52      12.122  19.556  47.453  1.00  9.69      1SGT 423
+ATOM    226  O   VAL    52      11.158  18.947  46.940  1.00 13.91      1SGT 424
+ATOM    227  CB  VAL    52      13.442  17.783  48.685  1.00 12.73      1SGT 425
+ATOM    228  CG1 VAL    52      14.549  17.877  47.584  1.00  9.82      1SGT 426
+ATOM    229  CG2 VAL    52      14.102  17.315  49.993  1.00 14.30      1SGT 427
+ATOM    230  N   LEU    53      12.774  20.623  46.980  1.00 10.37      1SGT 428
+ATOM    231  CA  LEU    53      12.401  21.121  45.614  1.00 10.53      1SGT 429
+ATOM    232  C   LEU    53      13.537  20.540  44.717  1.00  9.95      1SGT 430
+ATOM    233  O   LEU    53      14.706  20.670  45.052  1.00  8.77      1SGT 431
+ATOM    234  CB  LEU    53      12.315  22.646  45.563  1.00  9.60      1SGT 432
+ATOM    235  CG  LEU    53      12.280  23.290  44.136  1.00  6.43      1SGT 433
+ATOM    236  CD1 LEU    53      10.938  22.929  43.504  1.00 10.03      1SGT 434
+ATOM    237  CD2 LEU    53      12.411  24.806  44.286  1.00  8.55      1SGT 435
+ATOM    238  N   THR    54      13.122  19.903  43.617  1.00  8.65      1SGT 436
+ATOM    239  CA  THR    54      14.178  19.318  42.708  1.00  7.70      1SGT 437
+ATOM    240  C   THR    54      13.527  19.401  41.269  1.00  7.52      1SGT 438
+ATOM    241  O   THR    54      12.568  20.145  41.063  1.00  8.17      1SGT 439
+ATOM    242  CB  THR    54      14.442  17.835  43.148  1.00  4.68      1SGT 440
+ATOM    243  OG1 THR    54      15.554  17.324  42.427  1.00  9.70      1SGT 441
+ATOM    244  CG2 THR    54      13.227  16.896  43.031  1.00 10.65      1SGT 442
+ATOM    245  N   ALA    55      14.204  18.678  40.372  1.00 10.06      1SGT 443
+ATOM    246  CA  ALA    55      13.675  18.704  38.980  1.00 10.05      1SGT 444
+ATOM    247  C   ALA    55      12.680  17.584  38.758  1.00  9.39      1SGT 445
+ATOM    248  O   ALA    55      12.774  16.473  39.288  1.00  8.24      1SGT 446
+ATOM    249  CB  ALA    55      14.928  18.529  38.067  1.00 12.23      1SGT 447
+ATOM    250  N   ALA    56      11.750  17.868  37.835  1.00  7.52      1SGT 448
+ATOM    251  CA  ALA    56      10.725  16.916  37.408  1.00  6.47      1SGT 449
+ATOM    252  C   ALA    56      11.386  15.722  36.775  1.00  8.48      1SGT 450
+ATOM    253  O   ALA    56      10.841  14.619  36.963  1.00 11.58      1SGT 451
+ATOM    254  CB  ALA    56       9.661  17.579  36.536  1.00 10.16      1SGT 452
+ATOM    255  N   HIS    57      12.500  15.948  36.105  1.00  9.33      1SGT 453
+ATOM    256  CA  HIS    57      13.094  14.765  35.422  1.00 11.08      1SGT 454
+ATOM    257  C   HIS    57      13.783  13.803  36.343  1.00 12.66      1SGT 455
+ATOM    258  O   HIS    57      14.216  12.700  35.923  1.00 11.96      1SGT 456
+ATOM    259  CB  HIS    57      13.942  15.239  34.243  1.00  8.42      1SGT 457
+ATOM    260  CG  HIS    57      15.284  15.755  34.694  1.00  8.61      1SGT 458
+ATOM    261  ND1 HIS    57      15.606  17.083  34.819  1.00 11.57      1SGT 459
+ATOM    262  CD2 HIS    57      16.430  15.074  34.917  1.00  9.74      1SGT 460
+ATOM    263  CE1 HIS    57      16.877  17.202  35.137  1.00  7.23      1SGT 461
+ATOM    264  NE2 HIS    57      17.393  15.993  35.176  1.00 11.29      1SGT 462
+ATOM    265  N   CYS    58      13.895  14.224  37.632  1.00 11.20      1SGT 463
+ATOM    266  CA  CYS    58      14.550  13.301  38.596  1.00 11.73      1SGT 464
+ATOM    267  C   CYS    58      13.518  12.282  39.065  1.00 12.51      1SGT 465
+ATOM    268  O   CYS    58      13.979  11.242  39.561  1.00 13.34      1SGT 466
+ATOM    269  CB  CYS    58      15.030  14.195  39.790  1.00  8.27      1SGT 467
+ATOM    270  SG  CYS    58      16.527  15.062  39.336  1.00 13.63      1SGT 468
+ATOM    271  N   VAL    59      12.249  12.534  38.906  1.00 13.52      1SGT 469
+ATOM    272  CA  VAL    59      11.221  11.571  39.389  1.00 17.22      1SGT 470
+ATOM    273  C   VAL    59      10.414  10.916  38.267  1.00 19.39      1SGT 471
+ATOM    274  O   VAL    59      10.369  11.520  37.164  1.00 17.89      1SGT 472
+ATOM    275  CB  VAL    59      10.324  12.288  40.443  1.00 14.11      1SGT 473
+ATOM    276  CG1 VAL    59      11.258  12.623  41.640  1.00 17.29      1SGT 474
+ATOM    277  CG2 VAL    59       9.604  13.534  39.990  1.00 12.12      1SGT 475
+ATOM    278  N   SER    60       9.777   9.782  38.559  1.00 19.38      1SGT 476
+ATOM    279  CA  SER    60       8.961   9.167  37.481  1.00 20.10      1SGT 477
+ATOM    280  C   SER    60       7.574   9.718  37.432  1.00 21.06      1SGT 478
+ATOM    281  O   SER    60       6.970   9.632  36.340  1.00 25.55      1SGT 479
+ATOM    282  CB  SER    60       9.007   7.647  37.525  1.00 29.02      1SGT 480
+ATOM    283  OG  SER    60       8.556   7.175  38.785  1.00 42.84      1SGT 481
+ATOM    284  N   GLY    60A      6.999  10.320  38.426  1.00 21.39      1SGT 482
+ATOM    285  CA  GLY    60A      5.640  10.901  38.407  1.00 21.41      1SGT 483
+ATOM    286  C   GLY    60A      5.257  11.186  39.883  1.00 24.16      1SGT 484
+ATOM    287  O   GLY    60A      6.087  10.929  40.765  1.00 23.18      1SGT 485
+ATOM    288  N   SER    60B      4.091  11.717  40.062  1.00 24.49      1SGT 486
+ATOM    289  CA  SER    60B      3.562  12.044  41.386  1.00 27.11      1SGT 487
+ATOM    290  C   SER    60B      2.881  10.836  42.041  1.00 29.74      1SGT 488
+ATOM    291  O   SER    60B      2.519   9.865  41.364  1.00 30.43      1SGT 489
+ATOM    292  CB  SER    60B      2.468  13.097  41.175  1.00 26.58      1SGT 490
+ATOM    293  OG  SER    60B      2.978  14.130  40.374  1.00 24.21      1SGT 491
+ATOM    294  N   GLY    60C      2.668  10.919  43.333  1.00 30.03      1SGT 492
+ATOM    295  CA  GLY    60C      1.976   9.958  44.182  1.00 29.61      1SGT 493
+ATOM    296  C   GLY    60C      2.775   9.624  45.436  1.00 29.87      1SGT 494
+ATOM    297  O   GLY    60C      3.842  10.192  45.685  1.00 27.77      1SGT 495
+ATOM    298  N   ASN    60D      2.233   8.691  46.205  1.00 29.52      1SGT 496
+ATOM    299  CA  ASN    60D      2.938   8.279  47.472  1.00 28.39      1SGT 497
+ATOM    300  C   ASN    60D      4.181   7.537  47.016  1.00 28.91      1SGT 498
+ATOM    301  O   ASN    60D      4.103   6.820  45.987  1.00 31.68      1SGT 499
+ATOM    302  CB  ASN    60D      1.968   7.492  48.343  1.00 34.36      1SGT 500
+ATOM    303  CG  ASN    60D      0.848   8.495  48.668  1.00 47.24      1SGT 501
+ATOM    304  OD1 ASN    60D      1.154   9.607  49.148  1.00 54.40      1SGT 502
+ATOM    305  ND2 ASN    60D     -0.389   8.137  48.341  1.00 50.22      1SGT 503
+ATOM    306  N   ASN    61       5.260   7.695  47.744  1.00 27.02      1SGT 504
+ATOM    307  CA  ASN    61       6.502   7.026  47.306  1.00 26.28      1SGT 505
+ATOM    308  C   ASN    61       7.408   7.116  48.510  1.00 25.13      1SGT 506
+ATOM    309  O   ASN    61       7.675   8.248  48.920  1.00 23.84      1SGT 507
+ATOM    310  CB  ASN    61       6.928   7.754  46.028  1.00 25.11      1SGT 508
+ATOM    311  CG  ASN    61       8.201   7.294  45.389  1.00 27.37      1SGT 509
+ATOM    312  OD1 ASN    61       9.113   6.639  45.916  1.00 32.95      1SGT 510
+ATOM    313  ND2 ASN    61       8.362   7.674  44.108  1.00 29.21      1SGT 511
+ATOM    314  N   THR    62       7.805   5.937  48.933  1.00 25.80      1SGT 512
+ATOM    315  CA  THR    62       8.690   5.874  50.137  1.00 25.84      1SGT 513
+ATOM    316  C   THR    62      10.016   5.280  49.752  1.00 25.08      1SGT 514
+ATOM    317  O   THR    62      10.793   4.870  50.609  1.00 25.41      1SGT 515
+ATOM    318  CB  THR    62       7.966   4.995  51.245  1.00 28.82      1SGT 516
+ATOM    319  OG1 THR    62       7.872   3.686  50.609  1.00 35.24      1SGT 517
+ATOM    320  CG2 THR    62       6.599   5.612  51.594  1.00 19.79      1SGT 518
+ATOM    321  N   SER    63      10.236   5.315  48.434  1.00 23.51      1SGT 519
+ATOM    322  CA  SER    63      11.459   4.718  47.907  1.00 22.64      1SGT 520
+ATOM    323  C   SER    63      12.600   5.701  47.748  1.00 20.10      1SGT 521
+ATOM    324  O   SER    63      13.670   5.171  47.411  1.00 22.91      1SGT 522
+ATOM    325  CB  SER    63      11.118   4.031  46.566  1.00 33.26      1SGT 523
+ATOM    326  OG  SER    63      11.103   5.012  45.517  1.00 28.36      1SGT 524
+ATOM    327  N   ILE    64      12.393   6.974  47.926  1.00 18.13      1SGT 525
+ATOM    328  CA  ILE    64      13.513   7.919  47.773  1.00 17.54      1SGT 526
+ATOM    329  C   ILE    64      14.155   8.255  49.130  1.00 16.55      1SGT 527
+ATOM    330  O   ILE    64      13.410   8.449  50.088  1.00 18.51      1SGT 528
+ATOM    331  CB  ILE    64      13.012   9.242  47.064  1.00 17.27      1SGT 529
+ATOM    332  CG1 ILE    64      12.450   8.843  45.660  1.00 15.93      1SGT 530
+ATOM    333  CG2 ILE    64      14.126  10.313  46.910  1.00 14.33      1SGT 531
+ATOM    334  CD1 ILE    64      11.434   9.825  45.090  1.00 17.68      1SGT 532
+ATOM    335  N   THR    65      15.434   8.393  49.114  1.00 16.51   3  1SGT 533
+ATOM    336  CA  THR    65      16.186   8.845  50.306  1.00 17.72   3  1SGT 534
+ATOM    337  C   THR    65      16.822  10.199  50.025  1.00 16.09   3  1SGT 535
+ATOM    338  O   THR    65      17.525  10.351  49.006  1.00 16.03   3  1SGT 536
+ATOM    339  CB  THR    65      17.289   7.780  50.714  1.00 23.43   3  1SGT 537
+ATOM    340  OG1 THR    65      16.521   6.592  51.083  1.00 31.90   3  1SGT 538
+ATOM    341  CG2 THR    65      18.118   8.290  51.898  1.00 28.26   3  1SGT 539
+ATOM    342  N   ALA    66      16.735  11.141  50.949  1.00 14.11      1SGT 540
+ATOM    343  CA  ALA    66      17.347  12.447  50.897  1.00 14.36      1SGT 541
+ATOM    344  C   ALA    66      18.494  12.474  51.893  1.00 16.64      1SGT 542
+ATOM    345  O   ALA    66      18.220  12.000  53.015  1.00 19.95      1SGT 543
+ATOM    346  CB  ALA    66      16.377  13.579  51.215  1.00 18.37      1SGT 544
+ATOM    347  N   THR    67      19.673  12.869  51.519  1.00 14.86      1SGT 545
+ATOM    348  CA  THR    67      20.827  12.921  52.431  1.00 15.33      1SGT 546
+ATOM    349  C   THR    67      21.064  14.405  52.628  1.00 18.21      1SGT 547
+ATOM    350  O   THR    67      21.430  15.096  51.666  1.00 16.40      1SGT 548
+ATOM    351  CB  THR    67      22.104  12.167  51.941  1.00 17.70      1SGT 549
+ATOM    352  OG1 THR    67      21.639  10.783  51.724  1.00 18.65      1SGT 550
+ATOM    353  CG2 THR    67      23.354  12.195  52.823  1.00 20.16      1SGT 551
+ATOM    354  N   GLY    68      20.927  14.825  53.907  1.00 16.69      1SGT 552
+ATOM    355  CA  GLY    68      21.147  16.239  54.211  1.00 14.58      1SGT 553
+ATOM    356  C   GLY    68      22.156  16.408  55.357  1.00 15.73      1SGT 554
+ATOM    357  O   GLY    68      22.640  15.432  55.953  1.00 16.58      1SGT 555
+ATOM    358  N   GLY    69      22.528  17.649  55.532  1.00 15.05      1SGT 556
+ATOM    359  CA  GLY    69      23.462  18.121  56.538  1.00 16.65      1SGT 557
+ATOM    360  C   GLY    69      24.925  17.961  56.396  1.00 19.22      1SGT 558
+ATOM    361  O   GLY    69      25.682  18.363  57.312  1.00 21.02      1SGT 559
+ATOM    362  N   VAL    70      25.435  17.404  55.300  1.00 18.16      1SGT 560
+ATOM    363  CA  VAL    70      26.868  17.174  55.093  1.00 19.51      1SGT 561
+ATOM    364  C   VAL    70      27.310  17.496  53.641  1.00 18.50      1SGT 562
+ATOM    365  O   VAL    70      26.448  17.338  52.759  1.00 18.53      1SGT 563
+ATOM    366  CB  VAL    70      27.222  15.699  55.416  1.00 17.92      1SGT 564
+ATOM    367  CG1 VAL    70      27.093  15.338  56.907  1.00 18.44      1SGT 565
+ATOM    368  CG2 VAL    70      26.289  14.746  54.651  1.00 18.45      1SGT 566
+ATOM    369  N   VAL    71      28.566  17.856  53.554  1.00 18.66      1SGT 567
+ATOM    370  CA  VAL    71      29.184  18.097  52.211  1.00 17.89      1SGT 568
+ATOM    371  C   VAL    71      29.769  16.745  51.763  1.00 21.29      1SGT 569
+ATOM    372  O   VAL    71      29.794  16.413  50.553  1.00 19.07      1SGT 570
+ATOM    373  CB  VAL    71      30.145  19.279  52.146  1.00 15.54      1SGT 571
+ATOM    374  CG1 VAL    71      29.421  20.592  52.439  1.00 15.29      1SGT 572
+ATOM    375  CG2 VAL    71      31.402  19.110  53.013  1.00 21.82      1SGT 573
+ATOM    376  N   ASP    72      30.174  15.933  52.760  1.00 20.00      1SGT 574
+ATOM    377  CA  ASP    72      30.758  14.605  52.538  1.00 17.90      1SGT 575
+ATOM    378  C   ASP    72      29.684  13.531  52.677  1.00 19.73      1SGT 576
+ATOM    379  O   ASP    72      29.155  13.254  53.789  1.00 19.63      1SGT 577
+ATOM    380  CB  ASP    72      31.945  14.370  53.474  1.00 22.04      1SGT 578
+ATOM    381  CG  ASP    72      32.517  12.969  53.327  1.00 22.41      1SGT 579
+ATOM    382  OD1 ASP    72      32.130  12.138  52.511  1.00 28.37      1SGT 580
+ATOM    383  OD2 ASP    72      33.441  12.740  54.148  1.00 31.37      1SGT 581
+ATOM    384  N   LEU    73      29.355  12.913  51.560  1.00 15.65      1SGT 582
+ATOM    385  CA  LEU    73      28.308  11.902  51.505  1.00 21.01      1SGT 583
+ATOM    386  C   LEU    73      28.626  10.662  52.361  1.00 24.16      1SGT 584
+ATOM    387  O   LEU    73      27.674   9.922  52.738  1.00 26.30      1SGT 585
+ATOM    388  CB  LEU    73      28.030  11.624  50.031  1.00 21.05      1SGT 586
+ATOM    389  CG  LEU    73      27.339  12.715  49.215  1.00 18.32      1SGT 587
+ATOM    390  CD1 LEU    73      27.094  12.125  47.823  1.00 23.21      1SGT 588
+ATOM    391  CD2 LEU    73      25.983  13.040  49.807  1.00 18.03      1SGT 589
+ATOM    392  N   GLN    75      29.918  10.501  52.609  1.00 27.00      1SGT 590
+ATOM    393  CA  GLN    75      30.326   9.329  53.439  1.00 31.00      1SGT 591
+ATOM    394  C   GLN    75      30.352   9.669  54.928  1.00 31.77      1SGT 592
+ATOM    395  O   GLN    75      30.709   8.778  55.717  1.00 33.75      1SGT 593
+ATOM    396  CB  GLN    75      31.672   8.758  52.979  1.00 33.95      1SGT 594
+ATOM    397  CG  GLN    75      31.417   7.796  51.816  1.00 45.06      1SGT 595
+ATOM    398  CD  GLN    75      32.710   7.411  51.130  1.00 58.00      1SGT 596
+ATOM    399  OE1 GLN    75      33.768   7.335  51.760  1.00 60.90      1SGT 597
+ATOM    400  NE2 GLN    75      32.564   7.185  49.819  1.00 63.21      1SGT 598
+ATOM    401  N   SER    76      30.025  10.889  55.296  1.00 31.36      1SGT 599
+ATOM    402  CA  SER    76      29.992  11.366  56.665  1.00 30.30      1SGT 600
+ATOM    403  C   SER    76      28.966  10.634  57.529  1.00 29.60      1SGT 601
+ATOM    404  O   SER    76      27.823  10.392  57.164  1.00 27.15      1SGT 602
+ATOM    405  CB  SER    76      29.634  12.841  56.777  1.00 31.71      1SGT 603
+ATOM    406  OG  SER    76      29.847  13.189  58.140  1.00 39.08      1SGT 604
+ATOM    407  N   GLY    77      29.466  10.326  58.739  1.00 31.32      1SGT 605
+ATOM    408  CA  GLY    77      28.660   9.638  59.779  1.00 29.64      1SGT 606
+ATOM    409  C   GLY    77      27.657  10.686  60.259  1.00 29.60      1SGT 607
+ATOM    410  O   GLY    77      26.591  10.281  60.784  1.00 33.41      1SGT 608
+ATOM    411  N   ALA    79      27.949  11.969  60.055  1.00 28.55      1SGT 609
+ATOM    412  CA  ALA    79      26.991  13.025  60.437  1.00 27.19      1SGT 610
+ATOM    413  C   ALA    79      25.811  13.159  59.445  1.00 27.45      1SGT 611
+ATOM    414  O   ALA    79      24.940  14.028  59.698  1.00 27.46      1SGT 612
+ATOM    415  CB  ALA    79      27.736  14.337  60.589  1.00 23.57      1SGT 613
+ATOM    416  N   ALA    80      25.805  12.398  58.345  1.00 26.79      1SGT 614
+ATOM    417  CA  ALA    80      24.750  12.529  57.334  1.00 25.07      1SGT 615
+ATOM    418  C   ALA    80      23.380  12.304  57.924  1.00 25.76      1SGT 616
+ATOM    419  O   ALA    80      23.319  11.431  58.811  1.00 30.30      1SGT 617
+ATOM    420  CB  ALA    80      24.887  11.523  56.201  1.00 16.97      1SGT 618
+ATOM    421  N   VAL    81      22.364  13.009  57.504  1.00 22.65      1SGT 619
+ATOM    422  CA  VAL    81      21.004  12.797  57.957  1.00 21.44      1SGT 620
+ATOM    423  C   VAL    81      20.298  12.169  56.749  1.00 22.87      1SGT 621
+ATOM    424  O   VAL    81      20.270  12.859  55.719  1.00 21.41      1SGT 622
+ATOM    425  CB  VAL    81      20.375  14.077  58.528  1.00 22.76      1SGT 623
+ATOM    426  CG1 VAL    81      18.886  13.960  58.753  1.00 19.56      1SGT 624
+ATOM    427  CG2 VAL    81      21.046  14.349  59.892  1.00 25.07      1SGT 625
+ATOM    428  N   LYS    82      19.781  10.970  56.882  1.00 22.16   4  1SGT 626
+ATOM    429  CA  LYS    82      19.117  10.302  55.736  1.00 22.17   4  1SGT 627
+ATOM    430  C   LYS    82      17.661  10.093  56.031  1.00 22.88   4  1SGT 628
+ATOM    431  O   LYS    82      17.354   9.430  57.039  1.00 23.25   4  1SGT 629
+ATOM    432  CB  LYS    82      19.729   8.959  55.371  1.00 26.52   4  1SGT 630
+ATOM    433  CG  LYS    82      21.182   9.186  54.955  1.00 34.05   4  1SGT 631
+ATOM    434  CD  LYS    82      21.800   7.943  54.348  1.00 47.23   4  1SGT 632
+ATOM    435  CE  LYS    82      23.298   7.914  54.637  1.00 59.70   4  1SGT 633
+ATOM    436  NZ  LYS    82      23.938   6.775  53.908  1.00 71.37   4  1SGT 634
+ATOM    437  N   VAL    83      16.820  10.669  55.206  1.00 22.05      1SGT 635
+ATOM    438  CA  VAL    83      15.377  10.575  55.389  1.00 21.15      1SGT 636
+ATOM    439  C   VAL    83      14.709  10.075  54.092  1.00 23.54      1SGT 637
+ATOM    440  O   VAL    83      15.083  10.442  52.964  1.00 22.56      1SGT 638
+ATOM    441  CB  VAL    83      14.902  11.969  55.849  1.00 18.75      1SGT 639
+ATOM    442  CG1 VAL    83      13.407  11.996  56.101  1.00 19.42      1SGT 640
+ATOM    443  CG2 VAL    83      15.637  12.424  57.112  1.00 22.65      1SGT 641
+ATOM    444  N   ARG    84      13.692   9.286  54.318  1.00 21.15   5  1SGT 642
+ATOM    445  CA  ARG    84      12.838   8.735  53.268  1.00 21.99   5  1SGT 643
+ATOM    446  C   ARG    84      11.673   9.620  52.920  1.00 21.79   5  1SGT 644
+ATOM    447  O   ARG    84      11.097  10.367  53.738  1.00 21.71   5  1SGT 645
+ATOM    448  CB  ARG    84      12.275   7.341  53.619  1.00 31.10   5  1SGT 646
+ATOM    449  CG  ARG    84      13.403   6.313  53.558  1.00 42.72   5  1SGT 647
+ATOM    450  CD  ARG    84      12.838   4.923  53.574  1.00 56.88   5  1SGT 648
+ATOM    451  NE  ARG    84      13.837   4.075  52.921  1.00 72.18   5  1SGT 649
+ATOM    452  CZ  ARG    84      13.678   3.503  51.724  1.00 79.28   5  1SGT 650
+ATOM    453  NH1 ARG    84      12.548   3.547  51.021  1.00 81.36   5  1SGT 651
+ATOM    454  NH2 ARG    84      14.761   2.918  51.184  1.00 84.39   5  1SGT 652
+ATOM    455  N   SER    85      11.289   9.547  51.620  1.00 19.53      1SGT 653
+ATOM    456  CA  SER    85      10.161  10.355  51.133  1.00 18.65      1SGT 654
+ATOM    457  C   SER    85       8.865   9.630  51.540  1.00 18.74      1SGT 655
+ATOM    458  O   SER    85       8.894   8.462  51.947  1.00 20.77      1SGT 656
+ATOM    459  CB  SER    85      10.105  10.407  49.571  1.00 17.95      1SGT 657
+ATOM    460  OG  SER    85      10.315   9.070  49.062  1.00 17.06      1SGT 658
+ATOM    461  N   THR    86       7.806  10.367  51.376  1.00 18.61      1SGT 659
+ATOM    462  CA  THR    86       6.461   9.864  51.563  1.00 21.24      1SGT 660
+ATOM    463  C   THR    86       5.644  10.166  50.307  1.00 20.95      1SGT 661
+ATOM    464  O   THR    86       4.812   9.344  49.933  1.00 22.31      1SGT 662
+ATOM    465  CB  THR    86       5.839  10.378  52.921  1.00 24.26      1SGT 663
+ATOM    466  OG1 THR    86       5.570  11.771  52.712  1.00 20.29      1SGT 664
+ATOM    467  CG2 THR    86       6.751  10.040  54.103  1.00 21.58      1SGT 665
+ATOM    468  N   LYS    87       5.899  11.314  49.693  1.00 19.15   6  1SGT 666
+ATOM    469  CA  LYS    87       5.113  11.562  48.461  1.00 20.15   6  1SGT 667
+ATOM    470  C   LYS    87       5.898  12.439  47.477  1.00 19.84   6  1SGT 668
+ATOM    471  O   LYS    87       6.858  13.058  47.939  1.00 16.99   6  1SGT 669
+ATOM    472  CB  LYS    87       3.696  11.950  48.586  1.00 30.10   6  1SGT 670
+ATOM    473  CG  LYS    87       3.290  13.056  49.518  1.00 38.52   6  1SGT 671
+ATOM    474  CD  LYS    87       1.782  12.893  49.744  1.00 52.87   6  1SGT 672
+ATOM    475  CE  LYS    87       1.015  13.324  48.495  1.00 63.21   6  1SGT 673
+ATOM    476  NZ  LYS    87      -0.240  12.523  48.366  1.00 70.66   6  1SGT 674
+ATOM    477  N   VAL    88       5.449  12.330  46.227  1.00 14.98      1SGT 675
+ATOM    478  CA  VAL    88       6.212  13.135  45.197  1.00 17.17      1SGT 676
+ATOM    479  C   VAL    88       5.173  13.903  44.404  1.00 15.27      1SGT 677
+ATOM    480  O   VAL    88       4.112  13.309  44.125  1.00 15.95      1SGT 678
+ATOM    481  CB  VAL    88       6.992  12.190  44.254  1.00 15.89      1SGT 679
+ATOM    482  CG1 VAL    88       7.502  12.986  43.055  1.00 16.77      1SGT 680
+ATOM    483  CG2 VAL    88       8.085  11.401  44.922  1.00 18.20      1SGT 681
+ATOM    484  N   LEU    89       5.441  15.151  44.135  1.00 16.57      1SGT 682
+ATOM    485  CA  LEU    89       4.545  15.955  43.279  1.00 15.82      1SGT 683
+ATOM    486  C   LEU    89       5.430  16.532  42.118  1.00 15.90      1SGT 684
+ATOM    487  O   LEU    89       6.171  17.489  42.278  1.00 15.78      1SGT 685
+ATOM    488  CB  LEU    89       3.758  16.967  43.998  1.00 19.88      1SGT 686
+ATOM    489  CG  LEU    89       2.509  17.604  43.413  1.00 27.38      1SGT 687
+ATOM    490  CD1 LEU    89       1.846  18.362  44.567  1.00 35.06      1SGT 688
+ATOM    491  CD2 LEU    89       2.891  18.599  42.329  1.00 27.91      1SGT 689
+ATOM    492  N   GLN    90       5.232  15.865  40.972  1.00 16.48      1SGT 690
+ATOM    493  CA  GLN    90       5.968  16.317  39.751  1.00 15.90      1SGT 691
+ATOM    494  C   GLN    90       5.155  17.445  39.145  1.00 16.38      1SGT 692
+ATOM    495  O   GLN    90       3.902  17.381  39.285  1.00 17.43      1SGT 693
+ATOM    496  CB  GLN    90       6.146  15.098  38.832  1.00 14.98      1SGT 694
+ATOM    497  CG  GLN    90       7.024  15.434  37.610  1.00 14.17      1SGT 695
+ATOM    498  CD  GLN    90       7.101  14.259  36.657  1.00 18.14      1SGT 696
+ATOM    499  OE1 GLN    90       6.070  13.841  36.129  1.00 18.46      1SGT 697
+ATOM    500  NE2 GLN    90       8.243  13.670  36.366  1.00 16.54      1SGT 698
+ATOM    501  N   ALA    91       5.748  18.448  38.473  1.00 14.89      1SGT 699
+ATOM    502  CA  ALA    91       4.984  19.529  37.826  1.00 16.93      1SGT 700
+ATOM    503  C   ALA    91       3.895  18.914  36.899  1.00 20.41      1SGT 701
+ATOM    504  O   ALA    91       4.170  17.979  36.139  1.00 21.73      1SGT 702
+ATOM    505  CB  ALA    91       5.917  20.341  36.902  1.00 12.85      1SGT 703
+ATOM    506  N   PRO    92       2.680  19.370  37.055  1.00 23.08      1SGT 704
+ATOM    507  CA  PRO    92       1.526  18.881  36.309  1.00 25.00      1SGT 705
+ATOM    508  C   PRO    92       1.794  19.108  34.813  1.00 26.96      1SGT 706
+ATOM    509  O   PRO    92       2.176  20.243  34.476  1.00 27.72      1SGT 707
+ATOM    510  CB  PRO    92       0.387  19.793  36.771  1.00 27.12      1SGT 708
+ATOM    511  CG  PRO    92       0.822  20.146  38.178  1.00 27.24      1SGT 709
+ATOM    512  CD  PRO    92       2.303  20.473  37.974  1.00 25.11      1SGT 710
+ATOM    513  N   GLY    93       1.611  18.039  34.058  1.00 28.28      1SGT 711
+ATOM    514  CA  GLY    93       1.825  18.118  32.608  1.00 29.32      1SGT 712
+ATOM    515  C   GLY    93       3.299  18.045  32.212  1.00 29.74      1SGT 713
+ATOM    516  O   GLY    93       3.582  18.359  31.024  1.00 30.52      1SGT 714
+ATOM    517  N   TYR    94       4.216  17.701  33.098  1.00 25.19      1SGT 715
+ATOM    518  CA  TYR    94       5.617  17.629  32.668  1.00 23.81      1SGT 716
+ATOM    519  C   TYR    94       5.720  16.636  31.500  1.00 21.55      1SGT 717
+ATOM    520  O   TYR    94       5.170  15.514  31.599  1.00 21.91      1SGT 718
+ATOM    521  CB  TYR    94       6.491  17.153  33.845  1.00 16.43      1SGT 719
+ATOM    522  CG  TYR    94       7.908  16.961  33.375  1.00 15.66      1SGT 720
+ATOM    523  CD1 TYR    94       8.513  15.713  33.343  1.00 13.37      1SGT 721
+ATOM    524  CD2 TYR    94       8.689  18.049  33.030  1.00 15.95      1SGT 722
+ATOM    525  CE1 TYR    94       9.833  15.496  32.938  1.00 12.54      1SGT 723
+ATOM    526  CE2 TYR    94       9.994  17.854  32.565  1.00 16.66      1SGT 724
+ATOM    527  CZ  TYR    94      10.561  16.582  32.501  1.00 15.54      1SGT 725
+ATOM    528  OH  TYR    94      11.878  16.500  32.162  1.00 17.22      1SGT 726
+ATOM    529  N   ASN    95       6.432  17.018  30.453  1.00 20.42      1SGT 727
+ATOM    530  CA  ASN    95       6.536  16.046  29.329  1.00 21.43      1SGT 728
+ATOM    531  C   ASN    95       7.951  16.110  28.783  1.00 22.97      1SGT 729
+ATOM    532  O   ASN    95       8.120  15.664  27.616  1.00 26.69      1SGT 730
+ATOM    533  CB  ASN    95       5.470  16.332  28.283  1.00 28.81      1SGT 731
+ATOM    534  CG  ASN    95       5.709  17.663  27.583  1.00 34.25      1SGT 732
+ATOM    535  OD1 ASN    95       6.682  18.397  27.813  1.00 41.06      1SGT 733
+ATOM    536  ND2 ASN    95       4.791  18.032  26.696  1.00 43.14      1SGT 734
+ATOM    537  N   GLY    96       8.859  16.674  29.533  1.00 19.09      1SGT 735
+ATOM    538  CA  GLY    96      10.248  16.725  29.069  1.00 19.07      1SGT 736
+ATOM    539  C   GLY    96      10.524  18.052  28.409  1.00 20.47      1SGT 737
+ATOM    540  O   GLY    96      11.697  18.238  28.020  1.00 20.95      1SGT 738
+ATOM    541  N   THR    98       9.517  18.916  28.298  1.00 18.91   7  1SGT 739
+ATOM    542  CA  THR    98       9.829  20.210  27.668  1.00 19.58   7  1SGT 740
+ATOM    543  C   THR    98       9.383  21.328  28.617  1.00 19.29   7  1SGT 741
+ATOM    544  O   THR    98       8.173  21.603  28.592  1.00 23.22   7  1SGT 742
+ATOM    545  CB  THR    98       9.129  20.362  26.245  1.00 28.10   7  1SGT 743
+ATOM    546  OG1 THR    98       9.512  19.224  25.431  1.00 29.91   7  1SGT 744
+ATOM    547  CG2 THR    98       9.500  21.714  25.595  1.00 33.20   7  1SGT 745
+ATOM    548  N   GLY   100      10.307  21.913  29.367  1.00 17.80      1SGT 746
+ATOM    549  CA  GLY   100       9.904  23.009  30.308  1.00 14.81      1SGT 747
+ATOM    550  C   GLY   100       9.314  22.366  31.574  1.00 14.18      1SGT 748
+ATOM    551  O   GLY   100       9.364  21.124  31.730  1.00 14.65      1SGT 749
+ATOM    552  N   LYS   101       8.731  23.209  32.410  1.00 14.81      1SGT 750
+ATOM    553  CA  LYS   101       8.103  22.763  33.680  1.00 12.05      1SGT 751
+ATOM    554  C   LYS   101       8.969  21.742  34.421  1.00 10.67      1SGT 752
+ATOM    555  O   LYS   101       8.389  20.789  34.996  1.00 12.51      1SGT 753
+ATOM    556  CB  LYS   101       6.808  21.975  33.387  1.00 13.16      1SGT 754
+ATOM    557  CG  LYS   101       5.800  22.934  32.750  1.00 21.19      1SGT 755
+ATOM    558  CD  LYS   101       4.533  22.184  32.327  1.00 29.52      1SGT 756
+ATOM    559  CE  LYS   101       3.902  22.997  31.195  1.00 42.80      1SGT 757
+ATOM    560  NZ  LYS   101       3.949  24.465  31.530  1.00 50.23      1SGT 758
+ATOM    561  N   ASP   102      10.270  21.981  34.465  1.00 12.10      1SGT 759
+ATOM    562  CA  ASP   102      11.169  21.037  35.114  1.00  9.01      1SGT 760
+ATOM    563  C   ASP   102      11.294  21.244  36.665  1.00  8.87      1SGT 761
+ATOM    564  O   ASP   102      12.367  21.655  37.053  1.00  7.65      1SGT 762
+ATOM    565  CB  ASP   102      12.520  20.991  34.410  1.00 10.52      1SGT 763
+ATOM    566  CG  ASP   102      13.224  19.708  34.670  1.00  9.92      1SGT 764
+ATOM    567  OD1 ASP   102      12.708  18.782  35.293  1.00  9.50      1SGT 765
+ATOM    568  OD2 ASP   102      14.343  19.540  34.187  1.00 11.68      1SGT 766
+ATOM    569  N   TRP   103      10.203  20.862  37.340  1.00  9.77      1SGT 767
+ATOM    570  CA  TRP   103      10.273  21.024  38.845  1.00  8.19      1SGT 768
+ATOM    571  C   TRP   103       9.429  19.917  39.447  1.00  9.61      1SGT 769
+ATOM    572  O   TRP   103       8.466  19.317  38.906  1.00 10.95      1SGT 770
+ATOM    573  CB  TRP   103       9.785  22.404  39.311  1.00  7.14      1SGT 771
+ATOM    574  CG  TRP   103       8.349  22.749  39.112  1.00 14.29      1SGT 772
+ATOM    575  CD1 TRP   103       7.824  23.469  38.047  1.00  9.61      1SGT 773
+ATOM    576  CD2 TRP   103       7.206  22.414  39.944  1.00 16.28      1SGT 774
+ATOM    577  NE1 TRP   103       6.462  23.573  38.167  1.00 14.57      1SGT 775
+ATOM    578  CE2 TRP   103       6.062  22.928  39.322  1.00 18.57      1SGT 776
+ATOM    579  CE3 TRP   103       7.080  21.692  41.125  1.00 10.84      1SGT 777
+ATOM    580  CZ2 TRP   103       4.798  22.809  39.897  1.00 20.04      1SGT 778
+ATOM    581  CZ3 TRP   103       5.826  21.543  41.684  1.00 12.89      1SGT 779
+ATOM    582  CH2 TRP   103       4.713  22.102  41.095  1.00 13.37      1SGT 780
+ATOM    583  N   ALA   104       9.805  19.543  40.701  1.00  8.90      1SGT 781
+ATOM    584  CA  ALA   104       9.051  18.565  41.473  1.00  8.97      1SGT 782
+ATOM    585  C   ALA   104       9.343  18.854  42.992  1.00  9.12      1SGT 783
+ATOM    586  O   ALA   104      10.407  19.387  43.331  1.00 10.00      1SGT 784
+ATOM    587  CB  ALA   104       9.422  17.105  41.158  1.00  7.79      1SGT 785
+ATOM    588  N   LEU   105       8.342  18.421  43.775  1.00 11.49      1SGT 786
+ATOM    589  CA  LEU   105       8.521  18.536  45.259  1.00 11.89      1SGT 787
+ATOM    590  C   LEU   105       8.490  17.093  45.822  1.00 13.32      1SGT 788
+ATOM    591  O   LEU   105       7.650  16.276  45.367  1.00 13.54      1SGT 789
+ATOM    592  CB  LEU   105       7.309  19.258  45.794  1.00  6.48      1SGT 790
+ATOM    593  CG  LEU   105       7.125  20.703  45.363  1.00 12.99      1SGT 791
+ATOM    594  CD1 LEU   105       5.723  21.145  45.739  1.00 14.90      1SGT 792
+ATOM    595  CD2 LEU   105       8.266  21.487  45.971  1.00 11.28      1SGT 793
+ATOM    596  N   ILE   106       9.392  16.888  46.780  1.00 13.36      1SGT 794
+ATOM    597  CA  ILE   106       9.422  15.597  47.482  1.00 12.07      1SGT 795
+ATOM    598  C   ILE   106       9.069  15.820  48.994  1.00 12.17      1SGT 796
+ATOM    599  O   ILE   106       9.847  16.570  49.586  1.00 14.38      1SGT 797
+ATOM    600  CB  ILE   106      10.803  14.907  47.339  1.00 13.78      1SGT 798
+ATOM    601  CG1 ILE   106      11.113  14.675  45.826  1.00 14.89      1SGT 799
+ATOM    602  CG2 ILE   106      10.773  13.553  48.132  1.00 13.46      1SGT 800
+ATOM    603  CD1 ILE   106      12.513  14.108  45.639  1.00 15.40      1SGT 801
+ATOM    604  N   LYS   107       8.014  15.196  49.454  1.00 13.61      1SGT 802
+ATOM    605  CA  LYS   107       7.686  15.337  50.925  1.00 15.81      1SGT 803
+ATOM    606  C   LYS   107       8.477  14.277  51.684  1.00 16.09      1SGT 804
+ATOM    607  O   LYS   107       8.462  13.091  51.290  1.00 17.34      1SGT 805
+ATOM    608  CB  LYS   107       6.205  15.182  51.072  1.00 15.56      1SGT 806
+ATOM    609  CG  LYS   107       5.720  15.190  52.533  1.00 22.50      1SGT 807
+ATOM    610  CD  LYS   107       5.707  16.555  53.178  1.00 25.17      1SGT 808
+ATOM    611  CE  LYS   107       5.081  16.617  54.590  1.00 25.05      1SGT 809
+ATOM    612  NZ  LYS   107       4.336  17.921  54.651  1.00 32.79      1SGT 810
+ATOM    613  N   LEU   108       9.151  14.690  52.748  1.00 14.64      1SGT 811
+ATOM    614  CA  LEU   108       9.950  13.796  53.585  1.00 16.76      1SGT 812
+ATOM    615  C   LEU   108       9.134  13.280  54.845  1.00 15.17      1SGT 813
+ATOM    616  O   LEU   108       8.205  13.940  55.236  1.00 15.96      1SGT 814
+ATOM    617  CB  LEU   108      11.183  14.563  54.037  1.00 13.81      1SGT 815
+ATOM    618  CG  LEU   108      12.042  15.147  52.935  1.00 16.21      1SGT 816
+ATOM    619  CD1 LEU   108      13.258  15.805  53.604  1.00 16.57      1SGT 817
+ATOM    620  CD2 LEU   108      12.550  14.023  52.014  1.00 17.15      1SGT 818
+ATOM    621  N   ALA   109       9.556  12.117  55.280  1.00 19.24      1SGT 819
+ATOM    622  CA  ALA   109       8.919  11.388  56.379  1.00 19.31      1SGT 820
+ATOM    623  C   ALA   109       9.217  12.154  57.659  1.00 22.49      1SGT 821
+ATOM    624  O   ALA   109       8.382  12.109  58.567  1.00 24.82      1SGT 822
+ATOM    625  CB  ALA   109       9.528  10.007  56.443  1.00 20.28      1SGT 823
+ATOM    626  N   GLN   110      10.337  12.798  57.719  1.00 22.85   8  1SGT 824
+ATOM    627  CA  GLN   110      10.766  13.643  58.843  1.00 25.66   8  1SGT 825
+ATOM    628  C   GLN   110      11.540  14.854  58.293  1.00 24.60   8  1SGT 826
+ATOM    629  O   GLN   110      12.243  14.732  57.281  1.00 24.40   8  1SGT 827
+ATOM    630  CB  GLN   110      11.731  12.898  59.794  1.00 32.09   8  1SGT 828
+ATOM    631  CG  GLN   110      11.246  11.490  60.094  1.00 56.47   8  1SGT 829
+ATOM    632  CD  GLN   110      12.352  10.464  60.073  1.00 69.99   8  1SGT 830
+ATOM    633  OE1 GLN   110      13.108  10.333  61.037  1.00 80.33   8  1SGT 831
+ATOM    634  NE2 GLN   110      12.474   9.709  58.982  1.00 75.58   8  1SGT 832
+ATOM    635  N   PRO   111      11.476  15.935  59.056  1.00 24.94      1SGT 833
+ATOM    636  CA  PRO   111      12.190  17.163  58.741  1.00 20.93      1SGT 834
+ATOM    637  C   PRO   111      13.677  16.972  58.921  1.00 19.77      1SGT 835
+ATOM    638  O   PRO   111      14.167  16.209  59.765  1.00 20.66      1SGT 836
+ATOM    639  CB  PRO   111      11.626  18.254  59.638  1.00 21.04      1SGT 837
+ATOM    640  CG  PRO   111      10.998  17.517  60.753  1.00 23.41      1SGT 838
+ATOM    641  CD  PRO   111      10.684  16.109  60.296  1.00 24.29      1SGT 839
+ATOM    642  N   ILE   112      14.418  17.678  58.060  1.00 15.50      1SGT 840
+ATOM    643  CA  ILE   112      15.881  17.705  58.124  1.00 14.38      1SGT 841
+ATOM    644  C   ILE   112      16.028  19.083  58.809  1.00 14.08      1SGT 842
+ATOM    645  O   ILE   112      15.524  20.072  58.264  1.00 12.37      1SGT 843
+ATOM    646  CB  ILE   112      16.617  17.612  56.747  1.00 15.71      1SGT 844
+ATOM    647  CG1 ILE   112      16.287  16.207  56.120  1.00 20.56      1SGT 845
+ATOM    648  CG2 ILE   112      18.121  17.895  56.893  1.00 18.53      1SGT 846
+ATOM    649  CD1 ILE   112      16.985  15.998  54.725  1.00 20.12      1SGT 847
+ATOM    650  N   ASN   113      16.636  19.037  59.989  1.00 13.19      1SGT 848
+ATOM    651  CA  ASN   113      16.723  20.327  60.757  1.00 13.85      1SGT 849
+ATOM    652  C   ASN   113      17.866  21.203  60.337  1.00 12.95      1SGT 850
+ATOM    653  O   ASN   113      18.940  21.291  60.958  1.00 11.60      1SGT 851
+ATOM    654  CB  ASN   113      16.846  19.829  62.260  1.00 11.92      1SGT 852
+ATOM    655  CG  ASN   113      16.796  21.051  63.179  1.00 18.01      1SGT 853
+ATOM    656  OD1 ASN   113      16.253  22.092  62.754  1.00 13.68      1SGT 854
+ATOM    657  ND2 ASN   113      17.349  20.952  64.388  1.00 18.58      1SGT 855
+ATOM    658  N   GLN   118      17.708  21.830  59.146  1.00 14.25      1SGT 856
+ATOM    659  CA  GLN   118      18.700  22.715  58.519  1.00 11.78      1SGT 857
+ATOM    660  C   GLN   118      18.008  23.939  57.951  1.00 10.39      1SGT 858
+ATOM    661  O   GLN   118      16.768  23.883  57.785  1.00 12.62      1SGT 859
+ATOM    662  CB  GLN   118      19.400  21.906  57.387  1.00 14.91      1SGT 860
+ATOM    663  CG  GLN   118      20.323  20.805  57.863  1.00 12.58      1SGT 861
+ATOM    664  CD  GLN   118      21.539  21.314  58.579  1.00 14.05      1SGT 862
+ATOM    665  OE1 GLN   118      22.019  22.442  58.480  1.00 23.24      1SGT 863
+ATOM    666  NE2 GLN   118      22.219  20.481  59.359  1.00 17.15      1SGT 864
+ATOM    667  N   PRO   119      18.748  24.996  57.688  1.00  9.20      1SGT 865
+ATOM    668  CA  PRO   119      18.164  26.206  57.091  1.00 10.94      1SGT 866
+ATOM    669  C   PRO   119      17.560  25.838  55.687  1.00 13.43      1SGT 867
+ATOM    670  O   PRO   119      18.087  24.913  55.032  1.00 14.76      1SGT 868
+ATOM    671  CB  PRO   119      19.360  27.105  56.902  1.00 10.95      1SGT 869
+ATOM    672  CG  PRO   119      20.257  26.635  58.028  1.00 10.55      1SGT 870
+ATOM    673  CD  PRO   119      20.184  25.112  57.922  1.00 10.06      1SGT 871
+ATOM    674  N   THR   120      16.448  26.470  55.388  1.00 11.87      1SGT 872
+ATOM    675  CA  THR   120      15.780  26.218  54.063  1.00 11.32      1SGT 873
+ATOM    676  C   THR   120      16.317  27.262  53.061  1.00 14.52      1SGT 874
+ATOM    677  O   THR   120      17.160  28.142  53.395  1.00 14.00      1SGT 875
+ATOM    678  CB  THR   120      14.252  26.257  54.302  1.00 11.43      1SGT 876
+ATOM    679  OG1 THR   120      13.986  27.575  54.846  1.00 16.31      1SGT 877
+ATOM    680  CG2 THR   120      13.784  25.121  55.224  1.00 14.47      1SGT 878
+ATOM    681  N   LEU   121      15.836  27.133  51.809  1.00 12.38      1SGT 879
+ATOM    682  CA  LEU   121      16.283  28.119  50.791  1.00 10.34      1SGT 880
+ATOM    683  C   LEU   121      15.015  28.708  50.211  1.00  9.00      1SGT 881
+ATOM    684  O   LEU   121      14.096  28.028  49.729  1.00 12.03      1SGT 882
+ATOM    685  CB  LEU   121      17.211  27.422  49.744  1.00  8.73      1SGT 883
+ATOM    686  CG  LEU   121      17.477  28.269  48.474  1.00  6.66      1SGT 884
+ATOM    687  CD1 LEU   121      18.492  29.360  48.775  1.00  8.57      1SGT 885
+ATOM    688  CD2 LEU   121      18.114  27.278  47.483  1.00  9.71      1SGT 886
+ATOM    689  N   LYS   122      14.979  30.023  50.285  1.00 10.21   9  1SGT 887
+ATOM    690  CA  LYS   122      13.869  30.838  49.792  1.00 12.16   9  1SGT 888
+ATOM    691  C   LYS   122      13.879  30.835  48.212  1.00 11.70   9  1SGT 889
+ATOM    692  O   LYS   122      15.017  30.897  47.720  1.00 14.36   9  1SGT 890
+ATOM    693  CB  LYS   122      14.318  32.225  50.218  1.00 17.99   9  1SGT 891
+ATOM    694  CG  LYS   122      13.337  33.328  49.835  1.00 35.28   9  1SGT 892
+ATOM    695  CD  LYS   122      13.819  34.631  50.505  1.00 47.33   9  1SGT 893
+ATOM    696  CE  LYS   122      15.334  34.805  50.482  1.00 52.35   9  1SGT 894
+ATOM    697  NZ  LYS   122      15.733  36.232  50.462  1.00 54.92   9  1SGT 895
+ATOM    698  N   ILE   123      12.719  30.816  47.625  1.00 12.54      1SGT 896
+ATOM    699  CA  ILE   123      12.752  30.871  46.110  1.00 12.00      1SGT 897
+ATOM    700  C   ILE   123      12.339  32.271  45.661  1.00 16.38      1SGT 898
+ATOM    701  O   ILE   123      11.635  33.080  46.313  1.00 15.91      1SGT 899
+ATOM    702  CB  ILE   123      11.834  29.762  45.541  1.00  9.04      1SGT 900
+ATOM    703  CG1 ILE   123      10.374  30.055  45.894  1.00 14.06      1SGT 901
+ATOM    704  CG2 ILE   123      12.236  28.363  46.060  1.00 13.84      1SGT 902
+ATOM    705  CD1 ILE   123       9.324  29.104  45.221  1.00 18.92      1SGT 903
+ATOM    706  N   ALA   124      12.768  32.605  44.445  1.00 15.24      1SGT 904
+ATOM    707  CA  ALA   124      12.463  33.883  43.775  1.00 16.39      1SGT 905
+ATOM    708  C   ALA   124      11.000  33.867  43.319  1.00 18.49      1SGT 906
+ATOM    709  O   ALA   124      10.506  32.908  42.680  1.00 17.66      1SGT 907
+ATOM    710  CB  ALA   124      13.417  33.921  42.573  1.00 15.81      1SGT 908
+ATOM    711  N   THR   125      10.303  34.933  43.720  1.00 15.07      1SGT 909
+ATOM    712  CA  THR   125       8.898  35.092  43.360  1.00 18.74      1SGT 910
+ATOM    713  C   THR   125       8.758  36.177  42.291  1.00 20.85      1SGT 911
+ATOM    714  O   THR   125       7.666  36.362  41.730  1.00 23.84      1SGT 912
+ATOM    715  CB  THR   125       8.050  35.318  44.660  1.00 26.39      1SGT 913
+ATOM    716  OG1 THR   125       8.575  36.541  45.280  1.00 28.20      1SGT 914
+ATOM    717  CG2 THR   125       8.141  34.113  45.593  1.00 27.00      1SGT 915
+ATOM    718  N   THR   128       9.839  36.860  42.001  1.00 19.92      1SGT 916
+ATOM    719  CA  THR   128       9.894  37.893  40.949  1.00 20.80      1SGT 917
+ATOM    720  C   THR   128      11.117  37.638  40.092  1.00 20.05      1SGT 918
+ATOM    721  O   THR   128      11.918  36.768  40.448  1.00 18.46      1SGT 919
+ATOM    722  CB  THR   128       9.968  39.360  41.550  1.00 28.12      1SGT 920
+ATOM    723  OG1 THR   128      11.321  39.576  42.000  1.00 26.04      1SGT 921
+ATOM    724  CG2 THR   128       8.986  39.572  42.736  1.00 24.93      1SGT 922
+ATOM    725  N   THR   129      11.261  38.414  39.014  1.00 18.93      1SGT 923
+ATOM    726  CA  THR   129      12.409  38.234  38.124  1.00 19.38      1SGT 924
+ATOM    727  C   THR   129      13.551  39.181  38.389  1.00 19.73      1SGT 925
+ATOM    728  O   THR   129      14.516  39.266  37.616  1.00 19.77      1SGT 926
+ATOM    729  CB  THR   129      11.962  38.369  36.617  1.00 22.01      1SGT 927
+ATOM    730  OG1 THR   129      11.503  39.769  36.500  1.00 26.87      1SGT 928
+ATOM    731  CG2 THR   129      10.820  37.395  36.311  1.00 27.05      1SGT 929
+ATOM    732  N   ALA   130      13.417  39.842  39.553  1.00 19.93      1SGT 930
+ATOM    733  CA  ALA   130      14.427  40.854  39.897  1.00 19.21      1SGT 931
+ATOM    734  C   ALA   130      15.818  40.297  39.985  1.00 18.42      1SGT 932
+ATOM    735  O   ALA   130      16.742  41.086  39.757  1.00 18.53      1SGT 933
+ATOM    736  CB  ALA   130      13.984  41.557  41.193  1.00 27.39      1SGT 934
+ATOM    737  N   TYR   131      15.937  39.006  40.313  1.00 16.32      1SGT 935
+ATOM    738  CA  TYR   131      17.283  38.458  40.511  1.00 16.41      1SGT 936
+ATOM    739  C   TYR   131      17.723  37.521  39.400  1.00 16.01      1SGT 937
+ATOM    740  O   TYR   131      18.719  36.851  39.616  1.00 16.08      1SGT 938
+ATOM    741  CB  TYR   131      17.207  37.648  41.845  1.00 21.76      1SGT 939
+ATOM    742  CG  TYR   131      16.906  38.608  42.986  1.00 27.96      1SGT 940
+ATOM    743  CD1 TYR   131      17.874  39.550  43.346  1.00 28.74      1SGT 941
+ATOM    744  CD2 TYR   131      15.696  38.604  43.666  1.00 28.55      1SGT 942
+ATOM    745  CE1 TYR   131      17.680  40.457  44.385  1.00 35.24      1SGT 943
+ATOM    746  CE2 TYR   131      15.481  39.485  44.712  1.00 27.77      1SGT 944
+ATOM    747  CZ  TYR   131      16.464  40.398  45.076  1.00 34.24      1SGT 945
+ATOM    748  OH  TYR   131      16.243  41.263  46.113  1.00 36.27      1SGT 946
+ATOM    749  N   ASN   132      16.959  37.499  38.331  1.00 16.54      1SGT 947
+ATOM    750  CA  ASN   132      17.298  36.573  37.198  1.00 15.17      1SGT 948
+ATOM    751  C   ASN   132      18.342  37.273  36.340  1.00 16.98      1SGT 949
+ATOM    752  O   ASN   132      18.106  37.582  35.152  1.00 21.88      1SGT 950
+ATOM    753  CB  ASN   132      16.004  36.242  36.465  1.00 15.20      1SGT 951
+ATOM    754  CG  ASN   132      14.999  35.386  37.199  1.00 16.40      1SGT 952
+ATOM    755  OD1 ASN   132      15.253  34.859  38.302  1.00 17.81      1SGT 953
+ATOM    756  ND2 ASN   132      13.829  35.198  36.581  1.00 15.47      1SGT 954
+ATOM    757  N   GLN   133      19.479  37.555  36.928  1.00 18.12  10  1SGT 955
+ATOM    758  CA  GLN   133      20.601  38.238  36.245  1.00 17.68  10  1SGT 956
+ATOM    759  C   GLN   133      21.779  38.173  37.208  1.00 17.93  10  1SGT 957
+ATOM    760  O   GLN   133      21.558  37.841  38.370  1.00 19.50  10  1SGT 958
+ATOM    761  CB  GLN   133      20.202  39.686  35.908  1.00 22.75  10  1SGT 959
+ATOM    762  CG  GLN   133      19.804  40.369  37.211  1.00 40.20  10  1SGT 960
+ATOM    763  CD  GLN   133      19.587  41.847  37.203  1.00 54.24  10  1SGT 961
+ATOM    764  OE1 GLN   133      19.366  42.499  36.182  1.00 62.13  10  1SGT 962
+ATOM    765  NE2 GLN   133      19.653  42.410  38.418  1.00 59.82  10  1SGT 963
+ATOM    766  N   GLY   134      22.939  38.491  36.691  1.00 16.87      1SGT 964
+ATOM    767  CA  GLY   134      24.179  38.525  37.437  1.00 18.43      1SGT 965
+ATOM    768  C   GLY   134      24.886  37.188  37.422  1.00 17.62      1SGT 966
+ATOM    769  O   GLY   134      24.843  36.404  36.477  1.00 19.01      1SGT 967
+ATOM    770  N   THR   135      25.641  36.982  38.472  1.00 15.78      1SGT 968
+ATOM    771  CA  THR   135      26.442  35.788  38.703  1.00 16.19      1SGT 969
+ATOM    772  C   THR   135      25.727  34.864  39.705  1.00 16.32      1SGT 970
+ATOM    773  O   THR   135      25.387  35.389  40.802  1.00 17.08      1SGT 971
+ATOM    774  CB  THR   135      27.891  36.063  39.256  1.00 22.36      1SGT 972
+ATOM    775  OG1 THR   135      28.418  37.008  38.254  1.00 32.15      1SGT 973
+ATOM    776  CG2 THR   135      28.764  34.816  39.387  1.00 24.32      1SGT 974
+ATOM    777  N   PHE   136      25.566  33.629  39.281  1.00 12.70      1SGT 975
+ATOM    778  CA  PHE   136      24.871  32.686  40.159  1.00 10.96      1SGT 976
+ATOM    779  C   PHE   136      25.887  31.702  40.706  1.00 11.82      1SGT 977
+ATOM    780  O   PHE   136      27.006  31.614  40.209  1.00 12.52      1SGT 978
+ATOM    781  CB  PHE   136      23.800  31.952  39.345  1.00 11.92      1SGT 979
+ATOM    782  CG  PHE   136      22.830  32.822  38.624  1.00 15.84      1SGT 980
+ATOM    783  CD1 PHE   136      22.674  32.674  37.220  1.00 12.02      1SGT 981
+ATOM    784  CD2 PHE   136      22.063  33.778  39.280  1.00 11.85      1SGT 982
+ATOM    785  CE1 PHE   136      21.740  33.474  36.524  1.00 12.57      1SGT 983
+ATOM    786  CE2 PHE   136      21.159  34.613  38.616  1.00 14.57      1SGT 984
+ATOM    787  CZ  PHE   136      20.999  34.440  37.202  1.00 12.48      1SGT 985
+ATOM    788  N   THR   137      25.465  30.962  41.724  1.00  8.28      1SGT 986
+ATOM    789  CA  THR   137      26.320  29.897  42.297  1.00  8.71      1SGT 987
+ATOM    790  C   THR   137      25.518  28.623  42.062  1.00  9.82      1SGT 988
+ATOM    791  O   THR   137      24.286  28.655  42.165  1.00 10.72      1SGT 989
+ATOM    792  CB  THR   137      26.513  30.062  43.886  1.00 13.53      1SGT 990
+ATOM    793  OG1 THR   137      27.130  31.374  44.034  1.00 15.00      1SGT 991
+ATOM    794  CG2 THR   137      27.323  28.925  44.450  1.00 11.18      1SGT 992
+ATOM    795  N   VAL   138      26.188  27.527  41.707  1.00 10.61      1SGT 993
+ATOM    796  CA  VAL   138      25.520  26.235  41.558  1.00  9.76      1SGT 994
+ATOM    797  C   VAL   138      26.342  25.302  42.500  1.00 12.03      1SGT 995
+ATOM    798  O   VAL   138      27.503  25.609  42.810  1.00 13.00      1SGT 996
+ATOM    799  CB  VAL   138      25.516  25.754  40.084  1.00 13.70      1SGT 997
+ATOM    800  CG1 VAL   138      24.591  26.618  39.249  1.00  7.90      1SGT 998
+ATOM    801  CG2 VAL   138      26.980  25.819  39.573  1.00 15.16      1SGT 999
+ATOM    802  N   ALA   139      25.682  24.224  42.907  1.00 10.47      1SGT1000
+ATOM    803  CA  ALA   139      26.425  23.235  43.755  1.00 10.42      1SGT1001
+ATOM    804  C   ALA   139      25.868  21.840  43.481  1.00  7.30      1SGT1002
+ATOM    805  O   ALA   139      24.669  21.761  43.159  1.00  9.87      1SGT1003
+ATOM    806  CB  ALA   139      26.212  23.643  45.224  1.00  8.49      1SGT1004
+ATOM    807  N   GLY   140      26.717  20.825  43.582  1.00  9.99      1SGT1005
+ATOM    808  CA  GLY   140      26.205  19.470  43.401  1.00  8.35      1SGT1006
+ATOM    809  C   GLY   140      27.305  18.453  43.632  1.00  8.23      1SGT1007
+ATOM    810  O   GLY   140      28.491  18.828  43.742  1.00 11.43      1SGT1008
+ATOM    811  N   TRP   141      26.848  17.224  43.618  1.00 11.32      1SGT1009
+ATOM    812  CA  TRP   141      27.738  16.049  43.729  1.00 12.37      1SGT1010
+ATOM    813  C   TRP   141      27.826  15.349  42.332  1.00 15.13      1SGT1011
+ATOM    814  O   TRP   141      28.143  14.174  42.270  1.00 15.34      1SGT1012
+ATOM    815  CB  TRP   141      27.156  15.103  44.785  1.00 14.46      1SGT1013
+ATOM    816  CG  TRP   141      27.202  15.578  46.212  1.00 18.38      1SGT1014
+ATOM    817  CD1 TRP   141      28.258  15.409  47.080  1.00 14.60      1SGT1015
+ATOM    818  CD2 TRP   141      26.163  16.221  46.956  1.00 16.79      1SGT1016
+ATOM    819  NE1 TRP   141      27.920  15.932  48.294  1.00 14.31      1SGT1017
+ATOM    820  CE2 TRP   141      26.658  16.435  48.264  1.00 14.08      1SGT1018
+ATOM    821  CE3 TRP   141      24.885  16.696  46.625  1.00 14.51      1SGT1019
+ATOM    822  CZ2 TRP   141      25.910  17.080  49.237  1.00 10.61      1SGT1020
+ATOM    823  CZ3 TRP   141      24.128  17.346  47.579  1.00 13.72      1SGT1021
+ATOM    824  CH2 TRP   141      24.650  17.495  48.898  1.00 12.26      1SGT1022
+ATOM    825  N   GLY   142      27.468  16.111  41.290  1.00 14.69      1SGT1023
+ATOM    826  CA  GLY   142      27.481  15.470  39.929  1.00 15.20      1SGT1024
+ATOM    827  C   GLY   142      28.878  15.365  39.402  1.00 16.69      1SGT1025
+ATOM    828  O   GLY   142      29.883  15.784  40.008  1.00 15.91      1SGT1026
+ATOM    829  N   ALA   143      28.963  14.815  38.145  1.00 17.33      1SGT1027
+ATOM    830  CA  ALA   143      30.271  14.631  37.470  1.00 16.78      1SGT1028
+ATOM    831  C   ALA   143      31.019  15.931  37.324  1.00 15.76      1SGT1029
+ATOM    832  O   ALA   143      30.497  17.086  37.092  1.00 15.84      1SGT1030
+ATOM    833  CB  ALA   143      29.966  14.065  36.052  1.00 13.28      1SGT1031
+ATOM    834  N   ASN   144      32.346  15.800  37.440  1.00 15.31      1SGT1032
+ATOM    835  CA  ASN   144      33.211  16.991  37.274  1.00 18.88      1SGT1033
+ATOM    836  C   ASN   144      33.810  16.997  35.838  1.00 19.79      1SGT1034
+ATOM    837  O   ASN   144      34.708  17.774  35.553  1.00 21.94      1SGT1035
+ATOM    838  CB  ASN   144      34.139  17.123  38.459  1.00 23.16      1SGT1036
+ATOM    839  CG  ASN   144      35.270  16.099  38.399  1.00 29.92      1SGT1037
+ATOM    840  OD1 ASN   144      35.202  15.042  37.747  1.00 26.96      1SGT1038
+ATOM    841  ND2 ASN   144      36.292  16.470  39.167  1.00 39.34      1SGT1039
+ATOM    842  N   ARG   145      33.249  16.162  34.996  1.00 22.74  11  1SGT1040
+ATOM    843  CA  ARG   145      33.628  16.021  33.593  1.00 24.42  11  1SGT1041
+ATOM    844  C   ARG   145      32.588  15.196  32.864  1.00 24.58  11  1SGT1042
+ATOM    845  O   ARG   145      31.832  14.378  33.439  1.00 23.38  11  1SGT1043
+ATOM    846  CB  ARG   145      35.015  15.327  33.552  1.00 38.68  11  1SGT1044
+ATOM    847  CG  ARG   145      34.876  13.828  33.771  1.00 51.98  11  1SGT1045
+ATOM    848  CD  ARG   145      36.194  13.149  33.530  1.00 69.41  11  1SGT1046
+ATOM    849  NE  ARG   145      35.921  11.725  33.405  1.00 80.46  11  1SGT1047
+ATOM    850  CZ  ARG   145      36.738  10.807  32.910  1.00 89.15  11  1SGT1048
+ATOM    851  NH1 ARG   145      37.939  11.085  32.405  1.00 92.79  11  1SGT1049
+ATOM    852  NH2 ARG   145      36.300   9.542  33.005  1.00 95.17  11  1SGT1050
+ATOM    853  N   GLU   146      32.547  15.370  31.515  1.00 25.31      1SGT1051
+ATOM    854  CA  GLU   146      31.531  14.597  30.743  1.00 27.22      1SGT1052
+ATOM    855  C   GLU   146      31.735  13.112  30.992  1.00 27.80      1SGT1053
+ATOM    856  O   GLU   146      32.878  12.613  31.007  1.00 29.14      1SGT1054
+ATOM    857  CB  GLU   146      31.431  14.944  29.267  1.00 24.38      1SGT1055
+ATOM    858  CG  GLU   146      31.000  16.379  28.963  1.00 22.82      1SGT1056
+ATOM    859  CD  GLU   146      30.802  16.708  27.493  1.00 29.35      1SGT1057
+ATOM    860  OE1 GLU   146      30.708  15.806  26.664  1.00 31.59      1SGT1058
+ATOM    861  OE2 GLU   146      30.744  17.930  27.256  1.00 23.73      1SGT1059
+ATOM    862  N   GLY   148      30.619  12.457  31.230  1.00 29.76      1SGT1060
+ATOM    863  CA  GLY   148      30.616  11.025  31.529  1.00 34.72      1SGT1061
+ATOM    864  C   GLY   148      31.504  10.653  32.720  1.00 37.05      1SGT1062
+ATOM    865  O   GLY   148      31.778   9.441  32.892  1.00 37.88      1SGT1063
+ATOM    866  N   GLY   149      31.938  11.628  33.509  1.00 38.23      1SGT1064
+ATOM    867  CA  GLY   149      32.754  11.374  34.731  1.00 36.15      1SGT1065
+ATOM    868  C   GLY   149      31.820  10.724  35.763  1.00 34.74      1SGT1066
+ATOM    869  O   GLY   149      30.615  10.435  35.556  1.00 35.84      1SGT1067
+ATOM    870  N   SER   150      32.387  10.451  36.936  1.00 35.98      1SGT1068
+ATOM    871  CA  SER   150      31.570   9.815  38.016  1.00 32.74      1SGT1069
+ATOM    872  C   SER   150      31.096  10.904  39.008  1.00 29.39      1SGT1070
+ATOM    873  O   SER   150      31.532  12.071  38.958  1.00 29.82      1SGT1071
+ATOM    874  CB  SER   150      32.288   8.654  38.666  1.00 40.90      1SGT1072
+ATOM    875  OG  SER   150      33.571   9.070  39.136  1.00 43.77      1SGT1073
+ATOM    876  N   GLN   151      30.176  10.427  39.839  1.00 26.51      1SGT1074
+ATOM    877  CA  GLN   151      29.546  11.216  40.912  1.00 22.13      1SGT1075
+ATOM    878  C   GLN   151      30.599  11.526  41.959  1.00 22.81      1SGT1076
+ATOM    879  O   GLN   151      31.575  10.783  42.098  1.00 24.60      1SGT1077
+ATOM    880  CB  GLN   151      28.339  10.537  41.447  1.00 18.46      1SGT1078
+ATOM    881  CG  GLN   151      27.172  10.236  40.525  1.00 22.43      1SGT1079
+ATOM    882  CD  GLN   151      26.693  11.528  39.867  1.00 26.23      1SGT1080
+ATOM    883  OE1 GLN   151      25.951  12.273  40.490  1.00 23.63      1SGT1081
+ATOM    884  NE2 GLN   151      27.229  11.763  38.658  1.00 20.98      1SGT1082
+ATOM    885  N   GLN   152      30.467  12.671  42.592  1.00 21.91      1SGT1083
+ATOM    886  CA  GLN   152      31.413  13.173  43.600  1.00 21.29      1SGT1084
+ATOM    887  C   GLN   152      30.956  12.830  45.023  1.00 21.94      1SGT1085
+ATOM    888  O   GLN   152      29.775  12.687  45.297  1.00 22.84      1SGT1086
+ATOM    889  CB  GLN   152      31.641  14.652  43.379  1.00 16.03      1SGT1087
+ATOM    890  CG  GLN   152      32.078  14.858  41.928  1.00 22.38      1SGT1088
+ATOM    891  CD  GLN   152      33.529  14.494  41.772  1.00 28.53      1SGT1089
+ATOM    892  OE1 GLN   152      34.384  15.007  42.515  1.00 27.66      1SGT1090
+ATOM    893  NE2 GLN   152      33.753  13.575  40.842  1.00 23.25      1SGT1091
+ATOM    894  N   ARG   153      31.974  12.647  45.862  1.00 23.69      1SGT1092
+ATOM    895  CA  ARG   153      31.792  12.312  47.276  1.00 20.71      1SGT1093
+ATOM    896  C   ARG   153      31.454  13.571  48.066  1.00 19.52      1SGT1094
+ATOM    897  O   ARG   153      30.663  13.567  49.018  1.00 20.55      1SGT1095
+ATOM    898  CB  ARG   153      33.115  11.749  47.865  1.00 22.49      1SGT1096
+ATOM    899  CG  ARG   153      32.889  11.441  49.368  1.00 20.64      1SGT1097
+ATOM    900  CD  ARG   153      34.095  10.637  49.815  1.00 27.55      1SGT1098
+ATOM    901  NE  ARG   153      34.100  10.747  51.283  1.00 30.23      1SGT1099
+ATOM    902  CZ  ARG   153      35.097  10.353  52.068  1.00 35.98      1SGT1100
+ATOM    903  NH1 ARG   153      36.242   9.805  51.660  1.00 31.51      1SGT1101
+ATOM    904  NH2 ARG   153      34.936  10.522  53.387  1.00 33.15      1SGT1102
+ATOM    905  N   TYR   154      32.132  14.621  47.705  1.00 19.91      1SGT1103
+ATOM    906  CA  TYR   154      32.044  15.940  48.297  1.00 20.89      1SGT1104
+ATOM    907  C   TYR   154      31.344  16.923  47.335  1.00 19.62      1SGT1105
+ATOM    908  O   TYR   154      31.602  16.928  46.108  1.00 19.79      1SGT1106
+ATOM    909  CB  TYR   154      33.433  16.551  48.533  1.00 20.07      1SGT1107
+ATOM    910  CG  TYR   154      34.251  15.602  49.376  1.00 28.17      1SGT1108
+ATOM    911  CD1 TYR   154      34.079  15.538  50.751  1.00 30.64      1SGT1109
+ATOM    912  CD2 TYR   154      35.158  14.764  48.747  1.00 29.56      1SGT1110
+ATOM    913  CE1 TYR   154      34.853  14.679  51.531  1.00 32.39      1SGT1111
+ATOM    914  CE2 TYR   154      35.933  13.889  49.510  1.00 41.85      1SGT1112
+ATOM    915  CZ  TYR   154      35.769  13.858  50.903  1.00 39.79      1SGT1113
+ATOM    916  OH  TYR   154      36.568  12.970  51.589  1.00 48.43      1SGT1114
+ATOM    917  N   LEU   155      30.570  17.764  47.984  1.00 17.25      1SGT1115
+ATOM    918  CA  LEU   155      29.831  18.807  47.283  1.00 14.68      1SGT1116
+ATOM    919  C   LEU   155      30.815  19.821  46.693  1.00 16.69      1SGT1117
+ATOM    920  O   LEU   155      31.702  20.372  47.392  1.00 14.90      1SGT1118
+ATOM    921  CB  LEU   155      28.899  19.507  48.263  1.00 11.41      1SGT1119
+ATOM    922  CG  LEU   155      28.017  20.615  47.753  1.00  9.47      1SGT1120
+ATOM    923  CD1 LEU   155      26.894  19.934  46.968  1.00  9.93      1SGT1121
+ATOM    924  CD2 LEU   155      27.370  21.441  48.866  1.00 12.14      1SGT1122
+ATOM    925  N   LEU   156      30.582  20.088  45.380  1.00 12.18      1SGT1123
+ATOM    926  CA  LEU   156      31.396  21.096  44.688  1.00 14.23      1SGT1124
+ATOM    927  C   LEU   156      30.505  22.310  44.385  1.00 11.37      1SGT1125
+ATOM    928  O   LEU   156      29.285  22.085  44.250  1.00 13.18      1SGT1126
+ATOM    929  CB  LEU   156      31.996  20.571  43.351  1.00 16.25      1SGT1127
+ATOM    930  CG  LEU   156      32.889  19.323  43.442  1.00 19.63      1SGT1128
+ATOM    931  CD1 LEU   156      33.345  18.814  42.079  1.00 17.66      1SGT1129
+ATOM    932  CD2 LEU   156      34.065  19.656  44.367  1.00 16.14      1SGT1130
+ATOM    933  N   LYS   157      31.145  23.455  44.283  1.00 12.86      1SGT1131
+ATOM    934  CA  LYS   157      30.432  24.686  43.937  1.00 12.08      1SGT1132
+ATOM    935  C   LYS   157      31.209  25.420  42.820  1.00 12.76      1SGT1133
+ATOM    936  O   LYS   157      32.431  25.186  42.631  1.00 13.82      1SGT1134
+ATOM    937  CB  LYS   157      30.283  25.606  45.188  1.00 10.59      1SGT1135
+ATOM    938  CG  LYS   157      31.678  25.843  45.761  1.00 11.09      1SGT1136
+ATOM    939  CD  LYS   157      31.603  27.073  46.650  1.00 16.55      1SGT1137
+ATOM    940  CE  LYS   157      32.948  27.340  47.309  1.00 18.38      1SGT1138
+ATOM    941  NZ  LYS   157      32.781  28.654  48.050  1.00 26.85      1SGT1139
+ATOM    942  N   ALA   158      30.458  26.268  42.122  1.00 11.14      1SGT1140
+ATOM    943  CA  ALA   158      31.048  27.124  41.083  1.00 12.80      1SGT1141
+ATOM    944  C   ALA   158      30.170  28.341  40.900  1.00 11.37      1SGT1142
+ATOM    945  O   ALA   158      28.996  28.316  41.258  1.00 14.72      1SGT1143
+ATOM    946  CB  ALA   158      31.119  26.356  39.752  1.00 11.49      1SGT1144
+ATOM    947  N   ASN   159      30.696  29.417  40.315  1.00 12.23      1SGT1145
+ATOM    948  CA  ASN   159      29.959  30.611  39.954  1.00 10.84      1SGT1146
+ATOM    949  C   ASN   159      29.811  30.560  38.384  1.00 13.17      1SGT1147
+ATOM    950  O   ASN   159      30.825  30.200  37.771  1.00 15.62      1SGT1148
+ATOM    951  CB  ASN   159      30.529  31.970  40.291  1.00 18.52      1SGT1149
+ATOM    952  CG  ASN   159      30.624  31.999  41.841  1.00 18.78      1SGT1150
+ATOM    953  OD1 ASN   159      31.741  32.086  42.312  1.00 26.97      1SGT1151
+ATOM    954  ND2 ASN   159      29.524  31.767  42.459  1.00 18.89      1SGT1152
+ATOM    955  N   VAL   160      28.618  30.857  37.957  1.00 12.82      1SGT1153
+ATOM    956  CA  VAL   160      28.355  30.893  36.498  1.00 13.11      1SGT1154
+ATOM    957  C   VAL   160      27.487  32.147  36.308  1.00 13.97      1SGT1155
+ATOM    958  O   VAL   160      26.464  32.358  36.981  1.00 11.70      1SGT1156
+ATOM    959  CB  VAL   160      27.622  29.644  36.006  1.00 15.56      1SGT1157
+ATOM    960  CG1 VAL   160      28.486  28.422  35.788  1.00 13.09      1SGT1158
+ATOM    961  CG2 VAL   160      26.343  29.240  36.771  1.00 11.57      1SGT1159
+ATOM    962  N   PRO   161      27.832  32.909  35.279  1.00 14.48      1SGT1160
+ATOM    963  CA  PRO   161      27.060  34.102  34.939  1.00 13.90      1SGT1161
+ATOM    964  C   PRO   161      25.773  33.838  34.157  1.00 12.40      1SGT1162
+ATOM    965  O   PRO   161      25.715  32.894  33.384  1.00 12.41      1SGT1163
+ATOM    966  CB  PRO   161      28.075  34.933  34.129  1.00 15.52      1SGT1164
+ATOM    967  CG  PRO   161      29.321  34.120  34.028  1.00 17.82      1SGT1165
+ATOM    968  CD  PRO   161      29.023  32.704  34.455  1.00 14.38      1SGT1166
+ATOM    969  N   PHE   162      24.758  34.687  34.293  1.00 10.74      1SGT1167
+ATOM    970  CA  PHE   162      23.521  34.655  33.538  1.00  9.41      1SGT1168
+ATOM    971  C   PHE   162      23.843  34.817  31.982  1.00  8.46      1SGT1169
+ATOM    972  O   PHE   162      24.744  35.581  31.654  1.00 11.13      1SGT1170
+ATOM    973  CB  PHE   162      22.767  35.955  33.937  1.00 13.35      1SGT1171
+ATOM    974  CG  PHE   162      21.501  36.201  33.167  1.00 13.51      1SGT1172
+ATOM    975  CD1 PHE   162      20.391  35.356  33.278  1.00  9.75      1SGT1173
+ATOM    976  CD2 PHE   162      21.502  37.265  32.252  1.00 14.18      1SGT1174
+ATOM    977  CE1 PHE   162      19.243  35.571  32.547  1.00 12.71      1SGT1175
+ATOM    978  CE2 PHE   162      20.347  37.472  31.465  1.00 11.57      1SGT1176
+ATOM    979  CZ  PHE   162      19.220  36.646  31.628  1.00 12.83      1SGT1177
+ATOM    980  N   VAL   163      23.076  34.068  31.252  1.00  9.83      1SGT1178
+ATOM    981  CA  VAL   163      23.119  34.151  29.732  1.00 12.09      1SGT1179
+ATOM    982  C   VAL   163      21.662  34.441  29.352  1.00  9.71      1SGT1180
+ATOM    983  O   VAL   163      20.719  33.726  29.669  1.00 10.45      1SGT1181
+ATOM    984  CB  VAL   163      23.633  32.861  29.087  1.00 10.21      1SGT1182
+ATOM    985  CG1 VAL   163      23.476  32.786  27.561  1.00 10.48      1SGT1183
+ATOM    986  CG2 VAL   163      25.062  32.578  29.478  1.00 11.47      1SGT1184
+ATOM    987  N   SER   164      21.462  35.519  28.574  1.00 11.58      1SGT1185
+ATOM    988  CA  SER   164      20.137  35.949  28.135  1.00 10.15      1SGT1186
+ATOM    989  C   SER   164      19.474  34.848  27.305  1.00  8.59      1SGT1187
+ATOM    990  O   SER   164      20.146  34.002  26.700  1.00 12.66      1SGT1188
+ATOM    991  CB  SER   164      20.237  37.230  27.269  1.00 17.51      1SGT1189
+ATOM    992  OG  SER   164      20.825  36.839  26.016  1.00 20.25      1SGT1190
+ATOM    993  N   ASP   165      18.163  34.894  27.267  1.00  9.45      1SGT1191
+ATOM    994  CA  ASP   165      17.366  33.914  26.498  1.00 11.02      1SGT1192
+ATOM    995  C   ASP   165      17.771  33.970  24.976  1.00 11.15      1SGT1193
+ATOM    996  O   ASP   165      17.854  32.902  24.395  1.00 11.70      1SGT1194
+ATOM    997  CB  ASP   165      15.889  34.172  26.696  1.00  9.65      1SGT1195
+ATOM    998  CG  ASP   165      15.350  33.659  28.065  1.00 16.80      1SGT1196
+ATOM    999  OD1 ASP   165      15.986  32.790  28.668  1.00 14.03      1SGT1197
+ATOM   1000  OD2 ASP   165      14.266  34.175  28.440  1.00 11.61      1SGT1198
+ATOM   1001  N   ALA   166      18.004  35.210  24.543  1.00 12.52      1SGT1199
+ATOM   1002  CA  ALA   166      18.370  35.381  23.086  1.00 10.77      1SGT1200
+ATOM   1003  C   ALA   166      19.692  34.727  22.776  1.00 11.71      1SGT1201
+ATOM   1004  O   ALA   166      19.818  33.964  21.784  1.00 12.63      1SGT1202
+ATOM   1005  CB  ALA   166      18.396  36.870  22.682  1.00 12.69      1SGT1203
+ATOM   1006  N   ALA   167      20.730  34.975  23.585  1.00 11.10      1SGT1204
+ATOM   1007  CA  ALA   167      22.039  34.380  23.420  1.00  9.53      1SGT1205
+ATOM   1008  C   ALA   167      21.942  32.884  23.620  1.00 14.18      1SGT1206
+ATOM   1009  O   ALA   167      22.569  32.100  22.888  1.00 14.41      1SGT1207
+ATOM   1010  CB  ALA   167      23.091  34.973  24.354  1.00 13.24      1SGT1208
+ATOM   1011  N   CYS   168      21.109  32.450  24.565  1.00 11.06      1SGT1209
+ATOM   1012  CA  CYS   168      20.935  31.018  24.785  1.00  9.77      1SGT1210
+ATOM   1013  C   CYS   168      20.215  30.372  23.581  1.00 10.50      1SGT1211
+ATOM   1014  O   CYS   168      20.591  29.232  23.208  1.00 14.12      1SGT1212
+ATOM   1015  CB  CYS   168      20.118  30.853  26.092  1.00 13.60      1SGT1213
+ATOM   1016  SG  CYS   168      20.431  29.154  26.761  1.00 11.90      1SGT1214
+ATOM   1017  N   ARG   169      19.232  31.083  23.059  1.00 11.75      1SGT1215
+ATOM   1018  CA  ARG   169      18.481  30.580  21.890  1.00 12.69      1SGT1216
+ATOM   1019  C   ARG   169      19.392  30.481  20.657  1.00 15.66      1SGT1217
+ATOM   1020  O   ARG   169      19.186  29.584  19.790  1.00 15.25      1SGT1218
+ATOM   1021  CB  ARG   169      17.280  31.436  21.579  1.00 14.07      1SGT1219
+ATOM   1022  CG  ARG   169      16.281  30.614  20.749  1.00 20.94      1SGT1220
+ATOM   1023  CD  ARG   169      15.150  31.466  20.340  1.00 28.36      1SGT1221
+ATOM   1024  NE  ARG   169      14.375  31.886  21.483  1.00 32.78      1SGT1222
+ATOM   1025  CZ  ARG   169      14.199  33.043  22.109  1.00 31.11      1SGT1223
+ATOM   1026  NH1 ARG   169      14.743  34.258  21.989  1.00 22.82      1SGT1224
+ATOM   1027  NH2 ARG   169      13.162  32.996  22.990  1.00 33.26      1SGT1225
+ATOM   1028  N   SER   170      20.330  31.404  20.598  1.00 16.29      1SGT1226
+ATOM   1029  CA  SER   170      21.266  31.374  19.446  1.00 19.94      1SGT1227
+ATOM   1030  C   SER   170      21.945  30.015  19.462  1.00 23.76      1SGT1228
+ATOM   1031  O   SER   170      22.352  29.484  18.396  1.00 25.35      1SGT1229
+ATOM   1032  CB  SER   170      22.124  32.621  19.451  1.00 22.34      1SGT1230
+ATOM   1033  OG  SER   170      23.225  32.288  20.298  1.00 25.34      1SGT1231
+ATOM   1034  N   ALA   171      22.042  29.361  20.637  1.00 22.16      1SGT1232
+ATOM   1035  CA  ALA   171      22.660  28.051  20.752  1.00 18.47      1SGT1233
+ATOM   1036  C   ALA   171      21.684  26.915  20.656  1.00 17.68      1SGT1234
+ATOM   1037  O   ALA   171      22.050  25.943  19.957  1.00 22.43      1SGT1235
+ATOM   1038  CB  ALA   171      23.422  27.857  22.090  1.00 17.53      1SGT1236
+ATOM   1039  N   TYR   172      20.545  26.956  21.306  1.00 14.52      1SGT1237
+ATOM   1040  CA  TYR   172      19.621  25.846  21.373  1.00 14.78      1SGT1238
+ATOM   1041  C   TYR   172      18.412  25.892  20.447  1.00 16.59      1SGT1239
+ATOM   1042  O   TYR   172      17.663  24.897  20.408  1.00 15.60      1SGT1240
+ATOM   1043  CB  TYR   172      19.141  25.635  22.853  1.00 14.49      1SGT1241
+ATOM   1044  CG  TYR   172      20.303  25.235  23.745  1.00 13.46      1SGT1242
+ATOM   1045  CD1 TYR   172      20.929  24.001  23.538  1.00 11.27      1SGT1243
+ATOM   1046  CD2 TYR   172      20.738  25.987  24.842  1.00 15.40      1SGT1244
+ATOM   1047  CE1 TYR   172      21.967  23.550  24.323  1.00 12.42      1SGT1245
+ATOM   1048  CE2 TYR   172      21.798  25.549  25.647  1.00  9.83      1SGT1246
+ATOM   1049  CZ  TYR   172      22.345  24.320  25.437  1.00 11.21      1SGT1247
+ATOM   1050  OH  TYR   172      23.361  23.823  26.195  1.00 12.96      1SGT1248
+ATOM   1051  N   GLY   173      18.244  27.034  19.812  1.00 17.16      1SGT1249
+ATOM   1052  CA  GLY   173      17.095  27.183  18.897  1.00 16.16      1SGT1250
+ATOM   1053  C   GLY   173      15.787  26.954  19.597  1.00 17.51      1SGT1251
+ATOM   1054  O   GLY   173      15.525  27.469  20.711  1.00 16.35      1SGT1252
+ATOM   1055  N   ASN   174      14.913  26.209  18.937  1.00 17.86  12  1SGT1253
+ATOM   1056  CA  ASN   174      13.558  25.928  19.417  1.00 22.34  12  1SGT1254
+ATOM   1057  C   ASN   174      13.483  24.995  20.638  1.00 21.94  12  1SGT1255
+ATOM   1058  O   ASN   174      12.366  24.747  21.139  1.00 23.26  12  1SGT1256
+ATOM   1059  CB  ASN   174      12.658  25.469  18.279  1.00 35.22  12  1SGT1257
+ATOM   1060  CG  ASN   174      12.735  24.004  17.917  1.00 59.13  12  1SGT1258
+ATOM   1061  OD1 ASN   174      13.498  23.159  18.447  1.00 72.75  12  1SGT1259
+ATOM   1062  ND2 ASN   174      11.903  23.619  16.928  1.00 67.85  12  1SGT1260
+ATOM   1063  N   GLU   175      14.605  24.451  21.047  1.00 20.81      1SGT1261
+ATOM   1064  CA  GLU   175      14.657  23.584  22.214  1.00 20.99      1SGT1262
+ATOM   1065  C   GLU   175      14.487  24.449  23.472  1.00 20.74      1SGT1263
+ATOM   1066  O   GLU   175      13.943  23.889  24.457  1.00 21.28      1SGT1264
+ATOM   1067  CB  GLU   175      15.946  22.800  22.270  1.00 29.67      1SGT1265
+ATOM   1068  CG  GLU   175      15.792  21.400  21.632  1.00 48.37      1SGT1266
+ATOM   1069  CD  GLU   175      17.121  20.683  21.665  1.00 61.76      1SGT1267
+ATOM   1070  OE1 GLU   175      17.725  20.372  22.682  1.00 67.28      1SGT1268
+ATOM   1071  OE2 GLU   175      17.577  20.464  20.523  1.00 71.99      1SGT1269
+ATOM   1072  N   LEU   176      14.910  25.690  23.434  1.00 17.26      1SGT1270
+ATOM   1073  CA  LEU   176      14.719  26.552  24.642  1.00 16.60      1SGT1271
+ATOM   1074  C   LEU   176      13.320  27.051  24.823  1.00 17.59      1SGT1272
+ATOM   1075  O   LEU   176      12.642  27.543  23.910  1.00 19.67      1SGT1273
+ATOM   1076  CB  LEU   176      15.784  27.638  24.578  1.00 11.72      1SGT1274
+ATOM   1077  CG  LEU   176      15.742  28.641  25.742  1.00 20.35      1SGT1275
+ATOM   1078  CD1 LEU   176      16.689  28.090  26.799  1.00 19.22      1SGT1276
+ATOM   1079  CD2 LEU   176      16.247  29.947  25.168  1.00 24.52      1SGT1277
+ATOM   1080  N   VAL   177      12.768  26.955  26.043  1.00 15.53      1SGT1278
+ATOM   1081  CA  VAL   177      11.404  27.473  26.353  1.00 14.33      1SGT1279
+ATOM   1082  C   VAL   177      11.755  28.727  27.165  1.00 16.82      1SGT1280
+ATOM   1083  O   VAL   177      11.896  28.626  28.397  1.00 12.57      1SGT1281
+ATOM   1084  CB  VAL   177      10.583  26.447  27.152  1.00 16.66      1SGT1282
+ATOM   1085  CG1 VAL   177       9.155  26.892  27.385  1.00 19.35      1SGT1283
+ATOM   1086  CG2 VAL   177      10.541  25.059  26.561  1.00 21.32      1SGT1284
+ATOM   1087  N   ALA   177A     11.991  29.853  26.532  1.00 14.57      1SGT1285
+ATOM   1088  CA  ALA   177A     12.473  31.079  27.139  1.00 14.89      1SGT1286
+ATOM   1089  C   ALA   177A     11.786  31.457  28.450  1.00 14.85      1SGT1287
+ATOM   1090  O   ALA   177A     12.514  31.837  29.391  1.00 18.09      1SGT1288
+ATOM   1091  CB  ALA   177A     12.429  32.285  26.182  1.00 20.86      1SGT1289
+ATOM   1092  N   ASN   178      10.483  31.344  28.494  1.00 13.87      1SGT1290
+ATOM   1093  CA  ASN   178       9.741  31.784  29.702  1.00 15.51      1SGT1291
+ATOM   1094  C   ASN   178       9.906  30.862  30.910  1.00 14.26      1SGT1292
+ATOM   1095  O   ASN   178       9.567  31.295  32.050  1.00 14.79      1SGT1293
+ATOM   1096  CB  ASN   178       8.255  31.837  29.315  1.00 20.73      1SGT1294
+ATOM   1097  CG  ASN   178       7.897  33.082  28.522  1.00 42.19      1SGT1295
+ATOM   1098  OD1 ASN   178       8.684  34.039  28.353  1.00 44.21      1SGT1296
+ATOM   1099  ND2 ASN   178       6.647  33.040  28.029  1.00 52.80      1SGT1297
+ATOM   1100  N   GLU   179      10.285  29.651  30.625  1.00 11.34      1SGT1298
+ATOM   1101  CA  GLU   179      10.397  28.609  31.660  1.00 11.52      1SGT1299
+ATOM   1102  C   GLU   179      11.814  28.238  31.961  1.00 12.12      1SGT1300
+ATOM   1103  O   GLU   179      12.027  27.404  32.869  1.00  9.97      1SGT1301
+ATOM   1104  CB  GLU   179       9.693  27.331  31.131  1.00 11.37      1SGT1302
+ATOM   1105  CG  GLU   179       8.193  27.643  30.932  1.00 11.15      1SGT1303
+ATOM   1106  CD  GLU   179       7.391  26.437  30.646  1.00 13.24      1SGT1304
+ATOM   1107  OE1 GLU   179       7.848  25.321  30.698  1.00 19.07      1SGT1305
+ATOM   1108  OE2 GLU   179       6.216  26.707  30.308  1.00 23.10      1SGT1306
+ATOM   1109  N   GLU   180      12.773  28.799  31.241  1.00 11.67      1SGT1307
+ATOM   1110  CA  GLU   180      14.203  28.412  31.396  1.00 10.57      1SGT1308
+ATOM   1111  C   GLU   180      15.085  29.612  31.403  1.00 11.66      1SGT1309
+ATOM   1112  O   GLU   180      14.826  30.678  30.791  1.00 12.18      1SGT1310
+ATOM   1113  CB  GLU   180      14.672  27.451  30.256  1.00  7.24      1SGT1311
+ATOM   1114  CG  GLU   180      13.812  26.176  30.301  1.00 13.31      1SGT1312
+ATOM   1115  CD  GLU   180      14.093  25.155  29.218  1.00 18.52      1SGT1313
+ATOM   1116  OE1 GLU   180      14.092  23.958  29.404  1.00 11.98      1SGT1314
+ATOM   1117  OE2 GLU   180      14.301  25.688  28.087  1.00 13.83      1SGT1315
+ATOM   1118  N   ILE   181      16.121  29.461  32.236  1.00 10.01      1SGT1316
+ATOM   1119  CA  ILE   181      17.142  30.521  32.406  1.00 10.05      1SGT1317
+ATOM   1120  C   ILE   181      18.469  29.812  32.145  1.00 10.30      1SGT1318
+ATOM   1121  O   ILE   181      18.676  28.675  32.567  1.00 10.99      1SGT1319
+ATOM   1122  CB  ILE   181      16.986  31.202  33.813  1.00 11.94      1SGT1320
+ATOM   1123  CG1 ILE   181      18.087  32.269  33.907  1.00 17.14      1SGT1321
+ATOM   1124  CG2 ILE   181      17.112  30.106  34.905  1.00 12.39      1SGT1322
+ATOM   1125  CD1 ILE   181      17.751  33.269  35.041  1.00 18.57      1SGT1323
+ATOM   1126  N   CYS   182      19.344  30.470  31.344  1.00  9.17      1SGT1324
+ATOM   1127  CA  CYS   182      20.649  29.867  31.047  1.00  8.77      1SGT1325
+ATOM   1128  C   CYS   182      21.756  30.544  31.846  1.00  7.30      1SGT1326
+ATOM   1129  O   CYS   182      21.628  31.713  32.222  1.00 10.46      1SGT1327
+ATOM   1130  CB  CYS   182      20.967  30.078  29.524  1.00 10.88      1SGT1328
+ATOM   1131  SG  CYS   182      19.598  29.357  28.631  1.00 11.46      1SGT1329
+ATOM   1132  N   ALA   183      22.835  29.826  32.055  1.00  7.09      1SGT1330
+ATOM   1133  CA  ALA   183      24.000  30.400  32.751  1.00  7.63      1SGT1331
+ATOM   1134  C   ALA   183      25.235  29.608  32.301  1.00  8.29      1SGT1332
+ATOM   1135  O   ALA   183      25.150  28.414  32.032  1.00 10.31      1SGT1333
+ATOM   1136  CB  ALA   183      23.833  30.236  34.259  1.00  9.83      1SGT1334
+ATOM   1137  N   GLY   184      26.355  30.308  32.359  1.00 10.23      1SGT1335
+ATOM   1138  CA  GLY   184      27.643  29.683  31.999  1.00 11.14      1SGT1336
+ATOM   1139  C   GLY   184      28.414  30.712  31.195  1.00 11.42      1SGT1337
+ATOM   1140  O   GLY   184      28.050  31.884  31.153  1.00 12.84      1SGT1338
+ATOM   1141  N   TYR   185      29.463  30.238  30.532  1.00 13.43      1SGT1339
+ATOM   1142  CA  TYR   185      30.400  31.064  29.723  1.00 15.28      1SGT1340
+ATOM   1143  C   TYR   185      30.312  30.609  28.259  1.00 14.29      1SGT1341
+ATOM   1144  O   TYR   185      30.941  29.627  27.859  1.00 16.78      1SGT1342
+ATOM   1145  CB  TYR   185      31.806  30.692  30.301  1.00 14.85      1SGT1343
+ATOM   1146  CG  TYR   185      32.010  31.180  31.741  1.00 15.39      1SGT1344
+ATOM   1147  CD1 TYR   185      32.268  32.534  31.988  1.00 22.75      1SGT1345
+ATOM   1148  CD2 TYR   185      31.878  30.287  32.815  1.00 16.91      1SGT1346
+ATOM   1149  CE1 TYR   185      32.463  32.988  33.307  1.00 19.82      1SGT1347
+ATOM   1150  CE2 TYR   185      32.050  30.742  34.112  1.00 21.62      1SGT1348
+ATOM   1151  CZ  TYR   185      32.348  32.074  34.350  1.00 26.04      1SGT1349
+ATOM   1152  OH  TYR   185      32.506  32.504  35.646  1.00 31.49      1SGT1350
+ATOM   1153  N   PRO   185A     29.461  31.298  27.503  1.00 17.99      1SGT1351
+ATOM   1154  CA  PRO   185A     29.240  30.910  26.069  1.00 19.58      1SGT1352
+ATOM   1155  C   PRO   185A     30.528  30.893  25.261  1.00 21.56      1SGT1353
+ATOM   1156  O   PRO   185A     30.685  30.007  24.378  1.00 20.20      1SGT1354
+ATOM   1157  CB  PRO   185A     28.231  31.904  25.527  1.00 19.82      1SGT1355
+ATOM   1158  CG  PRO   185A     27.553  32.430  26.739  1.00 21.63      1SGT1356
+ATOM   1159  CD  PRO   185A     28.664  32.455  27.850  1.00 19.48      1SGT1357
+ATOM   1160  N   ASP   185B     31.434  31.799  25.585  1.00 20.29      1SGT1358
+ATOM   1161  CA  ASP   185B     32.704  31.906  24.875  1.00 25.03      1SGT1359
+ATOM   1162  C   ASP   185B     33.661  30.735  25.002  1.00 24.72      1SGT1360
+ATOM   1163  O   ASP   185B     34.217  30.274  23.987  1.00 23.67      1SGT1361
+ATOM   1164  CB  ASP   185B     33.540  33.118  25.365  1.00 44.16      1SGT1362
+ATOM   1165  CG  ASP   185B     32.910  34.386  24.839  1.00 57.37      1SGT1363
+ATOM   1166  OD1 ASP   185B     32.002  34.270  24.004  1.00 67.61      1SGT1364
+ATOM   1167  OD2 ASP   185B     33.338  35.453  25.316  1.00 68.59      1SGT1365
+ATOM   1168  N   THR   185C     33.908  30.397  26.267  1.00 21.81      1SGT1366
+ATOM   1169  CA  THR   185C     34.862  29.332  26.569  1.00 19.77      1SGT1367
+ATOM   1170  C   THR   185C     34.328  28.109  27.225  1.00 18.01      1SGT1368
+ATOM   1171  O   THR   185C     35.145  27.134  27.236  1.00 19.80      1SGT1369
+ATOM   1172  CB  THR   185C     35.974  29.925  27.553  1.00 29.12      1SGT1370
+ATOM   1173  OG1 THR   185C     35.347  30.176  28.862  1.00 31.93      1SGT1371
+ATOM   1174  CG2 THR   185C     36.595  31.201  27.018  1.00 30.68      1SGT1372
+ATOM   1175  N   GLY   186      33.103  28.132  27.752  1.00 17.09      1SGT1373
+ATOM   1176  CA  GLY   186      32.707  26.891  28.501  1.00 16.62      1SGT1374
+ATOM   1177  C   GLY   186      33.682  26.895  29.754  1.00 14.05      1SGT1375
+ATOM   1178  O   GLY   186      34.105  27.983  30.216  1.00 17.40      1SGT1376
+ATOM   1179  N   GLY   187      33.922  25.698  30.202  1.00 12.67      1SGT1377
+ATOM   1180  CA  GLY   187      34.917  25.467  31.269  1.00 14.90      1SGT1378
+ATOM   1181  C   GLY   187      34.301  25.228  32.681  1.00 14.08      1SGT1379
+ATOM   1182  O   GLY   187      34.924  24.427  33.412  1.00 16.91      1SGT1380
+ATOM   1183  N   VAL   188      33.241  25.932  32.904  1.00 13.64      1SGT1381
+ATOM   1184  CA  VAL   188      32.550  25.829  34.222  1.00 12.91      1SGT1382
+ATOM   1185  C   VAL   188      31.064  25.616  33.947  1.00 12.52      1SGT1383
+ATOM   1186  O   VAL   188      30.415  26.417  33.223  1.00 12.95      1SGT1384
+ATOM   1187  CB  VAL   188      32.841  27.106  35.029  1.00 18.49      1SGT1385
+ATOM   1188  CG1 VAL   188      32.090  27.054  36.407  1.00 12.27      1SGT1386
+ATOM   1189  CG2 VAL   188      34.328  27.269  35.222  1.00 18.94      1SGT1387
+ATOM   1190  N   ASP   189      30.555  24.546  34.578  1.00 10.71      1SGT1388
+ATOM   1191  CA  ASP   189      29.124  24.230  34.369  1.00 11.55      1SGT1389
+ATOM   1192  C   ASP   189      28.656  23.126  35.306  1.00 11.43      1SGT1390
+ATOM   1193  O   ASP   189      29.460  22.472  35.946  1.00 13.96      1SGT1391
+ATOM   1194  CB  ASP   189      29.060  23.723  32.889  1.00 12.36      1SGT1392
+ATOM   1195  CG  ASP   189      27.710  23.707  32.223  1.00 17.96      1SGT1393
+ATOM   1196  OD1 ASP   189      26.689  24.169  32.758  1.00 15.32      1SGT1394
+ATOM   1197  OD2 ASP   189      27.566  23.190  31.069  1.00 12.75      1SGT1395
+ATOM   1198  N   THR   190      27.368  22.877  35.237  1.00 10.12      1SGT1396
+ATOM   1199  CA  THR   190      26.808  21.723  35.966  1.00 12.41      1SGT1397
+ATOM   1200  C   THR   190      26.902  20.537  34.989  1.00 13.14      1SGT1398
+ATOM   1201  O   THR   190      27.081  20.792  33.782  1.00 14.81      1SGT1399
+ATOM   1202  CB  THR   190      25.381  22.017  36.502  1.00 12.75      1SGT1400
+ATOM   1203  OG1 THR   190      24.656  22.589  35.390  1.00 13.58      1SGT1401
+ATOM   1204  CG2 THR   190      25.425  22.947  37.735  1.00 11.35      1SGT1402
+ATOM   1205  N   CYS   191      26.801  19.352  35.482  1.00 11.97      1SGT1403
+ATOM   1206  CA  CYS   191      26.945  18.134  34.653  1.00 12.25      1SGT1404
+ATOM   1207  C   CYS   191      26.044  17.080  35.258  1.00 15.33      1SGT1405
+ATOM   1208  O   CYS   191      25.284  17.322  36.245  1.00 16.24      1SGT1406
+ATOM   1209  CB  CYS   191      28.446  17.844  34.572  1.00 10.43      1SGT1407
+ATOM   1210  SG  CYS   191      28.833  16.758  33.124  1.00 14.59      1SGT1408
+ATOM   1211  N   GLN   192      26.051  15.893  34.677  1.00 14.81  13  1SGT1409
+ATOM   1212  CA  GLN   192      25.252  14.741  35.063  1.00 14.70  13  1SGT1410
+ATOM   1213  C   GLN   192      25.419  14.475  36.621  1.00 11.95  13  1SGT1411
+ATOM   1214  O   GLN   192      26.547  14.391  37.072  1.00 12.58  13  1SGT1412
+ATOM   1215  CB  GLN   192      25.643  13.479  34.256  1.00 26.31  13  1SGT1413
+ATOM   1216  CG  GLN   192      27.082  13.049  34.511  1.00 47.55  13  1SGT1414
+ATOM   1217  CD  GLN   192      27.457  11.690  33.947  1.00 58.50  13  1SGT1415
+ATOM   1218  OE1 GLN   192      26.623  10.896  33.492  1.00 62.61  13  1SGT1416
+ATOM   1219  NE2 GLN   192      28.772  11.438  33.986  1.00 56.76  13  1SGT1417
+ATOM   1220  N   GLY   193      24.222  14.390  37.177  1.00 13.87      1SGT1418
+ATOM   1221  CA  GLY   193      24.160  14.157  38.653  1.00 13.39      1SGT1419
+ATOM   1222  C   GLY   193      23.923  15.463  39.396  1.00 14.95      1SGT1420
+ATOM   1223  O   GLY   193      23.667  15.391  40.640  1.00 14.19      1SGT1421
+ATOM   1224  N   ASP   194      24.065  16.594  38.728  1.00 10.45      1SGT1422
+ATOM   1225  CA  ASP   194      23.825  17.891  39.361  1.00  9.27      1SGT1423
+ATOM   1226  C   ASP   194      22.361  18.298  39.259  1.00  9.97      1SGT1424
+ATOM   1227  O   ASP   194      21.898  19.251  39.916  1.00  8.84      1SGT1425
+ATOM   1228  CB  ASP   194      24.660  19.045  38.839  1.00  6.52      1SGT1426
+ATOM   1229  CG  ASP   194      26.106  18.944  39.182  1.00 15.07      1SGT1427
+ATOM   1230  OD1 ASP   194      26.468  18.458  40.277  1.00 13.99      1SGT1428
+ATOM   1231  OD2 ASP   194      26.960  19.380  38.373  1.00 14.21      1SGT1429
+ATOM   1232  N   SER   195      21.660  17.599  38.349  1.00  8.90      1SGT1430
+ATOM   1233  CA  SER   195      20.249  17.891  38.102  1.00  7.99      1SGT1431
+ATOM   1234  C   SER   195      19.408  18.062  39.392  1.00  8.84      1SGT1432
+ATOM   1235  O   SER   195      19.617  17.181  40.268  1.00  8.80      1SGT1433
+ATOM   1236  CB  SER   195      19.660  16.567  37.507  1.00 16.80      1SGT1434
+ATOM   1237  OG  SER   195      20.232  16.358  36.225  1.00 27.80      1SGT1435
+ATOM   1238  N   GLY   196      18.451  18.925  39.301  1.00  7.41      1SGT1436
+ATOM   1239  CA  GLY   196      17.546  19.117  40.468  1.00  8.82      1SGT1437
+ATOM   1240  C   GLY   196      18.176  20.063  41.500  1.00  7.35      1SGT1438
+ATOM   1241  O   GLY   196      17.332  20.593  42.306  1.00 11.96      1SGT1439
+ATOM   1242  N   GLY   197      19.461  20.256  41.516  1.00  7.40      1SGT1440
+ATOM   1243  CA  GLY   197      20.112  21.161  42.483  1.00  8.37      1SGT1441
+ATOM   1244  C   GLY   197      19.724  22.577  42.232  1.00  9.07      1SGT1442
+ATOM   1245  O   GLY   197      19.279  22.970  41.129  1.00  9.64      1SGT1443
+ATOM   1246  N   PRO   198      19.779  23.460  43.264  1.00  9.51      1SGT1444
+ATOM   1247  CA  PRO   198      19.444  24.847  43.084  1.00  8.47      1SGT1445
+ATOM   1248  C   PRO   198      20.558  25.696  42.435  1.00  9.52      1SGT1446
+ATOM   1249  O   PRO   198      21.773  25.423  42.608  1.00 13.29      1SGT1447
+ATOM   1250  CB  PRO   198      19.298  25.349  44.566  1.00 10.85      1SGT1448
+ATOM   1251  CG  PRO   198      20.297  24.475  45.318  1.00 10.01      1SGT1449
+ATOM   1252  CD  PRO   198      20.313  23.106  44.610  1.00 10.40      1SGT1450
+ATOM   1253  N   MET   199      20.152  26.721  41.707  1.00  8.89      1SGT1451
+ATOM   1254  CA  MET   199      21.081  27.748  41.182  1.00  8.02      1SGT1452
+ATOM   1255  C   MET   199      20.584  28.961  41.970  1.00  9.50      1SGT1453
+ATOM   1256  O   MET   199      19.368  29.255  41.983  1.00 10.79      1SGT1454
+ATOM   1257  CB  MET   199      20.952  27.979  39.671  1.00  7.45      1SGT1455
+ATOM   1258  CG  MET   199      21.897  29.118  39.364  1.00  8.19      1SGT1456
+ATOM   1259  SD  MET   199      22.065  29.187  37.482  1.00 13.61      1SGT1457
+ATOM   1260  CE  MET   199      20.468  29.879  37.057  1.00  8.95      1SGT1458
+ATOM   1261  N   PHE   200      21.499  29.574  42.685  1.00 10.81      1SGT1459
+ATOM   1262  CA  PHE   200      21.120  30.674  43.615  1.00 13.27      1SGT1460
+ATOM   1263  C   PHE   200      22.117  31.806  43.608  1.00 12.37      1SGT1461
+ATOM   1264  O   PHE   200      23.230  31.811  43.045  1.00 13.08      1SGT1462
+ATOM   1265  CB  PHE   200      20.896  29.945  45.015  1.00  9.67      1SGT1463
+ATOM   1266  CG  PHE   200      22.091  29.182  45.494  1.00  8.81      1SGT1464
+ATOM   1267  CD1 PHE   200      23.057  29.837  46.307  1.00 11.95      1SGT1465
+ATOM   1268  CD2 PHE   200      22.304  27.844  45.169  1.00  7.67      1SGT1466
+ATOM   1269  CE1 PHE   200      24.205  29.181  46.684  1.00 10.88      1SGT1467
+ATOM   1270  CE2 PHE   200      23.455  27.156  45.566  1.00 12.75      1SGT1468
+ATOM   1271  CZ  PHE   200      24.448  27.848  46.346  1.00 12.31      1SGT1469
+ATOM   1272  N   ARG   201      21.677  32.896  44.265  1.00 14.40      1SGT1470
+ATOM   1273  CA  ARG   201      22.524  34.099  44.464  1.00 14.82      1SGT1471
+ATOM   1274  C   ARG   201      21.964  34.837  45.697  1.00 14.65      1SGT1472
+ATOM   1275  O   ARG   201      20.897  34.484  46.211  1.00 15.72      1SGT1473
+ATOM   1276  CB  ARG   201      22.537  34.948  43.181  1.00 13.22      1SGT1474
+ATOM   1277  CG  ARG   201      21.135  35.401  42.747  1.00  9.72      1SGT1475
+ATOM   1278  CD  ARG   201      21.178  36.550  41.831  1.00 17.31      1SGT1476
+ATOM   1279  NE  ARG   201      21.342  37.751  42.622  1.00 17.64      1SGT1477
+ATOM   1280  CZ  ARG   201      21.460  38.971  42.127  1.00 31.55      1SGT1478
+ATOM   1281  NH1 ARG   201      21.445  39.194  40.815  1.00 25.63      1SGT1479
+ATOM   1282  NH2 ARG   201      21.550  39.947  43.043  1.00 27.78      1SGT1480
+ATOM   1283  N   LYS   202      22.601  35.908  46.079  1.00 18.27      1SGT1481
+ATOM   1284  CA  LYS   202      22.106  36.724  47.213  1.00 18.91      1SGT1482
+ATOM   1285  C   LYS   202      21.075  37.716  46.728  1.00 21.59      1SGT1483
+ATOM   1286  O   LYS   202      21.222  38.201  45.589  1.00 20.05      1SGT1484
+ATOM   1287  CB  LYS   202      23.282  37.547  47.752  1.00 22.49      1SGT1485
+ATOM   1288  CG  LYS   202      24.329  36.738  48.525  1.00 20.51      1SGT1486
+ATOM   1289  CD  LYS   202      23.618  35.991  49.658  1.00 21.91      1SGT1487
+ATOM   1290  CE  LYS   202      24.666  35.287  50.483  1.00 33.61      1SGT1488
+ATOM   1291  NZ  LYS   202      25.525  36.286  51.176  1.00 42.31      1SGT1489
+ATOM   1292  N   ASP   203      20.082  37.975  47.567  1.00 23.52      1SGT1490
+ATOM   1293  CA  ASP   203      19.066  38.992  47.276  1.00 24.56      1SGT1491
+ATOM   1294  C   ASP   203      19.517  40.329  47.923  1.00 29.38      1SGT1492
+ATOM   1295  O   ASP   203      20.677  40.523  48.412  1.00 28.15      1SGT1493
+ATOM   1296  CB  ASP   203      17.706  38.461  47.659  1.00 25.02      1SGT1494
+ATOM   1297  CG  ASP   203      17.611  38.452  49.194  1.00 23.49      1SGT1495
+ATOM   1298  OD1 ASP   203      18.546  38.856  49.880  1.00 24.03      1SGT1496
+ATOM   1299  OD2 ASP   203      16.546  38.031  49.614  1.00 25.15      1SGT1497
+ATOM   1300  N   ASN   204      18.621  41.302  47.845  1.00 30.87  14  1SGT1498
+ATOM   1301  CA  ASN   204      18.977  42.657  48.358  1.00 35.45  14  1SGT1499
+ATOM   1302  C   ASN   204      19.178  42.642  49.868  1.00 35.10  14  1SGT1500
+ATOM   1303  O   ASN   204      19.726  43.630  50.378  1.00 38.65  14  1SGT1501
+ATOM   1304  CB  ASN   204      18.032  43.728  47.826  1.00 47.03  14  1SGT1502
+ATOM   1305  CG  ASN   204      16.614  43.499  48.368  1.00 61.86  14  1SGT1503
+ATOM   1306  OD1 ASN   204      16.412  42.598  49.225  1.00 66.79  14  1SGT1504
+ATOM   1307  ND2 ASN   204      15.668  44.303  47.852  1.00 63.28  14  1SGT1505
+ATOM   1308  N   ALA   204A     18.769  41.600  50.530  1.00 34.89  14  1SGT1506
+ATOM   1309  CA  ALA   204A     18.911  41.466  51.982  1.00 34.46  14  1SGT1507
+ATOM   1310  C   ALA   204A     20.113  40.600  52.289  1.00 34.88  14  1SGT1508
+ATOM   1311  O   ALA   204A     20.243  40.114  53.427  1.00 37.64  14  1SGT1509
+ATOM   1312  CB  ALA   204A     17.639  40.849  52.586  1.00 35.50  14  1SGT1510
+ATOM   1313  N   ASP   205      20.953  40.375  51.306  1.00 33.78  15  1SGT1511
+ATOM   1314  CA  ASP   205      22.116  39.496  51.420  1.00 32.19  15  1SGT1512
+ATOM   1315  C   ASP   205      21.736  38.107  51.962  1.00 28.93  15  1SGT1513
+ATOM   1316  O   ASP   205      22.477  37.455  52.717  1.00 30.26  15  1SGT1514
+ATOM   1317  CB  ASP   205      23.332  40.190  51.987  1.00 49.47  15  1SGT1515
+ATOM   1318  CG  ASP   205      24.585  39.327  51.905  1.00 60.23  15  1SGT1516
+ATOM   1319  OD1 ASP   205      24.942  38.887  50.803  1.00 68.14  15  1SGT1517
+ATOM   1320  OD2 ASP   205      25.186  39.100  52.981  1.00 67.69  15  1SGT1518
+ATOM   1321  N   GLU   206      20.598  37.619  51.517  1.00 24.35      1SGT1519
+ATOM   1322  CA  GLU   206      20.130  36.276  51.844  1.00 22.19      1SGT1520
+ATOM   1323  C   GLU   206      20.128  35.506  50.486  1.00 20.66      1SGT1521
+ATOM   1324  O   GLU   206      19.786  36.122  49.471  1.00 17.10      1SGT1522
+ATOM   1325  CB  GLU   206      18.681  36.256  52.288  1.00 31.43      1SGT1523
+ATOM   1326  CG  GLU   206      18.467  36.557  53.775  1.00 53.71      1SGT1524
+ATOM   1327  CD  GLU   206      17.041  36.427  54.228  1.00 68.47      1SGT1525
+ATOM   1328  OE1 GLU   206      16.106  36.098  53.508  1.00 78.48      1SGT1526
+ATOM   1329  OE2 GLU   206      16.906  36.686  55.448  1.00 79.37      1SGT1527
+ATOM   1330  N   TRP   207      20.480  34.247  50.609  1.00 19.85      1SGT1528
+ATOM   1331  CA  TRP   207      20.444  33.393  49.379  1.00 18.41      1SGT1529
+ATOM   1332  C   TRP   207      19.005  33.250  48.883  1.00 15.51      1SGT1530
+ATOM   1333  O   TRP   207      18.019  33.076  49.618  1.00 14.75      1SGT1531
+ATOM   1334  CB  TRP   207      20.945  32.007  49.716  1.00 13.41      1SGT1532
+ATOM   1335  CG  TRP   207      22.358  31.885  50.111  1.00 15.90      1SGT1533
+ATOM   1336  CD1 TRP   207      22.861  31.334  51.274  1.00 11.73      1SGT1534
+ATOM   1337  CD2 TRP   207      23.495  32.218  49.283  1.00 19.17      1SGT1535
+ATOM   1338  NE1 TRP   207      24.236  31.340  51.207  1.00 19.79      1SGT1536
+ATOM   1339  CE2 TRP   207      24.654  31.851  50.005  1.00 19.91      1SGT1537
+ATOM   1340  CE3 TRP   207      23.625  32.757  48.008  1.00 17.98      1SGT1538
+ATOM   1341  CZ2 TRP   207      25.920  32.047  49.493  1.00 19.31      1SGT1539
+ATOM   1342  CZ3 TRP   207      24.863  32.993  47.495  1.00 15.13      1SGT1540
+ATOM   1343  CH2 TRP   207      25.994  32.616  48.225  1.00 22.50      1SGT1541
+ATOM   1344  N   ILE   208      18.883  33.262  47.527  1.00 13.05      1SGT1542
+ATOM   1345  CA  ILE   208      17.567  33.109  46.871  1.00 12.19      1SGT1543
+ATOM   1346  C   ILE   208      17.766  32.182  45.621  1.00 11.10      1SGT1544
+ATOM   1347  O   ILE   208      18.780  32.344  44.937  1.00 12.46      1SGT1545
+ATOM   1348  CB  ILE   208      16.865  34.461  46.536  1.00 12.54      1SGT1546
+ATOM   1349  CG1 ILE   208      15.397  34.189  46.216  1.00 18.59      1SGT1547
+ATOM   1350  CG2 ILE   208      17.561  35.369  45.490  1.00 17.92      1SGT1548
+ATOM   1351  CD1 ILE   208      14.583  35.513  46.386  1.00 25.50      1SGT1549
+ATOM   1352  N   GLN   209      16.806  31.326  45.485  1.00 11.67      1SGT1550
+ATOM   1353  CA  GLN   209      16.843  30.332  44.407  1.00 13.28      1SGT1551
+ATOM   1354  C   GLN   209      16.145  30.890  43.139  1.00 10.41      1SGT1552
+ATOM   1355  O   GLN   209      14.973  31.161  43.123  1.00 11.60      1SGT1553
+ATOM   1356  CB  GLN   209      16.146  29.047  44.832  1.00 12.77      1SGT1554
+ATOM   1357  CG  GLN   209      16.425  27.936  43.804  1.00 13.42      1SGT1555
+ATOM   1358  CD  GLN   209      15.907  26.607  44.238  1.00 17.38      1SGT1556
+ATOM   1359  OE1 GLN   209      15.472  26.325  45.355  1.00 11.32      1SGT1557
+ATOM   1360  NE2 GLN   209      15.921  25.629  43.303  1.00  9.11      1SGT1558
+ATOM   1361  N   VAL   210      17.021  30.947  42.119  1.00 10.34      1SGT1559
+ATOM   1362  CA  VAL   210      16.495  31.423  40.810  1.00 10.39      1SGT1560
+ATOM   1363  C   VAL   210      16.409  30.246  39.818  1.00  9.07      1SGT1561
+ATOM   1364  O   VAL   210      15.640  30.456  38.829  1.00  7.63      1SGT1562
+ATOM   1365  CB  VAL   210      17.400  32.556  40.264  1.00 11.83      1SGT1563
+ATOM   1366  CG1 VAL   210      17.533  33.764  41.179  1.00 14.49      1SGT1564
+ATOM   1367  CG2 VAL   210      18.771  32.027  39.885  1.00 13.14      1SGT1565
+ATOM   1368  N   GLY   211      17.124  29.150  40.034  1.00  8.66      1SGT1566
+ATOM   1369  CA  GLY   211      17.029  28.096  38.970  1.00  9.02      1SGT1567
+ATOM   1370  C   GLY   211      17.072  26.712  39.526  1.00 11.56      1SGT1568
+ATOM   1371  O   GLY   211      17.477  26.580  40.728  1.00  8.81      1SGT1569
+ATOM   1372  N   ILE   212      16.724  25.707  38.759  1.00  7.38      1SGT1570
+ATOM   1373  CA  ILE   212      16.869  24.315  39.107  1.00  5.66      1SGT1571
+ATOM   1374  C   ILE   212      17.798  23.696  38.040  1.00 10.17      1SGT1572
+ATOM   1375  O   ILE   212      17.369  23.876  36.855  1.00  9.57      1SGT1573
+ATOM   1376  CB  ILE   212      15.551  23.539  39.200  1.00  5.91      1SGT1574
+ATOM   1377  CG1 ILE   212      14.703  24.211  40.351  1.00  8.94      1SGT1575
+ATOM   1378  CG2 ILE   212      15.772  22.032  39.527  1.00  8.27      1SGT1576
+ATOM   1379  CD1 ILE   212      13.210  23.836  40.339  1.00  7.51      1SGT1577
+ATOM   1380  N   VAL   213      18.839  22.988  38.317  1.00  8.18      1SGT1578
+ATOM   1381  CA  VAL   213      19.658  22.367  37.203  1.00 10.15      1SGT1579
+ATOM   1382  C   VAL   213      18.723  21.505  36.344  1.00 11.15      1SGT1580
+ATOM   1383  O   VAL   213      18.125  20.549  36.864  1.00  8.25      1SGT1581
+ATOM   1384  CB  VAL   213      20.783  21.518  37.823  1.00 10.57      1SGT1582
+ATOM   1385  CG1 VAL   213      21.671  20.892  36.733  1.00 11.55      1SGT1583
+ATOM   1386  CG2 VAL   213      21.683  22.347  38.753  1.00  7.66      1SGT1584
+ATOM   1387  N   SER   214      18.641  21.801  35.012  1.00  9.90      1SGT1585
+ATOM   1388  CA  SER   214      17.700  21.063  34.173  1.00  7.94      1SGT1586
+ATOM   1389  C   SER   214      18.408  20.308  33.050  1.00 10.49      1SGT1587
+ATOM   1390  O   SER   214      18.265  19.103  33.096  1.00  9.99      1SGT1588
+ATOM   1391  CB  SER   214      16.711  22.005  33.581  1.00  5.94      1SGT1589
+ATOM   1392  OG  SER   214      15.638  21.324  32.899  1.00  9.99      1SGT1590
+ATOM   1393  N   TRP   215      19.059  20.983  32.131  1.00 12.47      1SGT1591
+ATOM   1394  CA  TRP   215      19.747  20.192  31.035  1.00  9.74      1SGT1592
+ATOM   1395  C   TRP   215      20.788  21.056  30.372  1.00 11.96      1SGT1593
+ATOM   1396  O   TRP   215      21.066  22.190  30.754  1.00 15.01      1SGT1594
+ATOM   1397  CB  TRP   215      18.690  19.778  30.006  1.00  9.78      1SGT1595
+ATOM   1398  CG  TRP   215      17.922  20.865  29.339  1.00 16.88      1SGT1596
+ATOM   1399  CD1 TRP   215      16.812  21.501  29.830  1.00 16.85      1SGT1597
+ATOM   1400  CD2 TRP   215      18.175  21.463  28.026  1.00 17.91      1SGT1598
+ATOM   1401  NE1 TRP   215      16.374  22.460  28.923  1.00 17.90      1SGT1599
+ATOM   1402  CE2 TRP   215      17.205  22.462  27.841  1.00 16.00      1SGT1600
+ATOM   1403  CE3 TRP   215      19.154  21.253  27.058  1.00 19.48      1SGT1601
+ATOM   1404  CZ2 TRP   215      17.103  23.240  26.671  1.00 15.53      1SGT1602
+ATOM   1405  CZ3 TRP   215      19.112  22.031  25.906  1.00 16.16      1SGT1603
+ATOM   1406  CH2 TRP   215      18.127  22.988  25.715  1.00 15.05      1SGT1604
+ATOM   1407  N   GLY   216      21.344  20.497  29.305  1.00 12.32      1SGT1605
+ATOM   1408  CA  GLY   216      22.371  21.262  28.522  1.00 12.22      1SGT1606
+ATOM   1409  C   GLY   216      22.975  20.254  27.520  1.00 13.27      1SGT1607
+ATOM   1410  O   GLY   216      22.698  19.049  27.653  1.00 15.86      1SGT1608
+ATOM   1411  N   TYR   217      23.728  20.733  26.594  1.00 13.84      1SGT1609
+ATOM   1412  CA  TYR   217      24.384  19.777  25.626  1.00 11.06      1SGT1610
+ATOM   1413  C   TYR   217      25.821  19.618  26.099  1.00 11.70      1SGT1611
+ATOM   1414  O   TYR   217      26.625  20.572  26.041  1.00 14.30      1SGT1612
+ATOM   1415  CB  TYR   217      24.215  20.473  24.251  1.00 12.60      1SGT1613
+ATOM   1416  CG  TYR   217      24.868  19.590  23.217  1.00 22.80      1SGT1614
+ATOM   1417  CD1 TYR   217      25.995  20.026  22.522  1.00 24.15      1SGT1615
+ATOM   1418  CD2 TYR   217      24.382  18.281  23.057  1.00 25.26      1SGT1616
+ATOM   1419  CE1 TYR   217      26.608  19.174  21.582  1.00 27.98      1SGT1617
+ATOM   1420  CE2 TYR   217      24.988  17.436  22.123  1.00 29.36      1SGT1618
+ATOM   1421  CZ  TYR   217      26.088  17.897  21.396  1.00 34.18      1SGT1619
+ATOM   1422  OH  TYR   217      26.627  16.999  20.515  1.00 42.05      1SGT1620
+ATOM   1423  N   GLY   219      26.092  18.398  26.576  1.00 11.67      1SGT1621
+ATOM   1424  CA  GLY   219      27.430  18.128  27.156  1.00 15.04      1SGT1622
+ATOM   1425  C   GLY   219      27.512  18.977  28.470  1.00 13.55      1SGT1623
+ATOM   1426  O   GLY   219      26.498  19.454  28.969  1.00 13.45      1SGT1624
+ATOM   1427  N   CYS   220      28.718  19.195  28.895  1.00 13.32      1SGT1625
+ATOM   1428  CA  CYS   220      29.018  20.009  30.083  1.00 15.14      1SGT1626
+ATOM   1429  C   CYS   220      30.266  20.843  29.828  1.00 14.02      1SGT1627
+ATOM   1430  O   CYS   220      31.248  20.232  29.367  1.00 14.33      1SGT1628
+ATOM   1431  CB  CYS   220      29.348  19.108  31.300  1.00 11.31      1SGT1629
+ATOM   1432  SG  CYS   220      28.163  17.820  31.502  1.00 15.19      1SGT1630
+ATOM   1433  N   ALA   221      30.166  22.139  30.090  1.00 12.87      1SGT1631
+ATOM   1434  CA  ALA   221      31.244  23.085  29.997  1.00 10.82      1SGT1632
+ATOM   1435  C   ALA   221      31.818  23.262  28.568  1.00 13.41      1SGT1633
+ATOM   1436  O   ALA   221      32.932  23.781  28.445  1.00 14.97      1SGT1634
+ATOM   1437  CB  ALA   221      32.315  22.495  30.967  1.00 11.26      1SGT1635
+ATOM   1438  N   ARG   222      31.050  22.922  27.550  1.00 13.37      1SGT1636
+ATOM   1439  CA  ARG   222      31.578  23.178  26.149  1.00 12.66      1SGT1637
+ATOM   1440  C   ARG   222      31.277  24.607  25.755  1.00 12.78      1SGT1638
+ATOM   1441  O   ARG   222      30.214  25.199  26.053  1.00 13.30      1SGT1639
+ATOM   1442  CB  ARG   222      30.674  22.342  25.250  1.00 15.91      1SGT1640
+ATOM   1443  CG  ARG   222      30.864  20.863  25.546  1.00 15.11      1SGT1641
+ATOM   1444  CD  ARG   222      30.096  20.096  24.523  1.00 20.25      1SGT1642
+ATOM   1445  NE  ARG   222      30.219  18.668  24.754  1.00 28.03      1SGT1643
+ATOM   1446  CZ  ARG   222      29.885  17.799  23.795  1.00 32.54      1SGT1644
+ATOM   1447  NH1 ARG   222      29.426  18.121  22.587  1.00 31.97      1SGT1645
+ATOM   1448  NH2 ARG   222      30.065  16.526  24.094  1.00 29.30      1SGT1646
+ATOM   1449  N   PRO   223      32.200  25.203  24.990  1.00 14.59      1SGT1647
+ATOM   1450  CA  PRO   223      31.996  26.568  24.484  1.00 13.17      1SGT1648
+ATOM   1451  C   PRO   223      30.729  26.521  23.630  1.00 14.02      1SGT1649
+ATOM   1452  O   PRO   223      30.385  25.509  22.936  1.00 17.30      1SGT1650
+ATOM   1453  CB  PRO   223      33.261  26.886  23.694  1.00 14.20      1SGT1651
+ATOM   1454  CG  PRO   223      34.244  25.837  24.000  1.00 15.75      1SGT1652
+ATOM   1455  CD  PRO   223      33.468  24.613  24.532  1.00 13.91      1SGT1653
+ATOM   1456  N   GLY   223A     29.982  27.607  23.662  1.00 14.85      1SGT1654
+ATOM   1457  CA  GLY   223A     28.725  27.760  22.949  1.00 14.56      1SGT1655
+ATOM   1458  C   GLY   223A     27.501  27.035  23.475  1.00 16.42      1SGT1656
+ATOM   1459  O   GLY   223A     26.408  27.234  22.894  1.00 17.66      1SGT1657
+ATOM   1460  N   TYR   224      27.600  26.274  24.561  1.00 14.22      1SGT1658
+ATOM   1461  CA  TYR   224      26.395  25.565  25.063  1.00 13.67      1SGT1659
+ATOM   1462  C   TYR   224      26.272  25.789  26.586  1.00 13.25      1SGT1660
+ATOM   1463  O   TYR   224      26.838  24.914  27.259  1.00 11.63      1SGT1661
+ATOM   1464  CB  TYR   224      26.503  24.057  24.796  1.00 10.89      1SGT1662
+ATOM   1465  CG  TYR   224      26.463  23.747  23.271  1.00 13.43      1SGT1663
+ATOM   1466  CD1 TYR   224      25.237  23.817  22.638  1.00 18.30      1SGT1664
+ATOM   1467  CD2 TYR   224      27.617  23.492  22.573  1.00 16.00      1SGT1665
+ATOM   1468  CE1 TYR   224      25.148  23.563  21.271  1.00 22.85      1SGT1666
+ATOM   1469  CE2 TYR   224      27.539  23.227  21.200  1.00 26.41      1SGT1667
+ATOM   1470  CZ  TYR   224      26.311  23.257  20.557  1.00 29.23      1SGT1668
+ATOM   1471  OH  TYR   224      26.226  22.957  19.226  1.00 31.65      1SGT1669
+ATOM   1472  N   PRO   225      25.620  26.861  26.922  1.00 12.93      1SGT1670
+ATOM   1473  CA  PRO   225      25.449  27.150  28.397  1.00 12.87      1SGT1671
+ATOM   1474  C   PRO   225      24.512  26.129  29.013  1.00 14.07      1SGT1672
+ATOM   1475  O   PRO   225      23.719  25.447  28.312  1.00 11.24      1SGT1673
+ATOM   1476  CB  PRO   225      24.828  28.558  28.406  1.00 14.00      1SGT1674
+ATOM   1477  CG  PRO   225      24.422  28.900  27.006  1.00 13.90      1SGT1675
+ATOM   1478  CD  PRO   225      24.966  27.847  26.089  1.00 12.72      1SGT1676
+ATOM   1479  N   GLY   226      24.544  26.049  30.372  1.00 10.09      1SGT1677
+ATOM   1480  CA  GLY   226      23.616  25.122  31.079  1.00  7.34      1SGT1678
+ATOM   1481  C   GLY   226      22.244  25.801  31.079  1.00  4.98      1SGT1679
+ATOM   1482  O   GLY   226      22.116  27.036  31.020  1.00  7.71      1SGT1680
+ATOM   1483  N   VAL   227      21.212  24.974  31.057  1.00  5.46      1SGT1681
+ATOM   1484  CA  VAL   227      19.830  25.427  31.111  1.00  6.56      1SGT1682
+ATOM   1485  C   VAL   227      19.219  25.005  32.474  1.00  9.02      1SGT1683
+ATOM   1486  O   VAL   227      19.371  23.834  32.871  1.00  9.84      1SGT1684
+ATOM   1487  CB  VAL   227      19.006  24.865  29.904  1.00  7.30      1SGT1685
+ATOM   1488  CG1 VAL   227      17.641  25.540  29.904  1.00 10.38      1SGT1686
+ATOM   1489  CG2 VAL   227      19.823  25.244  28.670  1.00  8.79      1SGT1687
+ATOM   1490  N   TYR   228      18.556  25.989  33.012  1.00 10.80      1SGT1688
+ATOM   1491  CA  TYR   228      17.901  25.773  34.335  1.00 10.34      1SGT1689
+ATOM   1492  C   TYR   228      16.454  26.154  34.340  1.00 10.44      1SGT1690
+ATOM   1493  O   TYR   228      16.015  27.041  33.588  1.00 10.82      1SGT1691
+ATOM   1494  CB  TYR   228      18.649  26.758  35.335  1.00  8.36      1SGT1692
+ATOM   1495  CG  TYR   228      20.102  26.459  35.440  1.00  8.96      1SGT1693
+ATOM   1496  CD1 TYR   228      20.683  25.753  36.522  1.00 10.58      1SGT1694
+ATOM   1497  CD2 TYR   228      21.011  26.910  34.459  1.00  7.16      1SGT1695
+ATOM   1498  CE1 TYR   228      22.028  25.444  36.577  1.00  9.57      1SGT1696
+ATOM   1499  CE2 TYR   228      22.344  26.616  34.501  1.00  8.68      1SGT1697
+ATOM   1500  CZ  TYR   228      22.883  25.897  35.552  1.00 11.25      1SGT1698
+ATOM   1501  OH  TYR   228      24.241  25.664  35.580  1.00 12.66      1SGT1699
+ATOM   1502  N   THR   229      15.661  25.466  35.212  1.00  9.89      1SGT1700
+ATOM   1503  CA  THR   229      14.251  25.871  35.359  1.00  9.57      1SGT1701
+ATOM   1504  C   THR   229      14.210  27.296  35.884  1.00 11.21      1SGT1702
+ATOM   1505  O   THR   229      14.938  27.626  36.873  1.00  9.19      1SGT1703
+ATOM   1506  CB  THR   229      13.507  24.913  36.350  1.00  5.39      1SGT1704
+ATOM   1507  OG1 THR   229      13.875  23.593  35.874  1.00  9.79      1SGT1705
+ATOM   1508  CG2 THR   229      12.030  25.201  36.451  1.00  6.62      1SGT1706
+ATOM   1509  N   GLU   230      13.372  28.143  35.283  1.00 10.60      1SGT1707
+ATOM   1510  CA  GLU   230      13.310  29.572  35.707  1.00 10.27      1SGT1708
+ATOM   1511  C   GLU   230      12.293  29.587  36.859  1.00  9.09      1SGT1709
+ATOM   1512  O   GLU   230      11.078  29.566  36.633  1.00 10.06      1SGT1710
+ATOM   1513  CB  GLU   230      12.804  30.435  34.541  1.00 11.16      1SGT1711
+ATOM   1514  CG  GLU   230      12.900  31.937  34.871  1.00 15.35      1SGT1712
+ATOM   1515  CD  GLU   230      12.820  32.824  33.649  1.00 17.77      1SGT1713
+ATOM   1516  OE1 GLU   230      12.218  33.870  33.688  1.00 15.99      1SGT1714
+ATOM   1517  OE2 GLU   230      13.441  32.303  32.701  1.00 12.92      1SGT1715
+ATOM   1518  N   VAL   231      12.826  29.541  38.091  1.00 10.44      1SGT1716
+ATOM   1519  CA  VAL   231      11.938  29.401  39.276  1.00 10.53      1SGT1717
+ATOM   1520  C   VAL   231      10.876  30.465  39.385  1.00 10.36      1SGT1718
+ATOM   1521  O   VAL   231       9.762  30.068  39.782  1.00 11.65      1SGT1719
+ATOM   1522  CB  VAL   231      12.842  29.209  40.527  1.00  9.17      1SGT1720
+ATOM   1523  CG1 VAL   231      12.040  29.264  41.837  1.00 16.28      1SGT1721
+ATOM   1524  CG2 VAL   231      13.587  27.873  40.460  1.00  7.53      1SGT1722
+ATOM   1525  N   SER   232      11.201  31.710  39.086  1.00 11.65      1SGT1723
+ATOM   1526  CA  SER   232      10.218  32.822  39.185  1.00 13.44      1SGT1724
+ATOM   1527  C   SER   232       8.932  32.515  38.413  1.00 15.19      1SGT1725
+ATOM   1528  O   SER   232       7.837  32.893  38.882  1.00 15.92      1SGT1726
+ATOM   1529  CB  SER   232      10.871  34.145  38.851  1.00 15.34      1SGT1727
+ATOM   1530  OG  SER   232      11.487  34.024  37.566  1.00 15.48      1SGT1728
+ATOM   1531  N   THR   233       9.035  31.802  37.263  1.00 11.46      1SGT1729
+ATOM   1532  CA  THR   233       7.829  31.465  36.521  1.00 12.86      1SGT1730
+ATOM   1533  C   THR   233       6.861  30.536  37.250  1.00 14.74      1SGT1731
+ATOM   1534  O   THR   233       5.633  30.593  37.106  1.00 16.51      1SGT1732
+ATOM   1535  CB  THR   233       8.276  30.772  35.139  1.00 12.40      1SGT1733
+ATOM   1536  OG1 THR   233       9.146  31.754  34.526  1.00 17.77      1SGT1734
+ATOM   1537  CG2 THR   233       7.125  30.426  34.177  1.00 14.43      1SGT1735
+ATOM   1538  N   PHE   234       7.396  29.621  38.048  1.00 13.63      1SGT1736
+ATOM   1539  CA  PHE   234       6.672  28.546  38.717  1.00 14.04      1SGT1737
+ATOM   1540  C   PHE   234       6.511  28.764  40.246  1.00 13.46      1SGT1738
+ATOM   1541  O   PHE   234       5.925  27.837  40.824  1.00 15.22      1SGT1739
+ATOM   1542  CB  PHE   234       7.391  27.175  38.485  1.00 13.87      1SGT1740
+ATOM   1543  CG  PHE   234       7.569  26.840  37.005  1.00 11.84      1SGT1741
+ATOM   1544  CD1 PHE   234       8.819  26.992  36.396  1.00 15.10      1SGT1742
+ATOM   1545  CD2 PHE   234       6.469  26.441  36.273  1.00 12.92      1SGT1743
+ATOM   1546  CE1 PHE   234       8.953  26.739  35.020  1.00 19.45      1SGT1744
+ATOM   1547  CE2 PHE   234       6.580  26.173  34.877  1.00 18.51      1SGT1745
+ATOM   1548  CZ  PHE   234       7.834  26.350  34.274  1.00 14.93      1SGT1746
+ATOM   1549  N   ALA   235       6.994  29.875  40.713  1.00 14.84      1SGT1747
+ATOM   1550  CA  ALA   235       6.965  30.146  42.174  1.00 16.42      1SGT1748
+ATOM   1551  C   ALA   235       5.586  29.932  42.779  1.00 18.21      1SGT1749
+ATOM   1552  O   ALA   235       5.392  29.224  43.792  1.00 17.79      1SGT1750
+ATOM   1553  CB  ALA   235       7.566  31.528  42.464  1.00 15.23      1SGT1751
+ATOM   1554  N   SER   236       4.592  30.580  42.186  1.00 18.67  16  1SGT1752
+ATOM   1555  CA  SER   236       3.224  30.443  42.743  1.00 18.97  16  1SGT1753
+ATOM   1556  C   SER   236       2.757  29.021  42.697  1.00 18.92  16  1SGT1754
+ATOM   1557  O   SER   236       2.107  28.544  43.640  1.00 19.78  16  1SGT1755
+ATOM   1558  CB  SER   236       2.257  31.417  42.078  1.00 31.22  16  1SGT1756
+ATOM   1559  OG  SER   236       2.327  31.171  40.682  1.00 46.10  16  1SGT1757
+ATOM   1560  N   ALA   237       2.999  28.354  41.555  1.00 19.61      1SGT1758
+ATOM   1561  CA  ALA   237       2.589  26.954  41.376  1.00 18.33      1SGT1759
+ATOM   1562  C   ALA   237       3.263  26.109  42.472  1.00 18.29      1SGT1760
+ATOM   1563  O   ALA   237       2.630  25.195  43.008  1.00 19.18      1SGT1761
+ATOM   1564  CB  ALA   237       3.027  26.413  40.025  1.00 18.71      1SGT1762
+ATOM   1565  N   ILE   238       4.523  26.352  42.724  1.00 17.61      1SGT1763
+ATOM   1566  CA  ILE   238       5.300  25.576  43.702  1.00 17.69      1SGT1764
+ATOM   1567  C   ILE   238       4.788  25.811  45.155  1.00 18.50      1SGT1765
+ATOM   1568  O   ILE   238       4.600  24.807  45.862  1.00 18.09      1SGT1766
+ATOM   1569  CB  ILE   238       6.811  25.873  43.597  1.00 14.33      1SGT1767
+ATOM   1570  CG1 ILE   238       7.398  25.261  42.244  1.00 10.46      1SGT1768
+ATOM   1571  CG2 ILE   238       7.629  25.370  44.826  1.00 18.47      1SGT1769
+ATOM   1572  CD1 ILE   238       8.704  26.090  42.015  1.00 12.47      1SGT1770
+ATOM   1573  N   ALA   239       4.574  27.049  45.474  1.00 21.52      1SGT1771
+ATOM   1574  CA  ALA   239       4.070  27.426  46.817  1.00 23.22      1SGT1772
+ATOM   1575  C   ALA   239       2.734  26.777  47.093  1.00 24.68      1SGT1773
+ATOM   1576  O   ALA   239       2.550  26.287  48.207  1.00 26.22      1SGT1774
+ATOM   1577  CB  ALA   239       4.000  28.932  46.883  1.00 18.60      1SGT1775
+ATOM   1578  N   SER   240       1.836  26.748  46.145  1.00 25.85      1SGT1776
+ATOM   1579  CA  SER   240       0.519  26.136  46.250  1.00 27.10      1SGT1777
+ATOM   1580  C   SER   240       0.566  24.617  46.383  1.00 28.33      1SGT1778
+ATOM   1581  O   SER   240      -0.229  24.041  47.156  1.00 30.84      1SGT1779
+ATOM   1582  CB  SER   240      -0.390  26.455  45.060  1.00 36.28      1SGT1780
+ATOM   1583  OG  SER   240      -0.804  27.799  45.056  1.00 50.68      1SGT1781
+ATOM   1584  N   ALA   241       1.388  23.958  45.605  1.00 26.76      1SGT1782
+ATOM   1585  CA  ALA   241       1.521  22.506  45.628  1.00 27.22      1SGT1783
+ATOM   1586  C   ALA   241       2.093  22.109  47.002  1.00 27.68      1SGT1784
+ATOM   1587  O   ALA   241       1.716  21.071  47.583  1.00 28.58      1SGT1785
+ATOM   1588  CB  ALA   241       2.524  22.099  44.543  1.00 26.27      1SGT1786
+ATOM   1589  N   ALA   242       3.004  22.956  47.460  1.00 27.76      1SGT1787
+ATOM   1590  CA  ALA   242       3.714  22.669  48.720  1.00 30.06      1SGT1788
+ATOM   1591  C   ALA   242       2.732  22.661  49.883  1.00 32.99      1SGT1789
+ATOM   1592  O   ALA   242       2.924  21.883  50.835  1.00 33.43      1SGT1790
+ATOM   1593  CB  ALA   242       4.882  23.618  48.918  1.00 26.70      1SGT1791
+ATOM   1594  N   ARG   243       1.738  23.491  49.755  1.00 35.68  17  1SGT1792
+ATOM   1595  CA  ARG   243       0.674  23.618  50.775  1.00 41.21  17  1SGT1793
+ATOM   1596  C   ARG   243      -0.212  22.381  50.904  1.00 42.35  17  1SGT1794
+ATOM   1597  O   ARG   243      -0.697  22.056  52.010  1.00 44.97  17  1SGT1795
+ATOM   1598  CB  ARG   243      -0.199  24.857  50.517  1.00 48.35  17  1SGT1796
+ATOM   1599  CG  ARG   243       0.429  26.146  51.042  1.00 57.02  17  1SGT1797
+ATOM   1600  CD  ARG   243      -0.357  27.327  50.560  1.00 73.93  17  1SGT1798
+ATOM   1601  NE  ARG   243       0.554  28.427  50.237  1.00 87.20  17  1SGT1799
+ATOM   1602  CZ  ARG   243       0.459  29.221  49.162  1.00 91.96  17  1SGT1800
+ATOM   1603  NH1 ARG   243      -0.499  29.091  48.241  1.00 92.37  17  1SGT1801
+ATOM   1604  NH2 ARG   243       1.362  30.204  49.011  1.00 94.16  17  1SGT1802
+ATOM   1605  N   THR   244      -0.438  21.660  49.847  1.00 43.49      1SGT1803
+ATOM   1606  CA  THR   244      -1.252  20.461  49.773  1.00 45.60      1SGT1804
+ATOM   1607  C   THR   244      -0.507  19.163  50.078  1.00 47.35      1SGT1805
+ATOM   1608  O   THR   244      -1.111  18.066  49.998  1.00 47.47      1SGT1806
+ATOM   1609  CB  THR   244      -1.791  20.346  48.271  1.00 49.41      1SGT1807
+ATOM   1610  OG1 THR   244      -0.693  19.748  47.489  1.00 49.85      1SGT1808
+ATOM   1611  CG2 THR   244      -2.287  21.688  47.731  1.00 46.46      1SGT1809
+ATOM   1612  N   LEU   245       0.781  19.280  50.345  1.00 47.25      1SGT1810
+ATOM   1613  CA  LEU   245       1.631  18.110  50.598  1.00 48.95      1SGT1811
+ATOM   1614  C   LEU   245       1.736  17.776  52.083  1.00 52.23      1SGT1812
+ATOM   1615  O   LEU   245       1.903  18.727  52.907  1.00 54.72      1SGT1813
+ATOM   1616  CB  LEU   245       2.960  18.404  49.902  1.00 42.21      1SGT1814
+ATOM   1617  CG  LEU   245       3.553  17.404  48.949  1.00 42.60      1SGT1815
+ATOM   1618  CD1 LEU   245       2.571  16.977  47.866  1.00 40.15      1SGT1816
+ATOM   1619  CD2 LEU   245       4.758  18.112  48.337  1.00 44.30      1SGT1817
+ATOM   1620  OXT LEU   245       1.660  16.559  52.387  1.00 59.60      1SGT1818
+TER    1621      LEU   245                                              1SGT1819
+HETATM 1622 CA    CA   246      14.219  32.828  30.463  1.00 13.21      1SGT1820
+HETATM 1623  O   HOH     1      22.919  19.524  42.538  1.00  8.79      1SGT1821
+HETATM 1624  O   HOH     2      16.289  22.675  43.719  1.00  9.53      1SGT1822
+HETATM 1625  O   HOH     3      18.221  32.962  30.218  1.00 10.99      1SGT1823
+HETATM 1626  O   HOH     4      23.980  16.804  42.974  1.00 11.12      1SGT1824
+HETATM 1627  O   HOH     5      30.111  18.032  41.551  1.00 11.26      1SGT1825
+HETATM 1628  O   HOH     6      25.894  26.373  33.792  1.00 11.94      1SGT1826
+HETATM 1629  O   HOH     7      14.015  25.756  47.843  1.00 12.06      1SGT1827
+HETATM 1630  O   HOH     8      28.124  22.227  27.539  1.00 13.32      1SGT1828
+HETATM 1631  O   HOH     9      11.627  24.379  32.872  0.94 12.80      1SGT1829
+HETATM 1632  O   HOH    10      29.911  27.308  30.773  1.00 15.42      1SGT1830
+HETATM 1633  O   HOH    11      13.632  22.849  31.680  0.86 12.66      1SGT1831
+HETATM 1634  O   HOH    12      21.995  23.031  33.689  1.00 15.66      1SGT1832
+HETATM 1635  O   HOH    13      15.928  34.053  31.371  1.00 16.19      1SGT1833
+HETATM 1636  O   HOH    14      13.994  32.626  38.720  1.00 17.60      1SGT1834
+HETATM 1637  O   HOH    15      12.715  34.613  31.078  0.98 17.57      1SGT1835
+HETATM 1638  O   HOH    16      26.038  21.333  52.509  1.00 18.89      1SGT1836
+HETATM 1639  O   HOH    17      10.105  34.234  35.121  1.00 19.25      1SGT1837
+HETATM 1640  O   HOH    18      36.146  21.262  30.022  0.50 30.73      1SGT1838
+HETATM 1641  O   HOH    19      14.580  36.648  40.430  1.00 19.68      1SGT1839
+HETATM 1642  O   HOH    20      35.405  22.726  27.435  0.98 19.36      1SGT1840
+HETATM 1643  O   HOH    21      17.225  31.519  51.811  1.00 19.95      1SGT1841
+HETATM 1644  O   HOH    22      20.710  19.629  54.090  1.00 20.07      1SGT1842
+HETATM 1645  O   HOH    23      11.828  28.057  51.047  1.00 20.21      1SGT1843
+HETATM 1646  O   HOH    24      27.980  23.618  52.236  0.95 19.33      1SGT1844
+HETATM 1647  O   HOH    25      16.842  37.835  25.749  0.87 17.97      1SGT1845
+HETATM 1648  O   HOH    26      10.860  12.078  34.603  0.80 16.71      1SGT1846
+HETATM 1649  O   HOH    27      12.348  11.842  32.340  0.91 19.27      1SGT1847
+HETATM 1650  O   HOH    28      19.302  29.838  53.006  1.00 21.43      1SGT1848
+HETATM 1651  O   HOH    29      16.880  36.953  28.807  0.92 19.88      1SGT1849
+HETATM 1652  O   HOH    30      23.215  23.380  41.350  0.76 16.11      1SGT1850
+HETATM 1653  O   HOH    31      23.888  16.399  52.539  0.70 14.62      1SGT1851
+HETATM 1654  O   HOH    32      26.217  34.194  43.370  0.83 18.48      1SGT1852
+HETATM 1655  O   HOH    33      30.476  16.697  55.822  0.93 20.70      1SGT1853
+HETATM 1656  O   HOH    34      23.943  19.576  52.618  1.00 22.68      1SGT1854
+HETATM 1657  O   HOH    35      23.803  39.562  33.889  1.00 22.72      1SGT1855
+HETATM 1658  O   HOH    36      29.048  25.532  29.157  1.00 23.36      1SGT1856
+HETATM 1659  O   HOH    37      20.645  10.144  49.381  0.91 22.03      1SGT1857
+HETATM 1660  O   HOH    38       5.115  32.565  39.843  0.95 23.18      1SGT1858
+HETATM 1661  O   HOH    39      13.358  36.345  33.873  0.90 22.13      1SGT1859
+HETATM 1662  O   HOH    40      20.725  20.648  62.870  0.78 19.41      1SGT1860
+HETATM 1663  O   HOH    41      29.033  27.653  27.345  0.85 21.07      1SGT1861
+HETATM 1664  O   HOH    42      12.973   8.493  57.075  0.71 18.05      1SGT1862
+HETATM 1665  O   HOH    43      10.364  30.410  49.489  0.90 23.27      1SGT1863
+HETATM 1666  O   HOH    44      32.829  19.707  49.938  1.00 26.29      1SGT1864
+HETATM 1667  O   HOH    45       3.957  24.051  36.577  0.90 24.44      1SGT1865
+HETATM 1668  O   HOH    46      12.942  36.038  27.020  0.98 26.34      1SGT1866
+HETATM 1669  O   HOH    47      13.389   5.526  43.925  0.83 22.95      1SGT1867
+HETATM 1670  O   HOH    48      12.749  14.065  30.847  1.00 27.19      1SGT1868
+HETATM 1671  O   HOH    49       3.644  29.986  38.724  0.81 22.88      1SGT1869
+HETATM 1672  O   HOH    50      34.690  21.137  25.590  0.99 27.50      1SGT1870
+HETATM 1673  O   HOH    51      25.551  22.170  29.636  1.00 28.18      1SGT1871
+HETATM 1674  O   HOH    52       7.296  19.550  30.532  0.99 27.88      1SGT1872
+HETATM 1675  O   HOH    53      13.473  18.263  31.515  0.83 24.66      1SGT1873
+HETATM 1676  O   HOH    54      15.905   6.521  44.362  1.00 28.57      1SGT1874
+HETATM 1677  O   HOH    55      24.451  21.453  32.207  1.00 28.93      1SGT1875
+HETATM 1678  O   HOH    56      11.907  37.516  43.790  1.00 28.95      1SGT1876
+HETATM 1679  O   HOH    57       6.554  23.611  28.896  0.55 17.04      1SGT1877
+HETATM 1680  O   HOH    58      34.675  20.639  39.362  0.92 27.39      1SGT1878
+HETATM 1681  O   HOH    59      20.685  33.280  53.426  0.95 28.13      1SGT1879
+HETATM 1682  O   HOH    60      21.381  17.312  29.727  0.82 25.67      1SGT1880
+HETATM 1683  O   HOH    61      26.193  27.519  20.071  0.92 28.76      1SGT1881
+HETATM 1684  O   HOH    62       3.415  15.368  36.004  0.83 26.89      1SGT1882
+HETATM 1685  O   HOH    63      27.870  34.729  30.286  0.83 26.99      1SGT1883
+HETATM 1686  O   HOH    64      13.166  22.665  27.224  0.94 29.81      1SGT1884
+HETATM 1687  O   HOH    65      24.355  17.937  30.241  0.87 28.33      1SGT1885
+HETATM 1688  O   HOH    66      25.635  38.081  32.326  1.00 32.08      1SGT1886
+HETATM 1689  O   HOH    67       7.406   9.036  42.079  1.00 32.22      1SGT1887
+HETATM 1690  O   HOH    68      13.332  29.253  21.609  1.00 32.46      1SGT1888
+HETATM 1691  O   HOH    69      12.421  29.560  53.238  0.58 21.06      1SGT1889
+HETATM 1692  O   HOH    70      25.301  18.630  59.855  0.67 24.43      1SGT1890
+HETATM 1693  O   HOH    71       4.127  26.858  50.183  1.00 33.34      1SGT1891
+HETATM 1694  O   HOH    72      26.664  21.528  55.289  1.00 33.27      1SGT1892
+HETATM 1695  O   HOH    73      27.260  30.514  52.666  0.69 25.69      1SGT1893
+HETATM 1696  O   HOH    74      19.764  16.533  32.319  0.48 18.52      1SGT1894
+HETATM 1697  O   HOH    75      33.564  29.288  40.169  0.93 32.34      1SGT1895
+HETATM 1698  O   HOH    76      12.773  20.557  30.327  1.00 34.64      1SGT1896
+HETATM 1699  O   HOH    77      18.378  17.245  60.844  0.89 32.06      1SGT1897
+HETATM 1700  O   HOH    78      14.420  38.942  48.399  0.77 29.03      1SGT1898
+HETATM 1701  O   HOH    79      10.494  35.545  30.009  0.68 26.78      1SGT1899
+HETATM 1702  O   HOH    80       9.255  26.793  53.495  0.69 27.13      1SGT1900
+HETATM 1703  O   HOH    81      25.411  36.883  44.757  0.99 35.24      1SGT1901
+HETATM 1704  O   HOH    82       7.188  30.358  48.510  0.62 25.20      1SGT1902
+HETATM 1705  O   HOH    83      38.710  21.945  45.590  0.88 32.70      1SGT1903
+HETATM 1706  O   HOH    84      16.238  32.774  53.977  0.76 29.73      1SGT1904
+HETATM 1707  O   HOH    85      16.085   5.045  48.398  0.60 24.88      1SGT1905
+HETATM 1708  O   HOH    86      18.411  32.689  55.046  0.78 30.67      1SGT1906
+HETATM 1709  O   HOH    87      33.264  31.104  37.514  0.53 22.66      1SGT1907
+HETATM 1710  O   HOH    88      27.576  14.462  21.718  1.00 36.40      1SGT1908
+HETATM 1711  O   HOH    89      10.255  24.437  57.242  1.00 36.64      1SGT1909
+HETATM 1712  O   HOH    90      30.358  20.591  20.656  0.75 30.24      1SGT1910
+HETATM 1713  O   HOH    91      25.062  37.674  42.044  0.55 23.57      1SGT1911
+HETATM 1714  O   HOH    92      21.162  29.258  54.547  0.85 33.52      1SGT1912
+HETATM 1715  O   HOH    93      30.605  15.406  58.617  0.52 23.06      1SGT1913
+HETATM 1716  O   HOH    94      31.593  23.481  21.549  0.71 30.11      1SGT1914
+HETATM 1717  O   HOH    95      17.679   4.861  43.147  0.81 33.39      1SGT1915
+HETATM 1718  O   HOH    96      38.084  23.323  39.210  0.53 24.29      1SGT1916
+HETATM 1719  O   HOH    97      34.773  12.498  44.844  0.61 27.34      1SGT1917
+HETATM 1720  O   HOH    98       7.063  35.995  38.577  0.55 25.67      1SGT1918
+HETATM 1721  O   HOH    99      12.191  27.466  57.073  0.71 31.02      1SGT1919
+HETATM 1722  O   HOH   100      29.253  30.594  50.554  0.83 34.62      1SGT1920
+HETATM 1723  O   HOH   101       9.026   6.631  54.088  0.83 34.71      1SGT1921
+HETATM 1724  O   HOH   102      24.141  29.729  54.124  0.60 27.89      1SGT1922
+HETATM 1725  O   HOH   103      25.435  15.531  31.480  0.65 30.02      1SGT1923
+HETATM 1726  O   HOH   104      22.418   8.890  47.646  0.70 31.70      1SGT1924
+HETATM 1727  O   HOH   105      23.504  23.952  59.963  0.74 33.50      1SGT1925
+HETATM 1728  O   HOH   106       7.370  15.612  57.943  0.71 32.75      1SGT1926
+HETATM 1729  O   HOH   107      24.925  30.731  24.090  0.73 33.26      1SGT1927
+HETATM 1730  O   HOH   108      24.369  15.956  26.273  0.73 33.27      1SGT1928
+HETATM 1731  O   HOH   109      24.260  25.744  18.330  0.49 24.97      1SGT1929
+HETATM 1732  O   HOH   110      20.065   4.686  42.784  0.62 29.82      1SGT1930
+HETATM 1733  O   HOH   111       8.463  30.545  26.416  0.77 34.69      1SGT1931
+HETATM 1734  O   HOH   112      33.322  19.011  27.282  0.98 40.33      1SGT1932
+HETATM 1735  O   HOH   113      12.045  33.873  19.226  0.55 27.54      1SGT1933
+HETATM 1736  O   HOH   114      26.865   8.642  55.318  1.00 41.00      1SGT1934
+HETATM 1737  O   HOH   115      14.574  36.883  22.582  0.75 34.88      1SGT1935
+HETATM 1738  O   HOH   116      31.369  13.446  25.818  0.48 25.19      1SGT1936
+HETATM 1739  O   HOH   117      10.828  34.662  48.602  1.00 42.08      1SGT1937
+HETATM 1740  O   HOH   118      15.773  36.203  32.904  0.95 40.89      1SGT1938
+HETATM 1741  O   HOH   119      27.923  22.602  60.175  0.44 24.11      1SGT1939
+HETATM 1742  O   HOH   120      38.693  21.077  37.324  0.92 40.37      1SGT1940
+HETATM 1743  O   HOH   121       8.376  13.060  30.534  0.53 27.91      1SGT1941
+HETATM 1744  O   HOH   122      34.088  16.169  45.164  0.79 37.11      1SGT1942
+HETATM 1745  O   HOH   123      28.728   9.832  45.044  0.85 38.78      1SGT1943
+HETATM 1746  O   HOH   124       8.292  11.421  34.136  0.96 41.75      1SGT1944
+HETATM 1747  O   HOH   125      31.252  29.313  44.338  0.88 39.86      1SGT1945
+HETATM 1748  O   HOH   126      36.286  19.783  36.760  0.78 37.23      1SGT1946
+HETATM 1749  O   HOH   127      20.198   9.337  59.496  0.71 35.78      1SGT1947
+HETATM 1750  O   HOH   128      34.650  21.745  55.419  0.81 38.96      1SGT1948
+HETATM 1751  O   HOH   129      10.464  26.353  22.117  0.66 34.20      1SGT1949
+HETATM 1752  O   HOH   130      34.285  27.840  43.058  0.77 37.61      1SGT1950
+HETATM 1753  O   HOH   131      14.114  20.219  27.413  0.79 38.37      1SGT1951
+HETATM 1754  O   HOH   132       2.636  22.297  35.545  0.73 36.72      1SGT1952
+HETATM 1755  O   HOH   133       7.454  13.101  26.409  0.73 36.73      1SGT1953
+HETATM 1756  O   HOH   134       3.287   7.331  51.025  0.94 42.71      1SGT1954
+HETATM 1757  O   HOH   135      25.916   9.186  44.052  0.98 43.78      1SGT1955
+HETATM 1758  O   HOH   136      33.913  18.681  30.800  0.61 32.95      1SGT1956
+HETATM 1759  O   HOH   137      33.553  17.339  55.941  0.88 41.32      1SGT1957
+HETATM 1760  O   HOH   138      24.013   9.702  45.832  0.95 43.45      1SGT1958
+HETATM 1761  O   HOH   139      26.460  39.583  40.348  0.86 40.91      1SGT1959
+HETATM 1762  O   HOH   140      30.688  26.777  56.530  0.58 32.05      1SGT1960
+HETATM 1763  O   HOH   141      12.885  35.646  24.376  0.92 42.82      1SGT1961
+HETATM 1764  O   HOH   142      39.628  15.635  39.191  0.61 33.74      1SGT1962
+HETATM 1765  O   HOH   143       5.301  38.292  42.358  0.34 21.78      1SGT1963
+HETATM 1766  O   HOH   144      16.082  24.872  16.576  0.54 31.52      1SGT1964
+HETATM 1767  O   HOH   145       5.062   7.400  38.927  0.97 46.41      1SGT1965
+HETATM 1768  O   HOH   146      13.987  18.700  63.744  0.73 39.60      1SGT1966
+HETATM 1769  O   HOH   147      17.794  43.458  40.641  1.00 48.22      1SGT1967
+HETATM 1770  O   HOH   148      29.265  15.641  20.407  0.86 44.73      1SGT1968
+HETATM 1771  O   HOH   149       6.004  21.267  55.613  0.64 37.48      1SGT1969
+HETATM 1772  O   HOH   150       6.151  29.154  27.780  0.73 40.76      1SGT1970
+HETATM 1773  O   HOH   151      25.919  30.570  20.086  0.75 41.73      1SGT1971
+HETATM 1774  O   HOH   152      28.930  20.454  18.306  0.70 40.24      1SGT1972
+HETATM 1775  O   HOH   153       2.512   8.609  38.915  0.64 37.90      1SGT1973
+HETATM 1776  O   HOH   154      -0.606  11.298  40.294  0.80 43.71      1SGT1974
+HETATM 1777  O   HOH   155      29.118   7.163  40.082  0.62 37.55      1SGT1975
+HETATM 1778  O   HOH   156       5.701  34.295  41.920  1.00 49.74      1SGT1976
+HETATM 1779  O   HOH   157      10.815   6.540  42.569  0.81 44.41      1SGT1977
+HETATM 1780  O   HOH   158      23.617  21.991  62.435  0.46 31.38      1SGT1978
+HETATM 1781  O   HOH   159      34.319   7.363  41.871  1.00 49.99      1SGT1979
+HETATM 1782  O   HOH   160      21.988  17.994  33.971  1.00 50.29      1SGT1980
+HETATM 1783  O   HOH   161      13.276  41.135  46.949  0.80 44.95      1SGT1981
+HETATM 1784  O   HOH   162      22.322  40.945  32.156  0.60 38.33      1SGT1982
+HETATM 1785  O   HOH   163       9.909  21.371  60.738  0.57 37.29      1SGT1983
+HETATM 1786  O   HOH   164       7.709  35.507  36.005  0.44 31.73      1SGT1984
+HETATM 1787  O   HOH   165       0.240  24.776  41.949  0.54 36.58      1SGT1985
+HETATM 1788  O   HOH   166       7.160   3.569  47.700  0.79 45.84      1SGT1986
+HETATM 1789  O   HOH   167      32.578  34.747  40.313  0.57 38.01      1SGT1987
+HETATM 1790  O   HOH   168      37.105  17.171  45.754  0.53 36.32      1SGT1988
+HETATM 1791  O   HOH   169       1.348  13.528  45.250  1.00 52.22      1SGT1989
+HETATM 1792  O   HOH   170      24.993   9.151  51.684  0.56 37.58      1SGT1990
+HETATM 1793  O   HOH   171      35.324   9.621  36.789  1.00 52.75      1SGT1991
+HETATM 1794  O   HOH   172      29.093  31.900  45.945  0.63 42.79      1SGT1992
+HETATM 1795  O   HOH   173      34.875  32.480  39.863  0.53 38.56      1SGT1993
+HETATM 1796  O   HOH   174       5.716  31.451  45.705  1.00 55.99      1SGT1994
+HETATM 1797  O   HOH   175      14.338  16.861  62.663  0.67 45.49      1SGT1995
+HETATM 1798  O   HOH   176       5.197  14.907  23.604  0.50 39.02      1SGT1996
+HETATM 1799  O   HOH   177      20.198  19.159  22.683  1.00 57.54      1SGT1997
+HETATM 1800  O   HOH   178       8.516  34.299  31.563  0.95 56.58      1SGT1998
+HETATM 1801  O   HOH   179      21.274   7.120  49.517  1.00 58.13      1SGT1999
+HETATM 1802  O   HOH   180      33.612  37.379  22.552  0.98 57.65      1SGT2000
+HETATM 1803  O   HOH   181       2.569  14.230  33.221  0.90 56.49      1SGT2001
+HETATM 1804  O   HOH   182      23.563   8.366  58.654  0.80 53.18      1SGT2002
+HETATM 1805  O   HOH   183       9.891  30.050  23.930  0.91 56.93      1SGT2003
+HETATM 1806  O   HOH   184      20.289  16.208  63.346  0.75 52.82      1SGT2004
+HETATM 1807  O   HOH   185       1.049  16.229  39.136  0.87 58.15      1SGT2005
+HETATM 1808  O   HOH   186      34.357  10.490  42.100  0.64 51.49      1SGT2006
+HETATM 1809  O   HOH   187      21.737  20.361  20.792  1.00 64.46      1SGT2007
+HETATM 1810  O   HOH   188       9.918  20.037  63.164  0.74 56.27      1SGT2008
+HETATM 1811  O   HOH   189      34.524  33.583  29.251  0.91 63.36      1SGT2009
+HETATM 1812  O   HOH   190      35.772  27.411  39.352  0.93 65.39      1SGT2010
+HETATM 1813  O   HOH   191      36.613  18.975  41.058  0.60 53.63      1SGT2011
+HETATM 1814  O   HOH   192      -3.192  30.325  46.346  0.68 57.70      1SGT2012
+CONECT   72   70                           941                          1SGT2013
+CONECT  159  158  270                                                   1SGT2014
+CONECT  214  212                           612                          1SGT2015
+CONECT  261  260  263                                     568           1SGT2016
+CONECT  270  159  269                                                   1SGT2017
+CONECT  382  381                           901                          1SGT2018
+CONECT  383  381                           904                          1SGT2019
+CONECT  560  559                                         1108           1SGT2020
+CONECT  568  566                           261                          1SGT2021
+CONECT  612  611                                          214           1SGT2022
+CONECT  612                                              1615           1SGT2023
+CONECT  697  696                                         1299           1SGT2024
+CONECT  697                                              1328           1SGT2025
+CONECT  860  859                          1448                          1SGT2026
+CONECT  861  859                          1445                          1SGT2027
+CONECT  901  900  902                                     382           1SGT2028
+CONECT  904  902                                          383           1SGT2029
+CONECT  941  940                                           72           1SGT2030
+CONECT 1016 1015 1131                                                   1SGT2031
+CONECT 1108 1106                           560                          1SGT2032
+CONECT 1131 1016 1130                                                   1SGT2033
+CONECT 1210 1209 1432                                                   1SGT2034
+CONECT 1291 1292                                         1319           1SGT2035
+CONECT 1299 1297                           697                          1SGT2036
+CONECT 1319 1318                          1291                          1SGT2037
+CONECT 1328 1327                           697                          1SGT2038
+CONECT 1432 1210 1431                                                   1SGT2039
+CONECT 1445 1444 1446                                     861           1SGT2040
+CONECT 1448 1446                                          860           1SGT2041
+CONECT 1615 1614                           612                          1SGT2042
+MASTER       79   41    1    5   14   15    1    6 1813    1   30   18  1SGT2043
+END                                                                     1SGT2044

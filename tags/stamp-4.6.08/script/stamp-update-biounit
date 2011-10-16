@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+data=${1:-/usr/local/data/biounit}
+epdb=rsync.ebi.ac.uk::pub/databases/rcsb/pdb-remediated/data
+# biological unit assemblies
+rsync -v -a $epdb/biounit/coordinates/divided/ $data
+
