@@ -108,7 +108,6 @@ sub _split_file {
 # See if the parent file is more recent than any derived file
 sub _newer { 
     my ($parent) = @_;
-	print "parent:$parent:\n";
     my $ctime_parent = (stat($parent))[10];
     # Get PDB ID and assembly ID
     my $basename = substr($parent, 0, 4) . '-' . substr($parent, 8, 1);
