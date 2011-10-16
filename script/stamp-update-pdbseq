@@ -11,7 +11,6 @@ pdbc=${1:-/usr/local/data/pdbdom}
 pdbseq=${2:-/usr/local/data/pdbseq}
 mkdir -p $pdbseq
 
-cd $pdbseq; 
 # For each subdirectory in the hierarchical PDB layout
 for d in $pdbc/*; do 
     dn=`basename $d`; 

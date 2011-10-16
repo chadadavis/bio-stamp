@@ -9,7 +9,6 @@ pdb=${1:-/usr/local/data/pdb}
 pdbc=${2:-/usr/local/data/pdbdom}
 mkdir -p $pdbc 
 
-cd $pdbc; 
 # For each subdirectory in the hierarchical PDB layout
 for d in $pdb/*; do 
     dn=`basename $d`; 
