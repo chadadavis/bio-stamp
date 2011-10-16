@@ -1,4 +1,5 @@
-#include <malloc.h>
+/* #include <malloc.h> */
+#include <stdlib.h>
 
 struct domain_loc{		/* This structure allows rather complex domains to be described */
    char filename[4096];

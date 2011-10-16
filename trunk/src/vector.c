@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
+/* #include <malloc.h> */
 #include <math.h>
 #include <igetcb.h>
 #define PI 3.141592653589793

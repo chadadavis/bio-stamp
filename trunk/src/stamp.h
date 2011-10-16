@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <malloc.h>
+/* #include <malloc.h> */
 #include <string.h>
 
 #define defaultsfile "$STAMPDIR/stamp.defaults"
