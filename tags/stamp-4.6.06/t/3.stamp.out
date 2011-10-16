@@ -1,0 +1,22 @@
+Keyword f value 3.dom
+Keyword rough value -prefix
+Keyword prefix value tmp_3.stamp
+
+STAMP Structural Alignment of Multiple Proteins
+ by Robert B. Russell & Geoffrey J. Barton 
+ Please cite PROTEINS, v14, 309-323, 1992
+
+Running roughfit.
+
+    Sc = STAMP score, RMS = RMS deviation, Align = alignment length
+    Len1, Len2 = length of domain, Nfit = residues fitted
+    Secs = no. equivalent sec. strucs. Eq = no. equivalent residues
+    %I = seq. identity, %S = sec. str. identity
+    P(m)  = P value (p=1/10) calculated after Murzin (1993), JMB, 230, 689-694
+
+     No.  Domain1         Domain2         Sc     RMS    Len1 Len2  Align NFit Eq. Secs.   %I   %S   P(m)
+Pair   1  1rv8B           1rv8C           9.72   0.34    253  253   253  253 252   18 100.00  95.63 0.00e+00
+Reading in matrix file tmp_3.stamp.mat...
+Doing cluster analysis...
+Cluster:  1 (   1rv8B  &    1rv8C ) Sc  9.71 RMS   0.34 Len 253 nfit 252 
+ See file tmp_3.stamp.1 for the alignment and transformations

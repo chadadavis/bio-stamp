@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# Create STAMP DOM files from (new) PDB files
+
+# Directory of PDB files
+pdb=${1:-/usr/local/data/pdb}
+
+# Destination directory for DOM files
+pdbc=${2:-/usr/local/data/pdbdom}
+mkdir -p $pdbc 
+
+# For each subdirectory in the hierarchical PDB layout
+for d in $pdb/*; do 
+    dn=`basename $d`; 
+    if [ "x$DEBUG" != "x" ]; then echo $dn; fi
+    # Make the corresponding directory layout for the DOM files
+    mkdir -p $pdbc/$dn; 
+    # For each PDB file
+    for f in $d/*; do 
+        if [ ! -e $f ]; then continue; fi
+        # Filename without the directory prefix
+        fn=`basename $f`; 
+        # 4-character PDB ID (after the 3-character "pdb" prefix)
+        id=${fn:3:4}; 
+        # DOM file to create (also with a "pdb" prefix)
+        out="$pdbc/$dn/pdb${id}.dom"; 
+        # If DOM file doesn't yet exist, or PDB file updated, create DOM
+        if [ $f -nt $out -o ! -s $out ]; then 
+            echo $fn
+            if [ "x$DEBUG" != "x" ]; then 
+                echo pdbc -d $id ">|" "$out"; 
+            fi
+            pdbc -d $id  >| "$out"; 
+        fi; 
+    done; 
+done
+
+

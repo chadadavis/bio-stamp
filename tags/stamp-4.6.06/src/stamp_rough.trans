@@ -1,0 +1,13 @@
+% Output from STAMP ROUGH FIT routine
+%  The sequences from the file two.dom have been aligned from their
+%  N-terminal ends, andthe resulting equivalences were be used 
+% to generate the superpositions given below.
+% Domains 1eca onto 4mbn RMS of 9.504881 on 136 atoms
+/data/CASS1/pdb/coords//1eca.pdb 1eca { ALL 
+    1.0000     0.0000     0.0000       0.0000 
+    0.0000     1.0000     0.0000       0.0000 
+    0.0000     0.0000     1.0000       0.0000  } 
+/data/CASS1/pdb/coords//4mbn.pdb 4mbn { ALL 
+    0.4267     0.7461    -0.5111     -17.3119 
+   -0.5880    -0.2006    -0.7836      33.3742 
+   -0.6872     0.6349     0.3532      18.2603  } 

@@ -1,0 +1,64 @@
+% Output from STAMP scanning routine
+%
+% Domain 1cmsN was used to scan the domain database:
+%  ac_prot.domains
+% 2 fits were performed
+% Fit 1 E1= 20.000, E2=  3.800, CUT=  1.000
+% Fit 2 E1=  3.800, E2=  3.800, CUT=  4.500
+% Approximate fits (alignment from N-termini) were performed
+%   at every 5 residue of the database sequences 
+% Transformations were output for Sc=  2.000
+% 
+% Domain used to scan 
+# Sc= 10.000 RMS=  0.01  Len= 999 nfit= 999 Seqid= 100.00 Secid= 100.00 q_len=  175 d_len=  175 n_sec= 100 n_equiv 999 fit_pos= _  0 _ 
+/disk3/pdb/pdb1cms.ent 1cmsN { _ 1 _ to _ 175 _  }
+# Sc=   9.744 RMS=   0.000 len=  174 nfit=  174 seq_id= 99.43 sec_id= 94.86 q_len=  175 d_len=  175 n_sec=   18 n_equiv=  173 fit_pos= _   1 _ 
+/disk3/pdb/pdb1cms.ent 1cmsN_1 {  _ 1 _ to _ 175 _  
+   1.00000    0.00000    0.00000         0.00000 
+   0.00000    1.00000    0.00000         0.00000 
+   0.00000    0.00000    1.00000         0.00000  }
+# Sc=   2.749 RMS=   2.352 len=  204 nfit=   63 seq_id=  8.00 sec_id= 41.14 q_len=  175 d_len=  148 n_sec=   13 n_equiv=   58 fit_pos= _ 176 _ 
+/disk3/pdb/pdb1cms.ent 1cmsC_1 {  _ 176 _ to _ 323 _  
+  -0.98340   -0.10624   -0.14708        36.75176 
+  -0.05772    0.95171   -0.30154         9.23577 
+   0.17201   -0.28804   -0.94204        55.92140  }
+# Sc=   7.854 RMS=   1.314 len=  181 nfit=  155 seq_id= 27.53 sec_id= 80.90 q_len=  175 d_len=  178 n_sec=   15 n_equiv=  153 fit_pos= _  -2 _ 
+/disk3/pdb/pdb4ape.ent 4apeN_1 {  _ -2 _ to _ 174 _  
+   0.01869    0.76565   -0.64299        24.66136 
+  -0.60179    0.52218    0.60430        44.73461 
+   0.79843    0.37565    0.47052        -0.65511  }
+# Sc=   2.901 RMS=   2.207 len=  208 nfit=   69 seq_id=  7.43 sec_id= 40.57 q_len=  175 d_len=  152 n_sec=   14 n_equiv=   68 fit_pos= _ 175 _ 
+/disk3/pdb/pdb4ape.ent 4apeC_1 {  _ 175 _ to _ 326 _  
+  -0.07183   -0.85931    0.50638         8.00938 
+  -0.74251    0.38505    0.54810        48.04819 
+  -0.66597   -0.33662   -0.66571        50.49613  }
+# Sc=   7.574 RMS=   1.291 len=  182 nfit=  148 seq_id= 26.86 sec_id= 83.43 q_len=  175 d_len=  174 n_sec=   18 n_equiv=  147 fit_pos= _   1 _ 
+/disk3/pdb/pdb3app.ent 3appN_1 {  _ 1 _ to _ 174 _  
+  -0.15520   -0.69492   -0.70214        42.33496 
+   0.02970    0.70715   -0.70644        27.56594 
+   0.98744   -0.13050   -0.08911         6.65540  }
+# Sc=   2.775 RMS=   2.422 len=  205 nfit=   61 seq_id=  7.43 sec_id= 41.71 q_len=  175 d_len=  149 n_sec=   13 n_equiv=   58 fit_pos= _ 175 _ 
+/disk3/pdb/pdb3app.ent 3appC_1 {  _ 175 _ to _ 323 _  
+  -0.04261    0.63473    0.77156        -7.48832 
+  -0.24867    0.74122   -0.62350        31.26341 
+  -0.96765   -0.21843    0.12625        50.41069  }
+# Sc=   8.246 RMS=   1.115 len=  177 nfit=  160 seq_id= 32.02 sec_id= 83.15 q_len=  175 d_len=  178 n_sec=   15 n_equiv=  157 fit_pos= _   1 _ 
+/disk3/pdb/pdb2apr.ent 2aprN_1 {  _ 1 _ to _ 178 _  
+  -0.71379    0.47773    0.51214       -35.33877 
+  -0.59890   -0.79544   -0.09272       106.90594 
+   0.36308   -0.37291    0.85388       -53.75948  }
+# Sc=   2.941 RMS=   2.099 len=  201 nfit=   65 seq_id=  9.14 sec_id= 39.43 q_len=  175 d_len=  147 n_sec=   14 n_equiv=   58 fit_pos= _ 179 _ 
+/disk3/pdb/pdb2apr.ent 2aprC_1 {  _ 179 _ to _ 325 _  
+   0.70876   -0.33904   -0.61864        68.75299 
+  -0.62670   -0.70524   -0.33149       126.32687 
+  -0.32390    0.62264   -0.71232        75.46848  }
+# Sc=   8.901 RMS=   1.020 len=  173 nfit=  169 seq_id= 56.57 sec_id= 89.71 q_len=  175 d_len=  174 n_sec=   15 n_equiv=  168 fit_pos= _   1 _ 
+/disk3/pdb/pdb4pep.ent 4pepN_1 {  _ 1 _ to _ 174 _  
+  -0.74653   -0.66519    0.01425        36.67072 
+   0.52376   -0.57433    0.62914        22.30094 
+  -0.41031    0.47714    0.77716         6.53328  }
+# Sc=   2.738 RMS=   2.561 len=  206 nfit=   64 seq_id=  8.00 sec_id= 40.00 q_len=  175 d_len=  152 n_sec=   11 n_equiv=   52 fit_pos= _ 175 _ 
+/disk3/pdb/pdb4pep.ent 4pepC_1 {  _ 175 _ to _ 326 _  
+   0.70406    0.67231   -0.22869        -2.05881 
+   0.69990   -0.60245    0.38366        24.85047 
+   0.12017   -0.43018   -0.89471        49.56144  }
