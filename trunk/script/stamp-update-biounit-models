@@ -2,11 +2,11 @@
 
 =head1 NAME
 
-stamp-split-biounit-models - Splits a biological unit into 1 file per model
+stamp-update-biounit-models - Splits a biological unit into 1 file per model
 
 =head1 SYNOPSIS
 
- stamp-split-biounity-models /path/to/biounit
+ stamp-update-biounit-models /path/to/biounit
 
 
 =head1 DESCRIPTION
@@ -58,8 +58,13 @@ sub _split_file {
     return -1 if -l;
     # Don't re-read existing model files
     return -1 if   /-/;
+    # Assume a zipped file is a PDB file
     return -1 if ! /\.gz\Z/;
     my $fn   = $_;
+    # Skip unless parent data hase been updated
+    return -1 if ! _newer($fn);
+    print $fn, "\n";
+
     my $dn   = $File::Find::dir;
     open(my $fh, , "zcat $fn |");
     if (! $fh) {
@@ -78,7 +83,7 @@ sub _split_file {
             # Use dash separators, because STAMP strips off extension otherwise
             $fn_out = join('-', $pdbid, $assembly, $model) . '.pdb.gz';
 
-            # Skip unless downloaded file newer
+            # Skip unless downloaded (gz) file newer
             # (check ctime, since mtime will have been fudged by mirroring)
             my $fn_outctime = stat($fn_out)->ctime;
             next if ($fn_outctime && $fnctime <= $fn_outctime);
@@ -101,8 +106,23 @@ sub _split_file {
     }
 }
 
+# See if the parent file is more recent than any derived file
+sub _newer { 
+    my ($parent) = @_;
+    my $ctime_parent = stat($parent)->ctime;
+    my $basename = substr($parent, 0, 4);
+    my @children = (glob "${basename}-*");
+    # Also newer (i.e. needs to be processed) when no children
+    return 1 unless @children;
+    for my $child (@children) { 
+        my $ctime_child = stat($child)->ctime;
+        return 1 if $ctime_parent > $ctime_child;
+    }
+    return 0;
+}
+
 sub usage {
     my $prog = basename $0;
-    warn "Usage:\n\t$prog /path/to/pdb_biounit\n";
+    warn "Usage:\n\t$prog /path/to/biounit\n";
     return -1;
 }

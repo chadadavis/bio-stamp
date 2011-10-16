@@ -38,21 +38,25 @@ INSTALL
     The file format is explained here:
       http://www.compbio.dundee.ac.uk/manuals/stamp.4.4/node57.html
 
-PROTEIN DATA BANK (PDB)
+PROTEIN DATA BANK (PDB) AND DERIVED DATA
 
-    To make use of STAMP, you will need to have a local copy of the PDB. To
-    download it:
+    To make use of STAMP, you will need to sync a local copy of the PDB:
+    stamp-update-pdb     [ /usr/local/data/pdb    ]
 
-    export epdb=rsync.ebi.ac.uk::pub/databases/rcsb/pdb-remediated/data
-    export data=/path/to/your/data/dir
-    rsync -v -a $epdb/structures/divided/pdb/ $data/pdb        
-    # Optionally download the biological unit structures as well:
-    rsync -v -a $epdb/biounit/coordinates/divided/ $data/biounit
-    (in this case, also have a look at the script stamp-split-biounit-models.pl )
+    # Optionally, extract Domain definitions, Fasta sequences, and build a blast database:
+    stamp-update-doms    [ /usr/local/data/pdb    ] [ /usr/local/data/pdbdom         ]
+    stamp-update-pdbseq  [ /usr/local/data/pdbdom ] [ /usr/local/data/pdbseq         ]
+    stamp-update-blastdb [ /usr/local/data/pdbseq ] [ /usr/local/data/blastdb/pdbseq ]
+
+    # Optionally, sync the biological unit assemblies:
+    stamp-update-biounit        [ /usr/local/data/biounit ]
+    # Split biological assemblies into one file per model:
+    stamp-update-biounit-models [ /usr/local/data/biounit ]
 
     You may also want to download DSSP definitions for PDB entries, e.g. :
+    stamp-update-dssp    [ /usr/local/data/dssp  ]
 
-    rsync -v -a -z rsync://rsync.cmbi.ru.nl/dssp/ $data/dssp/
+    It is recommended to do all of the above in a crontab to remain up-to-date
 
 CITE
     Copyright (1997, 1998, 1999, 2010) Robert B. Russell & Geoffrey J. Barton.
