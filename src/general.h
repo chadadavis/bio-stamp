@@ -1,4 +1,5 @@
-#include <malloc.h>
+/* #include <malloc.h> */
+#include <stdlib.h>
 
 struct brookn { /* structure to represent brookhaven residue numbers */
     int n;      /* numerical part of number */
