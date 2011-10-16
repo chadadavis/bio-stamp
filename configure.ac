@@ -1,6 +1,6 @@
 # Process this file with autoconf to produce a configure script.
 
-AC_INIT(stamp, 4.6.06, stamp@russelllab.org, stamp, https://code.google.com/p/bio-stamp)
+AC_INIT(stamp, 4.6.07, stamp@russelllab.org, stamp, https://code.google.com/p/bio-stamp)
 AC_PREREQ(2.59)
 AC_CANONICAL_SYSTEM
 
