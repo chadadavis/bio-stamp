@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+# Create Blast DB using Fasta files created by pdbseq (STAMP)
+# These contain all the residues for the C-alphas in the PDB files
+
+# Directory of Fasta files (created by pdbseq)
+pdbseq=${1:-/usr/local/data/pdbseq}
+
+# Path name of Blast DB to create, as it would be given to blastpgp (w/o ext.)
+# (e.g. /my/data/blastdb/swissprot)
+path=${2:-/usr/local/data/blastdb/pdbseq}
+
+name=`basename $path`
+dir=`dirname $path`
+mkdir -p $dir
+
+fasta=${path}.fa; 
+cd $dir; 
+# Remove previous Fasta file
+\rm $fasta; 
+
+# For each subdirectory of the PDB hierarchical layout
+for d in $pdbseq/*; do 
+    basedir=`basename $d`
+    echo -n "$basedir "
+    # First replace '1tima' with 'pdb|1tim|a'
+    # Then replace 'pdb|1tim|a' with 'pdb|1tim|AA' for any lowercase chains
+    # Then concatenate to one large fasta file
+
+    #cat $d/*.fa | perl -p -e 's/^>(....)(.)/>pdb|\1|\2/' | perl -p -e 's/^(>pdb\|....\|)([a-z])/$1.uc $2.$2/e' >> $fasta; 
+
+    # formatdb -o T converts identifiers to uppercase, so that eg. 'pdb|200l|A' becomes 'pdb|200L|A'
+    # this can cause problems for all vs. all blast, since the query and subject IDs will have
+    # different cases (it's OK if you know since you can ignore cases when searching for matches)
+    # So, capitalise the idcode in the fasta file before passing it to formatdb
+    cat $d/*.fa | perl -p -e 's/^>(\S{4})([a-z])/>$1$2$2/;s/^>(\S{4})(\S+)/">pdb|" . uc "$1|$2"/e' >> $fasta
+done; 
+
+echo 
+echo formatdb ... 
+# Create the Blast DB, retaining the identifier names
+formatdb -i $fasta -p T -o T -n $name
+
