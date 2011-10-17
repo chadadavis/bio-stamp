@@ -1,0 +1,39 @@
+! Molscript input file generated from STAMP output file
+! R.B. Russell 1994
+!
+!
+! To use you must run TRANSFORM on the same file
+!  (i.e. to generate the PDB files)
+! A total of 103 equivalent residues were found
+!
+!
+plot
+read mol "2hhba.pdb";
+  transform atom *
+      by centre position atom *
+      by rotation x 90.0
+      by rotation y 170.0
+      by rotation z 0.0
+      ;
+ set shading 0.0;
+trace from A1  to A2 ;
+coil from A2  to A4 ;
+helix from A4  to A16 ;
+trace from A16  to A23 ;
+helix from A23  to A35 ;
+coil from A35  to A37 ;
+helix from A37  to A42 ;
+coil from A42  to A47 ;
+trace from A46  to A52 ;
+coil from A52  to A53 ;
+helix from A53  to A70 ;
+trace from A70  to A80 ;
+coil from A80  to A81 ;
+helix from A81  to A86 ;
+trace from A86  to A90 ;
+coil from A90  to A96 ;
+helix from A96  to A109 ;
+trace from A109  to A122 ;
+helix from A122  to A136 ;
+coil from A136  to A140 ;
+end_plot
