@@ -1,0 +1,47 @@
+
+STAMP Structural Alignment of Multiple Proteins  Version 4.2
+
+By Robert B. Russell & Geoffrey J. Barton 
+Originally published in PROTEINS: Struct. Funct. Genet., 14, 309-323, 1992
+
+Version 4.2 Announcement:  16 April 1999
+----------------------------------------
+
+STAMP is for the alignment and comparison of protein three-dimensional
+(3D) structures.
+
+Given a set of protein domains with a similar structure, one can use
+STAMP to produce a multiple alignment and associated superimposition
+based on comparison of the 3D structures.
+
+STAMP can also be used to search for similarities between a query
+structure (e.g. a newly solved structure) and a database of other
+structures.
+
+The packageprovides numerous tools for the manipulation and display of
+data associated with protein 3D structural similarities, including the
+ability to generate superimposed coordinate sets, averaged structures,
+and postcript output via molscript (structures) and alscript
+(alignments).
+
+Source code, in addition to pre-compiled executables for IRIX, Solaris, 
+OSF and Linux are available free of charge by completing the form on 
+http://barton.ebi.ac.uk/
+
+New features to Version 4.2 include:
+
+1. Programs for merging sequence/structure alignments/superimpositions
+from multiple sources.
+
+2. Assignment of probability values after Murzin (1993, JMB, 689-694)
+to assess whether an observed structural similarity implies a common
+superfamily (and thus a common ancestor, and usually a common
+molecular function).  Note that these probability values can reveal
+homology when sequence identities are insignificant.
+
+3. The ability to read compressed PDB and DSSP files, and to read
+distr/xx formatted PDB directories.
+
+4. Programs for converting STAMP alignments (or indeed any alignment)
+to various standard formats such as CLUSTAL and MSF.
+

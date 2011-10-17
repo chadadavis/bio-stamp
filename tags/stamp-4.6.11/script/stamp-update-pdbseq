@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+# Create STAMP Fasta files from (new) DOM files
+
+# Set data directory, if not already
+
+# Directory of STAMP DOM files
+pdbc=${1:-/usr/local/data/pdbdom}
+
+# Directory of resulting Fasta files
+pdbseq=${2:-/usr/local/data/pdbseq}
+mkdir -p $pdbseq
+
+# For each subdirectory in the hierarchical PDB layout
+for d in $pdbc/*; do 
+    dn=`basename $d`; 
+    # Make the corresponding directory layout for the DOM files
+    mkdir -p $pdbseq/$dn; 
+    # For each PDB file
+    for f in $d/*; do 
+        if [ ! -e $f ]; then continue; fi
+        # Filename without the directory prefix
+        fn=`basename $f .dom`; 
+        # Fasta file to create 
+        out="$pdbseq/$dn/${fn}.fa"; 
+        # If Fasta file doesn't yet exist, or DOM file updated, create Fasta
+        # NB PDB entries with only nucleotides will result in an empty file
+        # For this reason, check for non-existant rather than non-empty file
+        # Disadvantage: if STAMP crashes, this also results in an empty file
+        if [ $f -nt $out -o ! -e $out ]; then 
+            echo $fn
+            if [ "x$DEBUG" != "x" ]; then 
+                echo pdbseq -f $f  ">|" "$out";
+            fi
+            pdbseq -f $f  >| "$out"; 
+        fi; 
+    done; 
+done
+
+
