@@ -1,10 +1,10 @@
 # Add this option so that data dir can be determined
-AM_CFLAGS=-DAM_STAMPDIR='"$(datadir)/stamp"' -DAM_VERSION='"4.6.09"'
+AM_CFLAGS=-DAM_STAMPDIR='"$(datadir)/stamp"' -DAM_VERSION='"4.6.10"'
 
 AM_LDFLAGS=-lm
 
 # Build targets
-bin_PROGRAMS=alignfit avestruc cofm dstamp extrans gstamp mergestamp mergetrans pdbc pdbseq pickframe poststamp sorttrans stamp stamp_clean transform ver2hor
+bin_PROGRAMS=alignfit avestruc cofm dstamp extrans gstamp mergestamp mergetrans pdbc pdbseq pickframe poststamp sorttrans stamp stamp_clean transform ver2hor check_ints
 
 # headers dependencies, for all binaries
 noinst_HEADERS=aadat.h alignfit.h array.h cluster.h defaults.h domain.h dstamp.h f2c.h general.h gjnoc.h gjutil.h igetcb.h mergestamp.h poststamp.h rbr_aadat.h rbr_newlib.h rbr_vector.h R.h routines.h stamp.h stamprel.h ver2hor.h
@@ -27,5 +27,4 @@ stamp_clean_SOURCES=stamp_clean.c agetbloc.c clean_block.c count_domain.c getdom
 stamp_SOURCES=stamp.c a3to1.c aliseq.c ccprobcalc.c closefile.c count_domain.c display_align.c dosort.c get_clust.c getdomain.c getdsspsum.c getfile.c getks.c getsec.c gjnoc.c gjutil.c idist.c igetca.c igetcadssp.c ltou.c makeafile.c matfit.c matinv.c matmult.c murzin_P.c newoutput.c openfile.c pairfit.c pairpath.c pairwise.c printmat.c probcalc.c probplot.c qkfit.c readtree.c reval.c revmatmult.c rossmann.c roughfit.c scan.c sec_content.c slow_scan.c stampgetpars.c sw7ccs.c swstruc.c testfile.c treefit.c treepath.c treewise.c update.c utol.c
 transform_SOURCES=transform.c closefile.c count_domain.c extract_dssp.c extract_pdb.c fmatmult.c getdomain.c getfile.c ltou.c openfile.c testfile.c utol.c
 ver2hor_SOURCES=ver2hor.c agetbloc.c getstampdat.c getstamprel.c gjutil.c ltou.c utol.c
-
-
+check_ints_SOURCES=check_ints.c ltou.c getdomain.c openfile.c closefile.c matmult.c printmat.c idist.c igetca.c count_domain.c a3to1.c getfile.c utol.c testfile.c 
