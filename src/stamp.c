@@ -75,271 +75,297 @@ int main(int argc, char *argv[]) {
 	    fprintf(stderr, "error: malloc(1000 * %d) failed for value with errno=%d\n", sizeof(char), errno);
 	    exit(-1);
 	}
-        for(i=1; i<argc; ++i) {
-           if(argv[i][0]!='-') exit_error();
-	   strcpy(keyword,&argv[i][1]);
-	   if(i+1<argc) strcpy(value,argv[i+1]);
-	   else strcpy(value,"none");
-           printf("Keyword %s value %s\n",keyword,value);
-	   for(j=0; j<strlen(keyword); ++j) 
-	      keyword[j]=ltou(keyword[j]); /* change to upper case */
-	   T_FLAG=(value[0]=='Y' || value[0]=='y' || value[0]=='1' || 
-		 value[0]=='T' || value[0]=='t' || value[0]=='o' || 
-		 value[0]=='O');
-	   /* enables one to write '1', 'YES', 'Yes', 'yes', 'T_FLAG', 'True' or 'true' to 
-	    *  set any boolean parmsiable to one */
-           if((strcmp(&argv[i][1],"l")==0) || (strcmp(&argv[i][1],"f")==0) || (strcmp(&argv[i][1],"p")==0)) {
-	      if(i+1>=argc) exit_error();
-              /* listfile name */
-	      strcpy(parms[0].listfile,argv[i+1]);
-	      i++;
-	   } else if(strcmp(&argv[i][1],"P")==0) {
-	      /* want to read in parameter file */
-	      if(i+1>=argc) exit_error();
-	      if((PARMS=fopen(argv[i+1],"r"))==NULL) {
-		fprintf(stderr,"error opening file %s\n",argv[i+1]);
-		exit(-1);
-	      }
-	      if(getpars(PARMS,parms)==-1) exit(-1);
-	      fclose(PARMS);
-	      i++;
-	   } else if(strcmp(&argv[i][1],"o")==0) {
-	     /* output file */
-	     if(i+1>=argc) exit_error();
-	     strcpy(parms[0].logfile,argv[i+1]);
-	     i++;
-	   } else if(strcmp(&argv[i][1],"help")==0) {
-		help_exit_error();
-	   } else if((strcmp(&argv[i][1],"V")==0) || (strcmp(&argv[i][1],"v")==0)) {
-	     parms[0].verbose=1;
-	     strcpy(parms[0].logfile,"stdout");
-	   } else if(strcmp(&argv[i][1],"s")==0) {
-	     parms[0].SCAN=1;
-	     parms[0].TREEWISE=parms[0].PAIRWISE=0;
-	   } else if(strcmp(&argv[i][1],"n")==0) {
-	     if(i+1>=argc) exit_error();
-	     sscanf(argv[i+1],"%d",&parms[0].NPASS);
-	     i++;
-	     if(parms[0].NPASS!=1 && parms[0].NPASS!=2) exit_error();
-	   } else if(strcmp(keyword,"PAIRPEN") == 0 || strcmp(keyword,"PEN")==0 || strcmp(keyword,"SECOND_PAIRPEN")==0) {
-		sscanf(value,"%f",&parms[0].second_PAIRPEN); i++;
-	   } else if(strcmp(keyword,"FIRST_PAIRPEN")==0) {
-		sscanf(value,"%f",&parms[0].first_PAIRPEN); i++;
-           } else if(strcmp(keyword,"MAXPITER") == 0 || strcmp(keyword,"MAXSITER") == 0) {
-		sscanf(value,"%d",&parms[0].MAXPITER); i++;
-	   } else if(strcmp(keyword,"MAXTITER") == 0) {
-		sscanf(value,"%d",&parms[0].MAXTITER); i++;
-	   } else if(strcmp(keyword,"TREEPEN") == 0 || strcmp(keyword,"SECOND_TREEPEN")==0) {
-		sscanf(value,"%f",&parms[0].second_TREEPEN); i++;
-	   } else if(strcmp(keyword,"FIRST_TREEPEN")==0) {
-		sscanf(value,"%f",&parms[0].first_TREEPEN); i++;
-	   } else if(strcmp(keyword,"SCORETOL") == 0) {
-		sscanf(value,"%f",&parms[0].SCORETOL); i++;
-	   } else if(strcmp(keyword,"CLUSTMETHOD") == 0) {
-		sscanf(value,"%d",&parms[0].CLUSTMETHOD); i++;
-	   } else if(strcmp(keyword,"E1") == 0 || strcmp(keyword,"SECOND_E1")==0) {
-		sscanf(value,"%f",&parms[0].second_E1); i++;
-	   } else if(strcmp(keyword,"E2") == 0 || strcmp(keyword,"SECOND_E2")==0) {
-		sscanf(value,"%f",&parms[0].second_E2); i++;
-	   } else if(strcmp(keyword,"FIRST_E1")==0) { 
-		sscanf(value,"%f",&parms[0].first_E1); i++;
-	   } else if(strcmp(keyword,"FIRST_E2")==0) {
-		sscanf(value,"%f",&parms[0].first_E2); i++;
-	   } else if(strcmp(keyword,"PAIROUTPUT_TO_LOG")==0) {
+    for(i=1; i<argc; ++i) {
+        if(argv[i][0]!='-') exit_error();
+
+        if(strcmp(&argv[i][1], "stampdir") == 0) {
+            char *stampdir = AM_STAMPDIR;
+            if (getenv("STAMPDIR") != NULL) stampdir = getenv("STAMPDIR");
+            printf("%s\n", stampdir);
+            exit(0);
+        } else if (strcmp(&argv[i][1], "version") == 0) {
+            printf("%s\n", AM_VERSION);
+            exit(0);
+        }
+
+        strcpy(keyword,&argv[i][1]);
+        if(i+1<argc) strcpy(value,argv[i+1]);
+        else strcpy(value,"none");
+        printf("Keyword %s value %s\n",keyword,value);
+        for(j=0; j<strlen(keyword); ++j) 
+            keyword[j]=ltou(keyword[j]); /* change to upper case */
+        T_FLAG=(value[0]=='Y' || value[0]=='y' || value[0]=='1' || 
+                value[0]=='T' || value[0]=='t' || value[0]=='o' || 
+                value[0]=='O');
+        /* enables one to write '1', 'YES', 'Yes', 'yes', 'T_FLAG', 'True' or 'true' to 
+         *  set any boolean parmsiable to one */
+        if((strcmp(&argv[i][1],"l")==0) 
+           || (strcmp(&argv[i][1],"f")==0) 
+           || (strcmp(&argv[i][1],"p")==0)) {
+            if(i+1>=argc) exit_error();
+            /* listfile name */
+            strcpy(parms[0].listfile,argv[i+1]);
+            i++;
+        } else if(strcmp(&argv[i][1],"P")==0) {
+            /* want to read in parameter file */
+            if(i+1>=argc) exit_error();
+            if((PARMS=fopen(argv[i+1],"r"))==NULL) {
+                fprintf(stderr,"error opening file %s\n",argv[i+1]);
+                exit(-1);
+            }
+            if(getpars(PARMS,parms)==-1) exit(-1);
+            fclose(PARMS);
+            i++;
+        } else if(strcmp(&argv[i][1],"o")==0) {
+            /* output file */
+            if(i+1>=argc) exit_error();
+            strcpy(parms[0].logfile,argv[i+1]);
+            i++;
+        } else if(strcmp(&argv[i][1],"help")==0) {
+            help_exit_error();
+        } else if((strcmp(&argv[i][1],"V")==0) 
+                  || (strcmp(&argv[i][1],"v")==0)) {
+            parms[0].verbose=1;
+            strcpy(parms[0].logfile,"stdout");
+        } else if(strcmp(&argv[i][1],"s")==0) {
+            parms[0].SCAN=1;
+            parms[0].TREEWISE=parms[0].PAIRWISE=0;
+        } else if(strcmp(&argv[i][1],"n")==0) {
+            if(i+1>=argc) exit_error();
+            sscanf(argv[i+1],"%d",&parms[0].NPASS);
+            i++;
+            if(parms[0].NPASS!=1 && parms[0].NPASS!=2) exit_error();
+        } else if(strcmp(keyword,"PAIRPEN") == 0 
+                  || strcmp(keyword,"PEN")==0 
+                  || strcmp(keyword,"SECOND_PAIRPEN")==0) {
+            sscanf(value,"%f",&parms[0].second_PAIRPEN); i++;
+        } else if(strcmp(keyword,"FIRST_PAIRPEN")==0) {
+            sscanf(value,"%f",&parms[0].first_PAIRPEN); i++;
+        } else if(strcmp(keyword,"MAXPITER") == 0 
+                  || strcmp(keyword,"MAXSITER") == 0) {
+            sscanf(value,"%d",&parms[0].MAXPITER); i++;
+        } else if(strcmp(keyword,"MAXTITER") == 0) {
+            sscanf(value,"%d",&parms[0].MAXTITER); i++;
+        } else if(strcmp(keyword,"TREEPEN") == 0 
+                  || strcmp(keyword,"SECOND_TREEPEN")==0) {
+            sscanf(value,"%f",&parms[0].second_TREEPEN); i++;
+        } else if(strcmp(keyword,"FIRST_TREEPEN")==0) {
+            sscanf(value,"%f",&parms[0].first_TREEPEN); i++;
+        } else if(strcmp(keyword,"SCORETOL") == 0) {
+            sscanf(value,"%f",&parms[0].SCORETOL); i++;
+        } else if(strcmp(keyword,"CLUSTMETHOD") == 0) {
+            sscanf(value,"%d",&parms[0].CLUSTMETHOD); i++;
+        } else if(strcmp(keyword,"E1") == 0 
+                  || strcmp(keyword,"SECOND_E1")==0) {
+            sscanf(value,"%f",&parms[0].second_E1); i++;
+        } else if(strcmp(keyword,"E2") == 0 
+                  || strcmp(keyword,"SECOND_E2")==0) {
+            sscanf(value,"%f",&parms[0].second_E2); i++;
+        } else if(strcmp(keyword,"FIRST_E1")==0) { 
+            sscanf(value,"%f",&parms[0].first_E1); i++;
+        } else if(strcmp(keyword,"FIRST_E2")==0) {
+            sscanf(value,"%f",&parms[0].first_E2); i++;
+        } else if(strcmp(keyword,"PAIROUTPUT_TO_LOG")==0) {
 	        parms[0].pairoutput_to_log=T_FLAG; i++;
-	   } else if(strcmp(keyword,"UD_SECTION")==0) {
-		sscanf(argv[i+1],"%d",&parms[0].ud_start); i++;
-		sscanf(argv[i+1],"%d",&parms[0].ud_end); i++;
-		parms[0].ud_section=1;
- 	   } else if(strcmp(keyword,"NPASS")==0) {
-		sscanf(value,"%d",&parms[0].NPASS); i++;
-		if(parms[0].NPASS!=1 && parms[0].NPASS!=2) {
-		   fprintf(stderr,"error: NPASS must be either 1 or 2\n");
-		   return -1;
-		}
-	   } else if(strcmp(keyword,"CUTOFF") == 0 || strcmp(keyword,"SECOND_CUTOFF")==0) {
-		sscanf(value,"%f",&parms[0].second_CUTOFF); i++;
-	   } else if(strcmp(keyword,"FIRST_CUTOFF")==0)  {
-		sscanf(value,"%f",&parms[0].first_CUTOFF); i++;
-	   } else if(strcmp(keyword,"TREEPLOT") == 0) {
-		parms[0].TREEPLOT=T_FLAG; i++;
-	   } else if(strcmp(keyword,"PAIRPLOT") == 0) {
-		parms[0].PAIRPLOT=T_FLAG; i++;
-	   } else if(strcmp(keyword,"NALIGN") == 0) {
-		sscanf(value,"%d",&parms[0].NALIGN); i++;
-	   } else if(strcmp(keyword,"DISPALL") == 0) {
-		parms[0].DISPALL=T_FLAG; i++;
-	   } else if(strcmp(keyword,"HORIZ") ==0) {
-		parms[0].HORIZ=T_FLAG; i++;
-	   } else if(strcmp(keyword,"ADD") ==0) {
-		sscanf(value,"%f",&parms[0].ADD); i++;
-	   } else if(strcmp(keyword,"NMEAN") ==0) {
-		sscanf(value,"%f",&parms[0].NMEAN); i++;
-	   } else if(strcmp(keyword,"NSD") ==0) {
-		sscanf(value,"%f",&parms[0].NSD); i++;
-	   } else if(strcmp(keyword,"STATS") ==0) {
-		parms[0].STATS=T_FLAG; i++;
-	   } else if(strcmp(keyword,"NA") == 0) {
-		sscanf(value,"%f",&parms[0].NA); i++;
-	   } else if(strcmp(keyword,"NB") == 0) {
-		sscanf(value,"%f",&parms[0].NB); i++;
-	   } else if(strcmp(keyword,"NASD") == 0) {
-		sscanf(value,"%f",&parms[0].NASD); i++;
-	   } else if(strcmp(keyword,"NBSD") == 0) {
-		sscanf(value,"%f",&parms[0].NBSD); i++;
-	   } else if(strcmp(keyword,"PAIRWISE") == 0)  {
-		parms[0].PAIRWISE=T_FLAG; i++;
-	   } else if(strcmp(keyword,"TREEWISE") == 0) {
-		parms[0].TREEWISE=T_FLAG; i++;
-	   } else if(strcmp(keyword,"ORDFILE") == 0) {
-		strcpy(parms[0].ordfile,value); i++;
-	   } else if(strcmp(keyword,"TREEFILE") == 0) {
-		strcpy(parms[0].treefile,value); i++;
-	   } else if(strcmp(keyword,"PLOTFILE") == 0) {
-		strcpy(parms[0].plotfile,value); i++;
-	   } else if(strcmp(keyword,"PREFIX") == 0 || strcmp(keyword,"TRANSPREFIX")==0 || strcmp(keyword,"STAMPPREFIX")==0) {
-		strcpy(parms[0].transprefix,value); i++;
-	   } else if(strcmp(keyword,"MATFILE") == 0) {
-		strcpy(parms[0].matfile,value); i++;
-	   } else if(strcmp(keyword,"THRESH") ==0) {
-		sscanf(value,"%f",&parms[0].THRESH); i++;
-	   } else if(strcmp(keyword,"TREEALIGN")==0) {
-		parms[0].TREEALIGN=T_FLAG; i++;
-	   } else if(strcmp(keyword,"TREEALLALIGN")==0) {
-		parms[0].TREEALLALIGN=T_FLAG; i++; 
-	   } else if(strcmp(keyword,"PAIRALIGN")==0 || strcmp(keyword,"SCANALIGN")==0)  {
-		parms[0].PAIRALIGN=T_FLAG; i++;
-	   } else if(strcmp(keyword,"PAIRALLALIGN")==0 || strcmp(keyword,"SCANALLALIGN")==0) {
-		parms[0].PAIRALLALIGN=T_FLAG; i++;
-	   } else if(strcmp(keyword,"PRECISION")==0) {
-		sscanf(value,"%d",&parms[0].PRECISION); i++;
-	   } else if(strcmp(keyword,"MAX_SEQ_LEN")==0) {
-		sscanf(value,"%d",&parms[0].MAX_SEQ_LEN); i++;
-	   } else if(strcmp(keyword,"ROUGHFIT")==0) {
-		parms[0].ROUGHFIT=T_FLAG; i++;
-	   } else if(strcmp(keyword,"ROUGH")==0) {
-		parms[0].ROUGHFIT=1;
-	   } else if(strcmp(keyword,"ROUGHOUT")==0) {
-		parms[0].roughout=1;
-	   } else if(strcmp(keyword,"ROUGHOUTFILE")==0) {
-		if(i+1>=argc) exit_error();
-		strcpy(&parms[0].roughoutfile[0],argv[i+1]);
-		i++;
+        } else if(strcmp(keyword,"UD_SECTION")==0) {
+            sscanf(argv[i+1],"%d",&parms[0].ud_start); i++;
+            sscanf(argv[i+1],"%d",&parms[0].ud_end); i++;
+            parms[0].ud_section=1;
+        } else if(strcmp(keyword,"NPASS")==0) {
+            sscanf(value,"%d",&parms[0].NPASS); i++;
+            if(parms[0].NPASS!=1 && parms[0].NPASS!=2) {
+                fprintf(stderr,"error: NPASS must be either 1 or 2\n");
+                return -1;
+            }
+        } else if(strcmp(keyword,"CUTOFF") == 0 
+                  || strcmp(keyword,"SECOND_CUTOFF")==0) {
+            sscanf(value,"%f",&parms[0].second_CUTOFF); i++;
+        } else if(strcmp(keyword,"FIRST_CUTOFF")==0)  {
+            sscanf(value,"%f",&parms[0].first_CUTOFF); i++;
+        } else if(strcmp(keyword,"TREEPLOT") == 0) {
+            parms[0].TREEPLOT=T_FLAG; i++;
+        } else if(strcmp(keyword,"PAIRPLOT") == 0) {
+            parms[0].PAIRPLOT=T_FLAG; i++;
+        } else if(strcmp(keyword,"NALIGN") == 0) {
+            sscanf(value,"%d",&parms[0].NALIGN); i++;
+        } else if(strcmp(keyword,"DISPALL") == 0) {
+            parms[0].DISPALL=T_FLAG; i++;
+        } else if(strcmp(keyword,"HORIZ") ==0) {
+            parms[0].HORIZ=T_FLAG; i++;
+        } else if(strcmp(keyword,"ADD") ==0) {
+            sscanf(value,"%f",&parms[0].ADD); i++;
+        } else if(strcmp(keyword,"NMEAN") ==0) {
+            sscanf(value,"%f",&parms[0].NMEAN); i++;
+        } else if(strcmp(keyword,"NSD") ==0) {
+            sscanf(value,"%f",&parms[0].NSD); i++;
+        } else if(strcmp(keyword,"STATS") ==0) {
+            parms[0].STATS=T_FLAG; i++;
+        } else if(strcmp(keyword,"NA") == 0) {
+            sscanf(value,"%f",&parms[0].NA); i++;
+        } else if(strcmp(keyword,"NB") == 0) {
+            sscanf(value,"%f",&parms[0].NB); i++;
+        } else if(strcmp(keyword,"NASD") == 0) {
+            sscanf(value,"%f",&parms[0].NASD); i++;
+        } else if(strcmp(keyword,"NBSD") == 0) {
+            sscanf(value,"%f",&parms[0].NBSD); i++;
+        } else if(strcmp(keyword,"PAIRWISE") == 0)  {
+            parms[0].PAIRWISE=T_FLAG; i++;
+        } else if(strcmp(keyword,"TREEWISE") == 0) {
+            parms[0].TREEWISE=T_FLAG; i++;
+        } else if(strcmp(keyword,"ORDFILE") == 0) {
+            strcpy(parms[0].ordfile,value); i++;
+        } else if(strcmp(keyword,"TREEFILE") == 0) {
+            strcpy(parms[0].treefile,value); i++;
+        } else if(strcmp(keyword,"PLOTFILE") == 0) {
+            strcpy(parms[0].plotfile,value); i++;
+        } else if(strcmp(keyword,"PREFIX") == 0 
+                  || strcmp(keyword,"TRANSPREFIX")==0 
+                  || strcmp(keyword,"STAMPPREFIX")==0) {
+            strcpy(parms[0].transprefix,value); i++;
+        } else if(strcmp(keyword,"MATFILE") == 0) {
+            strcpy(parms[0].matfile,value); i++;
+        } else if(strcmp(keyword,"THRESH") ==0) {
+            sscanf(value,"%f",&parms[0].THRESH); i++;
+        } else if(strcmp(keyword,"TREEALIGN")==0) {
+            parms[0].TREEALIGN=T_FLAG; i++;
+        } else if(strcmp(keyword,"TREEALLALIGN")==0) {
+            parms[0].TREEALLALIGN=T_FLAG; i++; 
+        } else if(strcmp(keyword,"PAIRALIGN")==0 
+                  || strcmp(keyword,"SCANALIGN")==0)  {
+            parms[0].PAIRALIGN=T_FLAG; i++;
+        } else if(strcmp(keyword,"PAIRALLALIGN")==0 
+                  || strcmp(keyword,"SCANALLALIGN")==0) {
+            parms[0].PAIRALLALIGN=T_FLAG; i++;
+        } else if(strcmp(keyword,"PRECISION")==0) {
+            sscanf(value,"%d",&parms[0].PRECISION); i++;
+        } else if(strcmp(keyword,"MAX_SEQ_LEN")==0) {
+            sscanf(value,"%d",&parms[0].MAX_SEQ_LEN); i++;
+        } else if(strcmp(keyword,"ROUGHFIT")==0) {
+            parms[0].ROUGHFIT=T_FLAG; i++;
+        } else if(strcmp(keyword,"ROUGH")==0) {
+            parms[0].ROUGHFIT=1;
+        } else if(strcmp(keyword,"ROUGHOUT")==0) {
+            parms[0].roughout=1;
+        } else if(strcmp(keyword,"ROUGHOUTFILE")==0) {
+            if(i+1>=argc) exit_error();
+            strcpy(&parms[0].roughoutfile[0],argv[i+1]);
+            i++;
 	        parms[0].roughout=1;
-	   } else if(strcmp(keyword,"BOOLCUT")==0 || strcmp(keyword,"SECOND_BOOLCUT")==0) {
-		sscanf(value,"%f",&parms[0].second_BOOLCUT); i++;
-	   } else if(strcmp(keyword,"FIRST_BOOLCUT")==0) {
-		sscanf(value,"%f",&parms[0].first_BOOLCUT); i++;
-	   } else if(strcmp(keyword,"SCANSLIDE")==0) {
-		sscanf(value,"%d",&parms[0].SCANSLIDE); i++;
-	   } else if(strcmp(keyword,"SCAN")==0) {
-		parms[0].SCAN=T_FLAG; i++;
-		if(T_FLAG) 
-		  parms[0].PAIRWISE=parms[0].TREEWISE=0;
-	   } else if(strcmp(keyword,"SCANMODE")==0) {
+        } else if(strcmp(keyword,"BOOLCUT")==0 
+                  || strcmp(keyword,"SECOND_BOOLCUT")==0) {
+            sscanf(value,"%f",&parms[0].second_BOOLCUT); i++;
+        } else if(strcmp(keyword,"FIRST_BOOLCUT")==0) {
+            sscanf(value,"%f",&parms[0].first_BOOLCUT); i++;
+        } else if(strcmp(keyword,"SCANSLIDE")==0) {
+            sscanf(value,"%d",&parms[0].SCANSLIDE); i++;
+        } else if(strcmp(keyword,"SCAN")==0) {
+            parms[0].SCAN=T_FLAG; i++;
+            if(T_FLAG) 
+                parms[0].PAIRWISE=parms[0].TREEWISE=0;
+        } else if(strcmp(keyword,"SCANMODE")==0) {
 	        sscanf(value,"%d",&parms[0].SCANMODE); i++;
-		if(parms[0].SCANMODE==1) parms[0].PAIRALIGN=1;
-	   } else if(strcmp(keyword,"SCANCUT")==0)  {
-		sscanf(value,"%f",&parms[0].SCANCUT); i++;
-	   } else if(strcmp(keyword,"SECSCREEN")==0) {
-		parms[0].SECSCREEN=T_FLAG; i++;
-	   } else if(strcmp(keyword,"SECSCREENMAX")==0) {
-		sscanf(value,"%f",&parms[0].SECSCREENMAX); i++;
-	   } else if(strcmp(keyword,"SCANTRUNC")==0) {
-		parms[0].SCANTRUNC=T_FLAG; i++;
-	   } else if(strcmp(keyword,"SCANTRUNCFACTOR")==0) {
-		sscanf(value,"%f",&parms[0].SCANTRUNCFACTOR); i++;
-	   } else if(strcmp(keyword,"DATABASE")==0) {
-		strcpy(&parms[0].database[0],value); i++;
-  	   } else if(strcmp(keyword,"SCANFILE")==0) {
-		strcpy(&parms[0].scanfile[0],value); i++;
-	   } else if(strcmp(keyword,"LOGFILE")==0) {
-		strcpy(&parms[0].logfile[0],value); i++;
-	   } else if(strcmp(keyword,"SECTYPE")==0) {
-		sscanf(value,"%d",&parms[0].SECTYPE); i++;
-	   } else if(strcmp(keyword,"SCANSEC")==0) {
-		sscanf(value,"%d",&parms[0].SCANSEC); i++;
-	   } else if(strcmp(keyword,"SECFILE")==0) {
-		strcpy(&parms[0].secfile[0],value); i++;
-		parms[0].SECTYPE=2;
-	   } else if(strcmp(keyword,"BOOLEAN")==0) {
-		parms[0].BOOLEAN=T_FLAG; i++;
-	   } else if(strcmp(keyword,"BOOLMETHOD")==0) {
-		sscanf(value,"%d",&parms[0].BOOLMETHOD); i++;
-	   } else if(strcmp(keyword,"LISTFILE")==0) {
-		strcpy(&parms[0].listfile[0],value); i++;
-	   } else if(strcmp(keyword,"STAMPDIR")==0) {
-		strcpy(&parms[0].stampdir[0],value); i++;
-	   } else if(strcmp(keyword,"CLUST")==0) {
-		parms[0].CLUST=T_FLAG; i++;
-	   } else if(strcmp(keyword,"COLUMNS")==0) {
-		sscanf(value,"%d",&parms[0].COLUMNS); i++;
-	   } else if(strcmp(keyword,"SW")==0) {
-		sscanf(value,"%d",&parms[0].SW); i++;
-	   } else if(strcmp(keyword,"CCFACTOR")==0) {
-		sscanf(value,"%f",&parms[0].CCFACTOR); i++;
-	   } else if(strcmp(keyword,"CCADD")==0) {
-		parms[0].CCADD=T_FLAG; i++;
-	   } else if(strcmp(keyword,"MINFIT")==0) {
-		sscanf(value,"%d",&parms[0].MINFIT); i++;
-	   } else if(strcmp(keyword,"ROUGHALIGN")==0) {
-		strcpy(parms[0].roughalign,value); i++;
-	   } else if(strcmp(keyword,"FIRST_THRESH")==0) {
-		sscanf(value,"%f",&parms[0].first_THRESH); i++;
-	   } else if(strcmp(keyword,"MIN_FRAC")==0) {
-		sscanf(value,"%f",&parms[0].MIN_FRAC); i++;
-	   } else if(strcmp(keyword,"SCORERISE")==0) {
-		parms[0].SCORERISE=T_FLAG; i++;
-	   } else if(strcmp(keyword,"SKIPAHEAD")==0) {
-		parms[0].SKIPAHEAD=T_FLAG; i++;
-	   } else if(strcmp(keyword,"SCANSCORE")==0) {
-		sscanf(value,"%d",&parms[0].SCANSCORE); i++;
-	   } else if(strcmp(keyword,"PAIROUTPUT")==0) {
-		parms[0].PAIROUTPUT=T_FLAG; i++;
-	   } else if(strcmp(keyword,"ALLPAIRS")==0) {
-		parms[0].ALLPAIRS=T_FLAG; i++;
-	   } else if(strcmp(keyword,"DSSP")==0) {
-		parms[0].DSSP=T_FLAG; i++;
-	   } else if(strcmp(keyword,"SLOWSCAN")==0) {
-		parms[0].SLOWSCAN=T_FLAG; i++;
-	   } else if(strcmp(keyword,"SLOW")==0) {
-		parms[0].SLOWSCAN=1;
-	   } else if(strcmp(keyword,"CUT")==0) {
-		parms[0].CO=1;
-	   } else if(strcmp(&argv[i][1],"slide")==0) {
-	     if(i+1>=argc) exit_error();
-	     sscanf(argv[i+1],"%d",&parms[0].SCANSLIDE); 
-	     i++;
-	   } else if(strcmp(&argv[i][1],"d")==0) {
-	     /* database file */
-	     if(i+1>=argc) exit_error();
-	     strcpy(&parms[0].database[0],argv[i+1]);
-	     i++;
-	   } else if(strcmp(&argv[i][1],"pen1")==0) {
-	     if(i+1>=argc) exit_error();
-	     sscanf(argv[i+1],"%f",&parms[0].first_PAIRPEN);
-	     i++;
-	   } else if(strcmp(&argv[i][1],"pen2")==0) {
-	     if(i+1>=argc) exit_error();
-	     sscanf(argv[i+1],"%f",&parms[0].second_PAIRPEN);
-	     i++;
-	   } else if(strcmp(&argv[i][1],"prefix")==0) {
-	     if(i+1>=argc) exit_error();
-	     strcpy(&parms[0].transprefix[0],argv[i+1]);
-	     i++;
-	   } else if(strcmp(&argv[i][1],"scancut")==0) {
-	     if(i+1>=argc) exit_error();
-	     sscanf(argv[i+1],"%f",&parms[0].SCANCUT);
-	     i++;
-	   } else if(strcmp(&argv[i][1],"fitcut")==0) {
-	     if(i+1>=argc) exit_error();
-	     sscanf(argv[i+1],"%d",&parms[0].FITCUT);
-	     i++;
-	   } else if(strcmp(&argv[i][1],"opd")==0) {
-	      parms[0].opd=1;
-	   } else  {
-	     exit_error();
-	   }
+            if(parms[0].SCANMODE==1) parms[0].PAIRALIGN=1;
+        } else if(strcmp(keyword,"SCANCUT")==0)  {
+            sscanf(value,"%f",&parms[0].SCANCUT); i++;
+        } else if(strcmp(keyword,"SECSCREEN")==0) {
+            parms[0].SECSCREEN=T_FLAG; i++;
+        } else if(strcmp(keyword,"SECSCREENMAX")==0) {
+            sscanf(value,"%f",&parms[0].SECSCREENMAX); i++;
+        } else if(strcmp(keyword,"SCANTRUNC")==0) {
+            parms[0].SCANTRUNC=T_FLAG; i++;
+        } else if(strcmp(keyword,"SCANTRUNCFACTOR")==0) {
+            sscanf(value,"%f",&parms[0].SCANTRUNCFACTOR); i++;
+        } else if(strcmp(keyword,"DATABASE")==0) {
+            strcpy(&parms[0].database[0],value); i++;
+        } else if(strcmp(keyword,"SCANFILE")==0) {
+            strcpy(&parms[0].scanfile[0],value); i++;
+        } else if(strcmp(keyword,"LOGFILE")==0) {
+            strcpy(&parms[0].logfile[0],value); i++;
+        } else if(strcmp(keyword,"SECTYPE")==0) {
+            sscanf(value,"%d",&parms[0].SECTYPE); i++;
+        } else if(strcmp(keyword,"SCANSEC")==0) {
+            sscanf(value,"%d",&parms[0].SCANSEC); i++;
+        } else if(strcmp(keyword,"SECFILE")==0) {
+            strcpy(&parms[0].secfile[0],value); i++;
+            parms[0].SECTYPE=2;
+        } else if(strcmp(keyword,"BOOLEAN")==0) {
+            parms[0].BOOLEAN=T_FLAG; i++;
+        } else if(strcmp(keyword,"BOOLMETHOD")==0) {
+            sscanf(value,"%d",&parms[0].BOOLMETHOD); i++;
+        } else if(strcmp(keyword,"LISTFILE")==0) {
+            strcpy(&parms[0].listfile[0],value); i++;
+        } else if(strcmp(keyword,"STAMPDIR")==0) {
+            strcpy(&parms[0].stampdir[0],value); i++;
+        } else if(strcmp(keyword,"CLUST")==0) {
+            parms[0].CLUST=T_FLAG; i++;
+        } else if(strcmp(keyword,"COLUMNS")==0) {
+            sscanf(value,"%d",&parms[0].COLUMNS); i++;
+        } else if(strcmp(keyword,"SW")==0) {
+            sscanf(value,"%d",&parms[0].SW); i++;
+        } else if(strcmp(keyword,"CCFACTOR")==0) {
+            sscanf(value,"%f",&parms[0].CCFACTOR); i++;
+        } else if(strcmp(keyword,"CCADD")==0) {
+            parms[0].CCADD=T_FLAG; i++;
+        } else if(strcmp(keyword,"MINFIT")==0) {
+            sscanf(value,"%d",&parms[0].MINFIT); i++;
+        } else if(strcmp(keyword,"ROUGHALIGN")==0) {
+            strcpy(parms[0].roughalign,value); i++;
+        } else if(strcmp(keyword,"FIRST_THRESH")==0) {
+            sscanf(value,"%f",&parms[0].first_THRESH); i++;
+        } else if(strcmp(keyword,"MIN_FRAC")==0) {
+            sscanf(value,"%f",&parms[0].MIN_FRAC); i++;
+        } else if(strcmp(keyword,"SCORERISE")==0) {
+            parms[0].SCORERISE=T_FLAG; i++;
+        } else if(strcmp(keyword,"SKIPAHEAD")==0) {
+            parms[0].SKIPAHEAD=T_FLAG; i++;
+        } else if(strcmp(keyword,"SCANSCORE")==0) {
+            sscanf(value,"%d",&parms[0].SCANSCORE); i++;
+        } else if(strcmp(keyword,"PAIROUTPUT")==0) {
+            parms[0].PAIROUTPUT=T_FLAG; i++;
+        } else if(strcmp(keyword,"ALLPAIRS")==0) {
+            parms[0].ALLPAIRS=T_FLAG; i++;
+        } else if(strcmp(keyword,"DSSP")==0) {
+            parms[0].DSSP=T_FLAG; i++;
+        } else if(strcmp(keyword,"SLOWSCAN")==0) {
+            parms[0].SLOWSCAN=T_FLAG; i++;
+        } else if(strcmp(keyword,"SLOW")==0) {
+            parms[0].SLOWSCAN=1;
+        } else if(strcmp(keyword,"CUT")==0) {
+            parms[0].CO=1;
+        } else if(strcmp(&argv[i][1],"slide")==0) {
+            if(i+1>=argc) exit_error();
+            sscanf(argv[i+1],"%d",&parms[0].SCANSLIDE); 
+            i++;
+        } else if(strcmp(&argv[i][1],"d")==0) {
+            /* database file */
+            if(i+1>=argc) exit_error();
+            strcpy(&parms[0].database[0],argv[i+1]);
+            i++;
+        } else if(strcmp(&argv[i][1],"pen1")==0) {
+            if(i+1>=argc) exit_error();
+            sscanf(argv[i+1],"%f",&parms[0].first_PAIRPEN);
+            i++;
+        } else if(strcmp(&argv[i][1],"pen2")==0) {
+            if(i+1>=argc) exit_error();
+            sscanf(argv[i+1],"%f",&parms[0].second_PAIRPEN);
+            i++;
+        } else if(strcmp(&argv[i][1],"prefix")==0) {
+            if(i+1>=argc) exit_error();
+            strcpy(&parms[0].transprefix[0],argv[i+1]);
+            i++;
+        } else if(strcmp(&argv[i][1],"scancut")==0) {
+            if(i+1>=argc) exit_error();
+            sscanf(argv[i+1],"%f",&parms[0].SCANCUT);
+            i++;
+        } else if(strcmp(&argv[i][1],"fitcut")==0) {
+            if(i+1>=argc) exit_error();
+            sscanf(argv[i+1],"%d",&parms[0].FITCUT);
+            i++;
+        } else if(strcmp(&argv[i][1],"opd")==0) {
+            parms[0].opd=1;
+        } else  {
+            exit_error();
+        }
 	}
 	free(keyword); 
 	free(value);
@@ -712,7 +738,11 @@ int main(int argc, char *argv[]) {
 }
 
 void help_exit_error() {
-	fprintf(stderr,"STAMP version %s\n", AM_VERSION);
+    char *stampdir = AM_STAMPDIR;
+	fprintf(stderr,"Version %s\n", AM_VERSION);
+    if (getenv("STAMPDIR") != NULL) stampdir = getenv("STAMPDIR");
+    printf("STAMPDIR=%s\n", stampdir);
+
 	fprintf(stderr,"format: stamp -f <starting domain file> [options] \n");
 	fprintf(stderr,"\n");
 	fprintf(stderr,"GENERAL OPTIONS:\n");
@@ -734,7 +764,7 @@ void help_exit_error() {
 	exit(-1);
 }
 void exit_error() {
-	fprintf(stderr,"STAMP version %s\n", AM_VERSION);
+	fprintf(stderr,"Version %s\n", AM_VERSION);
 	fprintf(stderr,"format: stamp -f <starting domain file> [options] \n");
 	fprintf(stderr,"        stamp -help  will give a list of options\n");
 	exit(-1);
