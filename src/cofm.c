@@ -204,7 +204,6 @@ int main(int argc, char *argv[]) {
 	   }
 	   free(domain[i].R); 
 	   free(domain[i].r);
-	   for(j=0; j<domain[i].ncoords; ++j)  { free(domain[i].coords[j]); }
 	   free(domain[i].coords);
 	   free(domain[i].type);
 	   free(domain[i].start);
