@@ -197,7 +197,8 @@ int main(int argc, char *argv[]) {
 	for(i=0; i<ndomain; ++i) {
 	   free(domain[i].aa);
 	   free(domain[i].sec);
-	   free(domain[i].v); free(domain[i].V);
+	   free(domain[i].v);
+           free(domain[i].V);
 	   for(j=0; j<3; ++j) {
 	      free(domain[i].R[j]);
 	      free(domain[i].r[j]);
@@ -211,6 +212,5 @@ int main(int argc, char *argv[]) {
 	   free(domain[i].reverse);
 	   free(domain[i].numb);
 	}
-	free(domain);
     return 0;
 }
